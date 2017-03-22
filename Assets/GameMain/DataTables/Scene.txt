@@ -1,0 +1,5 @@
+#	场景配置表			
+#	Id		AssetName	BackgroundMusicId
+#	int		string	int
+#	场景编号	备注	资源名称	背景音乐编号
+	1	主场景	Main	1

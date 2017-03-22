@@ -1,0 +1,5 @@
+#	战机表								
+#	Id		ThrusterId	WeaponId0	WeaponId1	WeaponId2	ArmorId0	ArmorId1	ArmorId2
+#	int		int	int	int	int	int	int	int
+#	战机编号	策划备注	推进器编号	武器编号0	武器编号1	武器编号2	装甲编号0	装甲编号1	装甲编号2
+	10000	玩家战机	20000	30000	0	0	40000	0	0

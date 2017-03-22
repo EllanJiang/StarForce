@@ -160,6 +160,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -187,7 +188,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 513208573}
   m_Father: {fileID: 1852670053}
   m_RootOrder: 2
 --- !u!1001 &343730742
@@ -197,9 +200,17 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1852670053}
     m_Modifications:
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 433714, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_LocalPosition.x
@@ -239,11 +250,143 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[0]
-      value: Game.ProcedureLaunch
+      value: AirForce.ProcedureChangeScene
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_EntranceProcedureTypeName
-      value: Game.ProcedureLaunch
+      value: AirForce.ProcedureLaunch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499388, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_JsonHelperTypeName
+      value: AirForce.LitJsonHelper
+      objectReference: {fileID: 0}
+    - target: {fileID: 11461470, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_LocalizationHelperTypeName
+      value: AirForce.XmlLocalizationHelper
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[1]
+      value: AirForce.ProcedureCheckVersion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[2]
+      value: AirForce.ProcedureLaunch
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[3]
+      value: AirForce.ProcedureMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[4]
+      value: AirForce.ProcedurePreload
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[5]
+      value: AirForce.ProcedureSplash
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[0].m_InstanceAutoReleaseInterval
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[0].m_InstanceCapacity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[0].m_InstanceExpireTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[0].m_Name
+      value: Aircraft
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[1].m_Name
+      value: Thruster
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[1].m_InstanceAutoReleaseInterval
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[1].m_InstanceCapacity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[1].m_InstanceExpireTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[2].m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[2].m_InstanceAutoReleaseInterval
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[2].m_InstanceCapacity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[2].m_InstanceExpireTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[3].m_Name
+      value: Armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[3].m_InstanceAutoReleaseInterval
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[3].m_InstanceCapacity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[3].m_InstanceExpireTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[4].m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[4].m_InstanceAutoReleaseInterval
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[4].m_InstanceCapacity
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EntityGroups.Array.data[4].m_InstanceExpireTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.data[0].m_Name
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.data[0].m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.data[0].m_AgentHelperCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.data[1].m_Name
+      value: Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.data[1].m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413340, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_SoundGroups.Array.data[1].m_AgentHelperCount
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
@@ -276,9 +419,56 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1852670053}
   m_RootOrder: 1
+--- !u!1 &513208572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 513208573}
+  - 114: {fileID: 513208574}
+  m_Layer: 0
+  m_Name: Config
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &513208573
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 513208572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 119167776}
+  m_RootOrder: 0
+--- !u!114 &513208574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 513208572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e509bc51fc3d35b4b9d9e70e2412c291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DeviceModelConfig: {fileID: 11400000, guid: a6a02e4e557663f4d935c5e0b9b804b9,
+    type: 2}
+  m_BuildInfoTextAsset: {fileID: 4900000, guid: 0f949a7f73d128547b1314a7e471f19f,
+    type: 3}
+  m_DefaultDictionaryTextAsset: {fileID: 4900000, guid: 00759be143ffa5445b151c2540612e8f,
+    type: 3}
 --- !u!1 &1852670052
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +493,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 343730743}
   - {fileID: 504410611}

@@ -1,0 +1,10 @@
+#	实体表		
+#	Id		AssetName
+#	int		string
+#	实体编号	策划备注	资源名称
+	10000	玩家战机	PlayerShip
+	20000	玩家推进器	PlayerEngine
+	30000	默认武器	DefaultWeapon
+	40000	默认装甲	DefaultArmor
+	50000	玩家子弹	PlayerBolt
+	50001	敌人子弹	EnemyBolt

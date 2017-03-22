@@ -1,0 +1,5 @@
+#	音乐配置表		
+#	Id		AssetName
+#	int		string
+#	音乐编号	策划备注	资源名称
+	1	战斗音乐	music_background
