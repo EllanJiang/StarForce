@@ -1,7 +1,101 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <UnityGameFramework>
   <AssetBundleCollection>
-    <AssetBundles />
-    <Assets />
+    <AssetBundles>
+      <AssetBundle Name="DataTables" LoadType="0" Packed="False" />
+      <AssetBundle Name="Dictionaries" Variant="en-us" LoadType="0" Packed="False" />
+      <AssetBundle Name="Dictionaries" Variant="zh-cn" LoadType="0" Packed="False" />
+      <AssetBundle Name="Dictionaries" Variant="zh-tw" LoadType="0" Packed="False" />
+      <AssetBundle Name="Entities" LoadType="0" Packed="False" />
+      <AssetBundle Name="Materials" LoadType="0" Packed="False" />
+      <AssetBundle Name="Meshes" LoadType="0" Packed="False" />
+      <AssetBundle Name="Music" LoadType="0" Packed="False" />
+      <AssetBundle Name="Scenes" LoadType="0" Packed="False" />
+      <AssetBundle Name="Sounds" LoadType="0" Packed="False" />
+      <AssetBundle Name="Textures" LoadType="0" Packed="False" />
+    </AssetBundles>
+    <Assets>
+      <Asset Guid="04dbc0581071c254ea6564b2ff06ff9b" AssetBundleName="Textures" />
+      <Asset Guid="0963e6c65b2b1f74d9f455e21901e2dc" AssetBundleName="Textures" />
+      <Asset Guid="0992f89f84d762f478fd32f8225168b0" AssetBundleName="Entities" />
+      <Asset Guid="0ed73dc47f4cb38489020d05e9f02c99" AssetBundleName="Materials" />
+      <Asset Guid="0f995b3145e0e7247a42da6cef1dbf23" AssetBundleName="Materials" />
+      <Asset Guid="1053b0070685be347ab58587156842dc" AssetBundleName="Dictionaries" AssetBundleVariant="zh-tw" />
+      <Asset Guid="11e27c26ac87b40f0a62ec40d7261989" AssetBundleName="Entities" />
+      <Asset Guid="1478894bc9a1ed241b05b0862a7b8bce" AssetBundleName="Textures" />
+      <Asset Guid="14869ac0d4433f04db1704e39d03412e" AssetBundleName="Dictionaries" AssetBundleVariant="en-us" />
+      <Asset Guid="160925a6fe2664f2a978566b819f0af0" AssetBundleName="Entities" />
+      <Asset Guid="185f97f18bd603a478461ce9c08bd039" AssetBundleName="Materials" />
+      <Asset Guid="1b4bad6cea5a94611b21f9757fe41444" AssetBundleName="Materials" />
+      <Asset Guid="1be4472894949437694aead55c6da60f" AssetBundleName="Sounds" />
+      <Asset Guid="1c89236d45255234ebd1d39657ff7e02" AssetBundleName="Textures" />
+      <Asset Guid="1cfe02ffd0b74854ea5bcd1a3c63ac3c" AssetBundleName="Materials" />
+      <Asset Guid="1d46a17a95a444c08830612bc1146d1d" AssetBundleName="Materials" />
+      <Asset Guid="1e0350b97c61bfb4a91c62d756d01727" AssetBundleName="Materials" />
+      <Asset Guid="2768a9a4c8d289840918dcb879705893" AssetBundleName="Meshes" />
+      <Asset Guid="2cb5eef4d7d7bf6459dd13a3f8d90246" AssetBundleName="Textures" />
+      <Asset Guid="315e8ed2db27c254cb3366ff0793cd90" AssetBundleName="DataTables" />
+      <Asset Guid="3455fe69f7ddc4604b95bf9b0a1e88d7" AssetBundleName="Entities" />
+      <Asset Guid="352da872791696c48af3b21132e3e3c3" AssetBundleName="DataTables" />
+      <Asset Guid="372a8b1e52bedc64b9207b12d167afaa" AssetBundleName="DataTables" />
+      <Asset Guid="3dc7455402dfa462b89a4bbd513955e9" AssetBundleName="Sounds" />
+      <Asset Guid="3e504a46a8fcec34db3c4776530c6eb2" AssetBundleName="Textures" />
+      <Asset Guid="4473d81b14ddb0143addf0e6050d8491" AssetBundleName="Scenes" />
+      <Asset Guid="4c3865b2ac420cd46a9cde6ab468d016" AssetBundleName="Materials" />
+      <Asset Guid="4f688097e85071841a2c3ba165000c20" AssetBundleName="Textures" />
+      <Asset Guid="5282f20eba4d44213820e21af8481932" AssetBundleName="Meshes" />
+      <Asset Guid="578af1667322bab45b652b79a40bb4fb" AssetBundleName="Materials" />
+      <Asset Guid="583ff7026dac91849b7c7b2468ba456b" AssetBundleName="Materials" />
+      <Asset Guid="638ff8ae4a0d15047839cd265d3bc296" AssetBundleName="Music" />
+      <Asset Guid="63fe6ff9ab9e1433f8db4ebd940f2442" AssetBundleName="Materials" />
+      <Asset Guid="64f3bb52c6a54854688fcc656af2b1c9" AssetBundleName="DataTables" />
+      <Asset Guid="6d9b42ac01f24bf4d98923573f103575" AssetBundleName="Textures" />
+      <Asset Guid="6db0c8354d868834abf29840037591b1" AssetBundleName="Textures" />
+      <Asset Guid="6e023ca4283b3a7469cd61d24c83048c" AssetBundleName="Textures" />
+      <Asset Guid="6e3730451fa077346abd4ac642ea71d8" AssetBundleName="Textures" />
+      <Asset Guid="6e5d026bf0652ed4380f6a66f4aa26c5" AssetBundleName="Textures" />
+      <Asset Guid="71646ebaae78d43aeb8b53cacdb69671" AssetBundleName="Textures" />
+      <Asset Guid="72e76810224064300b7d32e8322a5d12" AssetBundleName="Sounds" />
+      <Asset Guid="738bdf56857a65f479c367c7b62c4ad7" AssetBundleName="Entities" />
+      <Asset Guid="7d5f7699d6d1d48e485ac71126e12061" AssetBundleName="Entities" />
+      <Asset Guid="7e91cd9bad7babf4b975882a4b7453cb" AssetBundleName="Textures" />
+      <Asset Guid="7eae0d2701845a54aa570b07c55dab44" AssetBundleName="Textures" />
+      <Asset Guid="834bfaee90a9d4e04b1e8c1ca22cc88e" AssetBundleName="Entities" />
+      <Asset Guid="836be25be3e1e8c41ae5545bc8a9a4d7" AssetBundleName="Textures" />
+      <Asset Guid="8940b037a9b441c4cbd3d2b446838424" AssetBundleName="Materials" />
+      <Asset Guid="8cf749fdfa5edc3478d16893efeaa0eb" AssetBundleName="Entities" />
+      <Asset Guid="8e27380ee68aa4a219b4db9018e7da31" AssetBundleName="Materials" />
+      <Asset Guid="9143e2b62ad50488482f9b73672fc331" AssetBundleName="Entities" />
+      <Asset Guid="955000b4d1441470e8cbf94f483228b5" AssetBundleName="Materials" />
+      <Asset Guid="97b1f8b25cca2bc458cb9d6127c8d186" AssetBundleName="Materials" />
+      <Asset Guid="9afa958d6d8235941b9badb42aae4370" AssetBundleName="Meshes" />
+      <Asset Guid="9be2e1e45f4edd74c8764538ad306b78" AssetBundleName="Dictionaries" AssetBundleVariant="zh-cn" />
+      <Asset Guid="9c3961f379234354e813d7b38146424d" AssetBundleName="DataTables" />
+      <Asset Guid="9ddab293e2a8af3499dac05f5fd6169c" AssetBundleName="Meshes" />
+      <Asset Guid="a019ae3af8e864616b85773c509f5285" AssetBundleName="Sounds" />
+      <Asset Guid="a23eef5e20ff8cb46adf33491fc443fb" AssetBundleName="Materials" />
+      <Asset Guid="a6d58f54ce5934781962a4f887e834f3" AssetBundleName="Entities" />
+      <Asset Guid="a71f8bb1b1b2c51438e2bafc884cb02c" AssetBundleName="DataTables" />
+      <Asset Guid="a7b030cffa2dc44478c14e49a22771c2" AssetBundleName="Materials" />
+      <Asset Guid="ab4774faf71b57a40a29a9e902403fe3" AssetBundleName="DataTables" />
+      <Asset Guid="abd1565e9e268f04cac3631d022b4ace" AssetBundleName="Entities" />
+      <Asset Guid="ae6a7f967521769458b0913fa39caaf4" AssetBundleName="Textures" />
+      <Asset Guid="afc18fc39ade3744397c0c993b57be53" AssetBundleName="Entities" />
+      <Asset Guid="b0c7cf51d3fecb446ab93bf854419715" AssetBundleName="Materials" />
+      <Asset Guid="b2cebe04343227945bab3729ca9a3493" AssetBundleName="DataTables" />
+      <Asset Guid="ba157ba55f72c424a9e88f3c029997c4" AssetBundleName="Textures" />
+      <Asset Guid="baedbbad82997f445a8cb4da210404e0" AssetBundleName="Meshes" />
+      <Asset Guid="bf75b984df8a84987bcf3a8bf6e2862d" AssetBundleName="Sounds" />
+      <Asset Guid="c547624e174de984882f0a14b4bb32e1" AssetBundleName="Materials" />
+      <Asset Guid="c58c9afddbd36d14d837fa218d772996" AssetBundleName="Materials" />
+      <Asset Guid="cfe53cf384344bd47a8680f8c5f97a7b" AssetBundleName="DataTables" />
+      <Asset Guid="d9808401c68af274a8edfbed3d1b53c7" AssetBundleName="Meshes" />
+      <Asset Guid="eabb37cb6d738b443b398b701a64cd88" AssetBundleName="Textures" />
+      <Asset Guid="f36c72c738c55f741afcd674a0b1245f" AssetBundleName="Materials" />
+      <Asset Guid="f4ec271e525e14ca9927a07e6a2e153d" AssetBundleName="Entities" />
+      <Asset Guid="f6db5bbdfe0e9894798706814cd6b336" AssetBundleName="Textures" />
+      <Asset Guid="fd3cbf51780694849b9b019b36a3938e" AssetBundleName="Textures" />
+      <Asset Guid="fedd25a3c60e7ae499fc6efab9ee180b" AssetBundleName="Entities" />
+    </Assets>
   </AssetBundleCollection>
 </UnityGameFramework>
