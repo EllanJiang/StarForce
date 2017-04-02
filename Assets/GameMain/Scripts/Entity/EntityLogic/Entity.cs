@@ -42,6 +42,9 @@ namespace AirForce
             }
 
             Name = string.Format("[Entity {0}]", Id.ToString());
+            CachedTransform.localPosition = m_EntityData.Position;
+            CachedTransform.localRotation = m_EntityData.Rotation;
+            CachedTransform.localScale = Vector3.one;
         }
 
         protected internal override void OnHide(object userData)

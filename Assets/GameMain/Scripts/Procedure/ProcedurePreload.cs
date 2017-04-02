@@ -8,7 +8,7 @@ namespace AirForce
 {
     public class ProcedurePreload : ProcedureBase
     {
-        private IDictionary<string, bool> m_LoadedFlag = new Dictionary<string, bool>();
+        private Dictionary<string, bool> m_LoadedFlag = new Dictionary<string, bool>();
 
         public override bool UseNativeDialog
         {
@@ -63,6 +63,7 @@ namespace AirForce
             // Preload data tables
             LoadDataTable("Aircraft");
             LoadDataTable("Armor");
+            LoadDataTable("Asteroid");
             LoadDataTable("Entity");
             LoadDataTable("Music");
             LoadDataTable("Scene");

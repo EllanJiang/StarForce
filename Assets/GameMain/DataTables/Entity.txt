@@ -8,3 +8,6 @@
 	40000	默认装甲	DefaultArmor
 	50000	玩家子弹	PlayerBolt
 	50001	敌人子弹	EnemyBolt
+	60000	小行星	Asteroid01
+	60001	小行星	Asteroid02
+	60002	小行星	Asteroid03

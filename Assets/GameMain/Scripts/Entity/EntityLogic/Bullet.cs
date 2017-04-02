@@ -30,8 +30,6 @@ namespace AirForce
             }
 
             m_ElapseSeconds = 0f;
-            CachedTransform.position = m_BulletData.StartPosition;
-
             GameEntry.Sound.PlaySound(10000);
         }
 

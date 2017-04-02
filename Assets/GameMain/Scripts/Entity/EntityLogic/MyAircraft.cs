@@ -1,5 +1,4 @@
 ﻿using GameFramework;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace AirForce

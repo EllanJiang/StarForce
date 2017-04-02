@@ -10,6 +10,15 @@ namespace AirForce
         [SerializeField]
         private float m_TileSize = 30f;
 
+        [SerializeField]
+        private BoxCollider m_VisibleBoundary = null;
+
+        [SerializeField]
+        private BoxCollider m_PlayerMoveBoundary = null;
+
+        [SerializeField]
+        private BoxCollider m_EnemySpawnBoundary = null;
+
         private Transform m_CachedTransform = null;
         private Vector3 m_StartPosition = Vector3.zero;
 
@@ -23,6 +32,30 @@ namespace AirForce
         {
             float newPosition = Mathf.Repeat(Time.time * m_ScrollSpeed, m_TileSize);
             m_CachedTransform.position = m_StartPosition + Vector3.forward * newPosition;
+        }
+
+        public BoxCollider VisibleBoundary
+        {
+            get
+            {
+                return m_VisibleBoundary;
+            }
+        }
+
+        public BoxCollider PlayerMoveBoundary
+        {
+            get
+            {
+                return m_PlayerMoveBoundary;
+            }
+        }
+
+        public BoxCollider EnemySpawnBoundary
+        {
+            get
+            {
+                return m_EnemySpawnBoundary;
+            }
         }
     }
 }

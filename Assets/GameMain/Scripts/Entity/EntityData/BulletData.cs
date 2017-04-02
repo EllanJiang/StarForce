@@ -7,9 +7,6 @@ namespace AirForce
     public class BulletData : AccessoryObjectData
     {
         [SerializeField]
-        private Vector3 m_StartPosition = Vector3.zero;
-
-        [SerializeField]
         private int m_Attack = 0;
 
         [SerializeField]
@@ -18,21 +15,12 @@ namespace AirForce
         [SerializeField]
         private float m_LifeTime = 0f;
 
-        public BulletData(int entityId, int typeId, int ownerId, Vector3 startPosition, int attack)
+        public BulletData(int entityId, int typeId, int ownerId, int attack)
             : base(entityId, typeId, ownerId)
         {
-            m_StartPosition = startPosition;
             m_Attack = attack;
             m_Speed = 20f;
             m_LifeTime = 3f;
-        }
-
-        public Vector3 StartPosition
-        {
-            get
-            {
-                return m_StartPosition;
-            }
         }
 
         public int Attack

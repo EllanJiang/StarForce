@@ -1,5 +1,4 @@
-﻿using GameFramework;
-using GameFramework.Event;
+﻿using System.Collections.Generic;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
@@ -7,6 +6,9 @@ namespace AirForce
 {
     public class ProcedureMain : ProcedureBase
     {
+        private readonly Dictionary<GameMode, GameBase> m_Games = new Dictionary<GameMode, GameBase>();
+        private GameBase m_CurrentGame = null;
+
         public override bool UseNativeDialog
         {
             get
@@ -15,24 +17,36 @@ namespace AirForce
             }
         }
 
+        protected override void OnInit(ProcedureOwner procedureOwner)
+        {
+            base.OnInit(procedureOwner);
+
+            m_Games.Add(GameMode.Survival, new SurvivalGame());
+        }
+
+        protected override void OnDestroy(ProcedureOwner procedureOwner)
+        {
+            base.OnDestroy(procedureOwner);
+
+            m_Games.Clear();
+        }
+
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
             base.OnEnter(procedureOwner);
 
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.ShowEntitySuccess, OnShowEntitySuccess);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.ShowEntityFailure, OnShowEntityFailure);
-
-            GameEntry.Entity.ShowMyAircraft(new MyAircraftData(GameEntry.Entity.GenerateSerialId(), 10000)
-            {
-                Name = "My Aircraft",
-                Camp = CampType.Player,
-            });
+            GameMode gameMode = (GameMode)procedureOwner.GetData<VarInt>(Constant.ProcedureData.GameMode).Value;
+            m_CurrentGame = m_Games[gameMode];
+            m_CurrentGame.Initialize();
         }
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.ShowEntitySuccess, OnShowEntitySuccess);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.ShowEntityFailure, OnShowEntityFailure);
+            if (m_CurrentGame != null)
+            {
+                m_CurrentGame.Shutdown();
+                m_CurrentGame = null;
+            }
 
             base.OnLeave(procedureOwner, isShutdown);
         }
@@ -40,16 +54,11 @@ namespace AirForce
         protected override void OnUpdate(ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
-        }
 
-        private void OnShowEntitySuccess(object sender, GameEventArgs e)
-        {
-        }
-
-        private void OnShowEntityFailure(object sender, GameEventArgs e)
-        {
-            ShowEntityFailureEventArgs ne = (ShowEntityFailureEventArgs)e;
-            Log.Warning("Show entity failure with error message '{0}'.", ne.ErrorMessage);
+            if (m_CurrentGame != null)
+            {
+                m_CurrentGame.Update(elapseSeconds, realElapseSeconds);
+            }
         }
     }
 }

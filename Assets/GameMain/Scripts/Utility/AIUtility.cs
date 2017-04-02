@@ -9,8 +9,8 @@ namespace AirForce
     /// </summary>
     public static class AIUtility
     {
-        private static IDictionary<CampPair, RelationType> s_CampPairToRelation = new Dictionary<CampPair, RelationType>();
-        private static IDictionary<KeyValuePair<CampType, RelationType>, CampType[]> s_CampAndRelationToCamps = new Dictionary<KeyValuePair<CampType, RelationType>, CampType[]>();
+        private static Dictionary<CampPair, RelationType> s_CampPairToRelation = new Dictionary<CampPair, RelationType>();
+        private static Dictionary<KeyValuePair<CampType, RelationType>, CampType[]> s_CampAndRelationToCamps = new Dictionary<KeyValuePair<CampType, RelationType>, CampType[]>();
 
         static AIUtility()
         {

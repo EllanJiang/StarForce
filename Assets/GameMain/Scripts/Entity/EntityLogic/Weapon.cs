@@ -51,7 +51,10 @@ namespace AirForce
             }
 
             m_NextAttackTime = Time.time + m_WeaponData.AttackInterval;
-            GameEntry.Entity.ShowBullet(new BulletData(GameEntry.Entity.GenerateSerialId(), m_WeaponData.BulletId, Id, CachedTransform.position, m_WeaponData.Attack));
+            GameEntry.Entity.ShowBullet(new BulletData(GameEntry.Entity.GenerateSerialId(), m_WeaponData.BulletId, Id, m_WeaponData.Attack)
+            {
+                Position = CachedTransform.position,
+            });
         }
     }
 }

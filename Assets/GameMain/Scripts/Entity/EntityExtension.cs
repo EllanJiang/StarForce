@@ -64,6 +64,11 @@ namespace AirForce
             entityCompoennt.ShowEntity(typeof(Bullet), "Bullet", data);
         }
 
+        public static void ShowAsteroid(this EntityComponent entityCompoennt, AsteroidData data)
+        {
+            entityCompoennt.ShowEntity(typeof(Asteroid), "Asteroid", data);
+        }
+
         private static void ShowEntity(this EntityComponent entityComponent, Type logicType, string entityGroup, EntityData data)
         {
             if (data == null)
