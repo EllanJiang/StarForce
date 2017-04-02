@@ -12,17 +12,29 @@ namespace AirForce
             get;
         }
 
+        protected ScrollableBackground SceneBackground
+        {
+            get;
+            private set;
+        }
+
         public virtual void Initialize()
         {
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.ShowEntitySuccess, OnShowEntitySuccess);
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.ShowEntityFailure, OnShowEntityFailure);
+
+            SceneBackground = Object.FindObjectOfType<ScrollableBackground>();
+            if (SceneBackground == null)
+            {
+                Log.Warning("Can not find scene background.");
+                return;
+            }
 
             GameEntry.Entity.ShowMyAircraft(new MyAircraftData(GameEntry.Entity.GenerateSerialId(), 10000)
             {
                 Name = "My Aircraft",
                 Camp = CampType.Player,
                 Position = Vector3.zero,
-                Rotation = Quaternion.identity,
             });
         }
 

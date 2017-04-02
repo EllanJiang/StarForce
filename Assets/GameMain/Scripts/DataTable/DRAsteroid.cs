@@ -35,6 +35,15 @@ namespace AirForce
             private set;
         }
 
+        /// <summary>
+        /// 角速度。
+        /// </summary>
+        public float AngularSpeed
+        {
+            get;
+            private set;
+        }
+
         public void ParseDataRow(string dataRowText)
         {
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
@@ -44,6 +53,7 @@ namespace AirForce
             index++;
             MaxHP = int.Parse(text[index++]);
             Speed = float.Parse(text[index++]);
+            AngularSpeed = float.Parse(text[index++]);
         }
 
         private void AvoidJIT()

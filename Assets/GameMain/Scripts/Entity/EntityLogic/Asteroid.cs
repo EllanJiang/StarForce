@@ -27,5 +27,13 @@ namespace AirForce
                 return;
             }
         }
+
+        protected internal override void OnUpdate(float elapseSeconds, float realElapseSeconds)
+        {
+            base.OnUpdate(elapseSeconds, realElapseSeconds);
+
+            CachedTransform.Translate(Vector3.back * m_AsteroidData.Speed * elapseSeconds, Space.World);
+            CachedTransform.Rotate(Vector3.left * m_AsteroidData.AngularSpeed * elapseSeconds, Space.Self);
+        }
     }
 }

@@ -13,6 +13,9 @@ namespace AirForce
         [SerializeField]
         private float m_Speed = 0f;
 
+        [SerializeField]
+        private float m_AngularSpeed = 0f;
+
         public AsteroidData(int entityId, int typeId)
             : base(entityId, typeId)
         {
@@ -25,6 +28,7 @@ namespace AirForce
 
             m_MaxHP = drAsteroid.MaxHP;
             m_Speed = drAsteroid.Speed;
+            m_AngularSpeed = drAsteroid.AngularSpeed;
         }
 
         public override int MaxHP
@@ -40,6 +44,14 @@ namespace AirForce
             get
             {
                 return m_Speed;
+            }
+        }
+
+        public float AngularSpeed
+        {
+            get
+            {
+                return m_AngularSpeed;
             }
         }
     }

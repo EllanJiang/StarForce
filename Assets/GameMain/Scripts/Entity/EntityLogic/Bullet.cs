@@ -44,7 +44,7 @@ namespace AirForce
                 return;
             }
 
-            CachedTransform.Translate(Vector3.forward * m_BulletData.Speed * elapseSeconds);
+            CachedTransform.Translate(Vector3.forward * m_BulletData.Speed * elapseSeconds, Space.World);
         }
     }
 }

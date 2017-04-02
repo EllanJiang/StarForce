@@ -8,9 +8,7 @@ namespace AirForce
         [SerializeField]
         private MyAircraftData m_MyAircraftData = null;
 
-        [SerializeField]
-        private Rect m_Boundary = new Rect(-6f, -4f, 12f, 12f);
-
+        private Rect m_PlayerMoveBoundary = default(Rect);
         private Vector3 m_TargetPosition = Vector3.zero;
 
         protected internal override void OnInit(object userData)
@@ -28,6 +26,16 @@ namespace AirForce
                 Log.Error("My aircraft data is invalid.");
                 return;
             }
+
+            ScrollableBackground sceneBackground = FindObjectOfType<ScrollableBackground>();
+            if (sceneBackground == null)
+            {
+                Log.Warning("Can not find scene background.");
+                return;
+            }
+
+            m_PlayerMoveBoundary = new Rect(sceneBackground.PlayerMoveBoundary.bounds.min.x, sceneBackground.PlayerMoveBoundary.bounds.min.z,
+                sceneBackground.PlayerMoveBoundary.bounds.size.x, sceneBackground.PlayerMoveBoundary.bounds.size.z);
         }
 
         protected internal override void OnUpdate(float elapseSeconds, float realElapseSeconds)
@@ -54,9 +62,9 @@ namespace AirForce
             Vector3 speed = Vector3.ClampMagnitude(direction.normalized * m_MyAircraftData.Speed * elapseSeconds, direction.magnitude);
             CachedTransform.localPosition = new Vector3
             (
-                Mathf.Clamp(CachedTransform.localPosition.x + speed.x, m_Boundary.xMin, m_Boundary.xMax),
+                Mathf.Clamp(CachedTransform.localPosition.x + speed.x, m_PlayerMoveBoundary.xMin, m_PlayerMoveBoundary.xMax),
                 0f,
-                Mathf.Clamp(CachedTransform.localPosition.z + speed.z, m_Boundary.yMin, m_Boundary.yMax)
+                Mathf.Clamp(CachedTransform.localPosition.z + speed.z, m_PlayerMoveBoundary.yMin, m_PlayerMoveBoundary.yMax)
             );
         }
     }
