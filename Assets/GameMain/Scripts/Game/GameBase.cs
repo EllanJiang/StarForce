@@ -30,6 +30,7 @@ namespace AirForce
                 return;
             }
 
+            SceneBackground.VisibleBoundary.gameObject.GetOrAddComponent<HideByBoundary>();
             GameEntry.Entity.ShowMyAircraft(new MyAircraftData(GameEntry.Entity.GenerateSerialId(), 10000)
             {
                 Name = "My Aircraft",

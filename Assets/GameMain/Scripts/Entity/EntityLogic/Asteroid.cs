@@ -11,6 +11,8 @@ namespace AirForce
         [SerializeField]
         private AsteroidData m_AsteroidData = null;
 
+        private Vector3 m_RotateSphere = Vector3.zero;
+
         protected internal override void OnInit(object userData)
         {
             base.OnInit(userData);
@@ -26,6 +28,8 @@ namespace AirForce
                 Log.Error("Asteroid data is invalid.");
                 return;
             }
+
+            m_RotateSphere = Random.insideUnitSphere;
         }
 
         protected internal override void OnUpdate(float elapseSeconds, float realElapseSeconds)
@@ -33,7 +37,7 @@ namespace AirForce
             base.OnUpdate(elapseSeconds, realElapseSeconds);
 
             CachedTransform.Translate(Vector3.back * m_AsteroidData.Speed * elapseSeconds, Space.World);
-            CachedTransform.Rotate(Vector3.left * m_AsteroidData.AngularSpeed * elapseSeconds, Space.Self);
+            CachedTransform.Rotate(m_RotateSphere * m_AsteroidData.AngularSpeed * elapseSeconds, Space.Self);
         }
     }
 }
