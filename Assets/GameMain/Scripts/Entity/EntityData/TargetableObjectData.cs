@@ -7,7 +7,7 @@ namespace AirForce
     public abstract class TargetableObjectData : EntityData
     {
         [SerializeField]
-        private CampType m_Camp = CampType.Player;
+        private CampType m_Camp = CampType.Neutral;
 
         [SerializeField]
         private int m_HP = 0;

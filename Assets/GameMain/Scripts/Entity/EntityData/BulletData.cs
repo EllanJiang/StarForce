@@ -4,7 +4,7 @@ using UnityEngine;
 namespace AirForce
 {
     [Serializable]
-    public class BulletData : AccessoryObjectData
+    public class BulletData : TargetableObjectData
     {
         [SerializeField]
         private int m_Attack = 0;
@@ -12,15 +12,30 @@ namespace AirForce
         [SerializeField]
         private float m_Speed = 0f;
 
-        [SerializeField]
-        private float m_LifeTime = 0f;
+        private int m_AttackerId;
 
-        public BulletData(int entityId, int typeId, int ownerId, int attack)
-            : base(entityId, typeId, ownerId)
+        public BulletData(int entityId, int typeId, int attackerId, int attack)
+            : base(entityId, typeId)
         {
             m_Attack = attack;
             m_Speed = 20f;
-            m_LifeTime = 3f;
+            m_AttackerId = attackerId;
+        }
+
+        public int AttackerId
+        {
+            get
+            {
+                return m_AttackerId;
+            }
+        }
+
+        public override int MaxHP
+        {
+            get
+            {
+                return 0;
+            }
         }
 
         public int Attack
@@ -36,14 +51,6 @@ namespace AirForce
             get
             {
                 return m_Speed;
-            }
-        }
-
-        public float LifeTime
-        {
-            get
-            {
-                return m_LifeTime;
             }
         }
     }

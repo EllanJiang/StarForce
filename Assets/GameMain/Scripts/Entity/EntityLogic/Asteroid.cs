@@ -39,5 +39,15 @@ namespace AirForce
             CachedTransform.Translate(Vector3.back * m_AsteroidData.Speed * elapseSeconds, Space.World);
             CachedTransform.Rotate(m_RotateSphere * m_AsteroidData.AngularSpeed * elapseSeconds, Space.Self);
         }
+
+        public override ImpactData GetImpactData()
+        {
+            return new ImpactData(0, (int)(m_AsteroidData.Speed * 100));
+        }
+
+        public override void ApplyImpact(ImpactData impactData)
+        {
+            ApplyDamage(AIUtility.GetDamage(impactData.HP, impactData.Attack, 0));
+        }
     }
 }

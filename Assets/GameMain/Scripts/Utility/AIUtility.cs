@@ -103,6 +103,33 @@ namespace AirForce
             return (toTransform.position - fromTransform.position).magnitude;
         }
 
+        public static int GetDamage(int hp, int attack, int defense)
+        {
+            if (hp < 0)
+            {
+                hp = 0;
+            }
+
+            if (attack < 0)
+            {
+                attack = 0;
+            }
+
+            if (defense < 0)
+            {
+                defense = 0;
+            }
+
+            float internalAttack = attack + hp * 0.5f;
+            float internalValue = internalAttack + defense;
+            if (internalValue <= 0f)
+            {
+                return 0;
+            }
+
+            return (int)(internalAttack * internalAttack / internalValue);
+        }
+
         private struct CampPair
         {
             public CampPair(CampType first, CampType second)

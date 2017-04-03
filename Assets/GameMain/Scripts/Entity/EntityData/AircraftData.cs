@@ -20,6 +20,9 @@ namespace AirForce
         [SerializeField]
         private int m_MaxHP = 0;
 
+        [SerializeField]
+        private int m_Defense = 0;
+
         public AircraftData(int entityId, int typeId)
             : base(entityId, typeId)
         {
@@ -53,6 +56,17 @@ namespace AirForce
             get
             {
                 return m_MaxHP;
+            }
+        }
+
+        /// <summary>
+        /// 防御。
+        /// </summary>
+        public int Defense
+        {
+            get
+            {
+                return m_Defense;
             }
         }
 
@@ -120,7 +134,7 @@ namespace AirForce
             }
 
             m_ArmorDatas.Add(armorData);
-            RefreshMaxHP();
+            RefreshData();
         }
 
         public void DetachArmorData(ArmorData armorData)
@@ -131,15 +145,17 @@ namespace AirForce
             }
 
             m_ArmorDatas.Remove(armorData);
-            RefreshMaxHP();
+            RefreshData();
         }
 
-        private void RefreshMaxHP()
+        private void RefreshData()
         {
             m_MaxHP = 0;
+            m_Defense = 0;
             for (int i = 0; i < m_ArmorDatas.Count; i++)
             {
                 m_MaxHP += m_ArmorDatas[i].MaxHP;
+                m_Defense += m_ArmorDatas[i].Defense;
             }
 
             if (HP > m_MaxHP)

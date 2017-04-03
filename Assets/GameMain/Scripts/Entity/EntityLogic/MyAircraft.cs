@@ -1,4 +1,5 @@
 ﻿using GameFramework;
+using System;
 using UnityEngine;
 
 namespace AirForce
@@ -66,6 +67,31 @@ namespace AirForce
                 0f,
                 Mathf.Clamp(CachedTransform.localPosition.z + speed.z, m_PlayerMoveBoundary.yMin, m_PlayerMoveBoundary.yMax)
             );
+        }
+
+        protected override void OnImpact(Entity entity)
+        {
+            base.OnImpact(entity);
+
+            Asteroid asteroid = entity as Asteroid;
+            if (asteroid != null)
+            {
+                ImpactData asteroidImpactData = asteroid.GetImpactData();
+                ImpactData aircraftImpactData = GetImpactData();
+                asteroid.ApplyImpact(aircraftImpactData);
+                ApplyImpact(asteroidImpactData);
+                return;
+            }
+        }
+
+        public override ImpactData GetImpactData()
+        {
+            return new ImpactData(m_MyAircraftData.HP, 0);
+        }
+
+        public override void ApplyImpact(ImpactData impactData)
+        {
+            ApplyDamage(AIUtility.GetDamage(impactData.HP, impactData.Attack, m_MyAircraftData.Defense));
         }
     }
 }
