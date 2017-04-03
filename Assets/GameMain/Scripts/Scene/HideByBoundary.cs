@@ -9,15 +9,14 @@ namespace AirForce
         {
             GameObject gameObject = other.gameObject;
             Entity entity = gameObject.GetComponent<Entity>();
-            if (entity != null)
-            {
-                GameEntry.Entity.HideEntity(entity.Entity);
-            }
-            else
+            if (entity == null)
             {
                 Log.Warning("Unknown GameObject '{0}', you must use entity only.", gameObject.name);
                 Destroy(gameObject);
+                return;
             }
+
+            GameEntry.Entity.HideEntity(entity.Entity);
         }
     }
 }

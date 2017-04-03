@@ -6,7 +6,7 @@ namespace AirForce
     /// <summary>
     /// 小行星类。
     /// </summary>
-    public class Asteroid : Entity
+    public class Asteroid : TargetableObject
     {
         [SerializeField]
         private AsteroidData m_AsteroidData = null;
