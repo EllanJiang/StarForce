@@ -31,8 +31,6 @@ namespace AirForce
                 Log.Error("Bullet data is invalid.");
                 return;
             }
-
-            GameEntry.Sound.PlaySound(10000);
         }
 
         protected internal override void OnUpdate(float elapseSeconds, float realElapseSeconds)

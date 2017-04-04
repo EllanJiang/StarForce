@@ -16,7 +16,7 @@ namespace AirForce
                 return;
             }
 
-            GameEntry.Entity.HideEntity(entity.Entity);
+            GameEntry.Entity.HideEntity(entity);
         }
     }
 }

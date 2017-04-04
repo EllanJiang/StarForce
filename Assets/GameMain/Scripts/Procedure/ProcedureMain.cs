@@ -55,7 +55,7 @@ namespace AirForce
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-            if (m_CurrentGame != null)
+            if (m_CurrentGame != null && !m_CurrentGame.GameOver)
             {
                 m_CurrentGame.Update(elapseSeconds, realElapseSeconds);
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameFramework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +28,7 @@ namespace AirForce
             s_CampPairToRelation.Add(new CampPair(CampType.Enemy, CampType.Enemy2), RelationType.Hostile);
             s_CampPairToRelation.Add(new CampPair(CampType.Enemy, CampType.Neutral2), RelationType.Neutral);
 
-            s_CampPairToRelation.Add(new CampPair(CampType.Neutral, CampType.Neutral), RelationType.Friendly);
+            s_CampPairToRelation.Add(new CampPair(CampType.Neutral, CampType.Neutral), RelationType.Neutral);
             s_CampPairToRelation.Add(new CampPair(CampType.Neutral, CampType.Player2), RelationType.Neutral);
             s_CampPairToRelation.Add(new CampPair(CampType.Neutral, CampType.Enemy2), RelationType.Neutral);
             s_CampPairToRelation.Add(new CampPair(CampType.Neutral, CampType.Neutral2), RelationType.Hostile);
@@ -39,7 +40,7 @@ namespace AirForce
             s_CampPairToRelation.Add(new CampPair(CampType.Enemy2, CampType.Enemy2), RelationType.Friendly);
             s_CampPairToRelation.Add(new CampPair(CampType.Enemy2, CampType.Neutral2), RelationType.Neutral);
 
-            s_CampPairToRelation.Add(new CampPair(CampType.Neutral2, CampType.Neutral2), RelationType.Friendly);
+            s_CampPairToRelation.Add(new CampPair(CampType.Neutral2, CampType.Neutral2), RelationType.Neutral);
         }
 
         /// <summary>
@@ -63,6 +64,7 @@ namespace AirForce
                 return relationType;
             }
 
+            Log.Warning("Unknown relation between '{0}' and '{1}'.", first.ToString(), second.ToString());
             return RelationType.Unknown;
         }
 
@@ -132,8 +134,8 @@ namespace AirForce
                 int delta = Mathf.Min(entityImpactData.HP - entityDamageHP, targetImpactData.HP - targetDamageHP);
                 if (delta > 0)
                 {
-                    entityDamageHP -= delta;
-                    targetDamageHP -= delta;
+                    entityDamageHP += delta;
+                    targetDamageHP += delta;
                 }
 
                 entity.ApplyDamage(target, entityDamageHP);
@@ -153,7 +155,8 @@ namespace AirForce
 
                 int entityDamageHP = CalcDamageHP(bulletImpactData.Attack, entityImpactData.Defense);
 
-                entity.ApplyDamage(target, entityDamageHP);
+                entity.ApplyDamage(bullet, entityDamageHP);
+                GameEntry.Entity.HideEntity(bullet);
                 return;
             }
         }

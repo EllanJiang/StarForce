@@ -1,5 +1,5 @@
-#	武器表				
-#	Id		Attack	AttackInterval	BulletId
-#	int		int	float	int
-#	武器编号	策划备注	攻击力	攻击间隔	子弹编号
-	30000	玩家武器	100	0.2	50000
+#	武器表						
+#	Id		Attack	AttackInterval	BulletId	BulletSpeed	BulletSoundId
+#	int		int	float	int	float	int
+#	武器编号	策划备注	攻击力	攻击间隔	子弹编号	子弹速度	子弹声音编号
+	30000	玩家武器	100	0.2	50000	20	10000

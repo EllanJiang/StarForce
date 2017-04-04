@@ -42,7 +42,7 @@ namespace AirForce
 
         protected virtual void OnDead(Entity attacker)
         {
-            GameEntry.Entity.HideEntity(Entity);
+            GameEntry.Entity.HideEntity(this);
         }
 
         private void OnTriggerEnter(Collider other)

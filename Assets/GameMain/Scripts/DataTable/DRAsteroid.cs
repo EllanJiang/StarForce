@@ -53,6 +53,24 @@ namespace AirForce
             private set;
         }
 
+        /// <summary>
+        /// 死亡特效编号。
+        /// </summary>
+        public int DeadEffectId
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 死亡声音编号。
+        /// </summary>
+        public int DeadSoundId
+        {
+            get;
+            private set;
+        }
+
         public void ParseDataRow(string dataRowText)
         {
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
@@ -64,6 +82,8 @@ namespace AirForce
             Attack = int.Parse(text[index++]);
             Speed = float.Parse(text[index++]);
             AngularSpeed = float.Parse(text[index++]);
+            DeadEffectId = int.Parse(text[index++]);
+            DeadSoundId = int.Parse(text[index++]);
         }
 
         private void AvoidJIT()

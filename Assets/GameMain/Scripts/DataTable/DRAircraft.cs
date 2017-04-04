@@ -32,6 +32,24 @@ namespace AirForce
             private set;
         }
 
+        /// <summary>
+        /// 死亡特效编号。
+        /// </summary>
+        public int DeadEffectId
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
+        /// 死亡声音编号。
+        /// </summary>
+        public int DeadSoundId
+        {
+            get;
+            private set;
+        }
+
         public int GetWeaponIds(int index)
         {
             return index < m_WeaponIds.Length ? m_WeaponIds[index] : 0;
@@ -58,6 +76,8 @@ namespace AirForce
             {
                 m_ArmorIds[i] = int.Parse(text[index++]);
             }
+            DeadEffectId = int.Parse(text[index++]);
+            DeadSoundId = int.Parse(text[index++]);
         }
 
         private void AvoidJIT()

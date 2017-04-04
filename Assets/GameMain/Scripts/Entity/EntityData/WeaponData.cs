@@ -16,6 +16,12 @@ namespace AirForce
         [SerializeField]
         private int m_BulletId = 0;
 
+        [SerializeField]
+        private float m_BulletSpeed = 0f;
+
+        [SerializeField]
+        private int m_BulletSoundId = 0;
+
         public WeaponData(int entityId, int typeId, int ownerId, CampType ownerCamp)
             : base(entityId, typeId, ownerId, ownerCamp)
         {
@@ -29,6 +35,8 @@ namespace AirForce
             m_Attack = drWeapon.Attack;
             m_AttackInterval = drWeapon.AttackInterval;
             m_BulletId = drWeapon.BulletId;
+            m_BulletSpeed = drWeapon.BulletSpeed;
+            m_BulletSoundId = drWeapon.BulletSoundId;
         }
 
         /// <summary>
@@ -61,6 +69,28 @@ namespace AirForce
             get
             {
                 return m_BulletId;
+            }
+        }
+
+        /// <summary>
+        /// 子弹速度。
+        /// </summary>
+        public float BulletSpeed
+        {
+            get
+            {
+                return m_BulletSpeed;
+            }
+        }
+
+        /// <summary>
+        /// 子弹声音编号。
+        /// </summary>
+        public int BulletSoundId
+        {
+            get
+            {
+                return m_BulletSoundId;
             }
         }
     }

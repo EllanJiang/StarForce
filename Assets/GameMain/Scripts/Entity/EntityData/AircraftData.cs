@@ -23,8 +23,14 @@ namespace AirForce
         [SerializeField]
         private int m_Defense = 0;
 
-        public AircraftData(int entityId, int typeId)
-            : base(entityId, typeId)
+        [SerializeField]
+        private int m_DeadEffectId = 0;
+
+        [SerializeField]
+        private int m_DeadSoundId = 0;
+
+        public AircraftData(int entityId, int typeId, CampType camp)
+            : base(entityId, typeId, camp)
         {
             IDataTable<DRAircraft> dtAircraft = GameEntry.DataTable.GetDataTable<DRAircraft>();
             DRAircraft drAircraft = dtAircraft.GetDataRow(TypeId);
@@ -44,6 +50,9 @@ namespace AirForce
             {
                 AttachArmorData(new ArmorData(GameEntry.Entity.GenerateSerialId(), armorId, Id, Camp));
             }
+
+            m_DeadEffectId = drAircraft.DeadEffectId;
+            m_DeadSoundId = drAircraft.DeadSoundId;
 
             HP = m_MaxHP;
         }
@@ -78,6 +87,22 @@ namespace AirForce
             get
             {
                 return m_ThrusterData.Speed;
+            }
+        }
+
+        public int DeadEffectId
+        {
+            get
+            {
+                return m_DeadEffectId;
+            }
+        }
+
+        public int DeadSoundId
+        {
+            get
+            {
+                return m_DeadSoundId;
             }
         }
 

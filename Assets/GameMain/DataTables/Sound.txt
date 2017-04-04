@@ -3,3 +3,7 @@
 #	int		string	int	bool	float	float	float
 #	声音编号	策划备注	资源名称	优先级（默认0，128最高，-128最低）	是否循环	音量（0~1）	声音空间混合量（0为2D，1为3D，中间值混合效果）	声音最大距离
 	10000	玩家子弹	weapon_player	0	FALSE	1	0	100
+	10001	敌人子弹	weapon_enemy	0	FALSE	1	0	100
+	20000	玩家爆炸	explosion_player	0	FALSE	1	0	100
+	20001	敌人爆炸	explosion_enemy	0	FALSE	1	0	100
+	20002	小行星爆炸	explosion_asteroid	0	FALSE	1	0	100

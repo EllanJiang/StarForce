@@ -12,10 +12,11 @@ namespace AirForce
         [SerializeField]
         private int m_HP = 0;
 
-        public TargetableObjectData(int entityId, int typeId)
+        public TargetableObjectData(int entityId, int typeId, CampType camp)
             : base(entityId, typeId)
         {
-
+            m_Camp = camp;
+            m_HP = 0;
         }
 
         /// <summary>
@@ -26,10 +27,6 @@ namespace AirForce
             get
             {
                 return m_Camp;
-            }
-            set
-            {
-                m_Camp = value;
             }
         }
 

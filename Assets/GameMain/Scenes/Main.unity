@@ -3847,7 +3847,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14, y: 1, z: 2}
+  m_Size: {x: 13, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 12}
 --- !u!4 &1259791242
 Transform:

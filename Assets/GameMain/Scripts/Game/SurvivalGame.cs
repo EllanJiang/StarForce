@@ -20,7 +20,7 @@ namespace AirForce
             base.Update(elapseSeconds, realElapseSeconds);
 
             m_ElapseSeconds += elapseSeconds;
-            if (m_ElapseSeconds >= 2f)
+            if (m_ElapseSeconds >= 1f)
             {
                 m_ElapseSeconds = 0f;
                 IDataTable<DRAsteroid> dtAsteroid = GameEntry.DataTable.GetDataTable<DRAsteroid>();
@@ -28,7 +28,6 @@ namespace AirForce
                 float randomPositionZ = SceneBackground.EnemySpawnBoundary.bounds.min.z + SceneBackground.EnemySpawnBoundary.bounds.size.z * (float)Utility.Random.GetRandomDouble();
                 GameEntry.Entity.ShowAsteroid(new AsteroidData(GameEntry.Entity.GenerateSerialId(), 60000 + Utility.Random.GetRandom(dtAsteroid.Count))
                 {
-                    Camp = CampType.Neutral,
                     Position = new Vector3(randomPositionX, 0f, randomPositionZ),
                 });
             }

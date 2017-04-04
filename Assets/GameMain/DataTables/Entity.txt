@@ -3,7 +3,9 @@
 #	int		string
 #	实体编号	策划备注	资源名称
 	10000	玩家战机	PlayerShip
+	10001	敌人战机	EnemyShip
 	20000	玩家推进器	PlayerEngine
+	20001	敌人推进器	EnemyEngine
 	30000	默认武器	DefaultWeapon
 	40000	默认装甲	DefaultArmor
 	50000	玩家子弹	PlayerBolt
@@ -11,3 +13,6 @@
 	60000	小行星	Asteroid01
 	60001	小行星	Asteroid02
 	60002	小行星	Asteroid03
+	70000	玩家死亡特效	PlayerExplosion
+	70001	敌人死亡特效	EnemyExplosion
+	70002	小行星死亡特效	AsteroidExplosion

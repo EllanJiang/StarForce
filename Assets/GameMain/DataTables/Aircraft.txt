@@ -1,5 +1,6 @@
-#	战机表								
-#	Id		ThrusterId	WeaponId0	WeaponId1	WeaponId2	ArmorId0	ArmorId1	ArmorId2
-#	int		int	int	int	int	int	int	int
-#	战机编号	策划备注	推进器编号	武器编号0	武器编号1	武器编号2	装甲编号0	装甲编号1	装甲编号2
-	10000	玩家战机	20000	30000	0	0	40000	0	0
+#	战机表										
+#	Id		ThrusterId	WeaponId0	WeaponId1	WeaponId2	ArmorId0	ArmorId1	ArmorId2	DeadEffectId	DeadSoundId
+#	int		int	int	int	int	int	int	int	int	int
+#	战机编号	策划备注	推进器编号	武器编号0	武器编号1	武器编号2	装甲编号0	装甲编号1	装甲编号2	死亡特效编号	死亡声音编号
+	10000	玩家战机	20000	30000	0	0	40000	0	0	70000	20000
+	10002	敌人战机	20001	30001	0	0	40001	0	0	70001	20001

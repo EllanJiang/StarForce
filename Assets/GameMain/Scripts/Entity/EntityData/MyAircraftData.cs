@@ -10,7 +10,7 @@ namespace AirForce
         private string m_Name = null;
 
         public MyAircraftData(int entityId, int typeId)
-            : base(entityId, typeId)
+            : base(entityId, typeId, CampType.Player)
         {
 
         }

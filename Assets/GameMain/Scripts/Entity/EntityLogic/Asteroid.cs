@@ -40,6 +40,17 @@ namespace AirForce
             CachedTransform.Rotate(m_RotateSphere * m_AsteroidData.AngularSpeed * elapseSeconds, Space.Self);
         }
 
+        protected override void OnDead(Entity attacker)
+        {
+            base.OnDead(attacker);
+
+            GameEntry.Entity.ShowEffect(new EffectData(GameEntry.Entity.GenerateSerialId(), m_AsteroidData.DeadEffectId)
+            {
+                Position = CachedTransform.localPosition,
+            });
+            GameEntry.Sound.PlaySound(m_AsteroidData.DeadSoundId);
+        }
+
         public override ImpactData GetImpactData()
         {
             return new ImpactData(m_AsteroidData.Camp, m_AsteroidData.HP, m_AsteroidData.Attack, 0);

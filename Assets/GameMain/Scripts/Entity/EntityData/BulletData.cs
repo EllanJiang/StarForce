@@ -18,13 +18,13 @@ namespace AirForce
         [SerializeField]
         private float m_Speed = 0f;
 
-        public BulletData(int entityId, int typeId, int ownerId, CampType ownerCamp, int attack)
+        public BulletData(int entityId, int typeId, int ownerId, CampType ownerCamp, int attack, float speed)
             : base(entityId, typeId)
         {
             m_OwnerId = ownerId;
             m_OwnerCamp = ownerCamp;
             m_Attack = attack;
-            m_Speed = 20f;
+            m_Speed = speed;
         }
 
         public int OwnerId
