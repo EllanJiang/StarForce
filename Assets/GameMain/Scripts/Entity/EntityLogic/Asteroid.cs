@@ -42,12 +42,7 @@ namespace AirForce
 
         public override ImpactData GetImpactData()
         {
-            return new ImpactData(0, (int)(m_AsteroidData.Speed * 100));
-        }
-
-        public override void ApplyImpact(ImpactData impactData)
-        {
-            ApplyDamage(AIUtility.GetDamage(impactData.HP, impactData.Attack, 0));
+            return new ImpactData(m_AsteroidData.Camp, m_AsteroidData.HP, m_AsteroidData.Attack, 0);
         }
     }
 }

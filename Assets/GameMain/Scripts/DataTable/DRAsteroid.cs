@@ -27,6 +27,15 @@ namespace AirForce
         }
 
         /// <summary>
+        /// 冲击力。
+        /// </summary>
+        public int Attack
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
         /// 速度。
         /// </summary>
         public float Speed
@@ -52,6 +61,7 @@ namespace AirForce
             Id = int.Parse(text[index++]);
             index++;
             MaxHP = int.Parse(text[index++]);
+            Attack = int.Parse(text[index++]);
             Speed = float.Parse(text[index++]);
             AngularSpeed = float.Parse(text[index++]);
         }

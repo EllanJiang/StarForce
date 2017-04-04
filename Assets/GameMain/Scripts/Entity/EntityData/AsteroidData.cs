@@ -11,6 +11,9 @@ namespace AirForce
         private int m_MaxHP = 0;
 
         [SerializeField]
+        private int m_Attack = 0;
+
+        [SerializeField]
         private float m_Speed = 0f;
 
         [SerializeField]
@@ -27,6 +30,7 @@ namespace AirForce
             }
 
             m_MaxHP = drAsteroid.MaxHP;
+            m_Attack = drAsteroid.Attack;
             m_Speed = drAsteroid.Speed;
             m_AngularSpeed = drAsteroid.AngularSpeed;
         }
@@ -36,6 +40,14 @@ namespace AirForce
             get
             {
                 return m_MaxHP;
+            }
+        }
+
+        public int Attack
+        {
+            get
+            {
+                return m_Attack;
             }
         }
 

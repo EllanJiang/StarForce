@@ -1,7 +1,7 @@
-#	小行星表				
-#	Id		MaxHP	Speed	AngularSpeed
-#	int		int	float	float
-#	小行星编号	策划备注	最大生命	速度	角速度
-	60000	小行星1	100	2	30
-	60001	小行星2	100	4	30
-	60002	小行星3	100	6	30
+#	小行星表					
+#	Id		MaxHP	Attack	Speed	AngularSpeed
+#	int		int	int	float	float
+#	小行星编号	策划备注	最大生命	冲击力	速度	角速度
+	60000	小行星1	100	200	2	30
+	60001	小行星2	100	400	4	30
+	60002	小行星3	100	600	6	30

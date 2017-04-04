@@ -6,10 +6,15 @@ namespace AirForce
     /// <summary>
     /// 子弹类。
     /// </summary>
-    public class Bullet : TargetableObject
+    public class Bullet : Entity
     {
         [SerializeField]
         private BulletData m_BulletData = null;
+
+        public ImpactData GetImpactData()
+        {
+            return new ImpactData(m_BulletData.OwnerCamp, 0, m_BulletData.Attack, 0);
+        }
 
         protected internal override void OnInit(object userData)
         {
@@ -35,16 +40,6 @@ namespace AirForce
             base.OnUpdate(elapseSeconds, realElapseSeconds);
 
             CachedTransform.Translate(Vector3.forward * m_BulletData.Speed * elapseSeconds, Space.World);
-        }
-
-        public override ImpactData GetImpactData()
-        {
-            return new ImpactData(0, 0);
-        }
-
-        public override void ApplyImpact(ImpactData impactData)
-        {
-            ApplyDamage(AIUtility.GetDamage(impactData.HP, impactData.Attack, 0));
         }
     }
 }

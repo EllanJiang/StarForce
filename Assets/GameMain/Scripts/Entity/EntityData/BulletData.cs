@@ -4,37 +4,42 @@ using UnityEngine;
 namespace AirForce
 {
     [Serializable]
-    public class BulletData : TargetableObjectData
+    public class BulletData : EntityData
     {
+        [SerializeField]
+        private int m_OwnerId = 0;
+
+        [SerializeField]
+        private CampType m_OwnerCamp = CampType.Unknown;
+
         [SerializeField]
         private int m_Attack = 0;
 
         [SerializeField]
         private float m_Speed = 0f;
 
-        private int m_AttackerId;
-
-        public BulletData(int entityId, int typeId, int attackerId, int attack)
+        public BulletData(int entityId, int typeId, int ownerId, CampType ownerCamp, int attack)
             : base(entityId, typeId)
         {
+            m_OwnerId = ownerId;
+            m_OwnerCamp = ownerCamp;
             m_Attack = attack;
             m_Speed = 20f;
-            m_AttackerId = attackerId;
         }
 
-        public int AttackerId
+        public int OwnerId
         {
             get
             {
-                return m_AttackerId;
+                return m_OwnerId;
             }
         }
 
-        public override int MaxHP
+        public CampType OwnerCamp
         {
             get
             {
-                return 0;
+                return m_OwnerCamp;
             }
         }
 

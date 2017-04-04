@@ -57,7 +57,13 @@ namespace AirForce
                 second = temp;
             }
 
-            return s_CampPairToRelation[new CampPair(first, second)];
+            RelationType relationType;
+            if (s_CampPairToRelation.TryGetValue(new CampPair(first, second), out relationType))
+            {
+                return relationType;
+            }
+
+            return RelationType.Unknown;
         }
 
         /// <summary>
@@ -103,16 +109,60 @@ namespace AirForce
             return (toTransform.position - fromTransform.position).magnitude;
         }
 
-        public static int GetDamage(int hp, int attack, int defense)
+        public static void PerformCollision(TargetableObject entity, Entity other)
         {
-            if (hp < 0)
+            if (entity == null || other == null)
             {
-                hp = 0;
+                return;
             }
 
-            if (attack < 0)
+            TargetableObject target = other as TargetableObject;
+            if (target != null)
             {
-                attack = 0;
+                ImpactData entityImpactData = entity.GetImpactData();
+                ImpactData targetImpactData = target.GetImpactData();
+                if (GetRelation(entityImpactData.Camp, targetImpactData.Camp) == RelationType.Friendly)
+                {
+                    return;
+                }
+
+                int entityDamageHP = CalcDamageHP(targetImpactData.Attack, entityImpactData.Defense);
+                int targetDamageHP = CalcDamageHP(entityImpactData.Attack, targetImpactData.Defense);
+
+                int delta = Mathf.Min(entityImpactData.HP - entityDamageHP, targetImpactData.HP - targetDamageHP);
+                if (delta > 0)
+                {
+                    entityDamageHP -= delta;
+                    targetDamageHP -= delta;
+                }
+
+                entity.ApplyDamage(target, entityDamageHP);
+                target.ApplyDamage(entity, targetDamageHP);
+                return;
+            }
+
+            Bullet bullet = other as Bullet;
+            if (bullet != null)
+            {
+                ImpactData entityImpactData = entity.GetImpactData();
+                ImpactData bulletImpactData = bullet.GetImpactData();
+                if (GetRelation(entityImpactData.Camp, bulletImpactData.Camp) == RelationType.Friendly)
+                {
+                    return;
+                }
+
+                int entityDamageHP = CalcDamageHP(bulletImpactData.Attack, entityImpactData.Defense);
+
+                entity.ApplyDamage(target, entityDamageHP);
+                return;
+            }
+        }
+
+        private static int CalcDamageHP(int attack, int defense)
+        {
+            if (attack <= 0)
+            {
+                return 0;
             }
 
             if (defense < 0)
@@ -120,14 +170,7 @@ namespace AirForce
                 defense = 0;
             }
 
-            float internalAttack = attack + hp * 0.5f;
-            float internalValue = internalAttack + defense;
-            if (internalValue <= 0f)
-            {
-                return 0;
-            }
-
-            return (int)(internalAttack * internalAttack / internalValue);
+            return attack * attack / (attack + defense);
         }
 
         private struct CampPair

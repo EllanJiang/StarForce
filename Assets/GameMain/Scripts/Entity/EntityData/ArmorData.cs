@@ -13,8 +13,8 @@ namespace AirForce
         [SerializeField]
         private int m_Defense = 0;
 
-        public ArmorData(int entityId, int typeId, int ownerId)
-            : base(entityId, typeId, ownerId)
+        public ArmorData(int entityId, int typeId, int ownerId, CampType ownerCamp)
+            : base(entityId, typeId, ownerId, ownerCamp)
         {
             IDataTable<DRArmor> dtArmor = GameEntry.DataTable.GetDataTable<DRArmor>();
             DRArmor drArmor = dtArmor.GetDataRow(TypeId);

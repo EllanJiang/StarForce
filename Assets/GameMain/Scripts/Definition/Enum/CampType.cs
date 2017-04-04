@@ -5,34 +5,36 @@
     /// </summary>
     public enum CampType
     {
+        Unknown = 0,
+
         /// <summary>
         /// 第一玩家阵营。
         /// </summary>
-        Player = 0,
+        Player,
 
         /// <summary>
         /// 第一敌人阵营。
         /// </summary>
-        Enemy = 1,
+        Enemy,
 
         /// <summary>
         /// 第一中立阵营。
         /// </summary>
-        Neutral = 2,
+        Neutral,
 
         /// <summary>
         /// 第二玩家阵营。
         /// </summary>
-        Player2 = 3,
+        Player2,
 
         /// <summary>
         /// 第二敌人阵营。
         /// </summary>
-        Enemy2 = 4,
+        Enemy2,
 
         /// <summary>
         /// 第二中立阵营
         /// </summary>
-        Neutral2 = 5,
+        Neutral2,
     }
 }

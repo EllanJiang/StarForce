@@ -33,16 +33,16 @@ namespace AirForce
                 return;
             }
 
-            m_ThrusterData = new ThrusterData(GameEntry.Entity.GenerateSerialId(), drAircraft.ThrusterId, Id);
+            m_ThrusterData = new ThrusterData(GameEntry.Entity.GenerateSerialId(), drAircraft.ThrusterId, Id, Camp);
 
             for (int index = 0, weaponId = 0; (weaponId = drAircraft.GetWeaponIds(index)) > 0; index++)
             {
-                AttachWeaponData(new WeaponData(GameEntry.Entity.GenerateSerialId(), weaponId, Id));
+                AttachWeaponData(new WeaponData(GameEntry.Entity.GenerateSerialId(), weaponId, Id, Camp));
             }
 
             for (int index = 0, armorId = 0; (armorId = drAircraft.GetArmorIds(index)) > 0; index++)
             {
-                AttachArmorData(new ArmorData(GameEntry.Entity.GenerateSerialId(), armorId, Id));
+                AttachArmorData(new ArmorData(GameEntry.Entity.GenerateSerialId(), armorId, Id, Camp));
             }
 
             HP = m_MaxHP;

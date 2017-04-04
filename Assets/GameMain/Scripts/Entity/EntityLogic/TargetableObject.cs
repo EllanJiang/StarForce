@@ -13,14 +13,12 @@ namespace AirForce
 
         public abstract ImpactData GetImpactData();
 
-        public abstract void ApplyImpact(ImpactData impactData);
-
-        protected void ApplyDamage(int damageHP)
+        public void ApplyDamage(Entity attacker, int damageHP)
         {
             m_TargetableObjectData.HP -= damageHP;
             if (m_TargetableObjectData.HP <= 0)
             {
-                OnDead();
+                OnDead(attacker);
             }
         }
 
@@ -42,26 +40,26 @@ namespace AirForce
             }
         }
 
-        protected virtual void OnImpact(Entity entity)
-        {
-
-        }
-
-        protected virtual void OnDead()
+        protected virtual void OnDead(Entity attacker)
         {
             GameEntry.Entity.HideEntity(Entity);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            GameObject go = other.gameObject;
-            Entity entity = go.GetComponent<Entity>();
+            Entity entity = other.gameObject.GetComponent<Entity>();
             if (entity == null)
             {
                 return;
             }
 
-            OnImpact(entity);
+            if (entity is TargetableObject && entity.Id >= Id)
+            {
+                // 碰撞事件由 Id 小的一方处理，避免重复处理
+                return;
+            }
+
+            AIUtility.PerformCollision(this, entity);
         }
     }
 }

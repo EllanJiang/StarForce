@@ -10,8 +10,8 @@ namespace AirForce
         [SerializeField]
         private float m_Speed = 0f;
 
-        public ThrusterData(int entityId, int typeId, int ownerId)
-            : base(entityId, typeId, ownerId)
+        public ThrusterData(int entityId, int typeId, int ownerId, CampType ownerCamp)
+            : base(entityId, typeId, ownerId, ownerCamp)
         {
             IDataTable<DRThruster> dtThruster = GameEntry.DataTable.GetDataTable<DRThruster>();
             DRThruster drThruster = dtThruster.GetDataRow(TypeId);

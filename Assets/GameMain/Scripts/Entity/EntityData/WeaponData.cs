@@ -16,8 +16,8 @@ namespace AirForce
         [SerializeField]
         private int m_BulletId = 0;
 
-        public WeaponData(int entityId, int typeId, int ownerId)
-            : base(entityId, typeId, ownerId)
+        public WeaponData(int entityId, int typeId, int ownerId, CampType ownerCamp)
+            : base(entityId, typeId, ownerId, ownerCamp)
         {
             IDataTable<DRWeapon> dtWeapon = GameEntry.DataTable.GetDataTable<DRWeapon>();
             DRWeapon drWeapon = dtWeapon.GetDataRow(TypeId);
