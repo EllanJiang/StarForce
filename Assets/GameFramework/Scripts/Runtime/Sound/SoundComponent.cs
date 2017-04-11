@@ -7,7 +7,11 @@
 
 using GameFramework;
 using GameFramework.Resource;
+
+#if UNITY_5_3
 using GameFramework.Scene;
+#endif
+
 using GameFramework.Sound;
 using UnityEngine;
 using UnityEngine.SceneManagement;
