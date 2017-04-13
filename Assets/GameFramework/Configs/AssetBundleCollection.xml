@@ -79,6 +79,7 @@
       <Asset Guid="a7b030cffa2dc44478c14e49a22771c2" AssetBundleName="Materials" />
       <Asset Guid="ab4774faf71b57a40a29a9e902403fe3" AssetBundleName="DataTables" />
       <Asset Guid="abd1565e9e268f04cac3631d022b4ace" AssetBundleName="Entities" />
+      <Asset Guid="ad56aae2bb0f2ce4a86711287e14e223" AssetBundleName="DataTables" />
       <Asset Guid="ae6a7f967521769458b0913fa39caaf4" AssetBundleName="Textures" />
       <Asset Guid="afc18fc39ade3744397c0c993b57be53" AssetBundleName="Entities" />
       <Asset Guid="b0c7cf51d3fecb446ab93bf854419715" AssetBundleName="Materials" />
