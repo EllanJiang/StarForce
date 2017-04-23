@@ -5,9 +5,9 @@
 
 ---
 
-## Air Force 简介
-
-Air Force 是一个使用 Game Framework 游戏框架制作的游戏演示项目，主要目的是对 Game Framework 的使用方法做一些示范，供使用者参考。
+## Star Force 简介
+ 
+Star Force 是一个使用 Game Framework 游戏框架制作的游戏演示项目，主要目的是对 Game Framework 的使用方法做一些示范，供使用者参考。
 
 ---
 
