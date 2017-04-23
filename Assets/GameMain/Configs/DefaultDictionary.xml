@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
+  <Dictionary Language="English">
+    <String Key="CheckVersion.Tips" Value="Check if the game need update. Please wait..." />
+  </Dictionary>
   <Dictionary Language="ChineseSimplified">
-    <String Key="Game.Name" Value="星际力量" />
+    <String Key="CheckVersion.Tips" Value="正在检查游戏是否需要更新，请稍候……" />
   </Dictionary>
   <Dictionary Language="ChineseTraditional">
-    <String Key="Game.Name" Value="星際力量" />
-  </Dictionary>
-  <Dictionary Language="English">
-    <String Key="Game.Name" Value="Star Force" />
+    <String Key="CheckVersion.Tips" Value="正在檢查遊戲是否需要更新，請稍候……" />
   </Dictionary>
 </Dictionaries>

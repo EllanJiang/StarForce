@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
   <Dictionary Language="English">
-    <String Key="Language.Name" Value="English" />
+    <String Key="Game.Name" Value="Star Force" />
+    <String Key="Game.Description" Value="A demo made with Game Framework" />
   </Dictionary>
 </Dictionaries>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
   <Dictionary Language="ChineseSimplified">
-    <String Key="Language.Name" Value="简体中文" />
+    <String Key="Game.Name" Value="星际力量" />
+    <String Key="Game.Description" Value="Game Framework 演示程序" />
   </Dictionary>
 </Dictionaries>
