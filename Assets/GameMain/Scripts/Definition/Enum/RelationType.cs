@@ -1,4 +1,4 @@
-﻿namespace AirForce
+﻿namespace StarForce
 {
     /// <summary>
     /// 关系类型。

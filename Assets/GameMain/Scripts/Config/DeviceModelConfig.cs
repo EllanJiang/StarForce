@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     public class DeviceModelConfig : ScriptableObject
     {

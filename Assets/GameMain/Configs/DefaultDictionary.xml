@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
   <Dictionary Language="ChineseSimplified">
-    <String Key="Game.Name" Value="空中力量" />
+    <String Key="Game.Name" Value="星际力量" />
   </Dictionary>
   <Dictionary Language="ChineseTraditional">
-    <String Key="Game.Name" Value="空中力量" />
+    <String Key="Game.Name" Value="星際力量" />
   </Dictionary>
   <Dictionary Language="English">
-    <String Key="Game.Name" Value="AirForce" />
+    <String Key="Game.Name" Value="Star Force" />
   </Dictionary>
 </Dictionaries>

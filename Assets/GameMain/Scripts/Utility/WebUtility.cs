@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AirForce
+namespace StarForce
 {
     public static class WebUtility
     {

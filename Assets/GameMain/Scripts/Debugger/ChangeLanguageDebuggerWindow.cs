@@ -3,7 +3,7 @@ using GameFramework.Localization;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public class ChangeLanguageDebuggerWindow : IDebuggerWindow
     {

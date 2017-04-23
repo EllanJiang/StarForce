@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public class ConfigComponent : GameFrameworkComponent
     {

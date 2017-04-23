@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     public static partial class Constant
     {

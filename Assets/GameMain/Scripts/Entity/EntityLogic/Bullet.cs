@@ -1,7 +1,7 @@
 ﻿using GameFramework;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 子弹类。

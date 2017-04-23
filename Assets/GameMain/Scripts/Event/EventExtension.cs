@@ -2,7 +2,7 @@
 using System;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public static class EventExtension
     {

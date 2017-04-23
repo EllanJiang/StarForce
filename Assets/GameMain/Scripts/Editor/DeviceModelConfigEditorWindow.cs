@@ -3,13 +3,13 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace AirForce.Editor
+namespace StarForce.Editor
 {
     public class DeviceModelConfigEditorWindow : EditorWindow
     {
         private DeviceModelConfig m_Config = null;
 
-        [MenuItem("Air Force/Device Model Config Editor")]
+        [MenuItem("Star Force/Device Model Config Editor")]
         public static void EditDeviceModelConfig()
         {
             const string DeviceModelConfigFullName = "Assets/GameMain/Configs/DeviceModelConfig.asset";

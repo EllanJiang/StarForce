@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 推进器类。

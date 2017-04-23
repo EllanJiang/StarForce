@@ -3,7 +3,7 @@ using GameFramework.DataTable;
 using GameFramework.Sound;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public static class SoundExtension
     {

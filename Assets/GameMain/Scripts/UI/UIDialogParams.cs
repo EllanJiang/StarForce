@@ -1,6 +1,6 @@
 ﻿using GameFramework;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 对话框显示数据。

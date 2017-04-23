@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// AI 工具类。

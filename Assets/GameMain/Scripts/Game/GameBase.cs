@@ -3,7 +3,7 @@ using GameFramework.Event;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public abstract class GameBase
     {

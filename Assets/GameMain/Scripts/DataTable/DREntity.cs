@@ -1,7 +1,7 @@
 ﻿using GameFramework.DataTable;
 using System.Collections.Generic;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 实体表。

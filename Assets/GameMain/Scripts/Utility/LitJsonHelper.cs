@@ -1,6 +1,6 @@
 ﻿using LitJson;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// LitJSON 函数集辅助器。

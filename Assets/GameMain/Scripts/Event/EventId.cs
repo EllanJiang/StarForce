@@ -1,4 +1,4 @@
-﻿namespace AirForce
+﻿namespace StarForce
 {
     /// <summary>
     /// 事件类型编号。

@@ -1,7 +1,7 @@
 ﻿using GameFramework;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 可作为目标的实体类。

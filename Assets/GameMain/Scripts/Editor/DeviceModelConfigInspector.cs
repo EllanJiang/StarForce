@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace AirForce.Editor
+namespace StarForce.Editor
 {
     [CustomEditor(typeof(DeviceModelConfig))]
     public class DeviceModelConfigInspector : UnityEditor.Editor

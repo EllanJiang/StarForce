@@ -1,4 +1,4 @@
-﻿namespace AirForce
+﻿namespace StarForce
 {
     public enum QualityLevelType
     {

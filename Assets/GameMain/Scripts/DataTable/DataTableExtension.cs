@@ -2,11 +2,11 @@
 using System;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public static class DataTableExtension
     {
-        private const string DataTableClassPrefixName = "AirForce.DR";
+        private const string DataTableClassPrefixName = "StarForce.DR";
         private static readonly string[] ColumnSplit = new string[] { "\t" };
 
         public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, object userData = null)

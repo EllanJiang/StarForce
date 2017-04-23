@@ -1,7 +1,7 @@
 ﻿using GameFramework;
 using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     public static class LocalizationExtension
     {

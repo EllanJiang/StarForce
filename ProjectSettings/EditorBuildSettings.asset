@@ -7,5 +7,3 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/GameFramework.unity
-  - enabled: 1
-    path: Assets/GameMain/Scenes/Main.unity

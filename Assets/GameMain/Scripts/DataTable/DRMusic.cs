@@ -1,7 +1,7 @@
 ﻿using GameFramework.DataTable;
 using System.Collections.Generic;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 音乐配置表。

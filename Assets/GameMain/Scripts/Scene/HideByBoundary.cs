@@ -1,7 +1,7 @@
 ﻿using GameFramework;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     public class HideByBoundary : MonoBehaviour
     {

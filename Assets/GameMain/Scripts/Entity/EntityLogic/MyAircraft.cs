@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     public class MyAircraft : Aircraft
     {

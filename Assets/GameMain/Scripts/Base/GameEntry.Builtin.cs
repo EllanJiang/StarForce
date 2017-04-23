@@ -1,6 +1,6 @@
 ﻿using UnityGameFramework.Runtime;
 
-namespace AirForce
+namespace StarForce
 {
     /// <summary>
     /// 游戏入口。

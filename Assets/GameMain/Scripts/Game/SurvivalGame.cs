@@ -1,7 +1,7 @@
 ﻿using GameFramework.DataTable;
 using UnityEngine;
 
-namespace AirForce
+namespace StarForce
 {
     public class SurvivalGame : GameBase
     {
