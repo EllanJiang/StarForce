@@ -1,5 +1,6 @@
 ﻿using GameFramework;
 using GameFramework.DataTable;
+using System.Collections.Generic;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -11,14 +12,32 @@ namespace StarForce
             return uiComponent.HasUIForm((int)uiFormId, uiGroup);
         }
 
-        public static UIForm GetUIForm(this UIComponent uiComponent, UIFormId uiFormId, string uiGroup = "Default")
+        public static UGuiForm GetUIForm(this UIComponent uiComponent, UIFormId uiFormId, string uiGroup = "Default")
         {
-            return uiComponent.GetUIForm((int)uiFormId, uiGroup);
+            UnityGameFramework.Runtime.UIForm uiForm = uiComponent.GetUIForm((int)uiFormId, uiGroup);
+            if (uiForm == null)
+            {
+                return null;
+            }
+
+            return (UGuiForm)uiForm.Logic;
         }
 
-        public static UIForm[] GetUIForms(this UIComponent uiComponent, UIFormId uiFormId, string uiGroup = "Default")
+        public static UGuiForm[] GetUIForms(this UIComponent uiComponent, UIFormId uiFormId, string uiGroup = "Default")
         {
-            return uiComponent.GetUIForms((int)uiFormId, uiGroup);
+            UnityGameFramework.Runtime.UIForm[] uiForms = uiComponent.GetUIForms((int)uiFormId, uiGroup);
+            List<UGuiForm> uiFormList = new List<UGuiForm>();
+            for (int i = 0; i < uiForms.Length; i++)
+            {
+                uiFormList.Add((UGuiForm)uiForms[i].Logic);
+            }
+
+            return uiFormList.ToArray();
+        }
+
+        public static void CloseUIForm(this UIComponent uiComponent, UGuiForm uiForm)
+        {
+            uiComponent.CloseUIForm(uiForm.UIForm);
         }
 
         public static void OpenUIForm(this UIComponent uiComponent, UIFormId uiFormId, object userData = null)

@@ -8,6 +8,9 @@ namespace StarForce
 {
     public partial class ProcedureChangeScene : ProcedureBase
     {
+        private const int MenuSceneId = 1;
+
+        private bool m_ChangeToMenu = false;
         private bool m_IsChangeSceneComplete = false;
         private int m_BackgroundMusicId = 0;
 
@@ -40,6 +43,7 @@ namespace StarForce
             GameEntry.Sound.StopAllSounds();
 
             int sceneId = procedureOwner.GetData<VarInt>(Constant.ProcedureData.NextSceneId).Value;
+            m_ChangeToMenu = (sceneId == MenuSceneId);
             IDataTable<DRScene> dtScene = GameEntry.DataTable.GetDataTable<DRScene>();
             DRScene drScene = dtScene.GetDataRow(sceneId);
             if (drScene == null)
@@ -71,7 +75,14 @@ namespace StarForce
                 return;
             }
 
-            ChangeState<ProcedureMain>(procedureOwner);
+            if (m_ChangeToMenu)
+            {
+                ChangeState<ProcedureMenu>(procedureOwner);
+            }
+            else
+            {
+                ChangeState<ProcedureMain>(procedureOwner);
+            }
         }
 
         private void OnLoadSceneSuccess(object sender, GameEventArgs e)

@@ -11,5 +11,10 @@
         /// 弹出框。
         /// </summary>
         Dialog = 1,
+
+        /// <summary>
+        /// 主菜单。
+        /// </summary>
+        MenuForm,
     }
 }

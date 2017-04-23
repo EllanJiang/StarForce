@@ -34,12 +34,12 @@
 
         public static string GetUIFormAsset(string assetName)
         {
-            return string.Format("Assets/GameMain/UI/{0}.prefab", assetName);
+            return string.Format("Assets/GameMain/UI/UIForms/{0}.prefab", assetName);
         }
 
-        public static string GetAtlasAsset(string assetName)
+        public static string GetSpriteAsset(string assetName)
         {
-            return string.Format("Assets/GameMain/UI/Atlases/{0}.prefab", assetName);
+            return string.Format("Assets/GameMain/UI/Sprites/{0}.png", assetName);
         }
 
         public static string GetTextureAsset(string assetName)

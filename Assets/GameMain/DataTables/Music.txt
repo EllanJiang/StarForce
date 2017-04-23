@@ -2,4 +2,6 @@
 #	Id		AssetName
 #	int		string
 #	音乐编号	策划备注	资源名称
-	1	战斗音乐	music_background
+	1	菜单音乐	music_menu
+	2	战斗音乐	music_background
+	3	关于音乐	music_about
