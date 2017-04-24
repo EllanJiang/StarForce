@@ -6,6 +6,7 @@
 //------------------------------------------------------------
 
 using UnityEngine;
+using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -34,6 +35,7 @@ namespace StarForce
         private void Awake()
         {
             m_CachedCanvas = gameObject.GetOrAddComponent<Canvas>();
+            gameObject.GetOrAddComponent<GraphicRaycaster>();
         }
 
         private void Start()

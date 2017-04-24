@@ -291,6 +291,15 @@ namespace UnityGameFramework.Runtime
             GameSpeed = 1f;
         }
 
+        internal void Shutdown()
+        {
+#if UNITY_5_6_OR_NEWER
+            Application.lowMemory -= OnLowMemory;
+#endif
+            GameFrameworkEntry.Shutdown();
+            Destroy(gameObject);
+        }
+
         private void InitZipHelper()
         {
             Type zipHelperType = Utility.Assembly.GetTypeWithinLoadedAssemblies(m_ZipHelperTypeName);
@@ -327,15 +336,6 @@ namespace UnityGameFramework.Runtime
             }
 
             Utility.Json.SetJsonHelper(jsonHelper);
-        }
-
-        internal void Shutdown()
-        {
-#if UNITY_5_6_OR_NEWER
-            Application.lowMemory -= OnLowMemory;
-#endif
-            GameFrameworkEntry.Shutdown();
-            Destroy(gameObject);
         }
 
         private void LogCallback(LogLevel level, object message)

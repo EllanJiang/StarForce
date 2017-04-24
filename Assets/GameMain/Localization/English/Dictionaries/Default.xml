@@ -3,5 +3,9 @@
   <Dictionary Language="English">
     <String Key="Game.Name" Value="Star Force" />
     <String Key="Game.Description" Value="A demo made with Game Framework" />
+    <String Key="Button.Start" Value="Start" />
+    <String Key="Button.Settings" Value="Settings" />
+    <String Key="Button.About" Value="About" />
+    <String Key="Button.Quit" Value="Quit" />
   </Dictionary>
 </Dictionaries>

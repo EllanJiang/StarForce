@@ -1,5 +1,6 @@
 ﻿using GameFramework;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -42,6 +43,8 @@ namespace StarForce
             transform.anchorMax = Vector2.one;
             transform.anchoredPosition = Vector2.zero;
             transform.sizeDelta = Vector2.zero;
+
+            gameObject.GetOrAddComponent<GraphicRaycaster>();
         }
 
         protected internal override void OnOpen(object userData)

@@ -24,6 +24,9 @@ namespace UnityGameFramework.Runtime
         private const string UnityGameFrameworkVersion = "3.0.3";
         private static readonly LinkedList<GameFrameworkComponent> s_GameFrameworkComponents = new LinkedList<GameFrameworkComponent>();
 
+        /// <summary>
+        /// 游戏框架所在的场景编号。
+        /// </summary>
         internal const int GameFrameworkSceneId = 0;
 
         /// <summary>
@@ -106,6 +109,17 @@ namespace UnityGameFramework.Runtime
 
             s_GameFrameworkComponents.Clear();
 
+            if (shutdownType == ShutdownType.None)
+            {
+                return;
+            }
+
+            if (shutdownType == ShutdownType.Restart)
+            {
+                SceneManager.LoadScene(GameFrameworkSceneId);
+                return;
+            }
+
             if (shutdownType == ShutdownType.Quit)
             {
                 Application.Quit();
@@ -113,11 +127,6 @@ namespace UnityGameFramework.Runtime
                 EditorApplication.isPlaying = false;
 #endif
                 return;
-            }
-
-            if (shutdownType == ShutdownType.Restart)
-            {
-                SceneManager.LoadScene(GameFrameworkSceneId);
             }
         }
 

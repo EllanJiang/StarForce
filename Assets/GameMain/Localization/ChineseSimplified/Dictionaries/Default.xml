@@ -3,5 +3,9 @@
   <Dictionary Language="ChineseSimplified">
     <String Key="Game.Name" Value="星际力量" />
     <String Key="Game.Description" Value="Game Framework 演示程序" />
+    <String Key="Button.Start" Value="开始" />
+    <String Key="Button.Settings" Value="设置" />
+    <String Key="Button.About" Value="关于" />
+    <String Key="Button.Quit" Value="退出" />
   </Dictionary>
 </Dictionaries>
