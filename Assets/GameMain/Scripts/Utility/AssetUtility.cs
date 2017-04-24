@@ -27,6 +27,11 @@
             return string.Format("Assets/GameMain/Sounds/{0}.wav", assetName);
         }
 
+        public static string GetUISoundAsset(string assetName)
+        {
+            return string.Format("Assets/GameMain/UISounds/{0}.wav", assetName);
+        }
+
         public static string GetEntityAsset(string assetName)
         {
             return string.Format("Assets/GameMain/Entities/{0}.prefab", assetName);

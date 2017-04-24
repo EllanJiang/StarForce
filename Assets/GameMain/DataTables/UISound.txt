@@ -1,0 +1,6 @@
+#	声音配置表				
+#	Id		Resource Name	Priority	Volume
+#	int		string	int	float
+#	声音编号	策划备注	资源名称	优先级（默认0，128最高，-128最低）	音量（0~1）
+	10000	选择音效	select	0	1
+	10001	点击音效	click	0	1

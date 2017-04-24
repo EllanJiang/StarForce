@@ -70,6 +70,7 @@ namespace StarForce
             LoadDataTable("Sound");
             LoadDataTable("Thruster");
             LoadDataTable("UIForm");
+            LoadDataTable("UISound");
             LoadDataTable("Weapon");
 
             // Preload dictionaries

@@ -1,12 +1,28 @@
 ﻿using GameFramework;
 using GameFramework.DataTable;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     public static class UIExtension
     {
+        public static IEnumerator Fade(this CanvasGroup group, float alpha, float duration)
+        {
+            float time = 0f;
+            float originalAlpha = group.alpha;
+            while (time < duration)
+            {
+                time += Time.deltaTime;
+                group.alpha = Mathf.Lerp(originalAlpha, alpha, time / duration);
+                yield return new WaitForEndOfFrame();
+            }
+
+            group.alpha = alpha;
+        }
+
         public static bool HasUIForm(this UIComponent uiComponent, UIFormId uiFormId, string uiGroup = "Default")
         {
             return uiComponent.HasUIForm((int)uiFormId, uiGroup);

@@ -1,5 +1,4 @@
-﻿using GameFramework;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
@@ -17,7 +16,7 @@ namespace StarForce
         private Text m_StartText = null;
 
         [SerializeField]
-        private Text m_SettingsText = null;
+        private Text m_SettingText = null;
 
         [SerializeField]
         private Text m_AboutText = null;
@@ -32,7 +31,7 @@ namespace StarForce
             m_TitleText.text = GameEntry.Localization.GetString("Game.Name");
             m_DescriptionText.text = GameEntry.Localization.GetString("Game.Description");
             m_StartText.text = GameEntry.Localization.GetString("Button.Start");
-            m_SettingsText.text = GameEntry.Localization.GetString("Button.Settings");
+            m_SettingText.text = GameEntry.Localization.GetString("Button.Setting");
             m_AboutText.text = GameEntry.Localization.GetString("Button.About");
             m_QuitText.text = GameEntry.Localization.GetString("Button.Quit");
             m_QuitText.gameObject.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
@@ -40,17 +39,17 @@ namespace StarForce
 
         public void OnStartButtonClick()
         {
-            Log.Info("Start Button Clicked.");
+
         }
 
         public void OnSettingsButtonClick()
         {
-            Log.Info("Settings Button Clicked.");
+
         }
 
         public void OnAboutButtonClick()
         {
-            Log.Info("About Button Clicked.");
+
         }
 
         public void OnQuitButtonClick()

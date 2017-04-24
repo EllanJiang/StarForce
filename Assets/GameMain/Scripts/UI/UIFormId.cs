@@ -15,6 +15,6 @@
         /// <summary>
         /// 主菜单。
         /// </summary>
-        MenuForm,
+        MenuForm = 100,
     }
 }

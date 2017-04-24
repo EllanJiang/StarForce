@@ -1,5 +1,4 @@
-﻿using GameFramework;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
@@ -97,6 +96,11 @@ namespace StarForce
             {
                 canvases[i].sortingOrder += deltaDepth;
             }
+        }
+
+        public void PlayUISound(int uiSoundId)
+        {
+            GameEntry.Sound.PlayUISound(uiSoundId);
         }
     }
 }

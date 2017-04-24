@@ -47,6 +47,26 @@ namespace StarForce
             return soundComponent.PlaySound(AssetUtility.GetSoundAsset(drSound.AssetName), "Sound", playSoundParams, bindingEntity != null ? bindingEntity.Entity : null, userData);
         }
 
+        public static int PlayUISound(this SoundComponent soundComponent, int uiSoundId, object userData = null)
+        {
+            IDataTable<DRUISound> dtUISound = GameEntry.DataTable.GetDataTable<DRUISound>();
+            DRUISound drUISound = dtUISound.GetDataRow(uiSoundId);
+            if (drUISound == null)
+            {
+                Log.Warning("Can not load UI sound '{0}' from data table.", uiSoundId.ToString());
+                return -1;
+            }
+
+            PlaySoundParams playSoundParams = new PlaySoundParams
+            {
+                Priority = drUISound.Priority,
+                Loop = false,
+                VolumeInSoundGroup = drUISound.Volume,
+                SpatialBlend = 0f,
+            };
+            return soundComponent.PlaySound(AssetUtility.GetUISoundAsset(drUISound.AssetName), "UISound", playSoundParams, userData);
+        }
+
         public static bool IsMuted(this SoundComponent soundComponent, string soundGroupName)
         {
             if (string.IsNullOrEmpty(soundGroupName))

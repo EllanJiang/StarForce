@@ -4,7 +4,7 @@
     <String Key="Game.Name" Value="星際力量" />
     <String Key="Game.Description" Value="Game Framework 演示程式" />
     <String Key="Button.Start" Value="開始" />
-    <String Key="Button.Settings" Value="設置" />
+    <String Key="Button.Setting" Value="設置" />
     <String Key="Button.About" Value="關於" />
     <String Key="Button.Quit" Value="退出" />
   </Dictionary>
