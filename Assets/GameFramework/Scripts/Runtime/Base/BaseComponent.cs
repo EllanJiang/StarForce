@@ -10,7 +10,6 @@ using GameFramework.Localization;
 using GameFramework.Resource;
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace UnityGameFramework.Runtime
 {
@@ -21,11 +20,6 @@ namespace UnityGameFramework.Runtime
     public sealed class BaseComponent : GameFrameworkComponent
     {
         private const int DefaultDpi = 96;  // default windows dpi
-
-        /// <summary>
-        /// 游戏框架所在的场景编号。
-        /// </summary>
-        internal const int GameFrameworkSceneId = 0;
 
         private string m_GameVersion = string.Empty;
         private int m_InternalApplicationVersion = 0;
@@ -333,11 +327,6 @@ namespace UnityGameFramework.Runtime
             }
 
             Utility.Json.SetJsonHelper(jsonHelper);
-        }
-
-        internal void Reload()
-        {
-            SceneManager.LoadScene(GameFrameworkSceneId);
         }
 
         internal void Shutdown()

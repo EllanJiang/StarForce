@@ -8,7 +8,11 @@
 using GameFramework;
 using System;
 using System.Collections.Generic;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace UnityGameFramework.Runtime
 {
@@ -19,6 +23,8 @@ namespace UnityGameFramework.Runtime
     {
         private const string UnityGameFrameworkVersion = "3.0.3";
         private static readonly LinkedList<GameFrameworkComponent> s_GameFrameworkComponents = new LinkedList<GameFrameworkComponent>();
+
+        internal const int GameFrameworkSceneId = 0;
 
         /// <summary>
         /// 获取 Unity 游戏框架版本号。
@@ -95,6 +101,7 @@ namespace UnityGameFramework.Runtime
             if (baseComponent != null)
             {
                 baseComponent.Shutdown();
+                baseComponent = null;
             }
 
             s_GameFrameworkComponents.Clear();
@@ -102,10 +109,15 @@ namespace UnityGameFramework.Runtime
             if (shutdownType == ShutdownType.Quit)
             {
                 Application.Quit();
+#if UNITY_EDITOR
+                EditorApplication.isPlaying = false;
+#endif
+                return;
             }
-            else if (shutdownType == ShutdownType.Restart && baseComponent != null)
+
+            if (shutdownType == ShutdownType.Restart)
             {
-                baseComponent.Reload();
+                SceneManager.LoadScene(GameFrameworkSceneId);
             }
         }
 
