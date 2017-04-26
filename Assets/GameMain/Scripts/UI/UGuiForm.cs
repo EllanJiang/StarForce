@@ -10,6 +10,12 @@ namespace StarForce
 
         private Canvas m_CachedCanvas = null;
 
+        public static Font MainFont
+        {
+            get;
+            set;
+        }
+
         public int OriginalDepth
         {
             get;
@@ -44,6 +50,12 @@ namespace StarForce
             transform.sizeDelta = Vector2.zero;
 
             gameObject.GetOrAddComponent<GraphicRaycaster>();
+
+            Text[] texts = GetComponentsInChildren<Text>();
+            for (int i = 0; i < texts.Length; i++)
+            {
+                texts[i].font = MainFont;
+            }
         }
 
         protected internal override void OnOpen(object userData)

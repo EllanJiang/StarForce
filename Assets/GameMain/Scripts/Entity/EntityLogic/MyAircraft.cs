@@ -1,5 +1,4 @@
 ﻿using GameFramework;
-using System;
 using UnityEngine;
 
 namespace StarForce

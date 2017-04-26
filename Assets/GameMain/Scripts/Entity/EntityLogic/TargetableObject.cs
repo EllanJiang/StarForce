@@ -11,6 +11,14 @@ namespace StarForce
         [SerializeField]
         private TargetableObjectData m_TargetableObjectData = null;
 
+        public bool IsDead
+        {
+            get
+            {
+                return m_TargetableObjectData.HP <= 0;
+            }
+        }
+
         public abstract ImpactData GetImpactData();
 
         public void ApplyDamage(Entity attacker, int damageHP)

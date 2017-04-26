@@ -33,14 +33,21 @@ namespace StarForce
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneUpdate, OnLoadSceneUpdate);
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneDependencyAsset, OnLoadSceneDependencyAsset);
 
+            // 停止所有声音
+            GameEntry.Sound.StopAllSounds();
+
+            // 隐藏所有实体
+            GameEntry.Entity.HideAllEntities();
+
+            // 卸载所有场景
             string[] loadedSceneAssetNames = GameEntry.Scene.GetLoadedSceneAssetNames();
             for (int i = 0; i < loadedSceneAssetNames.Length; i++)
             {
                 GameEntry.Scene.UnloadScene(loadedSceneAssetNames[i]);
             }
 
+            // 还原游戏速度
             GameEntry.Base.ResetNormalGameSpeed();
-            GameEntry.Sound.StopAllSounds();
 
             int sceneId = procedureOwner.GetData<VarInt>(Constant.ProcedureData.NextSceneId).Value;
             m_ChangeToMenu = (sceneId == MenuSceneId);

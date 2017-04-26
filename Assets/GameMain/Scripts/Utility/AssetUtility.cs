@@ -12,6 +12,11 @@
             return string.Format("Assets/GameMain/Localization/{0}/Dictionaries/{1}.xml", GameEntry.Localization.Language.ToString(), assetName);
         }
 
+        public static string GetFontAsset(string assetName)
+        {
+            return string.Format("Assets/GameMain/Localization/{0}/Fonts/{1}.ttf", GameEntry.Localization.Language.ToString(), assetName);
+        }
+
         public static string GetSceneAsset(string assetName)
         {
             return string.Format("Assets/GameMain/Scenes/{0}.unity", assetName);

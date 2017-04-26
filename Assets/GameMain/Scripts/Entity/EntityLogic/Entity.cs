@@ -19,7 +19,6 @@ namespace StarForce
 
         public Animation CachedAnimation
         {
-
             get;
             private set;
         }

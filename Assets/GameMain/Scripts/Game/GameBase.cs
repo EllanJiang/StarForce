@@ -24,6 +24,8 @@ namespace StarForce
             protected set;
         }
 
+        private MyAircraft m_MyAircraft = null;
+
         public virtual void Initialize()
         {
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.ShowEntitySuccess, OnShowEntitySuccess);
@@ -44,6 +46,7 @@ namespace StarForce
             });
 
             GameOver = false;
+            m_MyAircraft = null;
         }
 
         public virtual void Shutdown()
@@ -54,12 +57,20 @@ namespace StarForce
 
         public virtual void Update(float elapseSeconds, float realElapseSeconds)
         {
-
+            if (m_MyAircraft != null && m_MyAircraft.IsDead)
+            {
+                GameOver = true;
+                return;
+            }
         }
 
         protected virtual void OnShowEntitySuccess(object sender, GameEventArgs e)
         {
-
+            ShowEntitySuccessEventArgs ne = (ShowEntitySuccessEventArgs)e;
+            if (ne.EntityLogicType == typeof(MyAircraft))
+            {
+                m_MyAircraft = (MyAircraft)ne.Entity.Logic;
+            }
         }
 
         protected virtual void OnShowEntityFailure(object sender, GameEventArgs e)

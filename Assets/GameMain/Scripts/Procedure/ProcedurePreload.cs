@@ -1,6 +1,8 @@
 ﻿using GameFramework;
 using GameFramework.Event;
+using GameFramework.Resource;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
@@ -75,6 +77,9 @@ namespace StarForce
 
             // Preload dictionaries
             LoadDictionary("Default");
+
+            // Preload fonts
+            LoadFont("MainFont");
         }
 
         private void LoadDataTable(string dataTableName)
@@ -87,6 +92,23 @@ namespace StarForce
         {
             m_LoadedFlag.Add(string.Format("Dictionary.{0}", dictionaryName), false);
             GameEntry.Localization.LoadDictionary(dictionaryName, this);
+        }
+
+        private void LoadFont(string fontName)
+        {
+            m_LoadedFlag.Add(string.Format("Font.{0}", fontName), false);
+            GameEntry.Resource.LoadAsset(AssetUtility.GetFontAsset(fontName), new LoadAssetCallbacks(
+                (assetName, asset, duration, userData) =>
+                {
+                    m_LoadedFlag[string.Format("Font.{0}", fontName)] = true;
+                    UGuiForm.MainFont = (Font)asset;
+                    Log.Info("Load font '{0}' OK.", fontName);
+                },
+
+                (assetName, status, errorMessage, userData) =>
+                {
+                    OnError("Can not load font '{0}' from '{1}' with error message '{2}'.", fontName, assetName, errorMessage);
+                }));
         }
 
         private void OnLoadDataTableSuccess(object sender, GameEventArgs e)

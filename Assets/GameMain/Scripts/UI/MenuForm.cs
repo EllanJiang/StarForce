@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameFramework;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
@@ -24,22 +25,11 @@ namespace StarForce
         [SerializeField]
         private Text m_QuitText = null;
 
-        protected internal override void OnOpen(object userData)
-        {
-            base.OnOpen(userData);
-
-            m_TitleText.text = GameEntry.Localization.GetString("Game.Name");
-            m_DescriptionText.text = GameEntry.Localization.GetString("Game.Description");
-            m_StartText.text = GameEntry.Localization.GetString("Button.Start");
-            m_SettingText.text = GameEntry.Localization.GetString("Button.Setting");
-            m_AboutText.text = GameEntry.Localization.GetString("Button.About");
-            m_QuitText.text = GameEntry.Localization.GetString("Button.Quit");
-            m_QuitText.gameObject.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
-        }
+        private ProcedureMenu m_ProcedureMenu = null;
 
         public void OnStartButtonClick()
         {
-
+            m_ProcedureMenu.StartGame();
         }
 
         public void OnSettingsButtonClick()
@@ -55,6 +45,33 @@ namespace StarForce
         public void OnQuitButtonClick()
         {
             UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit);
+        }
+
+        protected internal override void OnOpen(object userData)
+        {
+            base.OnOpen(userData);
+
+            m_ProcedureMenu = (ProcedureMenu)userData;
+            if (m_ProcedureMenu == null)
+            {
+                Log.Warning("ProcedureMenu is invalid when open MenuForm.");
+                return;
+            }
+
+            m_TitleText.text = GameEntry.Localization.GetString("Game.Name");
+            m_DescriptionText.text = GameEntry.Localization.GetString("Game.Description");
+            m_StartText.text = GameEntry.Localization.GetString("Button.Start");
+            m_SettingText.text = GameEntry.Localization.GetString("Button.Setting");
+            m_AboutText.text = GameEntry.Localization.GetString("Button.About");
+            m_QuitText.text = GameEntry.Localization.GetString("Button.Quit");
+            m_QuitText.gameObject.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
+        }
+
+        protected internal override void OnClose(object userData)
+        {
+            base.OnClose(userData);
+
+            m_ProcedureMenu = null;
         }
     }
 }

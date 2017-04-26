@@ -26,8 +26,7 @@ namespace StarForce
 
             // 构建信息：发布版本时，把一些数据以 Json 的格式写入 Assets/GameMain/Configs/BuildInfo.txt，供游戏逻辑读取。
             GameEntry.Config.InitBuildInfo();
-            procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, 1);
-            procedureOwner.SetData<VarInt>(Constant.ProcedureData.GameMode, (int)GameMode.Survival);
+            procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, (int)SceneId.Menu);
 
             // 语言配置：设置当前使用的语言，如果不设置，则默认使用操作系统语言。
             InitLanguageSettings();

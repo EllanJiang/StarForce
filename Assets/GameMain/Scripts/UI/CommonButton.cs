@@ -23,6 +23,11 @@ namespace StarForce
             m_CanvasGroup = gameObject.GetOrAddComponent<CanvasGroup>();
         }
 
+        private void OnDisable()
+        {
+            m_CanvasGroup.alpha = 1f;
+        }
+
         public void OnPointerEnter(PointerEventData eventData)
         {
             if (eventData.button != PointerEventData.InputButton.Left)
