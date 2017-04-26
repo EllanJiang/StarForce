@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
@@ -7,8 +8,10 @@ namespace StarForce
     public abstract class UGuiForm : UIFormLogic
     {
         public const int DepthFactor = 100;
+        private const float FadeTime = 0.3f;
 
         private Canvas m_CachedCanvas = null;
+        private CanvasGroup m_CanvasGroup = null;
 
         public static Font MainFont
         {
@@ -30,9 +33,15 @@ namespace StarForce
             }
         }
 
-        protected void Close()
+        public void Close()
         {
-            GameEntry.UI.CloseUIForm(this);
+            StopAllCoroutines();
+            StartCoroutine(CloseCo(FadeTime));
+        }
+
+        public void PlayUISound(int uiSoundId)
+        {
+            GameEntry.Sound.PlayUISound(uiSoundId);
         }
 
         protected internal override void OnInit(object userData)
@@ -42,6 +51,8 @@ namespace StarForce
             m_CachedCanvas = gameObject.GetOrAddComponent<Canvas>();
             m_CachedCanvas.overrideSorting = true;
             OriginalDepth = m_CachedCanvas.sortingOrder;
+
+            m_CanvasGroup = gameObject.GetOrAddComponent<CanvasGroup>();
 
             RectTransform transform = GetComponent<RectTransform>();
             transform.anchorMin = Vector2.zero;
@@ -61,6 +72,10 @@ namespace StarForce
         protected internal override void OnOpen(object userData)
         {
             base.OnOpen(userData);
+
+            m_CanvasGroup.alpha = 0f;
+            StopAllCoroutines();
+            StartCoroutine(m_CanvasGroup.Fade(1f, FadeTime));
         }
 
         protected internal override void OnClose(object userData)
@@ -110,9 +125,10 @@ namespace StarForce
             }
         }
 
-        public void PlayUISound(int uiSoundId)
+        private IEnumerator CloseCo(float duration)
         {
-            GameEntry.Sound.PlayUISound(uiSoundId);
+            yield return m_CanvasGroup.Fade(0f, duration);
+            GameEntry.UI.CloseUIForm(this);
         }
     }
 }

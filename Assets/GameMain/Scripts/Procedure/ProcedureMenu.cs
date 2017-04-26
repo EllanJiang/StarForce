@@ -40,7 +40,7 @@ namespace StarForce
 
             if (m_MenuForm != null)
             {
-                GameEntry.UI.CloseUIForm(m_MenuForm);
+                m_MenuForm.Close();
                 m_MenuForm = null;
             }
         }
