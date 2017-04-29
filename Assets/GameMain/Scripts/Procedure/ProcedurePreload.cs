@@ -107,7 +107,7 @@ namespace StarForce
 
                 (assetName, status, errorMessage, userData) =>
                 {
-                    OnError("Can not load font '{0}' from '{1}' with error message '{2}'.", fontName, assetName, errorMessage);
+                    Log.Error("Can not load font '{0}' from '{1}' with error message '{2}'.", fontName, assetName, errorMessage);
                 }));
         }
 
@@ -131,7 +131,7 @@ namespace StarForce
                 return;
             }
 
-            OnError("Can not load data table '{0}' from '{1}' with error message '{2}'.", ne.DataTableName, ne.DataTableAssetName, ne.ErrorMessage);
+            Log.Error("Can not load data table '{0}' from '{1}' with error message '{2}'.", ne.DataTableName, ne.DataTableAssetName, ne.ErrorMessage);
         }
 
         private void OnLoadDictionarySuccess(object sender, GameEventArgs e)
@@ -154,7 +154,7 @@ namespace StarForce
                 return;
             }
 
-            OnError("Can not load dictionary '{0}' from '{1}' with error message '{2}'.", ne.DictionaryName, ne.DictionaryAssetName, ne.ErrorMessage);
+            Log.Error("Can not load dictionary '{0}' from '{1}' with error message '{2}'.", ne.DictionaryName, ne.DictionaryAssetName, ne.ErrorMessage);
         }
     }
 }

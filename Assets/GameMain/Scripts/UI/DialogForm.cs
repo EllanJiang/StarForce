@@ -31,53 +31,78 @@ namespace StarForce
         private GameFrameworkAction<object> m_OnClickCancel = null;
         private GameFrameworkAction<object> m_OnClickOther = null;
 
+        public int DialogMode
+        {
+            get
+            {
+                return m_DialogMode;
+            }
+        }
+
+        public bool PauseGame
+        {
+            get
+            {
+                return m_PauseGame;
+            }
+        }
+
+        public object UserData
+        {
+            get
+            {
+                return m_UserData;
+            }
+        }
+
         public void OnConfirmButtonClick()
         {
+            Close();
+
             if (m_OnClickConfirm != null)
             {
                 m_OnClickConfirm(m_UserData);
             }
-
-            Close();
         }
 
         public void OnCancelButtonClick()
         {
+            Close();
+
             if (m_OnClickCancel != null)
             {
                 m_OnClickCancel(m_UserData);
-            }
-
-            Close();
-        }
+            }        }
 
         public void OnOtherButtonClick()
         {
+            Close();
+
             if (m_OnClickOther != null)
             {
                 m_OnClickOther(m_UserData);
             }
-
-            Close();
         }
 
         protected internal override void OnOpen(object userData)
         {
             base.OnOpen(userData);
 
-            DialogParams dialogParams = userData as DialogParams;
+            DialogParams dialogParams = (DialogParams)userData;
             if (dialogParams == null)
             {
                 Log.Warning("DialogParams is invalid.");
                 return;
             }
 
-            RefreshDialogMode(dialogParams.Mode);
+            m_DialogMode = dialogParams.Mode;
+            RefreshDialogMode();
 
             m_TitleText.text = dialogParams.Title;
             m_MessageText.text = dialogParams.Message;
 
-            RefreshPauseGame(dialogParams.PauseGame);
+            m_PauseGame = dialogParams.PauseGame;
+            RefreshPauseGame();
 
             m_UserData = dialogParams.UserData;
 
@@ -98,13 +123,10 @@ namespace StarForce
                 GameEntry.Base.ResumeGame();
             }
 
-            RefreshDialogMode(1);
-
+            m_DialogMode = 1;
             m_TitleText.text = string.Empty;
             m_MessageText.text = string.Empty;
-
-            RefreshPauseGame(false);
-
+            m_PauseGame = false;
             m_UserData = null;
 
             RefreshConfirmText(string.Empty);
@@ -119,19 +141,17 @@ namespace StarForce
             base.OnClose(userData);
         }
 
-        private void RefreshDialogMode(int dialogMode)
+        private void RefreshDialogMode()
         {
-            m_DialogMode = dialogMode;
             for (int i = 1; i <= m_ModeObjects.Length; i++)
             {
-                m_ModeObjects[i - 1].SetActive(i == dialogMode);
+                m_ModeObjects[i - 1].SetActive(i == m_DialogMode);
             }
         }
 
-        private void RefreshPauseGame(bool pauseGame)
+        private void RefreshPauseGame()
         {
-            m_PauseGame = pauseGame;
-            if (pauseGame)
+            if (m_PauseGame)
             {
                 GameEntry.Base.PauseGame();
             }

@@ -121,7 +121,7 @@ namespace StarForce
             VersionInfo versionInfo = Utility.Json.ToObject<VersionInfo>(responseJson);
             if (versionInfo == null)
             {
-                OnError("Parse VersionInfo failure.");
+                Log.Error("Parse VersionInfo failure.");
                 return;
             }
 
@@ -132,12 +132,12 @@ namespace StarForce
                 GameEntry.UI.OpenDialog(new DialogParams
                 {
                     Mode = 2,
-                    Message = GameEntry.Localization.GetString("UI_TEXT_FORCE_GAME_UPDATE"),
-                    ConfirmText = GameEntry.Localization.GetString("UI_TEXT_GOTO_UPDATE"),
-                    CancelText = GameEntry.Localization.GetString("UI_TEXT_QUIT_GAME"),
-                    OnClickConfirm = GotoUpdateGame,
-                    OnClickCancel = QuitGame,
-                    UserData = versionInfo.GameUpdateUrl,
+                    Title = GameEntry.Localization.GetString("Title.ForceUpdate"),
+                    Message = GameEntry.Localization.GetString("Message.ForceUpdate"),
+                    ConfirmText = GameEntry.Localization.GetString("Button.ForceUpdate"),
+                    OnClickConfirm = delegate (object userData) { Application.OpenURL(versionInfo.GameUpdateUrl); },
+                    CancelText = GameEntry.Localization.GetString("Button.Quit"),
+                    OnClickCancel = delegate (object userData) { UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit); },
                 });
 
                 return;

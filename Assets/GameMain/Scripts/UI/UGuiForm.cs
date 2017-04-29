@@ -62,7 +62,7 @@ namespace StarForce
 
             gameObject.GetOrAddComponent<GraphicRaycaster>();
 
-            Text[] texts = GetComponentsInChildren<Text>();
+            Text[] texts = GetComponentsInChildren<Text>(true);
             for (int i = 0; i < texts.Length; i++)
             {
                 texts[i].font = MainFont;
@@ -91,6 +91,10 @@ namespace StarForce
         protected internal override void OnResume()
         {
             base.OnResume();
+
+            m_CanvasGroup.alpha = 0f;
+            StopAllCoroutines();
+            StartCoroutine(m_CanvasGroup.Fade(1f, FadeTime));
         }
 
         protected internal override void OnCover()

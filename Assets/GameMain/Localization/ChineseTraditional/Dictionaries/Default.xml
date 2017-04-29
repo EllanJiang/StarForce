@@ -10,5 +10,10 @@
     <String Key="Button.Confirm" Value="確定" />
     <String Key="Button.Cancel" Value="取消" />
     <String Key="Button.Other" Value="" />
+    <String Key="Title.ForceUpdate" Value="強制更新" />
+    <String Key="Message.ForceUpdate" Value="當前遊戲版本過舊，是否前往更新？" />
+    <String Key="Button.ForceUpdate" Value="更新" />
+    <String Key="Title.AskQuitGame" Value="確認退出" />
+    <String Key="Message.AskQuitGame" Value="是否確認退出遊戲？" />
   </Dictionary>
 </Dictionaries>

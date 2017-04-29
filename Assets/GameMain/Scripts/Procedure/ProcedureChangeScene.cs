@@ -118,7 +118,7 @@ namespace StarForce
                 return;
             }
 
-            OnError("Load scene '{0}' failure, error message '{1}'.", ne.SceneAssetName, ne.ErrorMessage);
+            Log.Error("Load scene '{0}' failure, error message '{1}'.", ne.SceneAssetName, ne.ErrorMessage);
         }
 
         private void OnLoadSceneUpdate(object sender, GameEventArgs e)

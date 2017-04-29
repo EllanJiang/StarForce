@@ -44,7 +44,13 @@ namespace StarForce
 
         public void OnQuitButtonClick()
         {
-            UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit);
+            GameEntry.UI.OpenDialog(new DialogParams()
+            {
+                Mode = 2,
+                Title = GameEntry.Localization.GetString("Title.AskQuitGame"),
+                Message = GameEntry.Localization.GetString("Message.AskQuitGame"),
+                OnClickConfirm = delegate (object userData) { UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit); },
+            });
         }
 
         protected internal override void OnOpen(object userData)
