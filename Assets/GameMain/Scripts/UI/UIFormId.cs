@@ -10,7 +10,7 @@
         /// <summary>
         /// 弹出框。
         /// </summary>
-        Dialog = 1,
+        DialogForm = 1,
 
         /// <summary>
         /// 主菜单。

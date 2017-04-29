@@ -72,7 +72,7 @@ namespace StarForce
         {
             if (checkNetwork && Application.internetReachability == NetworkReachability.NotReachable)
             {
-                GameEntry.UI.OpenUIForm(UIFormId.Dialog, new UIDialogParams
+                GameEntry.UI.OpenDialog(new DialogParams
                 {
                     Mode = 2,
                     Message = GameEntry.Localization.GetString("UI_TEXT_NETWORK_NOT_REACHABLE"),

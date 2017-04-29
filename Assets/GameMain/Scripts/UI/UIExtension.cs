@@ -74,7 +74,7 @@ namespace StarForce
             uiComponent.OpenUIForm(uiFormId, AssetUtility.GetUIFormAsset(drUIForm.AssetName), drUIForm.UIGroupName, drUIForm.PauseCoveredUIForm, userData);
         }
 
-        public static void OpenDialog(this UIComponent uiComponent, UIDialogParams dialogParams)
+        public static void OpenDialog(this UIComponent uiComponent, DialogParams dialogParams)
         {
             if (((ProcedureBase)GameEntry.Procedure.CurrentProcedure).UseNativeDialog)
             {
@@ -82,11 +82,11 @@ namespace StarForce
             }
             else
             {
-                uiComponent.OpenUIForm(UIFormId.Dialog, dialogParams);
+                uiComponent.OpenUIForm(UIFormId.DialogForm, dialogParams);
             }
         }
 
-        private static void OpenNativeDialog(UIDialogParams dialogParams)
+        private static void OpenNativeDialog(DialogParams dialogParams)
         {
             throw new System.NotImplementedException("OpenNativeDialog");
         }

@@ -129,7 +129,7 @@ namespace StarForce
 
             if (versionInfo.ForceGameUpdate)
             {
-                GameEntry.UI.OpenDialog(new UIDialogParams
+                GameEntry.UI.OpenDialog(new DialogParams
                 {
                     Mode = 2,
                     Message = GameEntry.Localization.GetString("UI_TEXT_FORCE_GAME_UPDATE"),

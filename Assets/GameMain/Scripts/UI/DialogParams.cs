@@ -5,7 +5,7 @@ namespace StarForce
     /// <summary>
     /// 对话框显示数据。
     /// </summary>
-    public class UIDialogParams
+    public class DialogParams
     {
         /// <summary>
         /// 模式，即按钮数量。取值 1、2、3。
@@ -29,6 +29,15 @@ namespace StarForce
         /// 消息内容。
         /// </summary>
         public string Message
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 弹出窗口时是否暂停游戏。
+        /// </summary>
+        public bool PauseGame
         {
             get;
             set;

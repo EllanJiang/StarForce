@@ -69,9 +69,9 @@ namespace StarForce
 
         protected internal override void OnClose(object userData)
         {
-            base.OnClose(userData);
-
             m_ProcedureMenu = null;
+
+            base.OnClose(userData);
         }
     }
 }
