@@ -16,5 +16,10 @@
         /// 主菜单。
         /// </summary>
         MenuForm = 100,
+
+        /// <summary>
+        /// 设置。
+        /// </summary>
+        SettingForm = 101,
     }
 }

@@ -3,17 +3,19 @@
   <Dictionary Language="ChineseTraditional">
     <String Key="Game.Name" Value="星際力量" />
     <String Key="Game.Description" Value="Game Framework 演示程式" />
-    <String Key="Button.Start" Value="開始" />
-    <String Key="Button.Setting" Value="設置" />
-    <String Key="Button.About" Value="關於" />
-    <String Key="Button.Quit" Value="退出" />
-    <String Key="Button.Confirm" Value="確定" />
-    <String Key="Button.Cancel" Value="取消" />
-    <String Key="Button.Other" Value="" />
-    <String Key="Title.ForceUpdate" Value="強制更新" />
-    <String Key="Message.ForceUpdate" Value="當前遊戲版本過舊，是否前往更新？" />
-    <String Key="Button.ForceUpdate" Value="更新" />
-    <String Key="Title.AskQuitGame" Value="確認退出" />
-    <String Key="Message.AskQuitGame" Value="是否確認退出遊戲？" />
+    <String Key="Menu.StartButton" Value="開始" />
+    <String Key="Menu.SettingButton" Value="設置" />
+    <String Key="Menu.AboutButton" Value="關於" />
+    <String Key="Menu.QuitButton" Value="退出" />
+    <String Key="Dialog.ConfirmButton" Value="確定" />
+    <String Key="Dialog.CancelButton" Value="取消" />
+    <String Key="Dialog.OtherButton" Value="" />
+    <String Key="ForceUpdate.Title" Value="強制更新" />
+    <String Key="ForceUpdate.Message" Value="當前遊戲版本過舊，是否前往更新？" />
+    <String Key="ForceUpdate.UpdateButton" Value="更新" />
+    <String Key="ForceUpdate.QuitButton" Value="退出" />
+    <String Key="AskQuitGame.Title" Value="確認退出" />
+    <String Key="AskQuitGame.Message" Value="是否確認退出遊戲？" />
+    <String Key="Setting.Title" Value="設置" />
   </Dictionary>
 </Dictionaries>

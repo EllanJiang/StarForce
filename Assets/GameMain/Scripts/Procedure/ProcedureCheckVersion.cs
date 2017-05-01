@@ -132,11 +132,11 @@ namespace StarForce
                 GameEntry.UI.OpenDialog(new DialogParams
                 {
                     Mode = 2,
-                    Title = GameEntry.Localization.GetString("Title.ForceUpdate"),
-                    Message = GameEntry.Localization.GetString("Message.ForceUpdate"),
-                    ConfirmText = GameEntry.Localization.GetString("Button.ForceUpdate"),
+                    Title = GameEntry.Localization.GetString("ForceUpdate.Title"),
+                    Message = GameEntry.Localization.GetString("ForceUpdate.Message"),
+                    ConfirmText = GameEntry.Localization.GetString("ForceUpdate.UpdateButton"),
                     OnClickConfirm = delegate (object userData) { Application.OpenURL(versionInfo.GameUpdateUrl); },
-                    CancelText = GameEntry.Localization.GetString("Button.Quit"),
+                    CancelText = GameEntry.Localization.GetString("ForceUpdate.QuitButton"),
                     OnClickCancel = delegate (object userData) { UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit); },
                 });
 

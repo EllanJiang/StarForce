@@ -3,17 +3,24 @@
   <Dictionary Language="ChineseSimplified">
     <String Key="Game.Name" Value="星际力量" />
     <String Key="Game.Description" Value="Game Framework 演示程序" />
-    <String Key="Button.Start" Value="开始" />
-    <String Key="Button.Setting" Value="设置" />
-    <String Key="Button.About" Value="关于" />
-    <String Key="Button.Quit" Value="退出" />
-    <String Key="Button.Confirm" Value="确定" />
-    <String Key="Button.Cancel" Value="取消" />
-    <String Key="Button.Other" Value="" />
-    <String Key="Title.ForceUpdate" Value="强制更新" />
-    <String Key="Message.ForceUpdate" Value="当前游戏版本过旧，是否前往更新？" />
-    <String Key="Button.ForceUpdate" Value="更新" />
-    <String Key="Title.AskQuitGame" Value="确认退出" />
-    <String Key="Message.AskQuitGame" Value="是否确认退出游戏？" />
+    <String Key="Menu.StartButton" Value="开始" />
+    <String Key="Menu.SettingButton" Value="设置" />
+    <String Key="Menu.AboutButton" Value="关于" />
+    <String Key="Menu.QuitButton" Value="退出" />
+    <String Key="Dialog.ConfirmButton" Value="确定" />
+    <String Key="Dialog.CancelButton" Value="取消" />
+    <String Key="Dialog.OtherButton" Value="" />
+    <String Key="ForceUpdate.Title" Value="强制更新" />
+    <String Key="ForceUpdate.Message" Value="当前游戏版本过旧，是否前往更新？" />
+    <String Key="ForceUpdate.UpdateButton" Value="更新" />
+    <String Key="ForceUpdate.QuitButton" Value="退出" />
+    <String Key="AskQuitGame.Title" Value="确认退出" />
+    <String Key="AskQuitGame.Message" Value="是否确认退出游戏？" />
+    <String Key="Setting.Title" Value="设置" />
+    <String Key="Setting.Music" Value="音乐" />
+    <String Key="Setting.Sound" Value="音效" />
+    <String Key="Setting.UISound" Value="界面音效" />
+    <String Key="Setting.Language" Value="语言" />
+    <String Key="Setting.LanguageTips" Value="更改语言需要重启游戏" />
   </Dictionary>
 </Dictionaries>

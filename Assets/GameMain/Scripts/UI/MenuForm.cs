@@ -32,9 +32,9 @@ namespace StarForce
             m_ProcedureMenu.StartGame();
         }
 
-        public void OnSettingsButtonClick()
+        public void OnSettingButtonClick()
         {
-
+            GameEntry.UI.OpenUIForm(UIFormId.SettingForm);
         }
 
         public void OnAboutButtonClick()
@@ -47,8 +47,8 @@ namespace StarForce
             GameEntry.UI.OpenDialog(new DialogParams()
             {
                 Mode = 2,
-                Title = GameEntry.Localization.GetString("Title.AskQuitGame"),
-                Message = GameEntry.Localization.GetString("Message.AskQuitGame"),
+                Title = GameEntry.Localization.GetString("AskQuitGame.Title"),
+                Message = GameEntry.Localization.GetString("AskQuitGame.Message"),
                 OnClickConfirm = delegate (object userData) { UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit); },
             });
         }
@@ -66,10 +66,10 @@ namespace StarForce
 
             m_TitleText.text = GameEntry.Localization.GetString("Game.Name");
             m_DescriptionText.text = GameEntry.Localization.GetString("Game.Description");
-            m_StartText.text = GameEntry.Localization.GetString("Button.Start");
-            m_SettingText.text = GameEntry.Localization.GetString("Button.Setting");
-            m_AboutText.text = GameEntry.Localization.GetString("Button.About");
-            m_QuitText.text = GameEntry.Localization.GetString("Button.Quit");
+            m_StartText.text = GameEntry.Localization.GetString("Menu.StartButton");
+            m_SettingText.text = GameEntry.Localization.GetString("Menu.SettingButton");
+            m_AboutText.text = GameEntry.Localization.GetString("Menu.AboutButton");
+            m_QuitText.text = GameEntry.Localization.GetString("Menu.QuitButton");
             m_QuitText.gameObject.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
         }
 

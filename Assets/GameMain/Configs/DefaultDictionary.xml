@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Dictionaries>
   <Dictionary Language="English">
+    <String Key="Language.English" Value="English" />
+    <String Key="Language.ChineseSimplified" Value="Chinese Simplified" />
+    <String Key="Language.ChineseTraditional" Value="Chinese Traditional" />
     <String Key="CheckVersion.Tips" Value="Check if the game need update. Please wait..." />
   </Dictionary>
   <Dictionary Language="ChineseSimplified">
+    <String Key="Language.English" Value="英语" />
+    <String Key="Language.ChineseSimplified" Value="简体中文" />
+    <String Key="Language.ChineseTraditional" Value="繁体中文" />
     <String Key="CheckVersion.Tips" Value="正在检查游戏是否需要更新，请稍候……" />
   </Dictionary>
   <Dictionary Language="ChineseTraditional">
+    <String Key="Language.English" Value="英語" />
+    <String Key="Language.ChineseSimplified" Value="簡體中文" />
+    <String Key="Language.ChineseTraditional" Value="繁體中文" />
     <String Key="CheckVersion.Tips" Value="正在檢查遊戲是否需要更新，請稍候……" />
   </Dictionary>
 </Dictionaries>

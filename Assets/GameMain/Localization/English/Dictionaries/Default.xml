@@ -3,17 +3,19 @@
   <Dictionary Language="English">
     <String Key="Game.Name" Value="STAR FORCE" />
     <String Key="Game.Description" Value="A demo made with Game Framework" />
-    <String Key="Button.Start" Value="START" />
-    <String Key="Button.Setting" Value="SETTINGS" />
-    <String Key="Button.About" Value="ABOUT" />
-    <String Key="Button.Quit" Value="QUIT" />
-    <String Key="Button.Confirm" Value="OK" />
-    <String Key="Button.Cancel" Value="CANCEL" />
-    <String Key="Button.Other" Value="" />
-    <String Key="Title.ForceUpdate" Value="Force Update" />
-    <String Key="Message.ForceUpdate" Value="This game version is out of date, go to update?" />
-    <String Key="Button.ForceUpdate" Value="Update" />
-    <String Key="Title.AskQuitGame" Value="Confirm Quit" />
-    <String Key="Message.AskQuitGame" Value="Confirm quit game?" />
+    <String Key="Menu.StartButton" Value="START" />
+    <String Key="Menu.SettingButton" Value="SETTINGS" />
+    <String Key="Menu.AboutButton" Value="ABOUT" />
+    <String Key="Menu.QuitButton" Value="QUIT" />
+    <String Key="Dialog.ConfirmButton" Value="OK" />
+    <String Key="Dialog.CancelButton" Value="CANCEL" />
+    <String Key="Dialog.OtherButton" Value="" />
+    <String Key="ForceUpdate.Title" Value="Force Update" />
+    <String Key="ForceUpdate.Message" Value="This game version is out of date, go to update?" />
+    <String Key="ForceUpdate.UpdateButton" Value="Update" />
+    <String Key="ForceUpdate.QuitButton" Value="Quit" />
+    <String Key="AskQuitGame.Title" Value="Confirm Quit" />
+    <String Key="AskQuitGame.Message" Value="Confirm quit game?" />
+    <String Key="Setting.Title" Value="Settings" />
   </Dictionary>
 </Dictionaries>
