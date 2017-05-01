@@ -35,8 +35,21 @@ namespace StarForce
 
         public void Close()
         {
+            Close(false);
+        }
+
+        public void Close(bool ignoreFade)
+        {
             StopAllCoroutines();
-            StartCoroutine(CloseCo(FadeTime));
+
+            if (ignoreFade)
+            {
+                GameEntry.UI.CloseUIForm(this);
+            }
+            else
+            {
+                StartCoroutine(CloseCo(FadeTime));
+            }
         }
 
         public void PlayUISound(int uiSoundId)

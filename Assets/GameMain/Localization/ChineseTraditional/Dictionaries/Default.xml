@@ -17,5 +17,10 @@
     <String Key="AskQuitGame.Title" Value="確認退出" />
     <String Key="AskQuitGame.Message" Value="是否確認退出遊戲？" />
     <String Key="Setting.Title" Value="設置" />
+    <String Key="Setting.Music" Value="音樂" />
+    <String Key="Setting.Sound" Value="音效" />
+    <String Key="Setting.UISound" Value="介面音效" />
+    <String Key="Setting.Language" Value="語言" />
+    <String Key="Setting.LanguageTips" Value="更改語言需要重啟遊戲" />
   </Dictionary>
 </Dictionaries>

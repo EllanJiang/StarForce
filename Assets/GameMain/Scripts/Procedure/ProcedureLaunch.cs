@@ -54,29 +54,40 @@ namespace StarForce
 
         private void InitLanguageSettings()
         {
-            if (GameEntry.Base.EditorResourceMode)
+            if (GameEntry.Base.EditorResourceMode && GameEntry.Base.EditorLanguage != Language.Unspecified)
             {
                 // 编辑器资源模式直接使用 Inspector 上设置的语言
                 return;
             }
 
+            Language language = GameEntry.Localization.Language;
             string languageString = GameEntry.Setting.GetString(Constant.Setting.Language);
-            if (string.IsNullOrEmpty(languageString))
+            if (!string.IsNullOrEmpty(languageString))
             {
-                return;
+                try
+                {
+                    language = (Language)Enum.Parse(typeof(Language), languageString);
+                }
+                catch
+                {
+
+                }
             }
 
-            Language language = (Language)Enum.Parse(typeof(Language), languageString);
-            if (language == Language.Unspecified)
+            if (language != Language.English
+                && language != Language.ChineseSimplified
+                && language != Language.ChineseTraditional)
             {
-                return;
+                // 若是暂不支持的语言，则使用英语
+                language = Language.English;
+
+                GameEntry.Setting.SetString(Constant.Setting.Language, language.ToString());
+                GameEntry.Setting.Save();
             }
 
             GameEntry.Localization.Language = language;
-            GameEntry.Setting.SetString(Constant.Setting.Language, language.ToString());
-            GameEntry.Setting.Save();
 
-            Log.Info("Init language settings complete.");
+            Log.Info("Init language settings complete, current language is '{0}'.", language.ToString());
         }
 
         private void InitCurrentVariant()
@@ -90,14 +101,14 @@ namespace StarForce
             string currentVariant = null;
             switch (GameEntry.Localization.Language)
             {
+                case Language.English:
+                    currentVariant = "en-us";
+                    break;
                 case Language.ChineseSimplified:
                     currentVariant = "zh-cn";
                     break;
                 case Language.ChineseTraditional:
                     currentVariant = "zh-tw";
-                    break;
-                case Language.English:
-                    currentVariant = "en-us";
                     break;
                 default:
                     currentVariant = "zh-cn";

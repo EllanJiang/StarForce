@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using GameFramework.Localization;
+using UnityEngine;
 using UnityEngine.UI;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
@@ -48,10 +50,19 @@ namespace StarForce
         private Text m_EnglishText = null;
 
         [SerializeField]
+        private Toggle m_EnglishToggle = null;
+
+        [SerializeField]
         private Text m_ChineseSimplifiedText = null;
 
         [SerializeField]
+        private Toggle m_ChineseSimplifiedToggle = null;
+
+        [SerializeField]
         private Text m_ChineseTraditionalText = null;
+
+        [SerializeField]
+        private Toggle m_ChineseTraditionalToggle = null;
 
         [SerializeField]
         private Text m_ConfirmText = null;
@@ -59,42 +70,86 @@ namespace StarForce
         [SerializeField]
         private Text m_CancelText = null;
 
-        public void OnMusicMuteChanged(bool value)
+        private Language m_SelectedLanguage = Language.Unspecified;
+
+        public void OnMusicMuteChanged(bool isOn)
         {
-            GameEntry.Sound.Mute("Music", !value);
-            m_MusicVolumeSlider.gameObject.SetActive(value);
+            GameEntry.Sound.Mute("Music", !isOn);
+            m_MusicVolumeSlider.gameObject.SetActive(isOn);
         }
 
-        public void OnMusicVolumeChanged(float value)
+        public void OnMusicVolumeChanged(float volume)
         {
-            GameEntry.Sound.SetVolume("Music", value);
+            GameEntry.Sound.SetVolume("Music", volume);
         }
 
-        public void OnSoundMuteChanged(bool value)
+        public void OnSoundMuteChanged(bool isOn)
         {
-            GameEntry.Sound.Mute("Sound", !value);
-            m_SoundVolumeSlider.gameObject.SetActive(value);
+            GameEntry.Sound.Mute("Sound", !isOn);
+            m_SoundVolumeSlider.gameObject.SetActive(isOn);
         }
 
-        public void OnSoundVolumeChanged(float value)
+        public void OnSoundVolumeChanged(float volume)
         {
-            GameEntry.Sound.SetVolume("Sound", value);
+            GameEntry.Sound.SetVolume("Sound", volume);
         }
 
-        public void OnUISoundMuteChanged(bool value)
+        public void OnUISoundMuteChanged(bool isOn)
         {
-            GameEntry.Sound.Mute("UISound", !value);
-            m_UISoundVolumeSlider.gameObject.SetActive(value);
+            GameEntry.Sound.Mute("UISound", !isOn);
+            m_UISoundVolumeSlider.gameObject.SetActive(isOn);
         }
 
-        public void OnUISoundVolumeChanged(float value)
+        public void OnUISoundVolumeChanged(float volume)
         {
-            GameEntry.Sound.SetVolume("UISound", value);
+            GameEntry.Sound.SetVolume("UISound", volume);
+        }
+
+        public void OnEnglishSelected(bool isOn)
+        {
+            if (!isOn)
+            {
+                return;
+            }
+
+            m_SelectedLanguage = Language.English;
+            RefreshLanguageTips();
+        }
+
+        public void OnChineseSimplifiedSelected(bool isOn)
+        {
+            if (!isOn)
+            {
+                return;
+            }
+
+            m_SelectedLanguage = Language.ChineseSimplified;
+            RefreshLanguageTips();
+        }
+
+        public void OnChineseTraditionalSelected(bool isOn)
+        {
+            if (!isOn)
+            {
+                return;
+            }
+
+            m_SelectedLanguage = Language.ChineseTraditional;
+            RefreshLanguageTips();
         }
 
         public void OnSubmitButtonClick()
         {
-            Close();
+            if (m_SelectedLanguage == GameEntry.Localization.Language)
+            {
+                Close();
+                return;
+            }
+
+            GameEntry.Setting.SetString(Constant.Setting.Language, m_SelectedLanguage.ToString());
+            GameEntry.Setting.Save();
+
+            UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Restart);
         }
 
         protected internal override void OnOpen(object userData)
@@ -116,6 +171,22 @@ namespace StarForce
             m_EnglishText.text = GameEntry.Localization.GetString("Language.English");
             m_ChineseSimplifiedText.text = GameEntry.Localization.GetString("Language.ChineseSimplified");
             m_ChineseTraditionalText.text = GameEntry.Localization.GetString("Language.ChineseTraditional");
+            m_SelectedLanguage = GameEntry.Localization.Language;
+            switch (m_SelectedLanguage)
+            {
+                case Language.English:
+                    m_EnglishToggle.isOn = true;
+                    break;
+                case Language.ChineseSimplified:
+                    m_ChineseSimplifiedToggle.isOn = true;
+                    break;
+                case Language.ChineseTraditional:
+                    m_ChineseTraditionalToggle.isOn = true;
+                    break;
+                default:
+                    break;
+            }
+
             m_ConfirmText.text = GameEntry.Localization.GetString("Dialog.ConfirmButton");
             m_CancelText.text = GameEntry.Localization.GetString("Dialog.CancelButton");
         }
@@ -128,6 +199,11 @@ namespace StarForce
             {
                 m_LanguageTipsCanvasGroup.alpha = 0.5f + 0.5f * Mathf.Sin(Mathf.PI * Time.time);
             }
+        }
+
+        private void RefreshLanguageTips()
+        {
+            m_LanguageTipsCanvasGroup.gameObject.SetActive(m_SelectedLanguage != GameEntry.Localization.Language);
         }
     }
 }

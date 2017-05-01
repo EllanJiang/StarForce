@@ -17,5 +17,10 @@
     <String Key="AskQuitGame.Title" Value="Confirm Quit" />
     <String Key="AskQuitGame.Message" Value="Confirm quit game?" />
     <String Key="Setting.Title" Value="Settings" />
+    <String Key="Setting.Music" Value="Music" />
+    <String Key="Setting.Sound" Value="Sound" />
+    <String Key="Setting.UISound" Value="UI Sound" />
+    <String Key="Setting.Language" Value="Language" />
+    <String Key="Setting.LanguageTips" Value="Restart is required after change language." />
   </Dictionary>
 </Dictionaries>

@@ -40,7 +40,7 @@ namespace StarForce
 
             if (m_MenuForm != null)
             {
-                m_MenuForm.Close();
+                m_MenuForm.Close(isShutdown);
                 m_MenuForm = null;
             }
         }
