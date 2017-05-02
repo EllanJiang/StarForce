@@ -18,7 +18,7 @@ namespace StarForce
 
         private CanvasGroup m_CanvasGroup = null;
 
-        private void Start()
+        private void Awake()
         {
             m_CanvasGroup = gameObject.GetOrAddComponent<CanvasGroup>();
         }

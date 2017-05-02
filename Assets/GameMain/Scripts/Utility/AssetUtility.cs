@@ -32,11 +32,6 @@
             return string.Format("Assets/GameMain/Sounds/{0}.wav", assetName);
         }
 
-        public static string GetUISoundAsset(string assetName)
-        {
-            return string.Format("Assets/GameMain/UISounds/{0}.wav", assetName);
-        }
-
         public static string GetEntityAsset(string assetName)
         {
             return string.Format("Assets/GameMain/Entities/{0}.prefab", assetName);
@@ -47,14 +42,14 @@
             return string.Format("Assets/GameMain/UI/UIForms/{0}.prefab", assetName);
         }
 
-        public static string GetSpriteAsset(string assetName)
+        public static string GetUISpriteAsset(string assetName)
         {
-            return string.Format("Assets/GameMain/UI/Sprites/{0}.png", assetName);
+            return string.Format("Assets/GameMain/UI/UISprites/{0}.png", assetName);
         }
 
-        public static string GetTextureAsset(string assetName)
+        public static string GetUISoundAsset(string assetName)
         {
-            return string.Format("Assets/GameMain/UI/Textures/{0}.png", assetName);
+            return string.Format("Assets/GameMain/UI/UISounds/{0}.wav", assetName);
         }
     }
 }

@@ -25,6 +25,9 @@ namespace StarForce
         [SerializeField]
         private Text m_QuitText = null;
 
+        [SerializeField]
+        private GameObject m_QuitButton = null;
+
         private ProcedureMenu m_ProcedureMenu = null;
 
         public void OnStartButtonClick()
@@ -70,7 +73,7 @@ namespace StarForce
             m_SettingText.text = GameEntry.Localization.GetString("Menu.SettingButton");
             m_AboutText.text = GameEntry.Localization.GetString("Menu.AboutButton");
             m_QuitText.text = GameEntry.Localization.GetString("Menu.QuitButton");
-            m_QuitText.gameObject.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
+            m_QuitButton.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
         }
 
         protected internal override void OnClose(object userData)

@@ -7,8 +7,12 @@ namespace StarForce
 {
     public static class SoundExtension
     {
+        private const float FadeVolumeDuration = 1f;
+
         public static int PlayMusic(this SoundComponent soundComponent, int musicId, object userData = null)
         {
+            soundComponent.StopAllSounds("Music", FadeVolumeDuration);
+
             IDataTable<DRMusic> dtMusic = GameEntry.DataTable.GetDataTable<DRMusic>();
             DRMusic drMusic = dtMusic.GetDataRow(musicId);
             if (drMusic == null)
@@ -22,10 +26,16 @@ namespace StarForce
                 Priority = 64,
                 Loop = true,
                 VolumeInSoundGroup = 1f,
-                FadeInSeconds = 1f,
+                FadeInSeconds = FadeVolumeDuration,
                 SpatialBlend = 0f,
             };
+
             return soundComponent.PlaySound(AssetUtility.GetMusicAsset(drMusic.AssetName), "Music", playSoundParams, null, userData);
+        }
+
+        public static void StopMusic(this SoundComponent soundComponent)
+        {
+            soundComponent.StopAllSounds("Music", FadeVolumeDuration);
         }
 
         public static int PlaySound(this SoundComponent soundComponent, int soundId, Entity bindingEntity = null, object userData = null)
@@ -45,6 +55,7 @@ namespace StarForce
                 VolumeInSoundGroup = drSound.Volume,
                 SpatialBlend = drSound.SpatialBlend,
             };
+
             return soundComponent.PlaySound(AssetUtility.GetSoundAsset(drSound.AssetName), "Sound", playSoundParams, bindingEntity != null ? bindingEntity.Entity : null, userData);
         }
 
@@ -65,6 +76,7 @@ namespace StarForce
                 VolumeInSoundGroup = drUISound.Volume,
                 SpatialBlend = 0f,
             };
+
             return soundComponent.PlaySound(AssetUtility.GetUISoundAsset(drUISound.AssetName), "UISound", playSoundParams, userData);
         }
 

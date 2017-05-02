@@ -498,6 +498,7 @@ MonoBehaviour:
   m_SettingText: {fileID: 11456248}
   m_AboutText: {fileID: 11481238}
   m_QuitText: {fileID: 11468640}
+  m_QuitButton: {fileID: 176566}
 --- !u!114 &11449468
 MonoBehaviour:
   m_ObjectHideFlags: 1
