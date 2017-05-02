@@ -90,14 +90,5 @@ namespace StarForce
         {
             throw new System.NotImplementedException("OpenNativeDialog");
         }
-
-        private interface INativeCaller
-        {
-            void OpenDialog(int mode, string title, string message,
-                string confirmText, int confirmCallbackId,
-                string cancelText, int cancelCallbackId,
-                string otherText, int otherCallbackId,
-                string userData);
-        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using GameFramework;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
@@ -10,14 +11,9 @@ namespace StarForce
         public const int DepthFactor = 100;
         private const float FadeTime = 0.3f;
 
+        private static Font s_MainFont = null;
         private Canvas m_CachedCanvas = null;
         private CanvasGroup m_CanvasGroup = null;
-
-        public static Font MainFont
-        {
-            get;
-            set;
-        }
 
         public int OriginalDepth
         {
@@ -57,6 +53,21 @@ namespace StarForce
             GameEntry.Sound.PlayUISound(uiSoundId);
         }
 
+        public static void SetMainFont(Font mainFont)
+        {
+            if (mainFont == null)
+            {
+                Log.Error("Main font is invalid.");
+                return;
+            }
+
+            s_MainFont = mainFont;
+
+            GameObject go = new GameObject();
+            go.AddComponent<Text>().font = mainFont;
+            Destroy(go);
+        }
+
         protected internal override void OnInit(object userData)
         {
             base.OnInit(userData);
@@ -78,7 +89,7 @@ namespace StarForce
             Text[] texts = GetComponentsInChildren<Text>(true);
             for (int i = 0; i < texts.Length; i++)
             {
-                texts[i].font = MainFont;
+                texts[i].font = s_MainFont;
             }
         }
 

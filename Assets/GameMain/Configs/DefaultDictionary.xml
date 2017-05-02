@@ -4,7 +4,7 @@
     <String Key="Language.English" Value="English" />
     <String Key="Language.ChineseSimplified" Value="Chinese Simplified" />
     <String Key="Language.ChineseTraditional" Value="Chinese Traditional" />
-    <String Key="CheckVersion.Tips" Value="Check if the game need update. Please wait..." />
+    <String Key="CheckVersion.Tips" Value="Checking if the game needs update. Please wait..." />
   </Dictionary>
   <Dictionary Language="ChineseSimplified">
     <String Key="Language.English" Value="英语" />

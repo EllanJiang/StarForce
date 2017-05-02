@@ -2,7 +2,7 @@
 <Dictionaries>
   <Dictionary Language="English">
     <String Key="Game.Name" Value="STAR FORCE" />
-    <String Key="Game.Description" Value="A demo made with Game Framework" />
+    <String Key="Game.Description" Value="Game Framework Demo Program" />
     <String Key="Menu.StartButton" Value="START" />
     <String Key="Menu.SettingButton" Value="SETTINGS" />
     <String Key="Menu.AboutButton" Value="ABOUT" />
@@ -10,17 +10,17 @@
     <String Key="Dialog.ConfirmButton" Value="OK" />
     <String Key="Dialog.CancelButton" Value="CANCEL" />
     <String Key="Dialog.OtherButton" Value="" />
-    <String Key="ForceUpdate.Title" Value="Force Update" />
-    <String Key="ForceUpdate.Message" Value="This game version is out of date, go to update?" />
-    <String Key="ForceUpdate.UpdateButton" Value="Update" />
-    <String Key="ForceUpdate.QuitButton" Value="Quit" />
-    <String Key="AskQuitGame.Title" Value="Confirm Quit" />
-    <String Key="AskQuitGame.Message" Value="Confirm quit game?" />
-    <String Key="Setting.Title" Value="Settings" />
+    <String Key="ForceUpdate.Title" Value="OUT OF DATE" />
+    <String Key="ForceUpdate.Message" Value="The current game version is out-of-date. Would you like to go for update now?" />
+    <String Key="ForceUpdate.UpdateButton" Value="UPDATE" />
+    <String Key="ForceUpdate.QuitButton" Value="QUIT" />
+    <String Key="AskQuitGame.Title" Value="CONFIRM TO QUIT" />
+    <String Key="AskQuitGame.Message" Value="Are you sure to quit the game?" />
+    <String Key="Setting.Title" Value="SETTINGS" />
     <String Key="Setting.Music" Value="Music" />
-    <String Key="Setting.Sound" Value="Sound" />
-    <String Key="Setting.UISound" Value="UI Sound" />
+    <String Key="Setting.Sound" Value="Sound FX" />
+    <String Key="Setting.UISound" Value="UI Sound FX" />
     <String Key="Setting.Language" Value="Language" />
-    <String Key="Setting.LanguageTips" Value="Restart is required after change language." />
+    <String Key="Setting.LanguageTips" Value="Language change demands restarting." />
   </Dictionary>
 </Dictionaries>
