@@ -21,5 +21,10 @@
         /// 设置。
         /// </summary>
         SettingForm = 101,
+
+        /// <summary>
+        /// 关于。
+        /// </summary>
+        AboutForm = 102,
     }
 }

@@ -22,6 +22,7 @@ namespace StarForce
                 Priority = 64,
                 Loop = true,
                 VolumeInSoundGroup = 1f,
+                FadeInSeconds = 1f,
                 SpatialBlend = 0f,
             };
             return soundComponent.PlaySound(AssetUtility.GetMusicAsset(drMusic.AssetName), "Music", playSoundParams, null, userData);

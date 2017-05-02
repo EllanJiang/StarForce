@@ -99,7 +99,7 @@ namespace StarForce
 
             m_CanvasGroup.alpha = 0f;
             StopAllCoroutines();
-            StartCoroutine(m_CanvasGroup.Fade(1f, FadeTime));
+            StartCoroutine(m_CanvasGroup.FadeToAlpha(1f, FadeTime));
         }
 
         protected internal override void OnClose(object userData)
@@ -118,7 +118,7 @@ namespace StarForce
 
             m_CanvasGroup.alpha = 0f;
             StopAllCoroutines();
-            StartCoroutine(m_CanvasGroup.Fade(1f, FadeTime));
+            StartCoroutine(m_CanvasGroup.FadeToAlpha(1f, FadeTime));
         }
 
         protected internal override void OnCover()
@@ -155,7 +155,7 @@ namespace StarForce
 
         private IEnumerator CloseCo(float duration)
         {
-            yield return m_CanvasGroup.Fade(0f, duration);
+            yield return m_CanvasGroup.FadeToAlpha(0f, duration);
             GameEntry.UI.CloseUIForm(this);
         }
     }

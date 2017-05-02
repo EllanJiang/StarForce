@@ -36,7 +36,7 @@ namespace StarForce
             }
 
             StopAllCoroutines();
-            StartCoroutine(m_CanvasGroup.Fade(OnHoverAlpha, FadeTime));
+            StartCoroutine(m_CanvasGroup.FadeToAlpha(OnHoverAlpha, FadeTime));
             m_OnHover.Invoke();
         }
 
@@ -48,7 +48,7 @@ namespace StarForce
             }
 
             StopAllCoroutines();
-            StartCoroutine(m_CanvasGroup.Fade(1f, FadeTime));
+            StartCoroutine(m_CanvasGroup.FadeToAlpha(1f, FadeTime));
         }
 
         public void OnPointerDown(PointerEventData eventData)

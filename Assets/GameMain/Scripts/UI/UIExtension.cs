@@ -9,7 +9,7 @@ namespace StarForce
 {
     public static class UIExtension
     {
-        public static IEnumerator Fade(this CanvasGroup group, float alpha, float duration)
+        public static IEnumerator FadeToAlpha(this CanvasGroup group, float alpha, float duration)
         {
             float time = 0f;
             float originalAlpha = group.alpha;
