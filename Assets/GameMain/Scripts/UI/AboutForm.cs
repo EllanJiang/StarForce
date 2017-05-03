@@ -77,7 +77,6 @@ namespace StarForce
             {
                 m_Transform.SetLocalPositionY(m_InitPosition);
             }
-
         }
     }
 }
