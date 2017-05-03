@@ -40,8 +40,7 @@ namespace StarForce
                 return;
             }
 
-            float uiHeight = Screen.width * canvasScaler.referenceResolution.y / canvasScaler.referenceResolution.x;
-            m_InitPosition = -uiHeight;
+            m_InitPosition = -0.5f * canvasScaler.referenceResolution.x * Screen.height / Screen.width;
         }
 
         protected internal override void OnOpen(object userData)
