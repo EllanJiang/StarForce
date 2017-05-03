@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameFramework;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace StarForce
@@ -9,16 +10,7 @@ namespace StarForce
         private RectTransform m_Transform = null;
 
         [SerializeField]
-        private float m_DelaySeconds = 1f;
-
-        [SerializeField]
         private float m_ScrollSpeed = 1f;
-
-        [SerializeField]
-        private float m_ScrollMax = 0f;
-
-        [SerializeField]
-        private float m_ScrollMin = 0f;
 
         [SerializeField]
         private Text m_TitleText = null;
@@ -35,14 +27,28 @@ namespace StarForce
         [SerializeField]
         private Text m_IntroductionText = null;
 
-        private float m_ElapseSeconds = 0f;
+        private float m_InitPosition = 0f;
+
+        protected internal override void OnInit(object userData)
+        {
+            base.OnInit(userData);
+
+            CanvasScaler canvasScaler = GetComponentInParent<CanvasScaler>();
+            if (canvasScaler == null)
+            {
+                Log.Warning("Can not find CanvasScaler component.");
+                return;
+            }
+
+            float uiHeight = Screen.width * canvasScaler.referenceResolution.y / canvasScaler.referenceResolution.x;
+            m_InitPosition = -uiHeight;
+        }
 
         protected internal override void OnOpen(object userData)
         {
             base.OnOpen(userData);
 
-            m_ElapseSeconds = 0f;
-            m_Transform.SetLocalPositionY(0f);
+            m_Transform.SetLocalPositionY(m_InitPosition);
 
             // 换个音乐
             GameEntry.Sound.PlayMusic(3);
@@ -66,15 +72,12 @@ namespace StarForce
         {
             base.OnUpdate(elapseSeconds, realElapseSeconds);
 
-            m_ElapseSeconds += elapseSeconds;
-            if (m_ElapseSeconds > m_DelaySeconds)
+            m_Transform.AddLocalPositionY(m_ScrollSpeed * elapseSeconds);
+            if (m_Transform.localPosition.y > m_Transform.sizeDelta.y - m_InitPosition)
             {
-                m_Transform.AddLocalPositionY(m_ScrollSpeed * elapseSeconds);
-                if (m_Transform.localPosition.y > m_ScrollMax)
-                {
-                    m_Transform.SetLocalPositionY(m_ScrollMin);
-                }
+                m_Transform.SetLocalPositionY(m_InitPosition);
             }
+
         }
     }
 }

@@ -4,7 +4,7 @@
     <String Key="Game.Name" Value="STAR FORCE" />
     <String Key="Game.Description" Value="Game Framework Demo Program" />
     <String Key="Game.Website" Value="http://GameFramework.cn/" />
-    <String Key="Game.Summary" Value="这是一个使用 Game Framework 游戏框架制作的游戏演示项目，目的是对此游戏框架的使用方法做一些示范，供使用者参考。" />
+    <String Key="Game.Summary" Value="This project is a demo game made with Game Framework. It's intended to demonstrate how this game framework should be used for developers' reference." />
     <String Key="Game.Introduction" Value="Game Framework is literally a game framework, based on Unity 5.3+ game engine. It encapsulates commonly used game modules during development, and, to a large degree, standardises the process, enhances the development speed and ensures the product quality." />
     <String Key="Menu.StartButton" Value="START" />
     <String Key="Menu.SettingButton" Value="SETTINGS" />

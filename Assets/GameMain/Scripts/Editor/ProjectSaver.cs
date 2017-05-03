@@ -12,10 +12,10 @@ namespace StarForce.Editor
         [MenuItem("Star Force/Save Assets &s")]
         public static void SaveAssets()
         {
-#if UNITY_5_3 || UNITY_5_4
-            EditorApplication.SaveAssets();
-#else
+#if UNITY_5_5_OR_NEWER
             AssetDatabase.SaveAssets();
+#else
+            EditorApplication.SaveAssets(); 
 #endif
             Debug.Log("You have saved the serializable assets in the project.");
         }
