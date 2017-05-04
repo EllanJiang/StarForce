@@ -333,7 +333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Start]'
+  m_Text: Menu.StartButton
 --- !u!114 &11403418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Title]'
+  m_Text: Game.Name
 --- !u!114 &11410210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,7 +426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Description]'
+  m_Text: Game.Description
 --- !u!114 &11421948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,12 +492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fea4037c7349d49af8583511aaeb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TitleText: {fileID: 11403418}
-  m_DescriptionText: {fileID: 11413396}
-  m_StartText: {fileID: 11401308}
-  m_SettingText: {fileID: 11456248}
-  m_AboutText: {fileID: 11481238}
-  m_QuitText: {fileID: 11468640}
   m_QuitButton: {fileID: 176566}
 --- !u!114 &11449468
 MonoBehaviour:
@@ -585,7 +579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Setting]'
+  m_Text: Menu.SettingButton
 --- !u!114 &11460078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -645,7 +639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Quit]'
+  m_Text: Menu.QuitButton
 --- !u!114 &11477580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -705,7 +699,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[About]'
+  m_Text: Menu.AboutButton
 --- !u!114 &11486374
 MonoBehaviour:
   m_ObjectHideFlags: 1

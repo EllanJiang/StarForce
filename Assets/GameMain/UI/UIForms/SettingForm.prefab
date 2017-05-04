@@ -1341,7 +1341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Cancel]'
+  m_Text: Dialog.CancelButton
 --- !u!114 &11412244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1428,7 +1428,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[LanguageTips]'
+  m_Text: Setting.LanguageTips
 --- !u!114 &11417550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1461,7 +1461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Title]'
+  m_Text: Setting.Title
 --- !u!114 &11419034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1755,7 +1755,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Sound]'
+  m_Text: Setting.Sound
 --- !u!114 &11428030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2003,7 +2003,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[ChineseTraditional]'
+  m_Text: Language.ChineseTraditional
 --- !u!114 &11438794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2090,7 +2090,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[UISound]'
+  m_Text: Setting.UISound
 --- !u!114 &11443422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2231,7 +2231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[English]'
+  m_Text: Language.English
 --- !u!114 &11450922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2291,7 +2291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Confirm]'
+  m_Text: Dialog.ConfirmButton
 --- !u!114 &11452678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2324,7 +2324,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Language]'
+  m_Text: Setting.Language
 --- !u!114 &11455860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2665,27 +2665,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02bbd1c1f00c17842b1449ae2b66a932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TitleText: {fileID: 11417550}
-  m_MusicText: {fileID: 11496474}
   m_MusicMuteToggle: {fileID: 11428602}
   m_MusicVolumeSlider: {fileID: 11458132}
-  m_SoundText: {fileID: 11427818}
   m_SoundMuteToggle: {fileID: 11419480}
   m_SoundVolumeSlider: {fileID: 11484716}
-  m_UISoundText: {fileID: 11441178}
   m_UISoundMuteToggle: {fileID: 11404440}
   m_UISoundVolumeSlider: {fileID: 11423794}
-  m_LanguageText: {fileID: 11452678}
-  m_LanguageTipsText: {fileID: 11417316}
   m_LanguageTipsCanvasGroup: {fileID: 22524202}
-  m_EnglishText: {fileID: 11448266}
   m_EnglishToggle: {fileID: 11484778}
-  m_ChineseSimplifiedText: {fileID: 11495850}
   m_ChineseSimplifiedToggle: {fileID: 11434424}
-  m_ChineseTraditionalText: {fileID: 11435860}
   m_ChineseTraditionalToggle: {fileID: 11497670}
-  m_ConfirmText: {fileID: 11451404}
-  m_CancelText: {fileID: 11411508}
 --- !u!114 &11473918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3060,7 +3049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[ChineseSimplified]'
+  m_Text: Language.ChineseSimplified
 --- !u!114 &11496474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3093,7 +3082,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Music]'
+  m_Text: Setting.Music
 --- !u!114 &11497670
 MonoBehaviour:
   m_ObjectHideFlags: 1

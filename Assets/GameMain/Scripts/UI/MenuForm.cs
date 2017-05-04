@@ -1,30 +1,11 @@
 ﻿using GameFramework;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     public class MenuForm : UGuiForm
     {
-        [SerializeField]
-        private Text m_TitleText = null;
-
-        [SerializeField]
-        private Text m_DescriptionText = null;
-
-        [SerializeField]
-        private Text m_StartText = null;
-
-        [SerializeField]
-        private Text m_SettingText = null;
-
-        [SerializeField]
-        private Text m_AboutText = null;
-
-        [SerializeField]
-        private Text m_QuitText = null;
-
         [SerializeField]
         private GameObject m_QuitButton = null;
 
@@ -67,12 +48,6 @@ namespace StarForce
                 return;
             }
 
-            m_TitleText.text = GameEntry.Localization.GetString("Game.Name");
-            m_DescriptionText.text = GameEntry.Localization.GetString("Game.Description");
-            m_StartText.text = GameEntry.Localization.GetString("Menu.StartButton");
-            m_SettingText.text = GameEntry.Localization.GetString("Menu.SettingButton");
-            m_AboutText.text = GameEntry.Localization.GetString("Menu.AboutButton");
-            m_QuitText.text = GameEntry.Localization.GetString("Menu.QuitButton");
             m_QuitButton.SetActive(Application.platform != RuntimePlatform.IPhonePlayer);
         }
 

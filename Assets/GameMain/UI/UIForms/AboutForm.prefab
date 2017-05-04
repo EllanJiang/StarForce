@@ -204,7 +204,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Title]'
+  m_Text: Game.Name
 --- !u!114 &11405796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,7 +250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.2
-  m_Text: '[Introduction]'
+  m_Text: Game.Introduction
 --- !u!114 &11431424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,7 +326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.2
-  m_Text: '[Summary]'
+  m_Text: Game.Summary
 --- !u!114 &11437536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -385,11 +385,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Transform: {fileID: 22456236}
   m_ScrollSpeed: 20
-  m_TitleText: {fileID: 11403418}
-  m_DescriptionText: {fileID: 11467394}
-  m_WebsiteText: {fileID: 11481666}
-  m_SummaryText: {fileID: 11436610}
-  m_IntroductionText: {fileID: 11413396}
 --- !u!114 &11463668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -449,7 +444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Description]'
+  m_Text: Game.Description
 --- !u!114 &11480240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -502,7 +497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '[Website]'
+  m_Text: Game.Website
 --- !u!222 &22204048
 CanvasRenderer:
   m_ObjectHideFlags: 1
