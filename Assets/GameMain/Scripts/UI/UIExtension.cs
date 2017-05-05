@@ -3,24 +3,39 @@ using GameFramework.DataTable;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     public static class UIExtension
     {
-        public static IEnumerator FadeToAlpha(this CanvasGroup group, float alpha, float duration)
+        public static IEnumerator FadeToAlpha(this CanvasGroup canvasGroup, float alpha, float duration)
         {
             float time = 0f;
-            float originalAlpha = group.alpha;
+            float originalAlpha = canvasGroup.alpha;
             while (time < duration)
             {
                 time += Time.deltaTime;
-                group.alpha = Mathf.Lerp(originalAlpha, alpha, time / duration);
+                canvasGroup.alpha = Mathf.Lerp(originalAlpha, alpha, time / duration);
                 yield return new WaitForEndOfFrame();
             }
 
-            group.alpha = alpha;
+            canvasGroup.alpha = alpha;
+        }
+
+        public static IEnumerator SmoothValue(this Slider slider, float value, float duration)
+        {
+            float time = 0f;
+            float originalValue = slider.value;
+            while (time < duration)
+            {
+                time += Time.deltaTime;
+                slider.value = Mathf.Lerp(originalValue, value, time / duration);
+                yield return new WaitForEndOfFrame();
+            }
+
+            slider.value = value;
         }
 
         public static bool HasUIForm(this UIComponent uiComponent, UIFormId uiFormId, string uiGroup = "Default")

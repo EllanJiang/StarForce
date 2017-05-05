@@ -10,6 +10,8 @@ GameObject:
   - 224: {fileID: 22412012}
   - 222: {fileID: 22245532}
   - 223: {fileID: 22325564}
+  - 225: {fileID: 22565068}
+  - 114: {fileID: 11414536}
   m_Layer: 5
   m_Name: HPBarItem
   m_TagString: Untagged
@@ -27,7 +29,7 @@ GameObject:
   - 224: {fileID: 22460238}
   - 114: {fileID: 11458132}
   m_Layer: 5
-  m_Name: Volume
+  m_Name: HPBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,6 +69,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &11414536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcc0608685184647b097f4838a8e9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CanvasGroup: {fileID: 22565068}
+  m_HPBar: {fileID: 11458132}
 --- !u!114 &11458132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,6 +296,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &22565068
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107322}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
