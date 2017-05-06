@@ -17,20 +17,20 @@ namespace StarForce
         [SerializeField]
         private int m_InstancePoolCapacity = 16;
 
-        private IObjectPool<HPBarItemObject> m_HPBarItemObjects = null;
+        private IObjectPool<HPBarItemObject> m_HPBarItemObjectPool = null;
         private List<HPBarItem> m_ActiveHPBarItems = null;
+        private Canvas m_CachedCanvas = null;
 
-        protected override void Awake()
+        private void Start()
         {
-            base.Awake();
-
             if (m_HPBarInstanceRoot == null)
             {
                 Log.Error("You must set HP bar instance root first.");
                 return;
             }
 
-            m_HPBarItemObjects = GameEntry.ObjectPool.CreateSingleSpawnObjectPool<HPBarItemObject>("HPBarItem", m_InstancePoolCapacity);
+            m_CachedCanvas = m_HPBarInstanceRoot.GetComponent<Canvas>();
+            m_HPBarItemObjectPool = GameEntry.ObjectPool.CreateSingleSpawnObjectPool<HPBarItemObject>("HPBarItem", m_InstancePoolCapacity);
             m_ActiveHPBarItems = new List<HPBarItem>();
         }
 
@@ -65,16 +65,17 @@ namespace StarForce
             if (hpBarItem == null)
             {
                 hpBarItem = CreateHPBarItem(entity);
+                m_ActiveHPBarItems.Add(hpBarItem);
             }
 
-            hpBarItem.Init(entity, fromHPRatio, toHPRatio);
+            hpBarItem.Init(entity, m_CachedCanvas, fromHPRatio, toHPRatio);
         }
 
         private void HideHPBar(HPBarItem hpBarItem)
         {
             hpBarItem.Reset();
             m_ActiveHPBarItems.Remove(hpBarItem);
-            m_HPBarItemObjects.Unspawn(hpBarItem);
+            m_HPBarItemObjectPool.Unspawn(hpBarItem);
         }
 
         private HPBarItem GetActiveHPBarItem(Entity entity)
@@ -98,7 +99,7 @@ namespace StarForce
         private HPBarItem CreateHPBarItem(Entity entity)
         {
             HPBarItem hpBarItem = null;
-            HPBarItemObject hpBarItemObject = m_HPBarItemObjects.Spawn();
+            HPBarItemObject hpBarItemObject = m_HPBarItemObjectPool.Spawn();
             if (hpBarItemObject != null)
             {
                 hpBarItem = (HPBarItem)hpBarItemObject.Target;
@@ -109,7 +110,7 @@ namespace StarForce
                 Transform transform = hpBarItem.GetComponent<Transform>();
                 transform.SetParent(m_HPBarInstanceRoot);
                 transform.localScale = Vector3.one;
-                m_HPBarItemObjects.Register(new HPBarItemObject(hpBarItem), true);
+                m_HPBarItemObjectPool.Register(new HPBarItemObject(hpBarItem), true);
             }
 
             return hpBarItem;

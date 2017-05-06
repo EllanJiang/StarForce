@@ -4,6 +4,8 @@ using System;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
+using GameFramework.Fsm;
+using GameFramework.Procedure;
 
 namespace StarForce
 {
@@ -17,12 +19,17 @@ namespace StarForce
             }
         }
 
-        protected override void OnEnter(ProcedureOwner procedureOwner)
+        protected override void OnInit(ProcedureOwner procedureOwner)
         {
-            base.OnEnter(procedureOwner);
+            base.OnInit(procedureOwner);
 
             // 初始化 GameEntry
             GameEntry.Initialize();
+        }
+
+        protected override void OnEnter(ProcedureOwner procedureOwner)
+        {
+            base.OnEnter(procedureOwner);
 
             // 构建信息：发布版本时，把一些数据以 Json 的格式写入 Assets/GameMain/Configs/BuildInfo.txt，供游戏逻辑读取。
             GameEntry.Config.InitBuildInfo();
