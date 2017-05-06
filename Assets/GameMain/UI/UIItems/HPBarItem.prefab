@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bcc0608685184647b097f4838a8e9f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Transform: {fileID: 22412012}
   m_CanvasGroup: {fileID: 22565068}
   m_HPBar: {fileID: 11458132}
 --- !u!114 &11458132

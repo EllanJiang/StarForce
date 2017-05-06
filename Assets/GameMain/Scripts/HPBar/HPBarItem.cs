@@ -12,12 +12,12 @@ namespace StarForce
         private const float FadeOutSeconds = 1f;
 
         [SerializeField]
-        private CanvasGroup m_CanvasGroup = null;
-
-        [SerializeField]
         private Slider m_HPBar = null;
 
+        private RectTransform m_CachedTransform = null;
+        private CanvasGroup m_CachedCanvasGroup = null;
         private Entity m_Owner = null;
+        private float m_Height = 0f;
 
         public Entity Owner
         {
@@ -46,12 +46,15 @@ namespace StarForce
             StartCoroutine(HPBarCo(toHPRatio, AnimationSeconds, KeepSeconds, FadeOutSeconds));
         }
 
-        public bool CheckAvailable()
+        public bool Refresh()
         {
-            if (m_Owner == null || !Owner.IsAvailable || m_CanvasGroup.alpha <= 0f)
+            if (m_Owner == null || !Owner.IsAvailable || m_CachedCanvasGroup.alpha <= 0f)
             {
                 return false;
             }
+
+            Vector3 worldPosition = m_Owner.CachedTransform.position + Vector3.up * m_Height;
+            m_CachedTransform.position = GameEntry.Scene.MainCamera.WorldToScreenPoint(worldPosition);
 
             return true;
         }
@@ -62,11 +65,28 @@ namespace StarForce
             m_Owner = null;
         }
 
+        private void Start()
+        {
+            m_CachedTransform = GetComponent<RectTransform>();
+            if (m_CachedTransform == null)
+            {
+                Log.Error("RectTransform is invalid.");
+                return;
+            }
+
+            m_CachedCanvasGroup = GetComponent<CanvasGroup>();
+            if (m_CachedCanvasGroup == null)
+            {
+                Log.Error("CanvasGroup is invalid.");
+                return;
+            }
+        }
+
         private IEnumerator HPBarCo(float value, float animationDuration, float keepDuration, float fadeOutDuration)
         {
             yield return m_HPBar.SmoothValue(value, animationDuration);
             yield return new WaitForSeconds(keepDuration);
-            yield return m_CanvasGroup.FadeToAlpha(0f, fadeOutDuration);
+            yield return m_CachedCanvasGroup.FadeToAlpha(0f, fadeOutDuration);
         }
     }
 }

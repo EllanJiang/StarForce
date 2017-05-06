@@ -44,7 +44,7 @@ namespace StarForce
             for (int i = m_ActiveHPBarItems.Count - 1; i >= 0; i--)
             {
                 HPBarItem hpBarItem = m_ActiveHPBarItems[i];
-                if (hpBarItem.CheckAvailable())
+                if (hpBarItem.Refresh())
                 {
                     continue;
                 }

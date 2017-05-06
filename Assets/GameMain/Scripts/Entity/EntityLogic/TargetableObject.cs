@@ -23,11 +23,15 @@ namespace StarForce
 
         public void ApplyDamage(Entity attacker, int damageHP)
         {
+            float fromHPRatio = m_TargetableObjectData.HPRatio;
             m_TargetableObjectData.HP -= damageHP;
+            float toHPRatio = m_TargetableObjectData.HPRatio;
             if (m_TargetableObjectData.HP <= 0)
             {
                 OnDead(attacker);
             }
+
+            GameEntry.HPBar.ShowHPBar(this, fromHPRatio, toHPRatio);
         }
 
         protected internal override void OnInit(object userData)
