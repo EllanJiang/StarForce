@@ -275,6 +275,10 @@ Prefab:
       propertyPath: m_EntityGroups.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.size
       value: 7
@@ -538,6 +542,34 @@ Prefab:
     - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_NetworkHelperTypeName
       value: StarForce.NetworkHelper
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_Name
+      value: Server
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_IPString
+      value: 127.0.0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_Port
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_PacketHeaderLength
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_MaxPacketLength
+      value: 32767
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_HeartBeatInterval
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431030, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_NetworkChannels.Array.data[0].m_ResetHeartBeatElapseSecondsWhenReceivePacket
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
