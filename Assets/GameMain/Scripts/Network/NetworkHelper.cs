@@ -13,12 +13,12 @@ namespace StarForce
 {
     public class NetworkHelper : NetworkHelperBase
     {
-        private readonly Dictionary<int, Type> m_PacketTypes = new Dictionary<int, Type>();
+        private readonly Dictionary<int, Type> m_ServerToClientPacketTypes = new Dictionary<int, Type>();
 
         private void Start()
         {
             // 反射注册包和包行为。
-            Type packetBaseType = typeof(PacketBase);
+            Type packetBaseType = typeof(ServerToClientPacketBase);
             Type packetHandlerBaseType = typeof(IPacketHandler);
             Assembly assembly = Assembly.GetExecutingAssembly();
             Type[] types = assembly.GetTypes();
@@ -32,14 +32,14 @@ namespace StarForce
                 if (types[i].BaseType == packetBaseType)
                 {
                     PacketBase packetBase = (PacketBase)Activator.CreateInstance(types[i]);
-                    Type packetType = GetPacketType(packetBase.Id);
+                    Type packetType = GetServerToClientPacketType(packetBase.Id);
                     if (packetType != null)
                     {
                         Log.Warning("Already exist packet type '{0}', check '{1}' or '{2}'?.", packetBase.Id.ToString(), packetType.Name, packetBase.GetType().Name);
                         continue;
                     }
 
-                    m_PacketTypes.Add(packetBase.Id, types[i]);
+                    m_ServerToClientPacketTypes.Add(packetBase.Id, types[i]);
                 }
                 else if (packetHandlerBaseType.IsAssignableFrom(types[i]))
                 {
@@ -119,7 +119,7 @@ namespace StarForce
                 throw new GameFrameworkException("Can not deserialize packet header.");
             }
 
-            Type packetType = GetPacketType(packetHead.Id);
+            Type packetType = GetServerToClientPacketType(packetHead.Id);
             if (packetType == null)
             {
                 PacketType pt = PacketType.Undefined;
@@ -131,10 +131,10 @@ namespace StarForce
             return (PacketBase)RuntimeTypeModel.Default.Deserialize(source, null, packetType);
         }
 
-        private Type GetPacketType(int opCode)
+        private Type GetServerToClientPacketType(int opCode)
         {
             Type packetType = null;
-            if (m_PacketTypes.TryGetValue(opCode, out packetType))
+            if (m_ServerToClientPacketTypes.TryGetValue(opCode, out packetType))
             {
                 return packetType;
             }
