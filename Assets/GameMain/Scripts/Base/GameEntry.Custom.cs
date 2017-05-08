@@ -3,7 +3,7 @@
     /// <summary>
     /// 游戏入口。
     /// </summary>
-    public static partial class GameEntry
+    public partial class GameEntry
     {
         public static ConfigComponent Config
         {

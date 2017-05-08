@@ -876,6 +876,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1852670053}
+  - 114: {fileID: 1852670054}
   m_Layer: 0
   m_Name: Game Framework
   m_TagString: Untagged
@@ -899,3 +900,14 @@ Transform:
   - {fileID: 119167776}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1852670054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852670052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d09b8a3e8c0e7e4dbcfd2fa52bf69ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

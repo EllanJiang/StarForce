@@ -53,7 +53,10 @@ namespace UnityGameFramework.Runtime
                 Log.Fatal("Procedure manager is invalid.");
                 return;
             }
+        }
 
+        private IEnumerator Start()
+        {
             ProcedureBase[] procedures = new ProcedureBase[m_AvailableProcedureTypeNames.Length];
             for (int i = 0; i < m_AvailableProcedureTypeNames.Length; i++)
             {
@@ -61,14 +64,14 @@ namespace UnityGameFramework.Runtime
                 if (procedureType == null)
                 {
                     Log.Error("Can not find procedure type '{0}'.", m_AvailableProcedureTypeNames[i]);
-                    return;
+                    yield break;
                 }
 
                 procedures[i] = (ProcedureBase)Activator.CreateInstance(procedureType);
                 if (procedures[i] == null)
                 {
                     Log.Error("Can not create procedure instance '{0}'.", m_AvailableProcedureTypeNames[i]);
-                    return;
+                    yield break;
                 }
 
                 if (m_EntranceProcedureTypeName == m_AvailableProcedureTypeNames[i])
@@ -80,14 +83,11 @@ namespace UnityGameFramework.Runtime
             if (m_EntranceProcedure == null)
             {
                 Log.Error("Entrance procedure is invalid.");
-                return;
+                yield break;
             }
 
             m_ProcedureManager.Initialize(GameFrameworkEntry.GetModule<IFsmManager>(), procedures);
-        }
 
-        private IEnumerator Start()
-        {
             yield return new WaitForEndOfFrame();
 
             m_ProcedureManager.StartProcedure(m_EntranceProcedure.GetType());

@@ -1,11 +1,12 @@
-﻿using UnityGameFramework.Runtime;
+﻿using UnityEngine;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 游戏入口。
     /// </summary>
-    public static partial class GameEntry
+    public partial class GameEntry
     {
         /// <summary>
         /// 获取游戏基础组件。
@@ -167,12 +168,6 @@ namespace StarForce
         {
             get;
             private set;
-        }
-
-        public static void Initialize()
-        {
-            InitBuiltinComponents();
-            InitCustomComponents();
         }
 
         private static void InitBuiltinComponents()

@@ -19,14 +19,6 @@ namespace StarForce
             }
         }
 
-        protected override void OnInit(ProcedureOwner procedureOwner)
-        {
-            base.OnInit(procedureOwner);
-
-            // 初始化 GameEntry
-            GameEntry.Initialize();
-        }
-
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
             base.OnEnter(procedureOwner);
