@@ -156,7 +156,7 @@ namespace StarForce
 
         private void OnNetworkSendPacket(object sender, GameEventArgs e)
         {
-            UnityGameFramework.Runtime.NetworkSendPacketEventArgs ne = (UnityGameFramework.Runtime.NetworkSendPacketEventArgs)e;
+            //UnityGameFramework.Runtime.NetworkSendPacketEventArgs ne = (UnityGameFramework.Runtime.NetworkSendPacketEventArgs)e;
         }
 
         private void OnNetworkMissHeartBeat(object sender, GameEventArgs e)
@@ -182,7 +182,7 @@ namespace StarForce
 
         private void OnNetworkCustomError(object sender, GameEventArgs e)
         {
-            UnityGameFramework.Runtime.NetworkCustomErrorEventArgs ne = (UnityGameFramework.Runtime.NetworkCustomErrorEventArgs)e;
+            //UnityGameFramework.Runtime.NetworkCustomErrorEventArgs ne = (UnityGameFramework.Runtime.NetworkCustomErrorEventArgs)e;
         }
     }
 }
