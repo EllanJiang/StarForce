@@ -36,6 +36,15 @@ namespace StarForce
         }
 
         /// <summary>
+        /// 是否允许多个界面实例。
+        /// </summary>
+        public bool AllowMultiInstance
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
         /// 是否暂停被其覆盖的界面。
         /// </summary>
         public bool PauseCoveredUIForm
@@ -53,6 +62,7 @@ namespace StarForce
             index++;
             AssetName = text[index++];
             UIGroupName = text[index++];
+            AllowMultiInstance = bool.Parse(text[index++]);
             PauseCoveredUIForm = bool.Parse(text[index++]);
         }
 

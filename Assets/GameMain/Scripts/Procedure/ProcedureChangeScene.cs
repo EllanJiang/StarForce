@@ -37,7 +37,8 @@ namespace StarForce
             GameEntry.Sound.StopAllSounds();
 
             // 隐藏所有实体
-            GameEntry.Entity.HideAllEntities();
+            GameEntry.Entity.HideAllLoadingEntities();
+            GameEntry.Entity.HideAllLoadedEntities();
 
             // 卸载所有场景
             string[] loadedSceneAssetNames = GameEntry.Scene.GetLoadedSceneAssetNames();
