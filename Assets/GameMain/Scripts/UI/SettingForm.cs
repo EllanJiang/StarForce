@@ -116,6 +116,7 @@ namespace StarForce
             GameEntry.Setting.SetString(Constant.Setting.Language, m_SelectedLanguage.ToString());
             GameEntry.Setting.Save();
 
+            GameEntry.Sound.StopMusic();
             UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Restart);
         }
 
