@@ -34,7 +34,8 @@ namespace StarForce
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneDependencyAsset, OnLoadSceneDependencyAsset);
 
             // 停止所有声音
-            GameEntry.Sound.StopAllSounds();
+            GameEntry.Sound.StopAllLoadingSounds();
+            GameEntry.Sound.StopAllLoadedSounds();
 
             // 隐藏所有实体
             GameEntry.Entity.HideAllLoadingEntities();

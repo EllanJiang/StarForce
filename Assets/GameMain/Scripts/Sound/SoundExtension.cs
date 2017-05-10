@@ -8,17 +8,18 @@ namespace StarForce
     public static class SoundExtension
     {
         private const float FadeVolumeDuration = 1f;
+        private static int? s_MusicSerialId = null;
 
-        public static int PlayMusic(this SoundComponent soundComponent, int musicId, object userData = null)
+        public static int? PlayMusic(this SoundComponent soundComponent, int musicId, object userData = null)
         {
-            soundComponent.StopAllSounds("Music", FadeVolumeDuration);
+            soundComponent.StopMusic();
 
             IDataTable<DRMusic> dtMusic = GameEntry.DataTable.GetDataTable<DRMusic>();
             DRMusic drMusic = dtMusic.GetDataRow(musicId);
             if (drMusic == null)
             {
                 Log.Warning("Can not load music '{0}' from data table.", musicId.ToString());
-                return -1;
+                return null;
             }
 
             PlaySoundParams playSoundParams = new PlaySoundParams
@@ -30,22 +31,29 @@ namespace StarForce
                 SpatialBlend = 0f,
             };
 
-            return soundComponent.PlaySound(AssetUtility.GetMusicAsset(drMusic.AssetName), "Music", playSoundParams, null, userData);
+            s_MusicSerialId = soundComponent.PlaySound(AssetUtility.GetMusicAsset(drMusic.AssetName), "Music", playSoundParams, null, userData);
+            return s_MusicSerialId;
         }
 
         public static void StopMusic(this SoundComponent soundComponent)
         {
-            soundComponent.StopAllSounds("Music", FadeVolumeDuration);
+            if (!s_MusicSerialId.HasValue)
+            {
+                return;
+            }
+
+            soundComponent.StopSound(s_MusicSerialId.Value, FadeVolumeDuration);
+            s_MusicSerialId = null;
         }
 
-        public static int PlaySound(this SoundComponent soundComponent, int soundId, Entity bindingEntity = null, object userData = null)
+        public static int? PlaySound(this SoundComponent soundComponent, int soundId, Entity bindingEntity = null, object userData = null)
         {
             IDataTable<DRSound> dtSound = GameEntry.DataTable.GetDataTable<DRSound>();
             DRSound drSound = dtSound.GetDataRow(soundId);
             if (drSound == null)
             {
                 Log.Warning("Can not load sound '{0}' from data table.", soundId.ToString());
-                return -1;
+                return null;
             }
 
             PlaySoundParams playSoundParams = new PlaySoundParams
@@ -59,14 +67,14 @@ namespace StarForce
             return soundComponent.PlaySound(AssetUtility.GetSoundAsset(drSound.AssetName), "Sound", playSoundParams, bindingEntity != null ? bindingEntity.Entity : null, userData);
         }
 
-        public static int PlayUISound(this SoundComponent soundComponent, int uiSoundId, object userData = null)
+        public static int? PlayUISound(this SoundComponent soundComponent, int uiSoundId, object userData = null)
         {
             IDataTable<DRUISound> dtUISound = GameEntry.DataTable.GetDataTable<DRUISound>();
             DRUISound drUISound = dtUISound.GetDataRow(uiSoundId);
             if (drUISound == null)
             {
                 Log.Warning("Can not load UI sound '{0}' from data table.", uiSoundId.ToString());
-                return -1;
+                return null;
             }
 
             PlaySoundParams playSoundParams = new PlaySoundParams
