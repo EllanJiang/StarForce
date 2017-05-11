@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using System.Threading;
 
 namespace Utility
@@ -20,6 +21,7 @@ namespace Utility
         {
             if (mainThread == null)
             {
+                Log.Error("Main thread is invalid.");
                 return;
             }
 
