@@ -3,10 +3,10 @@
   <AssetBundleBuilder>
     <Settings>
       <InternalResourceVersion>0</InternalResourceVersion>
-      <WindowsSelected>False</WindowsSelected>
+      <WindowsSelected>True</WindowsSelected>
       <MacOSXSelected>False</MacOSXSelected>
-      <IOSSelected>True</IOSSelected>
-      <AndroidSelected>True</AndroidSelected>
+      <IOSSelected>False</IOSSelected>
+      <AndroidSelected>False</AndroidSelected>
       <WindowsStoreSelected>False</WindowsStoreSelected>
       <ZipSelected>True</ZipSelected>
       <RecordScatteredDependencyAssetsSelected>False</RecordScatteredDependencyAssetsSelected>
@@ -17,7 +17,7 @@
       <IgnoreTypeTreeChangesSelected>False</IgnoreTypeTreeChangesSelected>
       <AppendHashToAssetBundleNameSelected>False</AppendHashToAssetBundleNameSelected>
       <ChunkBasedCompressionSelected>True</ChunkBasedCompressionSelected>
-      <BuildEventHandlerTypeName></BuildEventHandlerTypeName>
+      <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
       <OutputDirectory></OutputDirectory>
     </Settings>
   </AssetBundleBuilder>
