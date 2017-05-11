@@ -18,6 +18,7 @@ namespace StarForce
         private RectTransform m_CachedTransform = null;
         private CanvasGroup m_CachedCanvasGroup = null;
         private Entity m_Owner = null;
+        private int m_OwnerId = 0;
 
         public Entity Owner
         {
@@ -41,12 +42,13 @@ namespace StarForce
             StopAllCoroutines();
 
             m_CachedCanvasGroup.alpha = 1f;
-            if (m_Owner != owner)
+            if (m_Owner != owner || m_OwnerId != owner.Id)
             {
                 m_HPBar.value = fromHPRatio;
+                m_Owner = owner;
+                m_OwnerId = owner.Id;
             }
-
-            m_Owner = owner;
+            
             Refresh();
 
             StartCoroutine(HPBarCo(toHPRatio, AnimationSeconds, KeepSeconds, FadeOutSeconds));
@@ -59,13 +61,14 @@ namespace StarForce
                 return false;
             }
 
-            if (m_Owner != null && Owner.IsAvailable)
+            if (m_Owner != null && Owner.IsAvailable && Owner.Id == m_OwnerId)
             {
                 Vector3 worldPosition = m_Owner.CachedTransform.position + Vector3.forward;
                 Vector3 screenPosition = GameEntry.Scene.MainCamera.WorldToScreenPoint(worldPosition);
 
                 Vector2 position;
-                if (RectTransformUtility.ScreenPointToLocalPointInRectangle((RectTransform)m_ParentCanvas.transform, screenPosition, m_ParentCanvas.worldCamera, out position))
+                if (RectTransformUtility.ScreenPointToLocalPointInRectangle((RectTransform)m_ParentCanvas.transform, screenPosition,
+                    m_ParentCanvas.worldCamera, out position))
                 {
                     m_CachedTransform.anchoredPosition = position;
                 }
