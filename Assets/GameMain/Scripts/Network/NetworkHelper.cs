@@ -17,7 +17,7 @@ namespace StarForce
 
         private void Start()
         {
-            // 反射注册包和包行为。
+            // 反射注册包和包处理函数。
             Type packetBaseType = typeof(ServerToClientPacketBase);
             Type packetHandlerBaseType = typeof(IPacketHandler);
             Assembly assembly = Assembly.GetExecutingAssembly();
