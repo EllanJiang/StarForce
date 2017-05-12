@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using GameFramework;
+using System.IO;
 using UnityEditor;
 using UnityEngine;
 using UnityGameFramework.Editor.AssetBundleTools;
