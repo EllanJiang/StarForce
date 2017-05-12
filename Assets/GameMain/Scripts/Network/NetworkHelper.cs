@@ -19,7 +19,7 @@ namespace StarForce
         {
             // 反射注册包和包处理函数。
             Type packetBaseType = typeof(ServerToClientPacketBase);
-            Type packetHandlerBaseType = typeof(IPacketHandler);
+            Type packetHandlerBaseType = typeof(PacketHandlerBase);
             Assembly assembly = Assembly.GetExecutingAssembly();
             Type[] types = assembly.GetTypes();
             for (int i = 0; i < types.Length; i++)
@@ -41,7 +41,7 @@ namespace StarForce
 
                     m_ServerToClientPacketTypes.Add(packetBase.Id, types[i]);
                 }
-                else if (packetHandlerBaseType.IsAssignableFrom(types[i]))
+                else if (types[i].BaseType == packetHandlerBaseType)
                 {
                     IPacketHandler packetHandler = (IPacketHandler)Activator.CreateInstance(types[i]);
                     GameEntry.Network.RegisterHandler(packetHandler);
