@@ -145,10 +145,10 @@ namespace StarForce.Editor.Profiler
                 return false;
             }
 
-            TypeDefinition profilerTypeDefinition = gameFrameworkModuleDefinition.Types.SingleOrDefault(t => t.FullName == "GameFramework.Utility.Profiler");
+            TypeDefinition profilerTypeDefinition = gameFrameworkModuleDefinition.Types.SingleOrDefault(t => t.FullName == "GameFramework.Utility/Profiler");
             if (profilerTypeDefinition == null)
             {
-                Debug.LogWarning("Can not find type GameFramework.Utility.Profiler in GameFramework.dll.");
+                Debug.LogWarning("Can not find type GameFramework.Utility/Profiler in GameFramework.dll.");
                 return false;
             }
 
@@ -277,9 +277,9 @@ namespace StarForce.Editor.Profiler
                     return false;
                 }
 
+                string dontProfileAttributeFullName = typeof(DontProfileAttribute).FullName;
                 foreach (ICustomAttribute customAttribute in methodDefinition.CustomAttributes)
                 {
-                    string dontProfileAttributeFullName = typeof(DontProfileAttribute).FullName;
                     if (customAttribute.AttributeType.FullName == dontProfileAttributeFullName)
                     {
                         return false;
@@ -291,42 +291,37 @@ namespace StarForce.Editor.Profiler
 
             private void InjectMethod(TypeDefinition targetType, MethodDefinition methodDefinition)
             {
-                var instructions = methodDefinition.Body.Instructions;
-                var loadStr = Instruction.Create(OpCodes.Ldstr, string.Format("[{0}.{1}]", targetType.Name, methodDefinition.Name));
+                Collection<Instruction> instructions = methodDefinition.Body.Instructions;
+
+                Instruction loadStr = Instruction.Create(OpCodes.Ldstr, string.Format("{0}.{1}", targetType.Name, methodDefinition.Name));
                 instructions.Insert(0, loadStr);
-                var callBegin = Instruction.Create(OpCodes.Call, methodDefinition.Module.ImportReference(m_BeginSampleMethod));
+                Instruction callBegin = Instruction.Create(OpCodes.Call, methodDefinition.Module.ImportReference(m_BeginSampleMethod));
                 instructions.Insert(1, callBegin);
 
-                var jumpInstructions = GetJumpInstructions(instructions);
+                HashSet<Instruction> jumpInstructions = GetJumpInstructions(instructions);
                 for (int i = 0; i < instructions.Count; i++)
                 {
-                    var instruction = instructions[i];
-                    if (instruction.OpCode != OpCodes.Ret)
+                    if (instructions[i].OpCode != OpCodes.Ret)
                     {
                         continue;
                     }
 
-                    var callEnd = Instruction.Create(OpCodes.Call, methodDefinition.Module.ImportReference(m_EndSampleMethod));
+                    Instruction callEnd = Instruction.Create(OpCodes.Call, methodDefinition.Module.ImportReference(m_EndSampleMethod));
                     instructions.Insert(i, callEnd);
 
-                    var jumpInstructionsToRemove = new HashSet<Instruction>();
-                    foreach (var jumpInstruction in jumpInstructions)
+                    HashSet<Instruction> jumpInstructionsToRemove = new HashSet<Instruction>();
+                    foreach (Instruction jumpInstruction in jumpInstructions)
                     {
-                        var targetInstruction = jumpInstruction.Operand as Instruction;
-                        if (targetInstruction == null)
+                        if (instructions[i] != (Instruction)jumpInstruction.Operand)
                         {
-                            Debug.LogWarning(string.Format("Weird! Branch statement doesn't have target instruction in '{0}.{1}'.", targetType.FullName, methodDefinition.Name));
                             continue;
                         }
 
-                        if (targetInstruction == instruction)
-                        {
-                            jumpInstruction.Operand = callEnd;
-                            jumpInstructionsToRemove.Add(jumpInstruction);
-                        }
+                        jumpInstruction.Operand = callEnd;
+                        jumpInstructionsToRemove.Add(jumpInstruction);
                     }
 
-                    jumpInstructions.RemoveWhere(ins => jumpInstructionsToRemove.Contains(ins));
+                    jumpInstructions.RemoveWhere(instruction => jumpInstructionsToRemove.Contains(instruction));
 
                     // 新增了一条指令，所以迭代子 i 需要多增加一次。
                     i++;
@@ -338,13 +333,12 @@ namespace StarForce.Editor.Profiler
                 HashSet<Instruction> jumpInstructions = new HashSet<Instruction>();
                 for (int i = 0; i < instructions.Count; i++)
                 {
-                    Instruction instruction = instructions[i];
-                    if (!BranchOpCodes.Contains(instruction.OpCode))
+                    if (!BranchOpCodes.Contains(instructions[i].OpCode))
                     {
                         continue;
                     }
 
-                    jumpInstructions.Add(instruction);
+                    jumpInstructions.Add(instructions[i]);
                 }
 
                 return jumpInstructions;
