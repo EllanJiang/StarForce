@@ -145,24 +145,31 @@ namespace StarForce.Editor.Profiler
                 return false;
             }
 
-            TypeDefinition profilerTypeDefinition = gameFrameworkModuleDefinition.Types.SingleOrDefault(t => t.FullName == "GameFramework.Utility/Profiler");
+            TypeDefinition utilityTypeDefinition = gameFrameworkModuleDefinition.Types.SingleOrDefault(t => t.Namespace == "GameFramework" && t.Name == "Utility");
+            if (utilityTypeDefinition == null)
+            {
+                Debug.LogWarning("Can not find type GameFramework.Utility in GameFramework.dll.");
+                return false;
+            }
+
+            TypeDefinition profilerTypeDefinition = utilityTypeDefinition.NestedTypes.SingleOrDefault(t => t.Name == "Profiler");
             if (profilerTypeDefinition == null)
             {
-                Debug.LogWarning("Can not find type GameFramework.Utility/Profiler in GameFramework.dll.");
+                Debug.LogWarning("Can not find type GameFramework.Utility.Profiler in GameFramework.dll.");
                 return false;
             }
 
-            beginSampleMethod = profilerTypeDefinition.Methods.SingleOrDefault(m => m.FullName == "GameFramework.Utility.Profiler.BeginSample" && m.Parameters.Count == 1 && m.Parameters[0].ParameterType.FullName == "System.String");
+            beginSampleMethod = profilerTypeDefinition.Methods.SingleOrDefault(m => m.Name == "BeginSample" && m.Parameters.Count == 1 && m.Parameters[0].ParameterType.Name == "String");
             if (beginSampleMethod == null)
             {
-                Debug.LogWarning("Can not find method BeginSample in GameFramework.Utility.Profiler.");
+                Debug.LogWarning("Can not find method GameFramework.Utility.Profiler.BeginSample in GameFramework.dll.");
                 return false;
             }
 
-            endSampleMethod = profilerTypeDefinition.Methods.SingleOrDefault(m => m.FullName == "GameFramework.Utility.Profiler.EndSample" && m.Parameters.Count == 0);
+            endSampleMethod = profilerTypeDefinition.Methods.SingleOrDefault(m => m.Name == "EndSample" && m.Parameters.Count == 0);
             if (endSampleMethod == null)
             {
-                Debug.LogWarning("Can not find method EndSample in GameFramework.Utility.Profiler.");
+                Debug.LogWarning("Can not find method GameFramework.Utility.Profiler.EndSample in GameFramework.dll.");
                 return false;
             }
 
