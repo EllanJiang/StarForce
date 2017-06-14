@@ -117,7 +117,7 @@ namespace StarForce
                 return;
             }
 
-            string responseJson = Utility.Converter.GetStringFromBytes(ne.GetWebResponseBytes());
+            string responseJson = Utility.Converter.GetString(ne.GetWebResponseBytes());
             VersionInfo versionInfo = Utility.Json.ToObject<VersionInfo>(responseJson);
             if (versionInfo == null)
             {
