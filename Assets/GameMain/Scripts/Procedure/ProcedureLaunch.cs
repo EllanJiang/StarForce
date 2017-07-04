@@ -75,7 +75,8 @@ namespace StarForce
 
             if (language != Language.English
                 && language != Language.ChineseSimplified
-                && language != Language.ChineseTraditional)
+                && language != Language.ChineseTraditional
+                && language != Language.Korean)
             {
                 // 若是暂不支持的语言，则使用英语
                 language = Language.English;
@@ -108,6 +109,9 @@ namespace StarForce
                     break;
                 case Language.ChineseTraditional:
                     currentVariant = "zh-tw";
+                    break;
+                case Language.Korean:
+                    currentVariant = "ko-kr";
                     break;
                 default:
                     currentVariant = "zh-cn";
