@@ -6,8 +6,8 @@ TrueTypeFontImporter:
   serializedVersion: 3
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
   fontNames: []
   fallbackFontReferences: []
