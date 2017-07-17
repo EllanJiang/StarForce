@@ -1,8 +1,8 @@
-#	½çÃæÅäÖÃ±í					
+ï»¿#	ç•Œé¢é…ç½®è¡¨					
 #	Id		AssetName	UIGroupName	AllowMultiInstance	PauseCoveredUIForm
 #	int		string	string	bool	bool
-#	½çÃæ±àºÅ	²ß»®±¸×¢	×ÊÔ´Ãû³Æ	½çÃæ×éÃû³Æ	ÊÇ·ñÔÊĞí¶à¸ö½çÃæÊµÀı	ÊÇ·ñÔİÍ£±»Æä¸²¸ÇµÄ½çÃæ
-	1	µ¯³ö¿ò	DialogForm	Default	TRUE	TRUE
-	100	Ö÷²Ëµ¥	MenuForm	Default	FALSE	TRUE
-	101	ÉèÖÃ	SettingForm	Default	FALSE	TRUE
-	102	¹ØÓÚ	AboutForm	Default	FALSE	TRUE
+#	ç•Œé¢ç¼–å·	ç­–åˆ’å¤‡æ³¨	èµ„æºåç§°	ç•Œé¢ç»„åç§°	æ˜¯å¦å…è®¸å¤šä¸ªç•Œé¢å®ä¾‹	æ˜¯å¦æš‚åœè¢«å…¶è¦†ç›–çš„ç•Œé¢
+	1	å¼¹å‡ºæ¡†	DialogForm	Default	TRUE	TRUE
+	100	ä¸»èœå•	MenuForm	Default	FALSE	TRUE
+	101	è®¾ç½®	SettingForm	Default	FALSE	TRUE
+	102	å…³äº	AboutForm	Default	FALSE	TRUE

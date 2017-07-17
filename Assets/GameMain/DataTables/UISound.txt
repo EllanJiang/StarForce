@@ -1,6 +1,6 @@
-#	ÉùÒôÅäÖÃ±í				
+ï»¿#	å£°éŸ³é…ç½®è¡¨				
 #	Id		Resource Name	Priority	Volume
 #	int		string	int	float
-#	ÉùÒô±àºÅ	²ß»®±¸×¢	×ÊÔ´Ãû³Æ	ÓÅÏÈ¼¶£¨Ä¬ÈÏ0£¬128×î¸ß£¬-128×îµÍ£©	ÒôÁ¿£¨0~1£©
-	10000	Ñ¡ÔñÒôÐ§	select	0	1
-	10001	µã»÷ÒôÐ§	click	0	1
+#	å£°éŸ³ç¼–å·	ç­–åˆ’å¤‡æ³¨	èµ„æºåç§°	ä¼˜å…ˆçº§ï¼ˆé»˜è®¤0ï¼Œ128æœ€é«˜ï¼Œ-128æœ€ä½Žï¼‰	éŸ³é‡ï¼ˆ0~1ï¼‰
+	10000	é€‰æ‹©éŸ³æ•ˆ	select	0	1
+	10001	ç‚¹å‡»éŸ³æ•ˆ	click	0	1

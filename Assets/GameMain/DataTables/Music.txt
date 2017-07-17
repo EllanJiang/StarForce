@@ -1,7 +1,7 @@
-#	ÒôÀÖÅäÖÃ±í		
+ï»¿#	éŸ³ä¹é…ç½®è¡¨		
 #	Id		AssetName
 #	int		string
-#	ÒôÀÖ±àºÅ	²ß»®±¸×¢	×ÊÔ´Ãû³Æ
-	1	²Ëµ¥ÒôÀÖ	music_menu
-	2	Õ½¶·ÒôÀÖ	music_background
-	3	¹ØÓÚÒôÀÖ	music_about
+#	éŸ³ä¹ç¼–å·	ç­–åˆ’å¤‡æ³¨	èµ„æºåç§°
+	1	èœå•éŸ³ä¹	music_menu
+	2	æˆ˜æ–—éŸ³ä¹	music_background
+	3	å…³äºéŸ³ä¹	music_about

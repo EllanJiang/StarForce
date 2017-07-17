@@ -1,18 +1,18 @@
-#	ÊµÌå±í		
+ï»¿#	å®ä½“è¡¨		
 #	Id		AssetName
 #	int		string
-#	ÊµÌå±àºÅ	²ß»®±¸×¢	×ÊÔ´Ãû³Æ
-	10000	Íæ¼ÒÕ½»ú	PlayerShip
-	10001	µĞÈËÕ½»ú	EnemyShip
-	20000	Íæ¼ÒÍÆ½øÆ÷	PlayerEngine
-	20001	µĞÈËÍÆ½øÆ÷	EnemyEngine
-	30000	Ä¬ÈÏÎäÆ÷	DefaultWeapon
-	40000	Ä¬ÈÏ×°¼×	DefaultArmor
-	50000	Íæ¼Ò×Óµ¯	PlayerBolt
-	50001	µĞÈË×Óµ¯	EnemyBolt
-	60000	Ğ¡ĞĞĞÇ	Asteroid01
-	60001	Ğ¡ĞĞĞÇ	Asteroid02
-	60002	Ğ¡ĞĞĞÇ	Asteroid03
-	70000	Íæ¼ÒËÀÍöÌØĞ§	PlayerExplosion
-	70001	µĞÈËËÀÍöÌØĞ§	EnemyExplosion
-	70002	Ğ¡ĞĞĞÇËÀÍöÌØĞ§	AsteroidExplosion
+#	å®ä½“ç¼–å·	ç­–åˆ’å¤‡æ³¨	èµ„æºåç§°
+	10000	ç©å®¶æˆ˜æœº	PlayerShip
+	10001	æ•Œäººæˆ˜æœº	EnemyShip
+	20000	ç©å®¶æ¨è¿›å™¨	PlayerEngine
+	20001	æ•Œäººæ¨è¿›å™¨	EnemyEngine
+	30000	é»˜è®¤æ­¦å™¨	DefaultWeapon
+	40000	é»˜è®¤è£…ç”²	DefaultArmor
+	50000	ç©å®¶å­å¼¹	PlayerBolt
+	50001	æ•Œäººå­å¼¹	EnemyBolt
+	60000	å°è¡Œæ˜Ÿ	Asteroid01
+	60001	å°è¡Œæ˜Ÿ	Asteroid02
+	60002	å°è¡Œæ˜Ÿ	Asteroid03
+	70000	ç©å®¶æ­»äº¡ç‰¹æ•ˆ	PlayerExplosion
+	70001	æ•Œäººæ­»äº¡ç‰¹æ•ˆ	EnemyExplosion
+	70002	å°è¡Œæ˜Ÿæ­»äº¡ç‰¹æ•ˆ	AsteroidExplosion
