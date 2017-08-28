@@ -3,9 +3,9 @@
 namespace StarForce
 {
     [ProtoContract]
-    public class CSPacketHead : PacketHeadBase
+    public class CSPacketHeader : PacketHeaderBase
     {
-        public CSPacketHead(int packetId)
+        public CSPacketHeader(int packetId)
             : base(PacketType.ClientToServer, packetId)
         {
 

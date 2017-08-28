@@ -1,8 +1,8 @@
 ﻿namespace StarForce
 {
-    public abstract class PacketHeadBase
+    public abstract class PacketHeaderBase
     {
-        public PacketHeadBase(PacketType packetType, int packetId)
+        public PacketHeaderBase(PacketType packetType, int packetId)
         {
             Id = GameEntry.Network.GetOpCode(packetType, packetId);
         }

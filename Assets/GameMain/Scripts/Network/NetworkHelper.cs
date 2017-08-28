@@ -7,16 +7,34 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
-    public class NetworkHelper : NetworkHelperBase
+    public class NetworkChannelHelper : INetworkChannelHelper
     {
         private readonly Dictionary<int, Type> m_ServerToClientPacketTypes = new Dictionary<int, Type>();
+        private INetworkChannel m_NetworkChannel = null;
+        private SCPacketHeader m_CachedPacketHeader = null;
 
-        private void Start()
+        /// <summary>
+        /// 获取消息包头长度。
+        /// </summary>
+        public int PacketHeaderLength
         {
+            get
+            {
+                return sizeof(int);
+            }
+        }
+
+        /// <summary>
+        /// 初始化网络频道辅助器。
+        /// </summary>
+        /// <param name="networkChannel">网络频道。</param>
+        public void Initialize(INetworkChannel networkChannel)
+        {
+            m_NetworkChannel = networkChannel;
+
             // 反射注册包和包处理函数。
             Type packetBaseType = typeof(ServerToClientPacketBase);
             Type packetHandlerBaseType = typeof(PacketHandlerBase);
@@ -44,7 +62,7 @@ namespace StarForce
                 else if (types[i].BaseType == packetHandlerBaseType)
                 {
                     IPacketHandler packetHandler = (IPacketHandler)Activator.CreateInstance(types[i]);
-                    GameEntry.Network.RegisterHandler(packetHandler);
+                    m_NetworkChannel.RegisterHandler(packetHandler);
                 }
             }
 
@@ -56,7 +74,10 @@ namespace StarForce
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.NetworkCustomError, OnNetworkCustomError);
         }
 
-        private void OnDestroy()
+        /// <summary>
+        /// 关闭并清理网络频道辅助器。
+        /// </summary>
+        public void Shutdown()
         {
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.NetworkConnected, OnNetworkConnected);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.NetworkClosed, OnNetworkClosed);
@@ -64,68 +85,86 @@ namespace StarForce
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.NetworkMissHeartBeat, OnNetworkMissHeartBeat);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.NetworkError, OnNetworkError);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.NetworkCustomError, OnNetworkCustomError);
+
+            m_NetworkChannel = null;
+            m_CachedPacketHeader = null;
         }
 
         /// <summary>
-        /// 发送心跳协议包。
+        /// 发送心跳消息包。
         /// </summary>
-        public override bool SendHeartBeat(INetworkChannel networkChannel)
+        /// <returns>是否发送心跳消息包成功。</returns>
+        public bool SendHeartBeat()
         {
             CSHeartBeat packet = new CSHeartBeat();
-            networkChannel.Send(packet);
+            m_NetworkChannel.Send(packet);
 
             return true;
         }
 
         /// <summary>
-        /// 序列化协议包。
+        /// 序列化消息包。
         /// </summary>
-        /// <typeparam name="T">协议包类型。</typeparam>
-        /// <param name="destination">要序列化的目标流。</param>
-        /// <param name="packet">要序列化的协议包。</param>
-        public override void Serialize<T>(INetworkChannel networkChannel, Stream destination, T packet)
+        /// <typeparam name="T">消息包类型。</typeparam>
+        /// <param name="packet">要序列化的消息包。</param>
+        /// <returns>序列化后的消息包字节流。</returns>
+        public byte[] Serialize<T>(T packet) where T : Packet
         {
             PacketBase packetImpl = packet as PacketBase;
             if (packetImpl == null)
             {
                 Log.Warning("Packet is invalid.");
-                return;
+                return null;
             }
 
             if (packetImpl.PacketType != PacketType.ClientToServer)
             {
                 Log.Warning("Send packet invalid.");
-                return;
+                return null;
             }
 
-            CSPacketHead packetHead = new CSPacketHead(packetImpl.PacketId);
-            Serializer.SerializeWithLengthPrefix(destination, packetHead, PrefixStyle.Fixed32);
-            Serializer.Serialize(destination, packet);
+            // 恐怖的 GCAlloc，这里是例子，不做优化
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                CSPacketHeader packetHeader = new CSPacketHeader(packetImpl.PacketId);
+                Serializer.Serialize(memoryStream, packetHeader);
+                Serializer.SerializeWithLengthPrefix(memoryStream, packet, PrefixStyle.Fixed32);
+
+                return memoryStream.ToArray();
+            }
         }
 
         /// <summary>
-        /// 反序列化协议包。
+        /// 反序列消息包头。
         /// </summary>
         /// <param name="source">要反序列化的来源流。</param>
-        /// <param name="customErrorData">用户自定义网络错误数据。</param>
-        /// <returns>反序列化后的协议包。</returns>
-        public override Packet Deserialize(INetworkChannel networkChannel, Stream source, out object customErrorData)
+        /// <param name="customErrorData">用户自定义错误数据。</param>
+        /// <returns></returns>
+        public IPacketHeader DeserializePacketHeader(Stream source, out object customErrorData)
         {
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
-            SCPacketHead packetHead = Serializer.DeserializeWithLengthPrefix<SCPacketHead>(source, PrefixStyle.Fixed32);
-            if (packetHead == null)
-            {
-                throw new GameFrameworkException("Can not deserialize packet header.");
-            }
+            m_CachedPacketHeader = Serializer.Deserialize<SCPacketHeader>(source);
+            return m_CachedPacketHeader;
+        }
 
-            Type packetType = GetServerToClientPacketType(packetHead.Id);
+        /// <summary>
+        /// 反序列化消息包。
+        /// </summary>
+        /// <param name="source">要反序列化的来源流。</param>
+        /// <param name="customErrorData">用户自定义错误数据。</param>
+        /// <returns>反序列化后的消息包。</returns>
+        public Packet DeserializePacket(Stream source, out object customErrorData)
+        {
+            // 注意：此函数并不在主线程调用！
+            customErrorData = null;
+            Type packetType = GetServerToClientPacketType(m_CachedPacketHeader.Id);
             if (packetType == null)
             {
                 PacketType pt = PacketType.Undefined;
                 int pid = 0;
-                GameEntry.Network.ParseOpCode(packetHead.Id, out pt, out pid);
-                throw new GameFrameworkException(string.Format("Can not deserialize packet for packet type '{0}', packet id '{1}'.", pt.ToString(), pid.ToString()));
+                GameEntry.Network.ParseOpCode(m_CachedPacketHeader.Id, out pt, out pid);
+                Log.Error(string.Format("Can not deserialize packet for packet type '{0}', packet id '{1}'.", pt.ToString(), pid.ToString()));
             }
 
             return (PacketBase)RuntimeTypeModel.Default.Deserialize(source, null, packetType);
@@ -145,23 +184,42 @@ namespace StarForce
         private void OnNetworkConnected(object sender, GameEventArgs e)
         {
             UnityGameFramework.Runtime.NetworkConnectedEventArgs ne = (UnityGameFramework.Runtime.NetworkConnectedEventArgs)e;
+            if (ne.NetworkChannel != m_NetworkChannel)
+            {
+                return;
+            }
+
             Log.Info("Network channel '{0}' connected, local address '{1}:{2}', remote address '{3}:{4}'.", ne.NetworkChannel.Name, ne.NetworkChannel.LocalIPAddress, ne.NetworkChannel.LocalPort.ToString(), ne.NetworkChannel.RemoteIPAddress, ne.NetworkChannel.RemotePort.ToString());
         }
 
         private void OnNetworkClosed(object sender, GameEventArgs e)
         {
             UnityGameFramework.Runtime.NetworkClosedEventArgs ne = (UnityGameFramework.Runtime.NetworkClosedEventArgs)e;
+            if (ne.NetworkChannel != m_NetworkChannel)
+            {
+                return;
+            }
+
             Log.Info("Network channel '{0}' closed.", ne.NetworkChannel.Name);
         }
 
         private void OnNetworkSendPacket(object sender, GameEventArgs e)
         {
-            //UnityGameFramework.Runtime.NetworkSendPacketEventArgs ne = (UnityGameFramework.Runtime.NetworkSendPacketEventArgs)e;
+            UnityGameFramework.Runtime.NetworkSendPacketEventArgs ne = (UnityGameFramework.Runtime.NetworkSendPacketEventArgs)e;
+            if (ne.NetworkChannel != m_NetworkChannel)
+            {
+                return;
+            }
         }
 
         private void OnNetworkMissHeartBeat(object sender, GameEventArgs e)
         {
             UnityGameFramework.Runtime.NetworkMissHeartBeatEventArgs ne = (UnityGameFramework.Runtime.NetworkMissHeartBeatEventArgs)e;
+            if (ne.NetworkChannel != m_NetworkChannel)
+            {
+                return;
+            }
+
             Log.Info("Network channel '{0}' miss heart beat '{1}' times.", ne.NetworkChannel.Name, ne.MissCount.ToString());
 
             if (ne.MissCount < 2)
@@ -175,6 +233,11 @@ namespace StarForce
         private void OnNetworkError(object sender, GameEventArgs e)
         {
             UnityGameFramework.Runtime.NetworkErrorEventArgs ne = (UnityGameFramework.Runtime.NetworkErrorEventArgs)e;
+            if (ne.NetworkChannel != m_NetworkChannel)
+            {
+                return;
+            }
+
             Log.Info("Network channel '{0}' error, error code is '{1}', error message is '{2}'.", ne.NetworkChannel.Name, ne.ErrorCode.ToString(), ne.ErrorMessage);
 
             ne.NetworkChannel.Close();
@@ -182,7 +245,11 @@ namespace StarForce
 
         private void OnNetworkCustomError(object sender, GameEventArgs e)
         {
-            //UnityGameFramework.Runtime.NetworkCustomErrorEventArgs ne = (UnityGameFramework.Runtime.NetworkCustomErrorEventArgs)e;
+            UnityGameFramework.Runtime.NetworkCustomErrorEventArgs ne = (UnityGameFramework.Runtime.NetworkCustomErrorEventArgs)e;
+            if (ne.NetworkChannel != m_NetworkChannel)
+            {
+                return;
+            }
         }
     }
 }
