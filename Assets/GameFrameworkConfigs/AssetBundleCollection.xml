@@ -3,23 +3,25 @@
   <AssetBundleCollection>
     <AssetBundles>
       <AssetBundle Name="DataTables" LoadType="0" Packed="False" />
-      <AssetBundle Name="Entities" LoadType="0" Packed="False" />
+      <AssetBundle Name="Entities" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Dictionaries" Variant="en-us" LoadType="0" Packed="False" />
+      <AssetBundle Name="Localization/Dictionaries" Variant="ko-kr" LoadType="0" Packed="False" />
       <AssetBundle Name="Localization/Dictionaries" Variant="zh-cn" LoadType="0" Packed="False" />
       <AssetBundle Name="Localization/Dictionaries" Variant="zh-tw" LoadType="0" Packed="False" />
-      <AssetBundle Name="Localization/Fonts" Variant="en-us" LoadType="0" Packed="False" />
-      <AssetBundle Name="Localization/Fonts" Variant="zh-cn" LoadType="0" Packed="False" />
-      <AssetBundle Name="Localization/Fonts" Variant="zh-tw" LoadType="0" Packed="False" />
-      <AssetBundle Name="Materials" LoadType="0" Packed="False" />
-      <AssetBundle Name="Meshes" LoadType="0" Packed="False" />
-      <AssetBundle Name="Music/About" LoadType="0" Packed="False" />
-      <AssetBundle Name="Music/Background" LoadType="0" Packed="False" />
-      <AssetBundle Name="Music/Menu" LoadType="0" Packed="False" />
-      <AssetBundle Name="Scenes" LoadType="0" Packed="False" />
-      <AssetBundle Name="Sounds" LoadType="0" Packed="False" />
-      <AssetBundle Name="Textures" LoadType="0" Packed="False" />
+      <AssetBundle Name="Localization/Fonts" Variant="en-us" LoadType="0" Packed="True" />
+      <AssetBundle Name="Localization/Fonts" Variant="ko-kr" LoadType="0" Packed="True" />
+      <AssetBundle Name="Localization/Fonts" Variant="zh-cn" LoadType="0" Packed="True" />
+      <AssetBundle Name="Localization/Fonts" Variant="zh-tw" LoadType="0" Packed="True" />
+      <AssetBundle Name="Materials" LoadType="0" Packed="True" />
+      <AssetBundle Name="Meshes" LoadType="0" Packed="True" />
+      <AssetBundle Name="Music/About" LoadType="0" Packed="True" />
+      <AssetBundle Name="Music/Background" LoadType="0" Packed="True" />
+      <AssetBundle Name="Music/Menu" LoadType="0" Packed="True" />
+      <AssetBundle Name="Scenes" LoadType="0" Packed="True" />
+      <AssetBundle Name="Sounds" LoadType="0" Packed="True" />
+      <AssetBundle Name="Textures" LoadType="0" Packed="True" />
       <AssetBundle Name="UI/UIForms" LoadType="0" Packed="False" />
-      <AssetBundle Name="UI/UISounds" LoadType="0" Packed="False" />
+      <AssetBundle Name="UI/UISounds" LoadType="0" Packed="True" />
       <AssetBundle Name="UI/UISprites/Common" LoadType="0" Packed="False" />
       <AssetBundle Name="UI/UISprites/Icons" LoadType="0" Packed="False" />
       <AssetBundle Name="UI/UISprites/Logos" LoadType="0" Packed="False" />
@@ -68,6 +70,7 @@
       <Asset Guid="56b8df63bbad60749a69e38bc687fadf" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="578af1667322bab45b652b79a40bb4fb" AssetBundleName="Materials" />
       <Asset Guid="583ff7026dac91849b7c7b2468ba456b" AssetBundleName="Materials" />
+      <Asset Guid="5dcd89912e222bf4c87f76db4044bc5e" AssetBundleName="Localization/Dictionaries" AssetBundleVariant="ko-kr" />
       <Asset Guid="62af9e5c8f39cfa49af9e10ccf42f1da" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="638ff8ae4a0d15047839cd265d3bc296" AssetBundleName="Music/Background" />
       <Asset Guid="63fe6ff9ab9e1433f8db4ebd940f2442" AssetBundleName="Materials" />
@@ -133,6 +136,7 @@
       <Asset Guid="e830964cdb85ff3429bca484c16bab44" AssetBundleName="UI/UISounds" />
       <Asset Guid="e85864330b68dde498dcb6e8711815d3" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="eabb37cb6d738b443b398b701a64cd88" AssetBundleName="Textures" />
+      <Asset Guid="ef07add67d7230a4da456818f61439c8" AssetBundleName="Localization/Fonts" AssetBundleVariant="ko-kr" />
       <Asset Guid="f2f4df0b7211e4c42a5638273525d8ee" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="f2f97a713beae744181ba934f9c4113a" AssetBundleName="DataTables" />
       <Asset Guid="f36c72c738c55f741afcd674a0b1245f" AssetBundleName="Materials" />
