@@ -34,7 +34,7 @@ namespace StarForce
             }
 
             string dataTableNameInType = splitNames.Length > 1 ? splitNames[1] : null;
-            dataTableComponent.LoadDataTable(dataTableName, dataTableType, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName), userData);
+            dataTableComponent.LoadDataTable(dataTableType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName), userData);
         }
 
         public static string[] SplitDataRow(string dataRowText)
