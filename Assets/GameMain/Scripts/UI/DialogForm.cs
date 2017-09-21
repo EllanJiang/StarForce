@@ -72,7 +72,8 @@ namespace StarForce
             if (m_OnClickCancel != null)
             {
                 m_OnClickCancel(m_UserData);
-            }        }
+            }
+        }
 
         public void OnOtherButtonClick()
         {

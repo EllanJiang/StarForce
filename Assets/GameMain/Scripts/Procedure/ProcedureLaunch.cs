@@ -4,8 +4,6 @@ using System;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
-using GameFramework.Fsm;
-using GameFramework.Procedure;
 
 namespace StarForce
 {

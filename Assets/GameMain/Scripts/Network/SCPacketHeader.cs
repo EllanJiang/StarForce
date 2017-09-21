@@ -1,5 +1,4 @@
-﻿using System;
-using GameFramework.Network;
+﻿using GameFramework.Network;
 using ProtoBuf;
 
 namespace StarForce

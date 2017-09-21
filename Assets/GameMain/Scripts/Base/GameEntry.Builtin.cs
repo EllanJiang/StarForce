@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using UnityGameFramework.Runtime;
+﻿using UnityGameFramework.Runtime;
 
 namespace StarForce
 {

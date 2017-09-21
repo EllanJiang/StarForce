@@ -15,7 +15,7 @@ namespace StarForce.Editor
 #if UNITY_5_5_OR_NEWER
             AssetDatabase.SaveAssets();
 #else
-            EditorApplication.SaveAssets(); 
+            EditorApplication.SaveAssets();
 #endif
             Debug.Log("You have saved the serializable assets in the project.");
         }

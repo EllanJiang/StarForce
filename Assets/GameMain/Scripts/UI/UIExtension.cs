@@ -2,7 +2,6 @@
 using GameFramework.DataTable;
 using GameFramework.UI;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;

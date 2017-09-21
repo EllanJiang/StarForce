@@ -48,7 +48,7 @@ namespace StarForce
                 m_Owner = owner;
                 m_OwnerId = owner.Id;
             }
-            
+
             Refresh();
 
             StartCoroutine(HPBarCo(toHPRatio, AnimationSeconds, KeepSeconds, FadeOutSeconds));
