@@ -24,10 +24,10 @@ namespace StarForce
         {
             base.OnEnter(procedureOwner);
 
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadDataTableSuccess, OnLoadDataTableSuccess);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadDataTableFailure, OnLoadDataTableFailure);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadDictionarySuccess, OnLoadDictionarySuccess);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadDictionaryFailure, OnLoadDictionaryFailure);
+            GameEntry.Event.Subscribe(LoadDataTableSuccessEventArgs.EventId, OnLoadDataTableSuccess);
+            GameEntry.Event.Subscribe(LoadDataTableFailureEventArgs.EventId, OnLoadDataTableFailure);
+            GameEntry.Event.Subscribe(LoadDictionarySuccessEventArgs.EventId, OnLoadDictionarySuccess);
+            GameEntry.Event.Subscribe(LoadDictionaryFailureEventArgs.EventId, OnLoadDictionaryFailure);
 
             m_LoadedFlag.Clear();
 
@@ -36,10 +36,10 @@ namespace StarForce
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadDataTableSuccess, OnLoadDataTableSuccess);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadDataTableFailure, OnLoadDataTableFailure);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadDictionarySuccess, OnLoadDictionarySuccess);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadDictionaryFailure, OnLoadDictionaryFailure);
+            GameEntry.Event.Unsubscribe(LoadDataTableSuccessEventArgs.EventId, OnLoadDataTableSuccess);
+            GameEntry.Event.Unsubscribe(LoadDataTableFailureEventArgs.EventId, OnLoadDataTableFailure);
+            GameEntry.Event.Unsubscribe(LoadDictionarySuccessEventArgs.EventId, OnLoadDictionarySuccess);
+            GameEntry.Event.Unsubscribe(LoadDictionaryFailureEventArgs.EventId, OnLoadDictionaryFailure);
 
             base.OnLeave(procedureOwner, isShutdown);
         }

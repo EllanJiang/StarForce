@@ -28,10 +28,10 @@ namespace StarForce
 
             m_IsChangeSceneComplete = false;
 
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneSuccess, OnLoadSceneSuccess);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneFailure, OnLoadSceneFailure);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneUpdate, OnLoadSceneUpdate);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.LoadSceneDependencyAsset, OnLoadSceneDependencyAsset);
+            GameEntry.Event.Subscribe(LoadSceneSuccessEventArgs.EventId, OnLoadSceneSuccess);
+            GameEntry.Event.Subscribe(LoadSceneFailureEventArgs.EventId, OnLoadSceneFailure);
+            GameEntry.Event.Subscribe(LoadSceneUpdateEventArgs.EventId, OnLoadSceneUpdate);
+            GameEntry.Event.Subscribe(LoadSceneDependencyAssetEventArgs.EventId, OnLoadSceneDependencyAsset);
 
             // 停止所有声音
             GameEntry.Sound.StopAllLoadingSounds();
@@ -67,10 +67,10 @@ namespace StarForce
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadSceneSuccess, OnLoadSceneSuccess);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadSceneFailure, OnLoadSceneFailure);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadSceneUpdate, OnLoadSceneUpdate);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.LoadSceneDependencyAsset, OnLoadSceneDependencyAsset);
+            GameEntry.Event.Unsubscribe(LoadSceneSuccessEventArgs.EventId, OnLoadSceneSuccess);
+            GameEntry.Event.Unsubscribe(LoadSceneFailureEventArgs.EventId, OnLoadSceneFailure);
+            GameEntry.Event.Unsubscribe(LoadSceneUpdateEventArgs.EventId, OnLoadSceneUpdate);
+            GameEntry.Event.Unsubscribe(LoadSceneDependencyAssetEventArgs.EventId, OnLoadSceneDependencyAsset);
 
             base.OnLeave(procedureOwner, isShutdown);
         }

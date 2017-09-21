@@ -24,18 +24,18 @@ namespace StarForce
 
             m_ResourceInitComplete = false;
 
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.WebRequestSuccess, OnWebRequestSuccess);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.WebRequestFailure, OnWebRequestFailure);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.EventId.ResourceInitComplete, OnResourceInitComplete);
+            GameEntry.Event.Subscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
+            GameEntry.Event.Subscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
+            GameEntry.Event.Subscribe(ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
 
             RequestVersion();
         }
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.WebRequestSuccess, OnWebRequestSuccess);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.WebRequestFailure, OnWebRequestFailure);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.EventId.ResourceInitComplete, OnResourceInitComplete);
+            GameEntry.Event.Unsubscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
+            GameEntry.Event.Unsubscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
+            GameEntry.Event.Unsubscribe(ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
 
             base.OnLeave(procedureOwner, isShutdown);
         }
