@@ -5,6 +5,7 @@ using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
+
     public static class SoundExtension
     {
         private const float FadeVolumeDuration = 1f;
