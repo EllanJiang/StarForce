@@ -6,7 +6,7 @@ namespace StarForce
 {
     public static class DataTableExtension
     {
-        private const string DataTableClassPrefixName = "StarForce.DR";
+        private const string DataRowClassPrefixName = "StarForce.DR";
         private static readonly string[] ColumnSplit = new string[] { "\t" };
 
         public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, object userData = null)
@@ -24,17 +24,17 @@ namespace StarForce
                 return;
             }
 
-            string dataTableClassName = DataTableClassPrefixName + splitNames[0];
+            string dataRowClassName = DataRowClassPrefixName + splitNames[0];
 
-            Type dataTableType = Type.GetType(dataTableClassName);
-            if (dataTableType == null)
+            Type dataRowType = Type.GetType(dataRowClassName);
+            if (dataRowType == null)
             {
-                Log.Warning("Can not get data table type with class name '{0}'.", dataTableClassName);
+                Log.Warning("Can not get data row type with class name '{0}'.", dataRowClassName);
                 return;
             }
 
             string dataTableNameInType = splitNames.Length > 1 ? splitNames[1] : null;
-            dataTableComponent.LoadDataTable(dataTableType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName), userData);
+            dataTableComponent.LoadDataTable(dataRowType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName), userData);
         }
 
         public static string[] SplitDataRow(string dataRowText)
