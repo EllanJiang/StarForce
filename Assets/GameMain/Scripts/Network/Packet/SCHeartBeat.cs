@@ -18,5 +18,10 @@ namespace StarForce
                 return 1;
             }
         }
+
+        public override void Clear()
+        {
+
+        }
     }
 }
