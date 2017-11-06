@@ -19,3 +19,4 @@
 /Assets/StreamingAssets/*
 !/Assets/StreamingAssets/.gitkeep
 /ProjectSettings/ProjectVersion.txt
+/UnityPackageManager/manifest.json
