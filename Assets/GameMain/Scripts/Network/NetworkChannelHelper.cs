@@ -14,7 +14,6 @@ namespace StarForce
     {
         private readonly Dictionary<int, Type> m_ServerToClientPacketTypes = new Dictionary<int, Type>();
         private INetworkChannel m_NetworkChannel = null;
-        private SCPacketHeader m_CachedPacketHeader = null;
 
         /// <summary>
         /// 获取消息包头长度。
@@ -36,7 +35,7 @@ namespace StarForce
             m_NetworkChannel = networkChannel;
 
             // 反射注册包和包处理函数。
-            Type packetBaseType = typeof(ServerToClientPacketBase);
+            Type packetBaseType = typeof(SCPacketBase);
             Type packetHandlerBaseType = typeof(PacketHandlerBase);
             Assembly assembly = Assembly.GetExecutingAssembly();
             Type[] types = assembly.GetTypes();
@@ -87,7 +86,6 @@ namespace StarForce
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkCustomErrorEventArgs.EventId, OnNetworkCustomError);
 
             m_NetworkChannel = null;
-            m_CachedPacketHeader = null;
         }
 
         /// <summary>
@@ -96,9 +94,7 @@ namespace StarForce
         /// <returns>是否发送心跳消息包成功。</returns>
         public bool SendHeartBeat()
         {
-            CSHeartBeat packet = new CSHeartBeat();
-            m_NetworkChannel.Send(packet);
-
+            m_NetworkChannel.Send(ReferencePool.Acquire<CSHeartBeat>());
             return true;
         }
 
@@ -126,9 +122,10 @@ namespace StarForce
             // 恐怖的 GCAlloc，这里是例子，不做优化
             using (MemoryStream memoryStream = new MemoryStream())
             {
-                CSPacketHeader packetHeader = new CSPacketHeader(packetImpl.PacketId);
+                CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader>();
                 Serializer.Serialize(memoryStream, packetHeader);
                 Serializer.SerializeWithLengthPrefix(memoryStream, packet, PrefixStyle.Fixed32);
+                ReferencePool.Release(packetHeader);
 
                 return memoryStream.ToArray();
             }
@@ -144,38 +141,56 @@ namespace StarForce
         {
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
-            m_CachedPacketHeader = Serializer.Deserialize<SCPacketHeader>(source);
-            return m_CachedPacketHeader;
+            return (IPacketHeader)RuntimeTypeModel.Default.Deserialize(source, ReferencePool.Acquire<SCPacketHeader>(), typeof(SCPacketHeader));
         }
 
         /// <summary>
         /// 反序列化消息包。
         /// </summary>
+        /// <param name="packetHeader">消息包头。</param>
         /// <param name="source">要反序列化的来源流。</param>
         /// <param name="customErrorData">用户自定义错误数据。</param>
         /// <returns>反序列化后的消息包。</returns>
-        public Packet DeserializePacket(Stream source, out object customErrorData)
+        public Packet DeserializePacket(IPacketHeader packetHeader, Stream source, out object customErrorData)
         {
             // 注意：此函数并不在主线程调用！
             customErrorData = null;
-            Type packetType = GetServerToClientPacketType(m_CachedPacketHeader.Id);
-            if (packetType == null)
+
+            SCPacketHeader scPacketHeader = packetHeader as SCPacketHeader;
+            if (scPacketHeader == null)
             {
-                PacketType pt = PacketType.Undefined;
-                int pid = 0;
-                GameEntry.Network.ParseOpCode(m_CachedPacketHeader.Id, out pt, out pid);
-                Log.Error(string.Format("Can not deserialize packet for packet type '{0}', packet id '{1}'.", pt.ToString(), pid.ToString()));
+                Log.Warning("Packet header is invalid.");
+                return null;
             }
 
-            return (PacketBase)RuntimeTypeModel.Default.Deserialize(source, null, packetType);
+            Packet packet = null;
+            if (scPacketHeader.IsValid)
+            {
+                Type packetType = GetServerToClientPacketType(scPacketHeader.Id);
+                if (packetType != null)
+                {
+                    packet = (Packet)RuntimeTypeModel.Default.DeserializeWithLengthPrefix(source, ReferencePool.Acquire(packetType), packetType, PrefixStyle.Fixed32, 0);
+                }
+                else
+                {
+                    Log.Warning("Can not deserialize packet for packet id '{0}'.", scPacketHeader.Id.ToString());
+                }
+            }
+            else
+            {
+                Log.Warning("Packet header is invalid.");
+            }
+
+            ReferencePool.Release(scPacketHeader);
+            return packet;
         }
 
-        private Type GetServerToClientPacketType(int opCode)
+        private Type GetServerToClientPacketType(int id)
         {
-            Type packetType = null;
-            if (m_ServerToClientPacketTypes.TryGetValue(opCode, out packetType))
+            Type type = null;
+            if (m_ServerToClientPacketTypes.TryGetValue(id, out type))
             {
-                return packetType;
+                return type;
             }
 
             return null;

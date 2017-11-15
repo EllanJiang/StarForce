@@ -1,21 +1,13 @@
-﻿using GameFramework.Network;
-using ProtoBuf;
-
-namespace StarForce
+﻿namespace StarForce
 {
-    [ProtoContract]
-    public class SCPacketHeader : PacketHeaderBase, IPacketHeader
+    public sealed class SCPacketHeader : PacketHeaderBase
     {
-        public SCPacketHeader(int packetId)
-            : base(PacketType.ServerToClient, packetId)
+        public override PacketType PacketType
         {
-
-        }
-
-        public int PacketLength
-        {
-            get;
-            set;
+            get
+            {
+                return PacketType.ServerToClient;
+            }
         }
     }
 }

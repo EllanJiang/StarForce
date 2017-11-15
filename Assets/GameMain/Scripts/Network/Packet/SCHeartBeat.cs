@@ -4,18 +4,18 @@ using System;
 namespace StarForce
 {
     [Serializable, ProtoContract(Name = @"SCHeartBeat")]
-    public partial class SCHeartBeat : ServerToClientPacketBase
+    public partial class SCHeartBeat : SCPacketBase
     {
         public SCHeartBeat()
         {
 
         }
 
-        public override int PacketId
+        public override int Id
         {
             get
             {
-                return 1;
+                return 2;
             }
         }
 

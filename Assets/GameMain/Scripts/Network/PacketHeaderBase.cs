@@ -1,16 +1,39 @@
-﻿namespace StarForce
+﻿using GameFramework;
+using GameFramework.Network;
+
+namespace StarForce
 {
-    public abstract class PacketHeaderBase
+    public abstract class PacketHeaderBase : IPacketHeader, IReference
     {
-        public PacketHeaderBase(PacketType packetType, int packetId)
+        public abstract PacketType PacketType
         {
-            Id = GameEntry.Network.GetOpCode(packetType, packetId);
+            get;
         }
 
         public int Id
         {
             get;
-            private set;
+            set;
+        }
+
+        public int PacketLength
+        {
+            get;
+            set;
+        }
+
+        public bool IsValid
+        {
+            get
+            {
+                return PacketType != PacketType.Undefined && Id > 0 && PacketLength >= 0;
+            }
+        }
+
+        public void Clear()
+        {
+            Id = 0;
+            PacketLength = 0;
         }
     }
 }

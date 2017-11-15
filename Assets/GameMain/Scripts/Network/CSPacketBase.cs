@@ -1,12 +1,7 @@
 ﻿namespace StarForce
 {
-    public abstract class ClientToServerPacketBase : PacketBase
+    public abstract class CSPacketBase : PacketBase
     {
-        public ClientToServerPacketBase()
-        {
-
-        }
-
         public override PacketType PacketType
         {
             get

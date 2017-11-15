@@ -17,19 +17,6 @@ namespace StarForce
             get;
         }
 
-        public abstract int PacketId
-        {
-            get;
-        }
-
-        public override int Id
-        {
-            get
-            {
-                return GameEntry.Network.GetOpCode(PacketType, PacketId);
-            }
-        }
-
         IExtension IExtensible.GetExtensionObject(bool createIfMissing)
         {
             return Extensible.GetExtensionObject(ref m_ExtensionObject, createIfMissing);

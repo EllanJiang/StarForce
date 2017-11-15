@@ -1,14 +1,13 @@
-﻿using ProtoBuf;
-
-namespace StarForce
+﻿namespace StarForce
 {
-    [ProtoContract]
-    public class CSPacketHeader : PacketHeaderBase
+    public sealed class CSPacketHeader : PacketHeaderBase
     {
-        public CSPacketHeader(int packetId)
-            : base(PacketType.ClientToServer, packetId)
+        public override PacketType PacketType
         {
-
+            get
+            {
+                return PacketType.ClientToServer;
+            }
         }
     }
 }
