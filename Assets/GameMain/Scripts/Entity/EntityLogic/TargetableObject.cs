@@ -37,13 +37,21 @@ namespace StarForce
             }
         }
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnInit(object userData)
+#else
         protected internal override void OnInit(object userData)
+#endif
         {
             base.OnInit(userData);
             CachedTransform.SetLayerRecursively(Constant.Layer.TargetableObjectLayerId);
         }
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnShow(object userData)
+#else
         protected internal override void OnShow(object userData)
+#endif
         {
             base.OnShow(userData);
 

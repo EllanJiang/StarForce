@@ -14,12 +14,20 @@ namespace StarForce
         [SerializeField]
         private ThrusterData m_ThrusterData = null;
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnInit(object userData)
+#else
         protected internal override void OnInit(object userData)
+#endif
         {
             base.OnInit(userData);
         }
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnShow(object userData)
+#else
         protected internal override void OnShow(object userData)
+#endif
         {
             base.OnShow(userData);
 
@@ -33,7 +41,11 @@ namespace StarForce
             GameEntry.Entity.AttachEntity(this, m_ThrusterData.OwnerId, AttachPoint);
         }
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnAttachTo(EntityLogic parentEntity, Transform parentTransform, object userData)
+#else
         protected internal override void OnAttachTo(EntityLogic parentEntity, Transform parentTransform, object userData)
+#endif
         {
             base.OnAttachTo(parentEntity, parentTransform, userData);
 

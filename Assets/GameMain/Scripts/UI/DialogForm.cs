@@ -85,7 +85,11 @@ namespace StarForce
             }
         }
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnOpen(object userData)
+#else
         protected internal override void OnOpen(object userData)
+#endif
         {
             base.OnOpen(userData);
 
@@ -117,7 +121,11 @@ namespace StarForce
             m_OnClickOther = dialogParams.OnClickOther;
         }
 
+#if UNITY_2017_3_OR_NEWER
+        protected override void OnClose(object userData)
+#else
         protected internal override void OnClose(object userData)
+#endif
         {
             if (m_PauseGame)
             {
