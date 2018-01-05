@@ -94,8 +94,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 48654047}
   - 20: {fileID: 48654046}
-  - 124: {fileID: 48654045}
-  - 92: {fileID: 48654044}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -103,20 +101,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!92 &48654044
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 48654042}
-  m_Enabled: 1
---- !u!124 &48654045
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 48654042}
-  m_Enabled: 1
 --- !u!20 &48654046
 Camera:
   m_ObjectHideFlags: 0
@@ -141,7 +125,7 @@ Camera:
   m_Depth: -100
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
