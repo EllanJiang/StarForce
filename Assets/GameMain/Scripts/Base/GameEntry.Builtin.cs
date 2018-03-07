@@ -17,6 +17,15 @@ namespace StarForce
         }
 
         /// <summary>
+        /// 获取配置组件。
+        /// </summary>
+        public static ConfigComponent Config
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
         /// 获取数据结点组件。
         /// </summary>
         public static DataNodeComponent DataNode
@@ -172,6 +181,7 @@ namespace StarForce
         private static void InitBuiltinComponents()
         {
             Base = UnityGameFramework.Runtime.GameEntry.GetComponent<BaseComponent>();
+            Config = UnityGameFramework.Runtime.GameEntry.GetComponent<ConfigComponent>();
             DataNode = UnityGameFramework.Runtime.GameEntry.GetComponent<DataNodeComponent>();
             DataTable = UnityGameFramework.Runtime.GameEntry.GetComponent<DataTableComponent>();
             Debugger = UnityGameFramework.Runtime.GameEntry.GetComponent<DebuggerComponent>();

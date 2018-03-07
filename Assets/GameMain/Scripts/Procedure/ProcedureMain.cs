@@ -80,7 +80,7 @@ namespace StarForce
             m_GotoMenuDelaySeconds += elapseSeconds;
             if (m_GotoMenuDelaySeconds >= GameOverDelayedSeconds)
             {
-                procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, (int)SceneId.Menu);
+                procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, GameEntry.Config.GetInt("Scene.Menu"));
                 ChangeState<ProcedureChangeScene>(procedureOwner);
             }
         }

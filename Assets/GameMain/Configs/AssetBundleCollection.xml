@@ -2,12 +2,13 @@
 <UnityGameFramework>
   <AssetBundleCollection>
     <AssetBundles>
-      <AssetBundle Name="DataTables" LoadType="0" Packed="False" />
+      <AssetBundle Name="Configs" LoadType="0" Packed="True" />
+      <AssetBundle Name="DataTables" LoadType="0" Packed="True" />
       <AssetBundle Name="Entities" LoadType="0" Packed="True" />
-      <AssetBundle Name="Localization/Dictionaries" Variant="en-us" LoadType="0" Packed="False" />
-      <AssetBundle Name="Localization/Dictionaries" Variant="ko-kr" LoadType="0" Packed="False" />
-      <AssetBundle Name="Localization/Dictionaries" Variant="zh-cn" LoadType="0" Packed="False" />
-      <AssetBundle Name="Localization/Dictionaries" Variant="zh-tw" LoadType="0" Packed="False" />
+      <AssetBundle Name="Localization/Dictionaries" Variant="en-us" LoadType="0" Packed="True" />
+      <AssetBundle Name="Localization/Dictionaries" Variant="ko-kr" LoadType="0" Packed="True" />
+      <AssetBundle Name="Localization/Dictionaries" Variant="zh-cn" LoadType="0" Packed="True" />
+      <AssetBundle Name="Localization/Dictionaries" Variant="zh-tw" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Fonts" Variant="en-us" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Fonts" Variant="ko-kr" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Fonts" Variant="zh-cn" LoadType="0" Packed="True" />
@@ -20,11 +21,11 @@
       <AssetBundle Name="Scenes" LoadType="0" Packed="True" />
       <AssetBundle Name="Sounds" LoadType="0" Packed="True" />
       <AssetBundle Name="Textures" LoadType="0" Packed="True" />
-      <AssetBundle Name="UI/UIForms" LoadType="0" Packed="False" />
+      <AssetBundle Name="UI/UIForms" LoadType="0" Packed="True" />
       <AssetBundle Name="UI/UISounds" LoadType="0" Packed="True" />
-      <AssetBundle Name="UI/UISprites/Common" LoadType="0" Packed="False" />
-      <AssetBundle Name="UI/UISprites/Icons" LoadType="0" Packed="False" />
-      <AssetBundle Name="UI/UISprites/Logos" LoadType="0" Packed="False" />
+      <AssetBundle Name="UI/UISprites/Common" LoadType="0" Packed="True" />
+      <AssetBundle Name="UI/UISprites/Icons" LoadType="0" Packed="True" />
+      <AssetBundle Name="UI/UISprites/Logos" LoadType="0" Packed="True" />
     </AssetBundles>
     <Assets>
       <Asset Guid="0179316b5fc7c2946a67c5877c02fc30" AssetBundleName="UI/UISprites/Common" />
@@ -64,6 +65,7 @@
       <Asset Guid="3e504a46a8fcec34db3c4776530c6eb2" AssetBundleName="Textures" />
       <Asset Guid="3f54fcfdac53aec42ae18a6a1c6d8cb1" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="4473d81b14ddb0143addf0e6050d8491" AssetBundleName="Scenes" />
+      <Asset Guid="44c8db52241385c45bbb14a1718f17bf" AssetBundleName="Configs" />
       <Asset Guid="4c3865b2ac420cd46a9cde6ab468d016" AssetBundleName="Materials" />
       <Asset Guid="4f688097e85071841a2c3ba165000c20" AssetBundleName="Textures" />
       <Asset Guid="5282f20eba4d44213820e21af8481932" AssetBundleName="Meshes" />

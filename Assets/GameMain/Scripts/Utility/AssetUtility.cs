@@ -2,6 +2,11 @@
 {
     public static class AssetUtility
     {
+        public static string GetConfigAsset(string assetName)
+        {
+            return string.Format("Assets/GameMain/Configs/{0}.txt", assetName);
+        }
+
         public static string GetDataTableAsset(string assetName)
         {
             return string.Format("Assets/GameMain/DataTables/{0}.txt", assetName);
