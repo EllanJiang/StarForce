@@ -106,7 +106,7 @@ namespace StarForce
             wwwForm.AddField("ScreenResolution", WebUtility.EscapeString(screenResolution));
             wwwForm.AddField("UseWifi", WebUtility.EscapeString(useWifi));
 
-            GameEntry.WebRequest.AddWebRequest(GameEntry.Config.BuildInfo.CheckVersionUrl, wwwForm, this);
+            GameEntry.WebRequest.AddWebRequest(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, wwwForm, this);
         }
 
         private void OnWebRequestSuccess(object sender, GameEventArgs e)

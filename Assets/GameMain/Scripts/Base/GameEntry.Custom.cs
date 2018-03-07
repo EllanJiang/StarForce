@@ -5,7 +5,7 @@
     /// </summary>
     public partial class GameEntry
     {
-        public static ConfigComponent Config
+        public static BuiltinDataComponent BuiltinData
         {
             get;
             private set;
@@ -19,7 +19,7 @@
 
         private static void InitCustomComponents()
         {
-            Config = UnityGameFramework.Runtime.GameEntry.GetComponent<ConfigComponent>();
+            BuiltinData = UnityGameFramework.Runtime.GameEntry.GetComponent<BuiltinDataComponent>();
             HPBar = UnityGameFramework.Runtime.GameEntry.GetComponent<HPBarComponent>();
         }
     }

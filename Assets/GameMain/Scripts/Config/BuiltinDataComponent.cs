@@ -4,7 +4,7 @@ using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
-    public class ConfigComponent : GameFrameworkComponent
+    public class BuiltinDataComponent : GameFrameworkComponent
     {
         [SerializeField]
         private DeviceModelConfig m_DeviceModelConfig = null;
@@ -48,8 +48,8 @@ namespace StarForce
                 return;
             }
 
-            GameEntry.Base.GameVersion = GameEntry.Config.BuildInfo.GameVersion;
-            GameEntry.Base.InternalApplicationVersion = GameEntry.Config.BuildInfo.InternalVersion;
+            GameEntry.Base.GameVersion = m_BuildInfo.GameVersion;
+            GameEntry.Base.InternalApplicationVersion = m_BuildInfo.InternalVersion;
         }
 
         public void InitDefaultDictionary()
