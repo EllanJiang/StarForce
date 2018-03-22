@@ -67,7 +67,6 @@ namespace StarForce
 
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.NetworkConnectedEventArgs.EventId, OnNetworkConnected);
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.NetworkClosedEventArgs.EventId, OnNetworkClosed);
-            GameEntry.Event.Subscribe(UnityGameFramework.Runtime.NetworkSendPacketEventArgs.EventId, OnNetworkSendPacket);
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.NetworkMissHeartBeatEventArgs.EventId, OnNetworkMissHeartBeat);
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.NetworkErrorEventArgs.EventId, OnNetworkError);
             GameEntry.Event.Subscribe(UnityGameFramework.Runtime.NetworkCustomErrorEventArgs.EventId, OnNetworkCustomError);
@@ -80,7 +79,6 @@ namespace StarForce
         {
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkConnectedEventArgs.EventId, OnNetworkConnected);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkClosedEventArgs.EventId, OnNetworkClosed);
-            GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkSendPacketEventArgs.EventId, OnNetworkSendPacket);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkMissHeartBeatEventArgs.EventId, OnNetworkMissHeartBeat);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkErrorEventArgs.EventId, OnNetworkError);
             GameEntry.Event.Unsubscribe(UnityGameFramework.Runtime.NetworkCustomErrorEventArgs.EventId, OnNetworkCustomError);
@@ -216,15 +214,6 @@ namespace StarForce
             }
 
             Log.Info("Network channel '{0}' closed.", ne.NetworkChannel.Name);
-        }
-
-        private void OnNetworkSendPacket(object sender, GameEventArgs e)
-        {
-            UnityGameFramework.Runtime.NetworkSendPacketEventArgs ne = (UnityGameFramework.Runtime.NetworkSendPacketEventArgs)e;
-            if (ne.NetworkChannel != m_NetworkChannel)
-            {
-                return;
-            }
         }
 
         private void OnNetworkMissHeartBeat(object sender, GameEventArgs e)
