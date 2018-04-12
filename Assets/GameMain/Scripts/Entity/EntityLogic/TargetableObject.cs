@@ -44,7 +44,7 @@ namespace StarForce
 #endif
         {
             base.OnInit(userData);
-            CachedTransform.SetLayerRecursively(Constant.Layer.TargetableObjectLayerId);
+            gameObject.SetLayerRecursively(Constant.Layer.TargetableObjectLayerId);
         }
 
 #if UNITY_2017_3_OR_NEWER
