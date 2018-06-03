@@ -11,7 +11,7 @@ namespace StarForce
 
         }
 
-        protected override void Release()
+        protected override void Release(bool isShutdown)
         {
             HPBarItem hpBarItem = (HPBarItem)Target;
             if (hpBarItem == null)
