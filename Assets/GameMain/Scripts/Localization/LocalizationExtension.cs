@@ -13,7 +13,7 @@ namespace StarForce
                 return;
             }
 
-            localizationComponent.LoadDictionary(dictionaryName, AssetUtility.GetDictionaryAsset(dictionaryName), userData);
+            localizationComponent.LoadDictionary(dictionaryName, AssetUtility.GetDictionaryAsset(dictionaryName), Constant.AssetPriority.DictionaryAsset, userData);
         }
     }
 }

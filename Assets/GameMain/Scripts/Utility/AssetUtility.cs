@@ -47,11 +47,6 @@
             return string.Format("Assets/GameMain/UI/UIForms/{0}.prefab", assetName);
         }
 
-        public static string GetUISpriteAsset(string assetName)
-        {
-            return string.Format("Assets/GameMain/UI/UISprites/{0}.png", assetName);
-        }
-
         public static string GetUISoundAsset(string assetName)
         {
             return string.Format("Assets/GameMain/UI/UISounds/{0}.wav", assetName);

@@ -61,7 +61,7 @@ namespace StarForce
                 return;
             }
 
-            GameEntry.Scene.LoadScene(AssetUtility.GetSceneAsset(drScene.AssetName), this);
+            GameEntry.Scene.LoadScene(AssetUtility.GetSceneAsset(drScene.AssetName), Constant.AssetPriority.SceneAsset, this);
             m_BackgroundMusicId = drScene.BackgroundMusicId;
         }
 
