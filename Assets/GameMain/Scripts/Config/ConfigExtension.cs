@@ -13,7 +13,7 @@ namespace StarForce
                 return;
             }
 
-            configComponent.LoadConfig(configName, AssetUtility.GetConfigAsset(configName), userData);
+            configComponent.LoadConfig(configName, AssetUtility.GetConfigAsset(configName), Constant.AssetPriority.ConfigAsset, userData);
         }
     }
 }
