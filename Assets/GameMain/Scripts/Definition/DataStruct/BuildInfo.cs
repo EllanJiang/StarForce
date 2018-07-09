@@ -8,7 +8,7 @@
             set;
         }
 
-        public int InternalVersion
+        public int InternalGameVersion
         {
             get;
             set;

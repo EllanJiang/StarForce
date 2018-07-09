@@ -1,5 +1,5 @@
 {
   "GameVersion": "0.1.0",
-  "InternalVersion": 0,
+  "InternalGameVersion": 0,
   "CheckVersionUrl": "http://gameframework.cn/starforce/version.txt"
 }

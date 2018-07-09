@@ -69,7 +69,7 @@ namespace StarForce
             iOSSystemVersion = UnityEngine.iOS.Device.systemVersion;
             iOSVendorIdentifier = UnityEngine.iOS.Device.vendorIdentifier ?? string.Empty;
 #endif
-            string gameVersion = GameEntry.Base.GameVersion;
+            string gameVersion = Version.GameVersion;
             string platform = Application.platform.ToString();
             string language = GameEntry.Localization.Language.ToString();
             string unityVersion = Application.unityVersion;
@@ -125,7 +125,7 @@ namespace StarForce
                 return;
             }
 
-            Log.Info("Latest game version is '{0}', local game version is '{1}'.", versionInfo.LatestGameVersion, GameEntry.Base.GameVersion);
+            Log.Info("Latest game version is '{0}', local game version is '{1}'.", versionInfo.LatestGameVersion, Version.GameVersion);
 
             if (versionInfo.ForceGameUpdate)
             {
