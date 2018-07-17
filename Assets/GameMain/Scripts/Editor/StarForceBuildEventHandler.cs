@@ -34,14 +34,14 @@ namespace StarForce.Editor
 
         }
 
-        public void PreProcessBuild(BuildTarget buildTarget, string workingPath, string outputPackagePath, string outputFullPath, string outputPackedPath)
+        public void PreProcessBuild(Platform platform, string workingPath, string outputPackagePath, string outputFullPath, string outputPackedPath)
         {
 
         }
 
-        public void PostProcessBuild(BuildTarget buildTarget, string workingPath, string outputPackagePath, string outputFullPath, string outputPackedPath)
+        public void PostProcessBuild(Platform platform, string workingPath, string outputPackagePath, string outputFullPath, string outputPackedPath)
         {
-            if (buildTarget != BuildTarget.StandaloneWindows)
+            if (platform != Platform.Windows)
             {
                 return;
             }
