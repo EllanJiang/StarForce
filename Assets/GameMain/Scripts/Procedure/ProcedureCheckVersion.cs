@@ -8,7 +8,7 @@ namespace StarForce
 {
     public class ProcedureCheckVersion : ProcedureBase
     {
-        private bool m_ResourceInitComplete = false;
+        private bool m_InitResourcesComplete = false;
 
         public override bool UseNativeDialog
         {
@@ -22,11 +22,10 @@ namespace StarForce
         {
             base.OnEnter(procedureOwner);
 
-            m_ResourceInitComplete = false;
+            m_InitResourcesComplete = false;
 
             GameEntry.Event.Subscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Subscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
-            GameEntry.Event.Subscribe(ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
 
             RequestVersion();
         }
@@ -35,7 +34,6 @@ namespace StarForce
         {
             GameEntry.Event.Unsubscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Unsubscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
-            GameEntry.Event.Unsubscribe(ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
 
             base.OnLeave(procedureOwner, isShutdown);
         }
@@ -44,7 +42,7 @@ namespace StarForce
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-            if (!m_ResourceInitComplete)
+            if (!m_InitResourcesComplete)
             {
                 return;
             }
@@ -143,7 +141,7 @@ namespace StarForce
                 return;
             }
 
-            GameEntry.Resource.InitResources();
+            GameEntry.Resource.InitResources(OnInitResourcesComplete);
         }
 
         private void OnWebRequestFailure(object sender, GameEventArgs e)
@@ -156,14 +154,14 @@ namespace StarForce
 
             Log.Warning("Check version failure.");
 
-            GameEntry.Resource.InitResources();
+            GameEntry.Resource.InitResources(OnInitResourcesComplete);
         }
 
-        private void OnResourceInitComplete(object sender, GameEventArgs e)
+        private void OnInitResourcesComplete()
         {
-            m_ResourceInitComplete = true;
+            m_InitResourcesComplete = true;
 
-            Log.Info("Init resource complete.");
+            Log.Info("Init resources complete.");
         }
     }
 }
