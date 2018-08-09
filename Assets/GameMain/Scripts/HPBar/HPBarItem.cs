@@ -1,7 +1,7 @@
-﻿using GameFramework;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
