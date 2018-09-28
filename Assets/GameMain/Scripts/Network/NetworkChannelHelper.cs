@@ -7,12 +7,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     public class NetworkChannelHelper : INetworkChannelHelper
     {
         private readonly Dictionary<int, Type> m_ServerToClientPacketTypes = new Dictionary<int, Type>();
+        private readonly MemoryStream m_CachedStream = new MemoryStream(1024 * 8);
         private INetworkChannel m_NetworkChannel = null;
 
         /// <summary>
@@ -101,32 +103,35 @@ namespace StarForce
         /// </summary>
         /// <typeparam name="T">消息包类型。</typeparam>
         /// <param name="packet">要序列化的消息包。</param>
-        /// <returns>序列化后的消息包字节流。</returns>
-        public byte[] Serialize<T>(T packet) where T : Packet
+        /// <param name="destination">要序列化的目标流。</param>
+        /// <returns>是否序列化成功。</returns>
+        public bool Serialize<T>(T packet, Stream destination) where T : Packet
         {
             PacketBase packetImpl = packet as PacketBase;
             if (packetImpl == null)
             {
                 Log.Warning("Packet is invalid.");
-                return null;
+                return false;
             }
 
             if (packetImpl.PacketType != PacketType.ClientToServer)
             {
                 Log.Warning("Send packet invalid.");
-                return null;
+                return false;
             }
 
-            // 恐怖的 GCAlloc，这里是例子，不做优化
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader>();
-                Serializer.Serialize(memoryStream, packetHeader);
-                Serializer.SerializeWithLengthPrefix(memoryStream, packet, PrefixStyle.Fixed32);
-                ReferencePool.Release(packetHeader);
+            m_CachedStream.SetLength(m_CachedStream.Capacity); // 此行防止 Array.Copy 的数据无法写入
+            m_CachedStream.Position = 0L;
 
-                return memoryStream.ToArray();
-            }
+            CSPacketHeader packetHeader = ReferencePool.Acquire<CSPacketHeader>();
+            Serializer.Serialize(m_CachedStream, packetHeader);
+            ReferencePool.Release(packetHeader);
+
+            Serializer.SerializeWithLengthPrefix(m_CachedStream, packet, PrefixStyle.Fixed32);
+            ReferencePool.Release(packet.GetType(), packet);
+
+            m_CachedStream.WriteTo(destination);
+            return true;
         }
 
         /// <summary>
