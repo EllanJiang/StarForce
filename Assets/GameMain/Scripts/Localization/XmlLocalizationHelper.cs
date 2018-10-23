@@ -1,5 +1,4 @@
-﻿using GameFramework;
-using System;
+﻿using System;
 using System.Xml;
 using UnityGameFramework.Runtime;
 
