@@ -35,10 +35,5 @@ namespace StarForce
             index++;
             AssetName = text[index++];
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DREntity>();
-        }
     }
 }

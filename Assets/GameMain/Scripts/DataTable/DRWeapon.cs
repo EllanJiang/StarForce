@@ -75,10 +75,5 @@ namespace StarForce
             BulletSpeed = float.Parse(text[index++]);
             BulletSoundId = int.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRWeapon>();
-        }
     }
 }

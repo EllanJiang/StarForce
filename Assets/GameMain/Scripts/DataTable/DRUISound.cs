@@ -55,10 +55,5 @@ namespace StarForce
             Priority = int.Parse(text[index++]);
             Volume = float.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRUISound>();
-        }
     }
 }
