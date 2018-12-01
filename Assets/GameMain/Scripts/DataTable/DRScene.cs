@@ -45,10 +45,5 @@ namespace StarForce
             AssetName = text[index++];
             BackgroundMusicId = int.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRScene>();
-        }
     }
 }

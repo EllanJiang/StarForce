@@ -79,10 +79,5 @@ namespace StarForce
             DeadEffectId = int.Parse(text[index++]);
             DeadSoundId = int.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRAircraft>();
-        }
     }
 }

@@ -85,10 +85,5 @@ namespace StarForce
             SpatialBlend = float.Parse(text[index++]);
             MaxDistance = float.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRSound>();
-        }
     }
 }
