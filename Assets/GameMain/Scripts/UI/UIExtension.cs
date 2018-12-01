@@ -1,5 +1,4 @@
-﻿using GameFramework;
-using GameFramework.DataTable;
+﻿using GameFramework.DataTable;
 using GameFramework.UI;
 using System.Collections;
 using UnityEngine;

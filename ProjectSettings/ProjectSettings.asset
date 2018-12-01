@@ -101,7 +101,7 @@ PlayerSettings:
   AndroidPreferredInstallLocation: 1
   aotOptions: nimt-trampolines=1024
   apiCompatibilityLevel: 2
-  stripEngineCode: 1
+  stripEngineCode: 0
   iPhoneStrippingLevel: 0
   iPhoneScriptCallOptimization: 0
   iPhoneBuildNumber: 0
@@ -416,11 +416,13 @@ PlayerSettings:
   - Standalone::ScriptingBackend
   - WebPlayer::ScriptingBackend
   - iOS::Architecture
+  - iOS::EnableIncrementalBuildSupportForIl2cpp
   - iOS::ScriptingBackend
   Android::ScriptingBackend: 0
   Standalone::ScriptingBackend: 0
   WebPlayer::ScriptingBackend: 0
   iOS::Architecture: 2
+  iOS::EnableIncrementalBuildSupportForIl2cpp: 1
   iOS::ScriptingBackend: 1
   boolPropertyNames:
   - XboxOne::enus

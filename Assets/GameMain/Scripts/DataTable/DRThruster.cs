@@ -35,10 +35,5 @@ namespace StarForce
             index++;
             Speed = float.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRThruster>();
-        }
     }
 }

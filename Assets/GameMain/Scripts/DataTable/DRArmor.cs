@@ -45,10 +45,5 @@ namespace StarForce
             MaxHP = int.Parse(text[index++]);
             Defense = int.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRArmor>();
-        }
     }
 }

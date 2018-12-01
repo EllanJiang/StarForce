@@ -65,10 +65,5 @@ namespace StarForce
             AllowMultiInstance = bool.Parse(text[index++]);
             PauseCoveredUIForm = bool.Parse(text[index++]);
         }
-
-        private void AvoidJIT()
-        {
-            new Dictionary<int, DRUIForm>();
-        }
     }
 }

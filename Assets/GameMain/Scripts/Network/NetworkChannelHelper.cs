@@ -128,7 +128,7 @@ namespace StarForce
             ReferencePool.Release(packetHeader);
 
             Serializer.SerializeWithLengthPrefix(m_CachedStream, packet, PrefixStyle.Fixed32);
-            ReferencePool.Release(packet.GetType(), packet);
+            ReferencePool.Release((IReference)packet);
 
             m_CachedStream.WriteTo(destination);
             return true;

@@ -1,5 +1,4 @@
-﻿using GameFramework;
-using GameFramework.Event;
+﻿using GameFramework.Event;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 

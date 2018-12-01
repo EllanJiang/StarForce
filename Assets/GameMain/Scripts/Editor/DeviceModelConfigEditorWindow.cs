@@ -49,7 +49,7 @@ namespace StarForce.Editor
 
             DrawHeader();
 
-            m_DeviceModelTablePosition = EditorGUILayout.BeginScrollView(m_DeviceModelTablePosition, GUILayout.Width(this.position.width));
+            m_DeviceModelTablePosition = EditorGUILayout.BeginScrollView(m_DeviceModelTablePosition, GUILayout.Width(position.width));
 
             int deleteIndex = -1;
 
