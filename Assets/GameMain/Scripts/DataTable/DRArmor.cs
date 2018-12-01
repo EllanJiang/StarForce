@@ -6,7 +6,6 @@
 //------------------------------------------------------------
 
 using GameFramework.DataTable;
-using System.Collections.Generic;
 
 namespace StarForce
 {
