@@ -5,22 +5,26 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework.DataTable;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 推进器表。
     /// </summary>
-    public class DRThruster : IDataRow
+    public class DRThruster : DataRowBase
     {
+        private int m_Id = 0;
+
         /// <summary>
         /// 推进器编号。
         /// </summary>
-        public int Id
+        public override int Id
         {
-            get;
-            private set;
+            get
+            {
+                return m_Id;
+            }
         }
 
         /// <summary>
@@ -37,7 +41,7 @@ namespace StarForce
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
             int index = 0;
             index++;
-            Id = int.Parse(text[index++]);
+            m_Id = int.Parse(text[index++]);
             index++;
             Speed = float.Parse(text[index++]);
         }

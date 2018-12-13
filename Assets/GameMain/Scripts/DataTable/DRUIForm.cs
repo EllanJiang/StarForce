@@ -5,22 +5,26 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework.DataTable;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 界面配置表。
     /// </summary>
-    public class DRUIForm : IDataRow
+    public class DRUIForm : DataRowBase
     {
+        private int m_Id = 0;
+
         /// <summary>
         /// 界面编号。
         /// </summary>
-        public int Id
+        public override int Id
         {
-            get;
-            protected set;
+            get
+            {
+                return m_Id;
+            }
         }
 
         /// <summary>
@@ -64,7 +68,7 @@ namespace StarForce
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
             int index = 0;
             index++;
-            Id = int.Parse(text[index++]);
+            m_Id = int.Parse(text[index++]);
             index++;
             AssetName = text[index++];
             UIGroupName = text[index++];

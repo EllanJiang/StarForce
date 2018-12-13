@@ -5,22 +5,26 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework.DataTable;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 小行星表。
     /// </summary>
-    public class DRAsteroid : IDataRow
+    public class DRAsteroid : DataRowBase
     {
+        private int m_Id = 0;
+
         /// <summary>
         /// 小行星编号。
         /// </summary>
-        public int Id
+        public override int Id
         {
-            get;
-            private set;
+            get
+            {
+                return m_Id;
+            }
         }
 
         /// <summary>
@@ -82,7 +86,7 @@ namespace StarForce
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
             int index = 0;
             index++;
-            Id = int.Parse(text[index++]);
+            m_Id = int.Parse(text[index++]);
             index++;
             MaxHP = int.Parse(text[index++]);
             Attack = int.Parse(text[index++]);

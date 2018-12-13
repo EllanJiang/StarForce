@@ -5,28 +5,31 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework.DataTable;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 战机表。
     /// </summary>
-    public class DRAircraft : IDataRow
+    public class DRAircraft : DataRowBase
     {
         private const int MaxWeaponCount = 3; // 最大武器数量
         private const int MaxArmorCount = 3; // 最大装甲数量
 
+        private int m_Id = 0;
         private int[] m_WeaponIds = new int[MaxWeaponCount];
         private int[] m_ArmorIds = new int[MaxArmorCount];
 
         /// <summary>
         /// 战机编号。
         /// </summary>
-        public int Id
+        public override int Id
         {
-            get;
-            private set;
+            get
+            {
+                return m_Id;
+            }
         }
 
         /// <summary>
@@ -71,7 +74,7 @@ namespace StarForce
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
             int index = 0;
             index++;
-            Id = int.Parse(text[index++]);
+            m_Id = int.Parse(text[index++]);
             index++;
             ThrusterId = int.Parse(text[index++]);
             for (int i = 0; i < MaxWeaponCount; i++)

@@ -5,22 +5,26 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework.DataTable;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 装甲表。
     /// </summary>
-    public class DRArmor : IDataRow
+    public class DRArmor : DataRowBase
     {
+        private int m_Id = 0;
+
         /// <summary>
         /// 装甲编号。
         /// </summary>
-        public int Id
+        public override int Id
         {
-            get;
-            private set;
+            get
+            {
+                return m_Id;
+            }
         }
 
         /// <summary>
@@ -46,7 +50,7 @@ namespace StarForce
             string[] text = DataTableExtension.SplitDataRow(dataRowText);
             int index = 0;
             index++;
-            Id = int.Parse(text[index++]);
+            m_Id = int.Parse(text[index++]);
             index++;
             MaxHP = int.Parse(text[index++]);
             Defense = int.Parse(text[index++]);
