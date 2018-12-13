@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -54,9 +55,9 @@ namespace StarForce
             private set;
         }
 
-        public void ParseDataRow(string dataRowText)
+        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            string[] text = DataTableExtension.SplitDataRow(dataRowText);
+            string[] text = DataTableExtension.SplitDataRow(dataRowSegment);
             int index = 0;
             index++;
             m_Id = int.Parse(text[index++]);
@@ -64,6 +65,8 @@ namespace StarForce
             AssetName = text[index++];
             Priority = int.Parse(text[index++]);
             Volume = float.Parse(text[index++]);
+
+            return true;
         }
     }
 }

@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -63,9 +64,9 @@ namespace StarForce
             private set;
         }
 
-        public void ParseDataRow(string dataRowText)
+        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            string[] text = DataTableExtension.SplitDataRow(dataRowText);
+            string[] text = DataTableExtension.SplitDataRow(dataRowSegment);
             int index = 0;
             index++;
             m_Id = int.Parse(text[index++]);
@@ -74,6 +75,8 @@ namespace StarForce
             UIGroupName = text[index++];
             AllowMultiInstance = bool.Parse(text[index++]);
             PauseCoveredUIForm = bool.Parse(text[index++]);
+
+            return true;
         }
     }
 }

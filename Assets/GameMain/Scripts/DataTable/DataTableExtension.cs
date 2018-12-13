@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using System;
 using UnityGameFramework.Runtime;
 
@@ -43,9 +44,9 @@ namespace StarForce
             dataTableComponent.LoadDataTable(dataRowType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName), Constant.AssetPriority.DataTableAsset, userData);
         }
 
-        public static string[] SplitDataRow(string dataRowText)
+        public static string[] SplitDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            return dataRowText.Split(ColumnSplit, StringSplitOptions.None);
+            return dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(ColumnSplit, StringSplitOptions.None);
         }
     }
 }
