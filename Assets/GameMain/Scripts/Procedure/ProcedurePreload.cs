@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using GameFramework.Event;
 using GameFramework.Resource;
 using System.Collections.Generic;
@@ -98,29 +99,29 @@ namespace StarForce
 
         private void LoadConfig(string configName)
         {
-            m_LoadedFlag.Add(string.Format("Config.{0}", configName), false);
-            GameEntry.Config.LoadConfig(configName, this);
+            m_LoadedFlag.Add(Utility.Text.Format("Config.{0}", configName), false);
+            GameEntry.Config.LoadConfig(configName, LoadType.Text, this);
         }
 
         private void LoadDataTable(string dataTableName)
         {
-            m_LoadedFlag.Add(string.Format("DataTable.{0}", dataTableName), false);
-            GameEntry.DataTable.LoadDataTable(dataTableName, this);
+            m_LoadedFlag.Add(Utility.Text.Format("DataTable.{0}", dataTableName), false);
+            GameEntry.DataTable.LoadDataTable(dataTableName, LoadType.Text, this);
         }
 
         private void LoadDictionary(string dictionaryName)
         {
-            m_LoadedFlag.Add(string.Format("Dictionary.{0}", dictionaryName), false);
-            GameEntry.Localization.LoadDictionary(dictionaryName, this);
+            m_LoadedFlag.Add(Utility.Text.Format("Dictionary.{0}", dictionaryName), false);
+            GameEntry.Localization.LoadDictionary(dictionaryName, LoadType.Text, this);
         }
 
         private void LoadFont(string fontName)
         {
-            m_LoadedFlag.Add(string.Format("Font.{0}", fontName), false);
+            m_LoadedFlag.Add(Utility.Text.Format("Font.{0}", fontName), false);
             GameEntry.Resource.LoadAsset(AssetUtility.GetFontAsset(fontName), Constant.AssetPriority.FontAsset, new LoadAssetCallbacks(
                 (assetName, asset, duration, userData) =>
                 {
-                    m_LoadedFlag[string.Format("Font.{0}", fontName)] = true;
+                    m_LoadedFlag[Utility.Text.Format("Font.{0}", fontName)] = true;
                     UGuiForm.SetMainFont((Font)asset);
                     Log.Info("Load font '{0}' OK.", fontName);
                 },
@@ -139,7 +140,7 @@ namespace StarForce
                 return;
             }
 
-            m_LoadedFlag[string.Format("Config.{0}", ne.ConfigName)] = true;
+            m_LoadedFlag[Utility.Text.Format("Config.{0}", ne.ConfigName)] = true;
             Log.Info("Load config '{0}' OK.", ne.ConfigName);
         }
 
@@ -162,7 +163,7 @@ namespace StarForce
                 return;
             }
 
-            m_LoadedFlag[string.Format("DataTable.{0}", ne.DataTableName)] = true;
+            m_LoadedFlag[Utility.Text.Format("DataTable.{0}", ne.DataTableName)] = true;
             Log.Info("Load data table '{0}' OK.", ne.DataTableName);
         }
 
@@ -185,7 +186,7 @@ namespace StarForce
                 return;
             }
 
-            m_LoadedFlag[string.Format("Dictionary.{0}", ne.DictionaryName)] = true;
+            m_LoadedFlag[Utility.Text.Format("Dictionary.{0}", ne.DictionaryName)] = true;
             Log.Info("Load dictionary '{0}' OK.", ne.DictionaryName);
         }
 

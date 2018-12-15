@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -57,7 +58,7 @@ namespace StarForce
         {
             base.OnAttachTo(parentEntity, parentTransform, userData);
 
-            Name = string.Format("Weapon of {0}", parentEntity.Name);
+            Name = Utility.Text.Format("Weapon of {0}", parentEntity.Name);
             CachedTransform.localPosition = Vector3.zero;
         }
 

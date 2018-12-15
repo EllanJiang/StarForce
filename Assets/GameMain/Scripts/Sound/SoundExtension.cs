@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using GameFramework.DataTable;
 using GameFramework.Sound;
 using UnityGameFramework.Runtime;
@@ -129,7 +130,7 @@ namespace StarForce
 
             soundGroup.Mute = mute;
 
-            GameEntry.Setting.SetBool(string.Format(Constant.Setting.SoundGroupMuted, soundGroupName), mute);
+            GameEntry.Setting.SetBool(Utility.Text.Format(Constant.Setting.SoundGroupMuted, soundGroupName), mute);
             GameEntry.Setting.Save();
         }
 
@@ -168,7 +169,7 @@ namespace StarForce
 
             soundGroup.Volume = volume;
 
-            GameEntry.Setting.SetFloat(string.Format(Constant.Setting.SoundGroupVolume, soundGroupName), volume);
+            GameEntry.Setting.SetFloat(Utility.Text.Format(Constant.Setting.SoundGroupVolume, soundGroupName), volume);
             GameEntry.Setting.Save();
         }
     }

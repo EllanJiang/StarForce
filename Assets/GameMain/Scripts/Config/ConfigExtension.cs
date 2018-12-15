@@ -5,13 +5,14 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     public static class ConfigExtension
     {
-        public static void LoadConfig(this ConfigComponent configComponent, string configName, object userData = null)
+        public static void LoadConfig(this ConfigComponent configComponent, string configName, LoadType loadType, object userData = null)
         {
             if (string.IsNullOrEmpty(configName))
             {
@@ -19,7 +20,7 @@ namespace StarForce
                 return;
             }
 
-            configComponent.LoadConfig(configName, AssetUtility.GetConfigAsset(configName), Constant.AssetPriority.ConfigAsset, userData);
+            configComponent.LoadConfig(configName, AssetUtility.GetConfigAsset(configName, loadType), loadType, Constant.AssetPriority.ConfigAsset, userData);
         }
     }
 }

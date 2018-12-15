@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -55,7 +56,7 @@ namespace StarForce
         {
             base.OnAttachTo(parentEntity, parentTransform, userData);
 
-            Name = string.Format("Thruster of {0}", parentEntity.Name);
+            Name = Utility.Text.Format("Thruster of {0}", parentEntity.Name);
             CachedTransform.localPosition = Vector3.zero;
         }
     }
