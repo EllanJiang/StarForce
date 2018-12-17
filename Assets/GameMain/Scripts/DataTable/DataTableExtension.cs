@@ -1,4 +1,12 @@
-﻿using System;
+﻿//------------------------------------------------------------
+// Game Framework
+// Copyright © 2013-2019 Jiang Yin. All rights reserved.
+// Homepage: http://gameframework.cn/
+// Feedback: mailto:jiangyin@gameframework.cn
+//------------------------------------------------------------
+
+using GameFramework;
+using System;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -8,7 +16,7 @@ namespace StarForce
         private const string DataRowClassPrefixName = "StarForce.DR";
         private static readonly string[] ColumnSplit = new string[] { "\t" };
 
-        public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, object userData = null)
+        public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, LoadType loadType, object userData = null)
         {
             if (string.IsNullOrEmpty(dataTableName))
             {
@@ -33,12 +41,12 @@ namespace StarForce
             }
 
             string dataTableNameInType = splitNames.Length > 1 ? splitNames[1] : null;
-            dataTableComponent.LoadDataTable(dataRowType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName), Constant.AssetPriority.DataTableAsset, userData);
+            dataTableComponent.LoadDataTable(dataRowType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName, loadType), loadType, Constant.AssetPriority.DataTableAsset, userData);
         }
 
-        public static string[] SplitDataRow(string dataRowText)
+        public static string[] SplitDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            return dataRowText.Split(ColumnSplit, StringSplitOptions.None);
+            return dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(ColumnSplit, StringSplitOptions.None);
         }
     }
 }

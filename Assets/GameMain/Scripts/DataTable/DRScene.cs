@@ -1,20 +1,31 @@
-﻿using GameFramework.DataTable;
-using System.Collections.Generic;
+﻿//------------------------------------------------------------
+// Game Framework
+// Copyright © 2013-2019 Jiang Yin. All rights reserved.
+// Homepage: http://gameframework.cn/
+// Feedback: mailto:jiangyin@gameframework.cn
+//------------------------------------------------------------
+
+using GameFramework;
+using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
     /// 场景配置表。
     /// </summary>
-    public class DRScene : IDataRow
+    public class DRScene : DataRowBase
     {
+        private int m_Id = 0;
+
         /// <summary>
         /// 场景编号。
         /// </summary>
-        public int Id
+        public override int Id
         {
-            get;
-            protected set;
+            get
+            {
+                return m_Id;
+            }
         }
 
         /// <summary>
@@ -35,15 +46,17 @@ namespace StarForce
             private set;
         }
 
-        public void ParseDataRow(string dataRowText)
+        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            string[] text = DataTableExtension.SplitDataRow(dataRowText);
+            string[] text = DataTableExtension.SplitDataRow(dataRowSegment);
             int index = 0;
             index++;
-            Id = int.Parse(text[index++]);
+            m_Id = int.Parse(text[index++]);
             index++;
             AssetName = text[index++];
             BackgroundMusicId = int.Parse(text[index++]);
+
+            return true;
         }
     }
 }

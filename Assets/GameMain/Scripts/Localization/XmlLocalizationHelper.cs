@@ -1,4 +1,12 @@
-﻿using System;
+﻿//------------------------------------------------------------
+// Game Framework
+// Copyright © 2013-2019 Jiang Yin. All rights reserved.
+// Homepage: http://gameframework.cn/
+// Feedback: mailto:jiangyin@gameframework.cn
+//------------------------------------------------------------
+
+using GameFramework;
+using System;
 using System.Xml;
 using UnityGameFramework.Runtime;
 
@@ -62,7 +70,7 @@ namespace StarForce
             }
             catch (Exception exception)
             {
-                Log.Warning("Can not parse dictionary '{0}' with exception '{1}'.", text, string.Format("{0}\n{1}", exception.Message, exception.StackTrace));
+                Log.Warning("Can not parse dictionary '{0}' with exception '{1}'.", text, Utility.Text.Format("{0}\n{1}", exception.Message, exception.StackTrace));
                 return false;
             }
         }
