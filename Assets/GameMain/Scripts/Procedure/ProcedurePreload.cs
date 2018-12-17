@@ -100,7 +100,7 @@ namespace StarForce
         private void LoadConfig(string configName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("Config.{0}", configName), false);
-            GameEntry.Config.LoadConfig(configName, LoadType.Text, this);
+            GameEntry.Config.LoadConfig(configName, LoadType.Bytes, this);
         }
 
         private void LoadDataTable(string dataTableName)
