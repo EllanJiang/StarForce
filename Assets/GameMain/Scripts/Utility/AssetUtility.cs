@@ -28,7 +28,7 @@ namespace StarForce
 
         public static string GetFontAsset(string assetName)
         {
-            return Utility.Text.Format("Assets/GameMain/Localization/{0}/Fonts/{1}.ttf", GameEntry.Localization.Language.ToString(), assetName);
+            return Utility.Text.Format("Assets/GameMain/Fonts/{0}.ttf", assetName);
         }
 
         public static string GetSceneAsset(string assetName)

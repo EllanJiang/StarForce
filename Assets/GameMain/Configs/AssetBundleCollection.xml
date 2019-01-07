@@ -5,14 +5,11 @@
       <AssetBundle Name="Configs" LoadType="0" Packed="True" />
       <AssetBundle Name="DataTables" LoadType="0" Packed="True" />
       <AssetBundle Name="Entities" LoadType="0" Packed="True" />
+      <AssetBundle Name="Fonts" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Dictionaries" Variant="en-us" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Dictionaries" Variant="ko-kr" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Dictionaries" Variant="zh-cn" LoadType="0" Packed="True" />
       <AssetBundle Name="Localization/Dictionaries" Variant="zh-tw" LoadType="0" Packed="True" />
-      <AssetBundle Name="Localization/Fonts" Variant="en-us" LoadType="0" Packed="True" />
-      <AssetBundle Name="Localization/Fonts" Variant="ko-kr" LoadType="0" Packed="True" />
-      <AssetBundle Name="Localization/Fonts" Variant="zh-cn" LoadType="0" Packed="True" />
-      <AssetBundle Name="Localization/Fonts" Variant="zh-tw" LoadType="0" Packed="True" />
       <AssetBundle Name="Materials" LoadType="0" Packed="True" />
       <AssetBundle Name="Meshes" LoadType="0" Packed="True" />
       <AssetBundle Name="Music/About" LoadType="0" Packed="True" />
@@ -86,11 +83,12 @@
       <Asset Guid="71646ebaae78d43aeb8b53cacdb69671" AssetBundleName="Textures" />
       <Asset Guid="72e76810224064300b7d32e8322a5d12" AssetBundleName="Sounds" />
       <Asset Guid="738bdf56857a65f479c367c7b62c4ad7" AssetBundleName="Entities" />
-      <Asset Guid="77cbb7c5404c10242ab59953e0746314" AssetBundleName="Localization/Fonts" AssetBundleVariant="zh-cn" />
+      <Asset Guid="77cbb7c5404c10242ab59953e0746314" AssetBundleName="Fonts" />
       <Asset Guid="7d5f7699d6d1d48e485ac71126e12061" AssetBundleName="Entities" />
       <Asset Guid="7e91cd9bad7babf4b975882a4b7453cb" AssetBundleName="Textures" />
       <Asset Guid="7eae0d2701845a54aa570b07c55dab44" AssetBundleName="Textures" />
       <Asset Guid="7f5aee8da226edf4991598327cb32ce0" AssetBundleName="UI/UISprites/Logos" />
+      <Asset Guid="7fd11dc5d29076d469d414dec2818f11" AssetBundleName="Configs" />
       <Asset Guid="834bfaee90a9d4e04b1e8c1ca22cc88e" AssetBundleName="Entities" />
       <Asset Guid="836be25be3e1e8c41ae5545bc8a9a4d7" AssetBundleName="Textures" />
       <Asset Guid="8940b037a9b441c4cbd3d2b446838424" AssetBundleName="Materials" />
@@ -121,10 +119,8 @@
       <Asset Guid="b2cebe04343227945bab3729ca9a3493" AssetBundleName="DataTables" />
       <Asset Guid="ba157ba55f72c424a9e88f3c029997c4" AssetBundleName="Textures" />
       <Asset Guid="baedbbad82997f445a8cb4da210404e0" AssetBundleName="Meshes" />
-      <Asset Guid="bb5503fe5a25f2f498da035f1f3e58ee" AssetBundleName="Localization/Fonts" AssetBundleVariant="en-us" />
       <Asset Guid="bbfd75fe6fe00e1448fe988173ede7f9" AssetBundleName="UI/UIForms" />
       <Asset Guid="bf75b984df8a84987bcf3a8bf6e2862d" AssetBundleName="Sounds" />
-      <Asset Guid="c0805e8f410cb6d4e84d0a981cb156e1" AssetBundleName="Localization/Fonts" AssetBundleVariant="zh-tw" />
       <Asset Guid="c547624e174de984882f0a14b4bb32e1" AssetBundleName="Materials" />
       <Asset Guid="c58c9afddbd36d14d837fa218d772996" AssetBundleName="Materials" />
       <Asset Guid="c7d1e11dd37634b48a9dd4012b8e4306" AssetBundleName="UI/UISounds" />
@@ -138,7 +134,6 @@
       <Asset Guid="e830964cdb85ff3429bca484c16bab44" AssetBundleName="UI/UISounds" />
       <Asset Guid="e85864330b68dde498dcb6e8711815d3" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="eabb37cb6d738b443b398b701a64cd88" AssetBundleName="Textures" />
-      <Asset Guid="ef07add67d7230a4da456818f61439c8" AssetBundleName="Localization/Fonts" AssetBundleVariant="ko-kr" />
       <Asset Guid="f2f4df0b7211e4c42a5638273525d8ee" AssetBundleName="UI/UISprites/Common" />
       <Asset Guid="f2f97a713beae744181ba934f9c4113a" AssetBundleName="DataTables" />
       <Asset Guid="f36c72c738c55f741afcd674a0b1245f" AssetBundleName="Materials" />
