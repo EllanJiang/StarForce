@@ -11,7 +11,7 @@ using System;
 namespace StarForce
 {
     [Serializable, ProtoContract(Name = @"SCHeartBeat")]
-    public partial class SCHeartBeat : SCPacketBase
+    public class SCHeartBeat : SCPacketBase
     {
         public SCHeartBeat()
         {

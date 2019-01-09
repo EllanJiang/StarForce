@@ -12,7 +12,7 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 namespace StarForce
 {
-    public partial class ProcedureChangeScene : ProcedureBase
+    public class ProcedureChangeScene : ProcedureBase
     {
         private const int MenuSceneId = 1;
 

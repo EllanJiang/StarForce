@@ -11,7 +11,7 @@ using System;
 namespace StarForce
 {
     [Serializable, ProtoContract(Name = @"CSHeartBeat")]
-    public partial class CSHeartBeat : CSPacketBase
+    public class CSHeartBeat : CSPacketBase
     {
         public CSHeartBeat()
         {

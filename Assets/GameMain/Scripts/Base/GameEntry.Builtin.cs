@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -12,7 +13,7 @@ namespace StarForce
     /// <summary>
     /// 游戏入口。
     /// </summary>
-    public partial class GameEntry
+    public partial class GameEntry : MonoBehaviour
     {
         /// <summary>
         /// 获取游戏基础组件。
