@@ -1,7 +1,9 @@
 ﻿using GameFramework;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools
@@ -11,6 +13,7 @@ namespace StarForce.Editor.DataTableTools
         private const string DataTablePath = "Assets/GameMain/DataTables";
         private const string CSharpCodePath = "Assets/GameMain/Scripts/DataTable";
         private const string CSharpCodeTemplateFileName = "Assets/GameMain/Configs/DataTableCodeTemplate.txt";
+        private static readonly Regex EndWithNumberRegex = new Regex(@"\d+$");
 
         public static DataTableProcessor CreateDataTableProcessor(string dataTableName)
         {
@@ -55,6 +58,7 @@ namespace StarForce.Editor.DataTableTools
             codeContent.Replace("__DATA_TABLE_COMMENT__", dataTableProcessor.GetValue(0, 1) + "。");
             codeContent.Replace("__DATA_TABLE_ID_COMMENT__", "获取" + dataTableProcessor.GetComment(dataTableProcessor.IdColumn) + "。");
             codeContent.Replace("__DATA_TABLE_PROPERTIES__", GenerateDataTableProperties(dataTableProcessor, data));
+            codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor, data));
             codeContent.Replace("__DATA_TABLE_STRING_PARSER__", GenerateDataTableStringParser(dataTableProcessor, data));
             codeContent.Replace("__DATA_TABLE_BYTES_PARSER__", GenerateDataTableBytesParser(dataTableProcessor, data));
             codeContent.Replace("__DATA_TABLE_STREAM_PARSER__", GenerateDataTableStreamParser(dataTableProcessor, data));
@@ -96,6 +100,66 @@ namespace StarForce.Editor.DataTableTools
                     .AppendLine("            get;")
                     .AppendLine("            private set;")
                     .Append("        }");
+            }
+
+            return stringBuilder.ToString();
+        }
+
+        private static string GenerateDataTablePropertyArray(DataTableProcessor dataTableProcessor, Data data)
+        {
+            Dictionary<string, string> propertyType = new Dictionary<string, string>();
+            Dictionary<string, List<KeyValuePair<int, string>>> propertyArray = new Dictionary<string, List<KeyValuePair<int, string>>>();
+            for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
+            {
+                if (dataTableProcessor.IsCommentColumn(i))
+                {
+                    // 注释列
+                    continue;
+                }
+
+                if (i == dataTableProcessor.IdColumn)
+                {
+                    // 编号列
+                    continue;
+                }
+
+                string name = dataTableProcessor.GetName(i);
+                if (!EndWithNumberRegex.IsMatch(name))
+                {
+                    continue;
+                }
+
+                string arrayName = EndWithNumberRegex.Replace(name, string.Empty);
+                int id = int.Parse(EndWithNumberRegex.Match(name).Value);
+
+                List<KeyValuePair<int, string>> property = null;
+                if (!propertyArray.TryGetValue(arrayName, out property))
+                {
+                    propertyType.Add(arrayName, dataTableProcessor.GetStandardType(i));
+                    property = new List<KeyValuePair<int, string>>();
+                    propertyArray.Add(arrayName, property);
+                }
+
+                property.Add(new KeyValuePair<int, string>(id, name));
+            }
+
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (KeyValuePair<string, List<KeyValuePair<int, string>>> i in propertyArray)
+            {
+                stringBuilder
+                    .AppendFormat("        private KeyValuePair<int, {0}>[] m_{1} = null;", propertyType[i.Key], i.Key).AppendLine()
+                    .AppendFormat("        public int Get{0}(int id)", i.Key).AppendLine()
+                    .AppendLine("        {")
+                    .AppendFormat("            foreach (KeyValuePair<int, {0}> i in m_{1})", propertyType[i.Key], i.Key).AppendLine()
+                    .AppendLine("            {")
+                    .AppendLine("                if (i.Key == id)")
+                    .AppendLine("                {")
+                    .AppendFormat("                    return i.Value;", propertyType[i.Key], i.Key).AppendLine()
+                    .AppendLine("                }")
+                    .AppendLine("            }")
+                    .AppendLine()
+                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Invalid id '{{0}}' for {0}.\", id.ToString()));", i.Key).AppendLine()
+                    .AppendLine("        }");
             }
 
             return stringBuilder.ToString();
