@@ -17,6 +17,21 @@ namespace StarForce
 {
     public class ProcedurePreload : ProcedureBase
     {
+        public static readonly string[] DataTableNames = new string[]
+        {
+            "Aircraft",
+            "Armor",
+            "Asteroid",
+            "Entity",
+            "Music",
+            "Scene",
+            "Sound",
+            "Thruster",
+            "UIForm",
+            "UISound",
+            "Weapon",
+        };
+
         private Dictionary<string, bool> m_LoadedFlag = new Dictionary<string, bool>();
 
         public override bool UseNativeDialog
@@ -78,17 +93,10 @@ namespace StarForce
             LoadConfig("DefaultConfig");
 
             // Preload data tables
-            LoadDataTable("Aircraft");
-            LoadDataTable("Armor");
-            LoadDataTable("Asteroid");
-            LoadDataTable("Entity");
-            LoadDataTable("Music");
-            LoadDataTable("Scene");
-            LoadDataTable("Sound");
-            LoadDataTable("Thruster");
-            LoadDataTable("UIForm");
-            LoadDataTable("UISound");
-            LoadDataTable("Weapon");
+            foreach (string dataTableName in DataTableNames)
+            {
+                LoadDataTable(dataTableName);
+            }
 
             // Preload dictionaries
             LoadDictionary("Default");
