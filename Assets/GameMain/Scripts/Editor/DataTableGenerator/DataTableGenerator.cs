@@ -104,7 +104,7 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
                 .AppendLine("        {")
-                .AppendLine("            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！")
+                .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
                 .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\\t');")
                 .AppendLine("            int index = 0;");
 
@@ -151,7 +151,7 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)")
                 .AppendLine("        {")
-                .AppendLine("            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！")
+                .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
                 .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))")
                 .AppendLine("            {")
                 .AppendLine("                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))")
