@@ -1,5 +1,4 @@
-﻿using StarForce.Editor.DataTableTools;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools

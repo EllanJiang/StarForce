@@ -8,7 +8,7 @@ using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools
 {
-    public sealed partial class DataTableGenerator
+    public sealed class DataTableGenerator
     {
         private const string DataTablePath = "Assets/GameMain/DataTables";
         private const string CSharpCodePath = "Assets/GameMain/Scripts/DataTable";
@@ -35,14 +35,7 @@ namespace StarForce.Editor.DataTableTools
             dataTableProcessor.SetCodeGenerator(DataTableCodeGenerator);
 
             string csharpCodeFileName = Utility.Path.GetCombinePath(CSharpCodePath, "DR" + dataTableName + ".cs");
-            Data data = new Data()
-            {
-                CreateTime = DateTime.Now,
-                NameSpace = "StarForce",
-                ClassName = "DR" + dataTableName,
-            };
-
-            if (!dataTableProcessor.GenerateCodeFile(csharpCodeFileName, Encoding.UTF8, data) && File.Exists(csharpCodeFileName))
+            if (!dataTableProcessor.GenerateCodeFile(csharpCodeFileName, Encoding.UTF8, dataTableName) && File.Exists(csharpCodeFileName))
             {
                 File.Delete(csharpCodeFileName);
             }
@@ -50,21 +43,21 @@ namespace StarForce.Editor.DataTableTools
 
         private static void DataTableCodeGenerator(DataTableProcessor dataTableProcessor, StringBuilder codeContent, object userData)
         {
-            Data data = (Data)userData;
+            string dataTableName = (string)userData;
 
-            codeContent.Replace("__DATA_TABLE_CREATE_TIME__", data.CreateTime.ToString("yyyy-MM-dd HH:mm:ss.fff"));
-            codeContent.Replace("__DATA_TABLE_NAME_SPACE__", data.NameSpace);
-            codeContent.Replace("__DATA_TABLE_CLASS_NAME__", data.ClassName);
+            codeContent.Replace("__DATA_TABLE_CREATE_TIME__", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+            codeContent.Replace("__DATA_TABLE_NAME_SPACE__", "StarForce");
+            codeContent.Replace("__DATA_TABLE_CLASS_NAME__", "DR" + dataTableName);
             codeContent.Replace("__DATA_TABLE_COMMENT__", dataTableProcessor.GetValue(0, 1) + "。");
             codeContent.Replace("__DATA_TABLE_ID_COMMENT__", "获取" + dataTableProcessor.GetComment(dataTableProcessor.IdColumn) + "。");
-            codeContent.Replace("__DATA_TABLE_PROPERTIES__", GenerateDataTableProperties(dataTableProcessor, data));
-            codeContent.Replace("__DATA_TABLE_STRING_PARSER__", GenerateDataTableStringParser(dataTableProcessor, data));
-            codeContent.Replace("__DATA_TABLE_BYTES_PARSER__", GenerateDataTableBytesParser(dataTableProcessor, data));
-            codeContent.Replace("__DATA_TABLE_STREAM_PARSER__", GenerateDataTableStreamParser(dataTableProcessor, data));
-            codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor, data));
+            codeContent.Replace("__DATA_TABLE_PROPERTIES__", GenerateDataTableProperties(dataTableProcessor));
+            codeContent.Replace("__DATA_TABLE_STRING_PARSER__", GenerateDataTableStringParser(dataTableProcessor));
+            codeContent.Replace("__DATA_TABLE_BYTES_PARSER__", GenerateDataTableBytesParser(dataTableProcessor));
+            codeContent.Replace("__DATA_TABLE_STREAM_PARSER__", GenerateDataTableStreamParser(dataTableProcessor));
+            codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor));
         }
 
-        private static string GenerateDataTableProperties(DataTableProcessor dataTableProcessor, Data data)
+        private static string GenerateDataTableProperties(DataTableProcessor dataTableProcessor)
         {
             StringBuilder stringBuilder = new StringBuilder();
             bool firstProperty = true;
@@ -105,7 +98,7 @@ namespace StarForce.Editor.DataTableTools
             return stringBuilder.ToString();
         }
 
-        private static string GenerateDataTableStringParser(DataTableProcessor dataTableProcessor, Data data)
+        private static string GenerateDataTableStringParser(DataTableProcessor dataTableProcessor)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
@@ -152,7 +145,7 @@ namespace StarForce.Editor.DataTableTools
             return stringBuilder.ToString();
         }
 
-        private static string GenerateDataTableBytesParser(DataTableProcessor dataTableProcessor, Data data)
+        private static string GenerateDataTableBytesParser(DataTableProcessor dataTableProcessor)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
@@ -165,7 +158,7 @@ namespace StarForce.Editor.DataTableTools
             return stringBuilder.ToString();
         }
 
-        private static string GenerateDataTableStreamParser(DataTableProcessor dataTableProcessor, Data data)
+        private static string GenerateDataTableStreamParser(DataTableProcessor dataTableProcessor)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
@@ -178,7 +171,7 @@ namespace StarForce.Editor.DataTableTools
             return stringBuilder.ToString();
         }
 
-        private static string GenerateDataTablePropertyArray(DataTableProcessor dataTableProcessor, Data data)
+        private static string GenerateDataTablePropertyArray(DataTableProcessor dataTableProcessor)
         {
             List<PropertyCollection> propertyCollections = new List<PropertyCollection>();
             for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
