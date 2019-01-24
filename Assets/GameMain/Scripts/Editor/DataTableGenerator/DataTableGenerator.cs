@@ -88,7 +88,7 @@ namespace StarForce.Editor.DataTableTools
                     .AppendLine("        /// <summary>")
                     .AppendFormat("        /// 获取{0}。", dataTableProcessor.GetComment(i)).AppendLine()
                     .AppendLine("        /// </summary>")
-                    .AppendFormat("        public {0} {1}", dataTableProcessor.GetStandardType(i), dataTableProcessor.GetName(i)).AppendLine()
+                    .AppendFormat("        public {0} {1}", dataTableProcessor.GetLanguageKeyword(i), dataTableProcessor.GetName(i)).AppendLine()
                     .AppendLine("        {")
                     .AppendLine("            get;")
                     .AppendLine("            private set;")
@@ -104,7 +104,8 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
                 .AppendLine("        {")
-                .AppendLine("            string[] text = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\\t');")
+                .AppendLine("            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！")
+                .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\\t');")
                 .AppendLine("            int index = 0;");
 
             for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
@@ -119,20 +120,19 @@ namespace StarForce.Editor.DataTableTools
                 if (i == dataTableProcessor.IdColumn)
                 {
                     // 编号列
-                    stringBuilder.AppendLine("            m_Id = int.Parse(text[index++]);");
+                    stringBuilder.AppendLine("            m_Id = int.Parse(columnTexts[index++]);");
                     continue;
                 }
 
-                string standardType = dataTableProcessor.GetStandardType(i);
-                switch (standardType)
+                string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
+                switch (languageKeyword)
                 {
                     case "string":
-                        stringBuilder.AppendFormat("            {0} = text[index++];", dataTableProcessor.GetName(i)).AppendLine();
+                        stringBuilder.AppendFormat("            {0} = columnTexts[index++];", dataTableProcessor.GetName(i)).AppendLine();
                         break;
                     default:
-                        stringBuilder.AppendFormat("            {0} = {1}.Parse(text[index++]);", dataTableProcessor.GetName(i), standardType).AppendLine();
+                        stringBuilder.AppendFormat("            {0} = {1}.Parse(columnTexts[index++]);", dataTableProcessor.GetName(i), languageKeyword).AppendLine();
                         break;
-
                 }
             }
 
@@ -151,10 +151,36 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)")
                 .AppendLine("        {")
-                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, false))")
+                .AppendLine("            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！")
+                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))")
                 .AppendLine("            {")
-                .AppendLine("                return ParseDataRow(new GameFrameworkSegment<Stream>(memoryStream, dataRowSegment.Offset, dataRowSegment.Length));")
+                .AppendLine("                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))")
+                .AppendLine("                {");
+
+            for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
+            {
+                if (dataTableProcessor.IsCommentColumn(i))
+                {
+                    // 注释列
+                    continue;
+                }
+
+                if (i == dataTableProcessor.IdColumn)
+                {
+                    // 编号列
+                    stringBuilder.AppendLine("                    m_Id = binaryReader.ReadInt32();");
+                    continue;
+                }
+
+                stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetTypeName(i)).AppendLine();
+            }
+
+            stringBuilder
+                .AppendLine("                }")
                 .AppendLine("            }")
+                .AppendLine()
+                .AppendLine("            GeneratePropertyArray();")
+                .AppendLine("            return true;")
                 .Append("        }");
 
             return stringBuilder.ToString();
@@ -211,7 +237,7 @@ namespace StarForce.Editor.DataTableTools
 
                 if (propertyCollection == null)
                 {
-                    propertyCollection = new PropertyCollection(propertyCollectionName, dataTableProcessor.GetStandardType(i));
+                    propertyCollection = new PropertyCollection(propertyCollectionName, dataTableProcessor.GetLanguageKeyword(i));
                     propertyCollections.Add(propertyCollection);
                 }
 
@@ -232,11 +258,11 @@ namespace StarForce.Editor.DataTableTools
                 }
 
                 stringBuilder
-                    .AppendFormat("        private KeyValuePair<int, {1}>[] m_{0} = null;", propertyCollection.Name, propertyCollection.StandardType).AppendLine()
+                    .AppendFormat("        private KeyValuePair<int, {1}>[] m_{0} = null;", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine()
                     .AppendFormat("        public int Get{0}(int id)", propertyCollection.Name).AppendLine()
                     .AppendLine("        {")
-                    .AppendFormat("            foreach (KeyValuePair<int, {1}> i in m_{0})", propertyCollection.Name, propertyCollection.StandardType).AppendLine()
+                    .AppendFormat("            foreach (KeyValuePair<int, {1}> i in m_{0})", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("            {")
                     .AppendLine("                if (i.Key == id)")
                     .AppendLine("                {")
@@ -280,14 +306,14 @@ namespace StarForce.Editor.DataTableTools
                 }
 
                 stringBuilder
-                    .AppendFormat("            m_{0} = new KeyValuePair<int, {1}>[]", propertyCollection.Name, propertyCollection.StandardType).AppendLine()
+                    .AppendFormat("            m_{0} = new KeyValuePair<int, {1}>[]", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("            {");
 
                 int itemCount = propertyCollection.ItemCount;
                 for (int i = 0; i < itemCount; i++)
                 {
                     KeyValuePair<int, string> item = propertyCollection.GetItem(i);
-                    stringBuilder.AppendFormat("                new KeyValuePair<int, {0}>({1}, {2}),", propertyCollection.StandardType, item.Key.ToString(), item.Value).AppendLine();
+                    stringBuilder.AppendFormat("                new KeyValuePair<int, {0}>({1}, {2}),", propertyCollection.LanguageKeyword, item.Key.ToString(), item.Value).AppendLine();
                 }
 
                 stringBuilder.Append("            };");
@@ -303,13 +329,13 @@ namespace StarForce.Editor.DataTableTools
         private sealed class PropertyCollection
         {
             private readonly string m_Name;
-            private readonly string m_StandardType;
+            private readonly string m_LanguageKeyword;
             private readonly List<KeyValuePair<int, string>> m_Items;
 
-            public PropertyCollection(string name, string standardType)
+            public PropertyCollection(string name, string languageKeyword)
             {
                 m_Name = name;
-                m_StandardType = standardType;
+                m_LanguageKeyword = languageKeyword;
                 m_Items = new List<KeyValuePair<int, string>>();
             }
 
@@ -321,11 +347,11 @@ namespace StarForce.Editor.DataTableTools
                 }
             }
 
-            public string StandardType
+            public string LanguageKeyword
             {
                 get
                 {
-                    return m_StandardType;
+                    return m_LanguageKeyword;
                 }
             }
 

@@ -5,13 +5,14 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-01-24 21:44:02.194
+// 生成时间：2019-01-25 01:23:02.045
 //------------------------------------------------------------
 
 using GameFramework;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -55,13 +56,14 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            string[] text = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\t');
+            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！
+            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\t');
             int index = 0;
             index++;
-            m_Id = int.Parse(text[index++]);
+            m_Id = int.Parse(columnTexts[index++]);
             index++;
-            AssetName = text[index++];
-            BackgroundMusicId = int.Parse(text[index++]);
+            AssetName = columnTexts[index++];
+            BackgroundMusicId = int.Parse(columnTexts[index++]);
 
             GeneratePropertyArray();
             return true;
@@ -69,10 +71,19 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
         {
-            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, false))
+            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！
+            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
             {
-                return ParseDataRow(new GameFrameworkSegment<Stream>(memoryStream, dataRowSegment.Offset, dataRowSegment.Length));
+                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                {
+                    m_Id = binaryReader.ReadInt32();
+                    AssetName = binaryReader.ReadString();
+                    BackgroundMusicId = binaryReader.ReadInt32();
+                }
             }
+
+            GeneratePropertyArray();
+            return true;
         }
 
         public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)

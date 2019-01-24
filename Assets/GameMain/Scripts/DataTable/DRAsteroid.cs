@@ -5,13 +5,14 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-01-24 21:44:02.181
+// 生成时间：2019-01-25 01:23:01.988
 //------------------------------------------------------------
 
 using GameFramework;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -91,17 +92,18 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            string[] text = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\t');
+            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！
+            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\t');
             int index = 0;
             index++;
-            m_Id = int.Parse(text[index++]);
+            m_Id = int.Parse(columnTexts[index++]);
             index++;
-            MaxHP = int.Parse(text[index++]);
-            Attack = int.Parse(text[index++]);
-            Speed = float.Parse(text[index++]);
-            AngularSpeed = float.Parse(text[index++]);
-            DeadEffectId = int.Parse(text[index++]);
-            DeadSoundId = int.Parse(text[index++]);
+            MaxHP = int.Parse(columnTexts[index++]);
+            Attack = int.Parse(columnTexts[index++]);
+            Speed = float.Parse(columnTexts[index++]);
+            AngularSpeed = float.Parse(columnTexts[index++]);
+            DeadEffectId = int.Parse(columnTexts[index++]);
+            DeadSoundId = int.Parse(columnTexts[index++]);
 
             GeneratePropertyArray();
             return true;
@@ -109,10 +111,23 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
         {
-            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, false))
+            // Star Force 示例代码，正式项目使用时请修改此处的生成函数，以处理 GCAlloc 问题！
+            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
             {
-                return ParseDataRow(new GameFrameworkSegment<Stream>(memoryStream, dataRowSegment.Offset, dataRowSegment.Length));
+                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                {
+                    m_Id = binaryReader.ReadInt32();
+                    MaxHP = binaryReader.ReadInt32();
+                    Attack = binaryReader.ReadInt32();
+                    Speed = binaryReader.ReadSingle();
+                    AngularSpeed = binaryReader.ReadSingle();
+                    DeadEffectId = binaryReader.ReadInt32();
+                    DeadSoundId = binaryReader.ReadInt32();
+                }
             }
+
+            GeneratePropertyArray();
+            return true;
         }
 
         public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
