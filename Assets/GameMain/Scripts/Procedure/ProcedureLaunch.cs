@@ -128,7 +128,7 @@ namespace StarForce
 
         private void InitQualitySettings()
         {
-            QualityLevelType defaultQuality = GameEntry.BuiltinData.DeviceModelConfig.GetDefaultQualityLevel();
+            QualityLevelType defaultQuality = QualityLevelType.Fantastic;
             int qualityLevel = GameEntry.Setting.GetInt(Constant.Setting.QualityLevel, (int)defaultQuality);
             QualitySettings.SetQualityLevel(qualityLevel, true);
 
