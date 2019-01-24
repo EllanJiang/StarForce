@@ -114,7 +114,7 @@ namespace StarForce
         private void LoadDataTable(string dataTableName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("DataTable.{0}", dataTableName), false);
-            GameEntry.DataTable.LoadDataTable(dataTableName, LoadType.Text, this);
+            GameEntry.DataTable.LoadDataTable(dataTableName, LoadType.Bytes, this);
         }
 
         private void LoadDictionary(string dictionaryName)
