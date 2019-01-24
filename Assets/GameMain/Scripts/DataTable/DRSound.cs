@@ -4,8 +4,15 @@
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
+// 此文件由工具自动生成，请勿直接修改。
+// 生成时间：2019-01-24 18:21:43.533
+//------------------------------------------------------------
 
 using GameFramework;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -18,7 +25,7 @@ namespace StarForce
         private int m_Id = 0;
 
         /// <summary>
-        /// 声音编号。
+        /// 获取声音编号。
         /// </summary>
         public override int Id
         {
@@ -29,7 +36,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 资源名称。
+        /// 获取资源名称。
         /// </summary>
         public string AssetName
         {
@@ -38,7 +45,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 优先级。
+        /// 获取优先级（默认0，128最高，-128最低）。
         /// </summary>
         public int Priority
         {
@@ -47,7 +54,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 是否循环。
+        /// 获取是否循环。
         /// </summary>
         public bool Loop
         {
@@ -56,7 +63,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 音量。
+        /// 获取音量（0~1）。
         /// </summary>
         public float Volume
         {
@@ -65,7 +72,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 声音空间混合量。
+        /// 获取声音空间混合量（0为2D，1为3D，中间值混合效果）。
         /// </summary>
         public float SpatialBlend
         {
@@ -74,7 +81,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 声音最大距离。
+        /// 获取声音最大距离。
         /// </summary>
         public float MaxDistance
         {
@@ -96,7 +103,25 @@ namespace StarForce
             SpatialBlend = float.Parse(text[index++]);
             MaxDistance = float.Parse(text[index++]);
 
+            GeneratePropertyArray();
             return true;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<byte[]>)");
+            return false;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
+            return false;
+        }
+
+        private void GeneratePropertyArray()
+        {
+
         }
     }
 }

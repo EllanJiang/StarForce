@@ -4,8 +4,15 @@
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
+// 此文件由工具自动生成，请勿直接修改。
+// 生成时间：2019-01-24 18:21:43.515
+//------------------------------------------------------------
 
 using GameFramework;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -18,7 +25,7 @@ namespace StarForce
         private int m_Id = 0;
 
         /// <summary>
-        /// 小行星编号。
+        /// 获取小行星编号。
         /// </summary>
         public override int Id
         {
@@ -29,7 +36,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 最大生命。
+        /// 获取最大生命。
         /// </summary>
         public int MaxHP
         {
@@ -38,7 +45,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 冲击力。
+        /// 获取冲击力。
         /// </summary>
         public int Attack
         {
@@ -47,7 +54,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 速度。
+        /// 获取速度。
         /// </summary>
         public float Speed
         {
@@ -56,7 +63,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 角速度。
+        /// 获取角速度。
         /// </summary>
         public float AngularSpeed
         {
@@ -65,7 +72,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 死亡特效编号。
+        /// 获取死亡特效编号。
         /// </summary>
         public int DeadEffectId
         {
@@ -74,7 +81,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 死亡声音编号。
+        /// 获取死亡声音编号。
         /// </summary>
         public int DeadSoundId
         {
@@ -96,7 +103,25 @@ namespace StarForce
             DeadEffectId = int.Parse(text[index++]);
             DeadSoundId = int.Parse(text[index++]);
 
+            GeneratePropertyArray();
             return true;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<byte[]>)");
+            return false;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
+            return false;
+        }
+
+        private void GeneratePropertyArray()
+        {
+
         }
     }
 }

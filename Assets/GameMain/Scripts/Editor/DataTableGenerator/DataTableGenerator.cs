@@ -58,10 +58,10 @@ namespace StarForce.Editor.DataTableTools
             codeContent.Replace("__DATA_TABLE_COMMENT__", dataTableProcessor.GetValue(0, 1) + "。");
             codeContent.Replace("__DATA_TABLE_ID_COMMENT__", "获取" + dataTableProcessor.GetComment(dataTableProcessor.IdColumn) + "。");
             codeContent.Replace("__DATA_TABLE_PROPERTIES__", GenerateDataTableProperties(dataTableProcessor, data));
-            codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor, data));
             codeContent.Replace("__DATA_TABLE_STRING_PARSER__", GenerateDataTableStringParser(dataTableProcessor, data));
             codeContent.Replace("__DATA_TABLE_BYTES_PARSER__", GenerateDataTableBytesParser(dataTableProcessor, data));
             codeContent.Replace("__DATA_TABLE_STREAM_PARSER__", GenerateDataTableStreamParser(dataTableProcessor, data));
+            codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor, data));
         }
 
         private static string GenerateDataTableProperties(DataTableProcessor dataTableProcessor, Data data)
@@ -100,66 +100,6 @@ namespace StarForce.Editor.DataTableTools
                     .AppendLine("            get;")
                     .AppendLine("            private set;")
                     .Append("        }");
-            }
-
-            return stringBuilder.ToString();
-        }
-
-        private static string GenerateDataTablePropertyArray(DataTableProcessor dataTableProcessor, Data data)
-        {
-            Dictionary<string, string> propertyType = new Dictionary<string, string>();
-            Dictionary<string, List<KeyValuePair<int, string>>> propertyArray = new Dictionary<string, List<KeyValuePair<int, string>>>();
-            for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
-            {
-                if (dataTableProcessor.IsCommentColumn(i))
-                {
-                    // 注释列
-                    continue;
-                }
-
-                if (i == dataTableProcessor.IdColumn)
-                {
-                    // 编号列
-                    continue;
-                }
-
-                string name = dataTableProcessor.GetName(i);
-                if (!EndWithNumberRegex.IsMatch(name))
-                {
-                    continue;
-                }
-
-                string arrayName = EndWithNumberRegex.Replace(name, string.Empty);
-                int id = int.Parse(EndWithNumberRegex.Match(name).Value);
-
-                List<KeyValuePair<int, string>> property = null;
-                if (!propertyArray.TryGetValue(arrayName, out property))
-                {
-                    propertyType.Add(arrayName, dataTableProcessor.GetStandardType(i));
-                    property = new List<KeyValuePair<int, string>>();
-                    propertyArray.Add(arrayName, property);
-                }
-
-                property.Add(new KeyValuePair<int, string>(id, name));
-            }
-
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (KeyValuePair<string, List<KeyValuePair<int, string>>> i in propertyArray)
-            {
-                stringBuilder
-                    .AppendFormat("        private KeyValuePair<int, {0}>[] m_{1} = null;", propertyType[i.Key], i.Key).AppendLine()
-                    .AppendFormat("        public int Get{0}(int id)", i.Key).AppendLine()
-                    .AppendLine("        {")
-                    .AppendFormat("            foreach (KeyValuePair<int, {0}> i in m_{1})", propertyType[i.Key], i.Key).AppendLine()
-                    .AppendLine("            {")
-                    .AppendLine("                if (i.Key == id)")
-                    .AppendLine("                {")
-                    .AppendFormat("                    return i.Value;", propertyType[i.Key], i.Key).AppendLine()
-                    .AppendLine("                }")
-                    .AppendLine("            }")
-                    .AppendLine()
-                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Invalid id '{{0}}' for {0}.\", id.ToString()));", i.Key).AppendLine()
-                    .AppendLine("        }");
             }
 
             return stringBuilder.ToString();
@@ -205,6 +145,7 @@ namespace StarForce.Editor.DataTableTools
 
             stringBuilder
                 .AppendLine()
+                .AppendLine("            GeneratePropertyArray();")
                 .AppendLine("            return true;")
                 .Append("        }");
 
@@ -235,6 +176,186 @@ namespace StarForce.Editor.DataTableTools
                 .Append("        }");
 
             return stringBuilder.ToString();
+        }
+
+        private static string GenerateDataTablePropertyArray(DataTableProcessor dataTableProcessor, Data data)
+        {
+            List<PropertyCollection> propertyCollections = new List<PropertyCollection>();
+            for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
+            {
+                if (dataTableProcessor.IsCommentColumn(i))
+                {
+                    // 注释列
+                    continue;
+                }
+
+                if (i == dataTableProcessor.IdColumn)
+                {
+                    // 编号列
+                    continue;
+                }
+
+                string name = dataTableProcessor.GetName(i);
+                if (!EndWithNumberRegex.IsMatch(name))
+                {
+                    continue;
+                }
+
+                string propertyCollectionName = EndWithNumberRegex.Replace(name, string.Empty);
+                int id = int.Parse(EndWithNumberRegex.Match(name).Value);
+
+                PropertyCollection propertyCollection = null;
+                foreach (PropertyCollection pc in propertyCollections)
+                {
+                    if (pc.Name == propertyCollectionName)
+                    {
+                        propertyCollection = pc;
+                        break;
+                    }
+                }
+
+                if (propertyCollection == null)
+                {
+                    propertyCollection = new PropertyCollection(propertyCollectionName, dataTableProcessor.GetStandardType(i));
+                    propertyCollections.Add(propertyCollection);
+                }
+
+                propertyCollection.AddItem(id, name);
+            }
+
+            StringBuilder stringBuilder = new StringBuilder();
+            bool firstProperty = true;
+            foreach (PropertyCollection propertyCollection in propertyCollections)
+            {
+                if (firstProperty)
+                {
+                    firstProperty = false;
+                }
+                else
+                {
+                    stringBuilder.AppendLine().AppendLine();
+                }
+
+                stringBuilder
+                    .AppendFormat("        private KeyValuePair<int, {1}>[] m_{0} = null;", propertyCollection.Name, propertyCollection.StandardType).AppendLine()
+                    .AppendLine()
+                    .AppendFormat("        public int Get{0}(int id)", propertyCollection.Name).AppendLine()
+                    .AppendLine("        {")
+                    .AppendFormat("            foreach (KeyValuePair<int, {1}> i in m_{0})", propertyCollection.Name, propertyCollection.StandardType).AppendLine()
+                    .AppendLine("            {")
+                    .AppendLine("                if (i.Key == id)")
+                    .AppendLine("                {")
+                    .AppendLine("                    return i.Value;")
+                    .AppendLine("                }")
+                    .AppendLine("            }")
+                    .AppendLine()
+                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Get{0} with invalid id '{{0}}'.\", id.ToString()));", propertyCollection.Name).AppendLine()
+                    .AppendLine("        }")
+                    .AppendLine()
+                    .AppendFormat("        public int Get{0}At(int index)", propertyCollection.Name).AppendLine()
+                    .AppendLine("        {")
+                    .AppendFormat("            if (index < 0 || index >= m_{0}.Length)", propertyCollection.Name).AppendLine()
+                    .AppendLine("            {")
+                    .AppendFormat("                throw new GameFrameworkException(Utility.Text.Format(\"Get{0}At with invalid index '{{0}}'.\", index.ToString()));", propertyCollection.Name).AppendLine()
+                    .AppendLine("            }")
+                    .AppendLine()
+                    .AppendFormat("            return m_{0}[index].Value;", propertyCollection.Name).AppendLine()
+                    .Append("        }");
+            }
+
+            if (propertyCollections.Count > 0)
+            {
+                stringBuilder.AppendLine().AppendLine();
+            }
+
+            stringBuilder
+                .AppendLine("        private void GeneratePropertyArray()")
+                .AppendLine("        {");
+
+            firstProperty = true;
+            foreach (PropertyCollection propertyCollection in propertyCollections)
+            {
+                if (firstProperty)
+                {
+                    firstProperty = false;
+                }
+                else
+                {
+                    stringBuilder.AppendLine().AppendLine();
+                }
+
+                stringBuilder
+                    .AppendFormat("            m_{0} = new KeyValuePair<int, {1}>[]", propertyCollection.Name, propertyCollection.StandardType).AppendLine()
+                    .AppendLine("            {");
+
+                int itemCount = propertyCollection.ItemCount;
+                for (int i = 0; i < itemCount; i++)
+                {
+                    KeyValuePair<int, string> item = propertyCollection.GetItem(i);
+                    stringBuilder.AppendFormat("                new KeyValuePair<int, {0}>({1}, {2}),", propertyCollection.StandardType, item.Key.ToString(), item.Value).AppendLine();
+                }
+
+                stringBuilder.Append("            };");
+            }
+
+            stringBuilder
+                .AppendLine()
+                .Append("        }");
+
+            return stringBuilder.ToString();
+        }
+
+        private sealed class PropertyCollection
+        {
+            private readonly string m_Name;
+            private readonly string m_StandardType;
+            private readonly List<KeyValuePair<int, string>> m_Items;
+
+            public PropertyCollection(string name, string standardType)
+            {
+                m_Name = name;
+                m_StandardType = standardType;
+                m_Items = new List<KeyValuePair<int, string>>();
+            }
+
+            public string Name
+            {
+                get
+                {
+                    return m_Name;
+                }
+            }
+
+            public string StandardType
+            {
+                get
+                {
+                    return m_StandardType;
+                }
+            }
+
+            public int ItemCount
+            {
+                get
+                {
+                    return m_Items.Count;
+                }
+            }
+
+            public KeyValuePair<int, string> GetItem(int index)
+            {
+                if (index < 0 || index >= m_Items.Count)
+                {
+                    throw new GameFrameworkException(Utility.Text.Format("GetItem with invalid index '{0}'.", index.ToString()));
+                }
+
+                return m_Items[index];
+            }
+
+            public void AddItem(int id, string propertyName)
+            {
+                m_Items.Add(new KeyValuePair<int, string>(id, propertyName));
+            }
         }
     }
 }

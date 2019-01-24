@@ -4,8 +4,15 @@
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
+// 此文件由工具自动生成，请勿直接修改。
+// 生成时间：2019-01-24 18:21:43.547
+//------------------------------------------------------------
 
 using GameFramework;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
@@ -18,7 +25,7 @@ namespace StarForce
         private int m_Id = 0;
 
         /// <summary>
-        /// 界面编号。
+        /// 获取界面编号。
         /// </summary>
         public override int Id
         {
@@ -29,7 +36,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 资源名称。
+        /// 获取资源名称。
         /// </summary>
         public string AssetName
         {
@@ -38,7 +45,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 界面组名称。
+        /// 获取界面组名称。
         /// </summary>
         public string UIGroupName
         {
@@ -47,7 +54,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 是否允许多个界面实例。
+        /// 获取是否允许多个界面实例。
         /// </summary>
         public bool AllowMultiInstance
         {
@@ -56,7 +63,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 是否暂停被其覆盖的界面。
+        /// 获取是否暂停被其覆盖的界面。
         /// </summary>
         public bool PauseCoveredUIForm
         {
@@ -76,7 +83,25 @@ namespace StarForce
             AllowMultiInstance = bool.Parse(text[index++]);
             PauseCoveredUIForm = bool.Parse(text[index++]);
 
+            GeneratePropertyArray();
             return true;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<byte[]>)");
+            return false;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
+            return false;
+        }
+
+        private void GeneratePropertyArray()
+        {
+
         }
     }
 }

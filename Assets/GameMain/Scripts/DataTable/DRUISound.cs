@@ -4,21 +4,28 @@
 // Homepage: http://gameframework.cn/
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
+// 此文件由工具自动生成，请勿直接修改。
+// 生成时间：2019-01-24 18:21:43.551
+//------------------------------------------------------------
 
 using GameFramework;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace StarForce
 {
     /// <summary>
-    /// 界面声音配置表。
+    /// 声音配置表。
     /// </summary>
     public class DRUISound : DataRowBase
     {
         private int m_Id = 0;
 
         /// <summary>
-        /// 界面声音编号。
+        /// 获取声音编号。
         /// </summary>
         public override int Id
         {
@@ -29,7 +36,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 资源名称。
+        /// 获取资源名称。
         /// </summary>
         public string AssetName
         {
@@ -38,7 +45,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 优先级。
+        /// 获取优先级（默认0，128最高，-128最低）。
         /// </summary>
         public int Priority
         {
@@ -47,7 +54,7 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 音量。
+        /// 获取音量（0~1）。
         /// </summary>
         public float Volume
         {
@@ -66,7 +73,25 @@ namespace StarForce
             Priority = int.Parse(text[index++]);
             Volume = float.Parse(text[index++]);
 
+            GeneratePropertyArray();
             return true;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<byte[]>)");
+            return false;
+        }
+
+        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
+        {
+            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
+            return false;
+        }
+
+        private void GeneratePropertyArray()
+        {
+
         }
     }
 }

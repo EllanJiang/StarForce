@@ -15,6 +15,8 @@ namespace StarForce.Editor.DataTableTools
                 DataTableGenerator.GenerateDataFile(dataTableProcessor, dataTableName);
                 DataTableGenerator.GenerateCodeFile(dataTableProcessor, dataTableName);
             }
+
+            AssetDatabase.Refresh();
         }
     }
 }
