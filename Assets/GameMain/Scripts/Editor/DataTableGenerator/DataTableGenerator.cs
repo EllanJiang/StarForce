@@ -104,7 +104,7 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
                 .AppendLine("        {")
-                .AppendLine("            string[] text = DataTableExtension.SplitDataRow(dataRowSegment);")
+                .AppendLine("            string[] text = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\\t');")
                 .AppendLine("            int index = 0;");
 
             for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
@@ -151,8 +151,10 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)")
                 .AppendLine("        {")
-                .AppendLine("            Log.Warning(\"Not implemented ParseDataRow(GameFrameworkSegment<byte[]>)\");")
-                .AppendLine("            return false;")
+                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, false))")
+                .AppendLine("            {")
+                .AppendLine("                return ParseDataRow(new GameFrameworkSegment<Stream>(memoryStream, dataRowSegment.Offset, dataRowSegment.Length));")
+                .AppendLine("            }")
                 .Append("        }");
 
             return stringBuilder.ToString();

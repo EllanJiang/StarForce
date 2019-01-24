@@ -14,7 +14,6 @@ namespace StarForce
     public static class DataTableExtension
     {
         private const string DataRowClassPrefixName = "StarForce.DR";
-        private static readonly string[] ColumnSplitSeparator = new string[] { "\t" };
 
         public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, LoadType loadType, object userData = null)
         {
@@ -42,11 +41,6 @@ namespace StarForce
 
             string dataTableNameInType = splitNames.Length > 1 ? splitNames[1] : null;
             dataTableComponent.LoadDataTable(dataRowType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName, loadType), loadType, Constant.AssetPriority.DataTableAsset, userData);
-        }
-
-        public static string[] SplitDataRow(GameFrameworkSegment<string> dataRowSegment)
-        {
-            return dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(ColumnSplitSeparator, StringSplitOptions.None);
         }
     }
 }

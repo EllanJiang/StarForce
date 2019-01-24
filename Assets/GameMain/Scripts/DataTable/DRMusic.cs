@@ -5,7 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-01-24 18:21:43.525
+// 生成时间：2019-01-24 21:44:02.190
 //------------------------------------------------------------
 
 using GameFramework;
@@ -46,7 +46,7 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
-            string[] text = DataTableExtension.SplitDataRow(dataRowSegment);
+            string[] text = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\t');
             int index = 0;
             index++;
             m_Id = int.Parse(text[index++]);
@@ -59,8 +59,10 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
         {
-            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<byte[]>)");
-            return false;
+            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, false))
+            {
+                return ParseDataRow(new GameFrameworkSegment<Stream>(memoryStream, dataRowSegment.Offset, dataRowSegment.Length));
+            }
         }
 
         public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
