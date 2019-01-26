@@ -69,7 +69,7 @@ namespace StarForce.Editor.DataTableTools
                     continue;
                 }
 
-                if (i == dataTableProcessor.IdColumn)
+                if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
                     continue;
@@ -117,22 +117,28 @@ namespace StarForce.Editor.DataTableTools
                     continue;
                 }
 
-                if (i == dataTableProcessor.IdColumn)
+                if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
                     stringBuilder.AppendLine("            m_Id = int.Parse(columnTexts[index++]);");
                     continue;
                 }
 
-                string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
-                switch (languageKeyword)
+                if (dataTableProcessor.IsSystem(i))
                 {
-                    case "string":
+                    string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
+                    if (languageKeyword == "string")
+                    {
                         stringBuilder.AppendFormat("            {0} = columnTexts[index++];", dataTableProcessor.GetName(i)).AppendLine();
-                        break;
-                    default:
+                    }
+                    else
+                    {
                         stringBuilder.AppendFormat("            {0} = {1}.Parse(columnTexts[index++]);", dataTableProcessor.GetName(i), languageKeyword).AppendLine();
-                        break;
+                    }
+                }
+                else
+                {
+                    stringBuilder.AppendFormat("            {0} = DataTableExtension.Parse{1}(columnTexts[index++]);", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
                 }
             }
 
@@ -165,14 +171,14 @@ namespace StarForce.Editor.DataTableTools
                     continue;
                 }
 
-                if (i == dataTableProcessor.IdColumn)
+                if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
                     stringBuilder.AppendLine("                    m_Id = binaryReader.ReadInt32();");
                     continue;
                 }
 
-                stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetTypeName(i)).AppendLine();
+                stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
             }
 
             stringBuilder
@@ -210,7 +216,7 @@ namespace StarForce.Editor.DataTableTools
                     continue;
                 }
 
-                if (i == dataTableProcessor.IdColumn)
+                if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
                     continue;
