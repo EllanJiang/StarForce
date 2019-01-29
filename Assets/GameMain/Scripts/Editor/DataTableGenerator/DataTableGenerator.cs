@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using UnityEngine;
 using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools
@@ -14,10 +15,31 @@ namespace StarForce.Editor.DataTableTools
         private const string CSharpCodePath = "Assets/GameMain/Scripts/DataTable";
         private const string CSharpCodeTemplateFileName = "Assets/GameMain/Configs/DataTableCodeTemplate.txt";
         private static readonly Regex EndWithNumberRegex = new Regex(@"\d+$");
+        private static readonly Regex NameRegex = new Regex(@"^[A-Z][A-Za-z0-9_]+$");
 
         public static DataTableProcessor CreateDataTableProcessor(string dataTableName)
         {
             return new DataTableProcessor(Utility.Path.GetCombinePath(DataTablePath, dataTableName + ".txt"), Encoding.Default, 1, 2, null, 3, 4, 1);
+        }
+
+        public static bool CheckRawData(DataTableProcessor dataTableProcessor, string dataTableName)
+        {
+            for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
+            {
+                string name = dataTableProcessor.GetName(i);
+                if (string.IsNullOrEmpty(name) || name == "#")
+                {
+                    continue;
+                }
+
+                if (!NameRegex.IsMatch(name))
+                {
+                    Debug.LogWarning(Utility.Text.Format("Check raw data failure. DataTableName='{0}' Name='{1}'", dataTableName, name));
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         public static void GenerateDataFile(DataTableProcessor dataTableProcessor, string dataTableName)
