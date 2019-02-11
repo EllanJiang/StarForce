@@ -5,7 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-01-25 01:35:31.736
+// 生成时间：2019-02-11 11:19:25.227
 //------------------------------------------------------------
 
 using GameFramework;
@@ -66,7 +66,12 @@ namespace StarForce
         public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
             // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split('\t');
+            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparator);
+            for (int i = 0; i < columnTexts.Length; i++)
+            {
+                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparator);
+            }
+
             int index = 0;
             index++;
             m_Id = int.Parse(columnTexts[index++]);
