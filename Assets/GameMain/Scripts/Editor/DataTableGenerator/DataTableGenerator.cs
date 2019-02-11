@@ -293,7 +293,7 @@ namespace StarForce.Editor.DataTableTools
                 stringBuilder
                     .AppendFormat("        private KeyValuePair<int, {1}>[] m_{0} = null;", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine()
-                    .AppendFormat("        public int Get{0}(int id)", propertyCollection.Name).AppendLine()
+                    .AppendFormat("        public {1} Get{0}(int id)", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("        {")
                     .AppendFormat("            foreach (KeyValuePair<int, {1}> i in m_{0})", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("            {")
@@ -306,7 +306,7 @@ namespace StarForce.Editor.DataTableTools
                     .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Get{0} with invalid id '{{0}}'.\", id.ToString()));", propertyCollection.Name).AppendLine()
                     .AppendLine("        }")
                     .AppendLine()
-                    .AppendFormat("        public int Get{0}At(int index)", propertyCollection.Name).AppendLine()
+                    .AppendFormat("        public {1} Get{0}At(int index)", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("        {")
                     .AppendFormat("            if (index < 0 || index >= m_{0}.Length)", propertyCollection.Name).AppendLine()
                     .AppendLine("            {")
