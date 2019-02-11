@@ -15,8 +15,8 @@ namespace StarForce
     public static class DataTableExtension
     {
         private const string DataRowClassPrefixName = "StarForce.DR";
-        internal const char DataSplitSeparator = '\t';
-        internal const char DataTrimSeparator = '\"';
+        internal static readonly char[] DataSplitSeparators = new char[] { '\t' };
+        internal static readonly char[] DataTrimSeparators = new char[] { '\"' };
 
         public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, LoadType loadType, object userData = null)
         {

@@ -127,10 +127,10 @@ namespace StarForce.Editor.DataTableTools
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
                 .AppendLine("        {")
                 .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
-                .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparator);")
+                .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);")
                 .AppendLine("            for (int i = 0; i < columnTexts.Length; i++)")
                 .AppendLine("            {")
-                .AppendLine("                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparator);")
+                .AppendLine("                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);")
                 .AppendLine("            }")
                 .AppendLine()
                 .AppendLine("            int index = 0;");
