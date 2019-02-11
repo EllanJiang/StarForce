@@ -10,7 +10,7 @@
       <SourceAssetUnionLabelFilter>l:AssetBundleInclusive</SourceAssetUnionLabelFilter>
       <SourceAssetExceptTypeFilter>t:Script</SourceAssetExceptTypeFilter>
       <SourceAssetExceptLabelFilter>l:AssetBundleExclusive</SourceAssetExceptLabelFilter>
-      <AssetSorter>Name</AssetSorter>
+      <AssetSorter>Path</AssetSorter>
     </Settings>
   </AssetBundleEditor>
 </UnityGameFramework>
