@@ -16,7 +16,7 @@ namespace StarForce.Editor.DataTableTools
                 if (!DataTableGenerator.CheckRawData(dataTableProcessor, dataTableName))
                 {
                     Debug.LogError(Utility.Text.Format("Check raw data failure. DataTableName='{0}'", dataTableName));
-                    return;
+                    break;
                 }
 
                 DataTableGenerator.GenerateDataFile(dataTableProcessor, dataTableName);
