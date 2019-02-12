@@ -5,7 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-02-11 15:21:41.683
+// 生成时间：2019-02-12 17:59:31.880
 //------------------------------------------------------------
 
 using GameFramework;
@@ -176,6 +176,14 @@ namespace StarForce
 
         private KeyValuePair<int, int>[] m_WeaponId = null;
 
+        public int WeaponIdCount
+        {
+            get
+            {
+                return m_WeaponId.Length;
+            }
+        }
+
         public int GetWeaponId(int id)
         {
             foreach (KeyValuePair<int, int> i in m_WeaponId)
@@ -200,6 +208,14 @@ namespace StarForce
         }
 
         private KeyValuePair<int, int>[] m_ArmorId = null;
+
+        public int ArmorIdCount
+        {
+            get
+            {
+                return m_ArmorId.Length;
+            }
+        }
 
         public int GetArmorId(int id)
         {
