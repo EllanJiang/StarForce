@@ -15,7 +15,7 @@ namespace StarForce.Editor.DataTableTools
         private const string CSharpCodePath = "Assets/GameMain/Scripts/DataTable";
         private const string CSharpCodeTemplateFileName = "Assets/GameMain/Configs/DataTableCodeTemplate.txt";
         private static readonly Regex EndWithNumberRegex = new Regex(@"\d+$");
-        private static readonly Regex NameRegex = new Regex(@"^[A-Z][A-Za-z0-9_]+$");
+        private static readonly Regex NameRegex = new Regex(@"^[A-Z][A-Za-z0-9_]*$");
 
         public static DataTableProcessor CreateDataTableProcessor(string dataTableName)
         {
