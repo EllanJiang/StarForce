@@ -5,9 +5,11 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using System;
+using System.IO;
 using UnityEngine;
 
-namespace System.IO
+namespace StarForce
 {
     public static class BinaryReaderExtension
     {
