@@ -70,7 +70,7 @@ namespace StarForce
             }
             catch (Exception exception)
             {
-                Log.Warning("Can not parse dictionary '{0}' with exception '{1}'.", text, Utility.Text.Format("{0}\n{1}", exception.Message, exception.StackTrace));
+                Log.Warning("Can not parse dictionary '{0}' with exception '{1}'.", text, exception.ToString());
                 return false;
             }
         }
