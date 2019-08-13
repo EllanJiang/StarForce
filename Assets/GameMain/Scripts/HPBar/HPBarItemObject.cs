@@ -5,6 +5,7 @@
 // Feedback: mailto:jiangyin@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using GameFramework.ObjectPool;
 using UnityEngine;
 
@@ -12,10 +13,11 @@ namespace StarForce
 {
     public class HPBarItemObject : ObjectBase
     {
-        public HPBarItemObject(object target)
-            : base(target)
+        public static HPBarItemObject Create(object target)
         {
-
+            HPBarItemObject hpBarItemObject = ReferencePool.Acquire<HPBarItemObject>();
+            hpBarItemObject.Initialize(target);
+            return hpBarItemObject;
         }
 
         protected override void Release(bool isShutdown)

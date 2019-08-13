@@ -116,7 +116,7 @@ namespace StarForce
                 Transform transform = hpBarItem.GetComponent<Transform>();
                 transform.SetParent(m_HPBarInstanceRoot);
                 transform.localScale = Vector3.one;
-                m_HPBarItemObjectPool.Register(new HPBarItemObject(hpBarItem), true);
+                m_HPBarItemObjectPool.Register(HPBarItemObject.Create(hpBarItem), true);
             }
 
             return hpBarItem;
