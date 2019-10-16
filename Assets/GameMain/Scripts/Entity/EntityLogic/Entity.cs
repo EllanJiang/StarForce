@@ -41,6 +41,15 @@ namespace StarForce
         }
 
 #if UNITY_2017_3_OR_NEWER
+        protected override void OnRecycle()
+#else
+        protected internal override void OnRecycle()
+#endif
+        {
+            base.OnRecycle();
+        }
+
+#if UNITY_2017_3_OR_NEWER
         protected override void OnShow(object userData)
 #else
         protected internal override void OnShow(object userData)
