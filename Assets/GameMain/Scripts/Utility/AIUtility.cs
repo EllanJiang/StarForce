@@ -90,7 +90,7 @@ namespace StarForce
                 return result;
             }
 
-            // TODO: Process GCAlloc
+            // TODO: GC Alloc
             List<CampType> camps = new List<CampType>();
             Array campTypes = Enum.GetValues(typeof(CampType));
             for (int i = 0; i < campTypes.Length; i++)
@@ -102,7 +102,7 @@ namespace StarForce
                 }
             }
 
-            // TODO: Process GCAlloc
+            // TODO: GC Alloc
             result = camps.ToArray();
             s_CampAndRelationToCamps[key] = result;
 

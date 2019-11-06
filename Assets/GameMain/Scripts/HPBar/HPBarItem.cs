@@ -77,7 +77,7 @@ namespace StarForce
                 if (RectTransformUtility.ScreenPointToLocalPointInRectangle((RectTransform)m_ParentCanvas.transform, screenPosition,
                     m_ParentCanvas.worldCamera, out position))
                 {
-                    m_CachedTransform.anchoredPosition = position;
+                    m_CachedTransform.localPosition = position;
                 }
             }
 

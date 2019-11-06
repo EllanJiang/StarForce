@@ -6,6 +6,7 @@
 //------------------------------------------------------------
 
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
@@ -20,6 +21,7 @@ namespace StarForce
         private static Font s_MainFont = null;
         private Canvas m_CachedCanvas = null;
         private CanvasGroup m_CanvasGroup = null;
+        private List<Canvas> m_CachedCanvasContainer = new List<Canvas>();
 
         public int OriginalDepth
         {
@@ -205,11 +207,13 @@ namespace StarForce
             int oldDepth = Depth;
             base.OnDepthChanged(uiGroupDepth, depthInUIGroup);
             int deltaDepth = UGuiGroupHelper.DepthFactor * uiGroupDepth + DepthFactor * depthInUIGroup - oldDepth + OriginalDepth;
-            Canvas[] canvases = GetComponentsInChildren<Canvas>(true);
-            for (int i = 0; i < canvases.Length; i++)
+            GetComponentsInChildren(true, m_CachedCanvasContainer);
+            for (int i = 0; i < m_CachedCanvasContainer.Count; i++)
             {
-                canvases[i].sortingOrder += deltaDepth;
+                m_CachedCanvasContainer[i].sortingOrder += deltaDepth;
             }
+
+            m_CachedCanvasContainer.Clear();
         }
 
         private IEnumerator CloseCo(float duration)
