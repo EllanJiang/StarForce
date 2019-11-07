@@ -15,7 +15,6 @@ namespace StarForce
     {
         public SCHeartBeat()
         {
-
         }
 
         public override int Id
@@ -28,7 +27,6 @@ namespace StarForce
 
         public override void Clear()
         {
-
         }
     }
 }

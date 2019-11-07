@@ -164,15 +164,19 @@ namespace StarForce
                 case Language.English:
                     m_EnglishToggle.isOn = true;
                     break;
+
                 case Language.ChineseSimplified:
                     m_ChineseSimplifiedToggle.isOn = true;
                     break;
+
                 case Language.ChineseTraditional:
                     m_ChineseTraditionalToggle.isOn = true;
                     break;
+
                 case Language.Korean:
                     m_KoreanToggle.isOn = true;
                     break;
+
                 default:
                     break;
             }

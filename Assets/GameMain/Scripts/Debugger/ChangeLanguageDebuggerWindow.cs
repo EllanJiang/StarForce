@@ -19,22 +19,18 @@ namespace StarForce
 
         public void Initialize(params object[] args)
         {
-
         }
 
         public void Shutdown()
         {
-
         }
 
         public void OnEnter()
         {
-
         }
 
         public void OnLeave()
         {
-
         }
 
         public void OnUpdate(float elapseSeconds, float realElapseSeconds)

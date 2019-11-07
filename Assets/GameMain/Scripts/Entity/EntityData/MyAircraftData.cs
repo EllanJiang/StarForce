@@ -19,7 +19,6 @@ namespace StarForce
         public MyAircraftData(int entityId, int typeId)
             : base(entityId, typeId, CampType.Player)
         {
-
         }
 
         /// <summary>

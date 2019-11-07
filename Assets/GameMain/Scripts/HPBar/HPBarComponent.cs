@@ -42,7 +42,6 @@ namespace StarForce
 
         private void OnDestroy()
         {
-
         }
 
         private void Update()

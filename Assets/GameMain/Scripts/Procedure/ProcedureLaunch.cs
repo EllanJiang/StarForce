@@ -72,7 +72,6 @@ namespace StarForce
                 }
                 catch
                 {
-
                 }
             }
 
@@ -107,15 +106,19 @@ namespace StarForce
                 case Language.English:
                     currentVariant = "en-us";
                     break;
+
                 case Language.ChineseSimplified:
                     currentVariant = "zh-cn";
                     break;
+
                 case Language.ChineseTraditional:
                     currentVariant = "zh-tw";
                     break;
+
                 case Language.Korean:
                     currentVariant = "ko-kr";
                     break;
+
                 default:
                     currentVariant = "zh-cn";
                     break;
