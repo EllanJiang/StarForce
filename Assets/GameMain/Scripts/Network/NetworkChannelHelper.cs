@@ -96,6 +96,15 @@ namespace StarForce
         }
 
         /// <summary>
+        /// 准备进行连接。
+        /// </summary>
+        public void PrepareForConnecting()
+        {
+            m_NetworkChannel.Socket.ReceiveBufferSize = 1024 * 64;
+            m_NetworkChannel.Socket.SendBufferSize = 1024 * 64;
+        }
+
+        /// <summary>
         /// 发送心跳消息包。
         /// </summary>
         /// <returns>是否发送心跳消息包成功。</returns>
