@@ -10,7 +10,7 @@ namespace StarForce
     /// <summary>
     /// 阵营类型。
     /// </summary>
-    public enum CampType
+    public enum CampType : byte
     {
         Unknown = 0,
 

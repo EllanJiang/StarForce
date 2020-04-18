@@ -10,7 +10,7 @@ namespace StarForce
     /// <summary>
     /// 界面编号。
     /// </summary>
-    public enum UIFormId
+    public enum UIFormId : byte
     {
         Undefined = 0,
 

@@ -7,7 +7,7 @@
 
 namespace StarForce
 {
-    public enum QualityLevelType
+    public enum QualityLevelType : byte
     {
         Fastest = 0,
         Fast,
