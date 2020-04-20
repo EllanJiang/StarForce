@@ -20,7 +20,7 @@ namespace StarForce.Editor
 
         [ResourceCollectionConfigPath]
         public static string ResourceCollectionConfig = Utility.Path.GetRegularPath(Path.Combine(Application.dataPath, "GameMain/Configs/ResourceCollection.xml"));
-		
+
         [ResourceEditorConfigPath]
         public static string ResourceEditorConfig = Utility.Path.GetRegularPath(Path.Combine(Application.dataPath, "GameMain/Configs/ResourceEditor.xml"));
 
