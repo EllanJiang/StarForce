@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 79e65cd785b714f4f80e9a0a69af438e
 labels:
-- AssetBundleExclusive
+- ResourceExclusive
 timeCreated: 1528026123
 licenseType: Pro
 TextScriptImporter:
