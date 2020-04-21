@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:05.977
+// 生成时间：2020-04-21 15:41:12.539
 //------------------------------------------------------------
 
 using GameFramework;
@@ -121,13 +121,13 @@ namespace StarForce
             {
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
-                    m_Id = binaryReader.ReadInt32();
-                    MaxHP = binaryReader.ReadInt32();
-                    Attack = binaryReader.ReadInt32();
+                    m_Id = binaryReader.Read7BitEncodedInt32();
+                    MaxHP = binaryReader.Read7BitEncodedInt32();
+                    Attack = binaryReader.Read7BitEncodedInt32();
                     Speed = binaryReader.ReadSingle();
                     AngularSpeed = binaryReader.ReadSingle();
-                    DeadEffectId = binaryReader.ReadInt32();
-                    DeadSoundId = binaryReader.ReadInt32();
+                    DeadEffectId = binaryReader.Read7BitEncodedInt32();
+                    DeadSoundId = binaryReader.Read7BitEncodedInt32();
                 }
             }
 

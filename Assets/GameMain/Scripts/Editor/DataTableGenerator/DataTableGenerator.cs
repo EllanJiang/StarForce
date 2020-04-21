@@ -208,11 +208,19 @@ namespace StarForce.Editor.DataTableTools
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("                    m_Id = binaryReader.ReadInt32();");
+                    stringBuilder.AppendLine("                    m_Id = binaryReader.Read7BitEncodedInt32();");
                     continue;
                 }
 
-                stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
+                if (languageKeyword == "int" || languageKeyword == "uint" || languageKeyword == "long" || languageKeyword == "ulong")
+                {
+                    stringBuilder.AppendFormat("                    {0} = binaryReader.Read7BitEncoded{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
+                else
+                {
+                    stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
             }
 
             stringBuilder

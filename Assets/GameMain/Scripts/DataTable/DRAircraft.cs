@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:05.967
+// 生成时间：2020-04-21 15:41:12.530
 //------------------------------------------------------------
 
 using GameFramework;
@@ -151,16 +151,16 @@ namespace StarForce
             {
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
-                    m_Id = binaryReader.ReadInt32();
-                    ThrusterId = binaryReader.ReadInt32();
-                    WeaponId0 = binaryReader.ReadInt32();
-                    WeaponId1 = binaryReader.ReadInt32();
-                    WeaponId2 = binaryReader.ReadInt32();
-                    ArmorId0 = binaryReader.ReadInt32();
-                    ArmorId1 = binaryReader.ReadInt32();
-                    ArmorId2 = binaryReader.ReadInt32();
-                    DeadEffectId = binaryReader.ReadInt32();
-                    DeadSoundId = binaryReader.ReadInt32();
+                    m_Id = binaryReader.Read7BitEncodedInt32();
+                    ThrusterId = binaryReader.Read7BitEncodedInt32();
+                    WeaponId0 = binaryReader.Read7BitEncodedInt32();
+                    WeaponId1 = binaryReader.Read7BitEncodedInt32();
+                    WeaponId2 = binaryReader.Read7BitEncodedInt32();
+                    ArmorId0 = binaryReader.Read7BitEncodedInt32();
+                    ArmorId1 = binaryReader.Read7BitEncodedInt32();
+                    ArmorId2 = binaryReader.Read7BitEncodedInt32();
+                    DeadEffectId = binaryReader.Read7BitEncodedInt32();
+                    DeadSoundId = binaryReader.Read7BitEncodedInt32();
                 }
             }
 

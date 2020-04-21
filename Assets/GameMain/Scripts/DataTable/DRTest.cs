@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:05.954
+// 生成时间：2020-04-21 15:41:12.520
 //------------------------------------------------------------
 
 using GameFramework;
@@ -282,7 +282,7 @@ namespace StarForce
             {
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
-                    m_Id = binaryReader.ReadInt32();
+                    m_Id = binaryReader.Read7BitEncodedInt32();
                     BoolValue = binaryReader.ReadBoolean();
                     ByteValue = binaryReader.ReadByte();
                     CharValue = binaryReader.ReadChar();
@@ -292,15 +292,15 @@ namespace StarForce
                     DecimalValue = binaryReader.ReadDecimal();
                     DoubleValue = binaryReader.ReadDouble();
                     FloatValue = binaryReader.ReadSingle();
-                    IntValue = binaryReader.ReadInt32();
-                    LongValue = binaryReader.ReadInt64();
+                    IntValue = binaryReader.Read7BitEncodedInt32();
+                    LongValue = binaryReader.Read7BitEncodedInt64();
                     QuaternionValue = binaryReader.ReadQuaternion();
                     RectValue = binaryReader.ReadRect();
                     SByteValue = binaryReader.ReadSByte();
                     ShortValue = binaryReader.ReadInt16();
                     StringValue = binaryReader.ReadString();
-                    UIntValue = binaryReader.ReadUInt32();
-                    ULongValue = binaryReader.ReadUInt64();
+                    UIntValue = binaryReader.Read7BitEncodedUInt32();
+                    ULongValue = binaryReader.Read7BitEncodedUInt64();
                     UShortValue = binaryReader.ReadUInt16();
                     Vector2Value = binaryReader.ReadVector2();
                     Vector3Value = binaryReader.ReadVector3();

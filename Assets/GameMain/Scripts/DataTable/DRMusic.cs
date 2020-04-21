@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:05.986
+// 生成时间：2020-04-21 15:41:12.546
 //------------------------------------------------------------
 
 using GameFramework;
@@ -71,7 +71,7 @@ namespace StarForce
             {
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
-                    m_Id = binaryReader.ReadInt32();
+                    m_Id = binaryReader.Read7BitEncodedInt32();
                     AssetName = binaryReader.ReadString();
                 }
             }
