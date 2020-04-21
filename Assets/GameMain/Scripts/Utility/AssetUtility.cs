@@ -13,17 +13,17 @@ namespace StarForce
     {
         public static string GetConfigAsset(string assetName, LoadType loadType)
         {
-            return Utility.Text.Format("Assets/GameMain/Configs/{0}.{1}", assetName, loadType == LoadType.Text ? "txt" : "bytes");
+            return Utility.Text.Format("Assets/GameMain/Configs/{0}.{1}", assetName, loadType == LoadType.TextFromAsset ? "txt" : "bytes");
         }
 
         public static string GetDataTableAsset(string assetName, LoadType loadType)
         {
-            return Utility.Text.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, loadType == LoadType.Text ? "txt" : "bytes");
+            return Utility.Text.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, loadType == LoadType.TextFromAsset ? "txt" : "bytes");
         }
 
         public static string GetDictionaryAsset(string assetName, LoadType loadType)
         {
-            return Utility.Text.Format("Assets/GameMain/Localization/{0}/Dictionaries/{1}.{2}", GameEntry.Localization.Language.ToString(), assetName, loadType == LoadType.Text ? "xml" : "bytes");
+            return Utility.Text.Format("Assets/GameMain/Localization/{0}/Dictionaries/{1}.{2}", GameEntry.Localization.Language.ToString(), assetName, loadType == LoadType.TextFromAsset ? "xml" : "bytes");
         }
 
         public static string GetFontAsset(string assetName)
