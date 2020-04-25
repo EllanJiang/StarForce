@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2020-04-21 15:41:12.558
+// 生成时间：2020-04-25 22:23:50.310
 //------------------------------------------------------------
 
 using GameFramework;
@@ -96,14 +96,15 @@ namespace StarForce
 
         public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment, object dataTableUserData)
         {
+            string[] strings = (string[])dataTableUserData;
             // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
             using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
             {
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
                     m_Id = binaryReader.Read7BitEncodedInt32();
-                    AssetName = binaryReader.ReadString();
-                    UIGroupName = binaryReader.ReadString();
+                    AssetName = strings[binaryReader.Read7BitEncodedInt32()];
+                    UIGroupName = strings[binaryReader.Read7BitEncodedInt32()];
                     AllowMultiInstance = binaryReader.ReadBoolean();
                     PauseCoveredUIForm = binaryReader.ReadBoolean();
                 }

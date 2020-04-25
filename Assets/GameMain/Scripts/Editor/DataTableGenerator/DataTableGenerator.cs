@@ -191,6 +191,7 @@ namespace StarForce.Editor.DataTableTools
             stringBuilder
                 .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment, object dataTableUserData)")
                 .AppendLine("        {")
+                .AppendLine("            string[] strings = (string[])dataTableUserData;")
                 .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
                 .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))")
                 .AppendLine("            {")
@@ -216,6 +217,10 @@ namespace StarForce.Editor.DataTableTools
                 if (languageKeyword == "int" || languageKeyword == "uint" || languageKeyword == "long" || languageKeyword == "ulong")
                 {
                     stringBuilder.AppendFormat("                    {0} = binaryReader.Read7BitEncoded{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
+                else if (languageKeyword == "string")
+                {
+                    stringBuilder.AppendFormat("                    {0} = strings[binaryReader.Read7BitEncodedInt32()];", dataTableProcessor.GetName(i)).AppendLine();
                 }
                 else
                 {
