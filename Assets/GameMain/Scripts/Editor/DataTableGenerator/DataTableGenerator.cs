@@ -131,7 +131,7 @@ namespace StarForce.Editor.DataTableTools
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
+                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment, object dataTableUserData)")
                 .AppendLine("        {")
                 .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
                 .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);")
@@ -189,7 +189,7 @@ namespace StarForce.Editor.DataTableTools
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)")
+                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment, object dataTableUserData)")
                 .AppendLine("        {")
                 .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
                 .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))")
@@ -238,7 +238,7 @@ namespace StarForce.Editor.DataTableTools
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)")
+                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment, object dataTableUserData)")
                 .AppendLine("        {")
                 .AppendLine("            Log.Warning(\"Not implemented ParseDataRow(GameFrameworkSegment<Stream>)\");")
                 .AppendLine("            return false;")

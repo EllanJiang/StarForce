@@ -117,7 +117,7 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
+        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment, object dataTableUserData)
         {
             // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
             string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
@@ -144,7 +144,7 @@ namespace StarForce
             return true;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
+        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment, object dataTableUserData)
         {
             // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
             using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
@@ -168,7 +168,7 @@ namespace StarForce
             return true;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
+        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment, object dataTableUserData)
         {
             Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
             return false;
