@@ -12,7 +12,7 @@ namespace StarForce
 {
     public static class ConfigExtension
     {
-        public static void LoadConfig(this ConfigComponent configComponent, string configName, LoadType loadType, object userData = null)
+        public static void LoadConfig(this ConfigComponent configComponent, string configName, bool fromBytes, object userData = null)
         {
             if (string.IsNullOrEmpty(configName))
             {
@@ -20,7 +20,7 @@ namespace StarForce
                 return;
             }
 
-            configComponent.LoadConfig(configName, AssetUtility.GetConfigAsset(configName, loadType), loadType, Constant.AssetPriority.ConfigAsset, userData);
+            configComponent.LoadConfig(configName, AssetUtility.GetConfigAsset(configName, fromBytes), Constant.AssetPriority.ConfigAsset, userData);
         }
     }
 }

@@ -110,19 +110,19 @@ namespace StarForce
         private void LoadConfig(string configName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("Config.{0}", configName), false);
-            GameEntry.Config.LoadConfig(configName, LoadType.BytesFromAsset, this);
+            GameEntry.Config.LoadConfig(configName, false, this);
         }
 
         private void LoadDataTable(string dataTableName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("DataTable.{0}", dataTableName), false);
-            GameEntry.DataTable.LoadDataTable(dataTableName, LoadType.BytesFromAsset, this);
+            GameEntry.DataTable.LoadDataTable(dataTableName, false, this);
         }
 
         private void LoadDictionary(string dictionaryName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("Dictionary.{0}", dictionaryName), false);
-            GameEntry.Localization.LoadDictionary(dictionaryName, LoadType.TextFromAsset, this);
+            GameEntry.Localization.LoadDictionary(dictionaryName, false, this);
         }
 
         private void LoadFont(string fontName)
