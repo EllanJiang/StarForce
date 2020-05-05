@@ -76,10 +76,9 @@ namespace StarForce
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-            IEnumerator<bool> iter = m_LoadedFlag.Values.GetEnumerator();
-            while (iter.MoveNext())
+            foreach (KeyValuePair<string, bool> loadedFlag in m_LoadedFlag)
             {
-                if (!iter.Current)
+                if (!loadedFlag.Value)
                 {
                     return;
                 }
