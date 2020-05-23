@@ -21,7 +21,43 @@ namespace StarForce
             set;
         }
 
+        public int InternalGameVersion
+        {
+            get;
+            set;
+        }
+
+        public int InternalResourceVersion
+        {
+            get;
+            set;
+        }
+
         public string GameUpdateUrl
+        {
+            get;
+            set;
+        }
+
+        public int VersionListLength
+        {
+            get;
+            set;
+        }
+
+        public int VersionListHashCode
+        {
+            get;
+            set;
+        }
+
+        public int VersionListZipLength
+        {
+            get;
+            set;
+        }
+
+        public int VersionListZipHashCode
         {
             get;
             set;

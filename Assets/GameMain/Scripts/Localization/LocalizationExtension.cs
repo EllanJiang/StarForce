@@ -12,7 +12,7 @@ namespace StarForce
 {
     public static class LocalizationExtension
     {
-        public static void LoadDictionary(this LocalizationComponent localizationComponent, string dictionaryName, LoadType loadType, object userData = null)
+        public static void LoadDictionary(this LocalizationComponent localizationComponent, string dictionaryName, bool fromBytes, object userData = null)
         {
             if (string.IsNullOrEmpty(dictionaryName))
             {
@@ -20,7 +20,7 @@ namespace StarForce
                 return;
             }
 
-            localizationComponent.LoadDictionary(dictionaryName, AssetUtility.GetDictionaryAsset(dictionaryName, loadType), loadType, Constant.AssetPriority.DictionaryAsset, userData);
+            localizationComponent.LoadDictionary(dictionaryName, AssetUtility.GetDictionaryAsset(dictionaryName, fromBytes), Constant.AssetPriority.DictionaryAsset, userData);
         }
     }
 }

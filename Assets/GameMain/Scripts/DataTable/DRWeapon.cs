@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:06.014
+// 生成时间：2020-04-27 17:07:19.160
 //------------------------------------------------------------
 
 using GameFramework;
@@ -81,53 +81,51 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
+        public override bool ParseDataRow(GameFrameworkDataSegment dataRowSegment, object dataTableUserData)
         {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
-            for (int i = 0; i < columnTexts.Length; i++)
+            Type dataType = dataRowSegment.DataType;
+            if (dataType == typeof(string))
             {
-                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
-            }
-
-            int index = 0;
-            index++;
-            m_Id = int.Parse(columnTexts[index++]);
-            index++;
-            Attack = int.Parse(columnTexts[index++]);
-            AttackInterval = float.Parse(columnTexts[index++]);
-            BulletId = int.Parse(columnTexts[index++]);
-            BulletSpeed = float.Parse(columnTexts[index++]);
-            BulletSoundId = int.Parse(columnTexts[index++]);
-
-            GeneratePropertyArray();
-            return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
-        {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
-            {
-                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                string[] columnTexts = ((string)dataRowSegment.Data).Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
+                for (int i = 0; i < columnTexts.Length; i++)
                 {
-                    m_Id = binaryReader.ReadInt32();
-                    Attack = binaryReader.ReadInt32();
-                    AttackInterval = binaryReader.ReadSingle();
-                    BulletId = binaryReader.ReadInt32();
-                    BulletSpeed = binaryReader.ReadSingle();
-                    BulletSoundId = binaryReader.ReadInt32();
+                    columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
+                }
+
+                int index = 0;
+                index++;
+                m_Id = int.Parse(columnTexts[index++]);
+                index++;
+                Attack = int.Parse(columnTexts[index++]);
+                AttackInterval = float.Parse(columnTexts[index++]);
+                BulletId = int.Parse(columnTexts[index++]);
+                BulletSpeed = float.Parse(columnTexts[index++]);
+                BulletSoundId = int.Parse(columnTexts[index++]);
+            }
+            else if (dataType == typeof(byte[]))
+            {
+                string[] strings = (string[])dataTableUserData;
+                using (MemoryStream memoryStream = new MemoryStream((byte[])dataRowSegment.Data, dataRowSegment.Offset, dataRowSegment.Length, false))
+                {
+                    using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                    {
+                        m_Id = binaryReader.Read7BitEncodedInt32();
+                        Attack = binaryReader.Read7BitEncodedInt32();
+                        AttackInterval = binaryReader.ReadSingle();
+                        BulletId = binaryReader.Read7BitEncodedInt32();
+                        BulletSpeed = binaryReader.ReadSingle();
+                        BulletSoundId = binaryReader.Read7BitEncodedInt32();
+                    }
                 }
             }
+            else
+            {
+                Log.Warning("Can not parse data row which type '{0}' is invalid.", dataType.FullName);
+                return false;
+            }
 
             GeneratePropertyArray();
             return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
-        {
-            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
-            return false;
         }
 
         private void GeneratePropertyArray()

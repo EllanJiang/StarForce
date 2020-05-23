@@ -11,19 +11,19 @@ namespace StarForce
 {
     public static class AssetUtility
     {
-        public static string GetConfigAsset(string assetName, LoadType loadType)
+        public static string GetConfigAsset(string assetName, bool fromBytes)
         {
-            return Utility.Text.Format("Assets/GameMain/Configs/{0}.{1}", assetName, loadType == LoadType.Text ? "txt" : "bytes");
+            return Utility.Text.Format("Assets/GameMain/Configs/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
         }
 
-        public static string GetDataTableAsset(string assetName, LoadType loadType)
+        public static string GetDataTableAsset(string assetName, bool fromBytes)
         {
-            return Utility.Text.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, loadType == LoadType.Text ? "txt" : "bytes");
+            return Utility.Text.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, fromBytes ? "bytes" : "txt");
         }
 
-        public static string GetDictionaryAsset(string assetName, LoadType loadType)
+        public static string GetDictionaryAsset(string assetName, bool fromBytes)
         {
-            return Utility.Text.Format("Assets/GameMain/Localization/{0}/Dictionaries/{1}.{2}", GameEntry.Localization.Language.ToString(), assetName, loadType == LoadType.Text ? "xml" : "bytes");
+            return Utility.Text.Format("Assets/GameMain/Localization/{0}/Dictionaries/{1}.{2}", GameEntry.Localization.Language.ToString(), assetName, fromBytes ? "bytes" : "xml");
         }
 
         public static string GetFontAsset(string assetName)

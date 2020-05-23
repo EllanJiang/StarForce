@@ -63,11 +63,11 @@ namespace StarForce
             }
 
             Language language = GameEntry.Localization.Language;
-            string languageString = GameEntry.Setting.GetString(Constant.Setting.Language);
-            if (!string.IsNullOrEmpty(languageString))
+            if (GameEntry.Setting.HasSetting(Constant.Setting.Language))
             {
                 try
                 {
+                    string languageString = GameEntry.Setting.GetString(Constant.Setting.Language);
                     language = (Language)Enum.Parse(typeof(Language), languageString);
                 }
                 catch

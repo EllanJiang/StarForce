@@ -9,7 +9,7 @@ using GameFramework;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
-using UnityGameFramework.Editor.AssetBundleTools;
+using UnityGameFramework.Editor.ResourceTools;
 
 namespace StarForce.Editor
 {
@@ -24,7 +24,7 @@ namespace StarForce.Editor
         }
 
         public void PreprocessAllPlatforms(string productName, string companyName, string gameIdentifier,
-            string applicableGameVersion, int internalResourceVersion, string unityVersion, BuildAssetBundleOptions buildOptions, bool zip,
+            string gameFrameworkVersion, string unityVersion, string applicableGameVersion, int internalResourceVersion, BuildAssetBundleOptions buildOptions, bool zip,
             string outputDirectory, string workingPath, bool outputPackageSelected, string outputPackagePath, bool outputFullSelected, string outputFullPath, bool outputPackedSelected, string outputPackedPath, string buildReportPath)
         {
             string streamingAssetsPath = Utility.Path.GetRegularPath(Path.Combine(Application.dataPath, "StreamingAssets"));
@@ -43,7 +43,7 @@ namespace StarForce.Editor
         }
 
         public void PostprocessAllPlatforms(string productName, string companyName, string gameIdentifier,
-            string applicableGameVersion, int internalResourceVersion, string unityVersion, BuildAssetBundleOptions buildOptions, bool zip,
+            string gameFrameworkVersion, string unityVersion, string applicableGameVersion, int internalResourceVersion, BuildAssetBundleOptions buildOptions, bool zip,
             string outputDirectory, string workingPath, bool outputPackageSelected, string outputPackagePath, bool outputFullSelected, string outputFullPath, bool outputPackedSelected, string outputPackedPath, string buildReportPath)
         {
         }

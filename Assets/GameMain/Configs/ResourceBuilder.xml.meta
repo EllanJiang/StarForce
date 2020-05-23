@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: c93801e1577b65d45b3f79ec237c2a4e
+guid: 5461b0fc87a2ab04fbcfd898d18f6107
 labels:
-- AssetBundleExclusive
-timeCreated: 1528026122
-licenseType: Pro
+- ResourceExclusive
 TextScriptImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

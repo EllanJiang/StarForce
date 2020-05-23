@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:05.954
+// 生成时间：2020-04-27 17:07:19.110
 //------------------------------------------------------------
 
 using GameFramework;
@@ -234,88 +234,86 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
+        public override bool ParseDataRow(GameFrameworkDataSegment dataRowSegment, object dataTableUserData)
         {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
-            for (int i = 0; i < columnTexts.Length; i++)
+            Type dataType = dataRowSegment.DataType;
+            if (dataType == typeof(string))
             {
-                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
-            }
-
-            int index = 0;
-            index++;
-            m_Id = int.Parse(columnTexts[index++]);
-            index++;
-            BoolValue = bool.Parse(columnTexts[index++]);
-            ByteValue = byte.Parse(columnTexts[index++]);
-            CharValue = char.Parse(columnTexts[index++]);
-            Color32Value = DataTableExtension.ParseColor32(columnTexts[index++]);
-            ColorValue = DataTableExtension.ParseColor(columnTexts[index++]);
-            index++;
-            DateTimeValue = DateTime.Parse(columnTexts[index++]);
-            DecimalValue = decimal.Parse(columnTexts[index++]);
-            DoubleValue = double.Parse(columnTexts[index++]);
-            FloatValue = float.Parse(columnTexts[index++]);
-            IntValue = int.Parse(columnTexts[index++]);
-            LongValue = long.Parse(columnTexts[index++]);
-            QuaternionValue = DataTableExtension.ParseQuaternion(columnTexts[index++]);
-            RectValue = DataTableExtension.ParseRect(columnTexts[index++]);
-            SByteValue = sbyte.Parse(columnTexts[index++]);
-            ShortValue = short.Parse(columnTexts[index++]);
-            StringValue = columnTexts[index++];
-            UIntValue = uint.Parse(columnTexts[index++]);
-            ULongValue = ulong.Parse(columnTexts[index++]);
-            UShortValue = ushort.Parse(columnTexts[index++]);
-            Vector2Value = DataTableExtension.ParseVector2(columnTexts[index++]);
-            Vector3Value = DataTableExtension.ParseVector3(columnTexts[index++]);
-            Vector4Value = DataTableExtension.ParseVector4(columnTexts[index++]);
-
-            GeneratePropertyArray();
-            return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
-        {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
-            {
-                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                string[] columnTexts = ((string)dataRowSegment.Data).Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
+                for (int i = 0; i < columnTexts.Length; i++)
                 {
-                    m_Id = binaryReader.ReadInt32();
-                    BoolValue = binaryReader.ReadBoolean();
-                    ByteValue = binaryReader.ReadByte();
-                    CharValue = binaryReader.ReadChar();
-                    Color32Value = binaryReader.ReadColor32();
-                    ColorValue = binaryReader.ReadColor();
-                    DateTimeValue = binaryReader.ReadDateTime();
-                    DecimalValue = binaryReader.ReadDecimal();
-                    DoubleValue = binaryReader.ReadDouble();
-                    FloatValue = binaryReader.ReadSingle();
-                    IntValue = binaryReader.ReadInt32();
-                    LongValue = binaryReader.ReadInt64();
-                    QuaternionValue = binaryReader.ReadQuaternion();
-                    RectValue = binaryReader.ReadRect();
-                    SByteValue = binaryReader.ReadSByte();
-                    ShortValue = binaryReader.ReadInt16();
-                    StringValue = binaryReader.ReadString();
-                    UIntValue = binaryReader.ReadUInt32();
-                    ULongValue = binaryReader.ReadUInt64();
-                    UShortValue = binaryReader.ReadUInt16();
-                    Vector2Value = binaryReader.ReadVector2();
-                    Vector3Value = binaryReader.ReadVector3();
-                    Vector4Value = binaryReader.ReadVector4();
+                    columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
+                }
+
+                int index = 0;
+                index++;
+                m_Id = int.Parse(columnTexts[index++]);
+                index++;
+                BoolValue = bool.Parse(columnTexts[index++]);
+                ByteValue = byte.Parse(columnTexts[index++]);
+                CharValue = char.Parse(columnTexts[index++]);
+                Color32Value = DataTableExtension.ParseColor32(columnTexts[index++]);
+                ColorValue = DataTableExtension.ParseColor(columnTexts[index++]);
+                index++;
+                DateTimeValue = DateTime.Parse(columnTexts[index++]);
+                DecimalValue = decimal.Parse(columnTexts[index++]);
+                DoubleValue = double.Parse(columnTexts[index++]);
+                FloatValue = float.Parse(columnTexts[index++]);
+                IntValue = int.Parse(columnTexts[index++]);
+                LongValue = long.Parse(columnTexts[index++]);
+                QuaternionValue = DataTableExtension.ParseQuaternion(columnTexts[index++]);
+                RectValue = DataTableExtension.ParseRect(columnTexts[index++]);
+                SByteValue = sbyte.Parse(columnTexts[index++]);
+                ShortValue = short.Parse(columnTexts[index++]);
+                StringValue = columnTexts[index++];
+                UIntValue = uint.Parse(columnTexts[index++]);
+                ULongValue = ulong.Parse(columnTexts[index++]);
+                UShortValue = ushort.Parse(columnTexts[index++]);
+                Vector2Value = DataTableExtension.ParseVector2(columnTexts[index++]);
+                Vector3Value = DataTableExtension.ParseVector3(columnTexts[index++]);
+                Vector4Value = DataTableExtension.ParseVector4(columnTexts[index++]);
+            }
+            else if (dataType == typeof(byte[]))
+            {
+                string[] strings = (string[])dataTableUserData;
+                using (MemoryStream memoryStream = new MemoryStream((byte[])dataRowSegment.Data, dataRowSegment.Offset, dataRowSegment.Length, false))
+                {
+                    using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                    {
+                        m_Id = binaryReader.Read7BitEncodedInt32();
+                        BoolValue = binaryReader.ReadBoolean();
+                        ByteValue = binaryReader.ReadByte();
+                        CharValue = binaryReader.ReadChar();
+                        Color32Value = binaryReader.ReadColor32();
+                        ColorValue = binaryReader.ReadColor();
+                        DateTimeValue = binaryReader.ReadDateTime();
+                        DecimalValue = binaryReader.ReadDecimal();
+                        DoubleValue = binaryReader.ReadDouble();
+                        FloatValue = binaryReader.ReadSingle();
+                        IntValue = binaryReader.Read7BitEncodedInt32();
+                        LongValue = binaryReader.Read7BitEncodedInt64();
+                        QuaternionValue = binaryReader.ReadQuaternion();
+                        RectValue = binaryReader.ReadRect();
+                        SByteValue = binaryReader.ReadSByte();
+                        ShortValue = binaryReader.ReadInt16();
+                        StringValue = strings[binaryReader.Read7BitEncodedInt32()];
+                        UIntValue = binaryReader.Read7BitEncodedUInt32();
+                        ULongValue = binaryReader.Read7BitEncodedUInt64();
+                        UShortValue = binaryReader.ReadUInt16();
+                        Vector2Value = binaryReader.ReadVector2();
+                        Vector3Value = binaryReader.ReadVector3();
+                        Vector4Value = binaryReader.ReadVector4();
+                    }
                 }
             }
+            else
+            {
+                Log.Warning("Can not parse data row which type '{0}' is invalid.", dataType.FullName);
+                return false;
+            }
 
             GeneratePropertyArray();
             return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
-        {
-            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
-            return false;
         }
 
         private void GeneratePropertyArray()

@@ -10,7 +10,7 @@ namespace StarForce
     /// <summary>
     /// 关系类型。
     /// </summary>
-    public enum RelationType
+    public enum RelationType : byte
     {
         /// <summary>
         /// 未知的。

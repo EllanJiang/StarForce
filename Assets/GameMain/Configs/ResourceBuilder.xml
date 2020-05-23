@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <UnityGameFramework>
-  <AssetBundleBuilder>
+  <ResourceBuilder>
     <Settings>
       <InternalResourceVersion>0</InternalResourceVersion>
       <Platforms>1</Platforms>
@@ -18,5 +18,5 @@
       <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
       <OutputDirectory></OutputDirectory>
     </Settings>
-  </AssetBundleBuilder>
+  </ResourceBuilder>
 </UnityGameFramework>

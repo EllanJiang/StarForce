@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-10-17 16:34:05.995
+// 生成时间：2020-04-27 17:07:19.147
 //------------------------------------------------------------
 
 using GameFramework;
@@ -90,55 +90,53 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
+        public override bool ParseDataRow(GameFrameworkDataSegment dataRowSegment, object dataTableUserData)
         {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
-            for (int i = 0; i < columnTexts.Length; i++)
+            Type dataType = dataRowSegment.DataType;
+            if (dataType == typeof(string))
             {
-                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
-            }
-
-            int index = 0;
-            index++;
-            m_Id = int.Parse(columnTexts[index++]);
-            index++;
-            AssetName = columnTexts[index++];
-            Priority = int.Parse(columnTexts[index++]);
-            Loop = bool.Parse(columnTexts[index++]);
-            Volume = float.Parse(columnTexts[index++]);
-            SpatialBlend = float.Parse(columnTexts[index++]);
-            MaxDistance = float.Parse(columnTexts[index++]);
-
-            GeneratePropertyArray();
-            return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
-        {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
-            {
-                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                string[] columnTexts = ((string)dataRowSegment.Data).Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
+                for (int i = 0; i < columnTexts.Length; i++)
                 {
-                    m_Id = binaryReader.ReadInt32();
-                    AssetName = binaryReader.ReadString();
-                    Priority = binaryReader.ReadInt32();
-                    Loop = binaryReader.ReadBoolean();
-                    Volume = binaryReader.ReadSingle();
-                    SpatialBlend = binaryReader.ReadSingle();
-                    MaxDistance = binaryReader.ReadSingle();
+                    columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
+                }
+
+                int index = 0;
+                index++;
+                m_Id = int.Parse(columnTexts[index++]);
+                index++;
+                AssetName = columnTexts[index++];
+                Priority = int.Parse(columnTexts[index++]);
+                Loop = bool.Parse(columnTexts[index++]);
+                Volume = float.Parse(columnTexts[index++]);
+                SpatialBlend = float.Parse(columnTexts[index++]);
+                MaxDistance = float.Parse(columnTexts[index++]);
+            }
+            else if (dataType == typeof(byte[]))
+            {
+                string[] strings = (string[])dataTableUserData;
+                using (MemoryStream memoryStream = new MemoryStream((byte[])dataRowSegment.Data, dataRowSegment.Offset, dataRowSegment.Length, false))
+                {
+                    using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                    {
+                        m_Id = binaryReader.Read7BitEncodedInt32();
+                        AssetName = strings[binaryReader.Read7BitEncodedInt32()];
+                        Priority = binaryReader.Read7BitEncodedInt32();
+                        Loop = binaryReader.ReadBoolean();
+                        Volume = binaryReader.ReadSingle();
+                        SpatialBlend = binaryReader.ReadSingle();
+                        MaxDistance = binaryReader.ReadSingle();
+                    }
                 }
             }
+            else
+            {
+                Log.Warning("Can not parse data row which type '{0}' is invalid.", dataType.FullName);
+                return false;
+            }
 
             GeneratePropertyArray();
             return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
-        {
-            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
-            return false;
         }
 
         private void GeneratePropertyArray()

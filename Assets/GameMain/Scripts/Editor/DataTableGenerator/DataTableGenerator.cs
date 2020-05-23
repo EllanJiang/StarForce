@@ -52,7 +52,7 @@ namespace StarForce.Editor.DataTableTools
         public static void GenerateDataFile(DataTableProcessor dataTableProcessor, string dataTableName)
         {
             string binaryDataFileName = Utility.Path.GetRegularPath(Path.Combine(DataTablePath, dataTableName + ".bytes"));
-            if (!dataTableProcessor.GenerateDataFile(binaryDataFileName, Encoding.UTF8) && File.Exists(binaryDataFileName))
+            if (!dataTableProcessor.GenerateDataFile(binaryDataFileName) && File.Exists(binaryDataFileName))
             {
                 File.Delete(binaryDataFileName);
             }
@@ -80,9 +80,7 @@ namespace StarForce.Editor.DataTableTools
             codeContent.Replace("__DATA_TABLE_COMMENT__", dataTableProcessor.GetValue(0, 1) + "。");
             codeContent.Replace("__DATA_TABLE_ID_COMMENT__", "获取" + dataTableProcessor.GetComment(dataTableProcessor.IdColumn) + "。");
             codeContent.Replace("__DATA_TABLE_PROPERTIES__", GenerateDataTableProperties(dataTableProcessor));
-            codeContent.Replace("__DATA_TABLE_STRING_PARSER__", GenerateDataTableStringParser(dataTableProcessor));
-            codeContent.Replace("__DATA_TABLE_BYTES_PARSER__", GenerateDataTableBytesParser(dataTableProcessor));
-            codeContent.Replace("__DATA_TABLE_STREAM_PARSER__", GenerateDataTableStreamParser(dataTableProcessor));
+            codeContent.Replace("__DATA_TABLE_PARSER__", GenerateDataTableParser(dataTableProcessor));
             codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor));
         }
 
@@ -127,34 +125,36 @@ namespace StarForce.Editor.DataTableTools
             return stringBuilder.ToString();
         }
 
-        private static string GenerateDataTableStringParser(DataTableProcessor dataTableProcessor)
+        private static string GenerateDataTableParser(DataTableProcessor dataTableProcessor)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
+                .AppendLine("        public override bool ParseDataRow(GameFrameworkDataSegment dataRowSegment, object dataTableUserData)")
                 .AppendLine("        {")
-                .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
-                .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);")
-                .AppendLine("            for (int i = 0; i < columnTexts.Length; i++)")
+                .AppendLine("            Type dataType = dataRowSegment.DataType;")
+                .AppendLine("            if (dataType == typeof(string))")
                 .AppendLine("            {")
-                .AppendLine("                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);")
-                .AppendLine("            }")
+                .AppendLine("                string[] columnTexts = ((string)dataRowSegment.Data).Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);")
+                .AppendLine("                for (int i = 0; i < columnTexts.Length; i++)")
+                .AppendLine("                {")
+                .AppendLine("                    columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);")
+                .AppendLine("                }")
                 .AppendLine()
-                .AppendLine("            int index = 0;");
+                .AppendLine("                int index = 0;");
 
             for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
             {
                 if (dataTableProcessor.IsCommentColumn(i))
                 {
                     // 注释列
-                    stringBuilder.AppendLine("            index++;");
+                    stringBuilder.AppendLine("                index++;");
                     continue;
                 }
 
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("            m_Id = int.Parse(columnTexts[index++]);");
+                    stringBuilder.AppendLine("                m_Id = int.Parse(columnTexts[index++]);");
                     continue;
                 }
 
@@ -163,39 +163,28 @@ namespace StarForce.Editor.DataTableTools
                     string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
                     if (languageKeyword == "string")
                     {
-                        stringBuilder.AppendFormat("            {0} = columnTexts[index++];", dataTableProcessor.GetName(i)).AppendLine();
+                        stringBuilder.AppendFormat("                {0} = columnTexts[index++];", dataTableProcessor.GetName(i)).AppendLine();
                     }
                     else
                     {
-                        stringBuilder.AppendFormat("            {0} = {1}.Parse(columnTexts[index++]);", dataTableProcessor.GetName(i), languageKeyword).AppendLine();
+                        stringBuilder.AppendFormat("                {0} = {1}.Parse(columnTexts[index++]);", dataTableProcessor.GetName(i), languageKeyword).AppendLine();
                     }
                 }
                 else
                 {
-                    stringBuilder.AppendFormat("            {0} = DataTableExtension.Parse{1}(columnTexts[index++]);", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                    stringBuilder.AppendFormat("                {0} = DataTableExtension.Parse{1}(columnTexts[index++]);", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
                 }
             }
 
             stringBuilder
-                .AppendLine()
-                .AppendLine("            GeneratePropertyArray();")
-                .AppendLine("            return true;")
-                .Append("        }");
-
-            return stringBuilder.ToString();
-        }
-
-        private static string GenerateDataTableBytesParser(DataTableProcessor dataTableProcessor)
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)")
-                .AppendLine("        {")
-                .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
-                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))")
+                .AppendLine("            }")
+                .AppendLine("            else if (dataType == typeof(byte[]))")
                 .AppendLine("            {")
-                .AppendLine("                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))")
-                .AppendLine("                {");
+                .AppendLine("                string[] strings = (string[])dataTableUserData;")
+                .AppendLine("                using (MemoryStream memoryStream = new MemoryStream((byte[])dataRowSegment.Data, dataRowSegment.Offset, dataRowSegment.Length, false))")
+                .AppendLine("                {")
+                .AppendLine("                    using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))")
+                .AppendLine("                    {");
 
             for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
             {
@@ -208,32 +197,37 @@ namespace StarForce.Editor.DataTableTools
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("                    m_Id = binaryReader.ReadInt32();");
+                    stringBuilder.AppendLine("                        m_Id = binaryReader.Read7BitEncodedInt32();");
                     continue;
                 }
 
-                stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
+                if (languageKeyword == "int" || languageKeyword == "uint" || languageKeyword == "long" || languageKeyword == "ulong")
+                {
+                    stringBuilder.AppendFormat("                        {0} = binaryReader.Read7BitEncoded{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
+                else if (languageKeyword == "string")
+                {
+                    stringBuilder.AppendFormat("                        {0} = strings[binaryReader.Read7BitEncodedInt32()];", dataTableProcessor.GetName(i)).AppendLine();
+                }
+                else
+                {
+                    stringBuilder.AppendFormat("                        {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
             }
 
             stringBuilder
+                .AppendLine("                    }")
                 .AppendLine("                }")
+                .AppendLine("            }")
+                .AppendLine("            else")
+                .AppendLine("            {")
+                .AppendLine("                Log.Warning(\"Can not parse data row which type '{0}' is invalid.\", dataType.FullName);")
+                .AppendLine("                return false;")
                 .AppendLine("            }")
                 .AppendLine()
                 .AppendLine("            GeneratePropertyArray();")
                 .AppendLine("            return true;")
-                .Append("        }");
-
-            return stringBuilder.ToString();
-        }
-
-        private static string GenerateDataTableStreamParser(DataTableProcessor dataTableProcessor)
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)")
-                .AppendLine("        {")
-                .AppendLine("            Log.Warning(\"Not implemented ParseDataRow(GameFrameworkSegment<Stream>)\");")
-                .AppendLine("            return false;")
                 .Append("        }");
 
             return stringBuilder.ToString();
