@@ -78,5 +78,18 @@ namespace StarForce.Editor
                 File.Copy(fileName, destFileName);
             }
         }
+
+        /// <summary>
+        /// 输出某个平台可更新模式版本列表文件的处理事件。
+        /// </summary>
+        /// <param name="platform">生成平台。</param>
+        /// <param name="versionListPath">可更新模式版本列表文件的路径。</param>
+        /// <param name="versionListLength">可更新模式版本列表文件的长度。</param>
+        /// <param name="versionListHashCode">可更新模式版本列表文件的校验值。</param>
+        /// <param name="versionListZipLength">可更新模式版本列表文件压缩后的长度。</param>
+        /// <param name="versionListZipHashCode">可更新模式版本列表文件压缩后的校验值。</param>
+        public void OutputUpdatableVersionListData(Platform platform, string versionListPath, int versionListLength, int versionListHashCode, int versionListZipLength, int versionListZipHashCode)
+        {
+        }
     }
 }
