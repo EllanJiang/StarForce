@@ -88,6 +88,15 @@ namespace StarForce
         }
 
         /// <summary>
+        /// 获取文件系统组件。
+        /// </summary>
+        public static FileSystemComponent FileSystem
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
         /// 获取有限状态机组件。
         /// </summary>
         public static FsmComponent Fsm
@@ -196,6 +205,7 @@ namespace StarForce
             Download = UnityGameFramework.Runtime.GameEntry.GetComponent<DownloadComponent>();
             Entity = UnityGameFramework.Runtime.GameEntry.GetComponent<EntityComponent>();
             Event = UnityGameFramework.Runtime.GameEntry.GetComponent<EventComponent>();
+            FileSystem = UnityGameFramework.Runtime.GameEntry.GetComponent<FileSystemComponent>();
             Fsm = UnityGameFramework.Runtime.GameEntry.GetComponent<FsmComponent>();
             Localization = UnityGameFramework.Runtime.GameEntry.GetComponent<LocalizationComponent>();
             Network = UnityGameFramework.Runtime.GameEntry.GetComponent<NetworkComponent>();
