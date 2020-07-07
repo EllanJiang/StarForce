@@ -2,27 +2,27 @@
 <UnityGameFramework>
   <ResourceCollection>
     <Resources>
-      <Resource Name="Configs" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="DataTables" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="Entities" LoadType="0" Packed="True" />
-      <Resource Name="Fonts" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="Localization/Dictionaries" Variant="en-us" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="Localization/Dictionaries" Variant="ko-kr" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="Localization/Dictionaries" Variant="zh-cn" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="Localization/Dictionaries" Variant="zh-tw" LoadType="0" Packed="True" ResourceGroups="Base" />
-      <Resource Name="Materials" LoadType="0" Packed="True" />
-      <Resource Name="Meshes" LoadType="0" Packed="True" />
-      <Resource Name="Music/About" LoadType="0" Packed="True" ResourceGroups="Music" />
-      <Resource Name="Music/Background" LoadType="0" Packed="True" ResourceGroups="Music" />
-      <Resource Name="Music/Menu" LoadType="0" Packed="True" ResourceGroups="Music" />
-      <Resource Name="Scenes" LoadType="0" Packed="True" />
-      <Resource Name="Sounds" LoadType="0" Packed="True" />
-      <Resource Name="Textures" LoadType="0" Packed="True" />
-      <Resource Name="UI/UIForms" LoadType="0" Packed="True" />
-      <Resource Name="UI/UISounds" LoadType="0" Packed="True" />
-      <Resource Name="UI/UISprites/Common" LoadType="0" Packed="True" />
-      <Resource Name="UI/UISprites/Icons" LoadType="0" Packed="True" />
-      <Resource Name="UI/UISprites/Logos" LoadType="0" Packed="True" />
+      <Resource Name="Configs" FileSystem="GameData" LoadType="6" Packed="True" ResourceGroups="Base" />
+      <Resource Name="DataTables" FileSystem="GameData" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Entities" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Fonts" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="en-us" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="ko-kr" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="zh-cn" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Localization/Dictionaries" Variant="zh-tw" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Materials" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Meshes" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Music/About" FileSystem="Resources" LoadType="0" Packed="True" ResourceGroups="Music" />
+      <Resource Name="Music/Background" FileSystem="Resources" LoadType="0" Packed="True" ResourceGroups="Music" />
+      <Resource Name="Music/Menu" FileSystem="Resources" LoadType="0" Packed="True" ResourceGroups="Music" />
+      <Resource Name="Scenes" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Sounds" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="Textures" FileSystem="Resources" LoadType="0" Packed="True" />
+      <Resource Name="UI/UIForms" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISounds" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISprites/Common" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISprites/Icons" FileSystem="UI" LoadType="0" Packed="True" />
+      <Resource Name="UI/UISprites/Logos" FileSystem="UI" LoadType="0" Packed="True" />
     </Resources>
     <Assets>
       <Asset Guid="0179316b5fc7c2946a67c5877c02fc30" ResourceName="UI/UISprites/Common" />
@@ -65,7 +65,6 @@
       <Asset Guid="3e504a46a8fcec34db3c4776530c6eb2" ResourceName="Textures" />
       <Asset Guid="3f54fcfdac53aec42ae18a6a1c6d8cb1" ResourceName="UI/UISprites/Common" />
       <Asset Guid="4473d81b14ddb0143addf0e6050d8491" ResourceName="Scenes" />
-      <Asset Guid="44c8db52241385c45bbb14a1718f17bf" ResourceName="Configs" />
       <Asset Guid="4a17d2c656f5c6b44a31e3ee547a76b0" ResourceName="DataTables" />
       <Asset Guid="4c3865b2ac420cd46a9cde6ab468d016" ResourceName="Materials" />
       <Asset Guid="4db6a299939bfe94893585eb387f577a" ResourceName="DataTables" />
