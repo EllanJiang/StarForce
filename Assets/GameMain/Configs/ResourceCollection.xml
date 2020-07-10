@@ -2,7 +2,7 @@
 <UnityGameFramework>
   <ResourceCollection>
     <Resources>
-      <Resource Name="Configs" FileSystem="GameData" LoadType="6" Packed="True" ResourceGroups="Base" />
+      <Resource Name="Configs" FileSystem="GameData" LoadType="0" Packed="True" ResourceGroups="Base" />
       <Resource Name="DataTables" FileSystem="GameData" LoadType="0" Packed="True" ResourceGroups="Base" />
       <Resource Name="Entities" FileSystem="Resources" LoadType="0" Packed="True" />
       <Resource Name="Fonts" FileSystem="UI" LoadType="0" Packed="True" ResourceGroups="Base" />
