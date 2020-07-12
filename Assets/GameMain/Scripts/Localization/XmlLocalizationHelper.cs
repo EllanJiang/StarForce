@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework.Localization;
 using System;
 using System.Xml;
 using UnityGameFramework.Runtime;
@@ -22,7 +23,7 @@ namespace StarForce
         /// <param name="dictionaryString">要解析的字典字符串。</param>
         /// <param name="userData">用户自定义数据。</param>
         /// <returns>是否解析字典成功。</returns>
-        public override bool ParseDictionary(string dictionaryString, object userData)
+        public override bool ParseData(ILocalizationManager localizationManager, string dictionaryString, object userData)
         {
             try
             {
@@ -56,7 +57,7 @@ namespace StarForce
 
                         string key = xmlNodeString.Attributes.GetNamedItem("Key").Value;
                         string value = xmlNodeString.Attributes.GetNamedItem("Value").Value;
-                        if (!AddRawString(key, value))
+                        if (!localizationManager.AddRawString(key, value))
                         {
                             Log.Warning("Can not add raw string with key '{0}' which may be invalid or duplicate.", key);
                             return false;

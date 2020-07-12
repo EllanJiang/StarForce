@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2020-04-27 17:07:19.132
+// 生成时间：2020-07-12 14:49:13.477
 //------------------------------------------------------------
 
 using GameFramework;
@@ -90,50 +90,24 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(GameFrameworkDataSegment dataRowSegment, object dataTableUserData)
+        public override bool ParseDataRow(string dataRowString)
         {
-            Type dataType = dataRowSegment.DataType;
-            if (dataType == typeof(string))
+            string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
+            for (int i = 0; i < columnStrings.Length; i++)
             {
-                string[] columnTexts = ((string)dataRowSegment.Data).Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
-                for (int i = 0; i < columnTexts.Length; i++)
-                {
-                    columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
-                }
+                columnStrings[i] = columnStrings[i].Trim(DataTableExtension.DataTrimSeparators);
+            }
 
-                int index = 0;
-                index++;
-                m_Id = int.Parse(columnTexts[index++]);
-                index++;
-                MaxHP = int.Parse(columnTexts[index++]);
-                Attack = int.Parse(columnTexts[index++]);
-                Speed = float.Parse(columnTexts[index++]);
-                AngularSpeed = float.Parse(columnTexts[index++]);
-                DeadEffectId = int.Parse(columnTexts[index++]);
-                DeadSoundId = int.Parse(columnTexts[index++]);
-            }
-            else if (dataType == typeof(byte[]))
-            {
-                string[] strings = (string[])dataTableUserData;
-                using (MemoryStream memoryStream = new MemoryStream((byte[])dataRowSegment.Data, dataRowSegment.Offset, dataRowSegment.Length, false))
-                {
-                    using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
-                    {
-                        m_Id = binaryReader.Read7BitEncodedInt32();
-                        MaxHP = binaryReader.Read7BitEncodedInt32();
-                        Attack = binaryReader.Read7BitEncodedInt32();
-                        Speed = binaryReader.ReadSingle();
-                        AngularSpeed = binaryReader.ReadSingle();
-                        DeadEffectId = binaryReader.Read7BitEncodedInt32();
-                        DeadSoundId = binaryReader.Read7BitEncodedInt32();
-                    }
-                }
-            }
-            else
-            {
-                Log.Warning("Can not parse data row which type '{0}' is invalid.", dataType.FullName);
-                return false;
-            }
+            int index = 0;
+            index++;
+            m_Id = int.Parse(columnStrings[index++]);
+            index++;
+            MaxHP = int.Parse(columnStrings[index++]);
+            Attack = int.Parse(columnStrings[index++]);
+            Speed = float.Parse(columnStrings[index++]);
+            AngularSpeed = float.Parse(columnStrings[index++]);
+            DeadEffectId = int.Parse(columnStrings[index++]);
+            DeadSoundId = int.Parse(columnStrings[index++]);
 
             GeneratePropertyArray();
             return true;

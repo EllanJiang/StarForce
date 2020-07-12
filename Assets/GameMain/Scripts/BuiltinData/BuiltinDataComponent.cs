@@ -53,7 +53,7 @@ namespace StarForce
                 return;
             }
 
-            if (!GameEntry.Localization.ParseDictionary(m_DefaultDictionaryTextAsset.text))
+            if (!GameEntry.Localization.ParseData(m_DefaultDictionaryTextAsset.text))
             {
                 Log.Warning("Parse default dictionary failure.");
                 return;

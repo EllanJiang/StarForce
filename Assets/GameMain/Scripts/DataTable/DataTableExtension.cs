@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework;
+using GameFramework.DataTable;
 using System;
 using UnityEngine;
 using UnityGameFramework.Runtime;
@@ -18,7 +18,7 @@ namespace StarForce
         internal static readonly char[] DataSplitSeparators = new char[] { '\t' };
         internal static readonly char[] DataTrimSeparators = new char[] { '\"' };
 
-        public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, bool fromBytes, object userData = null)
+        public static void LoadDataTable(this DataTableComponent dataTableComponent, string dataTableName, string dataTableAssetName, object userData)
         {
             if (string.IsNullOrEmpty(dataTableName))
             {
@@ -42,8 +42,9 @@ namespace StarForce
                 return;
             }
 
-            string dataTableNameInType = splitNames.Length > 1 ? splitNames[1] : null;
-            dataTableComponent.LoadDataTable(dataRowType, dataTableName, dataTableNameInType, AssetUtility.GetDataTableAsset(dataTableName, fromBytes), Constant.AssetPriority.DataTableAsset, userData);
+            string name = splitNames.Length > 1 ? splitNames[1] : null;
+            DataTableBase dataTable = dataTableComponent.CreateDataTable(dataRowType, name);
+            dataTable.ReadData(dataTableAssetName, Constant.AssetPriority.DataTableAsset, userData);
         }
 
         public static Color32 ParseColor32(string value)
