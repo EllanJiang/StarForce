@@ -8,7 +8,6 @@
 using GameFramework;
 using UnityEditor;
 using UnityEngine;
-using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools
 {

@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2020-07-12 14:49:13.468
+// 生成时间：2020-07-13 00:03:21.658
 //------------------------------------------------------------
 
 using GameFramework;
@@ -117,7 +117,7 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(string dataRowString)
+        public override bool ParseDataRow(string dataRowString, object userData)
         {
             string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
             for (int i = 0; i < columnStrings.Length; i++)
@@ -138,6 +138,29 @@ namespace StarForce
             ArmorId2 = int.Parse(columnStrings[index++]);
             DeadEffectId = int.Parse(columnStrings[index++]);
             DeadSoundId = int.Parse(columnStrings[index++]);
+
+            GeneratePropertyArray();
+            return true;
+        }
+
+        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)
+        {
+            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))
+            {
+                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                {
+                    m_Id = binaryReader.Read7BitEncodedInt32();
+                    ThrusterId = binaryReader.Read7BitEncodedInt32();
+                    WeaponId0 = binaryReader.Read7BitEncodedInt32();
+                    WeaponId1 = binaryReader.Read7BitEncodedInt32();
+                    WeaponId2 = binaryReader.Read7BitEncodedInt32();
+                    ArmorId0 = binaryReader.Read7BitEncodedInt32();
+                    ArmorId1 = binaryReader.Read7BitEncodedInt32();
+                    ArmorId2 = binaryReader.Read7BitEncodedInt32();
+                    DeadEffectId = binaryReader.Read7BitEncodedInt32();
+                    DeadSoundId = binaryReader.Read7BitEncodedInt32();
+                }
+            }
 
             GeneratePropertyArray();
             return true;

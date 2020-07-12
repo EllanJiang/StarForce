@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2020-07-12 14:49:13.452
+// 生成时间：2020-07-13 00:03:21.648
 //------------------------------------------------------------
 
 using GameFramework;
@@ -234,7 +234,7 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(string dataRowString)
+        public override bool ParseDataRow(string dataRowString, object userData)
         {
             string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
             for (int i = 0; i < columnStrings.Length; i++)
@@ -269,6 +269,42 @@ namespace StarForce
             Vector2Value = DataTableExtension.ParseVector2(columnStrings[index++]);
             Vector3Value = DataTableExtension.ParseVector3(columnStrings[index++]);
             Vector4Value = DataTableExtension.ParseVector4(columnStrings[index++]);
+
+            GeneratePropertyArray();
+            return true;
+        }
+
+        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)
+        {
+            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))
+            {
+                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                {
+                    m_Id = binaryReader.Read7BitEncodedInt32();
+                    BoolValue = binaryReader.ReadBoolean();
+                    ByteValue = binaryReader.ReadByte();
+                    CharValue = binaryReader.ReadChar();
+                    Color32Value = binaryReader.ReadColor32();
+                    ColorValue = binaryReader.ReadColor();
+                    DateTimeValue = binaryReader.ReadDateTime();
+                    DecimalValue = binaryReader.ReadDecimal();
+                    DoubleValue = binaryReader.ReadDouble();
+                    FloatValue = binaryReader.ReadSingle();
+                    IntValue = binaryReader.Read7BitEncodedInt32();
+                    LongValue = binaryReader.Read7BitEncodedInt64();
+                    QuaternionValue = binaryReader.ReadQuaternion();
+                    RectValue = binaryReader.ReadRect();
+                    SByteValue = binaryReader.ReadSByte();
+                    ShortValue = binaryReader.ReadInt16();
+                    StringValue = binaryReader.ReadString();
+                    UIntValue = binaryReader.Read7BitEncodedUInt32();
+                    ULongValue = binaryReader.Read7BitEncodedUInt64();
+                    UShortValue = binaryReader.ReadUInt16();
+                    Vector2Value = binaryReader.ReadVector2();
+                    Vector3Value = binaryReader.ReadVector3();
+                    Vector4Value = binaryReader.ReadVector4();
+                }
+            }
 
             GeneratePropertyArray();
             return true;

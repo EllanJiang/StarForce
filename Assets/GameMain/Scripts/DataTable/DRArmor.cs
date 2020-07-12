@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2020-07-12 14:49:13.477
+// 生成时间：2020-07-13 00:03:21.672
 //------------------------------------------------------------
 
 using GameFramework;
@@ -54,7 +54,7 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(string dataRowString)
+        public override bool ParseDataRow(string dataRowString, object userData)
         {
             string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
             for (int i = 0; i < columnStrings.Length; i++)
@@ -68,6 +68,22 @@ namespace StarForce
             index++;
             MaxHP = int.Parse(columnStrings[index++]);
             Defense = int.Parse(columnStrings[index++]);
+
+            GeneratePropertyArray();
+            return true;
+        }
+
+        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)
+        {
+            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))
+            {
+                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
+                {
+                    m_Id = binaryReader.Read7BitEncodedInt32();
+                    MaxHP = binaryReader.Read7BitEncodedInt32();
+                    Defense = binaryReader.Read7BitEncodedInt32();
+                }
+            }
 
             GeneratePropertyArray();
             return true;

@@ -12,7 +12,6 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools
 {
@@ -129,7 +128,7 @@ namespace StarForce.Editor.DataTableTools
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
-                .AppendLine("        public override bool ParseDataRow(string dataRowString)")
+                .AppendLine("        public override bool ParseDataRow(string dataRowString, object userData)")
                 .AppendLine("        {")
                 .AppendLine("            string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);")
                 .AppendLine("            for (int i = 0; i < columnStrings.Length; i++)")
@@ -174,6 +173,47 @@ namespace StarForce.Editor.DataTableTools
             }
 
             stringBuilder.AppendLine()
+                .AppendLine("            GeneratePropertyArray();")
+                .AppendLine("            return true;")
+                .AppendLine("        }")
+                .AppendLine()
+                .AppendLine("        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)")
+                .AppendLine("        {")
+                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))")
+                .AppendLine("            {")
+                .AppendLine("                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))")
+                .AppendLine("                {");
+
+            for (int i = 0; i < dataTableProcessor.RawColumnCount; i++)
+            {
+                if (dataTableProcessor.IsCommentColumn(i))
+                {
+                    // 注释列
+                    continue;
+                }
+
+                if (dataTableProcessor.IsIdColumn(i))
+                {
+                    // 编号列
+                    stringBuilder.AppendLine("                    m_Id = binaryReader.Read7BitEncodedInt32();");
+                    continue;
+                }
+
+                string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
+                if (languageKeyword == "int" || languageKeyword == "uint" || languageKeyword == "long" || languageKeyword == "ulong")
+                {
+                    stringBuilder.AppendFormat("                    {0} = binaryReader.Read7BitEncoded{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
+                else
+                {
+                    stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
+            }
+
+            stringBuilder
+                .AppendLine("                }")
+                .AppendLine("            }")
+                .AppendLine()
                 .AppendLine("            GeneratePropertyArray();")
                 .AppendLine("            return true;")
                 .Append("        }");
