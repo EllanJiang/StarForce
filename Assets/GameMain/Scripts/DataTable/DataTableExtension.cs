@@ -34,7 +34,6 @@ namespace StarForce
             }
 
             string dataRowClassName = DataRowClassPrefixName + splitedNames[0];
-
             Type dataRowType = Type.GetType(dataRowClassName);
             if (dataRowType == null)
             {
