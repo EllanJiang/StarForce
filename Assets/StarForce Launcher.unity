@@ -144,6 +144,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -171,6 +172,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 513208573}
   - {fileID: 1604812193}
@@ -234,6 +236,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -262,7 +265,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.size
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 433714, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_LocalPosition.x
@@ -318,23 +321,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[1]
-      value: StarForce.ProcedureCheckVersion
+      value: StarForce.ProcedureCheckResources
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[2]
-      value: StarForce.ProcedureLaunch
+      value: StarForce.ProcedureCheckVersion
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[3]
-      value: StarForce.ProcedureMain
+      value: StarForce.ProcedureInitResources
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[4]
-      value: StarForce.ProcedureMenu
+      value: StarForce.ProcedureLaunch
       objectReference: {fileID: 0}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[5]
-      value: StarForce.ProcedurePreload
+      value: StarForce.ProcedureMain
       objectReference: {fileID: 0}
     - target: {fileID: 11494652, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_EntityGroups.Array.data[0].m_InstanceAutoReleaseInterval
@@ -482,7 +485,7 @@ Prefab:
       objectReference: {fileID: 1576232203}
     - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_AvailableProcedureTypeNames.Array.data[6]
-      value: StarForce.ProcedureSplash
+      value: StarForce.ProcedureMenu
       objectReference: {fileID: 0}
     - target: {fileID: 11454530, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
       propertyPath: m_UIGroups.Array.data[0].m_Name
@@ -562,6 +565,30 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: a4c1cc1e6676f0e48a527bad48941f98,
         type: 2}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[7]
+      value: StarForce.ProcedurePreload
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[8]
+      value: StarForce.ProcedureSplash
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[9]
+      value: StarForce.ProcedureUpdateResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405216, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_AvailableProcedureTypeNames.Array.data[10]
+      value: StarForce.ProcedureUpdateVersion
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499388, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_EditorResourceMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497722, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
+      propertyPath: m_ResourceMode
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: adb3eb1c35fcff14f89fba7b05c9d71c, type: 2}
   m_IsPrefabParent: 0
@@ -597,6 +624,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1852670053}
   m_RootOrder: 1
@@ -625,6 +653,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 119167776}
   m_RootOrder: 0
@@ -639,12 +668,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb0b001fcb30fe45ac95ddb8c28ba57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DeviceModelConfig: {fileID: 11400000, guid: a6a02e4e557663f4d935c5e0b9b804b9,
-    type: 2}
   m_BuildInfoTextAsset: {fileID: 4900000, guid: 0f949a7f73d128547b1314a7e471f19f,
     type: 3}
   m_DefaultDictionaryTextAsset: {fileID: 4900000, guid: 00759be143ffa5445b151c2540612e8f,
     type: 3}
+  m_UpdateResourceFormTemplate: {fileID: 11487720, guid: a6c731de80e9d824d8f657301a357269,
+    type: 2}
 --- !u!1 &1454214586
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +700,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1604812193}
   m_RootOrder: 0
@@ -694,6 +724,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -745,6 +776,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 432952642}
   m_RootOrder: 0
@@ -805,6 +837,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -833,6 +866,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1454214587}
   m_Father: {fileID: 119167776}
@@ -877,6 +911,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 343730743}
   - {fileID: 504410611}

@@ -19,6 +19,9 @@ namespace StarForce
         [SerializeField]
         private TextAsset m_DefaultDictionaryTextAsset = null;
 
+        [SerializeField]
+        private UpdateResourceForm m_UpdateResourceFormTemplate = null;
+
         private BuildInfo m_BuildInfo = null;
 
         public BuildInfo BuildInfo
@@ -26,6 +29,14 @@ namespace StarForce
             get
             {
                 return m_BuildInfo;
+            }
+        }
+
+        public UpdateResourceForm UpdateResourceFormTemplate
+        {
+            get
+            {
+                return m_UpdateResourceFormTemplate;
             }
         }
 

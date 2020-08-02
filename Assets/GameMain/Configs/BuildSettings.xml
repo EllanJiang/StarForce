@@ -2,7 +2,7 @@
 <UnityGameFramework>
   <BuildSettings>
     <DefaultScenes>
-      <DefaultScene Name="Assets/GameFramework.unity" />
+      <DefaultScene Name="Assets/StarForce Launcher.unity" />
     </DefaultScenes>
     <SearchScenePaths>
       <SearchScenePath Path="Assets" />

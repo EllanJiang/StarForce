@@ -70,10 +70,6 @@ namespace StarForce
             }
 
             s_MainFont = mainFont;
-
-            GameObject go = new GameObject();
-            go.AddComponent<Text>().font = mainFont;
-            Destroy(go);
         }
 
 #if UNITY_2017_3_OR_NEWER

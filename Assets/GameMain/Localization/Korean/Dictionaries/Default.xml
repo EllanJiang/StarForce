@@ -3,7 +3,7 @@
   <Dictionary Language="Korean">
     <String Key="Game.Name" Value="게임 프레임워크" />
     <String Key="Game.Description" Value="Game Framework 데모 프로그램" />
-    <String Key="Game.Website" Value="http://GameFramework.cn/" />
+    <String Key="Game.Website" Value="https://GameFramework.cn/" />
     <String Key="Game.Summary" Value="이 데모는 Game Framework 게임 시스템을 사용하여 만든 게임 데모 입니다.게임 시스템의 사용방법을 설명해 드리기 위해 예를 들어 만든 데모이기에 사용방법을 참조해 주시길 바랍니다." />
     <String Key="Game.Introduction" Value="Game Framework 는 유니티 엔진 Unity 버전을 이용한 게임 시스템 입니다. 주로 게임 개발과정에서 자주 사용하는 모듈을 캡슐화 하여 개발 과정을 규범화 하고 개발 속도를 높이며 게임의 콜리티를 보장해 드릴 수 있습니다." />
     <String Key="Menu.StartButton" Value="시작" />

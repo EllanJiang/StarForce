@@ -27,13 +27,19 @@ namespace StarForce
             set;
         }
 
-        public string StandaloneAppUrl
+        public string WindowsAppUrl
         {
             get;
             set;
         }
 
-        public string IosAppUrl
+        public string MacOSAppUrl
+        {
+            get;
+            set;
+        }
+
+        public string IOSAppUrl
         {
             get;
             set;

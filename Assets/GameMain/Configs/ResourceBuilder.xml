@@ -13,8 +13,8 @@
       <AppendHashToAssetBundleNameSelected>False</AppendHashToAssetBundleNameSelected>
       <ChunkBasedCompressionSelected>True</ChunkBasedCompressionSelected>
       <OutputPackageSelected>True</OutputPackageSelected>
-      <OutputFullSelected>False</OutputFullSelected>
-      <OutputPackedSelected>False</OutputPackedSelected>
+      <OutputFullSelected>True</OutputFullSelected>
+      <OutputPackedSelected>True</OutputPackedSelected>
       <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
       <OutputDirectory></OutputDirectory>
     </Settings>

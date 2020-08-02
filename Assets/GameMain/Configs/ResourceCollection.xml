@@ -37,7 +37,6 @@
       <Asset Guid="0f995b3145e0e7247a42da6cef1dbf23" ResourceName="Materials" />
       <Asset Guid="1053b0070685be347ab58587156842dc" ResourceName="Localization/Dictionaries" ResourceVariant="zh-tw" />
       <Asset Guid="11e27c26ac87b40f0a62ec40d7261989" ResourceName="Entities" />
-      <Asset Guid="134bea3a47cb3d644bf8e8a89e48622c" ResourceName="DataTables" />
       <Asset Guid="1478894bc9a1ed241b05b0862a7b8bce" ResourceName="Textures" />
       <Asset Guid="14869ac0d4433f04db1704e39d03412e" ResourceName="Localization/Dictionaries" ResourceVariant="en-us" />
       <Asset Guid="156d241f796508c4da4fc354a7fbf5a8" ResourceName="UI/UISprites/Common" />
@@ -52,7 +51,6 @@
       <Asset Guid="236433a27ce40a7429b87d14d8fa3035" ResourceName="UI/UISprites/Common" />
       <Asset Guid="239366f83979ffa48a45dac2f0f1e8cb" ResourceName="DataTables" />
       <Asset Guid="24ca310f92a6796408f1db7647ec4e55" ResourceName="UI/UISprites/Common" />
-      <Asset Guid="2630c0a31d19991438f440dcf91ac8ee" ResourceName="DataTables" />
       <Asset Guid="2768a9a4c8d289840918dcb879705893" ResourceName="Meshes" />
       <Asset Guid="2cb5eef4d7d7bf6459dd13a3f8d90246" ResourceName="Textures" />
       <Asset Guid="315e8ed2db27c254cb3366ff0793cd90" ResourceName="DataTables" />

@@ -3,7 +3,7 @@
   <Dictionary Language="ChineseSimplified">
     <String Key="Game.Name" Value="星际力量" />
     <String Key="Game.Description" Value="Game Framework 演示程序" />
-    <String Key="Game.Website" Value="http://GameFramework.cn/" />
+    <String Key="Game.Website" Value="https://GameFramework.cn/" />
     <String Key="Game.Summary" Value="这是一个使用 Game Framework 游戏框架制作的游戏演示项目，目的是对此游戏框架的使用方法做一些示范，供使用者参考。" />
     <String Key="Game.Introduction" Value="Game Framework 是基于 Unity 引擎的游戏框架，主要对游戏开发过程中常用模块进行了封装，很大程度地规范开发过程、加快开发速度并保证产品质量。" />
     <String Key="Menu.StartButton" Value="开始" />

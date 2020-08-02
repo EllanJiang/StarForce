@@ -52,7 +52,7 @@ namespace StarForce
             base.OnEnter(procedureOwner);
 
             m_GotoMenu = false;
-            GameMode gameMode = (GameMode)procedureOwner.GetData<VarInt>(Constant.ProcedureData.GameMode).Value;
+            GameMode gameMode = (GameMode)procedureOwner.GetData<VarByte>("GameMode").Value;
             m_CurrentGame = m_Games[gameMode];
             m_CurrentGame.Initialize();
         }
@@ -87,7 +87,7 @@ namespace StarForce
             m_GotoMenuDelaySeconds += elapseSeconds;
             if (m_GotoMenuDelaySeconds >= GameOverDelayedSeconds)
             {
-                procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, GameEntry.Config.GetInt("Scene.Menu"));
+                procedureOwner.SetData<VarInt>("NextSceneId", GameEntry.Config.GetInt("Scene.Menu"));
                 ChangeState<ProcedureChangeScene>(procedureOwner);
             }
         }

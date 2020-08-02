@@ -19,8 +19,6 @@ namespace StarForce
     {
         public static readonly string[] DataTableNames = new string[]
         {
-            "Test", // 这是个测试资源，并没有使用
-
             "Aircraft",
             "Armor",
             "Asteroid",
@@ -84,7 +82,7 @@ namespace StarForce
                 }
             }
 
-            procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, GameEntry.Config.GetInt("Scene.Menu"));
+            procedureOwner.SetData<VarInt>("NextSceneId", GameEntry.Config.GetInt("Scene.Menu"));
             ChangeState<ProcedureChangeScene>(procedureOwner);
         }
 

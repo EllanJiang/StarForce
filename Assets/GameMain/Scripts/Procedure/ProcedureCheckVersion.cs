@@ -7,6 +7,7 @@
 
 using GameFramework;
 using GameFramework.Event;
+using GameFramework.Resource;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
@@ -15,7 +16,9 @@ namespace StarForce
 {
     public class ProcedureCheckVersion : ProcedureBase
     {
-        private bool m_InitResourcesComplete = false;
+        private bool m_CheckVersionComplete = false;
+        private bool m_NeedUpdateVersion = false;
+        private VersionInfo m_VersionInfo = null;
 
         public override bool UseNativeDialog
         {
@@ -29,12 +32,15 @@ namespace StarForce
         {
             base.OnEnter(procedureOwner);
 
-            m_InitResourcesComplete = false;
+            m_CheckVersionComplete = false;
+            m_NeedUpdateVersion = false;
+            m_VersionInfo = null;
 
             GameEntry.Event.Subscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Subscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
 
-            RequestVersion();
+            // 向服务器请求版本信息
+            GameEntry.WebRequest.AddWebRequest(Utility.Text.Format(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, GetPlatformPath()), this);
         }
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
@@ -49,69 +55,41 @@ namespace StarForce
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-            if (!m_InitResourcesComplete)
+            if (!m_CheckVersionComplete)
             {
                 return;
             }
 
-            ChangeState<ProcedurePreload>(procedureOwner);
+            if (m_NeedUpdateVersion)
+            {
+                procedureOwner.SetData<VarInt>("VersionListLength", m_VersionInfo.VersionListLength);
+                procedureOwner.SetData<VarInt>("VersionListHashCode", m_VersionInfo.VersionListHashCode);
+                procedureOwner.SetData<VarInt>("VersionListZipLength", m_VersionInfo.VersionListZipLength);
+                procedureOwner.SetData<VarInt>("VersionListZipHashCode", m_VersionInfo.VersionListZipHashCode);
+                ChangeState<ProcedureUpdateVersion>(procedureOwner);
+            }
+            else
+            {
+                ChangeState<ProcedureCheckResources>(procedureOwner);
+            }
         }
 
-        private void RequestVersion()
+        private void GotoUpdateApp(object userData)
         {
-            string deviceId = SystemInfo.deviceUniqueIdentifier;
-            string deviceName = SystemInfo.deviceName;
-            string deviceModel = SystemInfo.deviceModel;
-            string processorType = SystemInfo.processorType;
-            string processorCount = SystemInfo.processorCount.ToString();
-            string memorySize = SystemInfo.systemMemorySize.ToString();
-            string operatingSystem = SystemInfo.operatingSystem;
-            string iOSGeneration = string.Empty;
-            string iOSSystemVersion = string.Empty;
-            string iOSVendorIdentifier = string.Empty;
-#if UNITY_IOS && !UNITY_EDITOR
-            iOSGeneration = UnityEngine.iOS.Device.generation.ToString();
-            iOSSystemVersion = UnityEngine.iOS.Device.systemVersion;
-            iOSVendorIdentifier = UnityEngine.iOS.Device.vendorIdentifier ?? string.Empty;
+            string url = null;
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+            url = GameEntry.BuiltinData.BuildInfo.WindowsAppUrl;
+#elif UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
+            url = GameEntry.BuiltinData.BuildInfo.MacOSAppUrl;
+#elif UNITY_IOS
+            url = GameEntry.BuiltinData.BuildInfo.IOSAppUrl;
+#elif UNITY_ANDROID
+            url = GameEntry.BuiltinData.BuildInfo.AndroidAppUrl;
 #endif
-            string gameVersion = Version.GameVersion;
-            string platform = Application.platform.ToString();
-            string language = GameEntry.Localization.Language.ToString();
-            string unityVersion = Application.unityVersion;
-            string installMode = Application.installMode.ToString();
-            string sandboxType = Application.sandboxType.ToString();
-            string screenWidth = Screen.width.ToString();
-            string screenHeight = Screen.height.ToString();
-            string screenDpi = Screen.dpi.ToString();
-            string screenOrientation = Screen.orientation.ToString();
-            string screenResolution = Utility.Text.Format("{0} x {1} @ {2}Hz", Screen.currentResolution.width.ToString(), Screen.currentResolution.height.ToString(), Screen.currentResolution.refreshRate.ToString());
-            string useWifi = (Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork).ToString();
-
-            WWWForm wwwForm = new WWWForm();
-            wwwForm.AddField("DeviceId", WebUtility.EscapeString(deviceId));
-            wwwForm.AddField("DeviceName", WebUtility.EscapeString(deviceName));
-            wwwForm.AddField("DeviceModel", WebUtility.EscapeString(deviceModel));
-            wwwForm.AddField("ProcessorType", WebUtility.EscapeString(processorType));
-            wwwForm.AddField("ProcessorCount", WebUtility.EscapeString(processorCount));
-            wwwForm.AddField("MemorySize", WebUtility.EscapeString(memorySize));
-            wwwForm.AddField("OperatingSystem", WebUtility.EscapeString(operatingSystem));
-            wwwForm.AddField("IOSGeneration", WebUtility.EscapeString(iOSGeneration));
-            wwwForm.AddField("IOSSystemVersion", WebUtility.EscapeString(iOSSystemVersion));
-            wwwForm.AddField("IOSVendorIdentifier", WebUtility.EscapeString(iOSVendorIdentifier));
-            wwwForm.AddField("GameVersion", WebUtility.EscapeString(gameVersion));
-            wwwForm.AddField("Platform", WebUtility.EscapeString(platform));
-            wwwForm.AddField("Language", WebUtility.EscapeString(language));
-            wwwForm.AddField("UnityVersion", WebUtility.EscapeString(unityVersion));
-            wwwForm.AddField("InstallMode", WebUtility.EscapeString(installMode));
-            wwwForm.AddField("SandboxType", WebUtility.EscapeString(sandboxType));
-            wwwForm.AddField("ScreenWidth", WebUtility.EscapeString(screenWidth));
-            wwwForm.AddField("ScreenHeight", WebUtility.EscapeString(screenHeight));
-            wwwForm.AddField("ScreenDPI", WebUtility.EscapeString(screenDpi));
-            wwwForm.AddField("ScreenOrientation", WebUtility.EscapeString(screenOrientation));
-            wwwForm.AddField("ScreenResolution", WebUtility.EscapeString(screenResolution));
-            wwwForm.AddField("UseWifi", WebUtility.EscapeString(useWifi));
-
-            GameEntry.WebRequest.AddWebRequest(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, wwwForm, this);
+            if (!string.IsNullOrEmpty(url))
+            {
+                Application.OpenURL(url);
+            }
         }
 
         private void OnWebRequestSuccess(object sender, GameEventArgs e)
@@ -122,25 +100,27 @@ namespace StarForce
                 return;
             }
 
-            string responseJson = Utility.Converter.GetString(ne.GetWebResponseBytes());
-            VersionInfo versionInfo = Utility.Json.ToObject<VersionInfo>(responseJson);
-            if (versionInfo == null)
+            // 解析版本信息
+            byte[] versionInfoBytes = ne.GetWebResponseBytes();
+            m_VersionInfo = Utility.Json.ToObject<VersionInfo>(versionInfoBytes);
+            if (m_VersionInfo == null)
             {
                 Log.Error("Parse VersionInfo failure.");
                 return;
             }
 
-            Log.Info("Latest game version is '{0}', local game version is '{1}'.", versionInfo.LatestGameVersion, Version.GameVersion);
+            Log.Info("Latest game version is '{0} ({1})', local game version is '{2} ({3})'.", m_VersionInfo.LatestGameVersion, m_VersionInfo.InternalGameVersion.ToString(), Version.GameVersion, Version.InternalGameVersion.ToString());
 
-            if (versionInfo.ForceGameUpdate)
+            if (m_VersionInfo.ForceUpdateGame)
             {
+                // 需要强制更新游戏应用
                 GameEntry.UI.OpenDialog(new DialogParams
                 {
                     Mode = 2,
                     Title = GameEntry.Localization.GetString("ForceUpdate.Title"),
                     Message = GameEntry.Localization.GetString("ForceUpdate.Message"),
                     ConfirmText = GameEntry.Localization.GetString("ForceUpdate.UpdateButton"),
-                    OnClickConfirm = delegate (object userData) { Application.OpenURL(versionInfo.GameUpdateUrl); },
+                    OnClickConfirm = GotoUpdateApp,
                     CancelText = GameEntry.Localization.GetString("ForceUpdate.QuitButton"),
                     OnClickCancel = delegate (object userData) { UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit); },
                 });
@@ -148,7 +128,11 @@ namespace StarForce
                 return;
             }
 
-            GameEntry.Resource.InitResources(OnInitResourcesComplete);
+            // 设置资源更新下载地址
+            GameEntry.Resource.UpdatePrefixUri = Utility.Path.GetRegularPath(m_VersionInfo.UpdatePrefixUri);
+
+            m_CheckVersionComplete = true;
+            m_NeedUpdateVersion = GameEntry.Resource.CheckVersionList(m_VersionInfo.InternalResourceVersion) == CheckVersionListResult.NeedUpdate;
         }
 
         private void OnWebRequestFailure(object sender, GameEventArgs e)
@@ -159,16 +143,30 @@ namespace StarForce
                 return;
             }
 
-            Log.Warning("Check version failure.");
-
-            GameEntry.Resource.InitResources(OnInitResourcesComplete);
+            Log.Warning("Check version failure, error message is '{0}'.", ne.ErrorMessage);
         }
 
-        private void OnInitResourcesComplete()
+        private string GetPlatformPath()
         {
-            m_InitResourcesComplete = true;
+            switch (Application.platform)
+            {
+                case RuntimePlatform.WindowsEditor:
+                case RuntimePlatform.WindowsPlayer:
+                    return "Windows";
 
-            Log.Info("Init resources complete.");
+                case RuntimePlatform.OSXEditor:
+                case RuntimePlatform.OSXPlayer:
+                    return "MacOS";
+
+                case RuntimePlatform.IPhonePlayer:
+                    return "IOS";
+
+                case RuntimePlatform.Android:
+                    return "Android";
+
+                default:
+                    throw new System.NotSupportedException(Utility.Text.Format("Platform '{0}' is not supported.", Application.platform.ToString()));
+            }
         }
     }
 }
