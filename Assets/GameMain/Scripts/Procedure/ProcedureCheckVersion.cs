@@ -102,7 +102,8 @@ namespace StarForce
 
             // 解析版本信息
             byte[] versionInfoBytes = ne.GetWebResponseBytes();
-            m_VersionInfo = Utility.Json.ToObject<VersionInfo>(versionInfoBytes);
+            string versionInfoString = Utility.Converter.GetString(versionInfoBytes);
+            m_VersionInfo = Utility.Json.ToObject<VersionInfo>(versionInfoString);
             if (m_VersionInfo == null)
             {
                 Log.Error("Parse VersionInfo failure.");
