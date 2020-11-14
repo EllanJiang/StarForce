@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.jiangyin.gameframework": "https://github.com/EllanJiang/UnityGameFramework.git",
     "com.unity.package-manager-ui": "2.0.13",
     "com.unity.ugui": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
