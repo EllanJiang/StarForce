@@ -57,7 +57,7 @@ namespace StarForce
             // 还原游戏速度
             GameEntry.Base.ResetNormalGameSpeed();
 
-            int sceneId = procedureOwner.GetData<VarInt>("NextSceneId");
+            int sceneId = procedureOwner.GetData<VarInt32>("NextSceneId");
             m_ChangeToMenu = sceneId == MenuSceneId;
             IDataTable<DRScene> dtScene = GameEntry.DataTable.GetDataTable<DRScene>();
             DRScene drScene = dtScene.GetDataRow(sceneId);
