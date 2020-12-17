@@ -5,8 +5,11 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System.Runtime.InteropServices;
+
 namespace StarForce
 {
+    [StructLayout(LayoutKind.Auto)]
     public struct ImpactData
     {
         private readonly CampType m_Camp;

@@ -7,6 +7,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -185,6 +186,7 @@ namespace StarForce
             return attack * attack / (attack + defense);
         }
 
+        [StructLayout(LayoutKind.Auto)]
         private struct CampPair
         {
             private readonly CampType m_First;
