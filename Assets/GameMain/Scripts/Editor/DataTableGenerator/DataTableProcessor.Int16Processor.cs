@@ -11,7 +11,7 @@ namespace StarForce.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {
-        private sealed class ShortProcessor : GenericDataProcessor<short>
+        private sealed class Int16Processor : GenericDataProcessor<short>
         {
             public override bool IsSystem
             {

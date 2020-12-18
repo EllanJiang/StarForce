@@ -11,7 +11,7 @@ namespace StarForce.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {
-        private sealed class IntProcessor : GenericDataProcessor<int>
+        private sealed class Int64Processor : GenericDataProcessor<long>
         {
             public override bool IsSystem
             {
@@ -25,7 +25,7 @@ namespace StarForce.Editor.DataTableTools
             {
                 get
                 {
-                    return "int";
+                    return "long";
                 }
             }
 
@@ -33,20 +33,20 @@ namespace StarForce.Editor.DataTableTools
             {
                 return new string[]
                 {
-                    "int",
-                    "int32",
-                    "system.int32"
+                    "long",
+                    "int64",
+                    "system.int64"
                 };
             }
 
-            public override int Parse(string value)
+            public override long Parse(string value)
             {
-                return int.Parse(value);
+                return long.Parse(value);
             }
 
             public override void WriteToStream(DataTableProcessor dataTableProcessor, BinaryWriter binaryWriter, string value)
             {
-                binaryWriter.Write7BitEncodedInt32(Parse(value));
+                binaryWriter.Write7BitEncodedInt64(Parse(value));
             }
         }
     }

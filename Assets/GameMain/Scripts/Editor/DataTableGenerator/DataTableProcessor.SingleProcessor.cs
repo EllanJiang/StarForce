@@ -11,7 +11,7 @@ namespace StarForce.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {
-        private sealed class UIntProcessor : GenericDataProcessor<uint>
+        private sealed class SingleProcessor : GenericDataProcessor<float>
         {
             public override bool IsSystem
             {
@@ -25,7 +25,7 @@ namespace StarForce.Editor.DataTableTools
             {
                 get
                 {
-                    return "uint";
+                    return "float";
                 }
             }
 
@@ -33,20 +33,20 @@ namespace StarForce.Editor.DataTableTools
             {
                 return new string[]
                 {
-                    "uint",
-                    "uint32",
-                    "system.uint32"
+                    "float",
+                    "single",
+                    "system.single"
                 };
             }
 
-            public override uint Parse(string value)
+            public override float Parse(string value)
             {
-                return uint.Parse(value);
+                return float.Parse(value);
             }
 
             public override void WriteToStream(DataTableProcessor dataTableProcessor, BinaryWriter binaryWriter, string value)
             {
-                binaryWriter.Write7BitEncodedUInt32(Parse(value));
+                binaryWriter.Write(Parse(value));
             }
         }
     }

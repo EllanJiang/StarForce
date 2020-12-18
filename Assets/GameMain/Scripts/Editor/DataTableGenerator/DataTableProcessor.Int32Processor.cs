@@ -11,7 +11,7 @@ namespace StarForce.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {
-        private sealed class BoolProcessor : GenericDataProcessor<bool>
+        private sealed class Int32Processor : GenericDataProcessor<int>
         {
             public override bool IsSystem
             {
@@ -25,7 +25,7 @@ namespace StarForce.Editor.DataTableTools
             {
                 get
                 {
-                    return "bool";
+                    return "int";
                 }
             }
 
@@ -33,20 +33,20 @@ namespace StarForce.Editor.DataTableTools
             {
                 return new string[]
                 {
-                    "bool",
-                    "boolean",
-                    "system.boolean"
+                    "int",
+                    "int32",
+                    "system.int32"
                 };
             }
 
-            public override bool Parse(string value)
+            public override int Parse(string value)
             {
-                return bool.Parse(value);
+                return int.Parse(value);
             }
 
             public override void WriteToStream(DataTableProcessor dataTableProcessor, BinaryWriter binaryWriter, string value)
             {
-                binaryWriter.Write(Parse(value));
+                binaryWriter.Write7BitEncodedInt32(Parse(value));
             }
         }
     }
