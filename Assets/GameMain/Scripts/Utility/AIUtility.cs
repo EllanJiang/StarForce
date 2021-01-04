@@ -1,12 +1,13 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2020 Jiang Yin. All rights reserved.
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -185,6 +186,7 @@ namespace StarForce
             return attack * attack / (attack + defense);
         }
 
+        [StructLayout(LayoutKind.Auto)]
         private struct CampPair
         {
             private readonly CampType m_First;

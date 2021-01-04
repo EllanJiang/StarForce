@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2020 Jiang Yin. All rights reserved.
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
@@ -37,7 +37,7 @@ namespace StarForce
 
             m_UpdateVersionComplete = false;
 
-            GameEntry.Resource.UpdateVersionList(procedureOwner.GetData<VarInt>("VersionListLength"), procedureOwner.GetData<VarInt>("VersionListHashCode"), procedureOwner.GetData<VarInt>("VersionListZipLength"), procedureOwner.GetData<VarInt>("VersionListZipHashCode"), m_UpdateVersionListCallbacks);
+            GameEntry.Resource.UpdateVersionList(procedureOwner.GetData<VarInt32>("VersionListLength"), procedureOwner.GetData<VarInt32>("VersionListHashCode"), procedureOwner.GetData<VarInt32>("VersionListZipLength"), procedureOwner.GetData<VarInt32>("VersionListZipHashCode"), m_UpdateVersionListCallbacks);
             procedureOwner.RemoveData("VersionListLength");
             procedureOwner.RemoveData("VersionListHashCode");
             procedureOwner.RemoveData("VersionListZipLength");

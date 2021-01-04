@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2020 Jiang Yin. All rights reserved.
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
@@ -11,7 +11,7 @@ namespace StarForce.Editor.DataTableTools
 {
     public sealed partial class DataTableProcessor
     {
-        private sealed class FloatProcessor : GenericDataProcessor<float>
+        private sealed class Int64Processor : GenericDataProcessor<long>
         {
             public override bool IsSystem
             {
@@ -25,7 +25,7 @@ namespace StarForce.Editor.DataTableTools
             {
                 get
                 {
-                    return "float";
+                    return "long";
                 }
             }
 
@@ -33,20 +33,20 @@ namespace StarForce.Editor.DataTableTools
             {
                 return new string[]
                 {
-                    "float",
-                    "single",
-                    "system.single"
+                    "long",
+                    "int64",
+                    "system.int64"
                 };
             }
 
-            public override float Parse(string value)
+            public override long Parse(string value)
             {
-                return float.Parse(value);
+                return long.Parse(value);
             }
 
             public override void WriteToStream(DataTableProcessor dataTableProcessor, BinaryWriter binaryWriter, string value)
             {
-                binaryWriter.Write(Parse(value));
+                binaryWriter.Write7BitEncodedInt64(Parse(value));
             }
         }
     }

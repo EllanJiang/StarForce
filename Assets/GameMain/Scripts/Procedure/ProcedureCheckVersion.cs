@@ -1,6 +1,6 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2020 Jiang Yin. All rights reserved.
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
@@ -62,10 +62,10 @@ namespace StarForce
 
             if (m_NeedUpdateVersion)
             {
-                procedureOwner.SetData<VarInt>("VersionListLength", m_VersionInfo.VersionListLength);
-                procedureOwner.SetData<VarInt>("VersionListHashCode", m_VersionInfo.VersionListHashCode);
-                procedureOwner.SetData<VarInt>("VersionListZipLength", m_VersionInfo.VersionListZipLength);
-                procedureOwner.SetData<VarInt>("VersionListZipHashCode", m_VersionInfo.VersionListZipHashCode);
+                procedureOwner.SetData<VarInt32>("VersionListLength", m_VersionInfo.VersionListLength);
+                procedureOwner.SetData<VarInt32>("VersionListHashCode", m_VersionInfo.VersionListHashCode);
+                procedureOwner.SetData<VarInt32>("VersionListZipLength", m_VersionInfo.VersionListZipLength);
+                procedureOwner.SetData<VarInt32>("VersionListZipHashCode", m_VersionInfo.VersionListZipHashCode);
                 ChangeState<ProcedureUpdateVersion>(procedureOwner);
             }
             else

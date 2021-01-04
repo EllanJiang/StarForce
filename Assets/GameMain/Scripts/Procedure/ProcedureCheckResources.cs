@@ -41,8 +41,8 @@ namespace StarForce
 
             if (m_NeedUpdateResources)
             {
-                procedureOwner.SetData<VarInt>("UpdateResourceCount", m_UpdateResourceCount);
-                procedureOwner.SetData<VarLong>("UpdateResourceTotalZipLength", m_UpdateResourceTotalZipLength);
+                procedureOwner.SetData<VarInt32>("UpdateResourceCount", m_UpdateResourceCount);
+                procedureOwner.SetData<VarInt64>("UpdateResourceTotalZipLength", m_UpdateResourceTotalZipLength);
                 ChangeState<ProcedureUpdateResources>(procedureOwner);
             }
             else
