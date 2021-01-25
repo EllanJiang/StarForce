@@ -35,7 +35,7 @@ namespace StarForce.Editor.DataTableTools
                         DataProcessor dataProcessor = (DataProcessor)Activator.CreateInstance(types[i]);
                         foreach (string typeString in dataProcessor.GetTypeStrings())
                         {
-                            s_DataProcessors.Add(typeString.ToLower(), dataProcessor);
+                            s_DataProcessors.Add(typeString.ToLowerInvariant(), dataProcessor);
                         }
                     }
                 }
@@ -49,7 +49,7 @@ namespace StarForce.Editor.DataTableTools
                 }
 
                 DataProcessor dataProcessor = null;
-                if (s_DataProcessors.TryGetValue(type.ToLower(), out dataProcessor))
+                if (s_DataProcessors.TryGetValue(type.ToLowerInvariant(), out dataProcessor))
                 {
                     return dataProcessor;
                 }
