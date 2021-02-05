@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 491496597
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e8808efead7e1876d0e5724bd6203259
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8d068741ae817c9b5c92580f37de87e3
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Materials/part_spark_white_mat.mat
+- Assets/GameMain/Materials/part_spark_blue_mat.mat
+- Assets/GameMain/Materials/part_star_mat.mat
+- Assets/GameMain/Materials/prop_asteroid_01_mat.mat
+- Assets/GameMain/Materials/prop_asteroid_03_mat.mat
+- Assets/GameMain/Materials/part_spark_large_mat.mat
+- Assets/GameMain/Materials/done_tile_nebula_green_dff.mat
+- Assets/GameMain/Materials/part_glow_mat.mat
+- Assets/GameMain/Materials/prop_asteroid_02_mat.mat
+- Assets/GameMain/Materials/vehicle_playerShip_metal_mat.mat
+- Assets/GameMain/Materials/vehicle_playerShip_glass_mat.mat
+- Assets/GameMain/Materials/vehicle_enemyShip_glow_mat.mat
+- Assets/GameMain/Materials/done_fx_bolt_cyan_mat.mat
+- Assets/GameMain/Materials/part_shockwave_mat.mat
+- Assets/GameMain/Materials/fx_enemyShip_engines_mat.mat
+- Assets/GameMain/Materials/part_jet_core_mat.mat
+- Assets/GameMain/Materials/done_fx_bolt_orange_mat.mat
+- Assets/GameMain/Materials/vehicle_enemyShip_metal_mat.mat
+- Assets/GameMain/Materials/part_spark_yellow_mat.mat
+- Assets/GameMain/Materials/part_jet_flare_mat.mat
+- Assets/GameMain/Materials/part_blast_mat.mat
+Dependencies:
+- E:/GitHub/Other/StarForce/ABExport/Working/Android/textures

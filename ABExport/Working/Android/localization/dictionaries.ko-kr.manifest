@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3522025092
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a23dfe168dd241357a4e0c4392e8fd78
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Localization/Korean/Dictionaries/Default.xml
+Dependencies: []

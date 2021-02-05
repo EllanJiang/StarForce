@@ -41,6 +41,8 @@ namespace StarForce
 
             // 向服务器请求版本信息
             GameEntry.WebRequest.AddWebRequest(Utility.Text.Format(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, GetPlatformPath()), this);
+
+
         }
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)

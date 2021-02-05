@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 554837112
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8313aed9f2bb1237f73929dde8c056c2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 202c2ec8a0ec5977d299086804c942fb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Entities/EnemyEngine.prefab
+- Assets/GameMain/Entities/EnemyShip.prefab
+- Assets/GameMain/Entities/AsteroidExplosion.prefab
+- Assets/GameMain/Entities/EnemyBolt.prefab
+- Assets/GameMain/Entities/PlayerShip.prefab
+- Assets/GameMain/Entities/EnemyExplosion.prefab
+- Assets/GameMain/Entities/Asteroid02.prefab
+- Assets/GameMain/Entities/PlayerExplosion.prefab
+- Assets/GameMain/Entities/Asteroid01.prefab
+- Assets/GameMain/Entities/PlayerEngine.prefab
+- Assets/GameMain/Entities/PlayerBolt.prefab
+- Assets/GameMain/Entities/DefaultWeapon.prefab
+- Assets/GameMain/Entities/Asteroid03.prefab
+- Assets/GameMain/Entities/DefaultArmor.prefab
+Dependencies:
+- E:/GitHub/Other/StarForce/ABExport/Working/Android/materials
+- E:/GitHub/Other/StarForce/ABExport/Working/Android/meshes

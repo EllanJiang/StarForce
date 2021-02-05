@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 3806426671
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d3aeccea8709c98bd65734224b87bb4c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/DataTables/Entity.bytes
+- Assets/GameMain/DataTables/Scene.bytes
+- Assets/GameMain/DataTables/UISound.txt
+- Assets/GameMain/DataTables/Scene.txt
+- Assets/GameMain/DataTables/Sound.bytes
+- Assets/GameMain/DataTables/Aircraft.txt
+- Assets/GameMain/DataTables/UIForm.txt
+- Assets/GameMain/DataTables/Music.txt
+- Assets/GameMain/DataTables/Asteroid.txt
+- Assets/GameMain/DataTables/Thruster.txt
+- Assets/GameMain/DataTables/Entity.txt
+- Assets/GameMain/DataTables/Armor.txt
+- Assets/GameMain/DataTables/Aircraft.bytes
+- Assets/GameMain/DataTables/Armor.bytes
+- Assets/GameMain/DataTables/Asteroid.bytes
+- Assets/GameMain/DataTables/Thruster.bytes
+- Assets/GameMain/DataTables/Weapon.txt
+- Assets/GameMain/DataTables/Music.bytes
+- Assets/GameMain/DataTables/Weapon.bytes
+- Assets/GameMain/DataTables/UISound.bytes
+- Assets/GameMain/DataTables/Sound.txt
+- Assets/GameMain/DataTables/UIForm.bytes
+Dependencies: []

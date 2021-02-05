@@ -1,0 +1,74 @@
+ManifestFileVersion: 0
+CRC: 2902631983
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: configs
+      Dependencies: {}
+    Info_1:
+      Name: datatables
+      Dependencies: {}
+    Info_2:
+      Name: entities
+      Dependencies:
+        Dependency_0: materials
+        Dependency_1: meshes
+    Info_3:
+      Name: fonts
+      Dependencies: {}
+    Info_4:
+      Name: localization/dictionaries.en-us
+      Dependencies: {}
+    Info_5:
+      Name: localization/dictionaries.ko-kr
+      Dependencies: {}
+    Info_6:
+      Name: localization/dictionaries.zh-cn
+      Dependencies: {}
+    Info_7:
+      Name: localization/dictionaries.zh-tw
+      Dependencies: {}
+    Info_8:
+      Name: materials
+      Dependencies:
+        Dependency_0: textures
+    Info_9:
+      Name: meshes
+      Dependencies: {}
+    Info_10:
+      Name: music/about
+      Dependencies: {}
+    Info_11:
+      Name: music/background
+      Dependencies: {}
+    Info_12:
+      Name: music/menu
+      Dependencies: {}
+    Info_13:
+      Name: scenes
+      Dependencies:
+        Dependency_0: materials
+    Info_14:
+      Name: sounds
+      Dependencies: {}
+    Info_15:
+      Name: textures
+      Dependencies: {}
+    Info_16:
+      Name: ui/uiforms
+      Dependencies:
+        Dependency_0: ui/uisprites/common
+        Dependency_1: ui/uisprites/icons
+        Dependency_2: ui/uisprites/logos
+    Info_17:
+      Name: ui/uisounds
+      Dependencies: {}
+    Info_18:
+      Name: ui/uisprites/common
+      Dependencies: {}
+    Info_19:
+      Name: ui/uisprites/icons
+      Dependencies: {}
+    Info_20:
+      Name: ui/uisprites/logos
+      Dependencies: {}

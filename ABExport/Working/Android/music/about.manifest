@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4070181666
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9f800f2aca7ce5061ca797ea5e3b2b51
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Music/music_about.mp3
+Dependencies: []
