@@ -37,11 +37,11 @@ namespace StarForce
 
             m_UpdateVersionComplete = false;
 
-            GameEntry.Resource.UpdateVersionList(procedureOwner.GetData<VarInt32>("VersionListLength"), procedureOwner.GetData<VarInt32>("VersionListHashCode"), procedureOwner.GetData<VarInt32>("VersionListZipLength"), procedureOwner.GetData<VarInt32>("VersionListZipHashCode"), m_UpdateVersionListCallbacks);
+            GameEntry.Resource.UpdateVersionList(procedureOwner.GetData<VarInt32>("VersionListLength"), procedureOwner.GetData<VarInt32>("VersionListHashCode"), procedureOwner.GetData<VarInt32>("VersionListCompressedLength"), procedureOwner.GetData<VarInt32>("VersionListCompressedHashCode"), m_UpdateVersionListCallbacks);
             procedureOwner.RemoveData("VersionListLength");
             procedureOwner.RemoveData("VersionListHashCode");
-            procedureOwner.RemoveData("VersionListZipLength");
-            procedureOwner.RemoveData("VersionListZipHashCode");
+            procedureOwner.RemoveData("VersionListCompressedLength");
+            procedureOwner.RemoveData("VersionListCompressedHashCode");
         }
 
         protected override void OnUpdate(ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)

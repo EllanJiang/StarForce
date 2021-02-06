@@ -8,7 +8,7 @@ namespace StarForce
         private bool m_CheckResourcesComplete = false;
         private bool m_NeedUpdateResources = false;
         private int m_UpdateResourceCount = 0;
-        private long m_UpdateResourceTotalZipLength = 0L;
+        private long m_UpdateResourceTotalCompressedLength = 0L;
 
         public override bool UseNativeDialog
         {
@@ -25,7 +25,7 @@ namespace StarForce
             m_CheckResourcesComplete = false;
             m_NeedUpdateResources = false;
             m_UpdateResourceCount = 0;
-            m_UpdateResourceTotalZipLength = 0L;
+            m_UpdateResourceTotalCompressedLength = 0L;
 
             GameEntry.Resource.CheckResources(OnCheckResourcesComplete);
         }
@@ -42,7 +42,7 @@ namespace StarForce
             if (m_NeedUpdateResources)
             {
                 procedureOwner.SetData<VarInt32>("UpdateResourceCount", m_UpdateResourceCount);
-                procedureOwner.SetData<VarInt64>("UpdateResourceTotalZipLength", m_UpdateResourceTotalZipLength);
+                procedureOwner.SetData<VarInt64>("UpdateResourceTotalCompressedLength", m_UpdateResourceTotalCompressedLength);
                 ChangeState<ProcedureUpdateResources>(procedureOwner);
             }
             else
@@ -51,13 +51,13 @@ namespace StarForce
             }
         }
 
-        private void OnCheckResourcesComplete(int movedCount, int removedCount, int updateCount, long updateTotalLength, long updateTotalZipLength)
+        private void OnCheckResourcesComplete(int movedCount, int removedCount, int updateCount, long updateTotalLength, long updateTotalCompressedLength)
         {
             m_CheckResourcesComplete = true;
             m_NeedUpdateResources = updateCount > 0;
             m_UpdateResourceCount = updateCount;
-            m_UpdateResourceTotalZipLength = updateTotalZipLength;
-            Log.Info("Check resources complete, '{0}' resources need to update, zip length is '{1}', unzip length is '{2}'.", updateCount.ToString(), updateTotalZipLength.ToString(), updateTotalLength.ToString());
+            m_UpdateResourceTotalCompressedLength = updateTotalCompressedLength;
+            Log.Info("Check resources complete, '{0}' resources need to update, compressed length is '{1}', uncompressed length is '{2}'.", updateCount.ToString(), updateTotalCompressedLength.ToString(), updateTotalLength.ToString());
         }
     }
 }

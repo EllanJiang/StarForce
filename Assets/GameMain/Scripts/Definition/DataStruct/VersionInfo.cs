@@ -59,14 +59,14 @@ namespace StarForce
         }
 
         // 资源版本列表压缩后长度
-        public int VersionListZipLength
+        public int VersionListCompressedLength
         {
             get;
             set;
         }
 
         // 资源版本列表压缩后哈希值
-        public int VersionListZipHashCode
+        public int VersionListCompressedHashCode
         {
             get;
             set;

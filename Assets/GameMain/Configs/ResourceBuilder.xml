@@ -4,19 +4,15 @@
     <Settings>
       <InternalResourceVersion>0</InternalResourceVersion>
       <Platforms>1</Platforms>
-      <ZipSelected>True</ZipSelected>
-      <UncompressedAssetBundleSelected>False</UncompressedAssetBundleSelected>
-      <DisableWriteTypeTreeSelected>False</DisableWriteTypeTreeSelected>
-      <DeterministicAssetBundleSelected>True</DeterministicAssetBundleSelected>
+      <AssetBundleCompression>1</AssetBundleCompression>
+      <CompressionHelperTypeName>UnityGameFramework.Runtime.DefaultCompressionHelper</CompressionHelperTypeName>
+      <AdditionalCompressionSelected>True</AdditionalCompressionSelected>
       <ForceRebuildAssetBundleSelected>False</ForceRebuildAssetBundleSelected>
-      <IgnoreTypeTreeChangesSelected>False</IgnoreTypeTreeChangesSelected>
-      <AppendHashToAssetBundleNameSelected>False</AppendHashToAssetBundleNameSelected>
-      <ChunkBasedCompressionSelected>True</ChunkBasedCompressionSelected>
+      <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
+      <OutputDirectory></OutputDirectory>
       <OutputPackageSelected>True</OutputPackageSelected>
       <OutputFullSelected>True</OutputFullSelected>
       <OutputPackedSelected>True</OutputPackedSelected>
-      <BuildEventHandlerTypeName>StarForce.Editor.StarForceBuildEventHandler</BuildEventHandlerTypeName>
-      <OutputDirectory></OutputDirectory>
     </Settings>
   </ResourceBuilder>
 </UnityGameFramework>

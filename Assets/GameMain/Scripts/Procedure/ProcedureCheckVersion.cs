@@ -64,8 +64,8 @@ namespace StarForce
             {
                 procedureOwner.SetData<VarInt32>("VersionListLength", m_VersionInfo.VersionListLength);
                 procedureOwner.SetData<VarInt32>("VersionListHashCode", m_VersionInfo.VersionListHashCode);
-                procedureOwner.SetData<VarInt32>("VersionListZipLength", m_VersionInfo.VersionListZipLength);
-                procedureOwner.SetData<VarInt32>("VersionListZipHashCode", m_VersionInfo.VersionListZipHashCode);
+                procedureOwner.SetData<VarInt32>("VersionListCompressedLength", m_VersionInfo.VersionListCompressedLength);
+                procedureOwner.SetData<VarInt32>("VersionListCompressedHashCode", m_VersionInfo.VersionListCompressedHashCode);
                 ChangeState<ProcedureUpdateVersion>(procedureOwner);
             }
             else

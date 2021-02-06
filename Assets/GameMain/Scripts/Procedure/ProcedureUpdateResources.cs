@@ -11,7 +11,7 @@ namespace StarForce
     {
         private bool m_UpdateResourcesComplete = false;
         private int m_UpdateCount = 0;
-        private long m_UpdateTotalZipLength = 0L;
+        private long m_UpdateTotalCompressedLength = 0L;
         private int m_UpdateSuccessCount = 0;
         private List<UpdateLengthData> m_UpdateLengthData = new List<UpdateLengthData>();
         private UpdateResourceForm m_UpdateResourceForm = null;
@@ -31,8 +31,8 @@ namespace StarForce
             m_UpdateResourcesComplete = false;
             m_UpdateCount = procedureOwner.GetData<VarInt32>("UpdateResourceCount");
             procedureOwner.RemoveData("UpdateResourceCount");
-            m_UpdateTotalZipLength = procedureOwner.GetData<VarInt64>("UpdateResourceTotalZipLength");
-            procedureOwner.RemoveData("UpdateResourceTotalZipLength");
+            m_UpdateTotalCompressedLength = procedureOwner.GetData<VarInt64>("UpdateResourceTotalCompressedLength");
+            procedureOwner.RemoveData("UpdateResourceTotalCompressedLength");
             m_UpdateSuccessCount = 0;
             m_UpdateLengthData.Clear();
             m_UpdateResourceForm = null;
@@ -108,8 +108,8 @@ namespace StarForce
                 currentTotalUpdateLength += m_UpdateLengthData[i].Length;
             }
 
-            float progressTotal = (float)currentTotalUpdateLength / m_UpdateTotalZipLength;
-            string descriptionText = GameEntry.Localization.GetString("UpdateResource.Tips", m_UpdateSuccessCount.ToString(), m_UpdateCount.ToString(), GetByteLengthString(currentTotalUpdateLength), GetByteLengthString(m_UpdateTotalZipLength), progressTotal, GetByteLengthString((int)GameEntry.Download.CurrentSpeed));
+            float progressTotal = (float)currentTotalUpdateLength / m_UpdateTotalCompressedLength;
+            string descriptionText = GameEntry.Localization.GetString("UpdateResource.Tips", m_UpdateSuccessCount.ToString(), m_UpdateCount.ToString(), GetByteLengthString(currentTotalUpdateLength), GetByteLengthString(m_UpdateTotalCompressedLength), progressTotal, GetByteLengthString((int)GameEntry.Download.CurrentSpeed));
             m_UpdateResourceForm.SetProgress(progressTotal, descriptionText);
         }
 
@@ -205,7 +205,7 @@ namespace StarForce
             {
                 if (m_UpdateLengthData[i].Name == ne.Name)
                 {
-                    m_UpdateLengthData[i].Length = ne.ZipLength;
+                    m_UpdateLengthData[i].Length = ne.CompressedLength;
                     m_UpdateSuccessCount++;
                     RefreshProgress();
                     return;
