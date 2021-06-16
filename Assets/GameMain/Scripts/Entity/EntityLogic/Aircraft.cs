@@ -44,7 +44,7 @@ namespace StarForce
                 return;
             }
 
-            Name = Utility.Text.Format("Aircraft ({0})", Id.ToString());
+            Name = Utility.Text.Format("Aircraft ({0})", Id);
 
             GameEntry.Entity.ShowThruster(m_AircraftData.GetThrusterData());
 

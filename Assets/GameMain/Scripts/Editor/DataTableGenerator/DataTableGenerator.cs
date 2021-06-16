@@ -300,14 +300,14 @@ namespace StarForce.Editor.DataTableTools
                     .AppendLine("                }")
                     .AppendLine("            }")
                     .AppendLine()
-                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Get{0} with invalid id '{{0}}'.\", id.ToString()));", propertyCollection.Name).AppendLine()
+                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Get{0} with invalid id '{{0}}'.\", id));", propertyCollection.Name).AppendLine()
                     .AppendLine("        }")
                     .AppendLine()
                     .AppendFormat("        public {1} Get{0}At(int index)", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("        {")
                     .AppendFormat("            if (index < 0 || index >= m_{0}.Length)", propertyCollection.Name).AppendLine()
                     .AppendLine("            {")
-                    .AppendFormat("                throw new GameFrameworkException(Utility.Text.Format(\"Get{0}At with invalid index '{{0}}'.\", index.ToString()));", propertyCollection.Name).AppendLine()
+                    .AppendFormat("                throw new GameFrameworkException(Utility.Text.Format(\"Get{0}At with invalid index '{{0}}'.\", index));", propertyCollection.Name).AppendLine()
                     .AppendLine("            }")
                     .AppendLine()
                     .AppendFormat("            return m_{0}[index].Value;", propertyCollection.Name).AppendLine()
@@ -397,7 +397,7 @@ namespace StarForce.Editor.DataTableTools
             {
                 if (index < 0 || index >= m_Items.Count)
                 {
-                    throw new GameFrameworkException(Utility.Text.Format("GetItem with invalid index '{0}'.", index.ToString()));
+                    throw new GameFrameworkException(Utility.Text.Format("GetItem with invalid index '{0}'.", index));
                 }
 
                 return m_Items[index];

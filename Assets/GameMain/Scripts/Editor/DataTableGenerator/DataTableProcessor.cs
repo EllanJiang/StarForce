@@ -71,7 +71,7 @@ namespace StarForce.Editor.DataTableTools
                 }
                 else if (rawValue.Length != rawColumnCount)
                 {
-                    throw new GameFrameworkException(Utility.Text.Format("Data table file '{0}', raw Column is '{2}', but line '{1}' column is '{3}'.", dataTableFileName, i.ToString(), rawColumnCount.ToString(), rawValue.Length.ToString()));
+                    throw new GameFrameworkException(Utility.Text.Format("Data table file '{0}', raw Column is '{2}', but line '{1}' column is '{3}'.", dataTableFileName, i, rawColumnCount, rawValue.Length));
                 }
 
                 rawValues.Add(rawValue);
@@ -81,52 +81,52 @@ namespace StarForce.Editor.DataTableTools
 
             if (nameRow < 0)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Name row '{0}' is invalid.", nameRow.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Name row '{0}' is invalid.", nameRow));
             }
 
             if (typeRow < 0)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Type row '{0}' is invalid.", typeRow.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Type row '{0}' is invalid.", typeRow));
             }
 
             if (contentStartRow < 0)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Content start row '{0}' is invalid.", contentStartRow.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Content start row '{0}' is invalid.", contentStartRow));
             }
 
             if (idColumn < 0)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Id column '{0}' is invalid.", idColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Id column '{0}' is invalid.", idColumn));
             }
 
             if (nameRow >= rawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Name row '{0}' >= raw row count '{1}' is not allow.", nameRow.ToString(), rawRowCount.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Name row '{0}' >= raw row count '{1}' is not allow.", nameRow, rawRowCount));
             }
 
             if (typeRow >= rawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Type row '{0}' >= raw row count '{1}' is not allow.", typeRow.ToString(), rawRowCount.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Type row '{0}' >= raw row count '{1}' is not allow.", typeRow, rawRowCount));
             }
 
             if (defaultValueRow.HasValue && defaultValueRow.Value >= rawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Default value row '{0}' >= raw row count '{1}' is not allow.", defaultValueRow.Value.ToString(), rawRowCount.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Default value row '{0}' >= raw row count '{1}' is not allow.", defaultValueRow.Value, rawRowCount));
             }
 
             if (commentRow.HasValue && commentRow.Value >= rawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Comment row '{0}' >= raw row count '{1}' is not allow.", commentRow.Value.ToString(), rawRowCount.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Comment row '{0}' >= raw row count '{1}' is not allow.", commentRow.Value, rawRowCount));
             }
 
             if (contentStartRow > rawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Content start row '{0}' > raw row count '{1}' is not allow.", contentStartRow.ToString(), rawRowCount.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Content start row '{0}' > raw row count '{1}' is not allow.", contentStartRow, rawRowCount));
             }
 
             if (idColumn >= rawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Id column '{0}' >= raw column count '{1}' is not allow.", idColumn.ToString(), rawColumnCount.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Id column '{0}' >= raw column count '{1}' is not allow.", idColumn, rawColumnCount));
             }
 
             m_NameRow = m_RawValues[nameRow];
@@ -226,7 +226,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_DataProcessor[rawColumn].IsId;
@@ -236,7 +236,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawRow < 0 || rawRow >= RawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw row '{0}' is out of range.", rawRow.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw row '{0}' is out of range.", rawRow));
             }
 
             return GetValue(rawRow, 0).StartsWith(CommentLineSeparator, StringComparison.Ordinal);
@@ -246,7 +246,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return string.IsNullOrEmpty(GetName(rawColumn)) || m_DataProcessor[rawColumn].IsComment;
@@ -256,7 +256,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             if (IsIdColumn(rawColumn))
@@ -271,7 +271,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_DataProcessor[rawColumn].IsSystem;
@@ -281,7 +281,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_DataProcessor[rawColumn].Type;
@@ -291,7 +291,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_DataProcessor[rawColumn].LanguageKeyword;
@@ -301,7 +301,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_DefaultValueRow != null ? m_DefaultValueRow[rawColumn] : null;
@@ -311,7 +311,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_CommentRow != null ? m_CommentRow[rawColumn] : null;
@@ -321,12 +321,12 @@ namespace StarForce.Editor.DataTableTools
         {
             if (rawRow < 0 || rawRow >= RawRowCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw row '{0}' is out of range.", rawRow.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw row '{0}' is out of range.", rawRow));
             }
 
             if (rawColumn < 0 || rawColumn >= RawColumnCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("Raw column '{0}' is out of range.", rawColumn));
             }
 
             return m_RawValues[rawRow][rawColumn];
@@ -336,7 +336,7 @@ namespace StarForce.Editor.DataTableTools
         {
             if (index < 0 || index >= StringCount)
             {
-                throw new GameFrameworkException(Utility.Text.Format("String index '{0}' is out of range.", index.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("String index '{0}' is out of range.", index));
             }
 
             return m_Strings[index];
@@ -387,7 +387,7 @@ namespace StarForce.Editor.DataTableTools
             }
             catch (Exception exception)
             {
-                Debug.LogError(Utility.Text.Format("Parse data table '{0}' failure, exception is '{1}'.", outputFileName, exception.ToString()));
+                Debug.LogError(Utility.Text.Format("Parse data table '{0}' failure, exception is '{1}'.", outputFileName, exception));
                 return false;
             }
         }
@@ -402,7 +402,7 @@ namespace StarForce.Editor.DataTableTools
             }
             catch (Exception exception)
             {
-                Debug.LogError(Utility.Text.Format("Set code template '{0}' failure, exception is '{1}'.", codeTemplateFileName, exception.ToString()));
+                Debug.LogError(Utility.Text.Format("Set code template '{0}' failure, exception is '{1}'.", codeTemplateFileName, exception));
                 return false;
             }
         }
@@ -445,7 +445,7 @@ namespace StarForce.Editor.DataTableTools
             }
             catch (Exception exception)
             {
-                Debug.LogError(Utility.Text.Format("Generate code file '{0}' failure, exception is '{1}'.", outputFileName, exception.ToString()));
+                Debug.LogError(Utility.Text.Format("Generate code file '{0}' failure, exception is '{1}'.", outputFileName, exception));
                 return false;
             }
         }
@@ -471,19 +471,19 @@ namespace StarForce.Editor.DataTableTools
                         {
                             if (m_DataProcessor[rawColumn].IsId || string.IsNullOrEmpty(GetDefaultValue(rawColumn)))
                             {
-                                Debug.LogError(Utility.Text.Format("Parse raw value failure. OutputFileName='{0}' RawRow='{1}' RowColumn='{2}' Name='{3}' Type='{4}' RawValue='{5}'", outputFileName, rawRow.ToString(), rawColumn.ToString(), GetName(rawColumn), GetLanguageKeyword(rawColumn), GetValue(rawRow, rawColumn)));
+                                Debug.LogError(Utility.Text.Format("Parse raw value failure. OutputFileName='{0}' RawRow='{1}' RowColumn='{2}' Name='{3}' Type='{4}' RawValue='{5}'", outputFileName, rawRow, rawColumn, GetName(rawColumn), GetLanguageKeyword(rawColumn), GetValue(rawRow, rawColumn)));
                                 return null;
                             }
                             else
                             {
-                                Debug.LogWarning(Utility.Text.Format("Parse raw value failure, will try default value. OutputFileName='{0}' RawRow='{1}' RowColumn='{2}' Name='{3}' Type='{4}' RawValue='{5}'", outputFileName, rawRow.ToString(), rawColumn.ToString(), GetName(rawColumn), GetLanguageKeyword(rawColumn), GetValue(rawRow, rawColumn)));
+                                Debug.LogWarning(Utility.Text.Format("Parse raw value failure, will try default value. OutputFileName='{0}' RawRow='{1}' RowColumn='{2}' Name='{3}' Type='{4}' RawValue='{5}'", outputFileName, rawRow, rawColumn, GetName(rawColumn), GetLanguageKeyword(rawColumn), GetValue(rawRow, rawColumn)));
                                 try
                                 {
                                     m_DataProcessor[rawColumn].WriteToStream(this, binaryWriter, GetDefaultValue(rawColumn));
                                 }
                                 catch
                                 {
-                                    Debug.LogError(Utility.Text.Format("Parse default value failure. OutputFileName='{0}' RawRow='{1}' RowColumn='{2}' Name='{3}' Type='{4}' RawValue='{5}'", outputFileName, rawRow.ToString(), rawColumn.ToString(), GetName(rawColumn), GetLanguageKeyword(rawColumn), GetComment(rawColumn)));
+                                    Debug.LogError(Utility.Text.Format("Parse default value failure. OutputFileName='{0}' RawRow='{1}' RowColumn='{2}' Name='{3}' Type='{4}' RawValue='{5}'", outputFileName, rawRow, rawColumn, GetName(rawColumn), GetLanguageKeyword(rawColumn), GetComment(rawColumn)));
                                     return null;
                                 }
                             }

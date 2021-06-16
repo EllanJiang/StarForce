@@ -5,7 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2020-07-13 00:03:21.658
+// 生成时间：2021-06-16 21:54:35.517
 //------------------------------------------------------------
 
 using GameFramework;
@@ -186,14 +186,14 @@ namespace StarForce
                 }
             }
 
-            throw new GameFrameworkException(Utility.Text.Format("GetWeaponId with invalid id '{0}'.", id.ToString()));
+            throw new GameFrameworkException(Utility.Text.Format("GetWeaponId with invalid id '{0}'.", id));
         }
 
         public int GetWeaponIdAt(int index)
         {
             if (index < 0 || index >= m_WeaponId.Length)
             {
-                throw new GameFrameworkException(Utility.Text.Format("GetWeaponIdAt with invalid index '{0}'.", index.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("GetWeaponIdAt with invalid index '{0}'.", index));
             }
 
             return m_WeaponId[index].Value;
@@ -219,14 +219,14 @@ namespace StarForce
                 }
             }
 
-            throw new GameFrameworkException(Utility.Text.Format("GetArmorId with invalid id '{0}'.", id.ToString()));
+            throw new GameFrameworkException(Utility.Text.Format("GetArmorId with invalid id '{0}'.", id));
         }
 
         public int GetArmorIdAt(int index)
         {
             if (index < 0 || index >= m_ArmorId.Length)
             {
-                throw new GameFrameworkException(Utility.Text.Format("GetArmorIdAt with invalid index '{0}'.", index.ToString()));
+                throw new GameFrameworkException(Utility.Text.Format("GetArmorIdAt with invalid index '{0}'.", index));
             }
 
             return m_ArmorId[index].Value;

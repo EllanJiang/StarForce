@@ -166,7 +166,7 @@ namespace StarForce
                     return "Android";
 
                 default:
-                    throw new System.NotSupportedException(Utility.Text.Format("Platform '{0}' is not supported.", Application.platform.ToString()));
+                    throw new System.NotSupportedException(Utility.Text.Format("Platform '{0}' is not supported.", Application.platform));
             }
         }
     }
