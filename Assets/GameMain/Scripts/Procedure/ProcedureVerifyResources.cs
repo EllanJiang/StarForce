@@ -52,13 +52,13 @@ namespace StarForce
         private void OnVerifyResourcesComplete(bool result)
         {
             m_VerifyResourcesComplete = true;
-            Log.Info("Verify resource complete.");
+            Log.Info("Verify resources complete, result is '{0}'.", result);
         }
 
         private void OnResourceVerifyStart(object sender, GameEventArgs e)
         {
             ResourceVerifyStartEventArgs ne = (ResourceVerifyStartEventArgs)e;
-            Log.Info("Verify resource start, verify resource count '{0}', verify resource total length '{1}'.", ne.Count, ne.TotalLength);
+            Log.Info("Start verify resources, verify resource count '{0}', verify resource total length '{1}'.", ne.Count, ne.TotalLength);
         }
 
         private void OnResourceVerifySuccess(object sender, GameEventArgs e)
