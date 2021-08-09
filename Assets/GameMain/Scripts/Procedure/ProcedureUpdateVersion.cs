@@ -53,7 +53,7 @@ namespace StarForce
                 return;
             }
 
-            ChangeState<ProcedureCheckResources>(procedureOwner);
+            ChangeState<ProcedureVerifyResources>(procedureOwner);
         }
 
         private void OnUpdateVersionListSuccess(string downloadPath, string downloadUri)

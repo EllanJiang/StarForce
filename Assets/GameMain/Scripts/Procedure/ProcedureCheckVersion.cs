@@ -70,7 +70,7 @@ namespace StarForce
             }
             else
             {
-                ChangeState<ProcedureCheckResources>(procedureOwner);
+                ChangeState<ProcedureVerifyResources>(procedureOwner);
             }
         }
 
