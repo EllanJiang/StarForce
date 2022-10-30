@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework.ObjectPool;
@@ -42,7 +42,6 @@ namespace StarForce
 
         private void OnDestroy()
         {
-
         }
 
         private void Update()
@@ -116,7 +115,7 @@ namespace StarForce
                 Transform transform = hpBarItem.GetComponent<Transform>();
                 transform.SetParent(m_HPBarInstanceRoot);
                 transform.localScale = Vector3.one;
-                m_HPBarItemObjectPool.Register(new HPBarItemObject(hpBarItem), true);
+                m_HPBarItemObjectPool.Register(HPBarItemObject.Create(hpBarItem), true);
             }
 
             return hpBarItem;

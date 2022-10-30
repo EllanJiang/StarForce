@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 96d2e77dd9853514da336717bd5627c0
 labels:
-- AssetBundleExclusive
+- ResourceExclusive
 timeCreated: 1528026170
 licenseType: Pro
 NativeFormatImporter:

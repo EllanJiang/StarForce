@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework;
@@ -19,6 +19,9 @@ namespace StarForce
         [SerializeField]
         private TextAsset m_DefaultDictionaryTextAsset = null;
 
+        [SerializeField]
+        private UpdateResourceForm m_UpdateResourceFormTemplate = null;
+
         private BuildInfo m_BuildInfo = null;
 
         public BuildInfo BuildInfo
@@ -26,6 +29,14 @@ namespace StarForce
             get
             {
                 return m_BuildInfo;
+            }
+        }
+
+        public UpdateResourceForm UpdateResourceFormTemplate
+        {
+            get
+            {
+                return m_UpdateResourceFormTemplate;
             }
         }
 
@@ -53,7 +64,7 @@ namespace StarForce
                 return;
             }
 
-            if (!GameEntry.Localization.ParseDictionary(m_DefaultDictionaryTextAsset.text))
+            if (!GameEntry.Localization.ParseData(m_DefaultDictionaryTextAsset.text))
             {
                 Log.Warning("Parse default dictionary failure.");
                 return;

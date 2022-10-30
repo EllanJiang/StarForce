@@ -1,11 +1,12 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
@@ -20,6 +21,7 @@ namespace StarForce
         private static Font s_MainFont = null;
         private Canvas m_CachedCanvas = null;
         private CanvasGroup m_CanvasGroup = null;
+        private List<Canvas> m_CachedCanvasContainer = new List<Canvas>();
 
         public int OriginalDepth
         {
@@ -68,10 +70,6 @@ namespace StarForce
             }
 
             s_MainFont = mainFont;
-
-            GameObject go = new GameObject();
-            go.AddComponent<Text>().font = mainFont;
-            Destroy(go);
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -108,6 +106,15 @@ namespace StarForce
         }
 
 #if UNITY_2017_3_OR_NEWER
+        protected override void OnRecycle()
+#else
+        protected internal override void OnRecycle()
+#endif
+        {
+            base.OnRecycle();
+        }
+
+#if UNITY_2017_3_OR_NEWER
         protected override void OnOpen(object userData)
 #else
         protected internal override void OnOpen(object userData)
@@ -121,12 +128,12 @@ namespace StarForce
         }
 
 #if UNITY_2017_3_OR_NEWER
-        protected override void OnClose(object userData)
+        protected override void OnClose(bool isShutdown, object userData)
 #else
-        protected internal override void OnClose(object userData)
+        protected internal override void OnClose(bool isShutdown, object userData)
 #endif
         {
-            base.OnClose(userData);
+            base.OnClose(isShutdown, userData);
         }
 
 #if UNITY_2017_3_OR_NEWER
@@ -196,11 +203,13 @@ namespace StarForce
             int oldDepth = Depth;
             base.OnDepthChanged(uiGroupDepth, depthInUIGroup);
             int deltaDepth = UGuiGroupHelper.DepthFactor * uiGroupDepth + DepthFactor * depthInUIGroup - oldDepth + OriginalDepth;
-            Canvas[] canvases = GetComponentsInChildren<Canvas>(true);
-            for (int i = 0; i < canvases.Length; i++)
+            GetComponentsInChildren(true, m_CachedCanvasContainer);
+            for (int i = 0; i < m_CachedCanvasContainer.Count; i++)
             {
-                canvases[i].sortingOrder += deltaDepth;
+                m_CachedCanvasContainer[i].sortingOrder += deltaDepth;
             }
+
+            m_CachedCanvasContainer.Clear();
         }
 
         private IEnumerator CloseCo(float duration)

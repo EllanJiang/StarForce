@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework;
@@ -41,6 +41,15 @@ namespace StarForce
         }
 
 #if UNITY_2017_3_OR_NEWER
+        protected override void OnRecycle()
+#else
+        protected internal override void OnRecycle()
+#endif
+        {
+            base.OnRecycle();
+        }
+
+#if UNITY_2017_3_OR_NEWER
         protected override void OnShow(object userData)
 #else
         protected internal override void OnShow(object userData)
@@ -55,19 +64,19 @@ namespace StarForce
                 return;
             }
 
-            Name = Utility.Text.Format("[Entity {0}]", Id.ToString());
+            Name = Utility.Text.Format("[Entity {0}]", Id);
             CachedTransform.localPosition = m_EntityData.Position;
             CachedTransform.localRotation = m_EntityData.Rotation;
             CachedTransform.localScale = Vector3.one;
         }
 
 #if UNITY_2017_3_OR_NEWER
-        protected override void OnHide(object userData)
+        protected override void OnHide(bool isShutdown, object userData)
 #else
-        protected internal override void OnHide(object userData)
+        protected internal override void OnHide(bool isShutdown, object userData)
 #endif
         {
-            base.OnHide(userData);
+            base.OnHide(isShutdown, userData);
         }
 
 #if UNITY_2017_3_OR_NEWER

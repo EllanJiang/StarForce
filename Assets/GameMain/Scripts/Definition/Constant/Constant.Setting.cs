@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 namespace StarForce
@@ -12,7 +12,6 @@ namespace StarForce
         public static class Setting
         {
             public const string Language = "Setting.Language";
-            public const string QualityLevel = "Setting.QualityLevel";
             public const string SoundGroupMuted = "Setting.{0}Muted";
             public const string SoundGroupVolume = "Setting.{0}Volume";
             public const string MusicMuted = "Setting.MusicMuted";

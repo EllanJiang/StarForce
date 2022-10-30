@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using ProtoBuf;
@@ -15,7 +15,6 @@ namespace StarForce
     {
         public CSHeartBeat()
         {
-
         }
 
         public override int Id
@@ -28,7 +27,6 @@ namespace StarForce
 
         public override void Clear()
         {
-
         }
     }
 }

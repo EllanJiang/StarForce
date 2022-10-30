@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework;
@@ -12,7 +12,6 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using UnityGameFramework.Editor.DataTableTools;
 
 namespace StarForce.Editor.DataTableTools
 {
@@ -26,7 +25,7 @@ namespace StarForce.Editor.DataTableTools
 
         public static DataTableProcessor CreateDataTableProcessor(string dataTableName)
         {
-            return new DataTableProcessor(Utility.Path.GetCombinePath(DataTablePath, dataTableName + ".txt"), Encoding.GetEncoding("GB2312"), 1, 2, null, 3, 4, 1);
+            return new DataTableProcessor(Utility.Path.GetRegularPath(Path.Combine(DataTablePath, dataTableName + ".txt")), Encoding.GetEncoding("GB2312"), 1, 2, null, 3, 4, 1);
         }
 
         public static bool CheckRawData(DataTableProcessor dataTableProcessor, string dataTableName)
@@ -51,8 +50,8 @@ namespace StarForce.Editor.DataTableTools
 
         public static void GenerateDataFile(DataTableProcessor dataTableProcessor, string dataTableName)
         {
-            string binaryDataFileName = Utility.Path.GetCombinePath(DataTablePath, dataTableName + ".bytes");
-            if (!dataTableProcessor.GenerateDataFile(binaryDataFileName, Encoding.UTF8) && File.Exists(binaryDataFileName))
+            string binaryDataFileName = Utility.Path.GetRegularPath(Path.Combine(DataTablePath, dataTableName + ".bytes"));
+            if (!dataTableProcessor.GenerateDataFile(binaryDataFileName) && File.Exists(binaryDataFileName))
             {
                 File.Delete(binaryDataFileName);
             }
@@ -63,7 +62,7 @@ namespace StarForce.Editor.DataTableTools
             dataTableProcessor.SetCodeTemplate(CSharpCodeTemplateFileName, Encoding.UTF8);
             dataTableProcessor.SetCodeGenerator(DataTableCodeGenerator);
 
-            string csharpCodeFileName = Utility.Path.GetCombinePath(CSharpCodePath, "DR" + dataTableName + ".cs");
+            string csharpCodeFileName = Utility.Path.GetRegularPath(Path.Combine(CSharpCodePath, "DR" + dataTableName + ".cs"));
             if (!dataTableProcessor.GenerateCodeFile(csharpCodeFileName, Encoding.UTF8, dataTableName) && File.Exists(csharpCodeFileName))
             {
                 File.Delete(csharpCodeFileName);
@@ -74,15 +73,13 @@ namespace StarForce.Editor.DataTableTools
         {
             string dataTableName = (string)userData;
 
-            codeContent.Replace("__DATA_TABLE_CREATE_TIME__", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+            codeContent.Replace("__DATA_TABLE_CREATE_TIME__", DateTime.UtcNow.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff"));
             codeContent.Replace("__DATA_TABLE_NAME_SPACE__", "StarForce");
             codeContent.Replace("__DATA_TABLE_CLASS_NAME__", "DR" + dataTableName);
             codeContent.Replace("__DATA_TABLE_COMMENT__", dataTableProcessor.GetValue(0, 1) + "。");
             codeContent.Replace("__DATA_TABLE_ID_COMMENT__", "获取" + dataTableProcessor.GetComment(dataTableProcessor.IdColumn) + "。");
             codeContent.Replace("__DATA_TABLE_PROPERTIES__", GenerateDataTableProperties(dataTableProcessor));
-            codeContent.Replace("__DATA_TABLE_STRING_PARSER__", GenerateDataTableStringParser(dataTableProcessor));
-            codeContent.Replace("__DATA_TABLE_BYTES_PARSER__", GenerateDataTableBytesParser(dataTableProcessor));
-            codeContent.Replace("__DATA_TABLE_STREAM_PARSER__", GenerateDataTableStreamParser(dataTableProcessor));
+            codeContent.Replace("__DATA_TABLE_PARSER__", GenerateDataTableParser(dataTableProcessor));
             codeContent.Replace("__DATA_TABLE_PROPERTY_ARRAY__", GenerateDataTablePropertyArray(dataTableProcessor));
         }
 
@@ -127,17 +124,16 @@ namespace StarForce.Editor.DataTableTools
             return stringBuilder.ToString();
         }
 
-        private static string GenerateDataTableStringParser(DataTableProcessor dataTableProcessor)
+        private static string GenerateDataTableParser(DataTableProcessor dataTableProcessor)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)")
+                .AppendLine("        public override bool ParseDataRow(string dataRowString, object userData)")
                 .AppendLine("        {")
-                .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
-                .AppendLine("            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);")
-                .AppendLine("            for (int i = 0; i < columnTexts.Length; i++)")
+                .AppendLine("            string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);")
+                .AppendLine("            for (int i = 0; i < columnStrings.Length; i++)")
                 .AppendLine("            {")
-                .AppendLine("                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);")
+                .AppendLine("                columnStrings[i] = columnStrings[i].Trim(DataTableExtension.DataTrimSeparators);")
                 .AppendLine("            }")
                 .AppendLine()
                 .AppendLine("            int index = 0;");
@@ -154,7 +150,7 @@ namespace StarForce.Editor.DataTableTools
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("            m_Id = int.Parse(columnTexts[index++]);");
+                    stringBuilder.AppendLine("            m_Id = int.Parse(columnStrings[index++]);");
                     continue;
                 }
 
@@ -163,36 +159,27 @@ namespace StarForce.Editor.DataTableTools
                     string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
                     if (languageKeyword == "string")
                     {
-                        stringBuilder.AppendFormat("            {0} = columnTexts[index++];", dataTableProcessor.GetName(i)).AppendLine();
+                        stringBuilder.AppendFormat("            {0} = columnStrings[index++];", dataTableProcessor.GetName(i)).AppendLine();
                     }
                     else
                     {
-                        stringBuilder.AppendFormat("            {0} = {1}.Parse(columnTexts[index++]);", dataTableProcessor.GetName(i), languageKeyword).AppendLine();
+                        stringBuilder.AppendFormat("            {0} = {1}.Parse(columnStrings[index++]);", dataTableProcessor.GetName(i), languageKeyword).AppendLine();
                     }
                 }
                 else
                 {
-                    stringBuilder.AppendFormat("            {0} = DataTableExtension.Parse{1}(columnTexts[index++]);", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                    stringBuilder.AppendFormat("            {0} = DataTableExtension.Parse{1}(columnStrings[index++]);", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
                 }
             }
 
-            stringBuilder
-                .AppendLine()
+            stringBuilder.AppendLine()
                 .AppendLine("            GeneratePropertyArray();")
                 .AppendLine("            return true;")
-                .Append("        }");
-
-            return stringBuilder.ToString();
-        }
-
-        private static string GenerateDataTableBytesParser(DataTableProcessor dataTableProcessor)
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)")
+                .AppendLine("        }")
+                .AppendLine()
+                .AppendLine("        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)")
                 .AppendLine("        {")
-                .AppendLine("            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！")
-                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))")
+                .AppendLine("            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))")
                 .AppendLine("            {")
                 .AppendLine("                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))")
                 .AppendLine("                {");
@@ -208,11 +195,19 @@ namespace StarForce.Editor.DataTableTools
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("                    m_Id = binaryReader.ReadInt32();");
+                    stringBuilder.AppendLine("                    m_Id = binaryReader.Read7BitEncodedInt32();");
                     continue;
                 }
 
-                stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                string languageKeyword = dataTableProcessor.GetLanguageKeyword(i);
+                if (languageKeyword == "int" || languageKeyword == "uint" || languageKeyword == "long" || languageKeyword == "ulong")
+                {
+                    stringBuilder.AppendFormat("                    {0} = binaryReader.Read7BitEncoded{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
+                else
+                {
+                    stringBuilder.AppendFormat("                    {0} = binaryReader.Read{1}();", dataTableProcessor.GetName(i), dataTableProcessor.GetType(i).Name).AppendLine();
+                }
             }
 
             stringBuilder
@@ -221,19 +216,6 @@ namespace StarForce.Editor.DataTableTools
                 .AppendLine()
                 .AppendLine("            GeneratePropertyArray();")
                 .AppendLine("            return true;")
-                .Append("        }");
-
-            return stringBuilder.ToString();
-        }
-
-        private static string GenerateDataTableStreamParser(DataTableProcessor dataTableProcessor)
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder
-                .AppendLine("        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)")
-                .AppendLine("        {")
-                .AppendLine("            Log.Warning(\"Not implemented ParseDataRow(GameFrameworkSegment<Stream>)\");")
-                .AppendLine("            return false;")
                 .Append("        }");
 
             return stringBuilder.ToString();
@@ -318,14 +300,14 @@ namespace StarForce.Editor.DataTableTools
                     .AppendLine("                }")
                     .AppendLine("            }")
                     .AppendLine()
-                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Get{0} with invalid id '{{0}}'.\", id.ToString()));", propertyCollection.Name).AppendLine()
+                    .AppendFormat("            throw new GameFrameworkException(Utility.Text.Format(\"Get{0} with invalid id '{{0}}'.\", id));", propertyCollection.Name).AppendLine()
                     .AppendLine("        }")
                     .AppendLine()
                     .AppendFormat("        public {1} Get{0}At(int index)", propertyCollection.Name, propertyCollection.LanguageKeyword).AppendLine()
                     .AppendLine("        {")
                     .AppendFormat("            if (index < 0 || index >= m_{0}.Length)", propertyCollection.Name).AppendLine()
                     .AppendLine("            {")
-                    .AppendFormat("                throw new GameFrameworkException(Utility.Text.Format(\"Get{0}At with invalid index '{{0}}'.\", index.ToString()));", propertyCollection.Name).AppendLine()
+                    .AppendFormat("                throw new GameFrameworkException(Utility.Text.Format(\"Get{0}At with invalid index '{{0}}'.\", index));", propertyCollection.Name).AppendLine()
                     .AppendLine("            }")
                     .AppendLine()
                     .AppendFormat("            return m_{0}[index].Value;", propertyCollection.Name).AppendLine()
@@ -415,7 +397,7 @@ namespace StarForce.Editor.DataTableTools
             {
                 if (index < 0 || index >= m_Items.Count)
                 {
-                    throw new GameFrameworkException(Utility.Text.Format("GetItem with invalid index '{0}'.", index.ToString()));
+                    throw new GameFrameworkException(Utility.Text.Format("GetItem with invalid index '{0}'.", index));
                 }
 
                 return m_Items[index];

@@ -1,10 +1,11 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework;
 using GameFramework.ObjectPool;
 using UnityEngine;
 
@@ -12,10 +13,11 @@ namespace StarForce
 {
     public class HPBarItemObject : ObjectBase
     {
-        public HPBarItemObject(object target)
-            : base(target)
+        public static HPBarItemObject Create(object target)
         {
-
+            HPBarItemObject hpBarItemObject = ReferencePool.Acquire<HPBarItemObject>();
+            hpBarItemObject.Initialize(target);
+            return hpBarItemObject;
         }
 
         protected override void Release(bool isShutdown)

@@ -1,10 +1,12 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using GameFramework.Resource;
+using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
 namespace StarForce
@@ -23,9 +25,27 @@ namespace StarForce
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
-            // TODO: 增加一个 Splash 动画，这里先跳过
-            // 编辑器模式下，直接进入预加载流程；否则，检查一下版本
-            ChangeState(procedureOwner, GameEntry.Base.EditorResourceMode ? typeof(ProcedurePreload) : typeof(ProcedureCheckVersion));
+            // TODO: 这里可以播放一个 Splash 动画
+            // ...
+
+            if (GameEntry.Base.EditorResourceMode)
+            {
+                // 编辑器模式
+                Log.Info("Editor resource mode detected.");
+                ChangeState<ProcedurePreload>(procedureOwner);
+            }
+            else if (GameEntry.Resource.ResourceMode == ResourceMode.Package)
+            {
+                // 单机模式
+                Log.Info("Package resource mode detected.");
+                ChangeState<ProcedureInitResources>(procedureOwner);
+            }
+            else
+            {
+                // 可更新模式
+                Log.Info("Updatable resource mode detected.");
+                ChangeState<ProcedureCheckVersion>(procedureOwner);
+            }
         }
     }
 }

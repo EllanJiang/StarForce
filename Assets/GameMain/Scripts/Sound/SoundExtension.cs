@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework;
@@ -29,15 +29,12 @@ namespace StarForce
                 return null;
             }
 
-            PlaySoundParams playSoundParams = new PlaySoundParams
-            {
-                Priority = 64,
-                Loop = true,
-                VolumeInSoundGroup = 1f,
-                FadeInSeconds = FadeVolumeDuration,
-                SpatialBlend = 0f,
-            };
-
+            PlaySoundParams playSoundParams = PlaySoundParams.Create();
+            playSoundParams.Priority = 64;
+            playSoundParams.Loop = true;
+            playSoundParams.VolumeInSoundGroup = 1f;
+            playSoundParams.FadeInSeconds = FadeVolumeDuration;
+            playSoundParams.SpatialBlend = 0f;
             s_MusicSerialId = soundComponent.PlaySound(AssetUtility.GetMusicAsset(drMusic.AssetName), "Music", Constant.AssetPriority.MusicAsset, playSoundParams, null, userData);
             return s_MusicSerialId;
         }
@@ -63,14 +60,11 @@ namespace StarForce
                 return null;
             }
 
-            PlaySoundParams playSoundParams = new PlaySoundParams
-            {
-                Priority = drSound.Priority,
-                Loop = drSound.Loop,
-                VolumeInSoundGroup = drSound.Volume,
-                SpatialBlend = drSound.SpatialBlend,
-            };
-
+            PlaySoundParams playSoundParams = PlaySoundParams.Create();
+            playSoundParams.Priority = drSound.Priority;
+            playSoundParams.Loop = drSound.Loop;
+            playSoundParams.VolumeInSoundGroup = drSound.Volume;
+            playSoundParams.SpatialBlend = drSound.SpatialBlend;
             return soundComponent.PlaySound(AssetUtility.GetSoundAsset(drSound.AssetName), "Sound", Constant.AssetPriority.SoundAsset, playSoundParams, bindingEntity != null ? bindingEntity.Entity : null, userData);
         }
 
@@ -84,14 +78,11 @@ namespace StarForce
                 return null;
             }
 
-            PlaySoundParams playSoundParams = new PlaySoundParams
-            {
-                Priority = drUISound.Priority,
-                Loop = false,
-                VolumeInSoundGroup = drUISound.Volume,
-                SpatialBlend = 0f,
-            };
-
+            PlaySoundParams playSoundParams = PlaySoundParams.Create();
+            playSoundParams.Priority = drUISound.Priority;
+            playSoundParams.Loop = false;
+            playSoundParams.VolumeInSoundGroup = drUISound.Volume;
+            playSoundParams.SpatialBlend = 0f;
             return soundComponent.PlaySound(AssetUtility.GetUISoundAsset(drUISound.AssetName), "UISound", Constant.AssetPriority.UISoundAsset, playSoundParams, userData);
         }
 

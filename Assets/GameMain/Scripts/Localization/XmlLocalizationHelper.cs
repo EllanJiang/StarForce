@@ -1,11 +1,11 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
-using GameFramework;
+using GameFramework.Localization;
 using System;
 using System.Xml;
 using UnityGameFramework.Runtime;
@@ -20,17 +20,16 @@ namespace StarForce
         /// <summary>
         /// 解析字典。
         /// </summary>
-        /// <param name="text">要解析的字典文本。</param>
+        /// <param name="dictionaryString">要解析的字典字符串。</param>
         /// <param name="userData">用户自定义数据。</param>
         /// <returns>是否解析字典成功。</returns>
-        public override bool ParseDictionary(string text, object userData)
+        public override bool ParseData(ILocalizationManager localizationManager, string dictionaryString, object userData)
         {
             try
             {
                 string currentLanguage = GameEntry.Localization.Language.ToString();
-
                 XmlDocument xmlDocument = new XmlDocument();
-                xmlDocument.LoadXml(text);
+                xmlDocument.LoadXml(dictionaryString);
                 XmlNode xmlRoot = xmlDocument.SelectSingleNode("Dictionaries");
                 XmlNodeList xmlNodeDictionaryList = xmlRoot.ChildNodes;
                 for (int i = 0; i < xmlNodeDictionaryList.Count; i++)
@@ -58,7 +57,7 @@ namespace StarForce
 
                         string key = xmlNodeString.Attributes.GetNamedItem("Key").Value;
                         string value = xmlNodeString.Attributes.GetNamedItem("Value").Value;
-                        if (!AddRawString(key, value))
+                        if (!localizationManager.AddRawString(key, value))
                         {
                             Log.Warning("Can not add raw string with key '{0}' which may be invalid or duplicate.", key);
                             return false;
@@ -70,7 +69,7 @@ namespace StarForce
             }
             catch (Exception exception)
             {
-                Log.Warning("Can not parse dictionary '{0}' with exception '{1}'.", text, exception.ToString());
+                Log.Warning("Can not parse dictionary data with exception '{0}'.", exception.ToString());
                 return false;
             }
         }

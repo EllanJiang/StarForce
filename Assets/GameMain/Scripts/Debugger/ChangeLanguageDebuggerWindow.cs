@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework.Debugger;
@@ -19,22 +19,18 @@ namespace StarForce
 
         public void Initialize(params object[] args)
         {
-
         }
 
         public void Shutdown()
         {
-
         }
 
         public void OnEnter()
         {
-
         }
 
         public void OnLeave()
         {
-
         }
 
         public void OnUpdate(float elapseSeconds, float realElapseSeconds)

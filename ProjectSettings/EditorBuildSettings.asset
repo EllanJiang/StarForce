@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GameFramework.unity
+    path: Assets/StarForce Launcher.unity
   - enabled: 1
     path: Assets/GameMain/Scenes/Main.unity
   - enabled: 1

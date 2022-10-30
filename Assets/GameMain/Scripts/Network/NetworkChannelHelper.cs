@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework;
@@ -96,6 +96,15 @@ namespace StarForce
         }
 
         /// <summary>
+        /// 准备进行连接。
+        /// </summary>
+        public void PrepareForConnecting()
+        {
+            m_NetworkChannel.Socket.ReceiveBufferSize = 1024 * 64;
+            m_NetworkChannel.Socket.SendBufferSize = 1024 * 64;
+        }
+
+        /// <summary>
         /// 发送心跳消息包。
         /// </summary>
         /// <returns>是否发送心跳消息包成功。</returns>
@@ -142,11 +151,11 @@ namespace StarForce
         }
 
         /// <summary>
-        /// 反序列消息包头。
+        /// 反序列化消息包头。
         /// </summary>
         /// <param name="source">要反序列化的来源流。</param>
         /// <param name="customErrorData">用户自定义错误数据。</param>
-        /// <returns></returns>
+        /// <returns>反序列化后的消息包头。</returns>
         public IPacketHeader DeserializePacketHeader(Stream source, out object customErrorData)
         {
             // 注意：此函数并不在主线程调用！

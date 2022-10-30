@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using UnityEngine;
@@ -62,14 +62,14 @@ namespace StarForce
         }
 
 #if UNITY_2017_3_OR_NEWER
-        protected override void OnClose(object userData)
+        protected override void OnClose(bool isShutdown, object userData)
 #else
-        protected internal override void OnClose(object userData)
+        protected internal override void OnClose(bool isShutdown, object userData)
 #endif
         {
             m_ProcedureMenu = null;
 
-            base.OnClose(userData);
+            base.OnClose(isShutdown, userData);
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 namespace StarForce
@@ -10,7 +10,7 @@ namespace StarForce
     /// <summary>
     /// 界面编号。
     /// </summary>
-    public enum UIFormId
+    public enum UIFormId : byte
     {
         Undefined = 0,
 

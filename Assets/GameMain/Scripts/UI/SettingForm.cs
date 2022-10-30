@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework.Localization;
@@ -164,15 +164,19 @@ namespace StarForce
                 case Language.English:
                     m_EnglishToggle.isOn = true;
                     break;
+
                 case Language.ChineseSimplified:
                     m_ChineseSimplifiedToggle.isOn = true;
                     break;
+
                 case Language.ChineseTraditional:
                     m_ChineseTraditionalToggle.isOn = true;
                     break;
+
                 case Language.Korean:
                     m_KoreanToggle.isOn = true;
                     break;
+
                 default:
                     break;
             }

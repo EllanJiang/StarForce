@@ -1,11 +1,11 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2019-02-11 15:21:41.733
+// 生成时间：2021-06-16 21:54:35.666
 //------------------------------------------------------------
 
 using GameFramework;
@@ -63,49 +63,41 @@ namespace StarForce
             private set;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
+        public override bool ParseDataRow(string dataRowString, object userData)
         {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            string[] columnTexts = dataRowSegment.Source.Substring(dataRowSegment.Offset, dataRowSegment.Length).Split(DataTableExtension.DataSplitSeparators);
-            for (int i = 0; i < columnTexts.Length; i++)
+            string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
+            for (int i = 0; i < columnStrings.Length; i++)
             {
-                columnTexts[i] = columnTexts[i].Trim(DataTableExtension.DataTrimSeparators);
+                columnStrings[i] = columnStrings[i].Trim(DataTableExtension.DataTrimSeparators);
             }
 
             int index = 0;
             index++;
-            m_Id = int.Parse(columnTexts[index++]);
+            m_Id = int.Parse(columnStrings[index++]);
             index++;
-            AssetName = columnTexts[index++];
-            Priority = int.Parse(columnTexts[index++]);
-            Volume = float.Parse(columnTexts[index++]);
+            AssetName = columnStrings[index++];
+            Priority = int.Parse(columnStrings[index++]);
+            Volume = float.Parse(columnStrings[index++]);
 
             GeneratePropertyArray();
             return true;
         }
 
-        public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
+        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)
         {
-            // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
-            using (MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
+            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))
             {
                 using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
                 {
-                    m_Id = binaryReader.ReadInt32();
+                    m_Id = binaryReader.Read7BitEncodedInt32();
                     AssetName = binaryReader.ReadString();
-                    Priority = binaryReader.ReadInt32();
+                    Priority = binaryReader.Read7BitEncodedInt32();
                     Volume = binaryReader.ReadSingle();
                 }
             }
 
             GeneratePropertyArray();
             return true;
-        }
-
-        public override bool ParseDataRow(GameFrameworkSegment<Stream> dataRowSegment)
-        {
-            Log.Warning("Not implemented ParseDataRow(GameFrameworkSegment<Stream>)");
-            return false;
         }
 
         private void GeneratePropertyArray()

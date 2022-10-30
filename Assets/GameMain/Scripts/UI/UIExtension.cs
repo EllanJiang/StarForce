@@ -1,8 +1,8 @@
 ﻿//------------------------------------------------------------
 // Game Framework
-// Copyright © 2013-2019 Jiang Yin. All rights reserved.
-// Homepage: http://gameframework.cn/
-// Feedback: mailto:jiangyin@gameframework.cn
+// Copyright © 2013-2021 Jiang Yin. All rights reserved.
+// Homepage: https://gameframework.cn/
+// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
 using GameFramework.DataTable;
@@ -166,7 +166,11 @@ namespace StarForce
 
         private static void OpenNativeDialog(DialogParams dialogParams)
         {
-            throw new System.NotImplementedException("OpenNativeDialog");
+            // TODO：这里应该弹出原生对话框，先简化实现为直接按确认按钮
+            if (dialogParams.OnClickConfirm != null)
+            {
+                dialogParams.OnClickConfirm(dialogParams.UserData);
+            }
         }
     }
 }
