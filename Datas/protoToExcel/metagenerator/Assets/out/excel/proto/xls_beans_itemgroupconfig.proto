@@ -1,0 +1,40 @@
+/**
+* @file:   excel\ItemGroupConfig.xlsx\ItemGroupConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemGroupConfig{
+	// 物品组id 
+	uint32 id = 1;
+	// 类型 
+	uint32 type = 2;
+	// 抽奖箱子背景 
+	uint32 bgIcon = 3;
+	// 开箱动画 
+	string animation = 4;
+	// 罕见物品图标 
+	uint32 rareDropIcon = 5;
+	// 主界面史诗展示 
+	repeated uint32 mainRareDisplay = 6;
+	// 主界面稀有展示 
+	repeated uint32 mainSecreteDisplay = 7;
+	// 定制级物品 
+	repeated uint32  militaryItems = 8;
+	// 精良级物品 
+	repeated uint32 limitItems = 9;
+	// 稀有级物品 
+	repeated uint32 protectItems = 10;
+	// 史诗级物品 
+	repeated uint32 secretItems = 11;
+	// 特殊物品 
+	repeated uint32 specialItems = 12;
+}
+
+message ItemGroupConfig_Array {
+	repeated ItemGroupConfig items = 1;
+}

@@ -1,0 +1,54 @@
+/**
+* @file:   excel\TenInOneLuckyReward.xlsx\TenInOneLuckyReward
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TenInOneLuckyReward{
+	// key 
+	uint32 id = 1;
+	// 奖励type 
+	uint32 rewardType = 2;
+	// 展示顺序 
+	uint32 order = 3;
+	// 掉落方案id 
+	uint32 dropId = 4;
+	// 道具ID1、属性ID 
+	TenInOneLuckyReward_effect effect = 5;
+	// 最小充值 
+	repeated TenInOneLuckyReward_randPaintKit randPaintKit = 6;
+}
+
+message TenInOneLuckyReward_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 精修图 
+	uint32 iconId = 2;
+	// 数量 
+	uint32 value = 3;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 4;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 5;
+	// 是否暗金 
+	uint32 statTrak = 6;
+	// 指定皮肤编号 
+	uint32 paintKit = 7;
+}
+
+message TenInOneLuckyReward_randPaintKit{
+	// 最小充值 
+	uint32 minCharge = 1;
+	// 最大充值 
+	uint32 maxCharge = 2;
+	// 指定皮肤编号id 
+	uint32 paintKit = 3;
+}
+
+message TenInOneLuckyReward_Array {
+	repeated TenInOneLuckyReward items = 1;
+}

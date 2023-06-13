@@ -1,0 +1,11 @@
+{
+	"Open":false,
+	"RoomCount":1,
+    "MaxPlayerInRoom":4,
+	"TargetScore":1,
+    "BattleTimeOut":900,
+	"RoomPrepareTimeOut":900,
+	"SelectPrisonTime":5,
+	"InitWeaponList":[]
+}
+

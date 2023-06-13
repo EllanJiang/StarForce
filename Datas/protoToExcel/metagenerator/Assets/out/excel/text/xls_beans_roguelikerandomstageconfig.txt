@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "stageGroup": 1031,
+      "stageList": [
+        {
+          "id": 1103,
+          "rate": 10
+        },
+        {
+          "id": 1203,
+          "rate": 10
+        },
+        {
+          "id": 1303,
+          "rate": 10
+        }
+      ]
+    },
+    {
+      "stageGroup": 2052,
+      "stageList": [
+        {
+          "id": 1403,
+          "rate": 10
+        },
+        {
+          "id": 1503,
+          "rate": 10
+        },
+        {
+          "id": 1603,
+          "rate": 10
+        }
+      ]
+    },
+    {
+      "stageGroup": 3070,
+      "stageList": [
+        {
+          "id": 1403,
+          "rate": 10
+        },
+        {
+          "id": 1503,
+          "rate": 10
+        },
+        {
+          "id": 1603,
+          "rate": 10
+        }
+      ]
+    }
+  ]
+}

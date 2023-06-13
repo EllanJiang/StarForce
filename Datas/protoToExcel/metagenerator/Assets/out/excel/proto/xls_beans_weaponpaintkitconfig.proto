@@ -1,0 +1,130 @@
+/**
+* @file:   excel\WeaponPaintKitConfig.xlsx\WeaponPaintKitConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponPaintKitConfig{
+	// paintkit的id 
+	uint32 id = 1;
+	// 武器名字 
+	string name = 2;
+	// 材质名字 
+	string materialName = 3;
+	// 风格 
+	uint32 style = 4;
+	// 武器的基本贴图以及参数配置 
+	uint32 configId = 5;
+	// 描述 
+	string description_string = 6;
+	// 描述标签 
+	string description_tag = 7;
+	// 贴图名 
+	string pattern = 8;
+	// 法线名 
+	string baseName = 9;
+	// 是否要使用法线 
+	bool use_normal = 10;
+	// 是否要使用皮肤图作为黑皮图 
+	bool use_skinAsDefault = 11;
+	// 是否要使用黑皮 
+	bool use_defaultTexture = 12;
+	// 无黑皮采样底色 
+	string defaultColor = 13;
+	// 是否使用镜筒材质 
+	bool use_scopeMaterial = 14;
+	// 默认展示磨损值 
+	float wear_default = 15;
+	// 最小磨损值 
+	float wear_remap_min = 16;
+	// 最大磨损值 
+	float wear_remap_max = 17;
+	// 颜色0 
+	string color0 = 18;
+	// 颜色1 
+	string color1 = 19;
+	// 颜色2 
+	string color2 = 20;
+	// 颜色3 
+	string color3 = 21;
+	// 图形缩放系数 
+	float pattern_scale = 22;
+	// 是否忽略武器大小 
+	bool ignore_weapon_size_scale = 23;
+	// 只有第一个材质 
+	bool only_first_material = 24;
+	// 皮肤x方向偏移起始值 
+	float pattern_offset_x_start = 25;
+	// 皮肤x方向偏移终止值 
+	float pattern_offset_x_end = 26;
+	// 皮肤y方向偏移起始值 
+	float pattern_offset_y_start = 27;
+	// 皮肤y方向偏移终止值 
+	float pattern_offset_y_end = 28;
+	// 皮肤旋转起始值 
+	float pattern_rotate_start = 29;
+	// 皮肤旋转终止值 
+	float pattern_rotate_end = 30;
+	// 珍珠色混合百分比 
+	uint32 pearl_percent = 31;
+	// 统一最低亮度 
+	float mat_bright_min = 32;
+	// 统一基础亮度 
+	float mat_bright_max = 33;
+	// 材质名字 
+	repeated WeaponPaintKitConfig_mat_bright mat_bright = 34;
+	// 粒子名字 
+	repeated WeaponPaintKitConfig_partical_num partical_num = 35;
+	// 默认展示磨损 
+	uint32 initWear = 36;
+	// 磨损度分段1下限(最小0) 
+	repeated WeaponPaintKitConfig_wear wear = 37;
+	// 默认展示模板 
+	uint32 initSeed = 38;
+	// 模板参数分段1下限(包含) 
+	repeated WeaponPaintKitConfig_seed seed = 39;
+}
+
+message WeaponPaintKitConfig_mat_bright{
+	// 材质名字 
+	string name = 1;
+	// 最低亮度 
+	float min = 2;
+	// 最高亮度 
+	float max = 3;
+}
+
+message WeaponPaintKitConfig_partical_num{
+	// 粒子名字 
+	string name = 1;
+	// 最小粒子数 
+	uint32 min = 2;
+	// 最大粒子数 
+	uint32 max = 3;
+}
+
+message WeaponPaintKitConfig_wear{
+	// 磨损度分段1下限(最小0) 
+	uint32 min = 1;
+	// 磨损度分段1上限(最大9999) 
+	uint32 max = 2;
+	// 磨损度分段1权重 
+	uint32 weight = 3;
+}
+
+message WeaponPaintKitConfig_seed{
+	// 模板参数分段1下限(包含) 
+	uint32 min = 1;
+	// 模板参数分段1上限(包含) 
+	uint32 max = 2;
+	// 模板参数分段1权重 
+	uint32 weight = 3;
+}
+
+message WeaponPaintKitConfig_Array {
+	repeated WeaponPaintKitConfig items = 1;
+}

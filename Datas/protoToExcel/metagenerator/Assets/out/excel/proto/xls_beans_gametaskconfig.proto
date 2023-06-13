@@ -1,0 +1,26 @@
+/**
+* @file:   excel\GameTaskConfig.xlsx\GameTaskConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameTaskConfig{
+	// 任务ID 
+	uint32 id = 1;
+	// 条件类型 
+	uint32 contType = 2;
+	// 弹框提示信息 
+	string tips = 3;
+	// 任务进程提示 
+	string taskMonitor = 4;
+	// 条件参数(id) 
+	repeated uint32 condParam = 5;
+}
+
+message GameTaskConfig_Array {
+	repeated GameTaskConfig items = 1;
+}

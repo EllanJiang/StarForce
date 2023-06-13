@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "pattern": "testname.*",
+      "privilege": 1,
+      "visible": 0
+    },
+    {
+      "id": 2,
+      "pattern": "gm.*",
+      "privilege": 2,
+      "visible": 2
+    },
+    {
+      "id": 3,
+      "pattern": "xuan.*",
+      "privilege": 1,
+      "visible": 0
+    },
+    {
+      "id": 4,
+      "pattern": "32141770",
+      "privilege": 1,
+      "visible": 0
+    }
+  ]
+}

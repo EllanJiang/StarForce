@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": "RU",
+      "showId": 1,
+      "suffix": "RU",
+      "timeOffset": 3
+    },
+    {
+      "id": "CN",
+      "showId": 2,
+      "suffix": "CN",
+      "timeOffset": 8
+    },
+    {
+      "id": "LATAM",
+      "showId": 5,
+      "suffix": "LA",
+      "timeOffset": -5
+    },
+    {
+      "id": "SG",
+      "showId": 4,
+      "suffix": "SG",
+      "timeOffset": 8
+    },
+    {
+      "id": "BR",
+      "showId": 3,
+      "suffix": "BR",
+      "timeOffset": -3
+    },
+    {
+      "id": "OTHER",
+      "showId": 99,
+      "suffix": "OTHER",
+      "timeOffset": 8
+    },
+    {
+      "id": "IN",
+      "showId": 6,
+      "suffix": "IN",
+      "timeOffset": 5
+    }
+  ]
+}

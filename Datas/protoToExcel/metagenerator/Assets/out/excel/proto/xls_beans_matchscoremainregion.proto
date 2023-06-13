@@ -1,0 +1,38 @@
+/**
+* @file:   excel\MatchScoreMainRegion.xlsx\MatchScoreMainRegion
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchScoreMainRegion{
+	// 玩家区域 
+	string id = 1;
+	// 对应区域的评分 
+	int32 OTHER = 2;
+	//  
+	int32 BR1 = 3;
+	//  
+	int32 CN1 = 4;
+	//  
+	int32 LA1 = 5;
+	//  
+	int32 LA2 = 6;
+	//  
+	int32 LA3 = 7;
+	//  
+	int32 RU1 = 8;
+	//  
+	int32 RU2 = 9;
+	//  
+	int32 SG1 = 10;
+	//  
+	int32 SG2 = 11;
+}
+
+message MatchScoreMainRegion_Array {
+	repeated MatchScoreMainRegion items = 1;
+}

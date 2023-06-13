@@ -1,0 +1,24 @@
+/**
+* @file:   excel\NetworkTipsConfig.xlsx\NetworkTipsConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message NetworkTipsConfig{
+	// 弱网ping值 
+	uint32 ping = 1;
+	// 持续弱网时间（s） 
+	uint32 tipsTime = 2;
+	// 提示间隔时间（s） 
+	uint32 intervalTime = 3;
+	// 触发提示次数 
+	uint32 tipsCount = 4;
+}
+
+message NetworkTipsConfig_Array {
+	repeated NetworkTipsConfig items = 1;
+}

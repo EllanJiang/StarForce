@@ -1,0 +1,36 @@
+/**
+* @file:   excel\GunBuffListConfig.xlsx\GunBuffListConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GunBuffListConfig{
+	// 词条id(1000000开头弹幕词条；2000000开头数值词条) 
+	uint32 id = 1;
+	// 前置条件 
+	uint32 BuffEnterCondition = 2;
+	// 退出条件 
+	uint32 BuffExitCondition = 3;
+	// 词条名 
+	string BuffName = 4;
+	// 图标资源ID 
+	uint32 IconResourceID = 5;
+	// 词条内容说明（所有参数为整数类型 小数可以通过单位换算） 
+	string BuffDes = 6;
+	// buff参数(id 读buffdataconfig) 
+	repeated uint32 BuffList = 7;
+	// 枪械种类限制 
+	repeated uint32 LimitGunTypeID = 8;
+	// 特有词条枪械种类 
+	repeated uint32 SpecificGunTypeID = 9;
+	// 品质 
+	uint32 Quality = 10;
+}
+
+message GunBuffListConfig_Array {
+	repeated GunBuffListConfig items = 1;
+}

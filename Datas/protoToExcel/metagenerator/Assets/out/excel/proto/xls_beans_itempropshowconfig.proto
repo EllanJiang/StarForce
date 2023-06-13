@@ -1,0 +1,40 @@
+/**
+* @file:   excel\ItemPropShowConfig.xlsx\ItemPropShowConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemPropShowConfig{
+	// 编号 
+	uint32 id = 1;
+	// 物品名称 
+	string name = 2;
+	// 道具描述tips 
+	string description = 3;
+	// {0}替换文本 
+	repeated string descriptionValues = 4;
+	// 资源id 
+	uint32 iconID = 5;
+	// 大图id 
+	uint32 bigIconID = 6;
+	// 名称(局外模型拼路径用) 
+	string itemRoleName = 7;
+	// 主题标记图标 
+	uint32 themeIcon = 8;
+	// 主题背景 
+	uint32 themeBg = 9;
+	// 分享背景 
+	uint32 shareBg = 10;
+	// 特性Id列表 
+	repeated uint32 features = 11;
+	// 离线生成的图标文件夹名字 
+	string iconDirName = 12;
+}
+
+message ItemPropShowConfig_Array {
+	repeated ItemPropShowConfig items = 1;
+}

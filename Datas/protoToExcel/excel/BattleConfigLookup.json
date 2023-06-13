@@ -1,0 +1,8 @@
+{
+    "configs": [
+        "abilityuseconfig"
+    ],
+    "toClient": [
+        "abilityuseconfig"
+    ]
+}

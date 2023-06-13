@@ -1,0 +1,32 @@
+/**
+* @file:   excel\GameResultExpConfig.xlsx\GameResultExpConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameResultExpConfig{
+	// 模式ID 
+	uint32 id = 1;
+	// 最短游戏时间(秒) 
+	uint32 minTime = 2;
+	// 完成经验 
+	uint32 finExp = 3;
+	// 胜利经验（只对双阵营生效，多阵营配置0） 
+	uint32 winExp = 4;
+	// 单位时间经验(每100秒) 
+	uint32 timeExp = 5;
+	// 时间经验上限 
+	uint32 timeExpLimit = 6;
+	// 名次最高经验（全场名次） 
+	uint32 rankExp = 7;
+	// 名次递减值（最多减到0） 
+	uint32 rankDecay = 8;
+}
+
+message GameResultExpConfig_Array {
+	repeated GameResultExpConfig items = 1;
+}

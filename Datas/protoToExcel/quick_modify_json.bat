@@ -1,0 +1,2 @@
+python resbuilder/check_json_config.py
+pause

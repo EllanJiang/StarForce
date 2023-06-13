@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "cheat": 0,
+      "id": "normal",
+      "normal": 1,
+      "simulator": 0
+    },
+    {
+      "cheat": 0,
+      "id": "simulator",
+      "normal": 0,
+      "simulator": 1
+    },
+    {
+      "cheat": 1,
+      "id": "cheat",
+      "normal": 0,
+      "simulator": 0
+    }
+  ]
+}

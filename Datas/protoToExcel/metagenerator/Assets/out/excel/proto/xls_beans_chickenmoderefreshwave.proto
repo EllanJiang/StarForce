@@ -1,0 +1,24 @@
+/**
+* @file:   excel\ChickenModeRefreshWave.xlsx\ChickenModeRefreshWave
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ChickenModeRefreshWave{
+	// id 
+	uint32 id = 1;
+	// 名称 
+	string Name = 2;
+	// 鸡id-1 
+	repeated uint32 TargetIDList = 3;
+	// 鸡id-1的数量 
+	repeated uint32 TargetCountList = 4;
+}
+
+message ChickenModeRefreshWave_Array {
+	repeated ChickenModeRefreshWave items = 1;
+}

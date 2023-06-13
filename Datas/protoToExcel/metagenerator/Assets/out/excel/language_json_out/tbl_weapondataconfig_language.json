@@ -1,0 +1,1934 @@
+{
+  "943967308": [
+    "C_Weapon_Gun_Famas_Default_N",
+    "C_Weapon_Gun_Famas_Default_N"
+  ],
+  "203752981": [
+    "C_Weapon_Gun_Famas_Default_D",
+    "C_Weapon_Gun_Famas_Default_D"
+  ],
+  "494816359": [
+    "C_Ceneral_GetInterface_General_Wisecrack",
+    "C_Ceneral_GetInterface_General_Wisecrack"
+  ],
+  "651685326": [
+    "C_Weapon_Gun_Famas_Skin_Snake_N",
+    "C_Weapon_Gun_Famas_Skin_Snake_N"
+  ],
+  "130217526": [
+    "C_Weapon_Gun_Famas_Skin_Snake_D",
+    "C_Weapon_Gun_Famas_Skin_Snake_D"
+  ],
+  "742595721": [
+    "C_Weapon_Gun_Famas_Skin_XiBu_N",
+    "C_Weapon_Gun_Famas_Skin_XiBu_N"
+  ],
+  "266975954": [
+    "C_Weapon_Gun_AK47_Skin_XiBu_D",
+    "C_Weapon_Gun_AK47_Skin_XiBu_D"
+  ],
+  "625048265": [
+    "C_Weapon_Gun_Famas_Skin_Langzhua_N",
+    "C_Weapon_Gun_Famas_Skin_Langzhua_N"
+  ],
+  "573613613": [
+    "C_Weapon_Gun_M249_Skin_Langzhua_D",
+    "C_Weapon_Gun_M249_Skin_Langzhua_D"
+  ],
+  "562136542": [
+    "C_Weapon_Gun_Famas_Skin_Steampunk_N",
+    "C_Weapon_Gun_Famas_Skin_Steampunk_N"
+  ],
+  "474430076": [
+    "C_Weapon_Gun_Famas_Skin_HeiHong_N",
+    "C_Weapon_Gun_Famas_Skin_HeiHong_N"
+  ],
+  "762260196": [
+    "C_Weapon_Gun_Dualpistols_Skin_Heihong_D",
+    "C_Weapon_Gun_Dualpistols_Skin_Heihong_D"
+  ],
+  "924731390": [
+    "C_Weapon_Gun_Famas_Skin_Blending_N",
+    "C_Weapon_Gun_Famas_Skin_Blending_N"
+  ],
+  "143655259": [
+    "C_Weapon_Gun_Famas_Skin_Blending_D",
+    "C_Weapon_Gun_Famas_Skin_Blending_D"
+  ],
+  "779783558": [
+    "C_Weapon_Gun_Famas_Skin_MoJie_N",
+    "C_Weapon_Gun_Famas_Skin_MoJie_N"
+  ],
+  "957755159": [
+    "C_Weapon_Gun_Famas_Skin_MoJie_D",
+    "C_Weapon_Gun_Famas_Skin_MoJie_D"
+  ],
+  "868178891": [
+    "C_Weapon_Gun_GalilAR_Default_N",
+    "C_Weapon_Gun_GalilAR_Default_N"
+  ],
+  "300248374": [
+    "C_Weapon_Gun_GalilAR_Default_D",
+    "C_Weapon_Gun_GalilAR_Default_D"
+  ],
+  "895502751": [
+    "C_Weapon_Gun_GalilAR_Skin_Virus_N",
+    "C_Weapon_Gun_GalilAR_Skin_Virus_N"
+  ],
+  "067951893": [
+    "C_Weapon_Gun_GalilAR_Skin_Virus_D",
+    "C_Weapon_Gun_GalilAR_Skin_Virus_D"
+  ],
+  "535148773": [
+    "C_Weapon_Gun_Galilar_Skin_ChaoKu_N",
+    "C_Weapon_Gun_Galilar_Skin_ChaoKu_N"
+  ],
+  "981559218": [
+    "C_Weapon_Gun_Galilar_Skin_ChaoKu_D",
+    "C_Weapon_Gun_Galilar_Skin_ChaoKu_D"
+  ],
+  "426060378": [
+    "C_Weapon_Gun_Galilar_Skin_Steampunk_N",
+    "C_Weapon_Gun_Galilar_Skin_Steampunk_N"
+  ],
+  "174933878": [
+    "C_Weapon_Gun_Galilar_Skin_XiBu_N",
+    "C_Weapon_Gun_Galilar_Skin_XiBu_N"
+  ],
+  "265530463": [
+    "C_Weapon_Gun_GalilAR_Skin_Langzhua_N",
+    "C_Weapon_Gun_GalilAR_Skin_Langzhua_N"
+  ],
+  "063796013": [
+    "C_Weapon_Gun_GalilAR_Skin_HeiHong_N",
+    "C_Weapon_Gun_GalilAR_Skin_HeiHong_N"
+  ],
+  "253890583": [
+    "C_Weapon_Gun_GalilAR_Skin_Blending_N",
+    "C_Weapon_Gun_GalilAR_Skin_Blending_N"
+  ],
+  "631379487": [
+    "C_Weapon_Gun_GalilAR_Skin_ShuiPing_N",
+    "C_Weapon_Gun_GalilAR_Skin_ShuiPing_N"
+  ],
+  "172172702": [
+    "C_Weapon_Gun_GalilAR_ShuiPing_D",
+    "C_Weapon_Gun_GalilAR_ShuiPing_D"
+  ],
+  "894580523": [
+    "C_Weapon_Gun_M4RAS_Default_N",
+    "C_Weapon_Gun_M4RAS_Default_N"
+  ],
+  "163788964": [
+    "C_Weapon_Gun_M4RAS_Default_D",
+    "C_Weapon_Gun_M4RAS_Default_D"
+  ],
+  "228400868": [
+    "C_Weapon_Gun_M4RAS_Skin_XuanWu_N",
+    "C_Weapon_Gun_M4RAS_Skin_XuanWu_N"
+  ],
+  "179675580": [
+    "C_Weapon_Gun_M4RAS_Skin_XuanWu_D",
+    "C_Weapon_Gun_M4RAS_Skin_XuanWu_D"
+  ],
+  "106908613": [
+    "C_Weapon_Gun_M4RAS_Skin_TouHaoWanJia_N",
+    "C_Weapon_Gun_M4RAS_Skin_TouHaoWanJia_N"
+  ],
+  "717201776": [
+    "C_Weapon_Gun_M4RAS_Skin_TouHaoWanJia_D",
+    "C_Weapon_Gun_M4RAS_Skin_TouHaoWanJia_D"
+  ],
+  "603183916": [
+    "C_Weapon_Gun_M4RAS_Skin_Secai_N",
+    "C_Weapon_Gun_M4RAS_Skin_Secai_N"
+  ],
+  "887838845": [
+    "C_Weapon_Gun_M4RAS_Skin_Secai_D",
+    "C_Weapon_Gun_M4RAS_Skin_Secai_D"
+  ],
+  "696561706": [
+    "C_Weapon_Gun_M4RAS_Skin_Chuang_N",
+    "C_Weapon_Gun_M4RAS_Skin_Chuang_N"
+  ],
+  "659307565": [
+    "C_Weapon_Gun_M4RAS_Skin_Chuang_D",
+    "C_Weapon_Gun_M4RAS_Skin_Chuang_D"
+  ],
+  "366661676": [
+    "C_Weapon_Gun_M4RAS_Skin_TuYa_N",
+    "C_Weapon_Gun_M4RAS_Skin_TuYa_N"
+  ],
+  "845819155": [
+    "C_Weapon_Gun_M4RAS_Skin_TuYa_D",
+    "C_Weapon_Gun_M4RAS_Skin_TuYa_D"
+  ],
+  "000692321": [
+    "C_Weapon_Gun_M4RAS_Skin_DaiMa_N",
+    "C_Weapon_Gun_M4RAS_Skin_DaiMa_N"
+  ],
+  "558268457": [
+    "C_Weapon_Gun_M4RAS_Skin_Nengliang_N",
+    "C_Weapon_Gun_M4RAS_Skin_Nengliang_N"
+  ],
+  "845064694": [
+    "C_Weapon_Gun_AWP_Skin_NengLiang_D",
+    "C_Weapon_Gun_AWP_Skin_NengLiang_D"
+  ],
+  "147904081": [
+    "C_Weapon_Gun_M4RAS_Skin_Steampunk_N",
+    "C_Weapon_Gun_M4RAS_Skin_Steampunk_N"
+  ],
+  "655146972": [
+    "C_Weapon_Gun_M4RAS_Skin_KeJi_N",
+    "C_Weapon_Gun_M4RAS_Skin_KeJi_N"
+  ],
+  "255104666": [
+    "C_Weapon_Gun_AK47_Skin_KeJi_D",
+    "C_Weapon_Gun_AK47_Skin_KeJi_D"
+  ],
+  "550247888": [
+    "C_Weapon_Gun_M4RAS_Skin_XiBu_N",
+    "C_Weapon_Gun_M4RAS_Skin_XiBu_N"
+  ],
+  "287491805": [
+    "C_Weapon_Gun_M4RAS_Skin_Snow_N",
+    "C_Weapon_Gun_M4RAS_Skin_Snow_N"
+  ],
+  "042759372": [
+    "C_Weapon_Gun_AK47_Skin_Snow_D",
+    "C_Weapon_Gun_AK47_Skin_Snow_D"
+  ],
+  "503120980": [
+    "C_Weapon_Gun_M4RAS_Skin_BaiYang_N",
+    "C_Weapon_Gun_M4RAS_Skin_BaiYang_N"
+  ],
+  "022295173": [
+    "C_Weapon_Gun_M4RAS_Skin_GoldenAgeS2_N",
+    "C_Weapon_Gun_M4RAS_Skin_GoldenAgeS2_N"
+  ],
+  "028856661": [
+    "C_Weapon_Gun_M4RAS_Skin_GoldenAgeS2_D",
+    "C_Weapon_Gun_M4RAS_Skin_GoldenAgeS2_D"
+  ],
+  "749769799": [
+    "C_Weapon_Gun_M4RAS_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_M4RAS_Skin_ErCiYuan_N"
+  ],
+  "103572189": [
+    "C_Weapon_Gun_M4RAS_Skin_Blending_N",
+    "C_Weapon_Gun_M4RAS_Skin_Blending_N"
+  ],
+  "666945016": [
+    "C_Weapon_Gun_M4A1S_Default_N",
+    "C_Weapon_Gun_M4A1S_Default_N"
+  ],
+  "784247269": [
+    "C_Weapon_Gun_M4A1S_Default_D",
+    "C_Weapon_Gun_M4A1S_Default_D"
+  ],
+  "965348487": [
+    "C_Weapon_Gun_M4A1S_Skin_PoMo_N",
+    "C_Weapon_Gun_M4A1S_Skin_PoMo_N"
+  ],
+  "982999269": [
+    "C_Weapon_Gun_M4A1S_Skin_PoMo_D",
+    "C_Weapon_Gun_M4A1S_Skin_PoMo_D"
+  ],
+  "568714325": [
+    "C_Weapon_Gun_M4A1S_Skin_Liangbai_N",
+    "C_Weapon_Gun_M4A1S_Skin_Liangbai_N"
+  ],
+  "619693286": [
+    "C_Weapon_Gun_M4A1S_Skin_Liangbai_D",
+    "C_Weapon_Gun_M4A1S_Skin_Liangbai_D"
+  ],
+  "050324197": [
+    "C_Weapon_Gun_M4A1S_Skin_DianWan_N",
+    "C_Weapon_Gun_M4A1S_Skin_DianWan_N"
+  ],
+  "585746680": [
+    "C_Weapon_Gun_M4A1S_Skin_DianWan_D",
+    "C_Weapon_Gun_M4A1S_Skin_DianWan_D"
+  ],
+  "265973876": [
+    "C_Weapon_Gun_M4A1S_Skin_DianWan_Test_N",
+    "C_Weapon_Gun_M4A1S_Skin_DianWan_Test_N"
+  ],
+  "884124332": [
+    "C_Weapon_Gun_M4A1S_Skin_KejiGan_N",
+    "C_Weapon_Gun_M4A1S_Skin_KejiGan_N"
+  ],
+  "357063274": [
+    "C_Weapon_Gun_M4A1S_Skin_KejiGan_D",
+    "C_Weapon_Gun_M4A1S_Skin_KejiGan_D"
+  ],
+  "116921590": [
+    "C_Weapon_Gun_M4A1S_Skin_NengLiang_N",
+    "C_Weapon_Gun_M4A1S_Skin_NengLiang_N"
+  ],
+  "206646236": [
+    "C_Weapon_Gun_M4A1S_Skin_AirOverlord_N",
+    "C_Weapon_Gun_M4A1S_Skin_AirOverlord_N"
+  ],
+  "191807710": [
+    "C_Weapon_Gun_M4A1S_Skin_Christmas2022_N",
+    "C_Weapon_Gun_M4A1S_Skin_Christmas2022_N"
+  ],
+  "107156875": [
+    "C_Weapon_Gun_AK47_Default_N",
+    "C_Weapon_Gun_AK47_Default_N"
+  ],
+  "829684427": [
+    "C_Weapon_Gun_AK47_Default_D",
+    "C_Weapon_Gun_AK47_Default_D"
+  ],
+  "145306451": [
+    "C_Weapon_Gun_AK47_Skin_Yeshou_N",
+    "C_Weapon_Gun_AK47_Skin_Yeshou_N"
+  ],
+  "721035977": [
+    "C_Weapon_Gun_AK47_Skin_Yeshou_D",
+    "C_Weapon_Gun_AK47_Skin_Yeshou_D"
+  ],
+  "692972652": [
+    "C_Weapon_Gun_AK47_Skin_JuHuaHu_N",
+    "C_Weapon_Gun_AK47_Skin_JuHuaHu_N"
+  ],
+  "923264989": [
+    "C_Weapon_Gun_AK47_Skin_JuHuaHu_D",
+    "C_Weapon_Gun_AK47_Skin_JuHuaHu_D"
+  ],
+  "859817538": [
+    "C_Weapon_Gun_AK47_Skin_Khon_N",
+    "C_Weapon_Gun_AK47_Skin_Khon_N"
+  ],
+  "367583824": [
+    "C_Weapon_Gun_AK47_Skin_Khon_D",
+    "C_Weapon_Gun_AK47_Skin_Khon_D"
+  ],
+  "295311598": [
+    "C_Weapon_Gun_AK47_Skin_ZhanXiang_N",
+    "C_Weapon_Gun_AK47_Skin_ZhanXiang_N"
+  ],
+  "202827834": [
+    "C_Weapon_Gun_AK47_Skin_ZhanXiang_D",
+    "C_Weapon_Gun_AK47_Skin_ZhanXiang_D"
+  ],
+  "142597488": [
+    "C_Weapon_Gun_AK47_Skin_Gold_N",
+    "C_Weapon_Gun_AK47_Skin_Gold_N"
+  ],
+  "480780982": [
+    "C_Weapon_Gun_AK47_Skin_Gold_D",
+    "C_Weapon_Gun_AK47_Skin_Gold_D"
+  ],
+  "721177134": [
+    "C_Weapon_Gun_AK47_Skin_XiBu_N",
+    "C_Weapon_Gun_AK47_Skin_XiBu_N"
+  ],
+  "918406872": [
+    "C_Weapon_Gun_AK47_Skin_Liangbai_N",
+    "C_Weapon_Gun_AK47_Skin_Liangbai_N"
+  ],
+  "321013982": [
+    "C_Weapon_Gun_AK47_Skin_YuZhou_N",
+    "C_Weapon_Gun_AK47_Skin_YuZhou_N"
+  ],
+  "354569967": [
+    "C_Weapon_Gun_AK47_Skin_YuZhou_D",
+    "C_Weapon_Gun_AK47_Skin_YuZhou_D"
+  ],
+  "699897179": [
+    "C_Weapon_Gun_AK47_Skin_YuZhou_Test_N",
+    "C_Weapon_Gun_AK47_Skin_YuZhou_Test_N"
+  ],
+  "411411094": [
+    "C_Weapon_Gun_AK47_Skin_KeJi_N",
+    "C_Weapon_Gun_AK47_Skin_KeJi_N"
+  ],
+  "863337358": [
+    "C_Weapon_Gun_AK47_Skin_Nengliang_N",
+    "C_Weapon_Gun_AK47_Skin_Nengliang_N"
+  ],
+  "209611436": [
+    "C_Weapon_Gun_AK47_Skin_Blending_N",
+    "C_Weapon_Gun_AK47_Skin_Blending_N"
+  ],
+  "017232746": [
+    "C_Weapon_Gun_AK47_Skin_Snow_N",
+    "C_Weapon_Gun_AK47_Skin_Snow_N"
+  ],
+  "654150146": [
+    "C_Weapon_Gun_AK47_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_AK47_Skin_ErCiYuan_N"
+  ],
+  "449322434": [
+    "C_Weapon_Gun_AK47_Skin_ShuangYu_N",
+    "C_Weapon_Gun_AK47_Skin_ShuangYu_N"
+  ],
+  "266063194": [
+    "C_Weapon_Gun_AK47_Skin_Steampunk_N",
+    "C_Weapon_Gun_AK47_Skin_Steampunk_N"
+  ],
+  "252815977": [
+    "C_Weapon_Gun_AK47_Skin_Christmas2022_N",
+    "C_Weapon_Gun_AK47_Skin_Christmas2022_N"
+  ],
+  "076114889": [
+    "C_Weapon_Gun_AK47_Skin_AirOverlord_N",
+    "C_Weapon_Gun_AK47_Skin_AirOverlord_N"
+  ],
+  "923135387": [
+    "C_Weapon_Gun_AK19_Default_N",
+    "C_Weapon_Gun_AK19_Default_N"
+  ],
+  "311488323": [
+    "C_Weapon_Gun_AK19_Default_D",
+    "C_Weapon_Gun_AK19_Default_D"
+  ],
+  "898834499": [
+    "C_Weapon_Gun_AUG_Default_N",
+    "C_Weapon_Gun_AUG_Default_N"
+  ],
+  "450839134": [
+    "C_Weapon_Gun_AUG_Default_D",
+    "C_Weapon_Gun_AUG_Default_D"
+  ],
+  "048808168": [
+    "C_Weapon_Gun_AUG_Skin_LuoYe_N",
+    "C_Weapon_Gun_AUG_Skin_LuoYe_N"
+  ],
+  "159356632": [
+    "C_Weapon_Gun_AUG_Skin_LuoYe_D",
+    "C_Weapon_Gun_AUG_Skin_LuoYe_D"
+  ],
+  "189247460": [
+    "C_Weapon_Gun_AUG_Skin_WuYa_N",
+    "C_Weapon_Gun_AUG_Skin_WuYa_N"
+  ],
+  "207940778": [
+    "C_Weapon_Gun_AUG_Skin_WuYa_D",
+    "C_Weapon_Gun_AUG_Skin_WuYa_D"
+  ],
+  "319370660": [
+    "C_Weapon_Gun_AUG_Skin_LeiShe_N",
+    "C_Weapon_Gun_AUG_Skin_LeiShe_N"
+  ],
+  "066553205": [
+    "C_Weapon_Gun_AUG_Skin_LeiShe_D",
+    "C_Weapon_Gun_AUG_Skin_LeiShe_D"
+  ],
+  "975516027": [
+    "C_Weapon_Gun_AUG_Skin_LeiShe_Test_N",
+    "C_Weapon_Gun_AUG_Skin_LeiShe_Test_N"
+  ],
+  "290813973": [
+    "C_Weapon_Gun_AUG_Skin_DaiMa_N",
+    "C_Weapon_Gun_AUG_Skin_DaiMa_N"
+  ],
+  "166147667": [
+    "C_Weapon_Gun_AUG_Skin_Nengliang_N",
+    "C_Weapon_Gun_AUG_Skin_Nengliang_N"
+  ],
+  "177890396": [
+    "C_Weapon_Gun_AUG_Skin_Goth_N",
+    "C_Weapon_Gun_AUG_Skin_Goth_N"
+  ],
+  "654366545": [
+    "C_Weapon_Gun_AUG_Skin_Diamond_N",
+    "C_Weapon_Gun_AUG_Skin_Diamond_N"
+  ],
+  "117286463": [
+    "C_Weapon_Gun_Glock_Skin_Diamond_D",
+    "C_Weapon_Gun_Glock_Skin_Diamond_D"
+  ],
+  "637622778": [
+    "C_Weapon_Gun_AUG_Skin_HeiJin_N",
+    "C_Weapon_Gun_AUG_Skin_HeiJin_N"
+  ],
+  "566772856": [
+    "C_Weapon_Gun_Deagle_Skin_Heijin_D",
+    "C_Weapon_Gun_Deagle_Skin_Heijin_D"
+  ],
+  "440936567": [
+    "C_Weapon_Gun_AUG_Skin_XiangSu_N",
+    "C_Weapon_Gun_AUG_Skin_XiangSu_N"
+  ],
+  "361201170": [
+    "C_Weapon_Gun_SG553_Skin_XiangSu_D",
+    "C_Weapon_Gun_SG553_Skin_XiangSu_D"
+  ],
+  "508244656": [
+    "C_Weapon_Gun_SG553_Default_N",
+    "C_Weapon_Gun_SG553_Default_N"
+  ],
+  "833466580": [
+    "C_Weapon_Gun_SG553_Default_D",
+    "C_Weapon_Gun_SG553_Default_D"
+  ],
+  "492826281": [
+    "C_Weapon_Gun_SG553_Skin_XiangSu_N",
+    "C_Weapon_Gun_SG553_Skin_XiangSu_N"
+  ],
+  "002360014": [
+    "C_Weapon_Gun_SG553_Skin_Cyberpunk_N",
+    "C_Weapon_Gun_SG553_Skin_Cyberpunk_N"
+  ],
+  "027042840": [
+    "C_Weapon_Gun_SG553_Skin_Cyberpunk_D",
+    "C_Weapon_Gun_SG553_Skin_Cyberpunk_D"
+  ],
+  "203607307": [
+    "C_Weapon_Gun_SG553_Skin_Tiger_N",
+    "C_Weapon_Gun_SG553_Skin_Tiger_N"
+  ],
+  "189603407": [
+    "C_Weapon_Gun_SG553_Skin_Tiger_D",
+    "C_Weapon_Gun_SG553_Skin_Tiger_D"
+  ],
+  "669648698": [
+    "C_Weapon_Gun_SG553_Skin_Diamond_N",
+    "C_Weapon_Gun_SG553_Skin_Diamond_N"
+  ],
+  "961081515": [
+    "C_Weapon_Gun_SG553_Skin_Nengliang_N",
+    "C_Weapon_Gun_SG553_Skin_Nengliang_N"
+  ],
+  "790169357": [
+    "C_Weapon_Gun_SG553_Skin_DaiMa_N",
+    "C_Weapon_Gun_SG553_Skin_DaiMa_N"
+  ],
+  "656899270": [
+    "C_Weapon_Gun_SG553_Skin_HeiJin_N",
+    "C_Weapon_Gun_SG553_Skin_HeiJin_N"
+  ],
+  "196966710": [
+    "C_Weapon_Gun_QBZ 1X_Default_N",
+    "C_Weapon_Gun_QBZ 1X_Default_N"
+  ],
+  "633965660": [
+    "C_Weapon_Gun_QBZ1X_Default_D",
+    "C_Weapon_Gun_QBZ1X_Default_D"
+  ],
+  "807239981": [
+    "C_Weapon_Gun_QBZ191_Skin_RiLuoZhiXiang_N",
+    "C_Weapon_Gun_QBZ191_Skin_RiLuoZhiXiang_N"
+  ],
+  "605612914": [
+    "C_Weapon_Gun_QBZ191_Skin_RiLuoZhiXiang_D",
+    "C_Weapon_Gun_QBZ191_Skin_RiLuoZhiXiang_D"
+  ],
+  "338891042": [
+    "C_Weapon_Gun_QBZ191_Skin_Halloween2022_N",
+    "C_Weapon_Gun_QBZ191_Skin_Halloween2022_N"
+  ],
+  "438659801": [
+    "C_Weapon_Gun_QBZ191_Skin_Halloween2022_D",
+    "C_Weapon_Gun_QBZ191_Skin_Halloween2022_D"
+  ],
+  "415989835": [
+    "C_Weapon_Gun_M4D11_Default_N",
+    "C_Weapon_Gun_M4D11_Default_N"
+  ],
+  "595571763": [
+    "C_Weapon_Gun_M4D11_Default_D",
+    "C_Weapon_Gun_M4D11_Default_D"
+  ],
+  "035898444": [
+    "C_Weapon_Gun_M4D11_Skin_color_N",
+    "C_Weapon_Gun_M4D11_Skin_color_N"
+  ],
+  "772901420": [
+    "C_Weapon_Gun_M4D11_Skin_BaiDaoBingCheng_N",
+    "C_Weapon_Gun_M4D11_Skin_BaiDaoBingCheng_N"
+  ],
+  "826111001": [
+    "C_Weapon_Gun_M4D11_Skin_BaiDaoBingCheng_D",
+    "C_Weapon_Gun_M4D11_Skin_BaiDaoBingCheng_D"
+  ],
+  "073386180": [
+    "C_Weapon_Gun_AK105_Default_N",
+    "C_Weapon_Gun_AK105_Default_N"
+  ],
+  "497759317": [
+    "C_Weapon_Gun_AK105_Default_D",
+    "C_Weapon_Gun_AK105_Default_D"
+  ],
+  "434985147": [
+    "C_Weapon_Gun_AK105_Skin_QingZhu_N",
+    "C_Weapon_Gun_AK105_Skin_QingZhu_N"
+  ],
+  "068544501": [
+    "C_Weapon_Gun_AK105_Skin_QingZhu_D",
+    "C_Weapon_Gun_AK105_Skin_QingZhu_D"
+  ],
+  "778803958": [
+    "C_Weapon_Gun_M4L21_Default_N",
+    "C_Weapon_Gun_M4L21_Default_N"
+  ],
+  "165960859": [
+    "C_Weapon_Gun_M4L21_Default_D",
+    "C_Weapon_Gun_M4L21_Default_D"
+  ],
+  "825931201": [
+    "C_Weapon_Gun_MNC_Default_N",
+    "C_Weapon_Gun_MNC_Default_N"
+  ],
+  "305039196": [
+    "C_Weapon_Gun_MNC_Default_D",
+    "C_Weapon_Gun_MNC_Default_D"
+  ],
+  "283032114": [
+    "C_Weapon_Gun_MNC_Skin_Halloween2022_N",
+    "C_Weapon_Gun_MNC_Skin_Halloween2022_N"
+  ],
+  "657541941": [
+    "C_Weapon_Gun_SSG08_Default_N",
+    "C_Weapon_Gun_SSG08_Default_N"
+  ],
+  "475235591": [
+    "C_Weapon_Gun_SSG08_Default_D",
+    "C_Weapon_Gun_SSG08_Default_D"
+  ],
+  "605552015": [
+    "C_Weapon_Gun_SSG08_Skin_Shizi_N",
+    "C_Weapon_Gun_SSG08_Skin_Shizi_N"
+  ],
+  "724253072": [
+    "C_Weapon_Gun_SSG08_Skin_Shizi_D",
+    "C_Weapon_Gun_SSG08_Skin_Shizi_D"
+  ],
+  "011283068": [
+    "C_Weapon_Gun_SSG08_Skin_TiaoWen_N",
+    "C_Weapon_Gun_SSG08_Skin_TiaoWen_N"
+  ],
+  "266078868": [
+    "C_Weapon_Gun_SSG08_Skin_TiaoWen_D",
+    "C_Weapon_Gun_SSG08_Skin_TiaoWen_D"
+  ],
+  "587921769": [
+    "C_Weapon_Gun_SSG08_Skin_ErXiMoFu_N",
+    "C_Weapon_Gun_SSG08_Skin_ErXiMoFu_N"
+  ],
+  "817940600": [
+    "C_Weapon_Gun_SSG08_Skin_ErXiMoFu_D",
+    "C_Weapon_Gun_SSG08_Skin_ErXiMoFu_D"
+  ],
+  "723016607": [
+    "C_Weapon_Gun_SSG08_Skin_KeJi_N",
+    "C_Weapon_Gun_SSG08_Skin_KeJi_N"
+  ],
+  "199398491": [
+    "C_Weapon_Gun_SSG08_Skin_HeiJin_N",
+    "C_Weapon_Gun_SSG08_Skin_HeiJin_N"
+  ],
+  "357121929": [
+    "C_Weapon_Gun_AWP_Default_N",
+    "C_Weapon_Gun_AWP_Default_N"
+  ],
+  "516222275": [
+    "C_Weapon_Gun_AWP_Default_D",
+    "C_Weapon_Gun_AWP_Default_D"
+  ],
+  "122994691": [
+    "C_Weapon_Gun_AWP_Skin_GuoFeng_N",
+    "C_Weapon_Gun_AWP_Skin_GuoFeng_N"
+  ],
+  "677527931": [
+    "C_Weapon_Gun_AWP_Skin_GuoFeng_D",
+    "C_Weapon_Gun_AWP_Skin_GuoFeng_D"
+  ],
+  "691782231": [
+    "C_Weapon_Gun_AWP_Skin_JiaoRen_N",
+    "C_Weapon_Gun_AWP_Skin_JiaoRen_N"
+  ],
+  "596594895": [
+    "C_Weapon_Gun_AWP_Skin_JiaoRen_D",
+    "C_Weapon_Gun_AWP_Skin_JiaoRen_D"
+  ],
+  "840810610": [
+    "C_Weapon_Gun_AWP_Skin_JinLong_N",
+    "C_Weapon_Gun_AWP_Skin_JinLong_N"
+  ],
+  "511307527": [
+    "C_Weapon_Gun_AWP_Skin_JinLong_D",
+    "C_Weapon_Gun_AWP_Skin_JinLong_D"
+  ],
+  "383924696": [
+    "C_Weapon_Gun_AWP_Skin_Redline_N",
+    "C_Weapon_Gun_AWP_Skin_Redline_N"
+  ],
+  "807509582": [
+    "C_Weapon_Gun_AWP_Skin_Redline_D",
+    "C_Weapon_Gun_AWP_Skin_Redline_D"
+  ],
+  "790818957": [
+    "C_Weapon_Gun_AWP_Skin_DunHuang_N",
+    "C_Weapon_Gun_AWP_Skin_DunHuang_N"
+  ],
+  "280090074": [
+    "C_Weapon_Gun_AWP_Skin_DunHuang_D",
+    "C_Weapon_Gun_AWP_Skin_DunHuang_D"
+  ],
+  "296883695": [
+    "C_Weapon_Gun_AWP_Skin_Contrast_N",
+    "C_Weapon_Gun_AWP_Skin_Contrast_N"
+  ],
+  "364992034": [
+    "C_Weapon_Gun_AWP_Skin_Contrast_D",
+    "C_Weapon_Gun_AWP_Skin_Contrast_D"
+  ],
+  "621635258": [
+    "C_Weapon_Gun_AWP_Skin_NengLiang_N",
+    "C_Weapon_Gun_AWP_Skin_NengLiang_N"
+  ],
+  "887157761": [
+    "C_Weapon_Gun_AWP_Skin_SpaceShip_N",
+    "C_Weapon_Gun_AWP_Skin_SpaceShip_N"
+  ],
+  "332235167": [
+    "C_Weapon_Gun_AWP_Skin_SpaceShip_D",
+    "C_Weapon_Gun_AWP_Skin_SpaceShip_D"
+  ],
+  "959844013": [
+    "C_Weapon_Gun_AWP_Skin_Mermaid_N",
+    "C_Weapon_Gun_AWP_Skin_Mermaid_N"
+  ],
+  "124160979": [
+    "C_Weapon_Gun_AWP_Skin_Mermaid_D",
+    "C_Weapon_Gun_AWP_Skin_Mermaid_D"
+  ],
+  "282714416": [
+    "C_Weapon_Gun_AWP_Skin_Mermaid_Test_N",
+    "C_Weapon_Gun_AWP_Skin_Mermaid_Test_N"
+  ],
+  "975424382": [
+    "C_Weapon_Gun_AWP_Skin_KeJi_N",
+    "C_Weapon_Gun_AWP_Skin_KeJi_N"
+  ],
+  "361574616": [
+    "C_Weapon_Gun_AWP_Skin_Diamond_N",
+    "C_Weapon_Gun_AWP_Skin_Diamond_N"
+  ],
+  "182388542": [
+    "C_Weapon_Gun_AWP_Skin_Steampunk_N",
+    "C_Weapon_Gun_AWP_Skin_Steampunk_N"
+  ],
+  "970525401": [
+    "C_Weapon_Gun_AWP_Skin_Halloween2022_N",
+    "C_Weapon_Gun_AWP_Skin_Halloween2022_N"
+  ],
+  "213644082": [
+    "C_Weapon_Gun_AWP_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_AWP_Skin_ErCiYuan_N"
+  ],
+  "527639871": [
+    "C_Weapon_Gun_MK20_Default_N",
+    "C_Weapon_Gun_MK20_Default_N"
+  ],
+  "585356265": [
+    "C_Weapon_Gun_MK20_Default_D",
+    "C_Weapon_Gun_MK20_Default_D"
+  ],
+  "396755883": [
+    "C_Weapon_Gun_MK20_Skin_Langzhua_N",
+    "C_Weapon_Gun_MK20_Skin_Langzhua_N"
+  ],
+  "836694800": [
+    "C_Weapon_Gun_MK20_Skin_JuXie_N",
+    "C_Weapon_Gun_MK20_Skin_JuXie_N"
+  ],
+  "338773140": [
+    "C_Weapon_Gun_MK20_Skin_JuXie_D",
+    "C_Weapon_Gun_MK20_Skin_JuXie_D"
+  ],
+  "147711218": [
+    "C_Weapon_Gun_G3SG1_Default_N",
+    "C_Weapon_Gun_G3SG1_Default_N"
+  ],
+  "150666581": [
+    "C_Weapon_Gun_G3SG1_Default_D",
+    "C_Weapon_Gun_G3SG1_Default_D"
+  ],
+  "739742521": [
+    "C_Weapon_Gun_G3SG1_Skin_MiCai_N",
+    "C_Weapon_Gun_G3SG1_Skin_MiCai_N"
+  ],
+  "769743940": [
+    "C_Weapon_Gun_G3SG1_Skin_MiCai_D",
+    "C_Weapon_Gun_G3SG1_Skin_MiCai_D"
+  ],
+  "321111619": [
+    "C_Weapon_Gun_G3SG1_Skin_HeiHong_N",
+    "C_Weapon_Gun_G3SG1_Skin_HeiHong_N"
+  ],
+  "355246879": [
+    "C_Weapon_Gun_G3SG1_Skin_SheShou_N",
+    "C_Weapon_Gun_G3SG1_Skin_SheShou_N"
+  ],
+  "974186276": [
+    "C_Weapon_Gun_QBZ03_Default_N",
+    "C_Weapon_Gun_QBZ03_Default_N"
+  ],
+  "203907811": [
+    "C_Weapon_Gun_QBZ03_Default_D",
+    "C_Weapon_Gun_QBZ03_Default_D"
+  ],
+  "064911234": [
+    "C_WeaponDataConfig_name_112050004",
+    "C_WeaponDataConfig_name_112050004"
+  ],
+  "916495047": [
+    "dp_C_WeaponDataConfig_description_112050004",
+    "dp_C_WeaponDataConfig_description_112050004"
+  ],
+  "764925199": [
+    "C_Weapon_Gun_DSR_Default_N",
+    "C_Weapon_Gun_DSR_Default_N"
+  ],
+  "621554166": [
+    "C_Weapon_Gun_DSR_Default_D",
+    "C_Weapon_Gun_DSR_Default_D"
+  ],
+  "277814090": [
+    "C_Weapon_Gun_M249_Default_N",
+    "C_Weapon_Gun_M249_Default_N"
+  ],
+  "377373532": [
+    "C_Weapon_Gun_M249_Default_D",
+    "C_Weapon_Gun_M249_Default_D"
+  ],
+  "038690815": [
+    "C_Weapon_Gun_M249_Skin_Langzhua_N",
+    "C_Weapon_Gun_M249_Skin_Langzhua_N"
+  ],
+  "653303839": [
+    "C_Weapon_Gun_M249_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_M249_Skin_ErCiYuan_N"
+  ],
+  "134478875": [
+    "C_Weapon_Gun_M249_Skin_ErCiYuan_D",
+    "C_Weapon_Gun_M249_Skin_ErCiYuan_D"
+  ],
+  "994709222": [
+    "C_Weapon_Gun_Negev_Default_N",
+    "C_Weapon_Gun_Negev_Default_N"
+  ],
+  "538436827": [
+    "C_Weapon_Gun_Degev_Default_D",
+    "C_Weapon_Gun_Degev_Default_D"
+  ],
+  "936932350": [
+    "C_Weapon_Gun_Negev_Skin_MiGong_N",
+    "C_Weapon_Gun_Negev_Skin_MiGong_N"
+  ],
+  "566261574": [
+    "C_Weapon_Gun_Degev_Skin_MiGong_D",
+    "C_Weapon_Gun_Degev_Skin_MiGong_D"
+  ],
+  "017765138": [
+    "C_Weapon_Gun_Negev_Skin_KeJi_N",
+    "C_Weapon_Gun_Negev_Skin_KeJi_N"
+  ],
+  "237940986": [
+    "C_Weapon_Gun_Negev_Skin_HeiHong_N",
+    "C_Weapon_Gun_Negev_Skin_HeiHong_N"
+  ],
+  "933446918": [
+    "C_Weapon_Gun_Negev_Skin_Snow_N",
+    "C_Weapon_Gun_Negev_Skin_Snow_N"
+  ],
+  "363286150": [
+    "C_Weapon_Gun_Dualpistols_Skin_Snow_D",
+    "C_Weapon_Gun_Dualpistols_Skin_Snow_D"
+  ],
+  "654342207": [
+    "C_Weapon_Gun_M249G_Default_N",
+    "C_Weapon_Gun_M249G_Default_N"
+  ],
+  "814595605": [
+    "C_Weapon_Gun_M249G_Default_D",
+    "C_Weapon_Gun_M249G_Default_D"
+  ],
+  "869777172": [
+    "C_Weapon_Gun_MP9_Default_N",
+    "C_Weapon_Gun_MP9_Default_N"
+  ],
+  "580493107": [
+    "C_Weapon_Gun_MP9_Default_D",
+    "C_Weapon_Gun_MP9_Default_D"
+  ],
+  "222806992": [
+    "C_Weapon_Gun_MP9_Skin_BeiOuXiaoZhen_N",
+    "C_Weapon_Gun_MP9_Skin_BeiOuXiaoZhen_N"
+  ],
+  "406917276": [
+    "C_Weapon_Gun_MP9_Skin_BeiOuXiaoZhen_D",
+    "C_Weapon_Gun_MP9_Skin_BeiOuXiaoZhen_D"
+  ],
+  "926714036": [
+    "C_Weapon_Gun_MP9_Skin_Guns_N",
+    "C_Weapon_Gun_MP9_Skin_Guns_N"
+  ],
+  "433813525": [
+    "C_Weapon_Gun_MP9_Skin_Guns_D",
+    "C_Weapon_Gun_MP9_Skin_Guns_D"
+  ],
+  "904046372": [
+    "C_Weapon_Gun_MP9_Skin_wenli_N",
+    "C_Weapon_Gun_MP9_Skin_wenli_N"
+  ],
+  "779600808": [
+    "C_Weapon_Gun_MP9_Skin_wenli_D",
+    "C_Weapon_Gun_MP9_Skin_wenli_D"
+  ],
+  "856107035": [
+    "C_Weapon_Gun_MP9_Skin_Diamond_N",
+    "C_Weapon_Gun_MP9_Skin_Diamond_N"
+  ],
+  "026893369": [
+    "C_Weapon_Gun_MAC10_Default_N",
+    "C_Weapon_Gun_MAC10_Default_N"
+  ],
+  "088470714": [
+    "C_Weapon_Gun_MAC10_Default_D",
+    "C_Weapon_Gun_MAC10_Default_D"
+  ],
+  "894385308": [
+    "C_Weapon_Gun_MAC10_Skin_Secai_N",
+    "C_Weapon_Gun_MAC10_Skin_Secai_N"
+  ],
+  "201891158": [
+    "C_Weapon_Gun_MAC10_Skin_BuXiuGang_N",
+    "C_Weapon_Gun_MAC10_Skin_BuXiuGang_N"
+  ],
+  "413982612": [
+    "C_Weapon_Gun_MAC10_Skin_BuXiuGang_D",
+    "C_Weapon_Gun_MAC10_Skin_BuXiuGang_D"
+  ],
+  "627836151": [
+    "C_Weapon_Gun_MAC10_Skin_WenHua_N",
+    "C_Weapon_Gun_MAC10_Skin_WenHua_N"
+  ],
+  "069776408": [
+    "C_Weapon_Gun_MAC10_Skin_WenHua_D",
+    "C_Weapon_Gun_MAC10_Skin_WenHua_D"
+  ],
+  "027696619": [
+    "C_Weapon_Gun_MAC10_Skin_Diamond_N",
+    "C_Weapon_Gun_MAC10_Skin_Diamond_N"
+  ],
+  "399529147": [
+    "C_Weapon_Gun_MAC10_Skin_Langzhua_N",
+    "C_Weapon_Gun_MAC10_Skin_Langzhua_N"
+  ],
+  "467593225": [
+    "C_Weapon_Gun_MP5SD_Default_N",
+    "C_Weapon_Gun_MP5SD_Default_N"
+  ],
+  "187146602": [
+    "C_Weapon_Gun_MP5SD_Default_D",
+    "C_Weapon_Gun_MP5SD_Default_D"
+  ],
+  "863265011": [
+    "C_Weapon_Gun_MP5SD_Skin_ShengXiu_N",
+    "C_Weapon_Gun_MP5SD_Skin_ShengXiu_N"
+  ],
+  "593914404": [
+    "C_Weapon_Gun_MP5SD_Skin_ShengXiu_D",
+    "C_Weapon_Gun_MP5SD_Skin_ShengXiu_D"
+  ],
+  "422035778": [
+    "C_Weapon_Gun_MP7_Default_N",
+    "C_Weapon_Gun_MP7_Default_N"
+  ],
+  "737431991": [
+    "C_Weapon_Gun_MP7_Default_D",
+    "C_Weapon_Gun_MP7_Default_D"
+  ],
+  "522682803": [
+    "C_Weapon_Gun_MP7_Skin_JingShi_N",
+    "C_Weapon_Gun_MP7_Skin_JingShi_N"
+  ],
+  "105688600": [
+    "C_Weapon_Gun_MP7_Skin_JingShi_D",
+    "C_Weapon_Gun_MP7_Skin_JingShi_D"
+  ],
+  "362580901": [
+    "C_Weapon_Gun_MP7_Skin_JiGuang_N",
+    "C_Weapon_Gun_MP7_Skin_JiGuang_N"
+  ],
+  "777824541": [
+    "C_Weapon_Gun_MP7_Skin_JiGuang_D",
+    "C_Weapon_Gun_MP7_Skin_JiGuang_D"
+  ],
+  "943893838": [
+    "C_Weapon_Gun_UMP45_Default_N",
+    "C_Weapon_Gun_UMP45_Default_N"
+  ],
+  "730237882": [
+    "C_Weapon_Gun_UMP45_Default_D",
+    "C_Weapon_Gun_UMP45_Default_D"
+  ],
+  "879903363": [
+    "C_Weapon_Gun_UMP45_Skin_ZhangYu_N",
+    "C_Weapon_Gun_UMP45_Skin_ZhangYu_N"
+  ],
+  "638732855": [
+    "C_Weapon_Gun_UMP45_Skin_ZhangYu_D",
+    "C_Weapon_Gun_UMP45_Skin_ZhangYu_D"
+  ],
+  "271270331": [
+    "C_Weapon_Gun_UMP45_Skin_Inverted_N",
+    "C_Weapon_Gun_UMP45_Skin_Inverted_N"
+  ],
+  "569840890": [
+    "C_Weapon_Gun_UMP45_Skin_Inverted_D",
+    "C_Weapon_Gun_UMP45_Skin_Inverted_D"
+  ],
+  "463464207": [
+    "C_Weapon_Gun_UMP45_Skin_HeiJin_N",
+    "C_Weapon_Gun_UMP45_Skin_HeiJin_N"
+  ],
+  "516993372": [
+    "C_Weapon_Gun_UMP45_Skin_Snow_N",
+    "C_Weapon_Gun_UMP45_Skin_Snow_N"
+  ],
+  "794805873": [
+    "C_Weapon_Gun_Deagle_Skin_Snow_D",
+    "C_Weapon_Gun_Deagle_Skin_Snow_D"
+  ],
+  "936138726": [
+    "C_Weapon_Gun_P90_Default_N",
+    "C_Weapon_Gun_P90_Default_N"
+  ],
+  "216641881": [
+    "C_Weapon_Gun_P90_Default_D",
+    "C_Weapon_Gun_P90_Default_D"
+  ],
+  "561712103": [
+    "C_Weapon_Gun_P90_Skin_JiuWeiHu_N",
+    "C_Weapon_Gun_P90_Skin_JiuWeiHu_N"
+  ],
+  "939506476": [
+    "C_Weapon_Gun_P90_Skin_JiuWeiHu_D",
+    "C_Weapon_Gun_P90_Skin_JiuWeiHu_D"
+  ],
+  "750562314": [
+    "C_Weapon_Gun_P90_Skin_Maya_N",
+    "C_Weapon_Gun_P90_Skin_Maya_N"
+  ],
+  "074588911": [
+    "C_Weapon_Gun_P90_Skin_Maya_D",
+    "C_Weapon_Gun_P90_Skin_Maya_D"
+  ],
+  "981655937": [
+    "C_Weapon_Gun_P90_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_P90_Skin_ErCiYuan_N"
+  ],
+  "625132822": [
+    "C_Weapon_Gun_P90_Skin_ErCiYuan_D",
+    "C_Weapon_Gun_P90_Skin_ErCiYuan_D"
+  ],
+  "051702015": [
+    "dp_C_WeaponDataConfig_name_114060011_8629",
+    "dp_C_WeaponDataConfig_name_114060011_8629"
+  ],
+  "623506430": [
+    "C_Weapon_Gun_P90_Skin_Circuit_N",
+    "C_Weapon_Gun_P90_Skin_Circuit_N"
+  ],
+  "924607824": [
+    "C_Weapon_Gun_P90_Skin_Circuit_D",
+    "C_Weapon_Gun_P90_Skin_Circuit_D"
+  ],
+  "748589716": [
+    "C_Weapon_Gun_P90_Skin_ChuNvZuo_N",
+    "C_Weapon_Gun_P90_Skin_ChuNvZuo_N"
+  ],
+  "939341177": [
+    "C_Weapon_Gun_P90_Skin_ChuNvZuo_D",
+    "C_Weapon_Gun_P90_Skin_ChuNvZuo_D"
+  ],
+  "169204798": [
+    "C_Weapon_Gun_P90_Skin_Nengliang_N",
+    "C_Weapon_Gun_P90_Skin_Nengliang_N"
+  ],
+  "197607985": [
+    "C_Weapon_Gun_P90_Skin_DaiMa_N",
+    "C_Weapon_Gun_P90_Skin_DaiMa_N"
+  ],
+  "528274105": [
+    "C_Weapon_Gun_P90_Skin_Steampunk_N",
+    "C_Weapon_Gun_P90_Skin_Steampunk_N"
+  ],
+  "370156137": [
+    "C_Weapon_Gun_P90_Skin_XiBu_N",
+    "C_Weapon_Gun_P90_Skin_XiBu_N"
+  ],
+  "227038385": [
+    "C_Weapon_Gun_P90_Blending_N",
+    "C_Weapon_Gun_P90_Blending_N"
+  ],
+  "455501392": [
+    "C_Weapon_Gun_Bizon_Default_N",
+    "C_Weapon_Gun_Bizon_Default_N"
+  ],
+  "375323599": [
+    "C_Weapon_Gun_Bizon_Default_D",
+    "C_Weapon_Gun_Bizon_Default_D"
+  ],
+  "946643617": [
+    "C_Weapon_Gun_Bizon_Skin_DuJiaCun_N",
+    "C_Weapon_Gun_Bizon_Skin_DuJiaCun_N"
+  ],
+  "936075051": [
+    "C_Weapon_Gun_Bizon_Skin_DuJiaCun_D",
+    "C_Weapon_Gun_Bizon_Skin_DuJiaCun_D"
+  ],
+  "785590273": [
+    "C_Weapon_Gun_Bizon_Skin_WaterGunCat_N",
+    "C_Weapon_Gun_Bizon_Skin_WaterGunCat_N"
+  ],
+  "782104961": [
+    "C_Weapon_Gun_Bizon_Skin_WaterGunCat_D",
+    "C_Weapon_Gun_Bizon_Skin_WaterGunCat_D"
+  ],
+  "698530679": [
+    "C_Weapon_Gun_Vector_Default_N",
+    "C_Weapon_Gun_Vector_Default_N"
+  ],
+  "937993956": [
+    "C_Weapon_Gun_Vector_Default_D",
+    "C_Weapon_Gun_Vector_Default_D"
+  ],
+  "825290311": [
+    "C_Weapon_Gun_NovaPA_Default_N",
+    "C_Weapon_Gun_NovaPA_Default_N"
+  ],
+  "963370822": [
+    "C_Weapon_Gun_NovaPA_Default_D",
+    "C_Weapon_Gun_NovaPA_Default_D"
+  ],
+  "500287784": [
+    "C_Weapon_Gun_NovaPA_Skin_Frog_N",
+    "C_Weapon_Gun_NovaPA_Skin_Frog_N"
+  ],
+  "156811611": [
+    "C_Weapon_Gun_NovaPA_Skin_Frog_D",
+    "C_Weapon_Gun_NovaPA_Skin_Frog_D"
+  ],
+  "678800213": [
+    "C_Weapon_Gun_NovaPA_Skin_TianXie_N",
+    "C_Weapon_Gun_NovaPA_Skin_TianXie_N"
+  ],
+  "057124146": [
+    "C_Weapon_Gun_NovaPA_Skin_TianXie_D",
+    "C_Weapon_Gun_NovaPA_Skin_TianXie_D"
+  ],
+  "376706275": [
+    "C_Weapon_Gun_NovaPA_Skin_XiBu_N",
+    "C_Weapon_Gun_NovaPA_Skin_XiBu_N"
+  ],
+  "930785671": [
+    "C_Weapon_Gun_NovaPA_Skin_XiangSu _N",
+    "C_Weapon_Gun_NovaPA_Skin_XiangSu _N"
+  ],
+  "528265594": [
+    "C_Weapon_Gun_XM1014_Default_N",
+    "C_Weapon_Gun_XM1014_Default_N"
+  ],
+  "238660461": [
+    "C_Weapon_Gun_XM1014_Default_D",
+    "C_Weapon_Gun_XM1014_Default_D"
+  ],
+  "752310010": [
+    "C_Weapon_Gun_XM1014_Skin_Qingzhu_N",
+    "C_Weapon_Gun_XM1014_Skin_Qingzhu_N"
+  ],
+  "846752243": [
+    "C_Weapon_Gun_XM1014_Skin_FengChao_N",
+    "C_Weapon_Gun_XM1014_Skin_FengChao_N"
+  ],
+  "283696364": [
+    "C_Weapon_Gun_XM1014_Skin_FengChao_D",
+    "C_Weapon_Gun_XM1014_Skin_FengChao_D"
+  ],
+  "351714829": [
+    "C_Weapon_Gun_XM1014_Skin_DaiMa_N",
+    "C_Weapon_Gun_XM1014_Skin_DaiMa_N"
+  ],
+  "052716221": [
+    "C_Weapon_Gun_XM1014_Skin_HeiJin_N",
+    "C_Weapon_Gun_XM1014_Skin_HeiJin_N"
+  ],
+  "038893524": [
+    "C_Weapon_Gun_XM1014_Skin_JinNiu_N",
+    "C_Weapon_Gun_XM1014_Skin_JinNiu_N"
+  ],
+  "501502555": [
+    "C_Weapon_Gun_XM1014_Skin_JinNiu_D",
+    "C_Weapon_Gun_XM1014_Skin_JinNiu_D"
+  ],
+  "251376455": [
+    "C_Weapon_Gun_MAG7_Default_N",
+    "C_Weapon_Gun_MAG7_Default_N"
+  ],
+  "630500964": [
+    "C_Weapon_Gun_MAG7_Default_D",
+    "C_Weapon_Gun_MAG7_Default_D"
+  ],
+  "325660604": [
+    "C_Weapon_Gun_MAG7_Skin_PoMo_N",
+    "C_Weapon_Gun_MAG7_Skin_PoMo_N"
+  ],
+  "587234429": [
+    "C_Weapon_Gun_MAG7_Skin_XiangSu_N",
+    "C_Weapon_Gun_MAG7_Skin_XiangSu_N"
+  ],
+  "954269320": [
+    "C_Weapon_Gun_MAG7_Skin_Langzhua_N",
+    "C_Weapon_Gun_MAG7_Skin_Langzhua_N"
+  ],
+  "957359668": [
+    "C_Weapon_Gun_Sawedoff_Default_N",
+    "C_Weapon_Gun_Sawedoff_Default_N"
+  ],
+  "300693661": [
+    "C_Weapon_Gun_Sawedoff_Default_D",
+    "C_Weapon_Gun_Sawedoff_Default_D"
+  ],
+  "735871301": [
+    "C_Weapon_Gun_Sawedoff_Skin_TuYa_N",
+    "C_Weapon_Gun_Sawedoff_Skin_TuYa_N"
+  ],
+  "172784714": [
+    "C_Weapon_Gun_Sawedoff_Skin_steel_N",
+    "C_Weapon_Gun_Sawedoff_Skin_steel_N"
+  ],
+  "700317881": [
+    "C_Weapon_Gun_Sawedoff_Skin_HeiHong_N",
+    "C_Weapon_Gun_Sawedoff_Skin_HeiHong_N"
+  ],
+  "830092983": [
+    "C_Weapon_Gun_Sawedoff_Skin_XiangSu_N",
+    "C_Weapon_Gun_Sawedoff_Skin_XiangSu_N"
+  ],
+  "230105901": [
+    "C_Weapon_Gun_TS686_Default_N",
+    "C_Weapon_Gun_TS686_Default_N"
+  ],
+  "979292847": [
+    "C_Weapon_Gun_TS686_Default_D",
+    "C_Weapon_Gun_TS686_Default_D"
+  ],
+  "161761872": [
+    "C_Weapon_Gun_MGL_Default_N",
+    "C_Weapon_Gun_MGL_Default_N"
+  ],
+  "978740043": [
+    "C_Weapon_Gun_MGL_Default_D",
+    "C_Weapon_Gun_MGL_Default_D"
+  ],
+  "400618924": [
+    "C_Weapon_Gun_M202_Default_N",
+    "C_Weapon_Gun_M202_Default_N"
+  ],
+  "119641415": [
+    "C_Weapon_Gun_M202_Default_D",
+    "C_Weapon_Gun_M202_Default_D"
+  ],
+  "152621459": [
+    "C_WeaponDataConfig_name_117020003",
+    "C_WeaponDataConfig_name_117020003"
+  ],
+  "324269161": [
+    "C_Weapon_Gun_USP_Default_N",
+    "C_Weapon_Gun_USP_Default_N"
+  ],
+  "056066783": [
+    "C_Weapon_Gun_USP_Default_D",
+    "C_Weapon_Gun_USP_Default_D"
+  ],
+  "138955260": [
+    "C_Weapon_Gun_USP_Skin_TiaoWen_N",
+    "C_Weapon_Gun_USP_Skin_TiaoWen_N"
+  ],
+  "669146236": [
+    "C_Weapon_Gun_USP-S_Skin_Snake_N",
+    "C_Weapon_Gun_USP-S_Skin_Snake_N"
+  ],
+  "727314396": [
+    "C_Weapon_Gun_USP-S_Skin_Snake_D",
+    "C_Weapon_Gun_USP-S_Skin_Snake_D"
+  ],
+  "234969645": [
+    "C_Weapon_Gun_USP_Skin_ZhuQue_N",
+    "C_Weapon_Gun_USP_Skin_ZhuQue_N"
+  ],
+  "691318608": [
+    "C_Weapon_Gun_USP_Skin_ZhuQue_D",
+    "C_Weapon_Gun_USP_Skin_ZhuQue_D"
+  ],
+  "803142873": [
+    "C_Weapon_Gun_USP_Skin_KeJi_N",
+    "C_Weapon_Gun_USP_Skin_KeJi_N"
+  ],
+  "515386335": [
+    "C_Weapon_Gun_USP_Skin_KeJi_D",
+    "C_Weapon_Gun_USP_Skin_KeJi_D"
+  ],
+  "639327304": [
+    "C_Weapon_Gun_USP_Skin_XiangSu_N",
+    "C_Weapon_Gun_USP_Skin_XiangSu_N"
+  ],
+  "549320508": [
+    "C_Weapon_Gun_USP_Skin_Gods_N",
+    "C_Weapon_Gun_USP_Skin_Gods_N"
+  ],
+  "533819136": [
+    "C_Weapon_Gun_P2000_Default_N",
+    "C_Weapon_Gun_P2000_Default_N"
+  ],
+  "314472457": [
+    "C_Weapon_Gun_P2000_Default_D",
+    "C_Weapon_Gun_P2000_Default_D"
+  ],
+  "809850151": [
+    "C_Weapon_Gun_P2000_Skin_SeaSide_N",
+    "C_Weapon_Gun_P2000_Skin_SeaSide_N"
+  ],
+  "516108891": [
+    "C_Weapon_Gun_P2000_Skin_SeaSide_D",
+    "C_Weapon_Gun_P2000_Skin_SeaSide_D"
+  ],
+  "404501327": [
+    "C_Weapon_Gun_P2000_Skin_Blending_N",
+    "C_Weapon_Gun_P2000_Skin_Blending_N"
+  ],
+  "166553801": [
+    "C_Weapon_Gun_P2000_Skin_GoldenAgeS2_N",
+    "C_Weapon_Gun_P2000_Skin_GoldenAgeS2_N"
+  ],
+  "361803771": [
+    "C_Weapon_Gun_P2000_Skin_Snow_N",
+    "C_Weapon_Gun_P2000_Skin_Snow_N"
+  ],
+  "152755849": [
+    "C_Weapon_Gun_Glock_Default_N",
+    "C_Weapon_Gun_Glock_Default_N"
+  ],
+  "492092027": [
+    "C_Weapon_Gun_Glock_Default_D",
+    "C_Weapon_Gun_Glock_Default_D"
+  ],
+  "986301312": [
+    "C_Weapon_Gun_Glock_Skin_XiangSu_N",
+    "C_Weapon_Gun_Glock_Skin_XiangSu_N"
+  ],
+  "994664687": [
+    "C_Weapon_Gun_Glock_Skin_MiCai_N",
+    "C_Weapon_Gun_Glock_Skin_MiCai_N"
+  ],
+  "234566071": [
+    "C_Weapon_Gun_Glock_Skin_Diamond_N",
+    "C_Weapon_Gun_Glock_Skin_Diamond_N"
+  ],
+  "392860425": [
+    "C_Weapon_Gun_Glock_Skin_KeJi_N",
+    "C_Weapon_Gun_Glock_Skin_KeJi_N"
+  ],
+  "492574966": [
+    "C_Weapon_Gun_Glock_Skin_Gods_N",
+    "C_Weapon_Gun_Glock_Skin_Gods_N"
+  ],
+  "716915386": [
+    "C_Weapon_Gun_Glock_Skin_Blending_N",
+    "C_Weapon_Gun_Glock_Skin_Blending_N"
+  ],
+  "377603358": [
+    "C_Weapon_Gun_Dualpistols_Default_N",
+    "C_Weapon_Gun_Dualpistols_Default_N"
+  ],
+  "777615825": [
+    "C_Weapon_Gun_Dualpistols_Default_D",
+    "C_Weapon_Gun_Dualpistols_Default_D"
+  ],
+  "406219673": [
+    "C_Weapon_Gun_Dualpistols_Skin_Heihong_N",
+    "C_Weapon_Gun_Dualpistols_Skin_Heihong_N"
+  ],
+  "776831818": [
+    "C_Weapon_Gun_P250_Default_N",
+    "C_Weapon_Gun_P250_Default_N"
+  ],
+  "297762902": [
+    "C_Weapon_Gun_P250_Default_D",
+    "C_Weapon_Gun_P250_Default_D"
+  ],
+  "601673662": [
+    "C_Weapon_Gun_P250_Skin_FengChao_N",
+    "C_Weapon_Gun_P250_Skin_FengChao_N"
+  ],
+  "965009409": [
+    "C_Weapon_Gun_CZ75_Default_N",
+    "C_Weapon_Gun_CZ75_Default_N"
+  ],
+  "689337167": [
+    "C_Weapon_Gun_CZ75_Default_D",
+    "C_Weapon_Gun_CZ75_Default_D"
+  ],
+  "803564826": [
+    "C_Weapon_Gun_CZ75_Skin_Heihuang_N",
+    "C_Weapon_Gun_CZ75_Skin_Heihuang_N"
+  ],
+  "436401808": [
+    "C_Weapon_Gun_CZ75_Skin_Heihuang_D",
+    "C_Weapon_Gun_CZ75_Skin_Heihuang_D"
+  ],
+  "245045864": [
+    "C_Weapon_Gun_CZ75_Skin_Langzhua_N",
+    "C_Weapon_Gun_CZ75_Skin_Langzhua_N"
+  ],
+  "473721749": [
+    "C_Weapon_Gun_CZ75_Skin_Heijin_N",
+    "C_Weapon_Gun_CZ75_Skin_Heijin_N"
+  ],
+  "656467567": [
+    "C_Weapon_Gun_CZ75_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_CZ75_Skin_ErCiYuan_N"
+  ],
+  "353047518": [
+    "C_Weapon_Gun_CZ75_Skin_ErCiYuan_D",
+    "C_Weapon_Gun_CZ75_Skin_ErCiYuan_D"
+  ],
+  "802948226": [
+    "C_Weapon_Gun_FN57_Default_N",
+    "C_Weapon_Gun_FN57_Default_N"
+  ],
+  "934921286": [
+    "C_Weapon_Gun_FN57_Default_D",
+    "C_Weapon_Gun_FN57_Default_D"
+  ],
+  "348295556": [
+    "C_Weapon_Gun_FN57_Skin_MiCai_N",
+    "C_Weapon_Gun_FN57_Skin_MiCai_N"
+  ],
+  "802878005": [
+    "C_Weapon_Gun_FN57_Skin_HuoShen_N",
+    "C_Weapon_Gun_FN57_Skin_HuoShen_N"
+  ],
+  "629586263": [
+    "C_Weapon_Gun_FN57_Skin_HuoShen_D",
+    "C_Weapon_Gun_FN57_Skin_HuoShen_D"
+  ],
+  "391221932": [
+    "C_Weapon_Gun_TEC9_Default_N",
+    "C_Weapon_Gun_TEC9_Default_N"
+  ],
+  "883717810": [
+    "C_Weapon_Gun_TEC9_Default_D",
+    "C_Weapon_Gun_TEC9_Default_D"
+  ],
+  "939311983": [
+    "C_Weapon_Gun_TEC9_Skin_MiGong_N",
+    "C_Weapon_Gun_TEC9_Skin_MiGong_N"
+  ],
+  "154815986": [
+    "C_Weapon_Gun_Deagle_Default_N",
+    "C_Weapon_Gun_Deagle_Default_N"
+  ],
+  "612212159": [
+    "C_Weapon_Gun_Deagle_Default_D",
+    "C_Weapon_Gun_Deagle_Default_D"
+  ],
+  "857113616": [
+    "C_Weapon_Gun_Deagle_Skin_Heijin_N",
+    "C_Weapon_Gun_Deagle_Skin_Heijin_N"
+  ],
+  "473503413": [
+    "C_Weapon_Gun_Deagle_Skin_LuoYe_N",
+    "C_Weapon_Gun_Deagle_Skin_LuoYe_N"
+  ],
+  "092933616": [
+    "C_Weapon_Gun_Deagle_Skin_Diamond_N",
+    "C_Weapon_Gun_Deagle_Skin_Diamond_N"
+  ],
+  "405051993": [
+    "C_Weapon_Gun_Deagle_Skin_Cyberpunk_N",
+    "C_Weapon_Gun_Deagle_Skin_Cyberpunk_N"
+  ],
+  "783262153": [
+    "C_Weapon_Gun_Deagle_Skin_Steampunk_N",
+    "C_Weapon_Gun_Deagle_Skin_Steampunk_N"
+  ],
+  "443336711": [
+    "C_Weapon_Gun_Deagle_Skin_Steampunk_D",
+    "C_Weapon_Gun_Deagle_Skin_Steampunk_D"
+  ],
+  "883080824": [
+    "C_Weapon_Gun_Deagle_Skin_DaiMa_N",
+    "C_Weapon_Gun_Deagle_Skin_DaiMa_N"
+  ],
+  "909638945": [
+    "C_Weapon_Gun_Deagle_Skin_Nengliang_N",
+    "C_Weapon_Gun_Deagle_Skin_Nengliang_N"
+  ],
+  "493817312": [
+    "C_Weapon_Gun_Deagle_Skin_ErCiYuan_N",
+    "C_Weapon_Gun_Deagle_Skin_ErCiYuan_N"
+  ],
+  "686167819": [
+    "C_Weapon_Gun_MRR8_Default_N",
+    "C_Weapon_Gun_MRR8_Default_N"
+  ],
+  "611251615": [
+    "C_Weapon_Gun_MRR8_Default_D",
+    "C_Weapon_Gun_MRR8_Default_D"
+  ],
+  "021626052": [
+    "C_Weapon_Gun_MRR8_Skin_Secai_N",
+    "C_Weapon_Gun_MRR8_Skin_Secai_N"
+  ],
+  "909449247": [
+    "C_Weapon_Gun_MRR8_Skin_HeiHong_N",
+    "C_Weapon_Gun_MRR8_Skin_HeiHong_N"
+  ],
+  "192591075": [
+    "C_Weapon_Gun_MRR8_Skin_XiBu_N",
+    "C_Weapon_Gun_MRR8_Skin_XiBu_N"
+  ],
+  "343171975": [
+    "C_Weapon_Melee_Knife_CT_Default_N",
+    "C_Weapon_Melee_Knife_CT_Default_N"
+  ],
+  "030227694": [
+    "C_Weapon_Melee_Knife_CT_Default_D",
+    "C_Weapon_Melee_Knife_CT_Default_D"
+  ],
+  "351086766": [
+    "C_Weapo_Melee_Knife_Bearhunter_Default_N",
+    "C_Weapo_Melee_Knife_Bearhunter_Default_N"
+  ],
+  "040611552": [
+    "C_Weapo_Melee_Knife_Bearhunter_Default_D",
+    "C_Weapo_Melee_Knife_Bearhunter_Default_D"
+  ],
+  "654137131": [
+    "C_Weapon_Melee_Knife_Jackknife_Default_N",
+    "C_Weapon_Melee_Knife_Jackknife_Default_N"
+  ],
+  "048338874": [
+    "C_Weapon_Melee_Knife_Jackknife_Default_D",
+    "C_Weapon_Melee_Knife_Jackknife_Default_D"
+  ],
+  "359916195": [
+    "C_Weapon_Melee_Knife_Ninja_Default_N",
+    "C_Weapon_Melee_Knife_Ninja_Default_N"
+  ],
+  "757254444": [
+    "C_Weapon_Melee_Knife_Dinja_Default_D",
+    "C_Weapon_Melee_Knife_Dinja_Default_D"
+  ],
+  "226211335": [
+    "C_Weapon_Melee_Knife_Stiletto_Default_N",
+    "C_Weapon_Melee_Knife_Stiletto_Default_N"
+  ],
+  "649794122": [
+    "C_Weapon_Melee_Knife_Stiletto_Default_D",
+    "C_Weapon_Melee_Knife_Stiletto_Default_D"
+  ],
+  "079915101": [
+    "C_Weapon_Melee_Knife_Tactical_Default_N",
+    "C_Weapon_Melee_Knife_Tactical_Default_N"
+  ],
+  "378249226": [
+    "C_Weapon_Melee_Knife_Tactical_Default_D",
+    "C_Weapon_Melee_Knife_Tactical_Default_D"
+  ],
+  "060395586": [
+    "C_Weapon_Melee_Knife_Assault_Default_N",
+    "C_Weapon_Melee_Knife_Assault_Default_N"
+  ],
+  "594974475": [
+    "C_Weapon_Melee_Knife_Assault_Default_D",
+    "C_Weapon_Melee_Knife_Assault_Default_D"
+  ],
+  "685460925": [
+    "C_Weapon_Melee_Knife_Karambit_Default_N",
+    "C_Weapon_Melee_Knife_Karambit_Default_N"
+  ],
+  "130277219": [
+    "C_Weapon_Melee_Knife_Karambit_Default_D",
+    "C_Weapon_Melee_Knife_Karambit_Default_D"
+  ],
+  "753595259": [
+    "C_Weapon_Melee_knife_Karambit_Skin_Gold_N",
+    "C_Weapon_Melee_knife_Karambit_Skin_Gold_N"
+  ],
+  "793130253": [
+    "C_Weapon_Melee_knife_Karambit_Skin_Gold_D",
+    "C_Weapon_Melee_knife_Karambit_Skin_Gold_D"
+  ],
+  "404104264": [
+    "C_Weapon_Melee_Knife_Butterfly_Default_N",
+    "C_Weapon_Melee_Knife_Butterfly_Default_N"
+  ],
+  "912871526": [
+    "C_Weapon_Melee_Knife_Butterfly_Default_D",
+    "C_Weapon_Melee_Knife_Butterfly_Default_D"
+  ],
+  "470773895": [
+    "C_Weapon_Melee_Knife_Butterfly_Skin_FeiCui_N",
+    "C_Weapon_Melee_Knife_Butterfly_Skin_FeiCui_N"
+  ],
+  "301434909": [
+    "C_Weapon_Melee_Knife_Butterfly_Skin_FeiCui_D",
+    "C_Weapon_Melee_Knife_Butterfly_Skin_FeiCui_D"
+  ],
+  "755893583": [
+    "C_Weapon_Melee_Knife_Butterfly_Skin_KeJi_N",
+    "C_Weapon_Melee_Knife_Butterfly_Skin_KeJi_N"
+  ],
+  "549402667": [
+    "C_Weapon_Melee_Knife_M9_Default_N",
+    "C_Weapon_Melee_Knife_M9_Default_N"
+  ],
+  "859580421": [
+    "C_Weapon_Melee_Knife_M9_Default_D",
+    "C_Weapon_Melee_Knife_M9_Default_D"
+  ],
+  "175535105": [
+    "C_Weapon_Melee_Knife_M9_Skin_BeiMu_N",
+    "C_Weapon_Melee_Knife_M9_Skin_BeiMu_N"
+  ],
+  "070333595": [
+    "C_Weapon_Melee_Knife_M9_Skin_BeiMu_D",
+    "C_Weapon_Melee_Knife_M9_Skin_BeiMu_D"
+  ],
+  "700738465": [
+    "C_Weapon_Melee_Knife_Bayonet_Default_N",
+    "C_Weapon_Melee_Knife_Bayonet_Default_N"
+  ],
+  "895787642": [
+    "C_Weapon_Melee_Knife_Bayonet_Default_D",
+    "C_Weapon_Melee_Knife_Bayonet_Default_D"
+  ],
+  "084743091": [
+    "C_Weapon_Melee_Bayonet_Skin_CaseHardened_N",
+    "C_Weapon_Melee_Bayonet_Skin_CaseHardened_N"
+  ],
+  "395031790": [
+    "C_Weapon_Melee_Bayonet_Skin_CaseHardened_D",
+    "C_Weapon_Melee_Bayonet_Skin_CaseHardened_D"
+  ],
+  "228273547": [
+    "dp_C_WeaponDataConfig_name_131130001_5731",
+    "dp_C_WeaponDataConfig_name_131130001_5731"
+  ],
+  "826948948": [
+    "dp_C_WeaponDataConfig_description_131130001_8898",
+    "dp_C_WeaponDataConfig_description_131130001_8898"
+  ],
+  "444704390": [
+    "C_Weapon_Melee_Fist_Default_N",
+    "C_Weapon_Melee_Fist_Default_N"
+  ],
+  "557916152": [
+    "dp_C_WeaponDataConfig_description_132010001_9980",
+    "dp_C_WeaponDataConfig_description_132010001_9980"
+  ],
+  "454680474": [
+    "C_Weapon_Melee_Etool_Default_N",
+    "C_Weapon_Melee_Etool_Default_N"
+  ],
+  "655820185": [
+    "C_Weapon_Melee_Etool_Default_D",
+    "C_Weapon_Melee_Etool_Default_D"
+  ],
+  "314898989": [
+    "C_Weapon_Melee_Etool_Skin_Vine_N",
+    "C_Weapon_Melee_Etool_Skin_Vine_N"
+  ],
+  "116484962": [
+    "C_Weapon_Melee_Etool_Skin_Vine_D",
+    "C_Weapon_Melee_Etool_Skin_Vine_D"
+  ],
+  "625509009": [
+    "C_Weapon_Melee_Etool_Skin_Halloween2022_N",
+    "C_Weapon_Melee_Etool_Skin_Halloween2022_N"
+  ],
+  "554198702": [
+    "C_Weapon_Melee_Bat_Default_N",
+    "C_Weapon_Melee_Bat_Default_N"
+  ],
+  "530351069": [
+    "C_Weapon_Melee_Bat_Default_D",
+    "C_Weapon_Melee_Bat_Default_D"
+  ],
+  "142264389": [
+    "C_Weapon_Melee_Axe_Default_N",
+    "C_Weapon_Melee_Axe_Default_N"
+  ],
+  "562905775": [
+    "C_Weapon_Melee_Axe_Default_D",
+    "C_Weapon_Melee_Axe_Default_D"
+  ],
+  "036041522": [
+    "C_Weapon_Melee_Axe_Skin_Red_N",
+    "C_Weapon_Melee_Axe_Skin_Red_N"
+  ],
+  "628781639": [
+    "C_Weapon_Melee_Axe_Skin_GoldenAgeS2_N",
+    "C_Weapon_Melee_Axe_Skin_GoldenAgeS2_N"
+  ],
+  "071596676": [
+    "dp_C_WeaponDataConfig_name_132020001_0795",
+    "dp_C_WeaponDataConfig_name_132020001_0795"
+  ],
+  "088299648": [
+    "dp_C_WeaponDataConfig_description_132020001_5331",
+    "dp_C_WeaponDataConfig_description_132020001_5331"
+  ],
+  "055953251": [
+    "C_Weapon_Melee_YiJia_Default_N",
+    "C_Weapon_Melee_YiJia_Default_N"
+  ],
+  "615263043": [
+    "C_Weapon_Melee_YiJia_Default_D",
+    "C_Weapon_Melee_YiJia_Default_D"
+  ],
+  "814524779": [
+    "C_Weapon_Melee_Knife_Sheath_Skin_N",
+    "C_Weapon_Melee_Knife_Sheath_Skin_N"
+  ],
+  "016600616": [
+    "C_Weapon_Melee_Knife_Sheath_Skin_D",
+    "C_Weapon_Melee_Knife_Sheath_Skin_D"
+  ],
+  "356069046": [
+    "C_Weapon_Melee_Machetes_Default_N",
+    "C_Weapon_Melee_Machetes_Default_N"
+  ],
+  "731069794": [
+    "C_Weapon_Melee_Machetes_Default_D",
+    "C_Weapon_Melee_Machetes_Default_D"
+  ],
+  "877897258": [
+    "C_Weapon_Melee_Katana_Default_N",
+    "C_Weapon_Melee_Katana_Default_N"
+  ],
+  "966508615": [
+    "C_Weapon_Melee_Katana_Default_D",
+    "C_Weapon_Melee_Katana_Default_D"
+  ],
+  "703785969": [
+    "C_Weapon_Melee_Knife_NewM9_Default_N",
+    "C_Weapon_Melee_Knife_NewM9_Default_N"
+  ],
+  "258431820": [
+    "C_Weapon_Melee_Knife_NewM9_Skin_XiBu_N",
+    "C_Weapon_Melee_Knife_NewM9_Skin_XiBu_N"
+  ],
+  "674907849": [
+    "C_Weapon_Grenade_Incendiary_Default_N",
+    "C_Weapon_Grenade_Incendiary_Default_N"
+  ],
+  "806419900": [
+    "C_Weapon_Grenade_Incendiary_Default_D",
+    "C_Weapon_Grenade_Incendiary_Default_D"
+  ],
+  "775603719": [
+    "C_Weapon_Grenade_Molotov_Default_N",
+    "C_Weapon_Grenade_Molotov_Default_N"
+  ],
+  "918158164": [
+    "C_Weapon_Grenade_Decoy_Default_N",
+    "C_Weapon_Grenade_Decoy_Default_N"
+  ],
+  "727971621": [
+    "C_Weapon_Grenade_Decoy_Default_D",
+    "C_Weapon_Grenade_Decoy_Default_D"
+  ],
+  "756302006": [
+    "C_Weapon_Grenade_FlashBang_Default_N",
+    "C_Weapon_Grenade_FlashBang_Default_N"
+  ],
+  "008518494": [
+    "C_Weapon_Grenade_FlashBang_Default_D",
+    "C_Weapon_Grenade_FlashBang_Default_D"
+  ],
+  "512702830": [
+    "dp_C_WeaponDataConfig_name_143020001_9911",
+    "dp_C_WeaponDataConfig_name_143020001_9911"
+  ],
+  "519596206": [
+    "C_Weapon_Grenade_Gaobao_Default_N",
+    "C_Weapon_Grenade_Gaobao_Default_N"
+  ],
+  "719546350": [
+    "C_Weapon_Grenade_Gaobao_Default_D",
+    "C_Weapon_Grenade_Gaobao_Default_D"
+  ],
+  "913224235": [
+    "C_Weapon_Grenade_Gaobao_Glod_N",
+    "C_Weapon_Grenade_Gaobao_Glod_N"
+  ],
+  "327019348": [
+    "C_Weapon_Grenade_Gaobao_Gold_D",
+    "C_Weapon_Grenade_Gaobao_Gold_D"
+  ],
+  "193206133": [
+    "C_Weapon_Grenade_Gaobao_Skin_Halloween2022_N",
+    "C_Weapon_Grenade_Gaobao_Skin_Halloween2022_N"
+  ],
+  "837753803": [
+    "C_Weapon_Grenade_Gaobao_Skin_Football_N",
+    "C_Weapon_Grenade_Gaobao_Skin_Football_N"
+  ],
+  "790086325": [
+    "C_Weapon_Grenade_Gaobao_Skin_Football_D",
+    "C_Weapon_Grenade_Gaobao_Skin_Football_D"
+  ],
+  "808428604": [
+    "dp_C_WeaponDataConfig_name_144020001_7375",
+    "dp_C_WeaponDataConfig_name_144020001_7375"
+  ],
+  "350879937": [
+    "C_Weapon_Grenade_Smoke_Default_N",
+    "C_Weapon_Grenade_Smoke_Default_N"
+  ],
+  "769666811": [
+    "C_Weapon_Grenade_Smoke_Default_D",
+    "C_Weapon_Grenade_Smoke_Default_D"
+  ],
+  "752115405": [
+    "C_Weapon_Grenade_Smoke_Skin_Valentine2022_N",
+    "C_Weapon_Grenade_Smoke_Skin_Valentine2022_N"
+  ],
+  "707141393": [
+    "C_Weapon_Grenade_Smoke_Skin_Valentine2022_D",
+    "C_Weapon_Grenade_Smoke_Skin_Valentine2022_D"
+  ],
+  "502388190": [
+    "C_Weapon_Grenade_Gas_Default_N",
+    "C_Weapon_Grenade_Gas_Default_N"
+  ],
+  "689181209": [
+    "C_Weapon_Grenade_Gas_Default_D",
+    "C_Weapon_Grenade_Gas_Default_D"
+  ],
+  "942127398": [
+    "dp_C_WeaponDataConfig_name_145020001_4189",
+    "dp_C_WeaponDataConfig_name_145020001_4189"
+  ],
+  "141951710": [
+    "C_Weapon_Tacticalprops_C4_Default_N",
+    "C_Weapon_Tacticalprops_C4_Default_N"
+  ],
+  "816790586": [
+    "C_Weapon_Tacticalprops_C4_Default_D",
+    "C_Weapon_Tacticalprops_C4_Default_D"
+  ],
+  "613693608": [
+    "C_Weapon_Tacticalprops_Taser_Default_N",
+    "C_Weapon_Tacticalprops_Taser_Default_N"
+  ],
+  "122474126": [
+    "C_Weapon_Tacticalprops_Taser_Default_D",
+    "C_Weapon_Tacticalprops_Taser_Default_D"
+  ],
+  "161489639": [
+    "C_Weapon_Tacticalprops_Taser_Skin_WaterGun_N",
+    "C_Weapon_Tacticalprops_Taser_Skin_WaterGun_N"
+  ],
+  "414998755": [
+    "C_Weapon_Tacticalprops_Taser_Skin_WaterGun_D",
+    "C_Weapon_Tacticalprops_Taser_Skin_WaterGun_D"
+  ],
+  "180216898": [
+    "C_Weapon_Tacticalprops_APS_Default_N",
+    "C_Weapon_Tacticalprops_APS_Default_N"
+  ],
+  "283049196": [
+    "C_Weapon_Tacticalprops_APS_Default_D",
+    "C_Weapon_Tacticalprops_APS_Default_D"
+  ],
+  "364566206": [
+    "C_Weapon_Grenade_Scan_Default_N",
+    "C_Weapon_Grenade_Scan_Default_N"
+  ],
+  "904460673": [
+    "C_Weapon_Grenade_Scan_Default_D",
+    "C_Weapon_Grenade_Scan_Default_D"
+  ],
+  "522954131": [
+    "C_Weapon_Tacticalprops_SmokeMissile_Default_N",
+    "C_Weapon_Tacticalprops_SmokeMissile_Default_N"
+  ],
+  "706392960": [
+    "C_Weapon_Tacticalprops_SmokeMissile_Default_D",
+    "C_Weapon_Tacticalprops_SmokeMissile_Default_D"
+  ],
+  "579199687": [
+    "C_Weapon_Tacticalprops_HealthShot_Default_N",
+    "C_Weapon_Tacticalprops_HealthShot_Default_N"
+  ],
+  "057537082": [
+    "C_Weapon_Tacticalprops_HealthShot_Default_D",
+    "C_Weapon_Tacticalprops_HealthShot_Default_D"
+  ],
+  "757390054": [
+    "C_Weapon_Tacticalprops_SelfSave_Default_N",
+    "C_Weapon_Tacticalprops_SelfSave_Default_N"
+  ],
+  "025009838": [
+    "C_Weapon_Tacticalprops_SelfSave_Default_D",
+    "C_Weapon_Tacticalprops_SelfSave_Default_D"
+  ],
+  "975514142": [
+    "C_Weapon_Tacticalprops_BuffShot_Default_N",
+    "C_Weapon_Tacticalprops_BuffShot_Default_N"
+  ],
+  "852177544": [
+    "C_Weapon_Tacticalprops_BuffShot_Default_D",
+    "C_Weapon_Tacticalprops_BuffShot_Default_D"
+  ],
+  "778205237": [
+    "C_Weapon_Tacticalprops_Armor_Default_N",
+    "C_Weapon_Tacticalprops_Armor_Default_N"
+  ],
+  "714176323": [
+    "C_Weapon_Tacticalprops_Armor_Default_D",
+    "C_Weapon_Tacticalprops_Armor_Default_D"
+  ],
+  "857523520": [
+    "dp_C_WeaponDataConfig_name_517020001_1468",
+    "dp_C_WeaponDataConfig_name_517020001_1468"
+  ],
+  "383827343": [
+    "dp_C_WeaponDataConfig_name_544010001_1322",
+    "dp_C_WeaponDataConfig_name_544010001_1322"
+  ],
+  "677857217": [
+    "dp_C_WeaponDataConfig_name_511050001_9142",
+    "dp_C_WeaponDataConfig_name_511050001_9142"
+  ],
+  "524730330": [
+    "C_Weapon_Tacticalprops_ElectronicReconnaissance_Default_N",
+    "C_Weapon_Tacticalprops_ElectronicReconnaissance_Default_N"
+  ],
+  "690846799": [
+    "C_Weapon_Tacticalprops_ElectronicReconnaissance_Default_D",
+    "C_Weapon_Tacticalprops_ElectronicReconnaissance_Default_D"
+  ],
+  "547034935": [
+    "C_Weapon_Tacticalprops_Drone_Default_N",
+    "C_Weapon_Tacticalprops_Drone_Default_N"
+  ],
+  "112559383": [
+    "C_Weapon_Tacticalprops_Drone_Default_D",
+    "C_Weapon_Tacticalprops_Drone_Default_D"
+  ]
+}

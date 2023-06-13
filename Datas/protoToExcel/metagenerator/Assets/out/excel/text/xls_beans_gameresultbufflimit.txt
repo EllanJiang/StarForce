@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "addType": 1,
+      "additionLimit": 10000,
+      "appendLimit": [],
+      "attrId": 3,
+      "effectType": 0
+    },
+    {
+      "addType": 1,
+      "additionLimit": 2000,
+      "appendLimit": [],
+      "attrId": 3,
+      "effectType": 2
+    },
+    {
+      "addType": 1,
+      "additionLimit": 10000,
+      "appendLimit": [],
+      "attrId": 1,
+      "effectType": 0
+    },
+    {
+      "addType": 1,
+      "additionLimit": 2000,
+      "appendLimit": [],
+      "attrId": 1,
+      "effectType": 2
+    }
+  ]
+}

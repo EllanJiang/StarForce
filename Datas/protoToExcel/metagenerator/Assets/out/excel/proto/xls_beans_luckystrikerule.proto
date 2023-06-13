@@ -1,0 +1,22 @@
+/**
+* @file:   excel\LuckyStrikeRule.xlsx\LuckyStrikeRule
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message LuckyStrikeRule{
+	// key 
+	uint32 id = 1;
+	// 限制 
+	uint32 limit = 2;
+	// 权重 
+	uint32 weight = 3;
+}
+
+message LuckyStrikeRule_Array {
+	repeated LuckyStrikeRule items = 1;
+}

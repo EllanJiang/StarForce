@@ -1,0 +1,30 @@
+/**
+* @file:   excel\ClientVersionLoginControl.xlsx\ClientVersionLoginControl
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ClientVersionLoginControl{
+	// 规则id 
+	uint32 id = 1;
+	// 生效类型: all, region, country 
+	string limitType = 2;
+	// 生效列表(country: CN,RU…, region: CN, LATAM...) 
+	string limitTarget = 3;
+	// 更新方式(0:打开商店更新 1:应用内更新) 
+	uint32 updateMethod = 4;
+	// 最低版本号(0表示不限制) 
+	string versionMin = 5;
+	// 最高版本号(0表示不限制) 
+	string versionMax = 6;
+	// 推荐升级类型(0:不提示 1：推荐升级 2：强制升级 3:版本过高，禁止登录) 
+	uint32 updateType = 7;
+}
+
+message ClientVersionLoginControl_Array {
+	repeated ClientVersionLoginControl items = 1;
+}

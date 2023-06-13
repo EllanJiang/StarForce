@@ -1,0 +1,28 @@
+/**
+* @file:   excel\TaskCatalogMenu.xlsx\TaskCatalogMenu
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TaskCatalogMenu{
+	// id 
+	uint32 id = 1;
+	// 名称 
+	string name = 2;
+	// 脚本配置（用于控制该页签下需要显示哪种cell） 
+	string cell = 3;
+	// cell宽度 
+	uint32 cellWidth = 4;
+	// cell高度 
+	uint32 cellHeight = 5;
+	// 任务ID 
+	repeated uint32 taskIDs = 6;
+}
+
+message TaskCatalogMenu_Array {
+	repeated TaskCatalogMenu items = 1;
+}

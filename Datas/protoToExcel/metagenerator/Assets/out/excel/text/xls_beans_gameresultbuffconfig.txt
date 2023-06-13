@@ -1,0 +1,648 @@
+{
+  "items": [
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 1,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910010,
+      "iconType": 1,
+      "id": 20001,
+      "itemid": 310020301,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "303983030",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 1,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910010,
+      "iconType": 1,
+      "id": 20002,
+      "itemid": 310020302,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "303983030",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 2000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 1,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910010,
+      "iconType": 1,
+      "id": 20003,
+      "itemid": 310020303,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "303983030",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 5000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 1,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910010,
+      "iconType": 1,
+      "id": 20004,
+      "itemid": 310020304,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "303983030",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 10000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 2,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910011,
+      "iconType": 1,
+      "id": 20005,
+      "itemid": 310020401,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "233198273",
+      "showSequence": 2,
+      "teamName": "233198273",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 2,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910011,
+      "iconType": 1,
+      "id": 20006,
+      "itemid": 310020402,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "210499422",
+      "showSequence": 2,
+      "teamName": "210499422",
+      "value": 2000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 2,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910011,
+      "iconType": 1,
+      "id": 20007,
+      "itemid": 310020403,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "360270408",
+      "showSequence": 2,
+      "teamName": "360270408",
+      "value": 5000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 2,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910011,
+      "iconType": 1,
+      "id": 20008,
+      "itemid": 310020404,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "060513496",
+      "showSequence": 2,
+      "teamName": "060513496",
+      "value": 10000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 3,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 910011,
+      "iconType": 0,
+      "id": 20009,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "038618340",
+      "showSequence": 0,
+      "teamName": "038618340",
+      "value": 1000
+    },
+    {
+      "addType": 2,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 4,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 910011,
+      "iconType": 0,
+      "id": 20010,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "434644658",
+      "showSequence": 0,
+      "teamName": "434644658",
+      "value": 50
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 5,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910012,
+      "iconType": 1,
+      "id": 20011,
+      "itemid": 310020101,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "495099999",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 5,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910012,
+      "iconType": 1,
+      "id": 20012,
+      "itemid": 310020102,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "495099999",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 2000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 5,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910012,
+      "iconType": 1,
+      "id": 20013,
+      "itemid": 310020103,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "495099999",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 5000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 5,
+      "effectType": 1,
+      "expireTime": 86400,
+      "iconId": 910012,
+      "iconType": 1,
+      "id": 20014,
+      "itemid": 310020104,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "495099999",
+      "showSequence": 1,
+      "teamName": "",
+      "value": 10000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 6,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910013,
+      "iconType": 1,
+      "id": 20015,
+      "itemid": 310020201,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "084820837",
+      "showSequence": 2,
+      "teamName": "084820837",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 6,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910013,
+      "iconType": 1,
+      "id": 20016,
+      "itemid": 310020202,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "045861909",
+      "showSequence": 2,
+      "teamName": "045861909",
+      "value": 2000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 6,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910013,
+      "iconType": 1,
+      "id": 20017,
+      "itemid": 310020203,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "353475832",
+      "showSequence": 2,
+      "teamName": "353475832",
+      "value": 5000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 6,
+      "effectType": 2,
+      "expireTime": 86400,
+      "iconId": 910013,
+      "iconType": 1,
+      "id": 20018,
+      "itemid": 310020204,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "321993275",
+      "showSequence": 2,
+      "teamName": "321993275",
+      "value": 10000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 7,
+      "effectType": 1,
+      "expireTime": 604800,
+      "iconId": 2100003,
+      "iconType": 2,
+      "id": 20019,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "991925900",
+      "showSequence": 4,
+      "teamName": "991925900",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 8,
+      "effectType": 1,
+      "expireTime": 604800,
+      "iconId": 2100003,
+      "iconType": 2,
+      "id": 20020,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "733889017",
+      "showSequence": 4,
+      "teamName": "733889017",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 9,
+      "effectType": 1,
+      "expireTime": 2592000,
+      "iconId": 2100002,
+      "iconType": 2,
+      "id": 20021,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "260196292",
+      "showSequence": 5,
+      "teamName": "260196292",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 10,
+      "effectType": 1,
+      "expireTime": 2592000,
+      "iconId": 2100002,
+      "iconType": 2,
+      "id": 20022,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "162616390",
+      "showSequence": 5,
+      "teamName": "162616390",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 11,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 1000002,
+      "iconType": 2,
+      "id": 20023,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "885455100",
+      "showSequence": 3,
+      "teamName": "885455100",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 12,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 1000002,
+      "iconType": 2,
+      "id": 20024,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "473624094",
+      "showSequence": 3,
+      "teamName": "473624094",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 13,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 1000002,
+      "iconType": 2,
+      "id": 20025,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "797271091",
+      "showSequence": 3,
+      "teamName": "797271091",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 1,
+      "buffType": 14,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 1000002,
+      "iconType": 2,
+      "id": 20026,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "689729061",
+      "showSequence": 3,
+      "teamName": "689729061",
+      "value": 1000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 15,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 1000001,
+      "iconType": 2,
+      "id": 20027,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "787467758",
+      "showSequence": 3,
+      "teamName": "787467758",
+      "value": 2000
+    },
+    {
+      "addType": 1,
+      "additionCond": 2,
+      "attrId": 3,
+      "buffType": 16,
+      "effectType": 1,
+      "expireTime": 0,
+      "iconId": 1000001,
+      "iconType": 2,
+      "id": 20028,
+      "itemid": 0,
+      "modeRemove": [
+        1001
+      ],
+      "modeTypeLst": [
+        1,
+        3
+      ],
+      "name": "787467758",
+      "showSequence": 0,
+      "teamName": "787467758",
+      "value": 2000
+    }
+  ]
+}

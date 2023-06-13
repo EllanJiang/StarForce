@@ -1,0 +1,22 @@
+/**
+* @file:   excel\RogueLikeShopItemsGroup.xlsx\RogueLikeShopItemsGroup
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RogueLikeShopItemsGroup{
+	// 组id 
+	uint32 ID = 1;
+	// 商品id （RogueLikeShopItems） 
+	uint32 shopId = 2;
+	// 权重 
+	uint32 weight = 3;
+}
+
+message RogueLikeShopItemsGroup_Array {
+	repeated RogueLikeShopItemsGroup items = 1;
+}

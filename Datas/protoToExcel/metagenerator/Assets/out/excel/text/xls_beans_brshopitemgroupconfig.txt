@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "discount": false,
+      "itemGroupId": 101,
+      "itemId": 143010001,
+      "price": 100
+    },
+    {
+      "discount": false,
+      "itemGroupId": 101,
+      "itemId": 144010001,
+      "price": 200
+    },
+    {
+      "discount": true,
+      "itemGroupId": 101,
+      "itemId": 141010001,
+      "price": 300
+    },
+    {
+      "discount": true,
+      "itemGroupId": 101,
+      "itemId": 145010001,
+      "price": 400
+    },
+    {
+      "discount": true,
+      "itemGroupId": 1002,
+      "itemId": 173020001,
+      "price": 200
+    },
+    {
+      "discount": false,
+      "itemGroupId": 1002,
+      "itemId": 161010001,
+      "price": 200
+    }
+  ]
+}

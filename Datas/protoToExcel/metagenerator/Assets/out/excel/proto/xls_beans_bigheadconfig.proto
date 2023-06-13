@@ -1,0 +1,48 @@
+/**
+* @file:   excel\BigHeadConfig.xlsx\BigHeadConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BigHeadConfig{
+	// 击杀数/id共用 
+	uint32 id = 1;
+	// 称号 
+	string title = 2;
+	// 身体大小缩放 
+	float bodyScale = 3;
+	// 头大小缩放 
+	float headScale = 4;
+	// 最大移动速度BuffId0代表无变更 
+	uint32 maxMoveSpeedBuffId = 5;
+	// 伤害倍数 
+	float damageRate = 6;
+	// 受击胶囊体半径 
+	float capsuleRadius = 7;
+	// 受击胶囊体高度 
+	float capsuleHeight = 8;
+	// 受击胶囊体中心高度 
+	float capsuleCenterY = 9;
+	// 增加的最大血量 
+	uint32 maxHPBuffId = 10;
+	// 升级后的武器 
+	uint32 weaponId = 11;
+	// 是否是最大等级了 
+	bool isMax = 12;
+	// 等级 
+	uint32 grade = 13;
+	// 等级颜色 
+	string gradeColor = 14;
+	// 升级音效 
+	string gradeUpAudio = 15;
+	// 升级文本 
+	string gradeUpText = 16;
+}
+
+message BigHeadConfig_Array {
+	repeated BigHeadConfig items = 1;
+}

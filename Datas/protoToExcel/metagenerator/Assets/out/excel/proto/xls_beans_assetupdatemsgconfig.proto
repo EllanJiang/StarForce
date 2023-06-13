@@ -1,0 +1,20 @@
+/**
+* @file:   excel\AssetUpdateMsgConfig.xlsx\AssetUpdateMsgConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AssetUpdateMsgConfig{
+	// 原始字符串(写入内容可以根据系统插入某一个行，以系统为块) 
+	string id = 1;
+	// 中文内容 
+	string msg = 2;
+}
+
+message AssetUpdateMsgConfig_Array {
+	repeated AssetUpdateMsgConfig items = 1;
+}

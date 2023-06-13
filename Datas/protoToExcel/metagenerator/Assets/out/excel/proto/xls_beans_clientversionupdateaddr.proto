@@ -1,0 +1,20 @@
+/**
+* @file:   excel\ClientVersionUpdateAddr.xlsx\ClientVersionUpdateAddr
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ClientVersionUpdateAddr{
+	// 下载渠道 
+	uint32 id = 1;
+	// 下载地址 
+	string updateAddr = 2;
+}
+
+message ClientVersionUpdateAddr_Array {
+	repeated ClientVersionUpdateAddr items = 1;
+}

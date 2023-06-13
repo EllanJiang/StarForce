@@ -1,0 +1,1263 @@
+{
+  "items": [
+    {
+      "group": "navigate_entry",
+      "id": "navigate_entry",
+      "innerPath": "IconBg",
+      "mutex": 1,
+      "mutexWeight": 3,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_entry",
+      "id": "navigate_entry_new",
+      "innerPath": "IconBg",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_entry",
+      "id": "navigate_entry_normal",
+      "innerPath": "IconBg",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_role_entry",
+      "id": "navigate_role_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry"
+      ],
+      "style": 41,
+      "transfers": [
+        "navigate_entry"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_role_entry",
+      "id": "navigate_role_entry_normal",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_mail_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_equip_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_bag_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_achieve_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_collection_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_task_entry",
+      "id": "navigate_task_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 3,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry"
+      ],
+      "style": 41,
+      "transfers": [
+        "navigate_entry"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_task_entry",
+      "id": "navigate_task_entry_new",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_new"
+      ],
+      "style": 20,
+      "transfers": [
+        "navigate_entry_new"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "navigate_task_entry",
+      "id": "navigate_task_entry_ex",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_store_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "navigate_battlepass_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_entry_normal"
+      ],
+      "style": 41,
+      "transfers": [
+        "navigate_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "role_entry",
+      "id": "role_entry",
+      "innerPath": "HeadPanel/Avatar/RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_role_entry"
+      ],
+      "style": 41,
+      "transfers": [
+        "navigate_role_entry"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "role_entry",
+      "id": "role_entry_normal",
+      "innerPath": "HeadPanel/Avatar/RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_role_entry_normal"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_role_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "role_menu_personlize",
+      "innerPath": "TagPanel/RedpointNormal",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "role_entry"
+      ],
+      "style": 1,
+      "transfers": [
+        "role_entry_normal"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "role_menu_head",
+      "innerPath": "RedpointNormal",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "role_menu_personlize"
+      ],
+      "style": 1,
+      "transfers": [
+        "role_menu_personlize"
+      ],
+      "updateFunc": "role_menu_head"
+    },
+    {
+      "group": "",
+      "id": "role_menu_headframe",
+      "innerPath": "RedpointNormal",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "role_menu_personlize"
+      ],
+      "style": 1,
+      "transfers": [
+        "role_menu_personlize"
+      ],
+      "updateFunc": "role_menu_headframe"
+    },
+    {
+      "group": "",
+      "id": "role_menu_card",
+      "innerPath": "RedpointNormal",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "role_menu_personlize"
+      ],
+      "style": 1,
+      "transfers": [
+        "role_menu_personlize"
+      ],
+      "updateFunc": "role_menu_card"
+    },
+    {
+      "group": "",
+      "id": "role_menu_credit",
+      "innerPath": "TagPanel/RedpointPresent",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "role_entry"
+      ],
+      "style": 42,
+      "transfers": [
+        "role_entry"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "credit_award",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "role_menu_credit"
+      ],
+      "style": 41,
+      "transfers": [
+        "role_menu_credit"
+      ],
+      "updateFunc": "credit_award"
+    },
+    {
+      "group": "",
+      "id": "mail_entry",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -9,
+      "offsetY": -19,
+      "relations": [
+        "navigate_mail_entry"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_mail_entry"
+      ],
+      "updateFunc": "mail_entry"
+    },
+    {
+      "group": "",
+      "id": "mail_menu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "mail_entry"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "mail_menu"
+    },
+    {
+      "group": "",
+      "id": "privilegecard_entry",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -1,
+      "offsetY": -8,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "privilegecard_entry"
+    },
+    {
+      "group": "",
+      "id": "store_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "store_entry_new_good",
+        "navigate_store_entry"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_store_entry"
+      ],
+      "updateFunc": "store_entry"
+    },
+    {
+      "group": "",
+      "id": "store_entry_new_good",
+      "innerPath": "TipPopRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 1000,
+      "transfers": [],
+      "updateFunc": "always_unshow"
+    },
+    {
+      "group": "",
+      "id": "store_menu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "store_entry"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "store_menu"
+    },
+    {
+      "group": "",
+      "id": "store_goods",
+      "innerPath": "SellPanel",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 9,
+      "offsetY": 9,
+      "relations": [
+        "store_menu"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "store_goods"
+    },
+    {
+      "group": "",
+      "id": "recharge_mainmenu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "store_menu"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "recharge_mainmenu"
+    },
+    {
+      "group": "",
+      "id": "recharge_submenu",
+      "innerPath": "notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "recharge_mainmenu"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "recharge_submenu"
+    },
+    {
+      "group": "task_entry",
+      "id": "task_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 3,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_task_entry",
+        "match_task"
+      ],
+      "style": 41,
+      "transfers": [
+        "navigate_task_entry"
+      ],
+      "updateFunc": "task_entry"
+    },
+    {
+      "group": "task_entry",
+      "id": "task_entry_new",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_task_entry_new"
+      ],
+      "style": 20,
+      "transfers": [
+        "navigate_task_entry_new"
+      ],
+      "updateFunc": "task_entry_new"
+    },
+    {
+      "group": "task_entry",
+      "id": "task_entry_ex",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_task_entry_ex"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_task_entry_ex"
+      ],
+      "updateFunc": "task_entry_ex"
+    },
+    {
+      "group": "task_mainmenu",
+      "id": "task_mainmenu",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 3,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_entry"
+      ],
+      "style": 41,
+      "transfers": [],
+      "updateFunc": "task_mainmenu"
+    },
+    {
+      "group": "task_mainmenu",
+      "id": "task_mainmenu_new",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_entry_new"
+      ],
+      "style": 20,
+      "transfers": [],
+      "updateFunc": "task_mainmenu_new"
+    },
+    {
+      "group": "task_mainmenu",
+      "id": "task_mainmenu_ex",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_entry_ex"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "task_mainmenu_ex"
+    },
+    {
+      "group": "task_submenu",
+      "id": "task_submenu",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 3,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_mainmenu"
+      ],
+      "style": 41,
+      "transfers": [],
+      "updateFunc": "task_submenu"
+    },
+    {
+      "group": "task_submenu",
+      "id": "task_submenu_new",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_mainmenu_new"
+      ],
+      "style": 20,
+      "transfers": [],
+      "updateFunc": "task_submenu_new"
+    },
+    {
+      "group": "task_submenu",
+      "id": "task_submenu_ex",
+      "innerPath": "RedpointRoot",
+      "mutex": 1,
+      "mutexWeight": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_mainmenu_ex"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "task_submenu_ex"
+    },
+    {
+      "group": "",
+      "id": "_task_changed",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "task_submenu",
+        "task_submenu_ex",
+        "halloween_menu",
+        "goldenage_menu"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "always_unshow"
+    },
+    {
+      "group": "",
+      "id": "battlepass_entry",
+      "innerPath": "name/RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_battlepass_entry"
+      ],
+      "style": 41,
+      "transfers": [
+        "navigate_battlepass_entry"
+      ],
+      "updateFunc": "battlepass_entry"
+    },
+    {
+      "group": "",
+      "id": "battlepass_menu_reward",
+      "innerPath": "TagPanel/RedpointPresent",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "battlepass_entry",
+        "battlepass_reward_receive"
+      ],
+      "style": 42,
+      "transfers": [
+        "battlepass_reward_receive"
+      ],
+      "updateFunc": "battlepass_reward_receive"
+    },
+    {
+      "group": "",
+      "id": "battlepass_reward_receive",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 10,
+      "transfers": [],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "battlepass_menu_task",
+      "innerPath": "TagPanel/RedpointPresent",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "battlepass_entry",
+        "match_task"
+      ],
+      "style": 42,
+      "transfers": [
+        "battlepass_entry"
+      ],
+      "updateFunc": "battlepass_menu_task"
+    },
+    {
+      "group": "",
+      "id": "teninone_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "teninone_mainmenu",
+        "teninone_submenu"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "teninone_entry"
+    },
+    {
+      "group": "",
+      "id": "teninone_mainmenu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "teninone_mainmenu"
+    },
+    {
+      "group": "",
+      "id": "teninone_submenu",
+      "innerPath": "notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "teninone_submenu"
+    },
+    {
+      "group": "",
+      "id": "halloween_entry",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -19,
+      "offsetY": -15,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "halloween_entry"
+    },
+    {
+      "group": "",
+      "id": "halloween_menu",
+      "innerPath": "Bg",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -25,
+      "offsetY": -22,
+      "relations": [
+        "halloween_entry"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "halloween_menu"
+    },
+    {
+      "group": "",
+      "id": "goldenage_entry",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -19,
+      "offsetY": -15,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "goldenage_entry"
+    },
+    {
+      "group": "",
+      "id": "goldenage_menu",
+      "innerPath": "Bg",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -25,
+      "offsetY": -20,
+      "relations": [
+        "goldenage_entry"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "goldenage_menu"
+    },
+    {
+      "group": "",
+      "id": "bag_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "equip_entry",
+        "navigate_bag_entry"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_bag_entry"
+      ],
+      "updateFunc": "bag_entry"
+    },
+    {
+      "group": "",
+      "id": "bag_mainmenu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "bag_entry"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "bag_mainmenu"
+    },
+    {
+      "group": "",
+      "id": "bag_submenu",
+      "innerPath": "notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "bag_mainmenu",
+        "equip_submenu"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "bag_submenu"
+    },
+    {
+      "group": "",
+      "id": "equip_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_equip_entry"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_equip_entry"
+      ],
+      "updateFunc": "equip_entry"
+    },
+    {
+      "group": "",
+      "id": "equip_mainmenu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "equip_mainmenu"
+    },
+    {
+      "group": "",
+      "id": "equip_submenu",
+      "innerPath": "notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "equip_mainmenu",
+        "equip_camp",
+        "equip_slot"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "equip_submenu"
+    },
+    {
+      "group": "",
+      "id": "equip_camp",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "equip_camp"
+    },
+    {
+      "group": "",
+      "id": "equip_slot",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "equip_slot"
+    },
+    {
+      "group": "",
+      "id": "achieve_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "navigate_achieve_entry"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_achieve_entry"
+      ],
+      "updateFunc": "achieve_entry"
+    },
+    {
+      "group": "",
+      "id": "achieve_type",
+      "innerPath": "NameText",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 15,
+      "offsetY": -10,
+      "relations": [
+        "achieve_entry"
+      ],
+      "style": 40,
+      "transfers": [],
+      "updateFunc": "achieve_type"
+    },
+    {
+      "group": "grade_entry",
+      "id": "grade_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 41,
+      "transfers": [],
+      "updateFunc": "grade_entry"
+    },
+    {
+      "group": "grade_entry",
+      "id": "grade_entry_next_unlock",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": -13,
+      "relations": [],
+      "style": 1001,
+      "transfers": [],
+      "updateFunc": "always_unshow"
+    },
+    {
+      "group": "",
+      "id": "grade_receive",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 10,
+      "transfers": [],
+      "updateFunc": "always_unshow"
+    },
+    {
+      "group": "",
+      "id": "social_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "social_entry"
+    },
+    {
+      "group": "",
+      "id": "social_menu",
+      "innerPath": "TagPanel/Notification",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "social_entry"
+      ],
+      "style": 1,
+      "transfers": [],
+      "updateFunc": "social_menu"
+    },
+    {
+      "group": "",
+      "id": "matchrank_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 40,
+      "transfers": [],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "matchrank_award_entry",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "matchrank_entry"
+      ],
+      "style": 41,
+      "transfers": [
+        "matchrank_entry"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "matchrank_award_entry_mini",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "matchrank_award_entry"
+      ],
+      "style": 41,
+      "transfers": [
+        "matchrank_award_entry"
+      ],
+      "updateFunc": ""
+    },
+    {
+      "group": "",
+      "id": "matchrank_award_menu_week",
+      "innerPath": "TagPanel/RedpointPresent",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "matchrank_award_entry_mini"
+      ],
+      "style": 42,
+      "transfers": [
+        "matchrank_award_entry_mini"
+      ],
+      "updateFunc": "matchrank_award_menu_week"
+    },
+    {
+      "group": "",
+      "id": "matchrank_award_menu_season",
+      "innerPath": "TagPanel/RedpointPresent",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "matchrank_award_entry_mini"
+      ],
+      "style": 42,
+      "transfers": [
+        "matchrank_award_entry_mini"
+      ],
+      "updateFunc": "matchrank_award_menu_season"
+    },
+    {
+      "group": "",
+      "id": "_matchrank_award_changed",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "matchrank_award_menu_week",
+        "matchrank_award_menu_season"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "always_unshow"
+    },
+    {
+      "group": "",
+      "id": "match_task",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 7,
+      "offsetY": 0,
+      "relations": [],
+      "style": 10,
+      "transfers": [],
+      "updateFunc": "match_task"
+    },
+    {
+      "group": "match_mode_entry",
+      "id": "match_mode_entry",
+      "innerPath": "PresentRoot/Redpoint",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [],
+      "style": 42,
+      "transfers": [],
+      "updateFunc": "always_show"
+    },
+    {
+      "group": "",
+      "id": "collection_entry",
+      "innerPath": "RedpointRoot",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "relations": [
+        "bag_entry",
+        "navigate_collection_entry"
+      ],
+      "style": 0,
+      "transfers": [
+        "navigate_collection_entry"
+      ],
+      "updateFunc": "collection_entry"
+    },
+    {
+      "group": "",
+      "id": "collection_collector",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -5,
+      "offsetY": -5,
+      "relations": [
+        "collection_entry"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "collection_collector"
+    },
+    {
+      "group": "",
+      "id": "collection_ability",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -5,
+      "offsetY": -5,
+      "relations": [
+        "collection_entry"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "collection_ability"
+    },
+    {
+      "group": "",
+      "id": "novicecarnival_menu",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -37,
+      "offsetY": -3,
+      "relations": [],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "novicecarnival_menu"
+    },
+    {
+      "group": "",
+      "id": "novicecarnival_novicecareer_menu",
+      "innerPath": "",
+      "mutex": 0,
+      "mutexWeight": 0,
+      "offsetX": -8,
+      "offsetY": -8,
+      "relations": [
+        "novicecarnival_menu"
+      ],
+      "style": 0,
+      "transfers": [],
+      "updateFunc": "novicecarnival_novicecareer_menu"
+    }
+  ]
+}

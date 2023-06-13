@@ -1,0 +1,268 @@
+{
+  "items": [
+    {
+      "modeStageId": 10511026,
+      "roundNum": 1,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 2,
+      "stageList": [
+        {
+          "configId": 9,
+          "dynamicId": 9,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 3,
+      "stageList": [
+        {
+          "configId": 3,
+          "dynamicId": 3,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 4,
+      "stageList": [
+        {
+          "configId": 4,
+          "dynamicId": 4,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 5,
+      "stageList": [
+        {
+          "configId": 5,
+          "dynamicId": 5,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 6,
+      "stageList": [
+        {
+          "configId": 7,
+          "dynamicId": 7,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 7,
+      "stageList": [
+        {
+          "configId": 6,
+          "dynamicId": 6,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 8,
+      "stageList": [
+        {
+          "configId": 8,
+          "dynamicId": 8,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 9,
+      "stageList": [
+        {
+          "configId": 4,
+          "dynamicId": 4,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 10,
+      "stageList": [
+        {
+          "configId": 2,
+          "dynamicId": 2,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 11,
+      "stageList": [
+        {
+          "configId": 8,
+          "dynamicId": 8,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511026,
+      "roundNum": 999,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 1,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 2,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 3,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 4,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 5,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 6,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 7,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 8,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 9,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 10,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 11,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    },
+    {
+      "modeStageId": 10511079,
+      "roundNum": 999,
+      "stageList": [
+        {
+          "configId": 1,
+          "dynamicId": 1,
+          "randomWeight": 100
+        }
+      ]
+    }
+  ]
+}

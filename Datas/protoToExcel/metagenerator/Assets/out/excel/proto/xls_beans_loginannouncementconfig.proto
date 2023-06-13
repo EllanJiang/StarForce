@@ -1,0 +1,22 @@
+/**
+* @file:   excel\LoginAnnouncementConfig.xlsx\LoginAnnouncementConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message LoginAnnouncementConfig{
+	// 公告版本id 
+	int32 id = 1;
+	// 公告标题 
+	string title = 2;
+	// 公告内容 
+	string content = 3;
+}
+
+message LoginAnnouncementConfig_Array {
+	repeated LoginAnnouncementConfig items = 1;
+}

@@ -1,0 +1,20 @@
+/**
+* @file:   excel\ServerStringFormat.xlsx\ServerStringFormat
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ServerStringFormat{
+	// 文本id（填入描述文本内容的简要英文即可） 
+	string id = 1;
+	// 内容 
+	string text = 2;
+}
+
+message ServerStringFormat_Array {
+	repeated ServerStringFormat items = 1;
+}

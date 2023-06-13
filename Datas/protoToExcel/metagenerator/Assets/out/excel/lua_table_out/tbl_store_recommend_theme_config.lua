@@ -1,0 +1,15 @@
+--[[
+* @file:   StoreRecommendThemeConfig
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+]]--
+
+local StoreRecommendThemeConfigTable = {
+	{lineNumber = 1, name = 303652383, priority = 1, themeBg = 10008, themeColor = '00EDFF', themeDisplay = {{goodsId = 3075, image = 10012, navigateFuncName = 'GotoBPWindow', navigateParam = 0}, {goodsId = 3076, image = 10013, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}, {goodsId = 2021, image = 10014, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}}, themeId = 1, themeType = 1, titleBg = 10007}, 
+	{lineNumber = 2, name = 171580407, priority = 2, themeBg = 10008, themeColor = 'FFF17E', themeDisplay = {{goodsId = 3078, image = 10012, navigateFuncName = 'GotoBPWindow', navigateParam = 0}, {goodsId = 3079, image = 10013, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}, {goodsId = 3080, image = 10014, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}}, themeId = 2, themeType = 1, titleBg = 10006}, 
+	{lineNumber = 3, name = 171580407, priority = 5, themeBg = 10008, themeColor = 'FFF17E', themeDisplay = {{goodsId = 3081, image = 10012, navigateFuncName = 'GotoBPWindow', navigateParam = 0}, {goodsId = 3082, image = 10013, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}, {goodsId = 3083, image = 10014, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}}, themeId = 3, themeType = 1, titleBg = 10006}, 
+	{lineNumber = 4, name = 171580407, priority = 6, themeBg = 10008, themeColor = 'FFF17E', themeDisplay = {{goodsId = 3084, image = 10012, navigateFuncName = 'GotoBPWindow', navigateParam = 0}, {goodsId = 3085, image = 10013, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}, {goodsId = 3086, image = 10014, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}}, themeId = 4, themeType = 1, titleBg = 10006}, 
+	{lineNumber = 5, name = 171580407, priority = 7, themeBg = 10008, themeColor = 'FFF17E', themeDisplay = {{goodsId = 3087, image = 10012, navigateFuncName = 'GotoBPWindow', navigateParam = 0}, {goodsId = 3007, image = 10011, navigateFuncName = 'GotoStoreWindow', navigateParam = 4}}, themeId = 5, themeType = 2, titleBg = 10006}, 
+	{lineNumber = 6, name = 303652383, priority = 1, themeBg = 10008, themeColor = '00EDFF', themeDisplay = {{goodsId = 3008, image = 10003, navigateFuncName = 'GotoTenInOneLuckyWidnow', navigateParam = 0}, {goodsId = 3007, image = 10011, navigateFuncName = 'GotoStoreWindow', navigateParam = 4}}, themeId = 6, themeType = 2, titleBg = 10007}, 
+	{lineNumber = 7, name = 171580407, priority = 2, themeBg = 10008, themeColor = 'FFF17E', themeDisplay = {{goodsId = 3078, image = 10012, navigateFuncName = 'GotoBPWindow', navigateParam = 0}, {goodsId = 3018, image = 10001, navigateFuncName = 'GotoGradeWindow', navigateParam = 0}}, themeId = 7, themeType = 2, titleBg = 10006}
+}
+return StoreRecommendThemeConfigTable

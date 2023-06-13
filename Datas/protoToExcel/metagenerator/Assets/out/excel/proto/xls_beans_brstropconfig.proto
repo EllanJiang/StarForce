@@ -1,0 +1,34 @@
+/**
+* @file:   excel\BRStropConfig.xlsx\BRStropConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRStropConfig{
+	// 配置绳索类型 
+	uint32 stropId = 1;
+	// 玩家身高 
+	float playerhight = 2;
+	// 加速度 
+	float accelerate = 3;
+	// 最大速度 
+	float maxSpeed = 4;
+	// 登上滑索时的反向距离 
+	float inverseLength = 5;
+	// 垂直滑索由低到高的离开时水平速度 
+	float endLeaveForwardSpeed = 6;
+	// 垂直滑索中途退出滑索的向前速度 
+	float outerForwardSpeed = 7;
+	// 水平滑索中途退出滑索的向上速度 
+	float outerUpSpeed = 8;
+	// 水平滑索中途退出滑索的向上速度继承比例,1为完全继承 
+	float outerUpSpeedPercent = 9;
+}
+
+message BRStropConfig_Array {
+	repeated BRStropConfig items = 1;
+}

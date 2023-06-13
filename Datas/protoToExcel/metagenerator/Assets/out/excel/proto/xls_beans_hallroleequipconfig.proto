@@ -1,0 +1,37 @@
+/**
+* @file:   excel\HallRoleEquipConfig.xlsx\HallRoleEquipConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HallRoleEquipConfig{
+	// 角色ID 
+	uint32 id = 1;
+	// 下标 
+	repeated HallRoleEquipConfig_itemList itemList = 2;
+}
+
+message HallRoleEquipConfig_itemList{
+	// 下标 
+	uint32 id = 1;
+	// 需要加载的物件儿id 
+	uint32 itemId = 2;
+	// 开始是否可见(0=隐藏) 
+	uint32 initVisible = 3;
+	// 初始挂点 
+	string initSocket = 4;
+	// 初始动画节点名称 
+	string initName = 5;
+	// 初始位置 
+	string initPos = 6;
+	// 初始位置 
+	string initAngle = 7;
+}
+
+message HallRoleEquipConfig_Array {
+	repeated HallRoleEquipConfig items = 1;
+}

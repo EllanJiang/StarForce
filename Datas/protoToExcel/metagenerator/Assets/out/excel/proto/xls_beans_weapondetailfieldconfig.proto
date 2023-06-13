@@ -1,0 +1,24 @@
+/**
+* @file:   excel\WeaponDetailFieldConfig.xlsx\WeaponDetailFieldConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponDetailFieldConfig{
+	// 字段键值 
+	string id = 1;
+	// 名称 
+	string name = 2;
+	// 最大值 
+	uint32 maxValue = 3;
+	// 单位 
+	string unit = 4;
+}
+
+message WeaponDetailFieldConfig_Array {
+	repeated WeaponDetailFieldConfig items = 1;
+}

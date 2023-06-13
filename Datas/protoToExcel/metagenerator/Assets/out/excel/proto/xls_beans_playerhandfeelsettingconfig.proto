@@ -1,0 +1,26 @@
+/**
+* @file:   excel\PlayerHandFeelSettingConfig.xlsx\PlayerHandFeelSettingConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerHandFeelSettingConfig{
+	// id 
+	uint32 id = 1;
+	// 生效大区 
+	string region = 2;
+	// 生效玩家ID（1：0-4生效，2：5-9）0：all 
+	uint32 effectType = 3;
+	// 辅瞄配置 
+	uint32 aimAssistCfgParam = 4;
+	// 武器手感配置 
+	uint32 weaponFeelCfgParam = 5;
+}
+
+message PlayerHandFeelSettingConfig_Array {
+	repeated PlayerHandFeelSettingConfig items = 1;
+}

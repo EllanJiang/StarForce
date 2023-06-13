@@ -1,0 +1,36 @@
+/**
+* @file:   excel\GameModeLoading.xlsx\GameModeLoading
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameModeLoading{
+	// ID 
+	uint32 id = 1;
+	// 文字内容 
+	string tips = 2;
+	// 权重 
+	uint32 weight = 3;
+	// 等级下限 
+	uint32 minLevel = 4;
+	// 等级上限 
+	uint32 maxLevel = 5;
+	// 布局 
+	uint32 layoutIndex = 6;
+	// 开始时间 
+	int64 startTime = 7;
+	// 结束时间 
+	int64 endTime = 8;
+	// 特定模式1 
+	repeated uint32 gameMode = 9;
+	// 预留：特定地图1 
+	repeated uint32 gameMap = 10;
+}
+
+message GameModeLoading_Array {
+	repeated GameModeLoading items = 1;
+}

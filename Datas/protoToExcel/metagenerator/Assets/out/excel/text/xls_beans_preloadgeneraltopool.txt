@@ -1,0 +1,968 @@
+{
+  "items": [
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 114060001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 1,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111030001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 2,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111050001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 3,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111050001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 4,
+      "isDespawnByPosition": true,
+      "mode": [
+        1012
+      ],
+      "num": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 112020001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 5,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 131010001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 6,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 131020001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 7,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 121040001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 8,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 121060001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 9,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 121080001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 10,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 114030001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 11,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 114040001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 12,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 114050001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 13,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 114070001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 14,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 114010001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 15,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 115020001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 16,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111010001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 17,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 112010001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 18,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 113020001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 19,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111040001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 20,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111060001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 21,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "assetIndex": 111020001,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 22,
+      "isDespawnByPosition": true,
+      "mode": [
+        1009
+      ],
+      "num": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "",
+      "blacklistMode": [],
+      "id": 23,
+      "isDespawnByPosition": false,
+      "mode": [],
+      "num": []
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Monster_Hud_3P_Zombie_HeavyMelee",
+      "blacklistMode": [],
+      "id": 24,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Monster_Hud_3P_Zombie_NormalBoom",
+      "blacklistMode": [],
+      "id": 25,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Monster_Hud_3P_Zombie_NormalMelee",
+      "blacklistMode": [],
+      "id": 26,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Monster_Hud_3P_Zombie_NormalRemote",
+      "blacklistMode": [],
+      "id": 27,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_Ballisitc_Hinge",
+      "blacklistMode": [],
+      "id": 28,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PveBlue",
+      "blacklistMode": [],
+      "id": 29,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PvePurple",
+      "blacklistMode": [],
+      "id": 30,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PveRed",
+      "blacklistMode": [],
+      "id": 31,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PveWhite",
+      "blacklistMode": [],
+      "id": 32,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Baltle_Ammo",
+      "blacklistMode": [],
+      "id": 33,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        10,
+        10,
+        15,
+        15
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Battle_Money",
+      "blacklistMode": [],
+      "id": 34,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        10,
+        10,
+        15,
+        15
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "AudioEmitter",
+      "blacklistMode": [],
+      "id": 35,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        30,
+        30,
+        40,
+        40
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Interact",
+      "blacklistMode": [
+        1031
+      ],
+      "id": 36,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "WeaponACDeafult",
+      "blacklistMode": [],
+      "id": 37,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Weapon",
+      "blacklistMode": [],
+      "id": 38,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        20,
+        20,
+        50,
+        50
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Weapon",
+      "blacklistMode": [],
+      "id": 39,
+      "isDespawnByPosition": true,
+      "mode": [
+        1004
+      ],
+      "num": [
+        60,
+        60,
+        90,
+        90
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "PawnShell3P_Vkcc",
+      "blacklistMode": [
+        1012,
+        1037
+      ],
+      "id": 40,
+      "isDespawnByPosition": false,
+      "mode": [
+        9999
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "PawnShell3P_Vkcc Standalone",
+      "blacklistMode": [],
+      "id": 42,
+      "isDespawnByPosition": false,
+      "mode": [
+        1034
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Defuser_pickup",
+      "blacklistMode": [],
+      "id": 43,
+      "isDespawnByPosition": true,
+      "mode": [
+        1004,
+        1009,
+        1002
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "Fist_3P",
+      "blacklistMode": [
+        1031
+      ],
+      "id": 44,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "MonsterShell3P",
+      "blacklistMode": [],
+      "id": 45,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "ProjectilePickUp",
+      "blacklistMode": [
+        1031
+      ],
+      "id": 46,
+      "isDespawnByPosition": true,
+      "mode": [
+        9999
+      ],
+      "num": [
+        6,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "DropLoot_Trail",
+      "blacklistMode": [],
+      "id": 47,
+      "isDespawnByPosition": false,
+      "mode": [
+        1033
+      ],
+      "num": [
+        8,
+        8,
+        15,
+        20
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PveWhite",
+      "blacklistMode": [],
+      "id": 48,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PveBlue",
+      "blacklistMode": [],
+      "id": 49,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PvePurple",
+      "blacklistMode": [],
+      "id": 50,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "addTP": [],
+      "assetIndex": 0,
+      "assetName": "FX_PveRed",
+      "blacklistMode": [],
+      "id": 51,
+      "isDespawnByPosition": true,
+      "mode": [
+        1033
+      ],
+      "num": [
+        6,
+        6,
+        10,
+        15
+      ]
+    }
+  ]
+}

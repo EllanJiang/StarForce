@@ -1,0 +1,1999 @@
+{
+  "items": [
+    {
+      "desc": "3C训练场",
+      "id": 11021084,
+      "idMS": 11021084,
+      "idMode": 1102,
+      "idScene": 1084
+    },
+    {
+      "desc": "训练bust",
+      "id": 10011001,
+      "idMS": 10011001,
+      "idMode": 1001,
+      "idScene": 1001
+    },
+    {
+      "desc": "训练maya",
+      "id": 10011003,
+      "idMS": 10011003,
+      "idMode": 1001,
+      "idScene": 1003
+    },
+    {
+      "desc": "训练chuan",
+      "id": 10011004,
+      "idMS": 10011004,
+      "idMode": 1001,
+      "idScene": 1004
+    },
+    {
+      "desc": "训练interno",
+      "id": 10011005,
+      "idMS": 10011005,
+      "idMode": 1001,
+      "idScene": 1005
+    },
+    {
+      "desc": "训练sawmill",
+      "id": 10011007,
+      "idMS": 10011007,
+      "idMode": 1001,
+      "idScene": 1007
+    },
+    {
+      "desc": "训练factory",
+      "id": 10011008,
+      "idMS": 10011008,
+      "idMode": 1001,
+      "idScene": 1008
+    },
+    {
+      "desc": "训练training",
+      "id": 10011010,
+      "idMS": 10011010,
+      "idMode": 1001,
+      "idScene": 1010
+    },
+    {
+      "desc": "训练library",
+      "id": 10011011,
+      "idMS": 10011011,
+      "idMode": 1001,
+      "idScene": 1011
+    },
+    {
+      "desc": "训练wirage",
+      "id": 10011012,
+      "idMS": 10011012,
+      "idMode": 1001,
+      "idScene": 1012
+    },
+    {
+      "desc": "训练eagle",
+      "id": 10011013,
+      "idMS": 10011013,
+      "idMode": 1001,
+      "idScene": 1013
+    },
+    {
+      "desc": "训练knife",
+      "id": 10011015,
+      "idMS": 10011015,
+      "idMode": 1001,
+      "idScene": 1015
+    },
+    {
+      "desc": "训练zcscene",
+      "id": 10011016,
+      "idMS": 10011016,
+      "idMode": 1001,
+      "idScene": 1016
+    },
+    {
+      "desc": "训练roof",
+      "id": 10011017,
+      "idMS": 10011017,
+      "idMode": 1001,
+      "idScene": 1017
+    },
+    {
+      "desc": "训练shouts",
+      "id": 10011018,
+      "idMS": 10011018,
+      "idMode": 1001,
+      "idScene": 1018
+    },
+    {
+      "desc": "训练bustnewyear",
+      "id": 10011020,
+      "idMS": 10011020,
+      "idMode": 1001,
+      "idScene": 1020
+    },
+    {
+      "desc": "训练powerpass",
+      "id": 10011023,
+      "idMS": 10011023,
+      "idMode": 1001,
+      "idScene": 1023
+    },
+    {
+      "desc": "训练rb",
+      "id": 10011024,
+      "idMS": 10011024,
+      "idMode": 1001,
+      "idScene": 1024
+    },
+    {
+      "desc": "训练jjwar",
+      "id": 10011025,
+      "idMS": 10011025,
+      "idMode": 1001,
+      "idScene": 1025
+    },
+    {
+      "desc": "训练duobiqiu",
+      "id": 10011026,
+      "idMS": 10011026,
+      "idMode": 1001,
+      "idScene": 1026
+    },
+    {
+      "desc": "训练morocco",
+      "id": 10011028,
+      "idMS": 10011028,
+      "idMode": 1001,
+      "idScene": 1028
+    },
+    {
+      "desc": "训练westworld",
+      "id": 10011029,
+      "idMS": 10011029,
+      "idMode": 1001,
+      "idScene": 1029
+    },
+    {
+      "desc": "训练小鸡大战",
+      "id": 10011030,
+      "idMS": 10011030,
+      "idMode": 1001,
+      "idScene": 1030
+    },
+    {
+      "desc": "训练BR模式",
+      "id": 10012002,
+      "idMS": 10012002,
+      "idMode": 1001,
+      "idScene": 2002
+    },
+    {
+      "desc": "地块测试interno",
+      "id": 10012001,
+      "idMS": 10012001,
+      "idMode": 1001,
+      "idScene": 2001
+    },
+    {
+      "desc": "竞技爆破bust",
+      "id": 10021001,
+      "idMS": 10021001,
+      "idMode": 1002,
+      "idScene": 1001
+    },
+    {
+      "desc": "竞技爆破interno",
+      "id": 10021005,
+      "idMS": 10021005,
+      "idMode": 1002,
+      "idScene": 1005
+    },
+    {
+      "desc": "竞技爆破wirage",
+      "id": 10021012,
+      "idMS": 10021012,
+      "idMode": 1002,
+      "idScene": 1012
+    },
+    {
+      "desc": "竞技爆破morocco",
+      "id": 10021028,
+      "idMS": 10021028,
+      "idMode": 1002,
+      "idScene": 1028
+    },
+    {
+      "desc": "竞技爆破westworld",
+      "id": 10021029,
+      "idMS": 10021029,
+      "idMode": 1002,
+      "idScene": 1029
+    },
+    {
+      "desc": "休闲爆破bust",
+      "id": 10041001,
+      "idMS": 10041001,
+      "idMode": 1004,
+      "idScene": 1001
+    },
+    {
+      "desc": "休闲爆破interno",
+      "id": 10041005,
+      "idMS": 10041005,
+      "idMode": 1004,
+      "idScene": 1005
+    },
+    {
+      "desc": "休闲爆破wirage",
+      "id": 10041012,
+      "idMS": 10041012,
+      "idMode": 1004,
+      "idScene": 1012
+    },
+    {
+      "desc": "休闲爆破morocco",
+      "id": 10041028,
+      "idMS": 10041028,
+      "idMode": 1004,
+      "idScene": 1028
+    },
+    {
+      "desc": "休闲爆破westworld",
+      "id": 10041029,
+      "idMS": 10041029,
+      "idMode": 1004,
+      "idScene": 1029
+    },
+    {
+      "desc": "团竞maya",
+      "id": 10051003,
+      "idMS": 10051003,
+      "idMode": 1005,
+      "idScene": 1003
+    },
+    {
+      "desc": "死斗bust",
+      "id": 10061001,
+      "idMS": 10061001,
+      "idMode": 1006,
+      "idScene": 1001
+    },
+    {
+      "desc": "死斗interno",
+      "id": 10061005,
+      "idMS": 10061005,
+      "idMode": 1006,
+      "idScene": 1005
+    },
+    {
+      "desc": "死斗wirage",
+      "id": 10061012,
+      "idMS": 10061012,
+      "idMode": 1006,
+      "idScene": 1012
+    },
+    {
+      "desc": "死斗morocco",
+      "id": 10061028,
+      "idMS": 10061028,
+      "idMode": 1006,
+      "idScene": 1028
+    },
+    {
+      "desc": "死斗westworld",
+      "id": 10061029,
+      "idMS": 10061029,
+      "idMode": 1006,
+      "idScene": 1029
+    },
+    {
+      "desc": "回防bust",
+      "id": 10091001,
+      "idMS": 10091001,
+      "idMode": 1009,
+      "idScene": 1001
+    },
+    {
+      "desc": "回防interno",
+      "id": 10091005,
+      "idMS": 10091005,
+      "idMode": 1009,
+      "idScene": 1005
+    },
+    {
+      "desc": "回防wirage",
+      "id": 10091012,
+      "idMS": 10091012,
+      "idMode": 1009,
+      "idScene": 1012
+    },
+    {
+      "desc": "回防morocco",
+      "id": 10091028,
+      "idMS": 10091028,
+      "idMode": 1009,
+      "idScene": 1028
+    },
+    {
+      "desc": "回防westworld",
+      "id": 10091029,
+      "idMS": 10091029,
+      "idMode": 1009,
+      "idScene": 1029
+    },
+    {
+      "desc": "小鸡",
+      "id": 10101025,
+      "idMS": 10101025,
+      "idMode": 1010,
+      "idScene": 1025
+    },
+    {
+      "desc": "躲避球",
+      "id": 10111026,
+      "idMS": 10111026,
+      "idMode": 1011,
+      "idScene": 1026
+    },
+    {
+      "desc": "新手引导",
+      "id": 10121001,
+      "idMS": 10121001,
+      "idMode": 1012,
+      "idScene": 1001
+    },
+    {
+      "desc": "训练新图",
+      "id": 10011027,
+      "idMS": 10011027,
+      "idMode": 1001,
+      "idScene": 1027
+    },
+    {
+      "desc": "竞技爆破新图",
+      "id": 10021027,
+      "idMS": 10021027,
+      "idMode": 1002,
+      "idScene": 1027
+    },
+    {
+      "desc": "休闲新图",
+      "id": 10041027,
+      "idMS": 10041027,
+      "idMode": 1004,
+      "idScene": 1027
+    },
+    {
+      "desc": "霰弹枪团竞maya",
+      "id": 10191003,
+      "idMS": 10191003,
+      "idMode": 1019,
+      "idScene": 1003
+    },
+    {
+      "desc": "刀战团竞maya",
+      "id": 10201003,
+      "idMS": 10201003,
+      "idMode": 1020,
+      "idScene": 1003
+    },
+    {
+      "desc": "低重力bust",
+      "id": 10131001,
+      "idMS": 10131001,
+      "idMode": 1013,
+      "idScene": 1001
+    },
+    {
+      "desc": "超级战士morocco",
+      "id": 10141028,
+      "idMS": 10141028,
+      "idMode": 1014,
+      "idScene": 1028
+    },
+    {
+      "desc": "超级战士bust",
+      "id": 10141001,
+      "idMS": 10141001,
+      "idMode": 1014,
+      "idScene": 1001
+    },
+    {
+      "desc": "快速复活westworld",
+      "id": 10151029,
+      "idMS": 10151029,
+      "idMode": 1015,
+      "idScene": 1029
+    },
+    {
+      "desc": "快速复活bust",
+      "id": 10151001,
+      "idMS": 10151001,
+      "idMode": 1015,
+      "idScene": 1001
+    },
+    {
+      "desc": "狙击爆破bust",
+      "id": 10161001,
+      "idMS": 10161001,
+      "idMode": 1016,
+      "idScene": 1001
+    },
+    {
+      "desc": "小鸡大战",
+      "id": 10101030,
+      "idMS": 10101030,
+      "idMode": 1010,
+      "idScene": 1030
+    },
+    {
+      "desc": "无限火力摩洛哥",
+      "id": 10211028,
+      "idMS": 10211028,
+      "idMode": 1021,
+      "idScene": 1028
+    },
+    {
+      "desc": "超级奖励武器西部",
+      "id": 10221029,
+      "idMS": 10221029,
+      "idMode": 1022,
+      "idScene": 1029
+    },
+    {
+      "desc": "无限火力bust",
+      "id": 10211001,
+      "idMS": 10211001,
+      "idMode": 1021,
+      "idScene": 1001
+    },
+    {
+      "desc": "超级奖励武bust",
+      "id": 10221001,
+      "idMS": 10221001,
+      "idMode": 1022,
+      "idScene": 1001
+    },
+    {
+      "desc": "竞技爆破Egypt",
+      "id": 10021024,
+      "idMS": 10021024,
+      "idMode": 1002,
+      "idScene": 1024
+    },
+    {
+      "desc": "大头bust",
+      "id": 10251001,
+      "idMS": 10251001,
+      "idMode": 1025,
+      "idScene": 1001
+    },
+    {
+      "desc": "训练zc2",
+      "id": 10011032,
+      "idMS": 10011032,
+      "idMode": 1001,
+      "idScene": 1032
+    },
+    {
+      "desc": "团竞zc2",
+      "id": 10051032,
+      "idMS": 10051032,
+      "idMode": 1005,
+      "idScene": 1032
+    },
+    {
+      "desc": "团竞shouts",
+      "id": 10051018,
+      "idMS": 10051018,
+      "idMode": 1005,
+      "idScene": 1018
+    },
+    {
+      "desc": "团竞椰岛",
+      "id": 10051007,
+      "idMS": 10051007,
+      "idMode": 1005,
+      "idScene": 1007
+    },
+    {
+      "desc": "团竞图书馆",
+      "id": 10051011,
+      "idMS": 10051011,
+      "idMode": 1005,
+      "idScene": 1011
+    },
+    {
+      "desc": "爆破detest",
+      "id": 10021033,
+      "idMS": 10021033,
+      "idMode": 1002,
+      "idScene": 1033
+    },
+    {
+      "desc": "训练detest",
+      "id": 10011033,
+      "idMS": 10011033,
+      "idMode": 1001,
+      "idScene": 1033
+    },
+    {
+      "desc": "br_crossarea",
+      "id": 11012001,
+      "idMS": 11012001,
+      "idMode": 1101,
+      "idScene": 2001
+    },
+    {
+      "desc": "br_morocco",
+      "id": 11012003,
+      "idMS": 11012003,
+      "idMode": 1101,
+      "idScene": 2003
+    },
+    {
+      "desc": "椰岛训练1",
+      "id": 10011035,
+      "idMS": 10011035,
+      "idMode": 1001,
+      "idScene": 1035
+    },
+    {
+      "desc": "团竞椰岛1",
+      "id": 10051035,
+      "idMS": 10051035,
+      "idMode": 1005,
+      "idScene": 1035
+    },
+    {
+      "desc": "团竞十字训练",
+      "id": 10011036,
+      "idMS": 10011036,
+      "idMode": 1001,
+      "idScene": 1036
+    },
+    {
+      "desc": "团竞十字",
+      "id": 10051036,
+      "idMS": 10051036,
+      "idMode": 1005,
+      "idScene": 1036
+    },
+    {
+      "desc": "prescene1",
+      "id": 10051037,
+      "idMS": 10051037,
+      "idMode": 1005,
+      "idScene": 1037
+    },
+    {
+      "desc": "prescene2",
+      "id": 10051038,
+      "idMS": 10051038,
+      "idMode": 1005,
+      "idScene": 1038
+    },
+    {
+      "desc": "摩洛哥",
+      "id": 10051039,
+      "idMS": 10051039,
+      "idMode": 1005,
+      "idScene": 1039
+    },
+    {
+      "desc": "prescene4",
+      "id": 10051040,
+      "idMS": 10051040,
+      "idMode": 1005,
+      "idScene": 1040
+    },
+    {
+      "desc": "prescene5",
+      "id": 10051041,
+      "idMS": 10051041,
+      "idMode": 1005,
+      "idScene": 1041
+    },
+    {
+      "desc": "prescene6",
+      "id": 10051042,
+      "idMS": 10051042,
+      "idMode": 1005,
+      "idScene": 1042
+    },
+    {
+      "desc": "prescene7",
+      "id": 10051043,
+      "idMS": 10051043,
+      "idMode": 1005,
+      "idScene": 1043
+    },
+    {
+      "desc": "prescene8",
+      "id": 10051044,
+      "idMS": 10051044,
+      "idMode": 1005,
+      "idScene": 1044
+    },
+    {
+      "desc": "prescene9",
+      "id": 10051045,
+      "idMS": 10051045,
+      "idMode": 1005,
+      "idScene": 1045
+    },
+    {
+      "desc": "prescene10",
+      "id": 10051046,
+      "idMS": 10051046,
+      "idMode": 1005,
+      "idScene": 1046
+    },
+    {
+      "desc": "prescene1",
+      "id": 10011037,
+      "idMS": 10011037,
+      "idMode": 1001,
+      "idScene": 1037
+    },
+    {
+      "desc": "prescene2",
+      "id": 10011038,
+      "idMS": 10011038,
+      "idMode": 1001,
+      "idScene": 1038
+    },
+    {
+      "desc": "prescene3",
+      "id": 10011039,
+      "idMS": 10011039,
+      "idMode": 1001,
+      "idScene": 1039
+    },
+    {
+      "desc": "prescene4",
+      "id": 10011040,
+      "idMS": 10011040,
+      "idMode": 1001,
+      "idScene": 1040
+    },
+    {
+      "desc": "prescene5",
+      "id": 10011041,
+      "idMS": 10011041,
+      "idMode": 1001,
+      "idScene": 1041
+    },
+    {
+      "desc": "prescene6",
+      "id": 10011042,
+      "idMS": 10011042,
+      "idMode": 1001,
+      "idScene": 1042
+    },
+    {
+      "desc": "prescene7",
+      "id": 10011043,
+      "idMS": 10011043,
+      "idMode": 1001,
+      "idScene": 1043
+    },
+    {
+      "desc": "prescene8",
+      "id": 10011044,
+      "idMS": 10011044,
+      "idMode": 1001,
+      "idScene": 1044
+    },
+    {
+      "desc": "prescene9",
+      "id": 10011045,
+      "idMS": 10011045,
+      "idMode": 1001,
+      "idScene": 1045
+    },
+    {
+      "desc": "prescene10",
+      "id": 10011046,
+      "idMS": 10011046,
+      "idMode": 1001,
+      "idScene": 1046
+    },
+    {
+      "desc": "prescene2",
+      "id": 10021038,
+      "idMS": 10021038,
+      "idMode": 1002,
+      "idScene": 1038
+    },
+    {
+      "desc": "wb_tenwords",
+      "id": 10011048,
+      "idMS": 10011048,
+      "idMode": 1001,
+      "idScene": 1048
+    },
+    {
+      "desc": "wb_tenwords",
+      "id": 10051048,
+      "idMS": 10051048,
+      "idMode": 1005,
+      "idScene": 1048
+    },
+    {
+      "desc": "竞技爆破米拉及",
+      "id": 10021039,
+      "idMS": 10021039,
+      "idMode": 1002,
+      "idScene": 1039
+    },
+    {
+      "desc": "休闲爆破米拉及",
+      "id": 10041039,
+      "idMS": 10041039,
+      "idMode": 1004,
+      "idScene": 1039
+    },
+    {
+      "desc": "竞技爆破新埃及",
+      "id": 10021040,
+      "idMS": 10021040,
+      "idMode": 1002,
+      "idScene": 1040
+    },
+    {
+      "desc": "休闲爆破新埃及",
+      "id": 10041040,
+      "idMS": 10041040,
+      "idMode": 1004,
+      "idScene": 1040
+    },
+    {
+      "desc": "小丑bust",
+      "id": 10311001,
+      "idMS": 10311001,
+      "idMode": 1031,
+      "idScene": 1001
+    },
+    {
+      "desc": "PVE",
+      "id": 10331001,
+      "idMS": 10331001,
+      "idMode": 1033,
+      "idScene": 1001
+    },
+    {
+      "desc": "tm_iceworld_snow2",
+      "id": 10011050,
+      "idMS": 10011050,
+      "idMode": 1001,
+      "idScene": 1050
+    },
+    {
+      "desc": "tm_iceworld_snow2",
+      "id": 10051050,
+      "idMS": 10051050,
+      "idMode": 1005,
+      "idScene": 1050
+    },
+    {
+      "desc": "特种兵爆破bust",
+      "id": 10321001,
+      "idMS": 10321001,
+      "idMode": 1032,
+      "idScene": 1001
+    },
+    {
+      "desc": "br_bigworld",
+      "id": 11012002,
+      "idMS": 11012002,
+      "idMode": 1101,
+      "idScene": 2002
+    },
+    {
+      "desc": "特种兵西部世界",
+      "id": 10321029,
+      "idMS": 10321029,
+      "idMode": 1032,
+      "idScene": 1029
+    },
+    {
+      "desc": "刀战snow2",
+      "id": 10201050,
+      "idMS": 10201050,
+      "idMode": 1020,
+      "idScene": 1050
+    },
+    {
+      "desc": "训练tm_colosseum_5v5",
+      "id": 10011051,
+      "idMS": 10011051,
+      "idMode": 1001,
+      "idScene": 1051
+    },
+    {
+      "desc": "团竞tm_colosseum_5v5",
+      "id": 10051051,
+      "idMS": 10051051,
+      "idMode": 1005,
+      "idScene": 1051
+    },
+    {
+      "desc": "刀战罗马",
+      "id": 10201015,
+      "idMS": 10201015,
+      "idMode": 1020,
+      "idScene": 1015
+    },
+    {
+      "desc": "霰弹枪团竞ice2",
+      "id": 10191050,
+      "idMS": 10191050,
+      "idMode": 1019,
+      "idScene": 1050
+    },
+    {
+      "desc": "prescene6",
+      "id": 10121042,
+      "idMS": 10121042,
+      "idMode": 1012,
+      "idScene": 1042
+    },
+    {
+      "desc": "新手ice2",
+      "id": 10341050,
+      "idMS": 10341050,
+      "idMode": 1034,
+      "idScene": 1050
+    },
+    {
+      "desc": "办公室爆破",
+      "id": 10021043,
+      "idMS": 10021043,
+      "idMode": 1002,
+      "idScene": 1043
+    },
+    {
+      "desc": "真※爆破威尼斯",
+      "id": 10021052,
+      "idMS": 10021052,
+      "idMode": 1002,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※训练威尼斯",
+      "id": 10011052,
+      "idMS": 10011052,
+      "idMode": 1001,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※威尼斯",
+      "id": 10041052,
+      "idMS": 10041052,
+      "idMode": 1004,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※威尼斯",
+      "id": 10061052,
+      "idMS": 10061052,
+      "idMode": 1006,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※威尼斯",
+      "id": 10091052,
+      "idMS": 10091052,
+      "idMode": 1009,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※威尼斯",
+      "id": 10131052,
+      "idMS": 10131052,
+      "idMode": 1013,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※威尼斯",
+      "id": 10321052,
+      "idMS": 10321052,
+      "idMode": 1032,
+      "idScene": 1052
+    },
+    {
+      "desc": "真※威尼斯",
+      "id": 10331052,
+      "idMS": 10331052,
+      "idMode": 1033,
+      "idScene": 1052
+    },
+    {
+      "desc": "战术爆破",
+      "id": 10161029,
+      "idMS": 10161029,
+      "idMode": 1016,
+      "idScene": 1029
+    },
+    {
+      "desc": "新手shootingrange",
+      "id": 10371052,
+      "idMS": 10371052,
+      "idMode": 1037,
+      "idScene": 1052
+    },
+    {
+      "desc": "PVE困难难度",
+      "id": 10332052,
+      "idMS": 10332052,
+      "idMode": 1033,
+      "idScene": 2052
+    },
+    {
+      "desc": "巨人威尼斯",
+      "id": 10251052,
+      "idMS": 10251052,
+      "idMode": 1025,
+      "idScene": 1052
+    },
+    {
+      "desc": "躲避球刀战",
+      "id": 10201026,
+      "idMS": 10201026,
+      "idMode": 1020,
+      "idScene": 1026
+    },
+    {
+      "desc": "刀战威尼斯",
+      "id": 10201052,
+      "idMS": 10201052,
+      "idMode": 1020,
+      "idScene": 1052
+    },
+    {
+      "desc": "狙击团竞",
+      "id": 10081051,
+      "idMS": 10081051,
+      "idMode": 1008,
+      "idScene": 1051
+    },
+    {
+      "desc": "爆破prescene",
+      "id": 10021044,
+      "idMS": 10021044,
+      "idMode": 1002,
+      "idScene": 1044
+    },
+    {
+      "desc": "新手序章",
+      "id": 10121053,
+      "idMS": 10121053,
+      "idMode": 1012,
+      "idScene": 1053
+    },
+    {
+      "desc": "泳池别墅",
+      "id": 10311054,
+      "idMS": 10311054,
+      "idMode": 1031,
+      "idScene": 1054
+    },
+    {
+      "desc": "刀战西部世界",
+      "id": 10201029,
+      "idMS": 10201029,
+      "idMode": 1020,
+      "idScene": 1029
+    },
+    {
+      "desc": "刀战colosseum_5v5",
+      "id": 10201051,
+      "idMS": 10201051,
+      "idMode": 1020,
+      "idScene": 1051
+    },
+    {
+      "desc": "新手shootingrange斗兽厂",
+      "id": 10371051,
+      "idMS": 10371051,
+      "idMode": 1037,
+      "idScene": 1051
+    },
+    {
+      "desc": "爆破prescene9",
+      "id": 10021045,
+      "idMS": 10021045,
+      "idMode": 1002,
+      "idScene": 1045
+    },
+    {
+      "desc": "爆破prescene10",
+      "id": 10021046,
+      "idMS": 10021046,
+      "idMode": 1002,
+      "idScene": 1046
+    },
+    {
+      "desc": "靶场体育场",
+      "id": 10371026,
+      "idMS": 10371026,
+      "idMode": 1037,
+      "idScene": 1026
+    },
+    {
+      "desc": "巨人泳池",
+      "id": 10251054,
+      "idMS": 10251054,
+      "idMode": 1025,
+      "idScene": 1054
+    },
+    {
+      "desc": "训练工厂",
+      "id": 10011055,
+      "idMS": 10011055,
+      "idMode": 1001,
+      "idScene": 1055
+    },
+    {
+      "desc": "爆破工厂",
+      "id": 10021055,
+      "idMS": 10021055,
+      "idMode": 1002,
+      "idScene": 1055
+    },
+    {
+      "desc": "休闲爆破工厂",
+      "id": 10041055,
+      "idMS": 10041055,
+      "idMode": 1004,
+      "idScene": 1055
+    },
+    {
+      "desc": "死斗工厂",
+      "id": 10061055,
+      "idMS": 10061055,
+      "idMode": 1006,
+      "idScene": 1055
+    },
+    {
+      "desc": "残局工厂",
+      "id": 10091055,
+      "idMS": 10091055,
+      "idMode": 1009,
+      "idScene": 1055
+    },
+    {
+      "desc": "新手引导工厂",
+      "id": 10121055,
+      "idMS": 10121055,
+      "idMode": 1012,
+      "idScene": 1055
+    },
+    {
+      "desc": "火箭飞人工厂",
+      "id": 10131055,
+      "idMS": 10131055,
+      "idMode": 1013,
+      "idScene": 1055
+    },
+    {
+      "desc": "大头工厂",
+      "id": 10251055,
+      "idMS": 10251055,
+      "idMode": 1025,
+      "idScene": 1055
+    },
+    {
+      "desc": "PVE工厂",
+      "id": 10331055,
+      "idMS": 10331055,
+      "idMode": 1033,
+      "idScene": 1055
+    },
+    {
+      "desc": "爆破引导工厂",
+      "id": 10381055,
+      "idMS": 10381055,
+      "idMode": 1038,
+      "idScene": 1055
+    },
+    {
+      "desc": "休闲爆破办公室",
+      "id": 10041043,
+      "idMS": 10041043,
+      "idMode": 1004,
+      "idScene": 1043
+    },
+    {
+      "desc": "死斗办公室",
+      "id": 10061043,
+      "idMS": 10061043,
+      "idMode": 1006,
+      "idScene": 1043
+    },
+    {
+      "desc": "ice2靶场",
+      "id": 10371050,
+      "idMS": 10371050,
+      "idMode": 1037,
+      "idScene": 1050
+    },
+    {
+      "desc": "现代工厂特殊死斗",
+      "id": 10421055,
+      "idMS": 10421055,
+      "idMode": 1042,
+      "idScene": 1055
+    },
+    {
+      "desc": "陷阱团竞ice2",
+      "id": 10401050,
+      "idMS": 10401050,
+      "idMode": 1040,
+      "idScene": 1050
+    },
+    {
+      "desc": "歼灭ice2",
+      "id": 10391050,
+      "idMS": 10391050,
+      "idMode": 1039,
+      "idScene": 1050
+    },
+    {
+      "desc": "单点手枪爆破椰岛",
+      "id": 10411035,
+      "idMS": 10411035,
+      "idMode": 1041,
+      "idScene": 1035
+    },
+    {
+      "desc": "prescene11",
+      "id": 10011058,
+      "idMS": 10011058,
+      "idMode": 1001,
+      "idScene": 1058
+    },
+    {
+      "desc": "prescene11",
+      "id": 10021058,
+      "idMS": 10021058,
+      "idMode": 1002,
+      "idScene": 1058
+    },
+    {
+      "desc": "prescene12",
+      "id": 10011059,
+      "idMS": 10011059,
+      "idMode": 1001,
+      "idScene": 1059
+    },
+    {
+      "desc": "prescene12",
+      "id": 10021059,
+      "idMS": 10021059,
+      "idMode": 1002,
+      "idScene": 1059
+    },
+    {
+      "desc": "prescene13",
+      "id": 10011060,
+      "idMS": 10011060,
+      "idMode": 1001,
+      "idScene": 1060
+    },
+    {
+      "desc": "prescene13",
+      "id": 10021060,
+      "idMS": 10021060,
+      "idMode": 1002,
+      "idScene": 1060
+    },
+    {
+      "desc": "prescene14",
+      "id": 10011061,
+      "idMS": 10011061,
+      "idMode": 1001,
+      "idScene": 1061
+    },
+    {
+      "desc": "prescene14",
+      "id": 10021061,
+      "idMS": 10021061,
+      "idMode": 1002,
+      "idScene": 1061
+    },
+    {
+      "desc": "prescene15",
+      "id": 10011062,
+      "idMS": 10011062,
+      "idMode": 1001,
+      "idScene": 1062
+    },
+    {
+      "desc": "prescene15",
+      "id": 10021062,
+      "idMS": 10021062,
+      "idMode": 1002,
+      "idScene": 1062
+    },
+    {
+      "desc": "特殊死斗摩洛哥",
+      "id": 10421028,
+      "idMS": 10421028,
+      "idMode": 1042,
+      "idScene": 1028
+    },
+    {
+      "desc": "单点手枪爆破斗兽场",
+      "id": 10411051,
+      "idMS": 10411051,
+      "idMode": 1041,
+      "idScene": 1051
+    },
+    {
+      "desc": "陷阱团竞椰岛",
+      "id": 10401035,
+      "idMS": 10401035,
+      "idMode": 1040,
+      "idScene": 1035
+    },
+    {
+      "desc": "单点手枪爆破西部世界",
+      "id": 10411029,
+      "idMS": 10411029,
+      "idMode": 1041,
+      "idScene": 1029
+    },
+    {
+      "desc": "团竞白盒",
+      "id": 10051062,
+      "idMS": 10051062,
+      "idMode": 1005,
+      "idScene": 1062
+    },
+    {
+      "desc": "训练bank",
+      "id": 10011063,
+      "idMS": 10011063,
+      "idMode": 1001,
+      "idScene": 1063
+    },
+    {
+      "desc": "团竞bank",
+      "id": 10051063,
+      "idMS": 10051063,
+      "idMode": 1005,
+      "idScene": 1063
+    },
+    {
+      "desc": "陷阱团竞bank",
+      "id": 10401063,
+      "idMS": 10401063,
+      "idMode": 1040,
+      "idScene": 1063
+    },
+    {
+      "desc": "训练超市白盒",
+      "id": 10011065,
+      "idMS": 10011065,
+      "idMode": 1001,
+      "idScene": 1065
+    },
+    {
+      "desc": "团竞超市白盒",
+      "id": 10051065,
+      "idMS": 10051065,
+      "idMode": 1005,
+      "idScene": 1065
+    },
+    {
+      "desc": "排位爆破水城",
+      "id": 10451052,
+      "idMS": 10451052,
+      "idMode": 1045,
+      "idScene": 1052
+    },
+    {
+      "desc": "排位爆破淘金镇",
+      "id": 10451029,
+      "idMS": 10451029,
+      "idMode": 1045,
+      "idScene": 1029
+    },
+    {
+      "desc": "排位爆破现代工厂",
+      "id": 10451055,
+      "idMS": 10451055,
+      "idMode": 1045,
+      "idScene": 1055
+    },
+    {
+      "desc": "排位爆破摩洛哥",
+      "id": 10451028,
+      "idMS": 10451028,
+      "idMode": 1045,
+      "idScene": 1028
+    },
+    {
+      "desc": "排位团竞玛雅",
+      "id": 10461003,
+      "idMS": 10461003,
+      "idMode": 1046,
+      "idScene": 1003
+    },
+    {
+      "desc": "排位团竞度假村",
+      "id": 10461050,
+      "idMS": 10461050,
+      "idMode": 1046,
+      "idScene": 1050
+    },
+    {
+      "desc": "排位团竞斗兽场",
+      "id": 10461051,
+      "idMS": 10461051,
+      "idMode": 1046,
+      "idScene": 1051
+    },
+    {
+      "desc": "爆破kache改",
+      "id": 10021041,
+      "idMS": 10021041,
+      "idMode": 1002,
+      "idScene": 1041
+    },
+    {
+      "desc": "靶场",
+      "id": 10471060,
+      "idMS": 10471060,
+      "idMode": 1047,
+      "idScene": 1060
+    },
+    {
+      "desc": "办公室正版",
+      "id": 10011066,
+      "idMS": 10011066,
+      "idMode": 1001,
+      "idScene": 1066
+    },
+    {
+      "desc": "办公室正版",
+      "id": 10021066,
+      "idMS": 10021066,
+      "idMode": 1002,
+      "idScene": 1066
+    },
+    {
+      "desc": "水泥厂训练",
+      "id": 10011067,
+      "idMS": 10011067,
+      "idMode": 1001,
+      "idScene": 1067
+    },
+    {
+      "desc": "水泥厂团队竞技",
+      "id": 10051067,
+      "idMS": 10051067,
+      "idMode": 1005,
+      "idScene": 1067
+    },
+    {
+      "desc": "新手引导靶场wb_prescene13",
+      "id": 10371060,
+      "idMS": 10371060,
+      "idMode": 1037,
+      "idScene": 1060
+    },
+    {
+      "desc": "团队竞技xuantm_iceworld_snow2",
+      "id": 10481050,
+      "idMS": 10481050,
+      "idMode": 1048,
+      "idScene": 1050
+    },
+    {
+      "desc": "歼灭模式sp_stadium",
+      "id": 10391026,
+      "idMS": 10391026,
+      "idMode": 1039,
+      "idScene": 1026
+    },
+    {
+      "desc": "V模式西部世界",
+      "id": 10501029,
+      "idMS": 10501029,
+      "idMode": 1050,
+      "idScene": 1029
+    },
+    {
+      "desc": "test123",
+      "id": 10201028,
+      "idMS": 10201028,
+      "idMode": 1020,
+      "idScene": 1028
+    },
+    {
+      "desc": "搭档模式西部世界",
+      "id": 10491029,
+      "idMS": 10491029,
+      "idMode": 1049,
+      "idScene": 1029
+    },
+    {
+      "desc": "靶场sp_shooting",
+      "id": 10471068,
+      "idMS": 10471068,
+      "idMode": 1047,
+      "idScene": 1068
+    },
+    {
+      "desc": "爆破引导百岛水城",
+      "id": 10381052,
+      "idMS": 10381052,
+      "idMode": 1038,
+      "idScene": 1052
+    },
+    {
+      "desc": "新手训练任务（训练中心",
+      "id": 10371068,
+      "idMS": 10371068,
+      "idMode": 1037,
+      "idScene": 1068
+    },
+    {
+      "desc": "PVEboss关",
+      "id": 10331069,
+      "idMS": 10331069,
+      "idMode": 1033,
+      "idScene": 1069
+    },
+    {
+      "desc": "坦克大战sp_stadium",
+      "id": 10511026,
+      "idMS": 10511026,
+      "idMode": 1051,
+      "idScene": 1026
+    },
+    {
+      "desc": "搭档模式威尼斯",
+      "id": 10491052,
+      "idMS": 10491052,
+      "idMode": 1049,
+      "idScene": 1052
+    },
+    {
+      "desc": "死斗办公室",
+      "id": 10061066,
+      "idMS": 10061066,
+      "idMode": 1006,
+      "idScene": 1066
+    },
+    {
+      "desc": "休闲爆破办公室",
+      "id": 10041066,
+      "idMS": 10041066,
+      "idMode": 1004,
+      "idScene": 1066
+    },
+    {
+      "desc": "新斗兽训练",
+      "id": 10011070,
+      "idMS": 10011070,
+      "idMode": 1001,
+      "idScene": 1070
+    },
+    {
+      "desc": "新斗兽团竞",
+      "id": 10051070,
+      "idMS": 10051070,
+      "idMode": 1005,
+      "idScene": 1070
+    },
+    {
+      "desc": "新威尼斯训练",
+      "id": 10011071,
+      "idMS": 10011071,
+      "idMode": 1001,
+      "idScene": 1071
+    },
+    {
+      "desc": "新威尼斯爆破",
+      "id": 10021071,
+      "idMS": 10021071,
+      "idMode": 1002,
+      "idScene": 1071
+    },
+    {
+      "desc": "超市训练",
+      "id": 10011072,
+      "idMS": 10011072,
+      "idMode": 1001,
+      "idScene": 1072
+    },
+    {
+      "desc": "超市团竞",
+      "id": 10051072,
+      "idMS": 10051072,
+      "idMode": 1005,
+      "idScene": 1072
+    },
+    {
+      "desc": "刀战白盒1",
+      "id": 10201073,
+      "idMS": 10201073,
+      "idMode": 1020,
+      "idScene": 1073
+    },
+    {
+      "desc": "守望乱斗",
+      "id": 10521050,
+      "idMS": 10521050,
+      "idMode": 1052,
+      "idScene": 1050
+    },
+    {
+      "desc": "Vmode测试",
+      "id": 10011074,
+      "idMS": 10011074,
+      "idMode": 1001,
+      "idScene": 1074
+    },
+    {
+      "desc": "VmodeV",
+      "id": 10501074,
+      "idMS": 10501074,
+      "idMode": 1050,
+      "idScene": 1074
+    },
+    {
+      "desc": "刀战白盒2",
+      "id": 10201075,
+      "idMS": 10201075,
+      "idMode": 1020,
+      "idScene": 1075
+    },
+    {
+      "desc": "训练station（cache）",
+      "id": 10011076,
+      "idMS": 10011076,
+      "idMode": 1001,
+      "idScene": 1076
+    },
+    {
+      "desc": "爆破station（cache）",
+      "id": 10021076,
+      "idMS": 10021076,
+      "idMode": 1002,
+      "idScene": 1076
+    },
+    {
+      "desc": "死斗station（cache）",
+      "id": 10061076,
+      "idMS": 10061076,
+      "idMode": 1006,
+      "idScene": 1076
+    },
+    {
+      "desc": "回防station（cache）",
+      "id": 10091076,
+      "idMS": 10091076,
+      "idMode": 1009,
+      "idScene": 1076
+    },
+    {
+      "desc": "排位station（cache）",
+      "id": 10451076,
+      "idMS": 10451076,
+      "idMode": 1045,
+      "idScene": 1076
+    },
+    {
+      "desc": "狙击爆破de_venice2",
+      "id": 10161052,
+      "idMS": 10161052,
+      "idMode": 1016,
+      "idScene": 1052
+    },
+    {
+      "desc": "霰弹枪团竞de_westworld",
+      "id": 10191029,
+      "idMS": 10191029,
+      "idMode": 1019,
+      "idScene": 1029
+    },
+    {
+      "desc": "build威尼斯",
+      "id": 10551052,
+      "idMS": 10551052,
+      "idMode": 1055,
+      "idScene": 1052
+    },
+    {
+      "desc": "新手用",
+      "id": 10531050,
+      "idMS": 10531050,
+      "idMode": 1053,
+      "idScene": 1050
+    },
+    {
+      "desc": "新手用",
+      "id": 10541050,
+      "idMS": 10541050,
+      "idMode": 1054,
+      "idScene": 1050
+    },
+    {
+      "desc": "手枪团竞tm_maya",
+      "id": 10571003,
+      "idMS": 10571003,
+      "idMode": 1057,
+      "idScene": 1003
+    },
+    {
+      "desc": "手枪团竞de_westworld",
+      "id": 10571029,
+      "idMS": 10571029,
+      "idMode": 1057,
+      "idScene": 1029
+    },
+    {
+      "desc": "狙击死斗de_office2",
+      "id": 10581066,
+      "idMS": 10581066,
+      "idMode": 1058,
+      "idScene": 1066
+    },
+    {
+      "desc": "狙击死斗de_modernfactory",
+      "id": 10581055,
+      "idMS": 10581055,
+      "idMode": 1058,
+      "idScene": 1055
+    },
+    {
+      "desc": "团竞雷达基地迭代白盒wb_NewRadarBase1",
+      "id": 10051077,
+      "idMS": 10051077,
+      "idMode": 1005,
+      "idScene": 1077
+    },
+    {
+      "desc": "狙击爆破de_venice2",
+      "id": 10161028,
+      "idMS": 10161028,
+      "idMode": 1016,
+      "idScene": 1028
+    },
+    {
+      "desc": "无限死斗淘金镇",
+      "id": 10211029,
+      "idMS": 10211029,
+      "idMode": 1021,
+      "idScene": 1029
+    },
+    {
+      "desc": "无限死斗办公室",
+      "id": 10211066,
+      "idMS": 10211066,
+      "idMode": 1021,
+      "idScene": 1066
+    },
+    {
+      "desc": "团竞雷达基地迭代白盒wb_NewRadarBase2",
+      "id": 10051078,
+      "idMS": 10051078,
+      "idMode": 1005,
+      "idScene": 1078
+    },
+    {
+      "desc": "军备竞赛模式新雷达基地1",
+      "id": 10561077,
+      "idMS": 10561077,
+      "idMode": 1056,
+      "idScene": 1077
+    },
+    {
+      "desc": "搭档模式日落之乡",
+      "id": 10491028,
+      "idMS": 10491028,
+      "idMode": 1049,
+      "idScene": 1028
+    },
+    {
+      "desc": "搭档模式办公室",
+      "id": 10491066,
+      "idMS": 10491066,
+      "idMode": 1049,
+      "idScene": 1066
+    },
+    {
+      "desc": "军备竞赛模式新雷达基地2",
+      "id": 10561078,
+      "idMS": 10561078,
+      "idMode": 1056,
+      "idScene": 1078
+    },
+    {
+      "desc": "乱斗测试地图",
+      "id": 10511079,
+      "idMS": 10511079,
+      "idMode": 1051,
+      "idScene": 1079
+    },
+    {
+      "desc": "street白盒-训练",
+      "id": 10011080,
+      "idMS": 10011080,
+      "idMode": 1001,
+      "idScene": 1080
+    },
+    {
+      "desc": "street白盒-竞技爆破",
+      "id": 10021080,
+      "idMS": 10021080,
+      "idMode": 1002,
+      "idScene": 1080
+    },
+    {
+      "desc": "street白盒-团竞",
+      "id": 10051080,
+      "idMS": 10051080,
+      "idMode": 1005,
+      "idScene": 1080
+    },
+    {
+      "desc": "street白盒-军备",
+      "id": 10561080,
+      "idMS": 10561080,
+      "idMode": 1056,
+      "idScene": 1080
+    },
+    {
+      "desc": "B模式日落之乡",
+      "id": 10551028,
+      "idMS": 10551028,
+      "idMode": 1055,
+      "idScene": 1028
+    },
+    {
+      "desc": "B模式办公室",
+      "id": 10551066,
+      "idMS": 10551066,
+      "idMode": 1055,
+      "idScene": 1066
+    },
+    {
+      "desc": "B模式淘金镇",
+      "id": 10551029,
+      "idMS": 10551029,
+      "idMode": 1055,
+      "idScene": 1029
+    },
+    {
+      "desc": "B模式现代工厂",
+      "id": 10551055,
+      "idMS": 10551055,
+      "idMode": 1055,
+      "idScene": 1055
+    },
+    {
+      "desc": "靶场wb_dam",
+      "id": 10471081,
+      "idMS": 10471081,
+      "idMode": 1047,
+      "idScene": 1081
+    },
+    {
+      "desc": "团队竞技wb_dam",
+      "id": 10051081,
+      "idMS": 10051081,
+      "idMode": 1005,
+      "idScene": 1081
+    },
+    {
+      "desc": "军备竞赛wb_dam",
+      "id": 10561081,
+      "idMS": 10561081,
+      "idMode": 1056,
+      "idScene": 1081
+    },
+    {
+      "desc": "demo测试场景br_drstone",
+      "id": 11012004,
+      "idMS": 11012004,
+      "idMode": 1101,
+      "idScene": 2004
+    },
+    {
+      "desc": "基地攻防乱斗白盒",
+      "id": 10051079,
+      "idMS": 10051079,
+      "idMode": 1005,
+      "idScene": 1079
+    },
+    {
+      "desc": "demo场景训练br_drstone",
+      "id": 10012004,
+      "idMS": 10012004,
+      "idMode": 1001,
+      "idScene": 2004
+    },
+    {
+      "desc": "西部世界万圣节爆破",
+      "id": 10021082,
+      "idMS": 10021082,
+      "idMode": 1002,
+      "idScene": 1082
+    },
+    {
+      "desc": "西部世界万圣节死斗",
+      "id": 10061082,
+      "idMS": 10061082,
+      "idMode": 1006,
+      "idScene": 1082
+    },
+    {
+      "desc": "西部世界万圣节训练",
+      "id": 10011082,
+      "idMS": 10011082,
+      "idMode": 1001,
+      "idScene": 1082
+    },
+    {
+      "desc": "西部世界万圣节排位",
+      "id": 10451082,
+      "idMS": 10451082,
+      "idMode": 1045,
+      "idScene": 1082
+    },
+    {
+      "desc": "团竞雷达基地02",
+      "id": 10051083,
+      "idMS": 10051083,
+      "idMode": 1005,
+      "idScene": 1083
+    },
+    {
+      "desc": "1021验证ttk 多血威尼斯",
+      "id": 10211052,
+      "idMS": 10211052,
+      "idMode": 1021,
+      "idScene": 1052
+    },
+    {
+      "desc": "1021验证ttk 多血现代工厂",
+      "id": 10211055,
+      "idMS": 10211055,
+      "idMode": 1021,
+      "idScene": 1055
+    },
+    {
+      "desc": "排位团竞新雷达基地",
+      "id": 10461083,
+      "idMS": 10461083,
+      "idMode": 1046,
+      "idScene": 1083
+    },
+    {
+      "desc": "训练新雷达基地",
+      "id": 10011083,
+      "idMS": 10011083,
+      "idMode": 1001,
+      "idScene": 1083
+    },
+    {
+      "desc": "BR测试场景wb_drstone",
+      "id": 10012005,
+      "idMS": 10012005,
+      "idMode": 1001,
+      "idScene": 2005
+    },
+    {
+      "desc": "BR正式场景wb_drstone",
+      "id": 11012005,
+      "idMS": 11012005,
+      "idMode": 1101,
+      "idScene": 2005
+    },
+    {
+      "desc": "BR白盒wb_drstone单排",
+      "id": 11022005,
+      "idMS": 11022005,
+      "idMode": 1102,
+      "idScene": 2005
+    },
+    {
+      "desc": "军备竞赛模式正版雷达基地",
+      "id": 10561083,
+      "idMS": 10561083,
+      "idMode": 1056,
+      "idScene": 1083
+    },
+    {
+      "desc": "排位爆破办公室",
+      "id": 10451066,
+      "idMS": 10451066,
+      "idMode": 1045,
+      "idScene": 1066
+    },
+    {
+      "desc": "排位团竞工业余晖",
+      "id": 10461067,
+      "idMS": 10461067,
+      "idMode": 1046,
+      "idScene": 1067
+    },
+    {
+      "desc": "排位团竞超市",
+      "id": 10461072,
+      "idMS": 10461072,
+      "idMode": 1046,
+      "idScene": 1072
+    },
+    {
+      "desc": "休闲爆破威尼斯",
+      "id": 10591052,
+      "idMS": 10591052,
+      "idMode": 1059,
+      "idScene": 1052
+    },
+    {
+      "desc": "新手团队竞技sp_shooting",
+      "id": 10341068,
+      "idMS": 10341068,
+      "idMode": 1034,
+      "idScene": 1068
+    },
+    {
+      "desc": "BR正式美术场景",
+      "id": 11012006,
+      "idMS": 11012006,
+      "idMode": 1101,
+      "idScene": 2006
+    },
+    {
+      "desc": "BR正式美术场景单排",
+      "id": 11022006,
+      "idMS": 11022006,
+      "idMode": 1102,
+      "idScene": 2006
+    },
+    {
+      "desc": "BR 3C训练场",
+      "id": 11011084,
+      "idMS": 11011084,
+      "idMode": 1101,
+      "idScene": 1084
+    },
+    {
+      "desc": "军备竞赛斗兽场",
+      "id": 10561051,
+      "idMS": 10561051,
+      "idMode": 1056,
+      "idScene": 1051
+    },
+    {
+      "desc": "军备竞赛工业余晖",
+      "id": 10561067,
+      "idMS": 10561067,
+      "idMode": 1056,
+      "idScene": 1067
+    },
+    {
+      "desc": "军备竞赛超市",
+      "id": 10561072,
+      "idMS": 10561072,
+      "idMode": 1056,
+      "idScene": 1072
+    },
+    {
+      "desc": "pve简单",
+      "id": 10331031,
+      "idMS": 10331031,
+      "idMode": 1033,
+      "idScene": 1031
+    }
+  ]
+}

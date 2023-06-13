@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "intervalTime": 120,
+      "ping": 800,
+      "tipsCount": 2,
+      "tipsTime": 40
+    }
+  ]
+}

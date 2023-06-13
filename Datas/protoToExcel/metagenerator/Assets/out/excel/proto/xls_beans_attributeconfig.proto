@@ -1,0 +1,24 @@
+/**
+* @file:   excel\AttributeConfig.xlsx\AttributeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AttributeConfig{
+	// 属性id 
+	uint32 id = 1;
+	// 默认值 
+	float DefaultValue = 2;
+	//  
+	uint32 BuffEffectIndex = 3;
+	// 属性加成上限（皮肤属性） 
+	uint32 ShareGroupMax = 4;
+}
+
+message AttributeConfig_Array {
+	repeated AttributeConfig items = 1;
+}

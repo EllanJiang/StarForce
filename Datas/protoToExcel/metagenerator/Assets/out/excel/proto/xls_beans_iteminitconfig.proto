@@ -1,0 +1,22 @@
+/**
+* @file:   excel\ItemInitConfig.xlsx\ItemInitConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemInitConfig{
+	// 编号 
+	uint32 id = 1;
+	// 数量 
+	uint32 count = 2;
+	// 是否装备 
+	uint32 equip = 3;
+}
+
+message ItemInitConfig_Array {
+	repeated ItemInitConfig items = 1;
+}

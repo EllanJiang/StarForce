@@ -1,0 +1,29 @@
+/**
+* @file:   excel\ChestDropConfig.xlsx\ChestDropConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ChestDropConfig{
+	// 模式id 
+	uint32 mode = 1;
+	// 掉落类型 
+	string dropType = 2;
+	// 掉落宝箱id 
+	repeated ChestDropConfig_drop drop = 3;
+}
+
+message ChestDropConfig_drop{
+	// 掉落宝箱id 
+	uint32 id = 1;
+	// 权重 
+	uint32 weight = 2;
+}
+
+message ChestDropConfig_Array {
+	repeated ChestDropConfig items = 1;
+}

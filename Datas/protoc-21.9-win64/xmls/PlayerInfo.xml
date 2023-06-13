@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <!-- 
+        目前支持的配置类型
+       "bool";
+       "byte";
+       "short";
+       "int";
+       "enum";
+       "float";
+       "long";
+       "string";
+       
+       "array";
+       "list";
+       "dict";
+    -->
+    <!-- 战斗信息-->
+    <data name="PlayerInfo" namespace="Protos">
+        <field type="int" name="mPlayerId"/>
+    </data>
+    
+    <!-- 客户端上传消息-->
+    <message id="MsgID.PlayerInfoMsg" name="PlayerInfoMsg" namespace="Protos">
+        <field type="PlayerInfo" name="mPlayerInfo"/>
+    </message>
+  
+</messages>

@@ -1,0 +1,3762 @@
+{
+  "293420125": [
+    "C_Message_Game_Mode_Team",
+    "C_Message_Game_Mode_Team"
+  ],
+  "272030268": [
+    "C_Message_Game_Mode_Person",
+    "C_Message_Game_Mode_Person"
+  ],
+  "337046519": [
+    "C_Message_Game_Status_Gaming",
+    "C_Message_Game_Status_Gaming"
+  ],
+  "064871019": [
+    "C_Message_Game_Status_Matching",
+    "C_Message_Game_Status_Matching"
+  ],
+  "313166614": [
+    "C_Message_Game__Buffer_Total_Gold_Add",
+    "C_Message_Game__Buffer_Total_Gold_Add"
+  ],
+  "621735004": [
+    "C_Message_Game_Buffer_Total_Exp_Add",
+    "C_Message_Game_Buffer_Total_Exp_Add"
+  ],
+  "835352792": [
+    "C_Message_Game_Buffer_Total_Gold_Add_Feature",
+    "C_Message_Game_Buffer_Total_Gold_Add_Feature"
+  ],
+  "969356891": [
+    "C_Message_Game_Buffer_Total_Exp_Add_Feature",
+    "C_Message_Game_Buffer_Total_Exp_Add_Feature"
+  ],
+  "652243045": [
+    "C_Message_Game_Buffer_Detail_Title",
+    "C_Message_Game_Buffer_Detail_Title"
+  ],
+  "308480525": [
+    "C_Message_Common_GameModeLockedByLevel_Tip",
+    "C_Message_Common_GameModeLockedByLevel_Tip"
+  ],
+  "984782814": [
+    "C_Message_Common_GameModeLockedByLevel_Description",
+    "C_Message_Common_GameModeLockedByLevel_Description"
+  ],
+  "225134099": [
+    "C_Message_Common_ManageAnimationEquipment",
+    "C_Message_Common_ManageAnimationEquipment"
+  ],
+  "820999440": [
+    "C_Common_Menu_Fold",
+    "C_Common_Menu_Fold"
+  ],
+  "280377003": [
+    "C_Common_Menu_Unfold",
+    "C_Common_Menu_Unfold"
+  ],
+  "576523247": [
+    "C_Message_Room_Status_Gaming",
+    "C_Message_Room_Status_Gaming"
+  ],
+  "715583080": [
+    "C_Message_Room_Status_GamingJust",
+    "C_Message_Room_Status_GamingJust"
+  ],
+  "341473176": [
+    "C_Message_Room_Status_GamingAlmOver",
+    "C_Message_Room_Status_GamingAlmOver"
+  ],
+  "129485087": [
+    "C_Message_Room_Status_Empty",
+    "C_Message_Room_Status_Empty"
+  ],
+  "995897335": [
+    "C_Message_Room_Status_Full",
+    "C_Message_Room_Status_Full"
+  ],
+  "141096402": [
+    "C_Message_Room_Number",
+    "C_Message_Room_Number"
+  ],
+  "102750504": [
+    "C_Message_Room_PeopleNum",
+    "C_Message_Room_PeopleNum"
+  ],
+  "921070014": [
+    "C_Message_Room_OwnerName",
+    "C_Message_Room_OwnerName"
+  ],
+  "429273539": [
+    "C_Message_MapName",
+    "C_Message_MapName"
+  ],
+  "701390329": [
+    "C_Message_Room_SwapBrief",
+    "C_Message_Room_SwapBrief"
+  ],
+  "204735510": [
+    "C_Room_ButtonName_SwapSeat",
+    "C_Room_ButtonName_SwapSeat"
+  ],
+  "747450789": [
+    "C_Message_Room_Wait",
+    "C_Message_Room_Wait"
+  ],
+  "654452369": [
+    "C_Message_Room_SwitchOwner",
+    "C_Message_Room_SwitchOwner"
+  ],
+  "182041423": [
+    "C_Message_Room_SwitchMap",
+    "C_Message_Room_SwitchMap"
+  ],
+  "092168783": [
+    "C_Message_Room_BeKicked",
+    "C_Message_Room_BeKicked"
+  ],
+  "187108408": [
+    "C_Message_Room_BackToRoomLabel",
+    "C_Message_Room_BackToRoomLabel"
+  ],
+  "966601649": [
+    "C_Room_ButtonName_KickPlayer",
+    "C_Room_ButtonName_KickPlayer"
+  ],
+  "322506903": [
+    "C_Message_Room_Prepared",
+    "C_Message_Room_Prepared"
+  ],
+  "696792135": [
+    "C_Message_Room_Later",
+    "C_Message_Room_Later"
+  ],
+  "446239209": [
+    "C_Message_Room_NotPrepared",
+    "C_Message_Room_NotPrepared"
+  ],
+  "901691821": [
+    "C_Message_Room_ReadyStart",
+    "C_Message_Room_ReadyStart"
+  ],
+  "282320478": [
+    "C_Message_Room_Start",
+    "C_Message_Room_Start"
+  ],
+  "288968103": [
+    "C_Message_Room_Reconnect",
+    "C_Message_Room_Reconnect"
+  ],
+  "445107957": [
+    "C_Message_Room_StartBtnText_ObserverWait",
+    "C_Message_Room_StartBtnText_ObserverWait"
+  ],
+  "616380796": [
+    "C_Message_Room_StartBtnText_ObserverGaming",
+    "C_Message_Room_StartBtnText_ObserverGaming"
+  ],
+  "686612782": [
+    "C_Message_Room_PlayerState_Readying",
+    "C_Message_Room_PlayerState_Readying"
+  ],
+  "584580151": [
+    "C_Message_Room_PlayerState_Wait",
+    "C_Message_Room_PlayerState_Wait"
+  ],
+  "074739190": [
+    "C_Message_Room_PlayerState_OffLine",
+    "C_Message_Room_PlayerState_OffLine"
+  ],
+  "252296945": [
+    "C_Message_Room_NoMore",
+    "C_Message_Room_NoMore"
+  ],
+  "659072791": [
+    "C_Message_Room_ObserverTitle",
+    "C_Message_Room_ObserverTitle"
+  ],
+  "923318716": [
+    "C_Message_Room_DisableObserveTipMsg",
+    "C_Message_Room_DisableObserveTipMsg"
+  ],
+  "287278002": [
+    "C_Message_Room_BroadCast_ObserveDisabled",
+    "C_Message_Room_BroadCast_ObserveDisabled"
+  ],
+  "265497989": [
+    "C_Message_Room_BroadCast_SwapToObserver",
+    "C_Message_Room_BroadCast_SwapToObserver"
+  ],
+  "991497413": [
+    "C_Message_Room_BroadCast_SwapToSeat",
+    "C_Message_Room_BroadCast_SwapToSeat"
+  ],
+  "674567662": [
+    "C_Message_Room_BroadCast_OwnerExchangedCamp",
+    "C_Message_Room_BroadCast_OwnerExchangedCamp"
+  ],
+  "418918325": [
+    "C_Message_Room_Setting_WinCond_round",
+    "C_Message_Room_Setting_WinCond_round"
+  ],
+  "767194962": [
+    "C_Message_Room_Setting_WinCond_kills",
+    "C_Message_Room_Setting_WinCond_kills"
+  ],
+  "374280328": [
+    "C_Message_Room_Setting_WinCond_time",
+    "C_Message_Room_Setting_WinCond_time"
+  ],
+  "033937876": [
+    "C_Message_Room_Setting_roomName",
+    "C_Message_Room_Setting_roomName"
+  ],
+  "735535976": [
+    "C_Message_Room_Setting_winCondition",
+    "C_Message_Room_Setting_winCondition"
+  ],
+  "207143702": [
+    "C_Message_Room_Setting_aiLevels",
+    "C_Message_Room_Setting_aiLevels"
+  ],
+  "642193689": [
+    "C_Message_Room_Setting_autoArmor",
+    "C_Message_Room_Setting_autoArmor"
+  ],
+  "039020880": [
+    "C_Message_Room_Setting_headShootOnly",
+    "C_Message_Room_Setting_headShootOnly"
+  ],
+  "441478967": [
+    "C_Message_Room_Setting_gravityRate",
+    "C_Message_Room_Setting_gravityRate"
+  ],
+  "954894628": [
+    "C_Message_Room_Setting_frictionRate",
+    "C_Message_Room_Setting_frictionRate"
+  ],
+  "163148335": [
+    "C_Message_Room_Setting_hp",
+    "C_Message_Room_Setting_hp"
+  ],
+  "132478942": [
+    "C_Message_Room_Setting_observer",
+    "C_Message_Room_Setting_observer"
+  ],
+  "356864829": [
+    "C_Message_Room_Setting_requirePassword",
+    "C_Message_Room_Setting_requirePassword"
+  ],
+  "809544770": [
+    "C_Message_Room_Setting_Enable",
+    "C_Message_Room_Setting_Enable"
+  ],
+  "588616104": [
+    "C_Message_Room_Setting_Disable",
+    "C_Message_Room_Setting_Disable"
+  ],
+  "207101566": [
+    "C_Message_Room_Setting_ChangeTip",
+    "C_Message_Room_Setting_ChangeTip"
+  ],
+  "961327233": [
+    "C_Message_Room_Default_RoomName",
+    "C_Message_Room_Default_RoomName"
+  ],
+  "248454538": [
+    "C_Room_Setting_Password_Description",
+    "C_Room_Setting_Password_Description"
+  ],
+  "408261981": [
+    "C_Room_CampGroupName",
+    "C_Room_CampGroupName"
+  ],
+  "710133273": [
+    "C_Message_Match_StartMatch",
+    "C_Message_Match_StartMatch"
+  ],
+  "248230274": [
+    "C_Message_Match_MatchDuration",
+    "C_Message_Match_MatchDuration"
+  ],
+  "241134960": [
+    "C_Message_Match_Status_Wait",
+    "C_Message_Match_Status_Wait"
+  ],
+  "247962432": [
+    "C_Message_Match_Succeed",
+    "C_Message_Match_Succeed"
+  ],
+  "267216736": [
+    "C_Match_LetTeammateReady_ButtonContent",
+    "C_Match_LetTeammateReady_ButtonContent"
+  ],
+  "301574830": [
+    "C_Match_LetTeammateReady_ChatMessage",
+    "C_Match_LetTeammateReady_ChatMessage"
+  ],
+  "184103703": [
+    "C_Message_Match_CreateTeam",
+    "C_Message_Match_CreateTeam"
+  ],
+  "729643063": [
+    "C_Message_Match_ChangeMapGroup",
+    "C_Message_Match_ChangeMapGroup"
+  ],
+  "197555692": [
+    "C_Message_Match_ChangeMapGroupRequest",
+    "C_Message_Match_ChangeMapGroupRequest"
+  ],
+  "230035685": [
+    "C_Message_Match_ChangeMapGroupRequestMsg",
+    "C_Message_Match_ChangeMapGroupRequestMsg"
+  ],
+  "420573461": [
+    "C_Message_Match_ChangeMapGroupRequestMsg_notopen",
+    "C_Message_Match_ChangeMapGroupRequestMsg_notopen"
+  ],
+  "460274526": [
+    "C_Message_Match_BroadCast_ChangeMapGroup",
+    "C_Message_Match_BroadCast_ChangeMapGroup"
+  ],
+  "044021885": [
+    "C_Message_Match_BroadCast_MatchCanceled",
+    "C_Message_Match_BroadCast_MatchCanceled"
+  ],
+  "684744256": [
+    "C_Message_Match_BroadCast_OwnerChanged",
+    "C_Message_Match_BroadCast_OwnerChanged"
+  ],
+  "337828605": [
+    "C_Message_Match_Menu_OpenCountdown_Description",
+    "C_Message_Match_Menu_OpenCountdown_Description"
+  ],
+  "299103077": [
+    "C_Message_Match_Menu_OpenCountdownDetail_Description",
+    "C_Message_Match_Menu_OpenCountdownDetail_Description"
+  ],
+  "016466742": [
+    "C_Message_Match_Menu_CloseCountdown_Description",
+    "C_Message_Match_Menu_CloseCountdown_Description"
+  ],
+  "173329057": [
+    "C_Message_Match_Menu_CloseCountdownDetail_Description",
+    "C_Message_Match_Menu_CloseCountdownDetail_Description"
+  ],
+  "227535246": [
+    "C_Message_Match_MenuLockCond_Lvl",
+    "C_Message_Match_MenuLockCond_Lvl"
+  ],
+  "706999604": [
+    "C_Message_Match_Tag_NewMode",
+    "C_Message_Match_Tag_NewMode"
+  ],
+  "488814210": [
+    "C_Message_Match_Tag_NewMap",
+    "C_Message_Match_Tag_NewMap"
+  ],
+  "019704094": [
+    "C_Match_Chat_LikeTeamLeader",
+    "C_Match_Chat_LikeTeamLeader"
+  ],
+  "499377189": [
+    "C_Message_Team_BroadCast_MaxPlayerCountChanged",
+    "C_Message_Team_BroadCast_MaxPlayerCountChanged"
+  ],
+  "829850592": [
+    "C_Message_Team_ExitWhenMatching",
+    "C_Message_Team_ExitWhenMatching"
+  ],
+  "516592666": [
+    "C_Message_Team_TeammateBattleBlockedTipContent",
+    "C_Message_Team_TeammateBattleBlockedTipContent"
+  ],
+  "984613225": [
+    "C_Message_Team_TeammateBattleCreditBlockedTipContent",
+    "C_Message_Team_TeammateBattleCreditBlockedTipContent"
+  ],
+  "395692446": [
+    "C_Message_Team_GameMenuClosingBlockedTipContent",
+    "C_Message_Team_GameMenuClosingBlockedTipContent"
+  ],
+  "320576217": [
+    "C_Message_Team_JumpToRoomListWindow_Tip",
+    "C_Message_Team_JumpToRoomListWindow_Tip"
+  ],
+  "403410909": [
+    "C_Message_Team_BroadCast_AutoMatchTeammateClosed",
+    "C_Message_Team_BroadCast_AutoMatchTeammateClosed"
+  ],
+  "285638632": [
+    "C_Message_Team_Buffer_Chat_Notification",
+    "C_Message_Team_Buffer_Chat_Notification"
+  ],
+  "870955307": [
+    "C_Team_ButtonName_KickPlayer",
+    "C_Team_ButtonName_KickPlayer"
+  ],
+  "316959112": [
+    "C_Message_MatchRank_SeasonInfoUpdateTip",
+    "C_Message_MatchRank_SeasonInfoUpdateTip"
+  ],
+  "648157274": [
+    "C_Message_MatchRank_SeasonEmpty",
+    "C_Message_MatchRank_SeasonEmpty"
+  ],
+  "113237835": [
+    "C_Message_MatchRank_SeasonTimeDesc",
+    "C_Message_MatchRank_SeasonTimeDesc"
+  ],
+  "479169547": [
+    "C_Message_MatchRank_LevelScoreAdditionDesc",
+    "C_Message_MatchRank_LevelScoreAdditionDesc"
+  ],
+  "207720016": [
+    "C_Message_MatchRank_LevelScoreTotalDesc",
+    "C_Message_MatchRank_LevelScoreTotalDesc"
+  ],
+  "917287740": [
+    "C_Message_MatchRank_ProtectTip_rankScoreProtect",
+    "C_Message_MatchRank_ProtectTip_rankScoreProtect"
+  ],
+  "861805431": [
+    "C_Message_MatchRank_ProtectTip_gradeStarProtect",
+    "C_Message_MatchRank_ProtectTip_gradeStarProtect"
+  ],
+  "769894230": [
+    "C_Message_MatchRank_ProtectDesc_Title",
+    "C_Message_MatchRank_ProtectDesc_Title"
+  ],
+  "906005544": [
+    "C_Message_MatchRank_ProtectDesc_Text",
+    "C_Message_MatchRank_ProtectDesc_Text"
+  ],
+  "968355475": [
+    "C_MatchRank_Award_MenuName_WeeklyAward",
+    "C_MatchRank_Award_MenuName_WeeklyAward"
+  ],
+  "684631593": [
+    "C_MatchRank_Award_MenuName_SeasonAward",
+    "C_MatchRank_Award_MenuName_SeasonAward"
+  ],
+  "058496668": [
+    "C_MatchRank_Award_MenuName_Store",
+    "C_MatchRank_Award_MenuName_Store"
+  ],
+  "453578281": [
+    "C_MatchRank_Award_CycleTypeName_Daily",
+    "C_MatchRank_Award_CycleTypeName_Daily"
+  ],
+  "808000599": [
+    "C_MatchRank_Award_CycleTypeName_Weekly",
+    "C_MatchRank_Award_CycleTypeName_Weekly"
+  ],
+  "300226783": [
+    "C_MatchRank_Award_Tip_AvailableTimelimit",
+    "C_MatchRank_Award_Tip_AvailableTimelimit"
+  ],
+  "523390052": [
+    "C_MatchRank_Award_Description_QualifyForPurchase_RankedLevel",
+    "C_MatchRank_Award_Description_QualifyForPurchase_RankedLevel"
+  ],
+  "502581372": [
+    "C_MatchRank_Store_PurchaseLimitDescription_BattleCount",
+    "C_MatchRank_Store_PurchaseLimitDescription_BattleCount"
+  ],
+  "865065600": [
+    "C_MatchRank_Award_Tip_RankedCoinNotEnough",
+    "C_MatchRank_Award_Tip_RankedCoinNotEnough"
+  ],
+  "915160636": [
+    "C_MatchRank_Award_TimeLimitText",
+    "C_MatchRank_Award_TimeLimitText"
+  ],
+  "167482568": [
+    "C_MatchRank_PromotionResult_UnFinished",
+    "C_MatchRank_PromotionResult_UnFinished"
+  ],
+  "619249376": [
+    "C_MatchRank_PromotionResult_Failed",
+    "C_MatchRank_PromotionResult_Failed"
+  ],
+  "861066431": [
+    "C_MatchRank_PromotionResult_Succeed",
+    "C_MatchRank_PromotionResult_Succeed"
+  ],
+  "394195759": [
+    "C_MatchRank_Result_TipContent_LeveLUp",
+    "C_MatchRank_Result_TipContent_LeveLUp"
+  ],
+  "891305454": [
+    "C_MatchRank_Promotion_WinConditionDescription",
+    "C_MatchRank_Promotion_WinConditionDescription"
+  ],
+  "805988523": [
+    "C_MatchRank_Promotion_NextModeDescription",
+    "C_MatchRank_Promotion_NextModeDescription"
+  ],
+  "714452258": [
+    "C_MatchRank_CompensationType_Name_Extra",
+    "C_MatchRank_CompensationType_Name_Extra"
+  ],
+  "170308515": [
+    "C_MatchRank_CompensationType_Name_FreeWin",
+    "C_MatchRank_CompensationType_Name_FreeWin"
+  ],
+  "393297589": [
+    "C_MatchRank_CompensationType_Description_Extra",
+    "C_MatchRank_CompensationType_Description_Extra"
+  ],
+  "921881526": [
+    "C_MatchRank_CompensationType_Description_FreeWin",
+    "C_MatchRank_CompensationType_Description_FreeWin"
+  ],
+  "842518755": [
+    "C_MatchRank_Promotion_FloatWindowDescription",
+    "C_MatchRank_Promotion_FloatWindowDescription"
+  ],
+  "333979128": [
+    "C_MatchRank_GradeRule_Content",
+    "C_MatchRank_GradeRule_Content"
+  ],
+  "982945961": [
+    "C_MatchRank_GradeRule_MenuName",
+    "C_MatchRank_GradeRule_MenuName"
+  ],
+  "236357356": [
+    "C_MatchRank_GradePreview_MenuName",
+    "C_MatchRank_GradePreview_MenuName"
+  ],
+  "954771652": [
+    "C_MatchRank_Tip_TeammateRankLevelLimit",
+    "C_MatchRank_Tip_TeammateRankLevelLimit"
+  ],
+  "563759444": [
+    "C_MatchRank_TItle_PreviousSeason",
+    "C_MatchRank_TItle_PreviousSeason"
+  ],
+  "996474720": [
+    "C_MatchRankDetailContent_Percent",
+    "C_MatchRankDetailContent_Percent"
+  ],
+  "651865486": [
+    "C_MatchRankDetailContent_Number",
+    "C_MatchRankDetailContent_Number"
+  ],
+  "924265327": [
+    "C_Message_Recruit_RecruitSuccess",
+    "C_Message_Recruit_RecruitSuccess"
+  ],
+  "141834891": [
+    "C_Message_Recruit_Room_DefaultMsg_1",
+    "C_Message_Recruit_Room_DefaultMsg_1"
+  ],
+  "233580979": [
+    "C_Message_Recruit_Room_DefaultMsg_2",
+    "C_Message_Recruit_Room_DefaultMsg_2"
+  ],
+  "152260855": [
+    "C_Message_Recruit_Room_DefaultMsg_3",
+    "C_Message_Recruit_Room_DefaultMsg_3"
+  ],
+  "367944672": [
+    "C_Message_Recruit_Match_DefaultMsg_1",
+    "C_Message_Recruit_Match_DefaultMsg_1"
+  ],
+  "628220964": [
+    "C_Message_Recruit_Match_DefaultMsg_2",
+    "C_Message_Recruit_Match_DefaultMsg_2"
+  ],
+  "192903210": [
+    "C_Message_Recruit_Match_DefaultMsg_3",
+    "C_Message_Recruit_Match_DefaultMsg_3"
+  ],
+  "951936348": [
+    "C_Message_Recruit_Match_DefaultMsg_4",
+    "C_Message_Recruit_Match_DefaultMsg_4"
+  ],
+  "384590039": [
+    "C_Message_Invite_Team",
+    "C_Message_Invite_Team"
+  ],
+  "894844974": [
+    "C_Message_Invite_Invite",
+    "C_Message_Invite_Invite"
+  ],
+  "493689298": [
+    "C_Message_Invite_WaitingInvite",
+    "C_Message_Invite_WaitingInvite"
+  ],
+  "019611691": [
+    "C_Message_Invite_RefuseInvite",
+    "C_Message_Invite_RefuseInvite"
+  ],
+  "115420956": [
+    "C_Message_Invite_RefuseInviteWithMsg",
+    "C_Message_Invite_RefuseInviteWithMsg"
+  ],
+  "502099539": [
+    "C_Message_Invite_InviteSuccess",
+    "C_Message_Invite_InviteSuccess"
+  ],
+  "904331015": [
+    "C_Message_Invite_JoinApply",
+    "C_Message_Invite_JoinApply"
+  ],
+  "401898596": [
+    "C_Message_Invite_WaitingJoinApply",
+    "C_Message_Invite_WaitingJoinApply"
+  ],
+  "810061736": [
+    "C_Message_Invite_RefuseJoinApply",
+    "C_Message_Invite_RefuseJoinApply"
+  ],
+  "991841029": [
+    "C_Message_Invite_JoinApplySuccess",
+    "C_Message_Invite_JoinApplySuccess"
+  ],
+  "874314017": [
+    "C_Message_Invite_RefuseJoinApplyWithMsg",
+    "C_Message_Invite_RefuseJoinApplyWithMsg"
+  ],
+  "656142870": [
+    "C_Message_Invite_RefuseMsg_1",
+    "C_Message_Invite_RefuseMsg_1"
+  ],
+  "895954582": [
+    "C_Message_Invite_RefuseMsg_2",
+    "C_Message_Invite_RefuseMsg_2"
+  ],
+  "043958158": [
+    "C_Message_Invite_RefuseMsg_3",
+    "C_Message_Invite_RefuseMsg_3"
+  ],
+  "366466326": [
+    "C_Message_Invite_RefuseMsg_4",
+    "C_Message_Invite_RefuseMsg_4"
+  ],
+  "618705573": [
+    "C_Message_ApplyJoin_RefuseMsg_1",
+    "C_Message_ApplyJoin_RefuseMsg_1"
+  ],
+  "003575252": [
+    "C_Message_ApplyJoin_RefuseMsg_2",
+    "C_Message_ApplyJoin_RefuseMsg_2"
+  ],
+  "977837836": [
+    "C_Message_ApplyJoin_RefuseMsg_3",
+    "C_Message_ApplyJoin_RefuseMsg_3"
+  ],
+  "126130416": [
+    "C_Message_ApplyJoin_RefuseMsg_4",
+    "C_Message_ApplyJoin_RefuseMsg_4"
+  ],
+  "327908312": [
+    "C_Message_Invite_ReqType_Invite",
+    "C_Message_Invite_ReqType_Invite"
+  ],
+  "371772633": [
+    "C_Message_Invite_ReqType_JoIn",
+    "C_Message_Invite_ReqType_JoIn"
+  ],
+  "096232130": [
+    "C_Message_Invite_Title_From",
+    "C_Message_Invite_Title_From"
+  ],
+  "440805928": [
+    "C_Message_Invite_FromType_Online",
+    "C_Message_Invite_FromType_Online"
+  ],
+  "175408379": [
+    "C_Message_Invite_FromType_Friend",
+    "C_Message_Invite_FromType_Friend"
+  ],
+  "680092570": [
+    "C_Message_Invite_FromType_Recent",
+    "C_Message_Invite_FromType_Recent"
+  ],
+  "675946755": [
+    "C_Message_Invite_FromType_Near",
+    "C_Message_Invite_FromType_Near"
+  ],
+  "835444156": [
+    "C_Message_Invite_EmptyPage_Friend",
+    "C_Message_Invite_EmptyPage_Friend"
+  ],
+  "083617243": [
+    "C_Message_Invite_EmptyPage",
+    "C_Message_Invite_EmptyPage"
+  ],
+  "073825083": [
+    "C_Message_MiniWindow_PeopleNum",
+    "C_Message_MiniWindow_PeopleNum"
+  ],
+  "971175122": [
+    "C_Message_Match_GroupDesTitle",
+    "C_Message_Match_GroupDesTitle"
+  ],
+  "812219197": [
+    "C_Message_Backpack_Num",
+    "C_Message_Backpack_Num"
+  ],
+  "349285721": [
+    "C_Message_Setting_MoveRateValue",
+    "C_Message_Setting_MoveRateValue"
+  ],
+  "645900027": [
+    "C_Message_Setting_FireRateValue",
+    "C_Message_Setting_FireRateValue"
+  ],
+  "003907505": [
+    "C_Message_Setting_ShootRateValue",
+    "C_Message_Setting_ShootRateValue"
+  ],
+  "738430952": [
+    "C_Message_Setting_Custom_SaveConfirmDes",
+    "C_Message_Setting_Custom_SaveConfirmDes"
+  ],
+  "529806422": [
+    "C_Message_Setting_Custom_SaveSuccessDes",
+    "C_Message_Setting_Custom_SaveSuccessDes"
+  ],
+  "338051067": [
+    "C_Message_Setting_Custom_SwtichConfirmDes",
+    "C_Message_Setting_Custom_SwtichConfirmDes"
+  ],
+  "259249479": [
+    "C_Message_Setting_Custom_ResetConfirmDes",
+    "C_Message_Setting_Custom_ResetConfirmDes"
+  ],
+  "868057442": [
+    "C_Message_Setting_Custom_NoChangesDes",
+    "C_Message_Setting_Custom_NoChangesDes"
+  ],
+  "384626502": [
+    "C_Message_Setting_Custom_SaveText",
+    "C_Message_Setting_Custom_SaveText"
+  ],
+  "142410006": [
+    "C_Message_Setting_ExitBattle_Tip",
+    "C_Message_Setting_ExitBattle_Tip"
+  ],
+  "550806843": [
+    "C_Message_Setting_Logout_Tip",
+    "C_Message_Setting_Logout_Tip"
+  ],
+  "134987107": [
+    "C_Message_Setting_QuickChat_EquippedEmpty",
+    "C_Message_Setting_QuickChat_EquippedEmpty"
+  ],
+  "120986854": [
+    "C_Message_Setting_QuickChat_UnEquippedEmpty",
+    "C_Message_Setting_QuickChat_UnEquippedEmpty"
+  ],
+  "973535332": [
+    "C_Message_Setting_QuickChat_Equip",
+    "C_Message_Setting_QuickChat_Equip"
+  ],
+  "478993279": [
+    "C_Message_Setting_QuickChat_UnEquip",
+    "C_Message_Setting_QuickChat_UnEquip"
+  ],
+  "303756096": [
+    "C_Message_Setting_QuickChat_Default",
+    "C_Message_Setting_QuickChat_Default"
+  ],
+  "654593290": [
+    "C_Message_Setting_ScreenQuality_Tips",
+    "C_Message_Setting_ScreenQuality_Tips"
+  ],
+  "530219245": [
+    "C_Message_Common_Custom_ResetSuccessDes",
+    "C_Message_Common_Custom_ResetSuccessDes"
+  ],
+  "654154797": [
+    "C_Message_Open_Giftbox_Tip",
+    "C_Message_Open_Giftbox_Tip"
+  ],
+  "451479765": [
+    "C_Message_All",
+    "C_Message_All"
+  ],
+  "329638754": [
+    "C_Message_Role",
+    "C_Message_Role"
+  ],
+  "456123201": [
+    "C_Message_Weapon",
+    "C_Message_Weapon"
+  ],
+  "428332324": [
+    "C_Message_Props",
+    "C_Message_Props"
+  ],
+  "904142281": [
+    "C_Message_Today",
+    "C_Message_Today"
+  ],
+  "478659213": [
+    "C_Message_Delete",
+    "C_Message_Delete"
+  ],
+  "649108788": [
+    "C_Message_Gloves",
+    "C_Message_Gloves"
+  ],
+  "459039834": [
+    "C_Message_Time_Other_Data",
+    "C_Message_Time_Other_Data"
+  ],
+  "693060992": [
+    "C_Message_Time_Expire",
+    "C_Message_Time_Expire"
+  ],
+  "194731815": [
+    "C_Message_Time_Day",
+    "C_Message_Time_Day"
+  ],
+  "911080286": [
+    "C_Message_Time_Hour",
+    "C_Message_Time_Hour"
+  ],
+  "357067252": [
+    "C_Message_Time_Minute",
+    "C_Message_Time_Minute"
+  ],
+  "851458341": [
+    "C_Message_Time_Second",
+    "C_Message_Time_Second"
+  ],
+  "224528026": [
+    "C_Message_Obtain_RareQualityTip",
+    "C_Message_Obtain_RareQualityTip"
+  ],
+  "893918773": [
+    "C_Message_Obtain_HighQualityTip",
+    "C_Message_Obtain_HighQualityTip"
+  ],
+  "311303814": [
+    "C_Obtain_SimpleItemTip",
+    "C_Obtain_SimpleItemTip"
+  ],
+  "080195127": [
+    "C_Message_Mail_Menu_System",
+    "C_Message_Mail_Menu_System"
+  ],
+  "030842715": [
+    "C_Message_Mail_Menu_Team",
+    "C_Message_Mail_Menu_Team"
+  ],
+  "030766148": [
+    "C_Message_Mail_Menu_Friend",
+    "C_Message_Mail_Menu_Friend"
+  ],
+  "140755071": [
+    "C_Message_Mail_Menu_Gift",
+    "C_Message_Mail_Menu_Gift"
+  ],
+  "645246098": [
+    "C_Message_Mail_Menu_Reply",
+    "C_Message_Mail_Menu_Reply"
+  ],
+  "028975015": [
+    "C_Message_Mail_Empty_Tip",
+    "C_Message_Mail_Empty_Tip"
+  ],
+  "852182200": [
+    "C_Message_Mail_Button_Sure",
+    "C_Message_Mail_Button_Sure"
+  ],
+  "196491068": [
+    "C_Message_Mail_AllService_Title",
+    "C_Message_Mail_AllService_Title"
+  ],
+  "391674442": [
+    "C_Message_Mail_Del_Successed",
+    "C_Message_Mail_Del_Successed"
+  ],
+  "525950204": [
+    "C_Mail_Award_Title",
+    "C_Mail_Award_Title"
+  ],
+  "459757401": [
+    "C_Message_Chat_Notice_Msg",
+    "C_Message_Chat_Notice_Msg"
+  ],
+  "250760542": [
+    "C_Message_Chat_System_Msg",
+    "C_Message_Chat_System_Msg"
+  ],
+  "419509154": [
+    "C_Message_Chat_Msg_Empty_Tip",
+    "C_Message_Chat_Msg_Empty_Tip"
+  ],
+  "965575470": [
+    "C_Message_Chat_Private_Contact_Empty_Tip",
+    "C_Message_Chat_Private_Contact_Empty_Tip"
+  ],
+  "934192017": [
+    "C_Message_Chat_Msg_Max_Tip",
+    "C_Message_Chat_Msg_Max_Tip"
+  ],
+  "711341696": [
+    "C_Message_Chat_Msg_Test_Account",
+    "C_Message_Chat_Msg_Test_Account"
+  ],
+  "470085788": [
+    "C_Message_Chat_Msg_New_Notification",
+    "C_Message_Chat_Msg_New_Notification"
+  ],
+  "248667505": [
+    "C_Message_Chat_Msg_Default",
+    "C_Message_Chat_Msg_Default"
+  ],
+  "038632841": [
+    "C_Message_Chat_Display_Msg",
+    "C_Message_Chat_Display_Msg"
+  ],
+  "727306133": [
+    "C_Message_Chat_Display_Self_Msg",
+    "C_Message_Chat_Display_Self_Msg"
+  ],
+  "899801019": [
+    "C_Message_Chat_Channel_Lock_Hint_Msg",
+    "C_Message_Chat_Channel_Lock_Hint_Msg"
+  ],
+  "445607814": [
+    "C_Message_Chat_Channel_Unlock_Hint_Msg",
+    "C_Message_Chat_Channel_Unlock_Hint_Msg"
+  ],
+  "531447007": [
+    "C_Message_Chat_Send",
+    "C_Message_Chat_Send"
+  ],
+  "761310523": [
+    "C_Message_Chat_Send_Cool_Down",
+    "C_Message_Chat_Send_Cool_Down"
+  ],
+  "768390842": [
+    "C_Message_Chat_Send_Level_Lock",
+    "C_Message_Chat_Send_Level_Lock"
+  ],
+  "189888067": [
+    "C_Message_Chat_Channel_World",
+    "C_Message_Chat_Channel_World"
+  ],
+  "006559317": [
+    "C_Message_Chat_Channel_Private",
+    "C_Message_Chat_Channel_Private"
+  ],
+  "643421260": [
+    "C_Message_Chat_Channel_Team",
+    "C_Message_Chat_Channel_Team"
+  ],
+  "488488526": [
+    "C_Message_Chat_Channel_System",
+    "C_Message_Chat_Channel_System"
+  ],
+  "403486892": [
+    "C_Message_Task_Exchange_Count",
+    "C_Message_Task_Exchange_Count"
+  ],
+  "636669327": [
+    "C_Message_Task_Exchange_Button",
+    "C_Message_Task_Exchange_Button"
+  ],
+  "025903209": [
+    "C_Message_Task_Exchange_Title",
+    "C_Message_Task_Exchange_Title"
+  ],
+  "902431217": [
+    "C_Message_Task_Exchange_Insufficient",
+    "C_Message_Task_Exchange_Insufficient"
+  ],
+  "341592422": [
+    "C_Message_Task_Unfinished",
+    "C_Message_Task_Unfinished"
+  ],
+  "378320133": [
+    "C_Message_Task_Activity_Progress",
+    "C_Message_Task_Activity_Progress"
+  ],
+  "605307084": [
+    "C_Message_Task_Day_Activity_Progress",
+    "C_Message_Task_Day_Activity_Progress"
+  ],
+  "323092062": [
+    "C_Message_Task_Week_Activity_Progress",
+    "C_Message_Task_Week_Activity_Progress"
+  ],
+  "045933668": [
+    "C_Message_Task_Navigate",
+    "C_Message_Task_Navigate"
+  ],
+  "980109193": [
+    "C_Message_Task_Award_Available",
+    "C_Message_Task_Award_Available"
+  ],
+  "438955110": [
+    "C_Message_Display_Title",
+    "C_Message_Display_Title"
+  ],
+  "500871630": [
+    "C_Message_Colon_Separator",
+    "C_Message_Colon_Separator"
+  ],
+  "515858482": [
+    "C_Message_Slash_Separator",
+    "C_Message_Slash_Separator"
+  ],
+  "617918468": [
+    "C_Message_VerticalLine_Separator",
+    "C_Message_VerticalLine_Separator"
+  ],
+  "633706928": [
+    "C_Message_HorizontalLine_Separator",
+    "C_Message_HorizontalLine_Separator"
+  ],
+  "520954100": [
+    "C_Message_Num",
+    "C_Message_Num"
+  ],
+  "472961167": [
+    "C_Message_Equip_Price",
+    "C_Message_Equip_Price"
+  ],
+  "236866943": [
+    "C_Message_Loading_Percent_Sign",
+    "C_Message_Loading_Percent_Sign"
+  ],
+  "233889581": [
+    "C_Message_Inspect_Props",
+    "C_Message_Inspect_Props"
+  ],
+  "210734159": [
+    "C_Message_Inspect_Tp",
+    "C_Message_Inspect_Tp"
+  ],
+  "459504979": [
+    "C_Message_Inspect_Fp",
+    "C_Message_Inspect_Fp"
+  ],
+  "001542350": [
+    "C_Message_Role_PersonalizedSignature_Tip",
+    "C_Message_Role_PersonalizedSignature_Tip"
+  ],
+  "407898343": [
+    "C_Message_Role_Default_PersonalizedSignature",
+    "C_Message_Role_Default_PersonalizedSignature"
+  ],
+  "803230865": [
+    "C_Message_Role_PlayerState_OffLine",
+    "C_Message_Role_PlayerState_OffLine"
+  ],
+  "611377127": [
+    "C_Message_Role_PlayerState_Gaming",
+    "C_Message_Role_PlayerState_Gaming"
+  ],
+  "451571974": [
+    "C_Message_Role_PlayerState_Room",
+    "C_Message_Role_PlayerState_Room"
+  ],
+  "913611912": [
+    "C_Message_Role_PlayerState_Team",
+    "C_Message_Role_PlayerState_Team"
+  ],
+  "993729476": [
+    "C_Message_Role_PlayerState_Idle",
+    "C_Message_Role_PlayerState_Idle"
+  ],
+  "447155926": [
+    "C_Message_Role_ModInfo_Suc",
+    "C_Message_Role_ModInfo_Suc"
+  ],
+  "101785944": [
+    "C_Message_Role_Battle_Rank",
+    "C_Message_Role_Battle_Rank"
+  ],
+  "774662538": [
+    "C_Message_Role_Weapon_Edit_Tips",
+    "C_Message_Role_Weapon_Edit_Tips"
+  ],
+  "291480975": [
+    "C_Message_Role_UnLock_Description_WithItem",
+    "C_Message_Role_UnLock_Description_WithItem"
+  ],
+  "557772817": [
+    "C_Message_Role_UnLock_Description",
+    "C_Message_Role_UnLock_Description"
+  ],
+  "131151043": [
+    "C_Message_Role_Gender_Man",
+    "C_Message_Role_Gender_Man"
+  ],
+  "369890603": [
+    "C_Message_Role_Gender_Female",
+    "C_Message_Role_Gender_Female"
+  ],
+  "765231334": [
+    "C_Message_Role_KillNotify_Tip",
+    "C_Message_Role_KillNotify_Tip"
+  ],
+  "889033797": [
+    "C_Message_RoleMain_Title",
+    "C_Message_RoleMain_Title"
+  ],
+  "552472828": [
+    "C_Message_RoleMain_EditRole_Title",
+    "C_Message_RoleMain_EditRole_Title"
+  ],
+  "029768226": [
+    "C_Message_RoleMain_EditWeapon_Title",
+    "C_Message_RoleMain_EditWeapon_Title"
+  ],
+  "535195258": [
+    "C_Message_Role_Offline_Time_Text",
+    "C_Message_Role_Offline_Time_Text"
+  ],
+  "256562473": [
+    "C_Message_Role_Offline_Text",
+    "C_Message_Role_Offline_Text"
+  ],
+  "356597658": [
+    "C_Message_RoleMainWindow_RoleEditWindow_SaveBtnText",
+    "C_Message_RoleMainWindow_RoleEditWindow_SaveBtnText"
+  ],
+  "306556091": [
+    "C_Message_RoleMainWindow_RoleEditWindow_NoSaveBtnText",
+    "C_Message_RoleMainWindow_RoleEditWindow_NoSaveBtnText"
+  ],
+  "818448021": [
+    "C_Message_Match_Mode_Blasting",
+    "C_Message_Match_Mode_Blasting"
+  ],
+  "365091332": [
+    "C_Message_Match_Mode_TeamSport",
+    "C_Message_Match_Mode_TeamSport"
+  ],
+  "056132439": [
+    "C_Message_Match_Mode_Death",
+    "C_Message_Match_Mode_Death"
+  ],
+  "904139055": [
+    "C_Message_GameMainType_Room",
+    "C_Message_GameMainType_Room"
+  ],
+  "702499885": [
+    "C_Message_GameMainType_Match",
+    "C_Message_GameMainType_Match"
+  ],
+  "078700867": [
+    "C_Message_GameMainType_MatchRank",
+    "C_Message_GameMainType_MatchRank"
+  ],
+  "160277694": [
+    "C_Message_Hall_Role_Level",
+    "C_Message_Hall_Role_Level"
+  ],
+  "076034605": [
+    "C_Message_Friend_List",
+    "C_Message_Friend_List"
+  ],
+  "635482297": [
+    "C_Message_Friend_Apply",
+    "C_Message_Friend_Apply"
+  ],
+  "668684030": [
+    "C_Message_Block_List",
+    "C_Message_Block_List"
+  ],
+  "943535828": [
+    "C_Message_Month_Visitors_Tip",
+    "C_Message_Month_Visitors_Tip"
+  ],
+  "458103026": [
+    "C_Message_Attention_List",
+    "C_Message_Attention_List"
+  ],
+  "948848875": [
+    "C_Message_Fans_List",
+    "C_Message_Fans_List"
+  ],
+  "527618280": [
+    "C_Message_Like_List",
+    "C_Message_Like_List"
+  ],
+  "418538650": [
+    "C_Message_Search_Friend",
+    "C_Message_Search_Friend"
+  ],
+  "153571599": [
+    "C_Message_ClipBoard",
+    "C_Message_ClipBoard"
+  ],
+  "270675178": [
+    "C_Message_Attention",
+    "C_Message_Attention"
+  ],
+  "373318629": [
+    "C_Message_Already_Attention",
+    "C_Message_Already_Attention"
+  ],
+  "321698505": [
+    "C_Message_Like",
+    "C_Message_Like"
+  ],
+  "027914461": [
+    "C_Message_Already_Like",
+    "C_Message_Already_Like"
+  ],
+  "021731906": [
+    "C_Message_Follower",
+    "C_Message_Follower"
+  ],
+  "438411049": [
+    "C_Message_Visitor",
+    "C_Message_Visitor"
+  ],
+  "228399906": [
+    "C_Message_Not_Search_Text",
+    "C_Message_Not_Search_Text"
+  ],
+  "344057543": [
+    "C_Message_Not_Search_Friend",
+    "C_Message_Not_Search_Friend"
+  ],
+  "876278846": [
+    "C_Message_Not_Search_People",
+    "C_Message_Not_Search_People"
+  ],
+  "787504395": [
+    "C_Message_Attend_Success",
+    "C_Message_Attend_Success"
+  ],
+  "053301647": [
+    "C_Message_Attend_Friend_Success",
+    "C_Message_Attend_Friend_Success"
+  ],
+  "318637684": [
+    "C_Message_Modify_Success",
+    "C_Message_Modify_Success"
+  ],
+  "236559046": [
+    "C_Message_Role_Name_Not_Empty",
+    "C_Message_Role_Name_Not_Empty"
+  ],
+  "905863074": [
+    "C_Message_Not_Signature_Text",
+    "C_Message_Not_Signature_Text"
+  ],
+  "015766952": [
+    "C_Message_WaitForSeconds",
+    "C_Message_WaitForSeconds"
+  ],
+  "019992103": [
+    "C_Message_Equip_Success",
+    "C_Message_Equip_Success"
+  ],
+  "191788749": [
+    "C_Message_Equip_Not_Equipped",
+    "C_Message_Equip_Not_Equipped"
+  ],
+  "558230224": [
+    "C_Message_Equip_Equipped",
+    "C_Message_Equip_Equipped"
+  ],
+  "746391515": [
+    "C_StringDataConfig_msg_Equip_Equipping",
+    "C_StringDataConfig_msg_Equip_Equipping"
+  ],
+  "217305752": [
+    "C_Message_Equip_Random",
+    "C_Message_Equip_Random"
+  ],
+  "625286412": [
+    "C_Message_Equip_No_Notification",
+    "C_Message_Equip_No_Notification"
+  ],
+  "549622661": [
+    "C_Message_Equip_Clear_Notification",
+    "C_Message_Equip_Clear_Notification"
+  ],
+  "391030024": [
+    "C_Message_Equip_Clear_Notification_Tips",
+    "C_Message_Equip_Clear_Notification_Tips"
+  ],
+  "147382114": [
+    "C_Message_Equip_Without_Paint",
+    "C_Message_Equip_Without_Paint"
+  ],
+  "536344805": [
+    "C_Message_Equip_Slot_UnAvailable",
+    "C_Message_Equip_Slot_UnAvailable"
+  ],
+  "222859783": [
+    "C_Message_Equip_Props_Exit_Without_Save",
+    "C_Message_Equip_Props_Exit_Without_Save"
+  ],
+  "396408039": [
+    "C_Message_Equip_Quick_Chat_Reset_Confirm",
+    "C_Message_Equip_Quick_Chat_Reset_Confirm"
+  ],
+  "299344786": [
+    "C_Message_Equip_Last_Kill_VFX_Menu",
+    "C_Message_Equip_Last_Kill_VFX_Menu"
+  ],
+  "258898237": [
+    "C_Equip_CT",
+    "C_Equip_CT"
+  ],
+  "942593673": [
+    "C_Equip_T",
+    "C_Equip_T"
+  ],
+  "967082529": [
+    "C_Equipped_CT",
+    "C_Equipped_CT"
+  ],
+  "113787281": [
+    "C_Equipped_T",
+    "C_Equipped_T"
+  ],
+  "155075342": [
+    "C_Message_WeaponSkinStyle_1",
+    "C_Message_WeaponSkinStyle_1"
+  ],
+  "021565664": [
+    "C_Message_WeaponSkinStyle_2",
+    "C_Message_WeaponSkinStyle_2"
+  ],
+  "485583620": [
+    "C_Message_WeaponSkinStyle_3",
+    "C_Message_WeaponSkinStyle_3"
+  ],
+  "122722243": [
+    "C_Message_WeaponSkinStyle_4",
+    "C_Message_WeaponSkinStyle_4"
+  ],
+  "458813138": [
+    "C_Message_WeaponSkinStyle_5",
+    "C_Message_WeaponSkinStyle_5"
+  ],
+  "181975005": [
+    "C_Message_WeaponSkinStyle_6",
+    "C_Message_WeaponSkinStyle_6"
+  ],
+  "062150827": [
+    "C_Message_WeaponSkinStyle_7",
+    "C_Message_WeaponSkinStyle_7"
+  ],
+  "222305185": [
+    "C_Message_WeaponSkinStyle_8",
+    "C_Message_WeaponSkinStyle_8"
+  ],
+  "130787228": [
+    "C_Message_WeaponSkinStyle_9",
+    "C_Message_WeaponSkinStyle_9"
+  ],
+  "548623977": [
+    "C_Message_Equip_CurEquipDesc_CT",
+    "C_Message_Equip_CurEquipDesc_CT"
+  ],
+  "708431182": [
+    "C_Message_Equip_CurEquipDesc_T",
+    "C_Message_Equip_CurEquipDesc_T"
+  ],
+  "422848372": [
+    "C_Message_Store_LeftTime",
+    "C_Message_Store_LeftTime"
+  ],
+  "138980746": [
+    "C_Message_Store_LimitTimes",
+    "C_Message_Store_LimitTimes"
+  ],
+  "786308151": [
+    "C_Message_Store_LimitTimes_Day",
+    "C_Message_Store_LimitTimes_Day"
+  ],
+  "591661671": [
+    "C_Message_Store_LimitTimes_Week",
+    "C_Message_Store_LimitTimes_Week"
+  ],
+  "556655760": [
+    "C_Message_Store_LimitTimes_Month",
+    "C_Message_Store_LimitTimes_Month"
+  ],
+  "999433323": [
+    "C_Message_Store_BuyOver",
+    "C_Message_Store_BuyOver"
+  ],
+  "103375435": [
+    "C_Message_Store_LastDay",
+    "C_Message_Store_LastDay"
+  ],
+  "490770081": [
+    "C_Message_Store_BuySuccess",
+    "C_Message_Store_BuySuccess"
+  ],
+  "175985298": [
+    "C_Message_Store_BuyLimit",
+    "C_Message_Store_BuyLimit"
+  ],
+  "586332802": [
+    "C_Message_Store_SellOut",
+    "C_Message_Store_SellOut"
+  ],
+  "479828631": [
+    "C_Message_Store_NormalDrop",
+    "C_Message_Store_NormalDrop"
+  ],
+  "993788013": [
+    "C_Message_Store_ActivityDrop",
+    "C_Message_Store_ActivityDrop"
+  ],
+  "020520935": [
+    "C_Message_StoreBuy_Discount",
+    "C_Message_StoreBuy_Discount"
+  ],
+  "780859263": [
+    "C_Message_Store_Exchange_Success",
+    "C_Message_Store_Exchange_Success"
+  ],
+  "453046965": [
+    "C_Message_Store_Exchange_Ratio",
+    "C_Message_Store_Exchange_Ratio"
+  ],
+  "798611732": [
+    "C_Message_Store_Lackof_Gold",
+    "C_Message_Store_Lackof_Gold"
+  ],
+  "730877065": [
+    "C_Message_Store_Lackof_Diamond",
+    "C_Message_Store_Lackof_Diamond"
+  ],
+  "406747432": [
+    "C_Message_StoreBuy_Title",
+    "C_Message_StoreBuy_Title"
+  ],
+  "602882921": [
+    "C_Message_StoreBuy_Count",
+    "C_Message_StoreBuy_Count"
+  ],
+  "483118278": [
+    "C_Message_StoreBuy_Desc",
+    "C_Message_StoreBuy_Desc"
+  ],
+  "768482287": [
+    "C_Message_StoreBuy_Price",
+    "C_Message_StoreBuy_Price"
+  ],
+  "846216702": [
+    "C_Message_Store_Order_1",
+    "C_Message_Store_Order_1"
+  ],
+  "114828280": [
+    "C_Message_Store_Order_2",
+    "C_Message_Store_Order_2"
+  ],
+  "648955220": [
+    "C_Message_Store_Order_3",
+    "C_Message_Store_Order_3"
+  ],
+  "525246593": [
+    "C_Store_Msg_SpendCoin",
+    "C_Store_Msg_SpendCoin"
+  ],
+  "916984328": [
+    "C_Store_Award_Title",
+    "C_Store_Award_Title"
+  ],
+  "652953079": [
+    "C_Store_Black_Market_Title",
+    "C_Store_Black_Market_Title"
+  ],
+  "937809212": [
+    "C_Store_Black_Market_Auto_Refresh_Tips",
+    "C_Store_Black_Market_Auto_Refresh_Tips"
+  ],
+  "561785463": [
+    "C_Store_Black_Market_Close_Tips",
+    "C_Store_Black_Market_Close_Tips"
+  ],
+  "250724343": [
+    "C_Store_Black_Market_Refresh_Tips",
+    "C_Store_Black_Market_Refresh_Tips"
+  ],
+  "262763577": [
+    "C_Store_Refresh_Succeed",
+    "C_Store_Refresh_Succeed"
+  ],
+  "863320844": [
+    "C_Message_Confirm_Cancel",
+    "C_Message_Confirm_Cancel"
+  ],
+  "191274236": [
+    "C_Message_Store_Order",
+    "C_Message_Store_Order"
+  ],
+  "886534855": [
+    "C_Message_Login_Connecting",
+    "C_Message_Login_Connecting"
+  ],
+  "532574105": [
+    "C_Message_Login_Network_Error",
+    "C_Message_Login_Network_Error"
+  ],
+  "853880825": [
+    "C_Message_Login_Reconnect_Msg",
+    "C_Message_Login_Reconnect_Msg"
+  ],
+  "607195900": [
+    "C_Message_Login_Reconnect_Cancel",
+    "C_Message_Login_Reconnect_Cancel"
+  ],
+  "841421886": [
+    "C_Message_Login_Reconnect_Reconnect",
+    "C_Message_Login_Reconnect_Reconnect"
+  ],
+  "907341048": [
+    "C_Message_Login_Logout_Other_Login",
+    "C_Message_Login_Logout_Other_Login"
+  ],
+  "896746824": [
+    "C_Message_Login_Player_Already_Online",
+    "C_Message_Login_Player_Already_Online"
+  ],
+  "506776370": [
+    "C_Message_Login_DS_Disconnect_Back",
+    "C_Message_Login_DS_Disconnect_Back"
+  ],
+  "626037818": [
+    "C_Message_Login_EnterGame",
+    "C_Message_Login_EnterGame"
+  ],
+  "003942141": [
+    "C_Message_Login_Logining",
+    "C_Message_Login_Logining"
+  ],
+  "184794342": [
+    "C_Message_Login_AccountNil",
+    "C_Message_Login_AccountNil"
+  ],
+  "035032258": [
+    "C_Message_Login_Failed",
+    "C_Message_Login_Failed"
+  ],
+  "767822908": [
+    "C_Message_Login_GuestName",
+    "C_Message_Login_GuestName"
+  ],
+  "727078539": [
+    "C_Message_NotOpen",
+    "C_Message_NotOpen"
+  ],
+  "532555269": [
+    "C_Message_Rank_Title",
+    "C_Message_Rank_Title"
+  ],
+  "698356752": [
+    "C_Message_Rank_RefreshText",
+    "C_Message_Rank_RefreshText"
+  ],
+  "822529188": [
+    "C_Message_Rank_SubTitleText",
+    "C_Message_Rank_SubTitleText"
+  ],
+  "023142642": [
+    "C_Message_Rank_Score",
+    "C_Message_Rank_Score"
+  ],
+  "071505618": [
+    "C_Message_Rank_Friends",
+    "C_Message_Rank_Friends"
+  ],
+  "438665335": [
+    "C_Message_Rank_Level",
+    "C_Message_Rank_Level"
+  ],
+  "864228186": [
+    "C_Message_Rank_Week",
+    "C_Message_Rank_Week"
+  ],
+  "057736975": [
+    "C_Message_Rank_RankListUpdate_Msg",
+    "C_Message_Rank_RankListUpdate_Msg"
+  ],
+  "651971142": [
+    "C_Message_Rank_Help_Context",
+    "C_Message_Rank_Help_Context"
+  ],
+  "480676536": [
+    "C_Message_Rank_Help_Title",
+    "C_Message_Rank_Help_Title"
+  ],
+  "302098723": [
+    "C_Message_Help",
+    "C_Message_Help"
+  ],
+  "858602042": [
+    "C_Message_Rank_Title_Score",
+    "C_Message_Rank_Title_Score"
+  ],
+  "410973188": [
+    "C_Message_Rank_Title_Follow",
+    "C_Message_Rank_Title_Follow"
+  ],
+  "207484883": [
+    "C_Message_Rank_Title_Level",
+    "C_Message_Rank_Title_Level"
+  ],
+  "116860652": [
+    "C_Message_Rank_Title_Rank",
+    "C_Message_Rank_Title_Rank"
+  ],
+  "893442232": [
+    "C_Message_Rank_Title_Nickname",
+    "C_Message_Rank_Title_Nickname"
+  ],
+  "950034770": [
+    "C_Message_Rank_Menu_All",
+    "C_Message_Rank_Menu_All"
+  ],
+  "184307735": [
+    "C_Message_Rank_Menu_Friend",
+    "C_Message_Rank_Menu_Friend"
+  ],
+  "065848488": [
+    "C_Message_Rank_Menu_DayRank",
+    "C_Message_Rank_Menu_DayRank"
+  ],
+  "896105195": [
+    "C_Message_Rank_Menu_MonthRank",
+    "C_Message_Rank_Menu_MonthRank"
+  ],
+  "858023100": [
+    "C_Message_Rank_Followed",
+    "C_Message_Rank_Followed"
+  ],
+  "226994677": [
+    "C_Message_Rank_Tips_Context",
+    "C_Message_Rank_Tips_Context"
+  ],
+  "944222764": [
+    "C_Message_Rank_Tips_OK",
+    "C_Message_Rank_Tips_OK"
+  ],
+  "483428696": [
+    "C_Message_Rank_Tips_NO",
+    "C_Message_Rank_Tips_NO"
+  ],
+  "601819831": [
+    "C_Message_Rank_Tips_Cancel",
+    "C_Message_Rank_Tips_Cancel"
+  ],
+  "413326432": [
+    "C_Message_Rank_Unlist",
+    "C_Message_Rank_Unlist"
+  ],
+  "485635330": [
+    "C_Message_Result_Back",
+    "C_Message_Result_Back"
+  ],
+  "189065843": [
+    "C_Message_Result_ReportSuccess",
+    "C_Message_Result_ReportSuccess"
+  ],
+  "311283717": [
+    "C_Message_Result_LikeSuccess",
+    "C_Message_Result_LikeSuccess"
+  ],
+  "494945504": [
+    "C_Message_Result_Mode_Name",
+    "C_Message_Result_Mode_Name"
+  ],
+  "482436910": [
+    "C_Message_Result_Exp_Limited",
+    "C_Message_Result_Exp_Limited"
+  ],
+  "846966372": [
+    "C_Message_Result_Gold_Limited",
+    "C_Message_Result_Gold_Limited"
+  ],
+  "572623292": [
+    "C_Message_Tips_Title",
+    "C_Message_Tips_Title"
+  ],
+  "281424949": [
+    "C_Message_Result_Win",
+    "C_Message_Result_Win"
+  ],
+  "637956086": [
+    "C_Message_Result_Lose",
+    "C_Message_Result_Lose"
+  ],
+  "914960883": [
+    "C_Message_Result_Draw",
+    "C_Message_Result_Draw"
+  ],
+  "932435495": [
+    "C_Message_Result_PVE_Win",
+    "C_Message_Result_PVE_Win"
+  ],
+  "044841107": [
+    "C_Message_Result_PVE_Lose",
+    "C_Message_Result_PVE_Lose"
+  ],
+  "268935343": [
+    "C_Message_Result_Number",
+    "C_Message_Result_Number"
+  ],
+  "576720022": [
+    "C_Message_Result_Times",
+    "C_Message_Result_Times"
+  ],
+  "930580114": [
+    "C_Message_Result_Score",
+    "C_Message_Result_Score"
+  ],
+  "405625984": [
+    "C_Message_ResultData_Exp",
+    "C_Message_ResultData_Exp"
+  ],
+  "964009258": [
+    "C_Message_ResultData_Exp_Limit",
+    "C_Message_ResultData_Exp_Limit"
+  ],
+  "036675903": [
+    "C_Message_ResultData_Gold",
+    "C_Message_ResultData_Gold"
+  ],
+  "150766641": [
+    "C_Message_ResultData_Gold_Limit",
+    "C_Message_ResultData_Gold_Limit"
+  ],
+  "230484809": [
+    "C_Message_ResultData_Button_DateText",
+    "C_Message_ResultData_Button_DateText"
+  ],
+  "721580344": [
+    "C_Message_ResultData_Button_DescText",
+    "C_Message_ResultData_Button_DescText"
+  ],
+  "422001820": [
+    "C_Message_BattleResult_Msg_Clear_Succ",
+    "C_Message_BattleResult_Msg_Clear_Succ"
+  ],
+  "630881484": [
+    "C_Message_BattleResult_Msg_ClearDateText",
+    "C_Message_BattleResult_Msg_ClearDateText"
+  ],
+  "728306614": [
+    "C_Message_Battleloading_EquipArmor",
+    "C_Message_Battleloading_EquipArmor"
+  ],
+  "301100344": [
+    "C_Message_Battleloading_NoArmor",
+    "C_Message_Battleloading_NoArmor"
+  ],
+  "497063945": [
+    "C_Message_Notice_Name",
+    "C_Message_Notice_Name"
+  ],
+  "712105032": [
+    "C_Message_ShareCode_Time",
+    "C_Message_ShareCode_Time"
+  ],
+  "550871660": [
+    "C_Message_ShareCode_Expiration_Time",
+    "C_Message_ShareCode_Expiration_Time"
+  ],
+  "258386219": [
+    "C_Message_ShareCode_QRToggle",
+    "C_Message_ShareCode_QRToggle"
+  ],
+  "634036248": [
+    "C_Message_ShareCode_Already_Generate",
+    "C_Message_ShareCode_Already_Generate"
+  ],
+  "417784502": [
+    "C_Message_ShareCode_Saved_Camera",
+    "C_Message_ShareCode_Saved_Camera"
+  ],
+  "933882764": [
+    "C_Message_ShareCode_Tip",
+    "C_Message_ShareCode_Tip"
+  ],
+  "948726168": [
+    "C_Message_Login_Agree",
+    "C_Message_Login_Agree"
+  ],
+  "669811628": [
+    "C_Message_Questionnaire_Survey_1",
+    "C_Message_Questionnaire_Survey_1"
+  ],
+  "566433419": [
+    "C_Message_SDK_BindFail_NetAnomalies",
+    "C_Message_SDK_BindFail_NetAnomalies"
+  ],
+  "394872510": [
+    "C_Message_SDK_BindFail_20013",
+    "C_Message_SDK_BindFail_20013"
+  ],
+  "262415160": [
+    "C_Message_SDK_BindFail_101",
+    "C_Message_SDK_BindFail_101"
+  ],
+  "383274901": [
+    "C_Message_SDK_BindFail_102",
+    "C_Message_SDK_BindFail_102"
+  ],
+  "734674820": [
+    "C_Message_SDK_BindFail_20005",
+    "C_Message_SDK_BindFail_20005"
+  ],
+  "247702232": [
+    "C_Message_SDK_BindFail_20001",
+    "C_Message_SDK_BindFail_20001"
+  ],
+  "471040053": [
+    "C_Message_SDK_BindSuccess",
+    "C_Message_SDK_BindSuccess"
+  ],
+  "131442103": [
+    "C_Message_Authority_Title",
+    "C_Message_Authority_Title"
+  ],
+  "938646401": [
+    "C_Message_Phone_Layout",
+    "C_Message_Phone_Layout"
+  ],
+  "512659502": [
+    "C_Message_Bag_Insufficient_Space",
+    "C_Message_Bag_Insufficient_Space"
+  ],
+  "164641916": [
+    "C_Message_Bag_Expand_Succeeded",
+    "C_Message_Bag_Expand_Succeeded"
+  ],
+  "305773776": [
+    "C_Message_Bag_Sell_Succeeded",
+    "C_Message_Bag_Sell_Succeeded"
+  ],
+  "245725942": [
+    "C_Message_Bag_Sell_Confirm",
+    "C_Message_Bag_Sell_Confirm"
+  ],
+  "986179359": [
+    "C_Message_Bag_Sell_Item",
+    "C_Message_Bag_Sell_Item"
+  ],
+  "296884237": [
+    "C_Message_Bag_Sell_Role",
+    "C_Message_Bag_Sell_Role"
+  ],
+  "479355196": [
+    "C_Message_Bag_Sell_Item_Desc",
+    "C_Message_Bag_Sell_Item_Desc"
+  ],
+  "737907637": [
+    "C_Message_Bag_Use_Succeeded",
+    "C_Message_Bag_Use_Succeeded"
+  ],
+  "077926981": [
+    "C_Message_Bag_Music_Preview_Desc",
+    "C_Message_Bag_Music_Preview_Desc"
+  ],
+  "138701507": [
+    "C_Message_Bag_Music_Count",
+    "C_Message_Bag_Music_Count"
+  ],
+  "931542244": [
+    "C_Message_Bag_Left_Time",
+    "C_Message_Bag_Left_Time"
+  ],
+  "785932555": [
+    "C_Message_Bag_Fragment_Lackof",
+    "C_Message_Bag_Fragment_Lackof"
+  ],
+  "296716261": [
+    "C_Message_Bag_Sort_Up",
+    "C_Message_Bag_Sort_Up"
+  ],
+  "018901081": [
+    "C_Message_Bag_Sort_Down",
+    "C_Message_Bag_Sort_Down"
+  ],
+  "732279122": [
+    "C_Message_Bag_Wear_Value",
+    "C_Message_Bag_Wear_Value"
+  ],
+  "084918914": [
+    "C_Message_Bag_Wear_Description",
+    "C_Message_Bag_Wear_Description"
+  ],
+  "194569652": [
+    "C_Message_Bag_Buffer_Overlay",
+    "C_Message_Bag_Buffer_Overlay"
+  ],
+  "525724730": [
+    "C_Message_Bag_Buffer_Exceed_Limit",
+    "C_Message_Bag_Buffer_Exceed_Limit"
+  ],
+  "656864681": [
+    "C_Message_Bag_Buffer_Remain_Time",
+    "C_Message_Bag_Buffer_Remain_Time"
+  ],
+  "734436959": [
+    "C_Message_Bag_Buffer_Team_Total_Count",
+    "C_Message_Bag_Buffer_Team_Total_Count"
+  ],
+  "511350534": [
+    "C_Message_Bag_Use_Item_Num",
+    "C_Message_Bag_Use_Item_Num"
+  ],
+  "466816854": [
+    "C_Message_Bag_Exchange_Item_Select",
+    "C_Message_Bag_Exchange_Item_Select"
+  ],
+  "874595853": [
+    "C_Message_Bag_Exchange_Item_Select_Title",
+    "C_Message_Bag_Exchange_Item_Select_Title"
+  ],
+  "234260009": [
+    "C_Message_Bag_Exchange_Use",
+    "C_Message_Bag_Exchange_Use"
+  ],
+  "165365183": [
+    "C_Message_Bag_Exchange_Combine",
+    "C_Message_Bag_Exchange_Combine"
+  ],
+  "810310371": [
+    "C_Bag_Exchange_Item_Insufficient",
+    "C_Bag_Exchange_Item_Insufficient"
+  ],
+  "044692282": [
+    "C_Message_Award_ClickText",
+    "C_Message_Award_ClickText"
+  ],
+  "443823901": [
+    "C_Message_Award_Title",
+    "C_Message_Award_Title"
+  ],
+  "811071769": [
+    "C_Message_Award_Btn_OpenOne",
+    "C_Message_Award_Btn_OpenOne"
+  ],
+  "097356161": [
+    "C_Message_Award_Btn_OpenTen",
+    "C_Message_Award_Btn_OpenTen"
+  ],
+  "206228995": [
+    "C_Message_Award_Capacity_Title",
+    "C_Message_Award_Capacity_Title"
+  ],
+  "876010679": [
+    "C_Message_Inspector_Normal_Feature_Title",
+    "C_Message_Inspector_Normal_Feature_Title"
+  ],
+  "256449472": [
+    "C_Message_Inspector_Special_Feature",
+    "C_Message_Inspector_Special_Feature"
+  ],
+  "663929405": [
+    "C_Message_Inspector_Title",
+    "C_Message_Inspector_Title"
+  ],
+  "861654388": [
+    "C_Message_Inspector_Wear_Interval_Desc",
+    "C_Message_Inspector_Wear_Interval_Desc"
+  ],
+  "428276915": [
+    "C_Message_Inspector_Wear_Expand_Desc",
+    "C_Message_Inspector_Wear_Expand_Desc"
+  ],
+  "422007776": [
+    "C_Message_Inspector_Story_Expand_Desc",
+    "C_Message_Inspector_Story_Expand_Desc"
+  ],
+  "268990351": [
+    "C_Message_PlayerMenu_Check",
+    "C_Message_PlayerMenu_Check"
+  ],
+  "750460402": [
+    "C_Message_PlayerMenu_Chat",
+    "C_Message_PlayerMenu_Chat"
+  ],
+  "882151066": [
+    "C_Message_Login_ResourceVersion",
+    "C_Message_Login_ResourceVersion"
+  ],
+  "248477282": [
+    "C_Message_Login_Version",
+    "C_Message_Login_Version"
+  ],
+  "704217323": [
+    "C_Message_Login_QRCode",
+    "C_Message_Login_QRCode"
+  ],
+  "338772364": [
+    "C_Message_Login_Tourist",
+    "C_Message_Login_Tourist"
+  ],
+  "925852139": [
+    "C_Message_Login_Facebook",
+    "C_Message_Login_Facebook"
+  ],
+  "380184786": [
+    "C_Message_Login_Google",
+    "C_Message_Login_Google"
+  ],
+  "366807100": [
+    "C_Message_Login_ControlText",
+    "C_Message_Login_ControlText"
+  ],
+  "020249747": [
+    "C_Message_Login_Button_OK",
+    "C_Message_Login_Button_OK"
+  ],
+  "708085526": [
+    "C_Message_Login_Button_NO",
+    "C_Message_Login_Button_NO"
+  ],
+  "145383877": [
+    "C_Message_Login_Context",
+    "C_Message_Login_Context"
+  ],
+  "465071428": [
+    "C_Message_Notification_Like",
+    "C_Message_Notification_Like"
+  ],
+  "657461374": [
+    "C_Message_Notification_Follower",
+    "C_Message_Notification_Follower"
+  ],
+  "105095886": [
+    "C_Message_Notification_Visitor",
+    "C_Message_Notification_Visitor"
+  ],
+  "901117124": [
+    "C_Message_Setting_ChangeLanguage",
+    "C_Message_Setting_ChangeLanguage"
+  ],
+  "141356689": [
+    "C_Message_Setting_ChangeLanguage_Reboot_Now",
+    "C_Message_Setting_ChangeLanguage_Reboot_Now"
+  ],
+  "075151662": [
+    "C_Message_Setting_ChangeLanguage_Reboot_Later",
+    "C_Message_Setting_ChangeLanguage_Reboot_Later"
+  ],
+  "848082128": [
+    "C_Message_Setting_UserAgreement",
+    "C_Message_Setting_UserAgreement"
+  ],
+  "827612673": [
+    "C_Message_Setting_PrivateAgreement",
+    "C_Message_Setting_PrivateAgreement"
+  ],
+  "499072548": [
+    "C_Message_Setting_ResetMsg",
+    "C_Message_Setting_ResetMsg"
+  ],
+  "479498737": [
+    "C_Message_Level_Game",
+    "C_Message_Level_Game"
+  ],
+  "239088166": [
+    "C_Message_Com_Window_Name",
+    "C_Message_Com_Window_Name"
+  ],
+  "893036032": [
+    "C_Message_Tips_Mem_MinSize",
+    "C_Message_Tips_Mem_MinSize"
+  ],
+  "873475837": [
+    "C_Message_AIName_Level1",
+    "C_Message_AIName_Level1"
+  ],
+  "633492422": [
+    "C_Message_AIName_Level2",
+    "C_Message_AIName_Level2"
+  ],
+  "669879417": [
+    "C_Message_AIName_Level3",
+    "C_Message_AIName_Level3"
+  ],
+  "742633008": [
+    "C_Message_Click_TooMuch",
+    "C_Message_Click_TooMuch"
+  ],
+  "501156527": [
+    "C_Message_Loading_Preparing_Title",
+    "C_Message_Loading_Preparing_Title"
+  ],
+  "524308740": [
+    "C_Message_InitFailed",
+    "C_Message_InitFailed"
+  ],
+  "371141686": [
+    "C_Message_LoginFailed",
+    "C_Message_LoginFailed"
+  ],
+  "483223814": [
+    "C_Message_OpenBox_CountText",
+    "C_Message_OpenBox_CountText"
+  ],
+  "938417777": [
+    "C_Message_OpenBox_ConfirmTips",
+    "C_Message_OpenBox_ConfirmTips"
+  ],
+  "193470944": [
+    "C_Message_OpenBox_ConfirmTips_Diamond",
+    "C_Message_OpenBox_ConfirmTips_Diamond"
+  ],
+  "322172098": [
+    "C_Message_Reconnect_May",
+    "C_Message_Reconnect_May"
+  ],
+  "025046786": [
+    "C_Message_Reconnect_End",
+    "C_Message_Reconnect_End"
+  ],
+  "374667604": [
+    "C_Message_Reconnect_Timeout",
+    "C_Message_Reconnect_Timeout"
+  ],
+  "929638192": [
+    "C_Message_Signin_Activity_Date_Msg",
+    "C_Message_Signin_Activity_Date_Msg"
+  ],
+  "441614445": [
+    "C_Message_Signin_Day_Title",
+    "C_Message_Signin_Day_Title"
+  ],
+  "544057218": [
+    "C_Message_Signin_Awarding_Status_Msg",
+    "C_Message_Signin_Awarding_Status_Msg"
+  ],
+  "206635403": [
+    "C_Message_Signin_Repairing_Status_Msg",
+    "C_Message_Signin_Repairing_Status_Msg"
+  ],
+  "160537891": [
+    "C_Message_Signin_Finished_Status_Msg",
+    "C_Message_Signin_Finished_Status_Msg"
+  ],
+  "815728088": [
+    "C_Message_Signin_Accept_Status_Msg",
+    "C_Message_Signin_Accept_Status_Msg"
+  ],
+  "878243566": [
+    "C_Message_Signin_Repair_Tip_Msg",
+    "C_Message_Signin_Repair_Tip_Msg"
+  ],
+  "957984849": [
+    "C_Message_Signin_Cancel_Repair",
+    "C_Message_Signin_Cancel_Repair"
+  ],
+  "787442380": [
+    "C_Message_Load_Scene_Failed",
+    "C_Message_Load_Scene_Failed"
+  ],
+  "144540454": [
+    "C_Message_ErrorTip_Title",
+    "C_Message_ErrorTip_Title"
+  ],
+  "708206448": [
+    "C_Message_ErrorTip_Confirm",
+    "C_Message_ErrorTip_Confirm"
+  ],
+  "151493458": [
+    "C_Message_Detail_Tip_Weapon",
+    "C_Message_Detail_Tip_Weapon"
+  ],
+  "034038778": [
+    "C_Message_Detail_Tip_Role",
+    "C_Message_Detail_Tip_Role"
+  ],
+  "396399163": [
+    "C_Message_Detail_Tip_Prop",
+    "C_Message_Detail_Tip_Prop"
+  ],
+  "840236157": [
+    "C_Message_Detail_Tip_Item",
+    "C_Message_Detail_Tip_Item"
+  ],
+  "861044653": [
+    "C_Message_Detail_Tip_Map",
+    "C_Message_Detail_Tip_Map"
+  ],
+  "273384517": [
+    "C_Message_BuyBasicBP_Reward_Description",
+    "C_Message_BuyBasicBP_Reward_Description"
+  ],
+  "624605467": [
+    "C_Message_BattlePass_BuyAdvancedBP_Reward_Description",
+    "C_Message_BattlePass_BuyAdvancedBP_Reward_Description"
+  ],
+  "968198447": [
+    "C_Message_BattlePassCom_BuyAdvancedBP_Reward_Description",
+    "C_Message_BattlePassCom_BuyAdvancedBP_Reward_Description"
+  ],
+  "378644297": [
+    "C_Message_BattlePass_OverLevel_Reward_Context",
+    "C_Message_BattlePass_OverLevel_Reward_Context"
+  ],
+  "567732141": [
+    "C_Message_BattlePass_OverLevel_Reward_Title",
+    "C_Message_BattlePass_OverLevel_Reward_Title"
+  ],
+  "796422179": [
+    "C_Message_BattlePass_No_Reward_Tip",
+    "C_Message_BattlePass_No_Reward_Tip"
+  ],
+  "354349686": [
+    "C_Message_BattlePass_BuyBP_Cost_Tip",
+    "C_Message_BattlePass_BuyBP_Cost_Tip"
+  ],
+  "173937273": [
+    "C_Message_BattlePass_BuyBP_Tip",
+    "C_Message_BattlePass_BuyBP_Tip"
+  ],
+  "099507611": [
+    "C_Message_BattlePass_BuyBP_Advanced_Tip",
+    "C_Message_BattlePass_BuyBP_Advanced_Tip"
+  ],
+  "966510087": [
+    "C_Message_BattlePass_BuyLevel_Discount_Tip",
+    "C_Message_BattlePass_BuyLevel_Discount_Tip"
+  ],
+  "668736750": [
+    "C_Message_BattlePass_BuyLevel_Upgrade_Tip",
+    "C_Message_BattlePass_BuyLevel_Upgrade_Tip"
+  ],
+  "751192956": [
+    "C_Message_BattlePass_BuyLevel_Unlock_Tip",
+    "C_Message_BattlePass_BuyLevel_Unlock_Tip"
+  ],
+  "205157324": [
+    "C_Message_BattlePass_BuyBP_Luxury_Tip_Title",
+    "C_Message_BattlePass_BuyBP_Luxury_Tip_Title"
+  ],
+  "768274356": [
+    "C_Message_BattlePass_BuyBP_Luxury_Tip_Msg",
+    "C_Message_BattlePass_BuyBP_Luxury_Tip_Msg"
+  ],
+  "095093884": [
+    "C_Message_BattlePass_To_Charge_Msg",
+    "C_Message_BattlePass_To_Charge_Msg"
+  ],
+  "904531026": [
+    "C_Message_BattlePass_Time_Left_Msg",
+    "C_Message_BattlePass_Time_Left_Msg"
+  ],
+  "834496574": [
+    "C_Message_BattlePass_Reward_Received_Tip",
+    "C_Message_BattlePass_Reward_Received_Tip"
+  ],
+  "772129602": [
+    "C_Message_BattlePass_Task_Week_Num",
+    "C_Message_BattlePass_Task_Week_Num"
+  ],
+  "735192406": [
+    "C_Message_BattlePass_BuyBP_Btn_Text",
+    "C_Message_BattlePass_BuyBP_Btn_Text"
+  ],
+  "573365362": [
+    "C_Message_BattlePass_GoToReward_Btn_Text",
+    "C_Message_BattlePass_GoToReward_Btn_Text"
+  ],
+  "521758948": [
+    "C_Message_BattlePass_Cumulative_Unlock_Msg",
+    "C_Message_BattlePass_Cumulative_Unlock_Msg"
+  ],
+  "594327739": [
+    "C_Message_BattlePassCom_Cumulative_Unlock_Msg",
+    "C_Message_BattlePassCom_Cumulative_Unlock_Msg"
+  ],
+  "039472232": [
+    "C_Message_BattlePass_Reward_Menu_Text",
+    "C_Message_BattlePass_Reward_Menu_Text"
+  ],
+  "538091126": [
+    "C_Message_BattlePass_Task_Menu_Text",
+    "C_Message_BattlePass_Task_Menu_Text"
+  ],
+  "293849871": [
+    "C_Message_BattlePass_Exchange_Menu_Text",
+    "C_Message_BattlePass_Exchange_Menu_Text"
+  ],
+  "128884802": [
+    "C_Message_BattlePass_Task_This_Week_Exp",
+    "C_Message_BattlePass_Task_This_Week_Exp"
+  ],
+  "681987992": [
+    "C_Message_BattlePass_Task_This_Week_Tip",
+    "C_Message_BattlePass_Task_This_Week_Tip"
+  ],
+  "656719087": [
+    "C_Message_BattlePass_Task_This_Week_Countdown",
+    "C_Message_BattlePass_Task_This_Week_Countdown"
+  ],
+  "966879043": [
+    "C_Message_BattlePass_Task_This_Week_Finished",
+    "C_Message_BattlePass_Task_This_Week_Finished"
+  ],
+  "719053649": [
+    "C_Message_BattlePass_Task_Finished_Count",
+    "C_Message_BattlePass_Task_Finished_Count"
+  ],
+  "305211430": [
+    "C_Message_BattlePass_Help_Context",
+    "C_Message_BattlePass_Help_Context"
+  ],
+  "023801984": [
+    "C_Message_BattlePass_Help_Title",
+    "C_Message_BattlePass_Help_Title"
+  ],
+  "466367961": [
+    "C_Message_BattlePass_Exchange_Limit_Buy_Count",
+    "C_Message_BattlePass_Exchange_Limit_Buy_Count"
+  ],
+  "530488714": [
+    "C_Message_BattlePass_Exchange_Failed_Tip",
+    "C_Message_BattlePass_Exchange_Failed_Tip"
+  ],
+  "739943183": [
+    "C_Message_BattlePass_Exchange_Unlock_Level_Tip",
+    "C_Message_BattlePass_Exchange_Unlock_Level_Tip"
+  ],
+  "608913153": [
+    "C_Message_BattlePass_Exchange_Limit_Tip",
+    "C_Message_BattlePass_Exchange_Limit_Tip"
+  ],
+  "317269984": [
+    "C_Message_BattlePass_Exchange_Purchase_Limit_Description",
+    "C_Message_BattlePass_Exchange_Purchase_Limit_Description"
+  ],
+  "658816140": [
+    "C_Message_BattlePass_Exchange_Purchase_Count_Description",
+    "C_Message_BattlePass_Exchange_Purchase_Count_Description"
+  ],
+  "224241974": [
+    "C_Message_BattlePass_Exchange_Unlock_Tip",
+    "C_Message_BattlePass_Exchange_Unlock_Tip"
+  ],
+  "499711786": [
+    "C_Message_BattlePass_Obtain_Extra_Tip",
+    "C_Message_BattlePass_Obtain_Extra_Tip"
+  ],
+  "438012621": [
+    "C_Message_BattlePass_Reward_Preview_Title",
+    "C_Message_BattlePass_Reward_Preview_Title"
+  ],
+  "625711204": [
+    "C_Message_BattlePass_Season_End_Tip_Msg",
+    "C_Message_BattlePass_Season_End_Tip_Msg"
+  ],
+  "937162066": [
+    "C_Message_BattlePass_Season_Close_Tip_Msg",
+    "C_Message_BattlePass_Season_Close_Tip_Msg"
+  ],
+  "264435908": [
+    "C_Message_BattlePass_Task_Refresh_Tip_Msg",
+    "C_Message_BattlePass_Task_Refresh_Tip_Msg"
+  ],
+  "529125540": [
+    "C_Message_BattlePass_Task_Refresh_Btn_Msg",
+    "C_Message_BattlePass_Task_Refresh_Btn_Msg"
+  ],
+  "358595428": [
+    "C_Message_BattlePass_Task_No_Refresh_Count_Msg",
+    "C_Message_BattlePass_Task_No_Refresh_Count_Msg"
+  ],
+  "036327849": [
+    "C_Message_BattlePass_Reward_Window_Title",
+    "C_Message_BattlePass_Reward_Window_Title"
+  ],
+  "831001280": [
+    "C_Message_Achievement_Score_Award_Tip",
+    "C_Message_Achievement_Score_Award_Tip"
+  ],
+  "085880617": [
+    "C_Message_Achievement_Nothing_To_Show",
+    "C_Message_Achievement_Nothing_To_Show"
+  ],
+  "092486612": [
+    "C_Message_Unlimited",
+    "C_Message_Unlimited"
+  ],
+  "907415148": [
+    "C_Message_Empty_Tip",
+    "C_Message_Empty_Tip"
+  ],
+  "119953302": [
+    "C_Message_Social_Label_CommonFriend",
+    "C_Message_Social_Label_CommonFriend"
+  ],
+  "576835683": [
+    "C_Message_Social_Label_PlayerTogether",
+    "C_Message_Social_Label_PlayerTogether"
+  ],
+  "942763450": [
+    "C_Message_Social_CD_Text",
+    "C_Message_Social_CD_Text"
+  ],
+  "893703188": [
+    "C_Message_Role_Text_Using",
+    "C_Message_Role_Text_Using"
+  ],
+  "614409699": [
+    "C_Message_ModeGuide_Title",
+    "C_Message_ModeGuide_Title"
+  ],
+  "567172312": [
+    "C_Message_Chest_Decrypt_Cost_Tip",
+    "C_Message_Chest_Decrypt_Cost_Tip"
+  ],
+  "081619099": [
+    "C_Message_Chest_Decrypt_Wait_Tip",
+    "C_Message_Chest_Decrypt_Wait_Tip"
+  ],
+  "511420857": [
+    "C_Message_Chest_Decrypt_Button_Text",
+    "C_Message_Chest_Decrypt_Button_Text"
+  ],
+  "189649286": [
+    "C_Message_Chest_Receive_Button_Text",
+    "C_Message_Chest_Receive_Button_Text"
+  ],
+  "285146814": [
+    "C_Message_Chest_Decrypt_Complete_Text",
+    "C_Message_Chest_Decrypt_Complete_Text"
+  ],
+  "811617882": [
+    "C_Message_Chest_Wait_Decrypt_Finish_Tip",
+    "C_Message_Chest_Wait_Decrypt_Finish_Tip"
+  ],
+  "231332571": [
+    "C_Message_Chest_Start_Decrypt_Tip",
+    "C_Message_Chest_Start_Decrypt_Tip"
+  ],
+  "722240941": [
+    "C_Message_Chest_Decrypt_Cost_Success_Tip",
+    "C_Message_Chest_Decrypt_Cost_Success_Tip"
+  ],
+  "105810604": [
+    "C_Message_Chest_Rules",
+    "C_Message_Chest_Rules"
+  ],
+  "698550599": [
+    "C_Message_Chest_Drop_Tip",
+    "C_Message_Chest_Drop_Tip"
+  ],
+  "016496887": [
+    "C_Message_CostNotEnough",
+    "C_Message_CostNotEnough"
+  ],
+  "865929517": [
+    "C_Chest_UnLocking_Tip",
+    "C_Chest_UnLocking_Tip"
+  ],
+  "306689050": [
+    "C_Message_Reconnect_Success",
+    "C_Message_Reconnect_Success"
+  ],
+  "366651557": [
+    "C_Message_Grade_Reward_Title",
+    "C_Message_Grade_Reward_Title"
+  ],
+  "705799927": [
+    "C_Message_Grade_Reward_Name",
+    "C_Message_Grade_Reward_Name"
+  ],
+  "807883728": [
+    "C_Message_Grade_Level_Max",
+    "C_Message_Grade_Level_Max"
+  ],
+  "447372814": [
+    "C_Message_Grade_Exp_Max",
+    "C_Message_Grade_Exp_Max"
+  ],
+  "149050039": [
+    "C_Message_Grade_Help_Context",
+    "C_Message_Grade_Help_Context"
+  ],
+  "710308512": [
+    "C_Message_Grade_Max_Limited",
+    "C_Message_Grade_Max_Limited"
+  ],
+  "618843841": [
+    "C_Message_Grade_Max_Limited_Title",
+    "C_Message_Grade_Max_Limited_Title"
+  ],
+  "679228355": [
+    "C_Message_Grade_Cur_Lock",
+    "C_Message_Grade_Cur_Lock"
+  ],
+  "798955811": [
+    "C_Message_Grade_Next_Lock",
+    "C_Message_Grade_Next_Lock"
+  ],
+  "234733163": [
+    "C_Message_Network_Wrong_Tips",
+    "C_Message_Network_Wrong_Tips"
+  ],
+  "135716552": [
+    "C_Message_Report_InputFieldContent",
+    "C_Message_Report_InputFieldContent"
+  ],
+  "717326561": [
+    "C_Message_Report_WindowTitl",
+    "C_Message_Report_WindowTitl"
+  ],
+  "322617497": [
+    "C_Message_Report_BattleBlockedTipContent",
+    "C_Message_Report_BattleBlockedTipContent"
+  ],
+  "617405381": [
+    "C_Message_Report_BattleBlockedCountDownConten",
+    "C_Message_Report_BattleBlockedCountDownConten"
+  ],
+  "224591715": [
+    "C_Message_LuckyStrike_Purchase_Tips",
+    "C_Message_LuckyStrike_Purchase_Tips"
+  ],
+  "243096558": [
+    "C_Message_LuckyStrike_Window_Title",
+    "C_Message_LuckyStrike_Window_Title"
+  ],
+  "748142814": [
+    "C_Message_LuckyStrike_Reset_Tips",
+    "C_Message_LuckyStrike_Reset_Tips"
+  ],
+  "654432380": [
+    "C_Message_WeaponFeature_Reco",
+    "C_Message_WeaponFeature_Reco"
+  ],
+  "431598234": [
+    "C_Message_WeaponFeature_Story",
+    "C_Message_WeaponFeature_Story"
+  ],
+  "755216118": [
+    "C_Message_Reconnect_Tips_Message",
+    "C_Message_Reconnect_Tips_Message"
+  ],
+  "874025476": [
+    "C_Message_Login_Sdk_Success_Tips",
+    "C_Message_Login_Sdk_Success_Tips"
+  ],
+  "455271379": [
+    "C_Message_Quit_To_Update_Tip",
+    "C_Message_Quit_To_Update_Tip"
+  ],
+  "125250896": [
+    "C_Message_Activities_Daily_Reward",
+    "C_Message_Activities_Daily_Reward"
+  ],
+  "253457079": [
+    "C_Message_Activities_Weekly_Reward",
+    "C_Message_Activities_Weekly_Reward"
+  ],
+  "308421663": [
+    "C_Message_Hall_Fans_UnRead",
+    "C_Message_Hall_Fans_UnRead"
+  ],
+  "193050661": [
+    "C_Message_Hall_Like_UnRead",
+    "C_Message_Hall_Like_UnRead"
+  ],
+  "298710226": [
+    "C_Message_Hall_Visit_UnRead",
+    "C_Message_Hall_Visit_UnRead"
+  ],
+  "422096109": [
+    "C_Message_Setting_hud_CustomLayoutPlan_Change_Tips_N",
+    "C_Message_Setting_hud_CustomLayoutPlan_Change_Tips_N"
+  ],
+  "332480958": [
+    "C_Message_ItemEvaluation_Title",
+    "C_Message_ItemEvaluation_Title"
+  ],
+  "091864158": [
+    "C_Message_ItemEvaluation_Garde_Success",
+    "C_Message_ItemEvaluation_Garde_Success"
+  ],
+  "608693716": [
+    "C_Message_ItemEvaluation_Garde_Failed_LevelLimit",
+    "C_Message_ItemEvaluation_Garde_Failed_LevelLimit"
+  ],
+  "480980869": [
+    "C_Message_ItemEvaluation_Garde_Failed_ItemLimit",
+    "C_Message_ItemEvaluation_Garde_Failed_ItemLimit"
+  ],
+  "586969834": [
+    "C_Message_ItemEvaluation_Comment_Success",
+    "C_Message_ItemEvaluation_Comment_Success"
+  ],
+  "740896022": [
+    "C_Message_ItemEvaluation_Comment_Failed_DirtyCheck",
+    "C_Message_ItemEvaluation_Comment_Failed_DirtyCheck"
+  ],
+  "373695160": [
+    "C_Message_ItemEvaluation_Comment_Failed_CD",
+    "C_Message_ItemEvaluation_Comment_Failed_CD"
+  ],
+  "341935112": [
+    "C_Message_ItemEvaluation_Comment_Failed_TriesLimit",
+    "C_Message_ItemEvaluation_Comment_Failed_TriesLimit"
+  ],
+  "331191678": [
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_Normal",
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_Normal"
+  ],
+  "097339954": [
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_CD",
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_CD"
+  ],
+  "106317517": [
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_TriesLimit",
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_TriesLimit"
+  ],
+  "040233167": [
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_LevelLimit",
+    "C_Message_ItemEvaluation_Comment_PlaceHolder_LevelLimit"
+  ],
+  "704291994": [
+    "C_Message_Credit_Reaward_Tips",
+    "C_Message_Credit_Reaward_Tips"
+  ],
+  "507684794": [
+    "C_Message_Credit_GameLimit_Text",
+    "C_Message_Credit_GameLimit_Text"
+  ],
+  "385369302": [
+    "C_Message_Credit_Tips_CreditScoreIsNotEnough",
+    "C_Message_Credit_Tips_CreditScoreIsNotEnough"
+  ],
+  "191339526": [
+    "C_Message_ItemEvaluation_Filter_All",
+    "C_Message_ItemEvaluation_Filter_All"
+  ],
+  "338922690": [
+    "C_Message_ItemEvaluation_Filter_Mine",
+    "C_Message_ItemEvaluation_Filter_Mine"
+  ],
+  "252500888": [
+    "C_Message_ItemEvaluation_Filter_Friend",
+    "C_Message_ItemEvaluation_Filter_Friend"
+  ],
+  "118099638": [
+    "C_Message_ItemEvaluation_Filter_Time",
+    "C_Message_ItemEvaluation_Filter_Time"
+  ],
+  "925672140": [
+    "C_Message_ItemEvaluation_Filter_Total",
+    "C_Message_ItemEvaluation_Filter_Total"
+  ],
+  "419008776": [
+    "C_Message_ItemEvaluation_Filter_History",
+    "C_Message_ItemEvaluation_Filter_History"
+  ],
+  "152470729": [
+    "C_Message_ItemEvaluation_Comment_Send",
+    "C_Message_ItemEvaluation_Comment_Send"
+  ],
+  "350284377": [
+    "C_Message_Credit_Level_Text",
+    "C_Message_Credit_Level_Text"
+  ],
+  "908872274": [
+    "C_Message_Collection_Title_Main",
+    "C_Message_Collection_Title_Main"
+  ],
+  "606022640": [
+    "C_Message_Collection_Title_Normal",
+    "C_Message_Collection_Title_Normal"
+  ],
+  "675046186": [
+    "C_Message_Collection_Title_Suit",
+    "C_Message_Collection_Title_Suit"
+  ],
+  "906955891": [
+    "C_Message_Collection_AbilityDescription",
+    "C_Message_Collection_AbilityDescription"
+  ],
+  "822411904": [
+    "C_Message_Collection_AwardButtonContent",
+    "C_Message_Collection_AwardButtonContent"
+  ],
+  "355284126": [
+    "C_Message_ItemEvaluation_Garde_Failed_RechargeLimit",
+    "C_Message_ItemEvaluation_Garde_Failed_RechargeLimit"
+  ],
+  "930231693": [
+    "C_Message_Obtain_NewWeapon_Tips",
+    "C_Message_Obtain_NewWeapon_Tips"
+  ],
+  "836421790": [
+    "C_Message_Obtain_ThemeWeapon_Tips",
+    "C_Message_Obtain_ThemeWeapon_Tips"
+  ],
+  "092088756": [
+    "C_Message_Obtain_Weapon_Tips",
+    "C_Message_Obtain_Weapon_Tips"
+  ],
+  "696004065": [
+    "C_Setting_Custom_Left_Title_N",
+    "C_Setting_Custom_Left_Title_N"
+  ],
+  "057993734": [
+    "C_Setting_Custom_Right_Title_N",
+    "C_Setting_Custom_Right_Title_N"
+  ],
+  "692223895": [
+    "C_Setting_Custom_Simply_Title_N",
+    "C_Setting_Custom_Simply_Title_N"
+  ],
+  "554586541": [
+    "C_Novicecareer_TaskComplete_Tips",
+    "C_Novicecareer_TaskComplete_Tips"
+  ],
+  "315507019": [
+    "C_OpenBox_CollectionItemList_TitleName",
+    "C_OpenBox_CollectionItemList_TitleName"
+  ],
+  "194440162": [
+    "C_OpenBox_CollectionItemList_Special",
+    "C_OpenBox_CollectionItemList_Special"
+  ],
+  "431841217": [
+    "C_OpenBox_CollectionItemList_Normal",
+    "C_OpenBox_CollectionItemList_Normal"
+  ],
+  "867517515": [
+    "C_Bag_SortType_Default",
+    "C_Bag_SortType_Default"
+  ],
+  "767190823": [
+    "C_Bag_SortType_New",
+    "C_Bag_SortType_New"
+  ],
+  "266141137": [
+    "C_Bag_SortType_Wear",
+    "C_Bag_SortType_Wear"
+  ],
+  "112207070": [
+    "C_Bag_SortType_GS",
+    "C_Bag_SortType_GS"
+  ],
+  "561103476": [
+    "C_Guide_Select_Novice",
+    "C_Guide_Select_Novice"
+  ],
+  "377455925": [
+    "C_Guide_Select_Master",
+    "C_Guide_Select_Master"
+  ],
+  "851011760": [
+    "C_Guide_Mask_Click_Tips",
+    "C_Guide_Mask_Click_Tips"
+  ],
+  "998487897": [
+    "C_Guide_Select_Description",
+    "C_Guide_Select_Description"
+  ],
+  "650954693": [
+    "C_Guide_Select_Title",
+    "C_Guide_Select_Title"
+  ],
+  "918657388": [
+    "C_Guide_Rating_Damage_Title",
+    "C_Guide_Rating_Damage_Title"
+  ],
+  "524010174": [
+    "C_Guide_Rating_Damage_Description",
+    "C_Guide_Rating_Damage_Description"
+  ],
+  "302736966": [
+    "C_Guide_Rating_Score_Title",
+    "C_Guide_Rating_Score_Title"
+  ],
+  "788678793": [
+    "C_Guide_Rating_Score_Pass_Time",
+    "C_Guide_Rating_Score_Pass_Time"
+  ],
+  "433928766": [
+    "C_Guide_Rating_Score_Causing_Injury",
+    "C_Guide_Rating_Score_Causing_Injury"
+  ],
+  "848119635": [
+    "C_Guide_Rating_Score_Headshot",
+    "C_Guide_Rating_Score_Headshot"
+  ],
+  "483503895": [
+    "C_Guide_KDA_Kills",
+    "C_Guide_KDA_Kills"
+  ],
+  "313488767": [
+    "C_Guide_KDA_Death",
+    "C_Guide_KDA_Death"
+  ],
+  "281719317": [
+    "C_Guide_KDA_Assist",
+    "C_Guide_KDA_Assist"
+  ],
+  "325908913": [
+    "C_Guide_Rating_Title",
+    "C_Guide_Rating_Title"
+  ],
+  "490417562": [
+    "C_Guide_KDA_Title",
+    "C_Guide_KDA_Title"
+  ],
+  "263728932": [
+    "C_Guide_Skip_Tips",
+    "C_Guide_Skip_Tips"
+  ],
+  "321661239": [
+    "C_General_Inventory_Item_Quality_6_N",
+    "C_General_Inventory_Item_Quality_6_N"
+  ],
+  "381375891": [
+    "C_General_Inventory_Item_Quality_5_N",
+    "C_General_Inventory_Item_Quality_5_N"
+  ],
+  "845126009": [
+    "C_LevelWindow_Level",
+    "C_LevelWindow_Level"
+  ],
+  "369687861": [
+    "C_General_Download_List_Tips_Downloading",
+    "C_General_Download_List_Tips_Downloading"
+  ],
+  "873301794": [
+    "C_General_Download_List_Title_WaitingDownload",
+    "C_General_Download_List_Title_WaitingDownload"
+  ],
+  "008475148": [
+    "C_General_Download_List_Title_WaitingForTheLastTask",
+    "C_General_Download_List_Title_WaitingForTheLastTask"
+  ],
+  "370846214": [
+    "C_General_Download_List_AutoDownload_Button_All",
+    "C_General_Download_List_AutoDownload_Button_All"
+  ],
+  "022727453": [
+    "C_General_Download_List_AutoDownload_Button_Wifi",
+    "C_General_Download_List_AutoDownload_Button_Wifi"
+  ],
+  "631345718": [
+    "C_General_Download_List_AutoDownload_Button_Close",
+    "C_General_Download_List_AutoDownload_Button_Close"
+  ],
+  "550657345": [
+    "C_General_Download_List_Tips_NoWifi_Text",
+    "C_General_Download_List_Tips_NoWifi_Text"
+  ],
+  "487745461": [
+    "C_General_Download_List_Tips_NoWifi_Button_WaitWifiDownload",
+    "C_General_Download_List_Tips_NoWifi_Button_WaitWifiDownload"
+  ],
+  "444021284": [
+    "C_General_Download_List_Tips_NoWifi_Button_StopDownload",
+    "C_General_Download_List_Tips_NoWifi_Button_StopDownload"
+  ],
+  "372162889": [
+    "C_General_Download_List_Tips_AutoDownload_WIFI",
+    "C_General_Download_List_Tips_AutoDownload_WIFI"
+  ],
+  "136402473": [
+    "C_General_Download_List_Tips_AutoDownload_All",
+    "C_General_Download_List_Tips_AutoDownload_All"
+  ],
+  "993243794": [
+    "C_General_Download_List_Tips_AutoDownload_Close",
+    "C_General_Download_List_Tips_AutoDownload_Close"
+  ],
+  "713636846": [
+    "C_General_Download_Manage_Name",
+    "C_General_Download_Manage_Name"
+  ],
+  "173539686": [
+    "C_General_Download_Manage_Delete_Text",
+    "C_General_Download_Manage_Delete_Text"
+  ],
+  "788358528": [
+    "C_General_Download_Manage_Delete_Tips",
+    "C_General_Download_Manage_Delete_Tips"
+  ],
+  "618396782": [
+    "C_General_Download_List_DownloadSpeed",
+    "C_General_Download_List_DownloadSpeed"
+  ],
+  "318815893": [
+    "C_General_Download_List_DownloadErrorTips_Memory",
+    "C_General_Download_List_DownloadErrorTips_Memory"
+  ],
+  "861009035": [
+    "C_General_Download_List_DownloadErrorTips_Other",
+    "C_General_Download_List_DownloadErrorTips_Other"
+  ],
+  "679615383": [
+    "C_General_Download_Item_NotDownloadTips",
+    "C_General_Download_Item_NotDownloadTips"
+  ],
+  "335807081": [
+    "C_General_Download_RankTips",
+    "C_General_Download_RankTips"
+  ],
+  "339339565": [
+    "C_General_Download_Mode_WaitingDownload",
+    "C_General_Download_Mode_WaitingDownload"
+  ],
+  "746379580": [
+    "C_General_Download_Mode_DownLoading",
+    "C_General_Download_Mode_DownLoading"
+  ],
+  "660092443": [
+    "C_General_Download_Mode_DownloadFinish_Text",
+    "C_General_Download_Mode_DownloadFinish_Text"
+  ],
+  "228926857": [
+    "C_General_Download_Room_Tips_SwichFail_WaitingDownload",
+    "C_General_Download_Room_Tips_SwichFail_WaitingDownload"
+  ],
+  "758015202": [
+    "C_General_Download_Room_Tips_JoinFail",
+    "C_General_Download_Room_Tips_JoinFail"
+  ],
+  "109166510": [
+    "C_General_Download_Mode_Tips_JoinFail",
+    "C_General_Download_Mode_Tips_JoinFail"
+  ],
+  "302164115": [
+    "C_General_Download_List_Title",
+    "C_General_Download_List_Title"
+  ],
+  "218125613": [
+    "C_General_Download_List_AutoDownload_Title",
+    "C_General_Download_List_AutoDownload_Title"
+  ],
+  "588757210": [
+    "C_General_Download_Manage_DownLoadAll",
+    "C_General_Download_Manage_DownLoadAll"
+  ],
+  "187791791": [
+    "C_General_Download_Manage_StopAll",
+    "C_General_Download_Manage_StopAll"
+  ],
+  "174478452": [
+    "C_General_Download_List_AddDownload_Tips",
+    "C_General_Download_List_AddDownload_Tips"
+  ],
+  "104687872": [
+    "C_Novice_Training_Day",
+    "C_Novice_Training_Day"
+  ],
+  "043381388": [
+    "C_TenInOneLucky_Reset_CountAward_Tips",
+    "C_TenInOneLucky_Reset_CountAward_Tips"
+  ],
+  "803537165": [
+    "C_TenInOneLucky_FreeLucky_Tips",
+    "C_TenInOneLucky_FreeLucky_Tips"
+  ],
+  "376485083": [
+    "C_TenInOneLucky_FreeLucky_Help_Tips",
+    "C_TenInOneLucky_FreeLucky_Help_Tips"
+  ],
+  "107891313": [
+    "C_TenInOneLucky_Help_Title",
+    "C_TenInOneLucky_Help_Title"
+  ],
+  "067791051": [
+    "C_Event_Luckystrike_Rule1_N",
+    "C_Event_Luckystrike_Rule1_N"
+  ],
+  "394166800": [
+    "C_Event_Luckystrike_Rule1_D",
+    "C_Event_Luckystrike_Rule1_D"
+  ],
+  "037161949": [
+    "C_Event_Luckychest_Rule1_N",
+    "C_Event_Luckychest_Rule1_N"
+  ],
+  "619883667": [
+    "C_Event_Luckychest_Rule1_D",
+    "C_Event_Luckychest_Rule1_D"
+  ],
+  "093276533": [
+    "C_Event_Newcamp_Title_N",
+    "C_Event_Newcamp_Title_N"
+  ],
+  "696747257": [
+    "C_Event_Newcamp_Title_D",
+    "C_Event_Newcamp_Title_D"
+  ],
+  "059938501": [
+    "C_Novice_Training_MissionTime",
+    "C_Novice_Training_MissionTime"
+  ],
+  "018148099": [
+    "C_Event_7-DayReward_N",
+    "C_Event_7-DayReward_N"
+  ],
+  "186156728": [
+    "C_Event_Novicecareer_Title_N",
+    "C_Event_Novicecareer_Title_N"
+  ],
+  "176470827": [
+    "C_General_Collection_DaiMa_N",
+    "C_General_Collection_DaiMa_N"
+  ],
+  "587154985": [
+    "C_Setting_Custom_SelectColumn_Left_N",
+    "C_Setting_Custom_SelectColumn_Left_N"
+  ],
+  "936461374": [
+    "C_Setting_Custom_SelectColumn_Right_N",
+    "C_Setting_Custom_SelectColumn_Right_N"
+  ],
+  "983587570": [
+    "C_Setting_Custom_SelectColumn_Simply_N",
+    "C_Setting_Custom_SelectColumn_Simply_N"
+  ],
+  "265874378": [
+    "C_Item_Compositable",
+    "C_Item_Compositable"
+  ],
+  "310875689": [
+    "C_Collection_Count_None",
+    "C_Collection_Count_None"
+  ],
+  "915880695": [
+    "C_Collection_Count_Have",
+    "C_Collection_Count_Have"
+  ],
+  "212997418": [
+    "C_Collection_Score",
+    "C_Collection_Score"
+  ],
+  "050548941": [
+    "C_Collection_Stage",
+    "C_Collection_Stage"
+  ],
+  "452033384": [
+    "C_Collection_Actived",
+    "C_Collection_Actived"
+  ],
+  "471922702": [
+    "C_Collection_ActiveProgress",
+    "C_Collection_ActiveProgress"
+  ],
+  "966853021": [
+    "C_Collection_StageProgress",
+    "C_Collection_StageProgress"
+  ],
+  "399771016": [
+    "C_Collection_MaxStage",
+    "C_Collection_MaxStage"
+  ],
+  "423036393": [
+    "C_Collection_Combination_Score",
+    "C_Collection_Combination_Score"
+  ],
+  "259177909": [
+    "C_Collection_Combination_Actived",
+    "C_Collection_Combination_Actived"
+  ],
+  "869937207": [
+    "C_Collection_Combination_Inactive",
+    "C_Collection_Combination_Inactive"
+  ],
+  "491994136": [
+    "C_General_Collection_Collecting_Tip",
+    "C_General_Collection_Collecting_Tip"
+  ],
+  "796230990": [
+    "C_General_Collection_Completed_Tip",
+    "C_General_Collection_Completed_Tip"
+  ],
+  "137808223": [
+    "C_General_Collection_Active_Ability_Tip",
+    "C_General_Collection_Active_Ability_Tip"
+  ],
+  "044251996": [
+    "C_General_Collection_Ability_EquipSuccess_Tip",
+    "C_General_Collection_Ability_EquipSuccess_Tip"
+  ],
+  "732447090": [
+    "C_Collection_Combination_Ability_ActivedCount",
+    "C_Collection_Combination_Ability_ActivedCount"
+  ],
+  "421943837": [
+    "C_Collection_Combination_Ability_EquipedCount",
+    "C_Collection_Combination_Ability_EquipedCount"
+  ],
+  "821978883": [
+    "C_Collection_Rule_Title_1",
+    "C_Collection_Rule_Title_1"
+  ],
+  "936848738": [
+    "C_Collection_Rule_Title_2",
+    "C_Collection_Rule_Title_2"
+  ],
+  "183851311": [
+    "C_Collection_Rule_Des_1",
+    "C_Collection_Rule_Des_1"
+  ],
+  "779401388": [
+    "C_Collection_Rule_Des_2",
+    "C_Collection_Rule_Des_2"
+  ],
+  "711470107": [
+    "C_Collection_Ability_FullCondition_1",
+    "C_Collection_Ability_FullCondition_1"
+  ],
+  "750540943": [
+    "C_Collection_Ability_Condition_1",
+    "C_Collection_Ability_Condition_1"
+  ],
+  "657013148": [
+    "C_Collection_Ability_Condition_2",
+    "C_Collection_Ability_Condition_2"
+  ],
+  "714898353": [
+    "C_Collection_Combination_Ability_Need_1",
+    "C_Collection_Combination_Ability_Need_1"
+  ],
+  "794254535": [
+    "C_Collection_Combination_Ability_Need_2",
+    "C_Collection_Combination_Ability_Need_2"
+  ],
+  "931476626": [
+    "C_Collection_Ability_FilterType_1",
+    "C_Collection_Ability_FilterType_1"
+  ],
+  "608897426": [
+    "C_Collection_Ability_FilterType_2",
+    "C_Collection_Ability_FilterType_2"
+  ],
+  "929669361": [
+    "C_Collection_Ability_FilterType_3",
+    "C_Collection_Ability_FilterType_3"
+  ],
+  "381131223": [
+    "C_Collection_Ability_FilterType_4",
+    "C_Collection_Ability_FilterType_4"
+  ],
+  "705125296": [
+    "C_Collection_Ability_Btn_Equip",
+    "C_Collection_Ability_Btn_Equip"
+  ],
+  "503049639": [
+    "C_Collection_Ability_Btn_Unequip",
+    "C_Collection_Ability_Btn_Unequip"
+  ],
+  "901421872": [
+    "C_Collection_Ability_Btn_Replace",
+    "C_Collection_Ability_Btn_Replace"
+  ],
+  "001150645": [
+    "C_Collection_Ability_ReplaceTitle_1",
+    "C_Collection_Ability_ReplaceTitle_1"
+  ],
+  "963574958": [
+    "C_Collection_Ability_ReplaceTitle_2",
+    "C_Collection_Ability_ReplaceTitle_2"
+  ],
+  "032219196": [
+    "C_Collection_Ability_ReplaceTitle_3",
+    "C_Collection_Ability_ReplaceTitle_3"
+  ],
+  "167845331": [
+    "C_Collection_Ability_EquipTips",
+    "C_Collection_Ability_EquipTips"
+  ],
+  "241248609": [
+    "C_Collection_Ability_GroupLeftEmpty",
+    "C_Collection_Ability_GroupLeftEmpty"
+  ],
+  "134529284": [
+    "C_Collection_CollectorPrivilegeTitle",
+    "C_Collection_CollectorPrivilegeTitle"
+  ],
+  "734660127": [
+    "C_Collection_Ability_EquipFailTips",
+    "C_Collection_Ability_EquipFailTips"
+  ],
+  "840327348": [
+    "C_Item_Title_ExpCard",
+    "C_Item_Title_ExpCard"
+  ],
+  "497628690": [
+    "C_Item_Title_Splinter",
+    "C_Item_Title_Splinter"
+  ],
+  "237008173": [
+    "C_Event_TenInOneLucky_Rule_D",
+    "C_Event_TenInOneLucky_Rule_D"
+  ],
+  "936327714": [
+    "C_Event_TenInOneLucky_Rule1_N",
+    "C_Event_TenInOneLucky_Rule1_N"
+  ],
+  "284751100": [
+    "C_Event_TenInOneLucky_Rule2_N",
+    "C_Event_TenInOneLucky_Rule2_N"
+  ],
+  "000686999": [
+    "C_Event_TenInOneLucky_Rule3_N",
+    "C_Event_TenInOneLucky_Rule3_N"
+  ],
+  "155502104": [
+    "C_Event_TenInOneLucky_Rule4_N",
+    "C_Event_TenInOneLucky_Rule4_N"
+  ],
+  "359106824": [
+    "C_Event_TenInOneLucky_Rule5_N",
+    "C_Event_TenInOneLucky_Rule5_N"
+  ],
+  "991280857": [
+    "C_Event_TenInOneLucky_Rule6_N",
+    "C_Event_TenInOneLucky_Rule6_N"
+  ],
+  "892944962": [
+    "C_Event_TenInOneLucky_Tips1_D",
+    "C_Event_TenInOneLucky_Tips1_D"
+  ],
+  "170721650": [
+    "C_Event_TenInOneLucky_Getnotice2_D",
+    "C_Event_TenInOneLucky_Getnotice2_D"
+  ],
+  "037957233": [
+    "C_Event_TenInOneLucky_Button_N",
+    "C_Event_TenInOneLucky_Button_N"
+  ],
+  "587380415": [
+    "C_Recharge_Tag_First",
+    "C_Recharge_Tag_First"
+  ],
+  "921341514": [
+    "C_Recharge_Tag_Other",
+    "C_Recharge_Tag_Other"
+  ],
+  "310864818": [
+    "C_NoviceOnlineBox_Running_Tips",
+    "C_NoviceOnlineBox_Running_Tips"
+  ],
+  "945062702": [
+    "C_NoviceOnlineBox_Finished_Tips",
+    "C_NoviceOnlineBox_Finished_Tips"
+  ],
+  "410418743": [
+    "C_NoviceOnlineBox_Awarding",
+    "C_NoviceOnlineBox_Awarding"
+  ],
+  "142369838": [
+    "C_NoviceOnlineBox_Title",
+    "C_NoviceOnlineBox_Title"
+  ],
+  "782126348": [
+    "C_Message_Credit_Help_Title",
+    "C_Message_Credit_Help_Title"
+  ],
+  "794391713": [
+    "C_Message_Credit_Help_Context",
+    "C_Message_Credit_Help_Context"
+  ],
+  "247526995": [
+    "C_AssetUpdate_msg_AppStoreDownload",
+    "C_AssetUpdate_msg_AppStoreDownload"
+  ],
+  "031673991": [
+    "C_FriendsSearchWindow_SearchTitleText",
+    "C_FriendsSearchWindow_SearchTitleText"
+  ],
+  "011124538": [
+    "C_FriendsSearchWindow_SearchBtnText",
+    "C_FriendsSearchWindow_SearchBtnText"
+  ],
+  "675817349": [
+    "C_RoleMainWindow_GameTime",
+    "C_RoleMainWindow_GameTime"
+  ],
+  "787093896": [
+    "C_Inspector_Compare_Title_Weapon",
+    "C_Inspector_Compare_Title_Weapon"
+  ],
+  "140515549": [
+    "C_Inspector_Compare_Title_Role",
+    "C_Inspector_Compare_Title_Role"
+  ],
+  "084026860": [
+    "C_Inspector_Compare_Title_Prop",
+    "C_Inspector_Compare_Title_Prop"
+  ],
+  "844541331": [
+    "C_Message_Err_rankedSeasonNotMatch",
+    "C_Message_Err_rankedSeasonNotMatch"
+  ],
+  "538471248": [
+    "C_Fund_Close_Count_Down",
+    "C_Fund_Close_Count_Down"
+  ],
+  "405278069": [
+    "C_Event_TenInOneLucky_Err17_D",
+    "C_Event_TenInOneLucky_Err17_D"
+  ],
+  "808239859": [
+    "C_PrivilegeCard_Daily_Refresh",
+    "C_PrivilegeCard_Daily_Refresh"
+  ],
+  "632250674": [
+    "C_Role_Record_MissionComplete",
+    "C_Role_Record_MissionComplete"
+  ],
+  "453728052": [
+    "C_Role_Record_MissionFailed",
+    "C_Role_Record_MissionFailed"
+  ],
+  "044567885": [
+    "C_Role_Record_Win",
+    "C_Role_Record_Win"
+  ],
+  "530487390": [
+    "C_Role_Record_Lose",
+    "C_Role_Record_Lose"
+  ],
+  "296578549": [
+    "C_Setting_DeleteAccount_Main",
+    "C_Setting_DeleteAccount_Main"
+  ],
+  "726994070": [
+    "C_Message_Social_Friend_Name_Tag",
+    "C_Message_Social_Friend_Name_Tag"
+  ],
+  "781688977": [
+    "C_Message_Social_FriendApply_NumLimit_Tip",
+    "C_Message_Social_FriendApply_NumLimit_Tip"
+  ],
+  "399252915": [
+    "C_Message_Social_FriendApply_InBlock_Tip",
+    "C_Message_Social_FriendApply_InBlock_Tip"
+  ],
+  "417788131": [
+    "C_Message_Social_FriendApply_SendSuccess_Tip",
+    "C_Message_Social_FriendApply_SendSuccess_Tip"
+  ],
+  "198937053": [
+    "C_Message_Social_FriendApply_RepeatSend_Tip",
+    "C_Message_Social_FriendApply_RepeatSend_Tip"
+  ],
+  "604208239": [
+    "C_Message_Social_FriendApply_NumAndTimelinessDesc",
+    "C_Message_Social_FriendApply_NumAndTimelinessDesc"
+  ],
+  "330602951": [
+    "C_Message_Social_FriendApply_BlockTime",
+    "C_Message_Social_FriendApply_BlockTime"
+  ],
+  "832156618": [
+    "C_Message_Social_FriendApply_AddFail_MyNumLimit_Tip",
+    "C_Message_Social_FriendApply_AddFail_MyNumLimit_Tip"
+  ],
+  "155410374": [
+    "C_Message_Social_FriendApply_AddFail_OtherNumLimit_Tip",
+    "C_Message_Social_FriendApply_AddFail_OtherNumLimit_Tip"
+  ],
+  "258973028": [
+    "C_Message_Social_FriendApply_AddSuccess_Tip",
+    "C_Message_Social_FriendApply_AddSuccess_Tip"
+  ],
+  "163444623": [
+    "C_Message_Social_Friend_SearchEmpty_Tip",
+    "C_Message_Social_Friend_SearchEmpty_Tip"
+  ],
+  "202444377": [
+    "C_Message_Social_FriendInteract_SendSuccess_Tip",
+    "C_Message_Social_FriendInteract_SendSuccess_Tip"
+  ],
+  "825896339": [
+    "C_Message_Social_FriendInteract_RepeatSend_Tip",
+    "C_Message_Social_FriendInteract_RepeatSend_Tip"
+  ],
+  "244256989": [
+    "C_Message_Social_FriendInteract_Obtain_Tip",
+    "C_Message_Social_FriendInteract_Obtain_Tip"
+  ],
+  "775885723": [
+    "C_Message_Social_FriendInteract_SendSuccessAndObtain_Tip",
+    "C_Message_Social_FriendInteract_SendSuccessAndObtain_Tip"
+  ],
+  "689377314": [
+    "C_Message_Social_Friend_DeleteConfirm_Tip",
+    "C_Message_Social_Friend_DeleteConfirm_Tip"
+  ],
+  "509113813": [
+    "C_Message_Social_Friend_DeleteSuccess_Tip",
+    "C_Message_Social_Friend_DeleteSuccess_Tip"
+  ],
+  "649170267": [
+    "C_Message_Social_Friend_NumDesc",
+    "C_Message_Social_Friend_NumDesc"
+  ],
+  "380709700": [
+    "C_Message_Social_Blacklist_UnblockConfirm_Tip",
+    "C_Message_Social_Blacklist_UnblockConfirm_Tip"
+  ],
+  "611557864": [
+    "C_Message_Social_Blacklist_UnblockSuccess_Tip",
+    "C_Message_Social_Blacklist_UnblockSuccess_Tip"
+  ],
+  "886707396": [
+    "C_Message_Social_Blacklist_BlockConfirm_Tip",
+    "C_Message_Social_Blacklist_BlockConfirm_Tip"
+  ],
+  "389658890": [
+    "C_Message_Social_Blacklist_BlockFriendConfirm_Tip",
+    "C_Message_Social_Blacklist_BlockFriendConfirm_Tip"
+  ],
+  "476364347": [
+    "C_Message_Social_Blacklist_NumLimit_Tip",
+    "C_Message_Social_Blacklist_NumLimit_Tip"
+  ],
+  "377806707": [
+    "C_Message_Social_Blacklist_BlockSuccess_Tip",
+    "C_Message_Social_Blacklist_BlockSuccess_Tip"
+  ],
+  "849653273": [
+    "C_Message_Social_Black_NumDesc",
+    "C_Message_Social_Black_NumDesc"
+  ],
+  "384597458": [
+    "C_MatchRank_Map_Locked",
+    "C_MatchRank_Map_Locked"
+  ],
+  "253054179": [
+    "C_Activity_Name_Halloween",
+    "C_Activity_Name_Halloween"
+  ],
+  "286297978": [
+    "C_Activity_Name_Golden_Age",
+    "C_Activity_Name_Golden_Age"
+  ],
+  "826534791": [
+    "C_Message_RoleMain_EditWeapon_Filter1",
+    "C_Message_RoleMain_EditWeapon_Filter1"
+  ],
+  "794435154": [
+    "C_Message_RoleMain_EditWeapon_Filter2",
+    "C_Message_RoleMain_EditWeapon_Filter2"
+  ],
+  "679904517": [
+    "C_Message_RoleMain_PlayerSpaceName",
+    "C_Message_RoleMain_PlayerSpaceName"
+  ],
+  "267411246": [
+    "C_Message_RoleMain_Edit_Title",
+    "C_Message_RoleMain_Edit_Title"
+  ],
+  "555486626": [
+    "C_Message_RoleMain_Team_Title",
+    "C_Message_RoleMain_Team_Title"
+  ],
+  "564980713": [
+    "C_Message_Game__Buffer_Total_Limit_D_1",
+    "C_Message_Game__Buffer_Total_Limit_D_1"
+  ],
+  "368099317": [
+    "C_Message_Game__Buffer_Total_Limit_D_2",
+    "C_Message_Game__Buffer_Total_Limit_D_2"
+  ],
+  "301536450": [
+    "C_Gameplay_Mode_Bmode_MenuTips_NoCost",
+    "C_Gameplay_Mode_Bmode_MenuTips_NoCost"
+  ],
+  "721255639": [
+    "C_Message_Game_Buffer_Total_Team_Add",
+    "C_Message_Game_Buffer_Total_Team_Add"
+  ],
+  "657339419": [
+    "C_Gameplay_Mode_Bmode_MenuTips_NoEditSkill",
+    "C_Gameplay_Mode_Bmode_MenuTips_NoEditSkill"
+  ],
+  "443073814": [
+    "C_Gameplay_Mode_Bmode_MenuTips_RefreshSucceed",
+    "C_Gameplay_Mode_Bmode_MenuTips_RefreshSucceed"
+  ],
+  "610105543": [
+    "C_Gameplay_Mode_Bmode_MenuTips_ResetCheck",
+    "C_Gameplay_Mode_Bmode_MenuTips_ResetCheck"
+  ],
+  "979860449": [
+    "C_Gameplay_Mode_Bmode_MenuTips_RefreshCheck",
+    "C_Gameplay_Mode_Bmode_MenuTips_RefreshCheck"
+  ],
+  "790793681": [
+    "C_Gameplay_Mode_Bmode_MenuTips_ResetSucceed",
+    "C_Gameplay_Mode_Bmode_MenuTips_ResetSucceed"
+  ],
+  "826949721": [
+    "C_Setting_Device_LowAbility_Tips_N",
+    "C_Setting_Device_LowAbility_Tips_N"
+  ],
+  "088785165": [
+    "C_Message_Upgrade_Cur_Lock",
+    "C_Message_Upgrade_Cur_Lock"
+  ],
+  "808903012": [
+    "C_Message_Upgrade_Next_Lock",
+    "C_Message_Upgrade_Next_Lock"
+  ],
+  "317960267": [
+    "C_Result_Msg_ReceiveData",
+    "C_Result_Msg_ReceiveData"
+  ],
+  "169387250": [
+    "C_Result_TipWin_Msg_Timeout",
+    "C_Result_TipWin_Msg_Timeout"
+  ],
+  "444979185": [
+    "C_GamePlay_Mode_Menu_Task_RewardWords",
+    "C_GamePlay_Mode_Menu_Task_RewardWords"
+  ],
+  "812930881": [
+    "C_GamePlay_Mode_PVE_UnlockTips_Hard",
+    "C_GamePlay_Mode_PVE_UnlockTips_Hard"
+  ],
+  "986368670": [
+    "C_GamePlay_Mode_PVE_UnlockTips_Purgatory",
+    "C_GamePlay_Mode_PVE_UnlockTips_Purgatory"
+  ],
+  "946190046": [
+    "C_Edition_Welfare_Tips",
+    "C_Edition_Welfare_Tips"
+  ],
+  "641498724": [
+    "C_Message_Social_FriendApply_AlreadyApplied_Tip",
+    "C_Message_Social_FriendApply_AlreadyApplied_Tip"
+  ],
+  "981735349": [
+    "C_Share_RankLevelUp_Tips",
+    "C_Share_RankLevelUp_Tips"
+  ],
+  "370343710": [
+    "C_Match_Game_Diamond_Is_Negative",
+    "C_Match_Game_Diamond_Is_Negative"
+  ],
+  "852381169": [
+    "C_PrivilegeCard_ImmediateAward",
+    "C_PrivilegeCard_ImmediateAward"
+  ],
+  "095269204": [
+    "C_PrivilegeCard_DailyAward",
+    "C_PrivilegeCard_DailyAward"
+  ],
+  "179170053": [
+    "C_Message_ResultData_Button_SkillText",
+    "C_Message_ResultData_Button_SkillText"
+  ],
+  "819583981": [
+    "C_Message_Platform_Friend_List_facebook_N",
+    "C_Message_Platform_Friend_List_facebook_N"
+  ],
+  "660230766": [
+    "C_Message_Platform_Friend_List_google_N",
+    "C_Message_Platform_Friend_List_google_N"
+  ],
+  "779764281": [
+    "C_Message_Platform_Friend_List_vk_N",
+    "C_Message_Platform_Friend_List_vk_N"
+  ],
+  "068272232": [
+    "C_Result_ModeErrorMsg",
+    "C_Result_ModeErrorMsg"
+  ],
+  "611720019": [
+    "C_Message_Social_PlatformFriend_NumDesc",
+    "C_Message_Social_PlatformFriend_NumDesc"
+  ],
+  "032086040": [
+    "C_InspectorView_Title_DetailText",
+    "C_InspectorView_Title_DetailText"
+  ],
+  "734117823": [
+    "C_InspectorView_Title_DataText",
+    "C_InspectorView_Title_DataText"
+  ],
+  "774833403": [
+    "C_InspectorView_Title_FeatureText",
+    "C_InspectorView_Title_FeatureText"
+  ],
+  "375744323": [
+    "C_InspectorView_Title_ActText",
+    "C_InspectorView_Title_ActText"
+  ],
+  "973148053": [
+    "C_InspectorView_Title_SoundText",
+    "C_InspectorView_Title_SoundText"
+  ],
+  "295339062": [
+    "C_InspectorView_Title_EvaluationText",
+    "C_InspectorView_Title_EvaluationText"
+  ],
+  "180746028": [
+    "C_Message_Like_Recive",
+    "C_Message_Like_Recive"
+  ],
+  "270981940": [
+    "C_Message_Like_Log_Total",
+    "C_Message_Like_Log_Total"
+  ],
+  "333729814": [
+    "C_Message_Like_Log_Weekly",
+    "C_Message_Like_Log_Weekly"
+  ],
+  "820623951": [
+    "C_Message_Visitor_Log_Total",
+    "C_Message_Visitor_Log_Total"
+  ],
+  "960002768": [
+    "C_Message_Visitor_Log_Daily",
+    "C_Message_Visitor_Log_Daily"
+  ],
+  "908139548": [
+    "C_Message_Like_Log_WeekAgo",
+    "C_Message_Like_Log_WeekAgo"
+  ],
+  "394150389": [
+    "C_Hall_StoreBtn_Tips",
+    "C_Hall_StoreBtn_Tips"
+  ],
+  "421885400": [
+    "C_InspectorView_Tips",
+    "C_InspectorView_Tips"
+  ],
+  "351037396": [
+    "C_General_Chat_AIname_N",
+    "C_General_Chat_AIname_N"
+  ],
+  "368450228": [
+    "C_Chest_Obtain_Tips",
+    "C_Chest_Obtain_Tips"
+  ],
+  "939096173": [
+    "C_Chest_Progress_Tips",
+    "C_Chest_Progress_Tips"
+  ],
+  "329464275": [
+    "C_Role_UnknownPlayer",
+    "C_Role_UnknownPlayer"
+  ],
+  "740279780": [
+    "C_Setting_FutureFuction_tips_N",
+    "C_Setting_FutureFuction_tips_N"
+  ],
+  "520068858": [
+    "C_Setting_NextGame_tips_N",
+    "C_Setting_NextGame_tips_N"
+  ],
+  "791405688": [
+    "C_Message_GameMainType_BR",
+    "C_Message_GameMainType_BR"
+  ],
+  "238769715": [
+    "C_PVE_SecondTimeFormat",
+    "C_PVE_SecondTimeFormat"
+  ],
+  "582260239": [
+    "C_PVE_PerSecondFormat",
+    "C_PVE_PerSecondFormat"
+  ],
+  "138616856": [
+    "C_GamePlay_Mode_MapList_Title",
+    "C_GamePlay_Mode_MapList_Title"
+  ],
+  "983889857": [
+    "C_Event_Chest_Box1_N",
+    "C_Event_Chest_Box1_N"
+  ],
+  "554334508": [
+    "C_Event_Chest_Box2_N",
+    "C_Event_Chest_Box2_N"
+  ],
+  "586355119": [
+    "C_Event_Chest_Box3_N",
+    "C_Event_Chest_Box3_N"
+  ],
+  "099467483": [
+    "C_Event_Chest_Openingtips_D",
+    "C_Event_Chest_Openingtips_D"
+  ],
+  "958922720": [
+    "C_Event_Chest_Ruletips1_D",
+    "C_Event_Chest_Ruletips1_D"
+  ],
+  "117087760": [
+    "C_Event_Chest_Rewardtips2_D",
+    "C_Event_Chest_Rewardtips2_D"
+  ],
+  "797155452": [
+    "C_Event_Chest_Box1_D",
+    "C_Event_Chest_Box1_D"
+  ],
+  "275487427": [
+    "C_Event_Chest_Box2_D",
+    "C_Event_Chest_Box2_D"
+  ],
+  "037483802": [
+    "C_Event_Chest_Box3_D",
+    "C_Event_Chest_Box3_D"
+  ],
+  "713965146": [
+    "C_Event_Chest_Rule1_N",
+    "C_Event_Chest_Rule1_N"
+  ],
+  "177548184": [
+    "C_Event_Chest_Rule2_N",
+    "C_Event_Chest_Rule2_N"
+  ],
+  "277798389": [
+    "C_Event_Chest_Rule3_N",
+    "C_Event_Chest_Rule3_N"
+  ],
+  "455549849": [
+    "C_Event_Chest_Rule1_D",
+    "C_Event_Chest_Rule1_D"
+  ],
+  "860248984": [
+    "C_Event_Chest_Rule2_D",
+    "C_Event_Chest_Rule2_D"
+  ],
+  "249696498": [
+    "C_Event_Chest_Rule3_D",
+    "C_Event_Chest_Rule3_D"
+  ],
+  "586173248": [
+    "C_Event_Chest_Getingtips1_D",
+    "C_Event_Chest_Getingtips1_D"
+  ],
+  "032933640": [
+    "C_Event_Chest_Getingtips2_D",
+    "C_Event_Chest_Getingtips2_D"
+  ],
+  "093879819": [
+    "C_Setting_Custom_Guide_1_N",
+    "C_Setting_Custom_Guide_1_N"
+  ],
+  "301355333": [
+    "C_Setting_Custom_Guide_2_N",
+    "C_Setting_Custom_Guide_2_N"
+  ],
+  "472306004": [
+    "C_Setting_Custom_Guide_3_N",
+    "C_Setting_Custom_Guide_3_N"
+  ],
+  "768854920": [
+    "C_Battlepass_Advance_Tip",
+    "C_Battlepass_Advance_Tip"
+  ]
+}

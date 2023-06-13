@@ -1,0 +1,132 @@
+{
+  "items": [
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 2,
+      "pointId": 1,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 3,
+      "pointId": 2,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 4,
+      "pointId": 3,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 2,
+      "pointId": 4,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 3,
+      "pointId": 5,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 4,
+      "pointId": 6,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2004,
+      "maxNumber": 4,
+      "minNumber": 2,
+      "pointId": 7,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 2,
+      "pointId": 1,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 3,
+      "pointId": 2,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 4,
+      "pointId": 3,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 2,
+      "pointId": 4,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 3,
+      "pointId": 5,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 4,
+      "pointId": 6,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 4,
+      "minNumber": 2,
+      "pointId": 7,
+      "probability": 100,
+      "weightPlan": 1
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 8,
+      "minNumber": 4,
+      "pointId": 8,
+      "probability": 100,
+      "weightPlan": 4
+    },
+    {
+      "mapId": 2005,
+      "maxNumber": 8,
+      "minNumber": 4,
+      "pointId": 9,
+      "probability": 100,
+      "weightPlan": 5
+    }
+  ]
+}

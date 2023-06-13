@@ -1,0 +1,27 @@
+/**
+* @file:   excel\SigninRepairCosts.xlsx\SigninRepairCosts
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SigninRepairCosts{
+	// 今日累计补签次数 
+	uint32 id = 1;
+	// 消耗道具ID1、属性ID 
+	repeated SigninRepairCosts_costs costs = 2;
+}
+
+message SigninRepairCosts_costs{
+	// 消耗道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+}
+
+message SigninRepairCosts_Array {
+	repeated SigninRepairCosts items = 1;
+}

@@ -1,0 +1,32 @@
+/**
+* @file:   excel\GMInstruction.xlsx\GMInstruction
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GMInstruction{
+	// 编号 
+	uint32 id = 1;
+	// 名称 
+	string name = 2;
+	// 页签分类 
+	uint32 sheet = 3;
+	// 类别 
+	uint32 type = 4;
+	// 指令 
+	string instruction = 5;
+	// 初始参数 
+	string defaultParam = 6;
+	// 客户端/服务器指令 
+	uint32 clientOrServer = 7;
+	//  
+	int32 showPriority = 8;
+}
+
+message GMInstruction_Array {
+	repeated GMInstruction items = 1;
+}

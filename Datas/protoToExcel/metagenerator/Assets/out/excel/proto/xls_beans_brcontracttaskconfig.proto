@@ -1,0 +1,35 @@
+/**
+* @file:   excel\BRContractTaskConfig.xlsx\BRContractTaskConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRContractTaskConfig{
+	// 合约id 
+	uint32 id = 1;
+	// 合约类型 
+	uint32 contractType = 2;
+	// 合约超时时间 
+	uint32 overTime = 3;
+	// 合约参数 
+	repeated uint32 taskParam = 4;
+	// 进度 
+	uint32 process = 5;
+	// 奖励物品的itemType的id 
+	repeated BRContractTaskConfig_rewards rewards = 6;
+}
+
+message BRContractTaskConfig_rewards{
+	// 奖励物品的itemType的id 
+	uint32 id = 1;
+	// 奖励物品的数目 
+	uint32 num = 2;
+}
+
+message BRContractTaskConfig_Array {
+	repeated BRContractTaskConfig items = 1;
+}

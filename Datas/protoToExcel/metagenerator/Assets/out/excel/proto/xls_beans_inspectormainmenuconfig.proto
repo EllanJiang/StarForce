@@ -1,0 +1,24 @@
+/**
+* @file:   excel\InspectorMainMenuConfig.xlsx\InspectorMainMenuConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message InspectorMainMenuConfig{
+	// 菜单ID 
+	uint32 id = 1;
+	// 是否显示 
+	bool isShow = 2;
+	// 菜单名 
+	string name = 3;
+	// 子窗口 
+	string subPanel = 4;
+}
+
+message InspectorMainMenuConfig_Array {
+	repeated InspectorMainMenuConfig items = 1;
+}

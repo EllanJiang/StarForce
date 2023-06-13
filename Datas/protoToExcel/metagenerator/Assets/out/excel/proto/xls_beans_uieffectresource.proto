@@ -1,0 +1,24 @@
+/**
+* @file:   excel\UIEffectResource.xlsx\UIEffectResource
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message UIEffectResource{
+	// key 
+	uint32 id = 1;
+	// 文件路径 
+	string filepath = 2;
+	// 生存时间 
+	uint32 livetime = 3;
+	// 容量 
+	uint32 maxcapacity = 4;
+}
+
+message UIEffectResource_Array {
+	repeated UIEffectResource items = 1;
+}

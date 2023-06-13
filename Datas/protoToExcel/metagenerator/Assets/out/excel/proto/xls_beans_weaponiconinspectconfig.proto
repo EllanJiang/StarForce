@@ -1,0 +1,35 @@
+/**
+* @file:   excel\WeaponIconInspectConfig.xlsx\WeaponIconInspectConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponIconInspectConfig{
+	// 填weaponType 
+	uint32 id = 1;
+	// 旋转x 
+	repeated WeaponIconInspectConfig_config config = 2;
+}
+
+message WeaponIconInspectConfig_config{
+	// 旋转x 
+	float angleX = 1;
+	// 旋转y 
+	float angleY = 2;
+	// 旋转z 
+	float angleZ = 3;
+	// 偏移x 
+	float posX = 4;
+	// 偏移y 
+	float posY = 5;
+	// 偏移z 
+	float posZ = 6;
+}
+
+message WeaponIconInspectConfig_Array {
+	repeated WeaponIconInspectConfig items = 1;
+}

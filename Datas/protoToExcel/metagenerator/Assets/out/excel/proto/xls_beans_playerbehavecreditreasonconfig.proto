@@ -1,0 +1,20 @@
+/**
+* @file:   excel\PlayerBehaveCreditReasonConfig.xlsx\PlayerBehaveCreditReasonConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerBehaveCreditReasonConfig{
+	// key 
+	string id = 1;
+	// 信用分变动原因内容 
+	string content = 2;
+}
+
+message PlayerBehaveCreditReasonConfig_Array {
+	repeated PlayerBehaveCreditReasonConfig items = 1;
+}

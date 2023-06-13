@@ -1,0 +1,24 @@
+/**
+* @file:   excel\PaintConfig.xlsx\PaintConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PaintConfig{
+	// ID 
+	uint32 id = 1;
+	// 材质名字 
+	string materialName = 2;
+	// 大小 
+	float size = 3;
+	// 喷漆类型 
+	uint32 type = 4;
+}
+
+message PaintConfig_Array {
+	repeated PaintConfig items = 1;
+}

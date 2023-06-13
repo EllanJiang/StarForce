@@ -1,0 +1,36 @@
+/**
+* @file:   excel\RoleDecoration.xlsx\RoleDecoration
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleDecoration{
+	// 角色配饰id 
+	uint32 id = 1;
+	// 分包未下载降级id 
+	uint32 fallbackid = 2;
+	// 1P Mesh 
+	string femalefpPath = 3;
+	// 3P Mesh 
+	string femaletpPath = 4;
+	// 1P Mesh 
+	string malefpPath = 5;
+	// 3P Mesh 
+	string maletpPath = 6;
+	// 手套类型：0无手套，1半指，2全指 
+	uint32 GlovesType = 7;
+	// 挂点名字 
+	string pointName = 8;
+	// 是否限制角色 
+	bool roleLimit = 9;
+	// 可携带id1 
+	repeated uint32 roleid = 10;
+}
+
+message RoleDecoration_Array {
+	repeated RoleDecoration items = 1;
+}

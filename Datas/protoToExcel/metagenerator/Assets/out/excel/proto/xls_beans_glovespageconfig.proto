@@ -1,0 +1,22 @@
+/**
+* @file:   excel\GlovesPageConfig.xlsx\GlovesPageConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GlovesPageConfig{
+	//  
+	int32 id = 1;
+	//  
+	string name = 2;
+	//  
+	repeated int32 Types = 3;
+}
+
+message GlovesPageConfig_Array {
+	repeated GlovesPageConfig items = 1;
+}

@@ -1,0 +1,36 @@
+/**
+* @file:   excel\EquipBagMainMenuConfig.xlsx\EquipBagMainMenuConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message EquipBagMainMenuConfig{
+	//  
+	uint32 id = 1;
+	// 定义装备界面的左侧菜单目录 
+	string name = 2;
+	// 切页对应的顺序索引，跟id列对应即可（程序用） 
+	uint32 pageIndex = 3;
+	// 是否显示阵营 
+	bool showCamp = 4;
+	// 选中当前切页时，是否展示所有槽位相关数据 
+	bool showAllFlag = 5;
+	// 子窗口 
+	string subPanel = 6;
+	// 圆盘类型 
+	uint32 diskType = 7;
+	// 人物属性 
+	string roleProperty = 8;
+	// 对应EquipBagConfig中的id列 
+	repeated uint32 slots = 9;
+	//  
+	repeated uint32 subMenuIDs = 10;
+}
+
+message EquipBagMainMenuConfig_Array {
+	repeated EquipBagMainMenuConfig items = 1;
+}

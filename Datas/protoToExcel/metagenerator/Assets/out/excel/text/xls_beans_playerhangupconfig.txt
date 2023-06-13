@@ -1,0 +1,193 @@
+{
+  "items": [
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 99,
+      "id": 1001,
+      "timeoutKickoutSec": 99999
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": 20,
+      "hangcountKickout": 3,
+      "id": 1002,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": 20,
+      "hangcountKickout": 3,
+      "id": 1004,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1005,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1006,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1007,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1008,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1009,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1010,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1012,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1011,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1013,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1014,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1015,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1016,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1017,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1018,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1019,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1020,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1021,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1022,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1025,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1030,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1031,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1045,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 1046,
+      "timeoutKickoutSec": 90
+    },
+    {
+      "PlayerHangUpSec": 150,
+      "dropc4": -1,
+      "hangcountKickout": 3,
+      "id": 9999,
+      "timeoutKickoutSec": 90
+    }
+  ]
+}

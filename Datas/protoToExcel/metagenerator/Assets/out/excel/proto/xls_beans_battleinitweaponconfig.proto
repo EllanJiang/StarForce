@@ -1,0 +1,100 @@
+/**
+* @file:   excel\BattleInitWeaponConfig.xlsx\BattleInitWeaponConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattleInitWeaponConfig{
+	// 地图玩法ID 
+	uint32 id = 1;
+	// 是否随机默认主武器 
+	bool randomMainWeapon = 2;
+	// CT主武器.默认ID 
+	uint32 ctMaindefaultId = 3;
+	// CT主武器.类型1 
+	repeated uint32 ctMainitemTypes = 4;
+	// CT副武器.类型1 
+	uint32 ctSubdefaultId = 5;
+	// CT副武器.默认ID 
+	repeated uint32 ctSubitemTypes = 6;
+	// CT手雷.默认ID 
+	uint32 ctGrenadesdefaultId = 7;
+	// CT手雷.类型1 
+	repeated uint32 ctGrenadesitemTypes = 8;
+	// CT闪光弹.默认ID 
+	uint32 ctFlashBombdefaultId = 9;
+	// CT闪光弹.类型1 
+	repeated uint32 ctFlashBombitemTypes = 10;
+	// CT烟雾弹.默认ID 
+	uint32 ctSmokeBombdefaultId = 11;
+	// CT烟雾弹.类型1 
+	repeated uint32 ctSmokeBombitemTypes = 12;
+	// CT诱饵弹.默认ID 
+	uint32 ctBaitBombdefaultId = 13;
+	// CT诱饵弹.类型1 
+	repeated uint32 ctBaitBombitemTypes = 14;
+	// CT燃烧弹.默认ID 
+	uint32 ctBurnBombdefaultId = 15;
+	// CT燃烧弹.类型1 
+	repeated uint32 ctBurnBombitemTypes = 16;
+	// CT防弹衣.默认ID 
+	uint32 ctArmordefaultId = 17;
+	// CT防弹衣.类型1 
+	repeated uint32 ctArmoritemTypes = 18;
+	// CT拆弹钳.默认ID 
+	uint32 ctPlierdefaultId = 19;
+	// CT拆弹钳.类型1 
+	repeated uint32 ctPlieritemTypes = 20;
+	// T主武器.默认ID 
+	uint32 tMaindefaultId = 21;
+	// T主武器.类型1 
+	repeated uint32 tMainitemTypes = 22;
+	// T副武器.类型1 
+	uint32 tSubdefaultId = 23;
+	// T副武器.默认ID 
+	repeated uint32 tSubitemTypes = 24;
+	// T手雷.默认ID 
+	uint32 tGrenadesdefaultId = 25;
+	// T手雷.类型1 
+	repeated uint32 tGrenadesitemTypes = 26;
+	// T闪光弹.默认ID 
+	uint32 tFlashBombdefaultId = 27;
+	// T闪光弹.类型1 
+	repeated uint32 tFlashBombitemTypes = 28;
+	// T烟雾弹.默认ID 
+	uint32 tSmokeBombdefaultId = 29;
+	// T烟雾弹.类型1 
+	repeated uint32 tSmokeBombitemTypes = 30;
+	// T诱饵弹.默认ID 
+	uint32 tBaitBombdefaultId = 31;
+	// T诱饵弹.类型1 
+	repeated uint32 tBaitBombitemTypes = 32;
+	// T燃烧弹.默认ID 
+	uint32 tBurnBombdefaultId = 33;
+	// T燃烧弹.类型1 
+	repeated uint32 tBurnBombitemTypes = 34;
+	// T防弹衣.默认ID 
+	uint32 tArmordefaultId = 35;
+	// T防弹衣.类型1 
+	repeated uint32 tArmoritemTypes = 36;
+	// T拆弹钳.默认ID 
+	uint32 tPlierdefaultId = 37;
+	// T拆弹钳.类型1 
+	repeated uint32 tPlieritemTypes = 38;
+	// CT刀.默认ID 
+	uint32 ctMeleedefaultId = 39;
+	// T刀.默认ID 
+	uint32 tMeleedefaultId = 40;
+	// CT刀是否使用默认配置(否则是使用局外带进武器) 
+	bool ctMeleeIsUseInit = 41;
+	// T刀是否使用默认配置(否则是使用局外带进武器) 
+	bool tMeleeIsUseInit = 42;
+}
+
+message BattleInitWeaponConfig_Array {
+	repeated BattleInitWeaponConfig items = 1;
+}

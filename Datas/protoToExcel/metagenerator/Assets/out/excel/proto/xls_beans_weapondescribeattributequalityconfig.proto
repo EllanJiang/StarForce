@@ -1,0 +1,20 @@
+/**
+* @file:   excel\WeaponDescribeAttributeQualityConfig.xlsx\WeaponDescribeAttributeQualityConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponDescribeAttributeQualityConfig{
+	// 品质id 
+	uint32 id = 1;
+	// 品质颜色 
+	string color = 2;
+}
+
+message WeaponDescribeAttributeQualityConfig_Array {
+	repeated WeaponDescribeAttributeQualityConfig items = 1;
+}

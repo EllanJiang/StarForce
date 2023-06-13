@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "braveScoreAttrId": 20,
+      "id": 3002,
+      "rankLevelAttrId": 11,
+      "rankScoreAttrId": 12
+    },
+    {
+      "braveScoreAttrId": 21,
+      "id": 3005,
+      "rankLevelAttrId": 31,
+      "rankScoreAttrId": 32
+    },
+    {
+      "braveScoreAttrId": 40,
+      "id": 3059,
+      "rankLevelAttrId": 38,
+      "rankScoreAttrId": 39
+    },
+    {
+      "braveScoreAttrId": 43,
+      "id": 3101,
+      "rankLevelAttrId": 41,
+      "rankScoreAttrId": 42
+    },
+    {
+      "braveScoreAttrId": 46,
+      "id": 3103,
+      "rankLevelAttrId": 44,
+      "rankScoreAttrId": 45
+    }
+  ]
+}

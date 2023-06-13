@@ -1,0 +1,22 @@
+/**
+* @file:   excel\RoleLevelCataDef.xlsx\RoleLevelCataDef
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleLevelCataDef{
+	// 等级 
+	uint32 id = 1;
+	// 开始等级 
+	uint32 startLevel = 2;
+	// 结束等级 
+	uint32 endLevel = 3;
+}
+
+message RoleLevelCataDef_Array {
+	repeated RoleLevelCataDef items = 1;
+}

@@ -1,0 +1,69 @@
+/**
+* @file:   excel\RechargeVipCardConfig.xlsx\RechargeVipCardConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RechargeVipCardConfig{
+	// ID 
+	uint32 id = 1;
+	// 图标 
+	uint32 icon = 2;
+	// 有效期 
+	uint32 validity = 3;
+	// 货币符号 
+	string currencySymbol = 4;
+	// 现价 
+	float price = 5;
+	// 折扣 
+	uint32 discount = 6;
+	// 原价 
+	float originalPrice = 7;
+	// 充值获得奖励id 
+	repeated RechargeVipCardConfig_rechargeEffect rechargeEffect = 8;
+	// 每日获得奖励id 
+	repeated RechargeVipCardConfig_dailyEffect dailyEffect = 9;
+	// 指定皮肤编号 
+	repeated RechargeVipCardConfig_effect effect = 10;
+}
+
+message RechargeVipCardConfig_rechargeEffect{
+	// 充值获得奖励id 
+	uint32 id = 1;
+	// 充值获得奖励数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message RechargeVipCardConfig_dailyEffect{
+	// 每日获得奖励id 
+	uint32 id = 1;
+	// 每日获得奖励数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+}
+
+message RechargeVipCardConfig_effect{
+	// 指定皮肤编号 
+	uint32 paintKit = 1;
+}
+
+message RechargeVipCardConfig_Array {
+	repeated RechargeVipCardConfig items = 1;
+}

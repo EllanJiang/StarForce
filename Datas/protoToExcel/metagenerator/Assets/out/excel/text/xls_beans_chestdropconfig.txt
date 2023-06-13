@@ -1,0 +1,1144 @@
+{
+  "items": [
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 3000
+        },
+        {
+          "id": 10004,
+          "weight": 4000
+        },
+        {
+          "id": 10005,
+          "weight": 3000
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 3002
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 500
+        },
+        {
+          "id": 10004,
+          "weight": 2000
+        },
+        {
+          "id": 10005,
+          "weight": 6000
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 3002
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 3005
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 3005
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 3000
+        },
+        {
+          "id": 10004,
+          "weight": 4000
+        },
+        {
+          "id": 10005,
+          "weight": 3000
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1002
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 500
+        },
+        {
+          "id": 10004,
+          "weight": 2000
+        },
+        {
+          "id": 10005,
+          "weight": 6000
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1002
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1005
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1005
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1004
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1004
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1006
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1006
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1008
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1008
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1009
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1009
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1013
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1013
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1016
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1016
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1019
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1019
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1020
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1020
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1021
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1021
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1025
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1025
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1031
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1031
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1049
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1049
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1051
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1051
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1057
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1057
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 1500
+        },
+        {
+          "id": 10004,
+          "weight": 3000
+        },
+        {
+          "id": 10005,
+          "weight": 5500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "all",
+      "mode": 1058
+    },
+    {
+      "drop": [
+        {
+          "id": 10001,
+          "weight": 0
+        },
+        {
+          "id": 10002,
+          "weight": 0
+        },
+        {
+          "id": 10003,
+          "weight": 0
+        },
+        {
+          "id": 10004,
+          "weight": 1500
+        },
+        {
+          "id": 10005,
+          "weight": 4500
+        },
+        {
+          "id": 10006,
+          "weight": 0
+        }
+      ],
+      "dropType": "dayfirst",
+      "mode": 1058
+    }
+  ]
+}

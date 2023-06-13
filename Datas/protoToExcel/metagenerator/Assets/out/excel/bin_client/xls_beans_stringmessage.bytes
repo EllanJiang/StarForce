@@ -1,0 +1,778 @@
+
+
+self_damage_enemy	110571706
+
+enemy_damage_self	914065353
+
+damage_count	027631956
+
+camp_ct_name	550450058
+
+camp_t_name	927843808
+
+mvp_broadcast	595184519
+
+win_ct_broadcast	261418795
+
+win_t_broadcast	042650559
+"
+swtich_camp_broadcast	365481351
+$
+enemy_surplus_broadcast	320430041
+
+waiting_broadcast	858273194
+
+warm_broadcast	158895354
+!
+warm_final_broadcast	392881733
+
+round_broadcast	892654123
+$
+round_waiting_broadcast	138647505
+!
+mvp_reason_highscore	254941583
+
+c4_bomb_planted	928880234
+
+c4_bomb_defused	252743251
+
+c4_bomb_droped	767413197
+
+c4_bomb_pickedup	728849134
+!
+c4_bomb_defusingTips	969976590
+
+c4_bomb_plantTips	101384797
+
+bomb_ct_target	515444800
+
+bomb_t_target	265354068
+
+bomb_respawn_tip	451861467
+ 
+shopping_lack_money	427076692
+
+shopping_not_allow	011963013
+
+shopping_success	985732874
+
+ct_camp	550450058
+
+t_camp	927843808
+
+	be_killed	083329322
+
+round_count	008665962
+
+round_prepare	220678046
+
+hunting_prepare	507550526
+ 
+hunting_in_progress	299290986
+
+hunting_end	203863853
+
+hunting_kill_tip	859676543
+
+hunting_rank_tip	091738067
+
+hunting_streng_hp	877609519
+
+can_not_move	813733553
+
+
+t_plant_c4	733167542
+
+
+ct_find_c4	817947997
+
+a_point	182588616
+
+b_point	699366777
+
+silence	516234349
+
+single_shot	257955641
+
+continue_shot	177719892
+
+repeat_kill	010645035
+
+unarm	492701798
+
+use_tirebal	805001404
+"
+competition_start_tip	245680906
+
+first_kill_tip	625171411
+
+first_kill_title	578128570
+"
+match_point_score_tip	241116578
+ 
+match_countdown_tip	254979990
+
+
+enemy_camp	489544915
+
+
+owner_camp	369801922
+
+Shop_Sell_Fail	446187848
+
+Shop_Sell_Succeed	188419739
+"
+Shop_Purchase_Succeed	708721351
+)
+Shop_AskHelpPurchase_Succeed	764481375
+&
+Shop_HelpPurchase_Succeed	196876674
+(
+Shop_BeHelpPurchase_Succeed	986701302
+!
+Shop_Money_NotEnough	724522559
+ 
+Shop_BuyTime_Exceed	009286277
+ 
+Shop_BuyArea_Exceed	957513226
+
+Shop_MaxOwn_Exceed	092497777
+
+Shop_BuyNum_Exceed	701819175
+ 
+Shop_Other_NotFound	773673085
+
+Shop_Other_Dead	477456963
+*
+Shop_AskHelpPurchase_NotExist	008976206
+"
+Shop_AskHelp_TimesOut	452503308
+
+Shop_AskHelp_Open	547809084
+
+Shop_RequestWeapon	381572096
+#
+Shop_Requester_HasDead	750830768
+#
+Shop_Request_TypeLimit	477462499
+
+Shop_Request_InCD	016937929
+%
+Shop_Shop_TheSame_Weapon	089467020
+ 
+Shop_Revoke_Succeed	770616564
+
+Shop_Revoke_Error	291614843
+/
+"Shop_PurchasRecommendGroup_Succeed	218329704
+.
+!Shop_PurchasRecommendGroup_Failed	659624112
+0
+#Shop_PurchasRecommendGroup_NoChance	154098896
+
+Shop_SelfPurchase	316384459
+
+Shop_ReqPurchase	752142297
+'
+Shop_ReqPurchase_CountDown	272077073
+$
+pop_gamemode_matchPoint	083631111
+&
+Pop_KillBroad_KillerTitle	552152751
+&
+Pop_KillBroad_KilledTitle	568686730
+&
+Pop_KillBroad_AttackTitle	865236923
+)
+m_Pop_RoundExcellence_CTCamp	550450058
+(
+m_Pop_RoundExcellence_TCamp	927843808
+*
+m_Pop_RoundExcellence_MidCamp	977398443
+-
+ m_Pop_RoundExcellence_MVPContent	254941583
+
+watching_1p	313287142
+
+watching_3p	115701191
+
+InnerChat_All	006650997
+
+InnerChat_Self	369801922
+
+InnerChat_MySelf	568686730
+
+InnerChat_Neutral	355635443
+
+Chat_System	648900260
+
+Precision_Low	643158394
+
+Recommend_Weapon	793118128
+#
+Recommend_TacticalProp	763993633
+
+Recommend_Equip	153776243
+
+Recommend_Grenade	143312319
+ 
+single_Game_Is_Over	665684908
+
+swap_team_tip	720922385
+
+
+Low_Bullet	941138204
+
+In_ChangeClip	486838252
+
+	No_Bullet	452532083
+ 
+m_TitleView_Revenge	346952052
+
+self_camp_win	609844056
+
+enemy_camp_win	729785232
+
+chickenmode_01	536603220
+
+chickenmode_02	629399662
+
+chickenmode_03	279773627
+
+chickenmode_04	890099360
+
+chickenmode_05	125053966
+
+chickenmode_06	541596304
+
+chickenmode_07	720867736
+
+chickenmode_08
+$
+chickenmode_trapwarning	990078418
+ 
+trackball_spawn_tip	258182627
+
+pawn_defeated_tip	496265024
+
+	last_kill	104794417
+
+last_kill_title	420085646
+
+GameOverToHall	416191224
+
+notice_hang_up	283588511
+
+HealthShot_GetNew	850858491
+
+BuffShot_GetNew	343188449
+
+player_exit	667169061
+
+player_get_mvp	302101006
+
+become_bighead	198000569
+
+Resurrect_Failed	570592142
+#
+reconnect_tips_message	414010267
+
+
+scan_enemy	537888301
+
+scaned_by_enemy	855540835
+
+scan_and_scaned	027603877
+#
+joker_dance_will_start	924704279
+'
+joker_fanatical_will_start	419647270
+!
+joker_dance_will_end	584863998
+%
+joker_fanatical_will_end	752913579
+
+joker_kill_AI	579725270
+
+joker_consume_AI	937749346
+$
+joker_kt_start_describe	780733790
+%
+joker_kct_start_describe	875286700
+$
+joker_kt_dance_describe	159371825
+%
+joker_kct_dance_describe	624945730
+(
+joker_kt_fanatical_describe	020583717
+)
+joker_kct_fanatical_describe	351507132
+&
+joker_changeside_describe	129999506
+ 
+joker_AI_killedName	854845708
+
+
+kill_score	658301268
+
+revenge_score	423491749
+
+weapon_score	881924115
+
+top_rank_score	646965174
+ 
+top_rank_kill_score	839080293
+
+autofire_on	439345572
+
+autofire_off	392918294
+ 
+Limit_Refresh_Count	167455890
+
+Refresh_Success	979471483
+
+pve_respawn_panel	224828040
+'
+pve_respawn_respawn_button	843581574
+'
+pve_respawn_request_button	802604784
+$
+pve_respawn_skip_button	854219069
+%
+pve_respawn_currency_out	067388688
+&
+pve_respawn_request_again	171554918
+$
+pve_respawn_cannot_help	611543068
+$
+pve_respawn_help_button	913950251
+
+send_msg_fail	701672864
+$
+smoke_missile_bomb_area	500738403
+
+out_map	619948470
+
+double_kill_like	200798851
+
+triple_kill_like	568716055
+
+quadra_kill_like	671283216
+
+penta_kill_like	033832204
+"
+spray_paint_not_equip	700273016
+ 
+spray_paint_too_far	461945726
+
+time_to_respawn	839820510
+ 
+cant_send_empty_msg	884357279
+
+click_too_mush	243288001
+
+target_score	480518545
+
+HealthShot_CantUse	318018776
+
+Capturing_Point	220855827
+ 
+Capturing_Point_Tip	334619823
+!
+Invincible_Time_Left	776916502
+ 
+DeathMatch_Buff_Tip	873143456
+#
+Joker_Respawn_Progress	119868325
+
+Joker_Respawn_Tip	300919931
+$
+Capture_Point_Broadcast	399148583
+
+InspectWeapon_1	938536867
+#
+battle_global_tip_ball	817308933
+&
+battle_global_tip_protect	722244327
+&
+battle_global_tip_defense	187457972
+
+observer_battle	184296367
+
+DanceEndTime	260067368
+$
+Skill_Energy_Not_Enough	667980106
+#
+Skill_Times_Not_Enough	347492414
+
+	Skill_Get	516796659
+
+	Skill_Use	939515872
+
+SkillGuideing	054817086
+
+SkillCanNotUse	077716063
+
+SkillInterrupt	588573026
+#
+SkillGrenadeScanNotify	170415863
+)
+SkillResidualBloodScanNotify	539680129
+
+SkillBeScanNotify	159527887
+#
+Roguelike_tips_title_1	359567287
+#
+Roguelike_tips_title_2	179136709
+#
+Roguelike_tips_title_3	146672805
+#
+Roguelike_tips_title_4	808210642
+#
+Roguelike_tips_title_5	120087281
+#
+Roguelike_tips_title_6	061870635
+#
+Roguelike_tips_title_7	067720672
+#
+Roguelike_tips_title_8	133728698
+#
+Roguelike_tips_title_9	296415103
+$
+Roguelike_tips_title_10	630146109
+$
+Roguelike_tips_title_11	912647344
+$
+Roguelike_tips_bossword	030458222
+"
+Roguelike_task_tips_1	450563212
+"
+Roguelike_task_tips_2	039872788
+"
+Roguelike_task_tips_3	858365304
+"
+Roguelike_task_tips_4	020514838
+"
+Roguelike_task_tips_5	177379931
+"
+Roguelike_task_tips_6	232942305
+)
+Roguelike_task_tipsMonitor_1	450563212
+)
+Roguelike_task_tipsMonitor_2	039872788
+)
+Roguelike_task_tipsMonitor_3	858365304
+)
+Roguelike_task_tipsMonitor_4	187075057
+)
+Roguelike_task_tipsMonitor_5	399232806
+)
+Roguelike_task_tipsMonitor_6	638877728
+)
+Roguelike_task_tipsMonitor_7	721216984
+,
+Roguelike_about_tobe_teleported	696269635
+'
+Roguelike_Select_CountDown	834253486
+
+Joker_Dance_Tip	960785454
+(
+Roguelike_respawn_dead_tips	796959803
+'
+Roguelike_respawn_acepanel	041079408
+"
+Roguelike_respawn_pay	564444281
+(
+Roguelike_respawn_skip_wait	397353721
++
+Roguelike_respawn_request_wait	397353721
+-
+ Rougelike_respawn_requested_tips	180341912
+"
+Roguelike_respawn_end	216344989
+)
+Roguelike_talent_select_tips	607006383
+'
+Roguelike_respawn_own_done	325540248
+.
+!Roguelike_respawn_respawncoin_pay	417030642
++
+Roguelike_respawn_goldcoin_pay	726807994
+&
+Roguelike_respawn_content	052599686
+.
+!Roguelike_respawn_other_dead_tips	037564567
+(
+Roguelike_respawn_help_icon	951160413
+#
+Roguelike_respawn_self	003861736
+
+ReplaceCampTip	189227867
+!
+AppreciateWeaponTip1	870663460
+!
+AppreciateWeaponTip2	209413716
+
+AppreciateBodyTip1	072371657
+
+AppreciateBodyTip2	660041022
+
+AppreciateBodyTip3	804643406
+!
+C4AreaCheckFailedTip	619634693
+!
+TopTaskTipsTaskTitle	722217801
++
+NoviceGuide_SkipConfirmBtnText	398803460
+*
+NoviceGuide_SkipCancelBtnText	017136768
+(
+NoviceGuide_SelectTip_Again	069109395
+'
+NoviceGuide_SelectTip_Exit	653988679
+)
+MarkTacticalAction_CountDown	446345960
+%
+BurstFire_Mode_Switch_on	162844731
+&
+BurstFire_Mode_Switch_off	086458990
+(
+GrenadeThrow_Mode_Switch_on	463483076
+)
+GrenadeThrow_Mode_Switch_off	788289288
+&
+ThumpKnife_Mode_Switch_on	300077044
+'
+ThumpKnife_Mode_Switch_off	972740346
+%
+JumpThrow_Mode_Switch_on	848196803
+&
+JumpThrow_Mode_Switch_off	732623555
+*
+Volume_Can_Not_Use_ThisMode_N	034039239
+)
+Voice_Can_Not_Use_ThisMode_N	747911025
+(
+Chat_Can_Not_Use_ThisMode_N	953993210
+
+ShowOffWeapon	762000462
+
+ShowOffBody	033890492
+
+
+UsePaintCD	747684515
+
+ChatTooFast	579126751
+%
+Response_Tactical_Action	112264556
+
+InvincibleOnDamage	343487634
+
+MiniMapViewAttack	842652038
+
+MiniMapViewGuard	143315465
+
+UseBuffCard	538029013
+
+Dead_Message0	781119043
+
+Dead_Message1	831859365
+
+Dead_Message2	604540754
+
+Dead_Message3	554615661
+2
+%Gameplay_hud_Roguelike_talenttype_1_N	762810842
+2
+%Gameplay_hud_Roguelike_talenttype_2_N	439388280
+2
+%Gameplay_hud_Roguelike_talenttype_3_N	571884031
+&
+mc_battle_global_tip_ball	335571341
+
+PVE_Teleporting	633890876
+(
+PVE__Accelerate_Teleporting	545788839
+$
+PVE_Ready_To_Next_Round	242241880
+ 
+PVE_Immediate_Enter	189026785
+%
+RoundExcellenceView_Draw	433911719
+
+PVE_Refresh_Count	819101195
+
+player_enter	340349956
+#
+respawn_ArmraceDegrade	934696673
+)
+respawn_ArmraceUpgrade_Other	025850066
+(
+respawn_ArmraceUpgrade_Self	130618521
+!
+start_ArmraceTipInfo	856789396
+#
+topRank_ArmraceTipInfo	206583656
+!
+sublevel_ArmraceInfo	133528142
+
+MCUpdateMoney	335334846
+
+MCGMResetMoney	998033328
+
+MC_AddBegin	800425670
+
+MCTeamWinAward	926172709
+
+MCTeamDefeatAward	449501618
+
+MCTeamSetC4Award	300529713
+
+MCPersonKillAward	224128250
+!
+MCPersonSuicideAward	621903043
+
+MCPersonSetC4Award	504095606
+!
+MCPersonUnsetC4Award	379902918
+
+MCKillMonster	076003186
+
+MCPickup	102562655
+
+MCRevocateBuy	109882328
+
+	MCBuffAdd	151372960
+
+MCTalentAward	586141436
+
+MCDrop	577900618
+
+MCDecisiveMoney	920601072
+
+	MC_AddEnd	485939415
+
+MC_SubBegin	385100402
+
+MC_TLogSubBegin	356793006
+
+MCBuy	890190580
+
+	MCHelpBuy	543477346
+
+MCStrengthen	991193650
+
+MCRefreshBuff	777375416
+
+MC_TLogSubEnd	389572681
+%
+MCPersonKillFriendPunish	309745835
+
+MCBuffReduce	746616173
+
+	MC_SubEnd	648033973
+,
+Roguelike_respawn_skip_waittime	715622249
+,
+Roguelike_respawn_skip_waithint	040442984
+
+Revenge_Title	099102769
+$
+RoundExcellenceView_Win	960411409
+%
+RoundExcellenceView_Lose	040243370
+
+MCInitMoney	895210225
+
+
+LowFPStips	780098126
+
+Pause_Killer_Tip	976930628
+
+GameResultPveWin	932435495
+
+GameResultPveLose	044841107
+
+GameResultRank	268935343
+
+ReplaceCampCurCT	840383750
+
+ReplaceCampCurT	612099038
+
+ReplaceCampNextCT	824467156
+
+ReplaceCampNextT	598334752
+ 
+Show_Kill_Like_Tips	958934255
+$
+Spray_Paint_Newbee_Hint	657896600
+#
+Radar_Mark_Newbee_Hint	542592031
+
+Br_Rank_Describe	446145555
+'
+Br_Rank_Help_Describe_Num1	796356744
+"
+Br_Rank_Help_Describe	226624110
+#
+Br_Rank_WatchCountDown	811207911
+!
+Br_Rank_EndCountDown	802447577
+,
+Br_PoisonCircle_ShrinkCountDown	644614406
+-
+ Br_PoisonCircle_LeftTimeToShrink	113567757
+&
+Br_PoisonCircle_Shrinking	479464239
+!
+Show_Watch_Like_Tips	832956145
+(
+BR_Item_Pickup_Success_Tips	421589696
+(
+BR_Item_Pickup_Limited_Tips	294000983
+)
+BR_Item_Pickup_Exchange_Tips	024069124
+)
+BR_Looking_For_HpShield_Tips	576805162
+"
+BR_HpShield_Full_Tips	408859957
+,
+BR_TextBroadcast_Eliminate_Tip1	047913929
+,
+BR_TextBroadcast_Eliminate_Tip2	356236010
+,
+BR_TextBroadcast_Eliminate_Tip3	562606509
+,
+BR_TextBroadcast_KnockDown_Tip1	421082658
+,
+BR_TextBroadcast_KnockDown_Tip2	705864353
+*
+BR_TextBroadcast_Respawn_Tip1	827902875
+*
+BR_TextBroadcast_Respawn_Tip2	732278602
+)
+BR_TextBroadcast_Assist_Tip1	422297335
+0
+#BR_ElectronicReconnaissance_Be_Scan	120913273
+1
+$BR_ElectronicReconnaissance_Scan_Num	374180527
++
+BR_Looking_For_Projectile_Tips	992141659
+/
+"BR_NoWeapon_NeedWeapon_ChatMessage	321031980
+#
+Br_ContractTask_Picked	146127614
+$
+Br_ContractTask_Limited	746617127
+&
+BR_FallDown_Constant_Tips	964530129
+*
+BR_FallDown_Giveup_Title_Tips	495186447
+0
+#BR_FallDown_Giveup_Discription_Tips	123291339
+&
+BR_FallDown_Giveup_Button	808325525
++
+BR_FallDown_RequireHelp_Button	045165047
+(
+BR_FallDown_SelfHelp_Button	956420772

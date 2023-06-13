@@ -1,0 +1,20 @@
+/**
+* @file:   excel\HallLoadingConfig.xlsx\HallLoadingConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HallLoadingConfig{
+	// 编号 
+	uint32 id = 1;
+	// 背景资源ID 
+	repeated uint32 backgrounds = 2;
+}
+
+message HallLoadingConfig_Array {
+	repeated HallLoadingConfig items = 1;
+}

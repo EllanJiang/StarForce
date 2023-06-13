@@ -1,0 +1,22 @@
+/**
+* @file:   excel\GameLoadingConfig.xlsx\GameLoadingConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameLoadingConfig{
+	// 模式ID 
+	uint32 id = 1;
+	// 备注 
+	string name = 2;
+	// 加载等级显示 
+	uint32 LoadingLevelShowMode = 3;
+}
+
+message GameLoadingConfig_Array {
+	repeated GameLoadingConfig items = 1;
+}

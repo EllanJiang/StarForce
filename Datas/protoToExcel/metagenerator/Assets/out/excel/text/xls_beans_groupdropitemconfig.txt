@@ -1,0 +1,166 @@
+{
+  "items": [
+    {
+      "ID": 11,
+      "ItemID": 111030001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 12,
+      "ItemID": 111060001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 13,
+      "ItemID": 111070001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 20,
+      "ItemID": 111010001,
+      "ItemType": 1,
+      "weight": 20
+    },
+    {
+      "ID": 21,
+      "ItemID": 114040001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 21,
+      "ItemID": 114050001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 20,
+      "ItemID": 114060001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 20,
+      "ItemID": 114020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 22,
+      "ItemID": 121010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 1001,
+      "ItemID": 500000001,
+      "ItemType": 2,
+      "weight": 10
+    },
+    {
+      "ID": 101,
+      "ItemID": 115020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 114010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 114020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 114050001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 111010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 111020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 111030001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 111040001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 102,
+      "ItemID": 111050001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 103,
+      "ItemID": 112020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 104,
+      "ItemID": 143020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 105,
+      "ItemID": 145010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 106,
+      "ItemID": 141010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 107,
+      "ItemID": 144010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 108,
+      "ItemID": 117020001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 109,
+      "ItemID": 117010001,
+      "ItemType": 1,
+      "weight": 10
+    },
+    {
+      "ID": 110,
+      "ItemID": 111050025,
+      "ItemType": 1,
+      "weight": 10
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "KillNum": 1,
+      "PlayAudioRate": 0.0,
+      "id": 1
+    },
+    {
+      "KillNum": 2,
+      "PlayAudioRate": 0.0,
+      "id": 2
+    },
+    {
+      "KillNum": 3,
+      "PlayAudioRate": 0.5,
+      "id": 3
+    },
+    {
+      "KillNum": 4,
+      "PlayAudioRate": 0.8,
+      "id": 4
+    },
+    {
+      "KillNum": 5,
+      "PlayAudioRate": 1.0,
+      "id": 5
+    }
+  ]
+}

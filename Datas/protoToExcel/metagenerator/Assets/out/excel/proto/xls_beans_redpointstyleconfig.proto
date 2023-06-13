@@ -1,0 +1,30 @@
+/**
+* @file:   excel\RedpointStyleConfig.xlsx\RedpointStyleConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RedpointStyleConfig{
+	// 红点样式ID 
+	uint32 id = 1;
+	// 构建函数 
+	string createFunc = 2;
+	// 更新函数 
+	string updateFunc = 3;
+	// 红点预制体路径 
+	string prefabPath = 4;
+	// 文本参数 
+	string text = 5;
+	// 数值参数 
+	int32 num = 6;
+	// 字符串参数 
+	string str = 7;
+}
+
+message RedpointStyleConfig_Array {
+	repeated RedpointStyleConfig items = 1;
+}

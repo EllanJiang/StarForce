@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": 306010101,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_0_C"
+    },
+    {
+      "id": 306010401,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_1_C"
+    },
+    {
+      "id": 306010402,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_2_C"
+    },
+    {
+      "id": 306010403,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_3_C"
+    },
+    {
+      "id": 306010301,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_4_C"
+    },
+    {
+      "id": 306010302,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_5_C"
+    },
+    {
+      "id": 306010201,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_6_C"
+    },
+    {
+      "id": 306010404,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_8_C"
+    },
+    {
+      "id": 306010405,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_9_C"
+    },
+    {
+      "id": 306010406,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_7_C"
+    },
+    {
+      "id": 306010407,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_8_C"
+    },
+    {
+      "id": 306010408,
+      "material": "Musicbox",
+      "model": "MusicBox_Base",
+      "pattern": "Musicbox_9_C"
+    }
+  ]
+}

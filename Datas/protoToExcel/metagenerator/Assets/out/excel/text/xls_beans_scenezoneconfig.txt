@@ -1,0 +1,1096 @@
+{
+  "items": [
+    {
+      "ZoneName": "943648493",
+      "id": "dust5_1"
+    },
+    {
+      "ZoneName": "045624202",
+      "id": "dust5_2"
+    },
+    {
+      "ZoneName": "932122002",
+      "id": "dust5_3"
+    },
+    {
+      "ZoneName": "775665471",
+      "id": "dust5_4"
+    },
+    {
+      "ZoneName": "197422466",
+      "id": "dust5_5"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "dust5_6"
+    },
+    {
+      "ZoneName": "050011970",
+      "id": "dust5_7"
+    },
+    {
+      "ZoneName": "642017987",
+      "id": "dust5_8"
+    },
+    {
+      "ZoneName": "519274848",
+      "id": "dust5_9"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "dust5_10"
+    },
+    {
+      "ZoneName": "642017987",
+      "id": "dust5_11"
+    },
+    {
+      "ZoneName": "000999142",
+      "id": "dust5_12"
+    },
+    {
+      "ZoneName": "222637910",
+      "id": "dust5_13"
+    },
+    {
+      "ZoneName": "271606167",
+      "id": "dust5_14"
+    },
+    {
+      "ZoneName": "400455523",
+      "id": "dust5_15"
+    },
+    {
+      "ZoneName": "263623864",
+      "id": "dust5_16"
+    },
+    {
+      "ZoneName": "800807552",
+      "id": "dust5_17"
+    },
+    {
+      "ZoneName": "519274848",
+      "id": "dust5_18"
+    },
+    {
+      "ZoneName": "327173413",
+      "id": "dust5_19"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "iceworld_1"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "iceworld_2"
+    },
+    {
+      "ZoneName": "787951602",
+      "id": "iceworld_3"
+    },
+    {
+      "ZoneName": "896538136",
+      "id": "iceworld_4"
+    },
+    {
+      "ZoneName": "149464880",
+      "id": "iceworld_5"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "maya_1"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "maya_2"
+    },
+    {
+      "ZoneName": "787951602",
+      "id": "maya_3"
+    },
+    {
+      "ZoneName": "896538136",
+      "id": "maya_4"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "inferno_1"
+    },
+    {
+      "ZoneName": "848445999",
+      "id": "inferno_2"
+    },
+    {
+      "ZoneName": "239242036",
+      "id": "inferno_3"
+    },
+    {
+      "ZoneName": "071605717",
+      "id": "inferno_4"
+    },
+    {
+      "ZoneName": "071605717",
+      "id": "inferno_5"
+    },
+    {
+      "ZoneName": "746013659",
+      "id": "inferno_6"
+    },
+    {
+      "ZoneName": "420371213",
+      "id": "inferno_7"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "inferno_8"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "inferno_9"
+    },
+    {
+      "ZoneName": "514081063",
+      "id": "inferno_10"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "inferno_11"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "inferno_12"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "inferno_13"
+    },
+    {
+      "ZoneName": "630602802",
+      "id": "inferno_14"
+    },
+    {
+      "ZoneName": "630602802",
+      "id": "inferno_15"
+    },
+    {
+      "ZoneName": "630602802",
+      "id": "inferno_16"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "inferno_17"
+    },
+    {
+      "ZoneName": "775665471",
+      "id": "inferno_18"
+    },
+    {
+      "ZoneName": "908427520",
+      "id": "inferno_19"
+    },
+    {
+      "ZoneName": "",
+      "id": "inferno_20"
+    },
+    {
+      "ZoneName": "970225438",
+      "id": "inferno_21"
+    },
+    {
+      "ZoneName": "177140821",
+      "id": "inferno_22"
+    },
+    {
+      "ZoneName": "738502440",
+      "id": "inferno_23"
+    },
+    {
+      "ZoneName": "738502440",
+      "id": "inferno_24"
+    },
+    {
+      "ZoneName": "868381040",
+      "id": "inferno_25"
+    },
+    {
+      "ZoneName": "908427520",
+      "id": "inferno_26"
+    },
+    {
+      "ZoneName": "618600406",
+      "id": "inferno_27"
+    },
+    {
+      "ZoneName": "420371213",
+      "id": "inferno_28"
+    },
+    {
+      "ZoneName": "541067824",
+      "id": "inferno_29"
+    },
+    {
+      "ZoneName": "541067824",
+      "id": "inferno_30"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "inferno_31"
+    },
+    {
+      "ZoneName": "272781378",
+      "id": "inferno_32"
+    },
+    {
+      "ZoneName": "272781378",
+      "id": "inferno_33"
+    },
+    {
+      "ZoneName": "518351951",
+      "id": "inferno_34"
+    },
+    {
+      "ZoneName": "035365583",
+      "id": "inferno_35"
+    },
+    {
+      "ZoneName": "541067824",
+      "id": "inferno_36"
+    },
+    {
+      "ZoneName": "286837823",
+      "id": "lake_1"
+    },
+    {
+      "ZoneName": "272781378",
+      "id": "lake_2"
+    },
+    {
+      "ZoneName": "275471127",
+      "id": "lake_3"
+    },
+    {
+      "ZoneName": "275471127",
+      "id": "lake_4"
+    },
+    {
+      "ZoneName": "275471127",
+      "id": "lake_5"
+    },
+    {
+      "ZoneName": "275471127",
+      "id": "lake_6"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_7"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_8"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_9"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_10"
+    },
+    {
+      "ZoneName": "763094774",
+      "id": "lake_11"
+    },
+    {
+      "ZoneName": "877539803",
+      "id": "lake_12"
+    },
+    {
+      "ZoneName": "877539803",
+      "id": "lake_13"
+    },
+    {
+      "ZoneName": "518351951",
+      "id": "lake_14"
+    },
+    {
+      "ZoneName": "518351951",
+      "id": "lake_15"
+    },
+    {
+      "ZoneName": "814539118",
+      "id": "lake_16"
+    },
+    {
+      "ZoneName": "849741202",
+      "id": "lake_17"
+    },
+    {
+      "ZoneName": "928039692",
+      "id": "lake_18"
+    },
+    {
+      "ZoneName": "928039692",
+      "id": "lake_19"
+    },
+    {
+      "ZoneName": "928039692",
+      "id": "lake_20"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "lake_21"
+    },
+    {
+      "ZoneName": "994628899",
+      "id": "lake_22"
+    },
+    {
+      "ZoneName": "938018462",
+      "id": "lake_23"
+    },
+    {
+      "ZoneName": "547320398",
+      "id": "lake_24"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "lake_25"
+    },
+    {
+      "ZoneName": "455538715",
+      "id": "lake_26"
+    },
+    {
+      "ZoneName": "455538715",
+      "id": "lake_27"
+    },
+    {
+      "ZoneName": "455538715",
+      "id": "lake_28"
+    },
+    {
+      "ZoneName": "455538715",
+      "id": "lake_29"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_30"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "lake_31"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_32"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_33"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "lake_34"
+    },
+    {
+      "ZoneName": "864208049",
+      "id": "lake_35"
+    },
+    {
+      "ZoneName": "864208049",
+      "id": "lake_36"
+    },
+    {
+      "ZoneName": "864208049",
+      "id": "lake_37"
+    },
+    {
+      "ZoneName": "950864315",
+      "id": "lake_38"
+    },
+    {
+      "ZoneName": "950864315",
+      "id": "lake_39"
+    },
+    {
+      "ZoneName": "518351951",
+      "id": "lake_41"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_42"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_43"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_44"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_45"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_46"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_47"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_48"
+    },
+    {
+      "ZoneName": "765397788",
+      "id": "lake_49"
+    },
+    {
+      "ZoneName": "237076339",
+      "id": "lake_50"
+    },
+    {
+      "ZoneName": "317983049",
+      "id": "lake_51"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "mirage_1"
+    },
+    {
+      "ZoneName": "775665471",
+      "id": "mirage_2"
+    },
+    {
+      "ZoneName": "419837223",
+      "id": "mirage_3"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "mirage_4"
+    },
+    {
+      "ZoneName": "263580557",
+      "id": "mirage_5"
+    },
+    {
+      "ZoneName": "908427520",
+      "id": "mirage_6"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "mirage_7"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "mirage_8"
+    },
+    {
+      "ZoneName": "050011970",
+      "id": "mirage_9"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "mirage_10"
+    },
+    {
+      "ZoneName": "452756707",
+      "id": "mirage_11"
+    },
+    {
+      "ZoneName": "908427520",
+      "id": "mirage_12"
+    },
+    {
+      "ZoneName": "186872517",
+      "id": "mirage_13"
+    },
+    {
+      "ZoneName": "684208451",
+      "id": "mirage_14"
+    },
+    {
+      "ZoneName": "938018462",
+      "id": "mirage_15"
+    },
+    {
+      "ZoneName": "420371213",
+      "id": "mirage_16"
+    },
+    {
+      "ZoneName": "541067824",
+      "id": "mirage_17"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "mirage_18"
+    },
+    {
+      "ZoneName": "608518559",
+      "id": "mirage_19"
+    },
+    {
+      "ZoneName": "746013659",
+      "id": "mirage_20"
+    },
+    {
+      "ZoneName": "664268422",
+      "id": "mirage_21"
+    },
+    {
+      "ZoneName": "955372221",
+      "id": "mirage_22"
+    },
+    {
+      "ZoneName": "060257568",
+      "id": "mirage_23"
+    },
+    {
+      "ZoneName": "392244722",
+      "id": "mirage_24"
+    },
+    {
+      "ZoneName": "684208451",
+      "id": "mirage_25"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "mirage_26"
+    },
+    {
+      "ZoneName": "113591877",
+      "id": "mirage_27"
+    },
+    {
+      "ZoneName": "054250966",
+      "id": "mirage_28"
+    },
+    {
+      "ZoneName": "103159747",
+      "id": "mirage_29"
+    },
+    {
+      "ZoneName": "684208451",
+      "id": "mirage_30"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "tm_colosseum_1"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "tm_colosseum_2"
+    },
+    {
+      "ZoneName": "787951602",
+      "id": "tm_colosseum_3"
+    },
+    {
+      "ZoneName": "896538136",
+      "id": "tm_colosseum_4"
+    },
+    {
+      "ZoneName": "130595614",
+      "id": "tm_colosseum_5"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "westworld_1"
+    },
+    {
+      "ZoneName": "713258623",
+      "id": "westworld_2"
+    },
+    {
+      "ZoneName": "356206438",
+      "id": "westworld_3"
+    },
+    {
+      "ZoneName": "071605717",
+      "id": "westworld_4"
+    },
+    {
+      "ZoneName": "071605717",
+      "id": "westworld_5"
+    },
+    {
+      "ZoneName": "746013659",
+      "id": "westworld_6"
+    },
+    {
+      "ZoneName": "420371213",
+      "id": "westworld_7"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "westworld_8"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "westworld_9"
+    },
+    {
+      "ZoneName": "339221777",
+      "id": "westworld_10"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "westworld_11"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "westworld_12"
+    },
+    {
+      "ZoneName": "813527078",
+      "id": "westworld_13"
+    },
+    {
+      "ZoneName": "906570698",
+      "id": "westworld_14"
+    },
+    {
+      "ZoneName": "906570698",
+      "id": "westworld_15"
+    },
+    {
+      "ZoneName": "200444308",
+      "id": "westworld_16"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "westworld_17"
+    },
+    {
+      "ZoneName": "775665471",
+      "id": "westworld_18"
+    },
+    {
+      "ZoneName": "908427520",
+      "id": "westworld_19"
+    },
+    {
+      "ZoneName": "970225438",
+      "id": "westworld_20"
+    },
+    {
+      "ZoneName": "970225438",
+      "id": "westworld_21"
+    },
+    {
+      "ZoneName": "858866018",
+      "id": "westworld_22"
+    },
+    {
+      "ZoneName": "684700063",
+      "id": "westworld_23"
+    },
+    {
+      "ZoneName": "684700063",
+      "id": "westworld_24"
+    },
+    {
+      "ZoneName": "140337337",
+      "id": "westworld_25"
+    },
+    {
+      "ZoneName": "965278556",
+      "id": "westworld_26"
+    },
+    {
+      "ZoneName": "745680972",
+      "id": "westworld_27"
+    },
+    {
+      "ZoneName": "340747092",
+      "id": "westworld_28"
+    },
+    {
+      "ZoneName": "202319619",
+      "id": "westworld_29"
+    },
+    {
+      "ZoneName": "202319619",
+      "id": "westworld_30"
+    },
+    {
+      "ZoneName": "334528911",
+      "id": "westworld_31"
+    },
+    {
+      "ZoneName": "047230954",
+      "id": "westworld_32"
+    },
+    {
+      "ZoneName": "047230954",
+      "id": "westworld_33"
+    },
+    {
+      "ZoneName": "047230954",
+      "id": "westworld_34"
+    },
+    {
+      "ZoneName": "691815573",
+      "id": "westworld_35"
+    },
+    {
+      "ZoneName": "047230954",
+      "id": "westworld_36"
+    },
+    {
+      "ZoneName": "446242735",
+      "id": "hennery_1"
+    },
+    {
+      "ZoneName": "557349692",
+      "id": "hennery_2"
+    },
+    {
+      "ZoneName": "557349692",
+      "id": "hennery_3"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "morocco_1"
+    },
+    {
+      "ZoneName": "775665471",
+      "id": "morocco_2"
+    },
+    {
+      "ZoneName": "419837223",
+      "id": "morocco_3"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "morocco_4"
+    },
+    {
+      "ZoneName": "419837223",
+      "id": "morocco_5"
+    },
+    {
+      "ZoneName": "642017987",
+      "id": "morocco_6"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "morocco_7"
+    },
+    {
+      "ZoneName": "400455523",
+      "id": "morocco_8"
+    },
+    {
+      "ZoneName": "695414227",
+      "id": "morocco_9"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "morocco_10"
+    },
+    {
+      "ZoneName": "437270110",
+      "id": "morocco_11"
+    },
+    {
+      "ZoneName": "439949102",
+      "id": "morocco_12"
+    },
+    {
+      "ZoneName": "435702918",
+      "id": "morocco_13"
+    },
+    {
+      "ZoneName": "099953659",
+      "id": "morocco_14"
+    },
+    {
+      "ZoneName": "134698552",
+      "id": "morocco_15"
+    },
+    {
+      "ZoneName": "420371213",
+      "id": "morocco_16"
+    },
+    {
+      "ZoneName": "339221777",
+      "id": "morocco_17"
+    },
+    {
+      "ZoneName": "695414227",
+      "id": "morocco_18"
+    },
+    {
+      "ZoneName": "833357997",
+      "id": "morocco_19"
+    },
+    {
+      "ZoneName": "746013659",
+      "id": "morocco_20"
+    },
+    {
+      "ZoneName": "698798107",
+      "id": "morocco_21"
+    },
+    {
+      "ZoneName": "698798107",
+      "id": "morocco_22"
+    },
+    {
+      "ZoneName": "939445426",
+      "id": "morocco_23"
+    },
+    {
+      "ZoneName": "880158938",
+      "id": "morocco_24"
+    },
+    {
+      "ZoneName": "612979954",
+      "id": "morocco_25"
+    },
+    {
+      "ZoneName": "512722115",
+      "id": "morocco_26"
+    },
+    {
+      "ZoneName": "113591877",
+      "id": "morocco_27"
+    },
+    {
+      "ZoneName": "051273359",
+      "id": "morocco_28"
+    },
+    {
+      "ZoneName": "926597999",
+      "id": "morocco_29"
+    },
+    {
+      "ZoneName": "468219409",
+      "id": "morocco_30"
+    },
+    {
+      "ZoneName": "899783652",
+      "id": "stadium_1"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "modernfactory_1"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "modernfactory_2"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "modernfactory_3"
+    },
+    {
+      "ZoneName": "262085113",
+      "id": "modernfactory_4"
+    },
+    {
+      "ZoneName": "138301945",
+      "id": "modernfactory_5"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "modernfactory_6"
+    },
+    {
+      "ZoneName": "207046011",
+      "id": "modernfactory_7"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "modernfactory_8"
+    },
+    {
+      "ZoneName": "470195886",
+      "id": "modernfactory_9"
+    },
+    {
+      "ZoneName": "314246306",
+      "id": "modernfactory_10"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "office_1"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "office_2"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "office_3"
+    },
+    {
+      "ZoneName": "262085113",
+      "id": "office_4"
+    },
+    {
+      "ZoneName": "467685495",
+      "id": "office_5"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "office_6"
+    },
+    {
+      "ZoneName": "452011781",
+      "id": "office_7"
+    },
+    {
+      "ZoneName": "177401221",
+      "id": "office_8"
+    },
+    {
+      "ZoneName": "470195886",
+      "id": "office_9"
+    },
+    {
+      "ZoneName": "314246306",
+      "id": "office_10"
+    },
+    {
+      "ZoneName": "216757063",
+      "id": "office_11"
+    },
+    {
+      "ZoneName": "475449444",
+      "id": "office_12"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "office_13"
+    },
+    {
+      "ZoneName": "128090398",
+      "id": "office_14"
+    },
+    {
+      "ZoneName": "897504407",
+      "id": "office_15"
+    },
+    {
+      "ZoneName": "689376785",
+      "id": "radarbase_1"
+    },
+    {
+      "ZoneName": "689376785",
+      "id": "radarbase_2"
+    },
+    {
+      "ZoneName": "689376785",
+      "id": "radarbase_3"
+    },
+    {
+      "ZoneName": "362018592",
+      "id": "radarbase_4"
+    },
+    {
+      "ZoneName": "362018592",
+      "id": "radarbase_5"
+    },
+    {
+      "ZoneName": "362018592",
+      "id": "radarbase_6"
+    },
+    {
+      "ZoneName": "362018592",
+      "id": "radarbase_7"
+    },
+    {
+      "ZoneName": "409479577",
+      "id": "cement_1"
+    },
+    {
+      "ZoneName": "209077259",
+      "id": "cement_2"
+    },
+    {
+      "ZoneName": "657905027",
+      "id": "cement_3"
+    },
+    {
+      "ZoneName": "140912513",
+      "id": "cement_4"
+    },
+    {
+      "ZoneName": "343458617",
+      "id": "cement_5"
+    },
+    {
+      "ZoneName": "943648493",
+      "id": "station_1"
+    },
+    {
+      "ZoneName": "630205474",
+      "id": "station_2"
+    },
+    {
+      "ZoneName": "627937537",
+      "id": "station_3"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "station_4"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "station_5"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "station_6"
+    },
+    {
+      "ZoneName": "525888634",
+      "id": "station_7"
+    },
+    {
+      "ZoneName": "262085113",
+      "id": "station_8"
+    },
+    {
+      "ZoneName": "262085113",
+      "id": "station_9"
+    },
+    {
+      "ZoneName": "314246306",
+      "id": "station_10"
+    },
+    {
+      "ZoneName": "138301945",
+      "id": "station_11"
+    },
+    {
+      "ZoneName": "470195886",
+      "id": "station_12"
+    },
+    {
+      "ZoneName": "128269510",
+      "id": "market_1"
+    },
+    {
+      "ZoneName": "028084757",
+      "id": "market_2"
+    },
+    {
+      "ZoneName": "119383891",
+      "id": "market_3"
+    },
+    {
+      "ZoneName": "221301793",
+      "id": "market_4"
+    },
+    {
+      "ZoneName": "638146393",
+      "id": "market_5"
+    }
+  ]
+}

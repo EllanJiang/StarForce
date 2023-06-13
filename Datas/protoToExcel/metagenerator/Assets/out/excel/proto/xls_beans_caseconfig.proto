@@ -1,0 +1,66 @@
+/**
+* @file:   excel\CaseConfig.xlsx\CaseConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message CaseConfig{
+	// 编号 
+	uint32 id = 1;
+	// 开启限制条件 
+	repeated CaseConfig_limit limit = 2;
+	// 消耗id 
+	repeated CaseConfig_cost cost = 3;
+	// 产物规则 
+	uint32 dropRule = 4;
+	// 产出物类型 
+	uint32 dropType = 5;
+	// 基础掉落品质表id 
+	uint32 dropID = 6;
+	// 控制规则次数区间左值1 
+	repeated CaseConfig_controls controls = 7;
+	// 保底规则优先级1 
+	repeated CaseConfig_rules rules = 8;
+}
+
+message CaseConfig_limit{
+	// 开启限制条件 
+	uint32 id = 1;
+	// 开启条件对应值 
+	uint32 value = 2;
+}
+
+message CaseConfig_cost{
+	// 消耗id 
+	uint32 id = 1;
+	// 消耗数量 
+	uint32 value = 2;
+}
+
+message CaseConfig_controls{
+	// 控制规则次数区间左值1 
+	uint32 minCount = 1;
+	// 控制规则次数区间右值1 
+	uint32 maxCount = 2;
+	// 前期控制规则掉落品质表ID1 
+	uint32 dropID = 3;
+}
+
+message CaseConfig_rules{
+	// 保底规则优先级1 
+	uint32 priority = 1;
+	// 保底规则品质1 
+	uint32 level = 2;
+	// 保底规则次数 
+	uint32 count = 3;
+	// 保底规则掉落品质表ID1 
+	uint32 dropID = 4;
+}
+
+message CaseConfig_Array {
+	repeated CaseConfig items = 1;
+}

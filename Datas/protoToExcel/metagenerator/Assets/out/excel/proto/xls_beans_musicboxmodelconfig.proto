@@ -1,0 +1,24 @@
+/**
+* @file:   excel\MusicBoxModelConfig.xlsx\MusicBoxModelConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MusicBoxModelConfig{
+	// 道具ID 
+	uint32 id = 1;
+	// 模型名称 
+	string model = 2;
+	// 材质名称 
+	string material = 3;
+	// 贴图名字 
+	string pattern = 4;
+}
+
+message MusicBoxModelConfig_Array {
+	repeated MusicBoxModelConfig items = 1;
+}

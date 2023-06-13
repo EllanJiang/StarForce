@@ -1,0 +1,150 @@
+{
+  "746402878": [
+    "C_General_Setting_RotationSensitiveNormal_N",
+    "C_General_Setting_RotationSensitiveNormal_N"
+  ],
+  "465618313": [
+    "C_General_Setting_RotationSensitiveSlient_N",
+    "C_General_Setting_RotationSensitiveSlient_N"
+  ],
+  "381333155": [
+    "C_General_Setting_RotationSensitiveCrouch_N",
+    "C_General_Setting_RotationSensitiveCrouch_N"
+  ],
+  "666184008": [
+    "C_General_Setting_RotationSensitiveFire_N",
+    "C_General_Setting_RotationSensitiveFire_N"
+  ],
+  "064115867": [
+    "C_General_Setting_RotationSensitiveSnip1X_N",
+    "C_General_Setting_RotationSensitiveSnip1X_N"
+  ],
+  "030382696": [
+    "C_General_Setting_RotationSensitiveSnip2X_N",
+    "C_General_Setting_RotationSensitiveSnip2X_N"
+  ],
+  "455194008": [
+    "C_General_Setting_RotationSensitiveMelee_N",
+    "C_General_Setting_RotationSensitiveMelee_N"
+  ],
+  "358509173": [
+    "C_General_Setting_RotationSensitiveVertical_N",
+    "C_General_Setting_RotationSensitiveVertical_N"
+  ],
+  "651063636": [
+    "C_General_Setting_FOVRate_N",
+    "C_General_Setting_FOVRate_N"
+  ],
+  "563087064": [
+    "C_General_Setting_FOVRate_D_1",
+    "C_General_Setting_FOVRate_D_1"
+  ],
+  "677469763": [
+    "C_General_Setting_SoundRate_N",
+    "C_General_Setting_SoundRate_N"
+  ],
+  "584702198": [
+    "C_General_Setting_MusicRate_N",
+    "C_General_Setting_MusicRate_N"
+  ],
+  "633355257": [
+    "C_General_Setting_StartRoundSound_N",
+    "C_General_Setting_StartRoundSound_N"
+  ],
+  "276696819": [
+    "C_General_Setting_StartActionSound_N",
+    "C_General_Setting_StartActionSound_N"
+  ],
+  "077121563": [
+    "C_General_Setting_BombPlantedSound_N",
+    "C_General_Setting_BombPlantedSound_N"
+  ],
+  "093875604": [
+    "C_General_Setting_BombTensecSound_N",
+    "C_General_Setting_BombTensecSound_N"
+  ],
+  "640784011": [
+    "C_General_Setting_RoundTensecSound_N",
+    "C_General_Setting_RoundTensecSound_N"
+  ],
+  "761854345": [
+    "C_General_Setting_EndroundSound_N",
+    "C_General_Setting_EndroundSound_N"
+  ],
+  "633679948": [
+    "C_General_Setting_RotationSensitiveGunSight_N",
+    "C_General_Setting_RotationSensitiveGunSight_N"
+  ],
+  "183467157": [
+    "C_General_Setting_UISoundRate_N",
+    "C_General_Setting_UISoundRate_N"
+  ],
+  "365809780": [
+    "C_General_Setting_RoleSoundRate_N",
+    "C_General_Setting_RoleSoundRate_N"
+  ],
+  "917931743": [
+    "C_General_Setting_BattleSoundRate_N",
+    "C_General_Setting_BattleSoundRate_N"
+  ],
+  "747951852": [
+    "C_General_Setting_GyroRate_N",
+    "C_General_Setting_GyroRate_N"
+  ],
+  "649634450": [
+    "C_General_Setting_GyroRate_D_1",
+    "C_General_Setting_GyroRate_D_1"
+  ],
+  "575882541": [
+    "C_General_Setting_AnotherSensitiveGunSight_N",
+    "C_General_Setting_AnotherSensitiveGunSight_N"
+  ],
+  "117050010": [
+    "C_General_Setting_InnerWidth_N",
+    "C_General_Setting_InnerWidth_N"
+  ],
+  "719359961": [
+    "C_General_Setting_InnerWidth_D_1",
+    "C_General_Setting_InnerWidth_D_1"
+  ],
+  "027155933": [
+    "C_General_Setting_ChattingSoundRate_N",
+    "C_General_Setting_ChattingSoundRate_N"
+  ],
+  "689367552": [
+    "C_General_Setting_RotationAccelarate_N",
+    "C_General_Setting_RotationAccelarate_N"
+  ],
+  "119210883": [
+    "C_General_Setting_RotationAccelarate_D_1",
+    "C_General_Setting_RotationAccelarate_D_1"
+  ],
+  "618064425": [
+    "C_General_Setting_GlobalSensitiveRate_N",
+    "C_General_Setting_GlobalSensitiveRate_N"
+  ],
+  "331466478": [
+    "C_General_Setting_RotationSensitiveGrenade_N",
+    "C_General_Setting_RotationSensitiveGrenade_N"
+  ],
+  "544731716": [
+    "C_General_Setting_RotationSensitiveFireGunSight_N",
+    "C_General_Setting_RotationSensitiveFireGunSight_N"
+  ],
+  "501941729": [
+    "C_General_Setting_RotationSensitiveFireSnip1X_N",
+    "C_General_Setting_RotationSensitiveFireSnip1X_N"
+  ],
+  "741712151": [
+    "C_General_Setting_RotationSensitiveFireSnip2X_N",
+    "C_General_Setting_RotationSensitiveFireSnip2X_N"
+  ],
+  "867212234": [
+    "C_General_Setting_RotationSensitiveFireMelee_N",
+    "C_General_Setting_RotationSensitiveFireMelee_N"
+  ],
+  "117838270": [
+    "C_General_Setting_RotationSensitiveFireGrenade_N",
+    "C_General_Setting_RotationSensitiveFireGrenade_N"
+  ]
+}

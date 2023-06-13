@@ -1,0 +1,24 @@
+svn path: D:/E/MyProject/ParseExcel/protocol2/protocol_test/GameProject
+git path: D:/E/MyProject/ParseExcel/protocol2/protocol_test/GamePlayerProject
+wait for delet old file...
+gen xls proto Success : xls_beans_abilityuseconfig.proto
+gen xls table coder Success  : AbilityuseconfigTable
+.\bin\protoc.exe -I out/excel/proto --python_out=out/excel/python out/excel/proto\xls_beans_abilityuseconfig.proto
+.\bin\protoc.exe -I out/excel/proto --csharp_out=out/excel/csharp out/excel/proto\xls_beans_abilityuseconfig.proto
+gen xls sheet(AbilityUseConfig) -> pb bytes
+ignore excelconfig.txt
+ignore excelConfig.xlsx
+ignore excel不要直接修改config.txt
+ignore excel多语言打包可执行程序.bat
+ignore excel多语言打印有问题的字段.bat
+ignore excel多语言新增key.bat
+ignore excel多语言替换key.bat
+ignore excel模板.xlsx
+start generate localization asset
+D:\E\MyProject\ParseExcel\protocol2\protocol_test\template.asset
+D:\E\MyProject\ParseExcel\protocol2\protocol_test\template.asset
+end generate localization asset
+gen json beans: allMeta1.bytes
+gen json beans: allMeta2.bytes
+gen json beans: allMeta3.bytes
+Build config success

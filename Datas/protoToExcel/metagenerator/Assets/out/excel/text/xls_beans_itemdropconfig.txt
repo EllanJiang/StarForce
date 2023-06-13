@@ -1,0 +1,212 @@
+{
+  "items": [
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 311010201,
+      "mode": 1051,
+      "num": 1,
+      "weight": 50
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 0,
+      "mode": 1051,
+      "num": 0,
+      "weight": 50
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 311010201,
+      "mode": 1051,
+      "num": 2,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010101,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010201,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010301,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010302,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010401,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010402,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 306010403,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 310090209,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 310090210,
+      "mode": 1051,
+      "num": 1,
+      "weight": 10
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 2,
+      "itemId": 0,
+      "mode": 1051,
+      "num": 0,
+      "weight": 50
+    },
+    {
+      "dropGroupID": 2,
+      "dropReason": 2,
+      "itemId": 310020109,
+      "mode": 1051,
+      "num": 1,
+      "weight": 50
+    },
+    {
+      "dropGroupID": 2,
+      "dropReason": 2,
+      "itemId": 0,
+      "mode": 1051,
+      "num": 0,
+      "weight": 50
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 311010201,
+      "mode": 1057,
+      "num": 2,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010101,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010201,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010301,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010302,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010401,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010402,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 306010403,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 310090209,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 310090210,
+      "mode": 1057,
+      "num": 1,
+      "weight": 5
+    },
+    {
+      "dropGroupID": 1,
+      "dropReason": 1,
+      "itemId": 0,
+      "mode": 1057,
+      "num": 0,
+      "weight": 0
+    }
+  ]
+}

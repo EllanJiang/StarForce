@@ -1,0 +1,11 @@
+{
+  "AnimationTime": 0.0,
+  "BornAttackCoolDownTime": 0.0,
+  "ContinueMoveTime": 0.0,
+  "DistanceMaxLimitForComfortZome": 0,
+  "DistanceMinLimitForComfortZome": 0,
+  "IdleTime": 0.0,
+  "SkillCoolDownTime": 0.0,
+  "SkillIdList": "",
+  "UseSkillTimesForSwitchTarget": 0
+}

@@ -1,0 +1,80 @@
+{
+  "items": [
+    {
+      "id": "PrivateAgreement",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_en.html"
+    },
+    {
+      "id": "UserAgreement",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_en.html"
+    },
+    {
+      "id": "PrivateAgreement_en",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_en.html"
+    },
+    {
+      "id": "UserAgreement_en",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_en.html"
+    },
+    {
+      "id": "PrivateAgreement_ru",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_ru.html"
+    },
+    {
+      "id": "UserAgreement_ru",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_ru.html"
+    },
+    {
+      "id": "PrivateAgreement_pt",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_pt.html"
+    },
+    {
+      "id": "UserAgreement_pt",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_pt.html"
+    },
+    {
+      "id": "PrivateAgreement_tr",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_en.html"
+    },
+    {
+      "id": "UserAgreement_tr",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_en.html"
+    },
+    {
+      "id": "PrivateAgreement_zh-CN",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_en.html"
+    },
+    {
+      "id": "UserAgreement_zh-CN",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_en.html"
+    },
+    {
+      "id": "PrivateAgreement_es",
+      "url": "https://contentgarena-a.akamaihd.net/legal/pp/pp_es.html"
+    },
+    {
+      "id": "UserAgreement_es",
+      "url": "https://contentgarena-a.akamaihd.net/legal/tos/tos_es.html"
+    },
+    {
+      "id": "PrivateAgreement_vi",
+      "url": "https://www.garena.vn/privacy"
+    },
+    {
+      "id": "UserAgreement_vi",
+      "url": "https://www.garena.vn/terms"
+    },
+    {
+      "id": "BugSummit",
+      "url": "https://alphaacecis.zendesk.com/hc/ru"
+    },
+    {
+      "id": "BugSummit_RU",
+      "url": "https://alphaacecis.zendesk.com/hc/ru"
+    },
+    {
+      "id": "BugSummit_BR",
+      "url": "https://alphaace.zendesk.com/hc/pt-br"
+    }
+  ]
+}

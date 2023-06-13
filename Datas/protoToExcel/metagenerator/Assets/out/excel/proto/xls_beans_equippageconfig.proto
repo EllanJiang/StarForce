@@ -1,0 +1,29 @@
+/**
+* @file:   excel\EquipPageConfig.xlsx\EquipPageConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message EquipPageConfig{
+	//  
+	int32 id = 1;
+	//  
+	string name = 2;
+	//  
+	repeated EquipPageConfig_Types Types = 3;
+}
+
+message EquipPageConfig_Types{
+	//  
+	int32 mainType = 1;
+	//  
+	int32 subType = 2;
+}
+
+message EquipPageConfig_Array {
+	repeated EquipPageConfig items = 1;
+}

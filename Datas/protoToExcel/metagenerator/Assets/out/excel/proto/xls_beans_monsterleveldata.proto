@@ -1,0 +1,34 @@
+/**
+* @file:   excel\MonsterLevelData.xlsx\MonsterLevelData
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MonsterLevelData{
+	// 查找id(level * 100000 + monsterid) 
+	uint32 id = 1;
+	// 怪物id 
+	uint32 MonsterId = 2;
+	// 等级 
+	uint32 Level = 3;
+	// 血量 
+	uint32 HP = 4;
+	// 移速(米/秒) 
+	float Speed = 5;
+	// 得分 
+	uint32 Score = 6;
+	// 击杀奖励经济 
+	uint32 AddMoney = 7;
+	// 资源缩放 
+	float Scale = 8;
+	// 移动动作在默认播放速度下对应的移动速度 
+	float DefaultMoveAniSpeed = 9;
+}
+
+message MonsterLevelData_Array {
+	repeated MonsterLevelData items = 1;
+}

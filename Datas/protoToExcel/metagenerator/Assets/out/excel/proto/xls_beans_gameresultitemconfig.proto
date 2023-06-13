@@ -1,0 +1,56 @@
+/**
+* @file:   excel\GameResultItemConfig.xlsx\GameResultItemConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameResultItemConfig{
+	// ID（自增，无特殊意义） 
+	uint32 id = 1;
+	// 物品池ID（对应GameModeItemPoolConfig中内容） 
+	repeated GameResultItemConfig_itemPool itemPool = 2;
+	// 领取条件 
+	repeated GameResultItemConfig_condition condition = 3;
+	// 模式限定（选填，不填则默认无限定模式） 
+	repeated uint32 modeLimit = 4;
+	// 地图限定（选填，不填则默认无限定地图） 
+	repeated uint32 mapLimit = 5;
+	// 概率(单位：万分之一） 
+	uint32 probability = 6;
+	// 总次数限制 
+	uint32 totalLimit = 7;
+	// 周期内限制（对timeType为day/week/month生效） 
+	uint32 cycleLimit = 8;
+	// 时间类型 
+	string timeType = 9;
+	// 循环日期 
+	string cycleDate = 10;
+	// 循环时间 
+	string cycleTime = 11;
+	// 奖励开始时间 
+	string startTime = 12;
+	// 奖励结束时间 
+	string stopTime = 13;
+}
+
+message GameResultItemConfig_itemPool{
+	// 物品池ID（对应GameModeItemPoolConfig中内容） 
+	uint32 id = 1;
+	// 数量 
+	uint32 count = 2;
+}
+
+message GameResultItemConfig_condition{
+	// 领取条件 
+	string name = 1;
+	// 条件数值 
+	uint32 value = 2;
+}
+
+message GameResultItemConfig_Array {
+	repeated GameResultItemConfig items = 1;
+}

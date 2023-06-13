@@ -1,0 +1,3403 @@
+{
+  "items": [
+    {
+      "word": "retardado"
+    },
+    {
+      "word": "se mata"
+    },
+    {
+      "word": "viado"
+    },
+    {
+      "word": "boiola"
+    },
+    {
+      "word": "traveco"
+    },
+    {
+      "word": "vadia"
+    },
+    {
+      "word": "baitola"
+    },
+    {
+      "word": "boquete"
+    },
+    {
+      "word": "caralho"
+    },
+    {
+      "word": "cacete"
+    },
+    {
+      "word": "caceta"
+    },
+    {
+      "word": "cocaína"
+    },
+    {
+      "word": "corno"
+    },
+    {
+      "word": "fodeu"
+    },
+    {
+      "word": "foder"
+    },
+    {
+      "word": "fudeu"
+    },
+    {
+      "word": "fuder"
+    },
+    {
+      "word": "fudido"
+    },
+    {
+      "word": "fudida"
+    },
+    {
+      "word": "fodido"
+    },
+    {
+      "word": "fodida"
+    },
+    {
+      "word": "foda"
+    },
+    {
+      "word": "Babaca"
+    },
+    {
+      "word": "Baitola"
+    },
+    {
+      "word": "Bebum"
+    },
+    {
+      "word": "Bicha"
+    },
+    {
+      "word": "Bisca"
+    },
+    {
+      "word": "Bixa"
+    },
+    {
+      "word": "Boceta"
+    },
+    {
+      "word": "Boco"
+    },
+    {
+      "word": "Boiola"
+    },
+    {
+      "word": "Boquete"
+    },
+    {
+      "word": "Bosseta"
+    },
+    {
+      "word": "Bosta"
+    },
+    {
+      "word": "Brioco"
+    },
+    {
+      "word": "Bronha"
+    },
+    {
+      "word": "Buca"
+    },
+    {
+      "word": "Buce"
+    },
+    {
+      "word": "Busseta"
+    },
+    {
+      "word": "Cadela"
+    },
+    {
+      "word": "Caga"
+    },
+    {
+      "word": "Canalha"
+    },
+    {
+      "word": "Caralho"
+    },
+    {
+      "word": "Casseta"
+    },
+    {
+      "word": "Cassete"
+    },
+    {
+      "word": "Checheca"
+    },
+    {
+      "word": "Chereca"
+    },
+    {
+      "word": "Chota"
+    },
+    {
+      "word": "Chochota"
+    },
+    {
+      "word": "Xoxota"
+    },
+    {
+      "word": "Xupada"
+    },
+    {
+      "word": "Xupado"
+    },
+    {
+      "word": "Chupada"
+    },
+    {
+      "word": "Chupado"
+    },
+    {
+      "word": "Cretin"
+    },
+    {
+      "word": "Cruz-credo"
+    },
+    {
+      "word": "Escrot"
+    },
+    {
+      "word": "Esporr"
+    },
+    {
+      "word": "Fod"
+    },
+    {
+      "word": "Phod"
+    },
+    {
+      "word": "Phud"
+    },
+    {
+      "word": "Iscrota"
+    },
+    {
+      "word": "Iscroto"
+    },
+    {
+      "word": "Macac"
+    },
+    {
+      "word": "Machona"
+    },
+    {
+      "word": "Masturba"
+    },
+    {
+      "word": "Pênis"
+    },
+    {
+      "word": "Piroc"
+    },
+    {
+      "word": "Piru"
+    },
+    {
+      "word": "Porra"
+    },
+    {
+      "word": "Poha"
+    },
+    {
+      "word": "Prostibulo"
+    },
+    {
+      "word": "Prost-bulo"
+    },
+    {
+      "word": "Prostituta"
+    },
+    {
+      "word": "Prostituto"
+    },
+    {
+      "word": "Punheta"
+    },
+    {
+      "word": "Rabao"
+    },
+    {
+      "word": "Rabo"
+    },
+    {
+      "word": "Rabu"
+    },
+    {
+      "word": "Racha"
+    },
+    {
+      "word": "Raxa"
+    },
+    {
+      "word": "Rola"
+    },
+    {
+      "word": "Rosca"
+    },
+    {
+      "word": "Safad"
+    },
+    {
+      "word": "Sapatao"
+    },
+    {
+      "word": "Siririca"
+    },
+    {
+      "word": "Tarad"
+    },
+    {
+      "word": "Tezao"
+    },
+    {
+      "word": "Tesao"
+    },
+    {
+      "word": "Tesu"
+    },
+    {
+      "word": "Tezu"
+    },
+    {
+      "word": "Vagabund"
+    },
+    {
+      "word": "Vagina"
+    },
+    {
+      "word": "Veada"
+    },
+    {
+      "word": "Veadao"
+    },
+    {
+      "word": "Veado"
+    },
+    {
+      "word": "Viada"
+    },
+    {
+      "word": "Víado"
+    },
+    {
+      "word": "Viadao"
+    },
+    {
+      "word": "Xavasca"
+    },
+    {
+      "word": "Xerereca"
+    },
+    {
+      "word": "Xexeca"
+    },
+    {
+      "word": "Xibiu"
+    },
+    {
+      "word": "Xibumba"
+    },
+    {
+      "word": "Xota"
+    },
+    {
+      "word": "Xochota"
+    },
+    {
+      "word": "Xoxota"
+    },
+    {
+      "word": "Xana"
+    },
+    {
+      "word": "Xaninha"
+    },
+    {
+      "word": "Mamaca"
+    },
+    {
+      "word": "Mamaco"
+    },
+    {
+      "word": "Mamaka"
+    },
+    {
+      "word": "Mamako"
+    },
+    {
+      "word": "Makako"
+    },
+    {
+      "word": "Makaka"
+    },
+    {
+      "word": "Makaco"
+    },
+    {
+      "word": "Makaca"
+    },
+    {
+      "word": "Macako"
+    },
+    {
+      "word": "Macaka"
+    },
+    {
+      "word": "Goza"
+    },
+    {
+      "word": "Goze"
+    },
+    {
+      "word": "Gozo"
+    },
+    {
+      "word": "Comedor"
+    },
+    {
+      "word": "Anus"
+    },
+    {
+      "word": "*cụ"
+    },
+    {
+      "word": "cụ*"
+    },
+    {
+      "word": "BICHA"
+    },
+    {
+      "word": "BIXA*"
+    },
+    {
+      "word": "*bixa"
+    },
+    {
+      "word": "ANUS"
+    },
+    {
+      "word": "-NUS"
+    },
+    {
+      "word": "BABA-OVO"
+    },
+    {
+      "word": "BABAOVO"
+    },
+    {
+      "word": "BABACA"
+    },
+    {
+      "word": "BACURA"
+    },
+    {
+      "word": "BAGOS"
+    },
+    {
+      "word": "BAITOLA"
+    },
+    {
+      "word": "BEBUM"
+    },
+    {
+      "word": "BESTA"
+    },
+    {
+      "word": "BICHA"
+    },
+    {
+      "word": "BISCA"
+    },
+    {
+      "word": "BIXA"
+    },
+    {
+      "word": "BOAZUDA"
+    },
+    {
+      "word": "BOCETA"
+    },
+    {
+      "word": "BOCO"
+    },
+    {
+      "word": "BOC+"
+    },
+    {
+      "word": "BOIOLA"
+    },
+    {
+      "word": "BOLAGATO"
+    },
+    {
+      "word": "BOQUETE"
+    },
+    {
+      "word": "BOLCAT"
+    },
+    {
+      "word": "BOSSETA"
+    },
+    {
+      "word": "BOSTA"
+    },
+    {
+      "word": "BOSTANA"
+    },
+    {
+      "word": "BRECHA"
+    },
+    {
+      "word": "BREXA"
+    },
+    {
+      "word": "BRIOCO"
+    },
+    {
+      "word": "BRONHA"
+    },
+    {
+      "word": "BUCA"
+    },
+    {
+      "word": "BUCETA"
+    },
+    {
+      "word": "BUNDUDA"
+    },
+    {
+      "word": "BURRA"
+    },
+    {
+      "word": "BUSSETA"
+    },
+    {
+      "word": "CACHORRA"
+    },
+    {
+      "word": "CACHORRO"
+    },
+    {
+      "word": "CADELA"
+    },
+    {
+      "word": "CAGA"
+    },
+    {
+      "word": "CAGADO"
+    },
+    {
+      "word": "CAGAO"
+    },
+    {
+      "word": "CAGONA"
+    },
+    {
+      "word": "CANALHA"
+    },
+    {
+      "word": "CARALHO"
+    },
+    {
+      "word": "CASSETA"
+    },
+    {
+      "word": "CASSETE"
+    },
+    {
+      "word": "CACETE"
+    },
+    {
+      "word": "CHECHECA"
+    },
+    {
+      "word": "CHERECA"
+    },
+    {
+      "word": "CHIBUMBA"
+    },
+    {
+      "word": "CHIBUMBO"
+    },
+    {
+      "word": "CHIFRUDA"
+    },
+    {
+      "word": "CHIFRUDO"
+    },
+    {
+      "word": "CHOTA"
+    },
+    {
+      "word": "CHOCHOTA"
+    },
+    {
+      "word": "CHUPADA"
+    },
+    {
+      "word": "CHUPADO"
+    },
+    {
+      "word": "CLITORIS"
+    },
+    {
+      "word": "CLIT+RIS"
+    },
+    {
+      "word": "COCAINA"
+    },
+    {
+      "word": "COCA-NA"
+    },
+    {
+      "word": "COC+"
+    },
+    {
+      "word": "CORNA"
+    },
+    {
+      "word": "CORNO"
+    },
+    {
+      "word": "CORNUDA"
+    },
+    {
+      "word": "CORNUDO"
+    },
+    {
+      "word": "CORRUPTA"
+    },
+    {
+      "word": "CORRUPTO"
+    },
+    {
+      "word": "CRETINA"
+    },
+    {
+      "word": "CRETINO"
+    },
+    {
+      "word": "CRUZ-CREDO"
+    },
+    {
+      "word": "CU*"
+    },
+    {
+      "word": "C+"
+    },
+    {
+      "word": "CULHAO"
+    },
+    {
+      "word": "CULH+O"
+    },
+    {
+      "word": "CULH+ES"
+    },
+    {
+      "word": "CURALHO"
+    },
+    {
+      "word": "CUZAO"
+    },
+    {
+      "word": "CUZ+O"
+    },
+    {
+      "word": "CUZUDA"
+    },
+    {
+      "word": "CUZUDO"
+    },
+    {
+      "word": "DEBIL"
+    },
+    {
+      "word": "DEBILOIDE"
+    },
+    {
+      "word": "DEFUNTO"
+    },
+    {
+      "word": "DEMONIO"
+    },
+    {
+      "word": "DEM+NIO"
+    },
+    {
+      "word": "DIFUNTO"
+    },
+    {
+      "word": "DOIDA"
+    },
+    {
+      "word": "DOIDO"
+    },
+    {
+      "word": "ESCROTA"
+    },
+    {
+      "word": "ESCROTO"
+    },
+    {
+      "word": "ESPORRADA"
+    },
+    {
+      "word": "ESPORRADO"
+    },
+    {
+      "word": "ESPORRO"
+    },
+    {
+      "word": "ESP+RRO"
+    },
+    {
+      "word": "ESTUPIDA"
+    },
+    {
+      "word": "EST+PIDA"
+    },
+    {
+      "word": "ESTUPIDEZ"
+    },
+    {
+      "word": "ESTUPIDO"
+    },
+    {
+      "word": "EST+PIDO"
+    },
+    {
+      "word": "FEDIDA"
+    },
+    {
+      "word": "FEDIDO"
+    },
+    {
+      "word": "FEDOR"
+    },
+    {
+      "word": "FEDORENTA"
+    },
+    {
+      "word": "FEIA"
+    },
+    {
+      "word": "FEIO"
+    },
+    {
+      "word": "FEIOSA"
+    },
+    {
+      "word": "FEIOSO"
+    },
+    {
+      "word": "FEIOZA"
+    },
+    {
+      "word": "FEIOZO"
+    },
+    {
+      "word": "FELACAO"
+    },
+    {
+      "word": "FELA¦+O"
+    },
+    {
+      "word": "FENDA"
+    },
+    {
+      "word": "FODA"
+    },
+    {
+      "word": "FODA-SE"
+    },
+    {
+      "word": "FODAO"
+    },
+    {
+      "word": "FOD+O"
+    },
+    {
+      "word": "FODE"
+    },
+    {
+      "word": "FODIDA"
+    },
+    {
+      "word": "FODIDO"
+    },
+    {
+      "word": "FORNICA"
+    },
+    {
+      "word": "FUDENDO"
+    },
+    {
+      "word": "FUDECAO"
+    },
+    {
+      "word": "FUDE¦+O"
+    },
+    {
+      "word": "FUDIDA"
+    },
+    {
+      "word": "FUDIDO"
+    },
+    {
+      "word": "FURADA"
+    },
+    {
+      "word": "FURADO"
+    },
+    {
+      "word": "FURAO"
+    },
+    {
+      "word": "FUR+O"
+    },
+    {
+      "word": "FURNICA"
+    },
+    {
+      "word": "FURNICAR"
+    },
+    {
+      "word": "FURO"
+    },
+    {
+      "word": "FURONA"
+    },
+    {
+      "word": "GAIATA"
+    },
+    {
+      "word": "GAIATO"
+    },
+    {
+      "word": "GAY"
+    },
+    {
+      "word": "GONORREA"
+    },
+    {
+      "word": "GONORREIA"
+    },
+    {
+      "word": "GOSMA"
+    },
+    {
+      "word": "GOSMENTA"
+    },
+    {
+      "word": "GOSMENTO"
+    },
+    {
+      "word": "GRELINHO"
+    },
+    {
+      "word": "GRELO"
+    },
+    {
+      "word": "HOMO-SEXUAL"
+    },
+    {
+      "word": "HOMOSEXUAL"
+    },
+    {
+      "word": "HOMOSSEXUAL"
+    },
+    {
+      "word": "IDIOTA"
+    },
+    {
+      "word": "IDIOTICE"
+    },
+    {
+      "word": "IMBECIL"
+    },
+    {
+      "word": "ISCROTA"
+    },
+    {
+      "word": "ISCROTO"
+    },
+    {
+      "word": "LADRA"
+    },
+    {
+      "word": "LADRAO"
+    },
+    {
+      "word": "LADR+O"
+    },
+    {
+      "word": "LADROEIRA"
+    },
+    {
+      "word": "LADRONA"
+    },
+    {
+      "word": "LALAU"
+    },
+    {
+      "word": "LEPROSA"
+    },
+    {
+      "word": "LEPROSO"
+    },
+    {
+      "word": "LESBICA"
+    },
+    {
+      "word": "L+SBICA"
+    },
+    {
+      "word": "MACACA"
+    },
+    {
+      "word": "MACACO"
+    },
+    {
+      "word": "MACHONA"
+    },
+    {
+      "word": "MACHORRA"
+    },
+    {
+      "word": "MANGUACA"
+    },
+    {
+      "word": "MANGUA¦A"
+    },
+    {
+      "word": "MASTURBA"
+    },
+    {
+      "word": "MELECA"
+    },
+    {
+      "word": "MERDA"
+    },
+    {
+      "word": "MIJA"
+    },
+    {
+      "word": "MIJADA"
+    },
+    {
+      "word": "MIJADO"
+    },
+    {
+      "word": "MIJO"
+    },
+    {
+      "word": "MOCREA"
+    },
+    {
+      "word": "MOCR+A"
+    },
+    {
+      "word": "MOCREIA"
+    },
+    {
+      "word": "MOCR+IA"
+    },
+    {
+      "word": "MOLECA"
+    },
+    {
+      "word": "MOLEQUE"
+    },
+    {
+      "word": "MONDRONGA"
+    },
+    {
+      "word": "MONDRONGO"
+    },
+    {
+      "word": "NADEGA"
+    },
+    {
+      "word": "NOJEIRA"
+    },
+    {
+      "word": "NOJENTA"
+    },
+    {
+      "word": "NOJENTO"
+    },
+    {
+      "word": "*NOJO"
+    },
+    {
+      "word": "NOJO*"
+    },
+    {
+      "word": "OLHOTA"
+    },
+    {
+      "word": "OTARIA"
+    },
+    {
+      "word": "OT-RIA"
+    },
+    {
+      "word": "OTARIO"
+    },
+    {
+      "word": "OT-RIO"
+    },
+    {
+      "word": "PACA"
+    },
+    {
+      "word": "PASPALHA"
+    },
+    {
+      "word": "PASPALHAO"
+    },
+    {
+      "word": "PASPALHO"
+    },
+    {
+      "word": "PEIA"
+    },
+    {
+      "word": "PEIDO"
+    },
+    {
+      "word": "PEMBA"
+    },
+    {
+      "word": "PENIS"
+    },
+    {
+      "word": "P-NIS"
+    },
+    {
+      "word": "PENTELHA"
+    },
+    {
+      "word": "PENTELHO"
+    },
+    {
+      "word": "PERERECA"
+    },
+    {
+      "word": "PER+"
+    },
+    {
+      "word": "PICAO"
+    },
+    {
+      "word": "PIC+O"
+    },
+    {
+      "word": "PILANTRA"
+    },
+    {
+      "word": "PIRANHA"
+    },
+    {
+      "word": "PIROCA"
+    },
+    {
+      "word": "PIROCO"
+    },
+    {
+      "word": "PIRU"
+    },
+    {
+      "word": "PORRA"
+    },
+    {
+      "word": "PORRA*"
+    },
+    {
+      "word": "POHA"
+    },
+    {
+      "word": "PREGA"
+    },
+    {
+      "word": "PROSTIBULO"
+    },
+    {
+      "word": "PROST-BULO"
+    },
+    {
+      "word": "PROSTITUTA"
+    },
+    {
+      "word": "PROSTITUTO"
+    },
+    {
+      "word": "PUNHETA"
+    },
+    {
+      "word": "PUNHETAO"
+    },
+    {
+      "word": "PUNHET+O"
+    },
+    {
+      "word": "PUSTULA"
+    },
+    {
+      "word": "P+STULA"
+    },
+    {
+      "word": "PUTA*"
+    },
+    {
+      "word": "PUTO*"
+    },
+    {
+      "word": "PUXA-SACO"
+    },
+    {
+      "word": "PUXASACO"
+    },
+    {
+      "word": "RABAO"
+    },
+    {
+      "word": "RAB+O"
+    },
+    {
+      "word": "RABO"
+    },
+    {
+      "word": "RABUDA"
+    },
+    {
+      "word": "RABUDAO"
+    },
+    {
+      "word": "RABUD+O"
+    },
+    {
+      "word": "RABUDO"
+    },
+    {
+      "word": "RABUDONA"
+    },
+    {
+      "word": "*RAQUE"
+    },
+    {
+      "word": "RAQUE*"
+    },
+    {
+      "word": "RACHADA"
+    },
+    {
+      "word": "RACHADAO"
+    },
+    {
+      "word": "RACHAD+O"
+    },
+    {
+      "word": "RACHADINHA"
+    },
+    {
+      "word": "RACHADINHO"
+    },
+    {
+      "word": "RACHADO"
+    },
+    {
+      "word": "RAMELA"
+    },
+    {
+      "word": "REMELA"
+    },
+    {
+      "word": "RETARDADO"
+    },
+    {
+      "word": "ROLA"
+    },
+    {
+      "word": "ROLINHA"
+    },
+    {
+      "word": "ROSCA*"
+    },
+    {
+      "word": "SACANA"
+    },
+    {
+      "word": "SAFADA"
+    },
+    {
+      "word": "SAFADO"
+    },
+    {
+      "word": "SAPATAO"
+    },
+    {
+      "word": "SAPAT+O"
+    },
+    {
+      "word": "SIFILIS*"
+    },
+    {
+      "word": "S-FILIS"
+    },
+    {
+      "word": "SIRIRICA"
+    },
+    {
+      "word": "TARADA"
+    },
+    {
+      "word": "TARADO"
+    },
+    {
+      "word": "TESTUDA"
+    },
+    {
+      "word": "TEZAO"
+    },
+    {
+      "word": "TEZ+O"
+    },
+    {
+      "word": "TEZUDA"
+    },
+    {
+      "word": "TEZUDO"
+    },
+    {
+      "word": "TROCHA"
+    },
+    {
+      "word": "TROLHA"
+    },
+    {
+      "word": "TROUCHA"
+    },
+    {
+      "word": "TROUXA"
+    },
+    {
+      "word": "TROXA"
+    },
+    {
+      "word": "UPAR"
+    },
+    {
+      "word": "VAGABUNDA"
+    },
+    {
+      "word": "VAGABUNDO"
+    },
+    {
+      "word": "VAGINA"
+    },
+    {
+      "word": "VEADA"
+    },
+    {
+      "word": "VEADAO"
+    },
+    {
+      "word": "VEAD+O"
+    },
+    {
+      "word": "VEADO"
+    },
+    {
+      "word": "VIADA"
+    },
+    {
+      "word": "VIADO"
+    },
+    {
+      "word": "VIADAO"
+    },
+    {
+      "word": "VIAD+O"
+    },
+    {
+      "word": "XAVASCA"
+    },
+    {
+      "word": "XERERECA"
+    },
+    {
+      "word": "XEXECA"
+    },
+    {
+      "word": "XIBIU"
+    },
+    {
+      "word": "XIBUMBA"
+    },
+    {
+      "word": "XOTA*"
+    },
+    {
+      "word": "XOCHOTA"
+    },
+    {
+      "word": "XOXOTA"
+    },
+    {
+      "word": "XANA*"
+    },
+    {
+      "word": "XANINHA"
+    },
+    {
+      "word": "BLEFANDO"
+    },
+    {
+      "word": "BOSTA"
+    },
+    {
+      "word": "BUCA*"
+    },
+    {
+      "word": "BUNDUDA"
+    },
+    {
+      "word": "BURRA"
+    },
+    {
+      "word": "CAGA*"
+    },
+    {
+      "word": "CAGADO"
+    },
+    {
+      "word": "CAGAO"
+    },
+    {
+      "word": "CAGONA"
+    },
+    {
+      "word": "FODA*"
+    },
+    {
+      "word": "FODAO"
+    },
+    {
+      "word": "FODIDA"
+    },
+    {
+      "word": "FODIDO"
+    },
+    {
+      "word": "orgasmo"
+    },
+    {
+      "word": "orgasmos"
+    },
+    {
+      "word": "putinha"
+    },
+    {
+      "word": "pervertido"
+    },
+    {
+      "word": "put0*"
+    },
+    {
+      "word": "put0s"
+    },
+    {
+      "word": "put4*"
+    },
+    {
+      "word": "put4S"
+    },
+    {
+      "word": "puta5"
+    },
+    {
+      "word": "putas"
+    },
+    {
+      "word": "PUTO*"
+    },
+    {
+      "word": "r374rd4da"
+    },
+    {
+      "word": "r3c70"
+    },
+    {
+      "word": "r3tard4d0s"
+    },
+    {
+      "word": "r4b0*"
+    },
+    {
+      "word": "r4bn*"
+    },
+    {
+      "word": "r4bud"
+    },
+    {
+      "word": "r4buda"
+    },
+    {
+      "word": "r4parig4r47a"
+    },
+    {
+      "word": "RABO*"
+    },
+    {
+      "word": "RETARDADA"
+    },
+    {
+      "word": "RETARDADO"
+    },
+    {
+      "word": "retardados"
+    },
+    {
+      "word": "retrasado"
+    },
+    {
+      "word": "RIDICULA"
+    },
+    {
+      "word": "RIDÍCULA"
+    },
+    {
+      "word": "TARADA"
+    },
+    {
+      "word": "TARADO"
+    },
+    {
+      "word": "Testicula"
+    },
+    {
+      "word": "testículo"
+    },
+    {
+      "word": "Testículos"
+    },
+    {
+      "word": "TESTUDA"
+    },
+    {
+      "word": "teta*"
+    },
+    {
+      "word": "tetas"
+    },
+    {
+      "word": "tetuda"
+    },
+    {
+      "word": "TEZAO"
+    },
+    {
+      "word": "violado"
+    },
+    {
+      "word": "violador"
+    },
+    {
+      "word": "violar"
+    },
+    {
+      "word": "Virgen"
+    },
+    {
+      "word": "vitrador"
+    },
+    {
+      "word": "vomitar"
+    },
+    {
+      "word": "vul64r"
+    },
+    {
+      "word": "vulgar"
+    },
+    {
+      "word": "vulv4"
+    },
+    {
+      "word": "VIADAS"
+    },
+    {
+      "word": "VIADOS"
+    },
+    {
+      "word": "vibrador"
+    },
+    {
+      "word": "VIGARIO"
+    },
+    {
+      "word": "cu*"
+    },
+    {
+      "word": "*cu"
+    },
+    {
+      "word": "*xereca"
+    },
+    {
+      "word": "xereca*"
+    },
+    {
+      "word": "*foder"
+    },
+    {
+      "word": "foder*"
+    },
+    {
+      "word": "biscate*"
+    },
+    {
+      "word": "piriguete*"
+    },
+    {
+      "word": "putaria*"
+    },
+    {
+      "word": "pinto*"
+    },
+    {
+      "word": "pepeca*"
+    },
+    {
+      "word": "*biscate"
+    },
+    {
+      "word": "*piriguete"
+    },
+    {
+      "word": "*putaria"
+    },
+    {
+      "word": "*pinto"
+    },
+    {
+      "word": "*pepeca"
+    },
+    {
+      "word": "p1nto"
+    },
+    {
+      "word": "p1nt0"
+    },
+    {
+      "word": "VAC4"
+    },
+    {
+      "word": "V4C4"
+    },
+    {
+      "word": "*anal"
+    },
+    {
+      "word": "anal*"
+    },
+    {
+      "word": "*4nal"
+    },
+    {
+      "word": "4nal*"
+    },
+    {
+      "word": "4n4l*"
+    },
+    {
+      "word": "*4n4l"
+    },
+    {
+      "word": "m4m4ko"
+    },
+    {
+      "word": "m4k4ko"
+    },
+    {
+      "word": "m4c4c0"
+    },
+    {
+      "word": "m4c4co"
+    },
+    {
+      "word": "makako"
+    },
+    {
+      "word": "makaco"
+    },
+    {
+      "word": "macako"
+    },
+    {
+      "word": "*trava"
+    },
+    {
+      "word": "trava*"
+    },
+    {
+      "word": "*tr4v4"
+    },
+    {
+      "word": "tr4v4*"
+    },
+    {
+      "word": "tr4veco"
+    },
+    {
+      "word": "put4"
+    },
+    {
+      "word": "traveco"
+    },
+    {
+      "word": "goril4"
+    },
+    {
+      "word": "krl"
+    },
+    {
+      "word": "kralho"
+    },
+    {
+      "word": "*MATA"
+    },
+    {
+      "word": "MATA*"
+    },
+    {
+      "word": "fag*"
+    },
+    {
+      "word": "*hoe"
+    },
+    {
+      "word": "hoe*"
+    },
+    {
+      "word": "gay*"
+    },
+    {
+      "word": "shit*"
+    },
+    {
+      "word": "anal*"
+    },
+    {
+      "word": "anus*"
+    },
+    {
+      "word": "*arab"
+    },
+    {
+      "word": "arab*"
+    },
+    {
+      "word": "cumn*"
+    },
+    {
+      "word": "cunt*"
+    },
+    {
+      "word": "*kunt"
+    },
+    {
+      "word": "kunt*"
+    },
+    {
+      "word": "dick*"
+    },
+    {
+      "word": "wank*"
+    },
+    {
+      "word": "pimp*"
+    },
+    {
+      "word": "fuck"
+    },
+    {
+      "word": "AIDS"
+    },
+    {
+      "word": "boob*"
+    },
+    {
+      "word": "cock*"
+    },
+    {
+      "word": "clit*"
+    },
+    {
+      "word": "cllt*"
+    },
+    {
+      "word": "dyke*"
+    },
+    {
+      "word": "fcuk"
+    },
+    {
+      "word": "fukk"
+    },
+    {
+      "word": "fvck"
+    },
+    {
+      "word": "homo*"
+    },
+    {
+      "word": "nigr"
+    },
+    {
+      "word": "nazi"
+    },
+    {
+      "word": "*rape"
+    },
+    {
+      "word": "rape*"
+    },
+    {
+      "word": "tits*"
+    },
+    {
+      "word": "shits"
+    },
+    {
+      "word": "lesbo"
+    },
+    {
+      "word": "allah"
+    },
+    {
+      "word": "Nazis"
+    },
+    {
+      "word": "sperm"
+    },
+    {
+      "word": "opium"
+    },
+    {
+      "word": "penis"
+    },
+    {
+      "word": "kicap"
+    },
+    {
+      "word": "tocum"
+    },
+    {
+      "word": "nigga"
+    },
+    {
+      "word": "jihad"
+    },
+    {
+      "word": "bitch"
+    },
+    {
+      "word": "boner"
+    },
+    {
+      "word": "boobs"
+    },
+    {
+      "word": "jesus"
+    },
+    {
+      "word": "islam"
+    },
+    {
+      "word": "chink*"
+    },
+    {
+      "word": "*chink"
+    },
+    {
+      "word": "pimps"
+    },
+    {
+      "word": "*semen"
+    },
+    {
+      "word": "semen*"
+    },
+    {
+      "word": "negro"
+    },
+    {
+      "word": "fucks"
+    },
+    {
+      "word": "horny*"
+    },
+    {
+      "word": "*horny"
+    },
+    {
+      "word": "pubes"
+    },
+    {
+      "word": "pussy"
+    },
+    {
+      "word": "dicky"
+    },
+    {
+      "word": "dildo"
+    },
+    {
+      "word": "porno"
+    },
+    {
+      "word": "queef"
+    },
+    {
+      "word": "satan"
+    },
+    {
+      "word": "orgasm"
+    },
+    {
+      "word": "fagget"
+    },
+    {
+      "word": "faggit"
+    },
+    {
+      "word": "niggas"
+    },
+    {
+      "word": "faggot"
+    },
+    {
+      "word": "fucker"
+    },
+    {
+      "word": "fatass"
+    },
+    {
+      "word": "banged"
+    },
+    {
+      "word": "beaver"
+    },
+    {
+      "word": "goddam"
+    },
+    {
+      "word": "breast"
+    },
+    {
+      "word": "niglet"
+    },
+    {
+      "word": "hardon"
+    },
+    {
+      "word": "reefer"
+    },
+    {
+      "word": "rectum"
+    },
+    {
+      "word": "christ"
+    },
+    {
+      "word": "coochy"
+    },
+    {
+      "word": "furpie"
+    },
+    {
+      "word": "nitwit"
+    },
+    {
+      "word": "fucked"
+    },
+    {
+      "word": "rimjob"
+    },
+    {
+      "word": "sexual"
+    },
+    {
+      "word": "gringo"
+    },
+    {
+      "word": "nympho"
+    },
+    {
+      "word": "pisses"
+    },
+    {
+      "word": "idiots"
+    },
+    {
+      "word": "gonads"
+    },
+    {
+      "word": "erotic"
+    },
+    {
+      "word": "whores"
+    },
+    {
+      "word": "Rapist"
+    },
+    {
+      "word": "fuckup"
+    },
+    {
+      "word": "nigger"
+    },
+    {
+      "word": "niggaz"
+    },
+    {
+      "word": "sodomy"
+    },
+    {
+      "word": "condom"
+    },
+    {
+      "word": "theass"
+    },
+    {
+      "word": "thetit"
+    },
+    {
+      "word": "tobang"
+    },
+    {
+      "word": "tobarf"
+    },
+    {
+      "word": "tobeat"
+    },
+    {
+      "word": "nipple"
+    },
+    {
+      "word": "gayass"
+    },
+    {
+      "word": "tofart"
+    },
+    {
+      "word": "tofuck"
+    },
+    {
+      "word": "heroin"
+    },
+    {
+      "word": "dicked"
+    },
+    {
+      "word": "topoop"
+    },
+    {
+      "word": "torape"
+    },
+    {
+      "word": "toshit"
+    },
+    {
+      "word": "tosuck"
+    },
+    {
+      "word": "toejam"
+    },
+    {
+      "word": "toerag"
+    },
+    {
+      "word": "pigdog"
+    },
+    {
+      "word": "Vagina"
+    },
+    {
+      "word": "queers"
+    },
+    {
+      "word": "jerkof"
+    },
+    {
+      "word": "wanker"
+    },
+    {
+      "word": "Fuckass"
+    },
+    {
+      "word": "fuckoff"
+    },
+    {
+      "word": "fuckyou"
+    },
+    {
+      "word": "raffish"
+    },
+    {
+      "word": "puttana"
+    },
+    {
+      "word": "nutsack"
+    },
+    {
+      "word": "nitwits"
+    },
+    {
+      "word": "fuckery"
+    },
+    {
+      "word": "Fucking"
+    },
+    {
+      "word": "pussies"
+    },
+    {
+      "word": "puntang"
+    },
+    {
+      "word": "punanny"
+    },
+    {
+      "word": "fuckton"
+    },
+    {
+      "word": "fucktoy"
+    },
+    {
+      "word": "pollock"
+    },
+    {
+      "word": "nipples"
+    },
+    {
+      "word": "getlaid"
+    },
+    {
+      "word": "pissing"
+    },
+    {
+      "word": "niggers"
+    },
+    {
+      "word": "goddamn"
+    },
+    {
+      "word": "handjob"
+    },
+    {
+      "word": "Havesex"
+    },
+    {
+      "word": "pissoff"
+    },
+    {
+      "word": "hookers"
+    },
+    {
+      "word": "infidel"
+    },
+    {
+      "word": "jackass"
+    },
+    {
+      "word": "jackoff"
+    },
+    {
+      "word": "pervert"
+    },
+    {
+      "word": "jerkoff"
+    },
+    {
+      "word": "jerking"
+    },
+    {
+      "word": "jigaboo"
+    },
+    {
+      "word": "penises"
+    },
+    {
+      "word": "keaster"
+    },
+    {
+      "word": "keester"
+    },
+    {
+      "word": "orgasms"
+    },
+    {
+      "word": "lameass"
+    },
+    {
+      "word": "lardass"
+    },
+    {
+      "word": "lazyass"
+    },
+    {
+      "word": "Lesbian"
+    },
+    {
+      "word": "analsex"
+    },
+    {
+      "word": "shitass"
+    },
+    {
+      "word": "shitton"
+    },
+    {
+      "word": "shiznit"
+    },
+    {
+      "word": "asexual"
+    },
+    {
+      "word": "oralsex"
+    },
+    {
+      "word": "assface"
+    },
+    {
+      "word": "assfuck"
+    },
+    {
+      "word": "asshole"
+    },
+    {
+      "word": "asswipe"
+    },
+    {
+      "word": "slyarse"
+    },
+    {
+      "word": "bastard"
+    },
+    {
+      "word": "shitbag"
+    },
+    {
+      "word": "blowjob"
+    },
+    {
+      "word": "bukkake"
+    },
+    {
+      "word": "spastic"
+    },
+    {
+      "word": "breasts"
+    },
+    {
+      "word": "cocaine"
+    },
+    {
+      "word": "strapon"
+    },
+    {
+      "word": "scumbag"
+    },
+    {
+      "word": "thecunt"
+    },
+    {
+      "word": "thedick"
+    },
+    {
+      "word": "theporn"
+    },
+    {
+      "word": "theshit"
+    },
+    {
+      "word": "cumshot"
+    },
+    {
+      "word": "thetits"
+    },
+    {
+      "word": "Scrotum"
+    },
+    {
+      "word": "dickbag"
+    },
+    {
+      "word": "negroes"
+    },
+    {
+      "word": "dicking"
+    },
+    {
+      "word": "screwup"
+    },
+    {
+      "word": "dickwad"
+    },
+    {
+      "word": "dilldoe"
+    },
+    {
+      "word": "dilldos"
+    },
+    {
+      "word": "dogbark"
+    },
+    {
+      "word": "dogcunt"
+    },
+    {
+      "word": "doghorn"
+    },
+    {
+      "word": "Vaginal"
+    },
+    {
+      "word": "vaginas"
+    },
+    {
+      "word": "vjayjay"
+    },
+    {
+      "word": "Eatshit"
+    },
+    {
+      "word": "retards"
+    },
+    {
+      "word": "faggots"
+    },
+    {
+      "word": "wankers"
+    },
+    {
+      "word": "wanking"
+    },
+    {
+      "word": "fuckface"
+    },
+    {
+      "word": "dickface"
+    },
+    {
+      "word": "screwyou"
+    },
+    {
+      "word": "dickhead"
+    },
+    {
+      "word": "slackass"
+    },
+    {
+      "word": "holyshit"
+    },
+    {
+      "word": "pissdick"
+    },
+    {
+      "word": "maryjane"
+    },
+    {
+      "word": "gangbang"
+    },
+    {
+      "word": "screwing"
+    },
+    {
+      "word": "cuntface"
+    },
+    {
+      "word": "cumeater"
+    },
+    {
+      "word": "sodomise"
+    },
+    {
+      "word": "sodomite"
+    },
+    {
+      "word": "sodomize"
+    },
+    {
+      "word": "gangrape"
+    },
+    {
+      "word": "fuckyour"
+    },
+    {
+      "word": "manwhore"
+    },
+    {
+      "word": "Creampie"
+    },
+    {
+      "word": "cockhead"
+    },
+    {
+      "word": "cockface"
+    },
+    {
+      "word": "poontang"
+    },
+    {
+      "word": "cocksuck"
+    },
+    {
+      "word": "clitoris"
+    },
+    {
+      "word": "cameltoe"
+    },
+    {
+      "word": "testicle"
+    },
+    {
+      "word": "theasses"
+    },
+    {
+      "word": "thebitch"
+    },
+    {
+      "word": "buttplug"
+    },
+    {
+      "word": "thecunts"
+    },
+    {
+      "word": "poonanny"
+    },
+    {
+      "word": "thedicks"
+    },
+    {
+      "word": "infidels"
+    },
+    {
+      "word": "thedykes"
+    },
+    {
+      "word": "butthole"
+    },
+    {
+      "word": "thefools"
+    },
+    {
+      "word": "butthead"
+    },
+    {
+      "word": "thehells"
+    },
+    {
+      "word": "theidiot"
+    },
+    {
+      "word": "themoron"
+    },
+    {
+      "word": "thenegro"
+    },
+    {
+      "word": "phimosis"
+    },
+    {
+      "word": "buttfuck"
+    },
+    {
+      "word": "buttface"
+    },
+    {
+      "word": "theshits"
+    },
+    {
+      "word": "fistfuck"
+    },
+    {
+      "word": "theswine"
+    },
+    {
+      "word": "getdrunk"
+    },
+    {
+      "word": "fuckhead"
+    },
+    {
+      "word": "thewhore"
+    },
+    {
+      "word": "placenta"
+    },
+    {
+      "word": "sheister"
+    },
+    {
+      "word": "fucktard"
+    },
+    {
+      "word": "tobeatup"
+    },
+    {
+      "word": "fuckhole"
+    },
+    {
+      "word": "bunghole"
+    },
+    {
+      "word": "bullshit"
+    },
+    {
+      "word": "bigboobs"
+    },
+    {
+      "word": "gotocunt"
+    },
+    {
+      "word": "jigaboos"
+    },
+    {
+      "word": "tofuckup"
+    },
+    {
+      "word": "bigbitch"
+    },
+    {
+      "word": "ballsack"
+    },
+    {
+      "word": "Foreskin"
+    },
+    {
+      "word": "fuckedup"
+    },
+    {
+      "word": "assmunch"
+    },
+    {
+      "word": "shitboot"
+    },
+    {
+      "word": "pederast"
+    },
+    {
+      "word": "tramping"
+    },
+    {
+      "word": "madbitch"
+    },
+    {
+      "word": "fuckbutt"
+    },
+    {
+      "word": "uglycunt"
+    },
+    {
+      "word": "looseass"
+    },
+    {
+      "word": "onanists"
+    },
+    {
+      "word": "lewdworm"
+    },
+    {
+      "word": "erection"
+    },
+    {
+      "word": "vajayjay"
+    },
+    {
+      "word": "vibrator"
+    },
+    {
+      "word": "arsehole"
+    },
+    {
+      "word": "vitrator"
+    },
+    {
+      "word": "retarded"
+    },
+    {
+      "word": "dunecoon"
+    },
+    {
+      "word": "shitface"
+    },
+    {
+      "word": "dogpenis"
+    },
+    {
+      "word": "Fuckarse"
+    },
+    {
+      "word": "lesbians"
+    },
+    {
+      "word": "adultery"
+    },
+    {
+      "word": "shithead"
+    },
+    {
+      "word": "shithloe"
+    },
+    {
+      "word": "shithole"
+    },
+    {
+      "word": "wetbacks"
+    },
+    {
+      "word": "dickless"
+    },
+    {
+      "word": "whoredom"
+    },
+    {
+      "word": "thesperm"
+    },
+    {
+      "word": "rudebitch"
+    },
+    {
+      "word": "theidiots"
+    },
+    {
+      "word": "sandnegro"
+    },
+    {
+      "word": "themorons"
+    },
+    {
+      "word": "shameless"
+    },
+    {
+      "word": "thenigger"
+    },
+    {
+      "word": "thenitwit"
+    },
+    {
+      "word": "shiteater"
+    },
+    {
+      "word": "shitbrain"
+    },
+    {
+      "word": "theretard"
+    },
+    {
+      "word": "shitheads"
+    },
+    {
+      "word": "adulterer"
+    },
+    {
+      "word": "assmaggot"
+    },
+    {
+      "word": "assmonkey"
+    },
+    {
+      "word": "assfucked"
+    },
+    {
+      "word": "assfucker"
+    },
+    {
+      "word": "thevagina"
+    },
+    {
+      "word": "thewanker"
+    },
+    {
+      "word": "testicles"
+    },
+    {
+      "word": "thewhores"
+    },
+    {
+      "word": "tickedoff"
+    },
+    {
+      "word": "tittyfuck"
+    },
+    {
+      "word": "asskisser"
+    },
+    {
+      "word": "asslicker"
+    },
+    {
+      "word": "skullfuck"
+    },
+    {
+      "word": "cumbubble"
+    },
+    {
+      "word": "cummeater"
+    },
+    {
+      "word": "dickeater"
+    },
+    {
+      "word": "dickheads"
+    },
+    {
+      "word": "dicksmack"
+    },
+    {
+      "word": "ejaculate"
+    },
+    {
+      "word": "fuckedhim"
+    },
+    {
+      "word": "fuckedyou"
+    },
+    {
+      "word": "furburger"
+    },
+    {
+      "word": "tojerkoff"
+    },
+    {
+      "word": "snoteater"
+    },
+    {
+      "word": "gazongers"
+    },
+    {
+      "word": "gloryhole"
+    },
+    {
+      "word": "goddammit"
+    },
+    {
+      "word": "goddamnit"
+    },
+    {
+      "word": "horsedick"
+    },
+    {
+      "word": "horsecock"
+    },
+    {
+      "word": "towelhead"
+    },
+    {
+      "word": "impotency"
+    },
+    {
+      "word": "lameasses"
+    },
+    {
+      "word": "typhislut"
+    },
+    {
+      "word": "lazyasses"
+    },
+    {
+      "word": "marijuana"
+    },
+    {
+      "word": "masochist"
+    },
+    {
+      "word": "mongoloid"
+    },
+    {
+      "word": "muffdiver"
+    },
+    {
+      "word": "Testicule"
+    },
+    {
+      "word": "Nazibitch"
+    },
+    {
+      "word": "pussylips"
+    },
+    {
+      "word": "ogrenegro"
+    },
+    {
+      "word": "pedophile"
+    },
+    {
+      "word": "vulgarman"
+    },
+    {
+      "word": "thecrotch"
+    },
+    {
+      "word": "pigpriest"
+    },
+    {
+      "word": "pissstain"
+    },
+    {
+      "word": "pisswhore"
+    },
+    {
+      "word": "thedevils"
+    },
+    {
+      "word": "pubichair"
+    },
+    {
+      "word": "pussyface"
+    },
+    {
+      "word": "pussyhead"
+    },
+    {
+      "word": "pussydick"
+    },
+    {
+      "word": "thefaggot"
+    },
+    {
+      "word": "pussywhip"
+    },
+    {
+      "word": "whoreslut"
+    },
+    {
+      "word": "queerbait"
+    },
+    {
+      "word": "rottenman"
+    },
+    {
+      "word": "horsedicks"
+    },
+    {
+      "word": "licentious"
+    },
+    {
+      "word": "buttpirate"
+    },
+    {
+      "word": "thebitches"
+    },
+    {
+      "word": "buttpicker"
+    },
+    {
+      "word": "outdoorsex"
+    },
+    {
+      "word": "sexualorgy"
+    },
+    {
+      "word": "crackwhore"
+    },
+    {
+      "word": "peckerhead"
+    },
+    {
+      "word": "theretards"
+    },
+    {
+      "word": "cumchugger"
+    },
+    {
+      "word": "pedophilia"
+    },
+    {
+      "word": "knockboots"
+    },
+    {
+      "word": "thecrybaby"
+    },
+    {
+      "word": "dickbreath"
+    },
+    {
+      "word": "sluttycunt"
+    },
+    {
+      "word": "thenegroes"
+    },
+    {
+      "word": "uglyperson"
+    },
+    {
+      "word": "Prostitute"
+    },
+    {
+      "word": "thenitwits"
+    },
+    {
+      "word": "dicksucker"
+    },
+    {
+      "word": "transexual"
+    },
+    {
+      "word": "dirtyswine"
+    },
+    {
+      "word": "homosexual"
+    },
+    {
+      "word": "satyriasis"
+    },
+    {
+      "word": "neckblower"
+    },
+    {
+      "word": "sandnigger"
+    },
+    {
+      "word": "pussyjuice"
+    },
+    {
+      "word": "sonofbitch"
+    },
+    {
+      "word": "thefaggots"
+    },
+    {
+      "word": "dominatrix"
+    },
+    {
+      "word": "fornicator"
+    },
+    {
+      "word": "yourmother"
+    },
+    {
+      "word": "yourfather"
+    },
+    {
+      "word": "theniggers"
+    },
+    {
+      "word": "littledick"
+    },
+    {
+      "word": "fuckingbig"
+    },
+    {
+      "word": "getspunkup"
+    },
+    {
+      "word": "adulteress"
+    },
+    {
+      "word": "fuckaround"
+    },
+    {
+      "word": "arsefucker"
+    },
+    {
+      "word": "stupidhead"
+    },
+    {
+      "word": "thewankers"
+    },
+    {
+      "word": "suckmydick"
+    },
+    {
+      "word": "fuckingway"
+    },
+    {
+      "word": "looseasses"
+    },
+    {
+      "word": "arseguitar"
+    },
+    {
+      "word": "masterbate"
+    },
+    {
+      "word": "asslickers"
+    },
+    {
+      "word": "pooppusher"
+    },
+    {
+      "word": "thevaginas"
+    },
+    {
+      "word": "thebastard"
+    },
+    {
+      "word": "pussyheads"
+    },
+    {
+      "word": "masturbate"
+    },
+    {
+      "word": "bigbreasts"
+    },
+    {
+      "word": "rottenwoman"
+    },
+    {
+      "word": "nymphomania"
+    },
+    {
+      "word": "dirtyswines"
+    },
+    {
+      "word": "transexuals"
+    },
+    {
+      "word": "dicksuckers"
+    },
+    {
+      "word": "uglypersons"
+    },
+    {
+      "word": "Nazibitches"
+    },
+    {
+      "word": "junglebunny"
+    },
+    {
+      "word": "dickanchovy"
+    },
+    {
+      "word": "vaginasweat"
+    },
+    {
+      "word": "cunnilingus"
+    },
+    {
+      "word": "pieceofshit"
+    },
+    {
+      "word": "vulgarwoman"
+    },
+    {
+      "word": "wackassdumb"
+    },
+    {
+      "word": "oldmandevil"
+    },
+    {
+      "word": "intercourse"
+    },
+    {
+      "word": "littlebitch"
+    },
+    {
+      "word": "brainfucker"
+    },
+    {
+      "word": "arseguitars"
+    },
+    {
+      "word": "sonofabitch"
+    },
+    {
+      "word": "sonofawhore"
+    },
+    {
+      "word": "whoremonger"
+    },
+    {
+      "word": "wobblepussy"
+    },
+    {
+      "word": "sonuvabitch"
+    },
+    {
+      "word": "handicapped"
+    },
+    {
+      "word": "motherfucka"
+    },
+    {
+      "word": "funnelwhore"
+    },
+    {
+      "word": "fudgepacker"
+    },
+    {
+      "word": "pooppushers"
+    },
+    {
+      "word": "thebastards"
+    },
+    {
+      "word": "porchmonkey"
+    },
+    {
+      "word": "thecrotches"
+    },
+    {
+      "word": "pornography"
+    },
+    {
+      "word": "masturbator"
+    },
+    {
+      "word": "fuckingcunt"
+    },
+    {
+      "word": "pussychaser"
+    },
+    {
+      "word": "camelfucker"
+    },
+    {
+      "word": "masturbates"
+    },
+    {
+      "word": "masturbated"
+    },
+    {
+      "word": "cumdumpster"
+    },
+    {
+      "word": "fuckyourmom"
+    },
+    {
+      "word": "fuckyourdad"
+    },
+    {
+      "word": "fornication"
+    },
+    {
+      "word": "Ejaculation"
+    },
+    {
+      "word": "foreigndevil"
+    },
+    {
+      "word": "mastrubation"
+    },
+    {
+      "word": "pussychasers"
+    },
+    {
+      "word": "fuckingmouth"
+    },
+    {
+      "word": "knockingshop"
+    },
+    {
+      "word": "tomasturbate"
+    },
+    {
+      "word": "motherfucker"
+    },
+    {
+      "word": "Prostitution"
+    },
+    {
+      "word": "dirtybastard"
+    },
+    {
+      "word": "piecesofshit"
+    },
+    {
+      "word": "thecrybabies"
+    },
+    {
+      "word": "cowardshitty"
+    },
+    {
+      "word": "fucksmbdover"
+    },
+    {
+      "word": "fuckingpower"
+    },
+    {
+      "word": "sonsofabitch"
+    },
+    {
+      "word": "Masturbation"
+    },
+    {
+      "word": "yourancestor"
+    },
+    {
+      "word": "fuckyourself"
+    },
+    {
+      "word": "fuckingdodge"
+    },
+    {
+      "word": "fuckingthing"
+    },
+    {
+      "word": "ejaculations"
+    },
+    {
+      "word": "hornybastard"
+    },
+    {
+      "word": "stupidfucker"
+    },
+    {
+      "word": "fuckinggreat"
+    },
+    {
+      "word": "knockingshops"
+    },
+    {
+      "word": "prostategland"
+    },
+    {
+      "word": "pearlnecklace"
+    },
+    {
+      "word": "knockingboots"
+    },
+    {
+      "word": "theuglyperson"
+    },
+    {
+      "word": "smartfuckface"
+    },
+    {
+      "word": "sadomasochism"
+    },
+    {
+      "word": "motherfucking"
+    },
+    {
+      "word": "Japanesebitch"
+    },
+    {
+      "word": "sonsofbitches"
+    },
+    {
+      "word": "dirtybastards"
+    },
+    {
+      "word": "masturbations"
+    },
+    {
+      "word": "fuckyourpussy"
+    },
+    {
+      "word": "dontgiveafuck"
+    },
+    {
+      "word": "thecrackwhore"
+    },
+    {
+      "word": "dickanchovies"
+    },
+    {
+      "word": "rustytrombone"
+    },
+    {
+      "word": "thepooppusher"
+    },
+    {
+      "word": "thearseguitar"
+    },
+    {
+      "word": "childofawhore"
+    },
+    {
+      "word": "sadomasochist"
+    },
+    {
+      "word": "getthefuckout"
+    },
+    {
+      "word": "thebitchwhore"
+    },
+    {
+      "word": "intercruralsex"
+    },
+    {
+      "word": "thecrackwhores"
+    },
+    {
+      "word": "thepooppushers"
+    },
+    {
+      "word": "fuckyourmother"
+    },
+    {
+      "word": "rudesonofbitch"
+    },
+    {
+      "word": "fuckingawesome"
+    },
+    {
+      "word": "thebitchwhores"
+    },
+    {
+      "word": "theejaculation"
+    },
+    {
+      "word": "fuckyoursister"
+    },
+    {
+      "word": "thearseguitars"
+    },
+    {
+      "word": "Letitfuckingbe"
+    },
+    {
+      "word": "thedickanchovy"
+    },
+    {
+      "word": "theuglypersons"
+    },
+    {
+      "word": "outcallservice"
+    },
+    {
+      "word": "fuckshitdamnit"
+    },
+    {
+      "word": "fuckingbastard"
+    },
+    {
+      "word": "havinganorgasm"
+    },
+    {
+      "word": "homelesspeople"
+    },
+    {
+      "word": "somethingshitty"
+    },
+    {
+      "word": "fuckingstarship"
+    },
+    {
+      "word": "internalcumshot"
+    },
+    {
+      "word": "themasturbation"
+    },
+    {
+      "word": "fuckingholyshit"
+    },
+    {
+      "word": "theejaculations"
+    },
+    {
+      "word": "fuckyourbrother"
+    },
+    {
+      "word": "workfuckinghard"
+    },
+    {
+      "word": "youmotherfucker"
+    },
+    {
+      "word": "younghornybitch"
+    },
+    {
+      "word": "fuckyourpussies"
+    },
+    {
+      "word": "stickitupyourass"
+    },
+    {
+      "word": "daughterofabitch"
+    },
+    {
+      "word": "thedickanchovies"
+    },
+    {
+      "word": "disgustingperson"
+    },
+    {
+      "word": "yourmotherspussy"
+    },
+    {
+      "word": "daughtersofabitch"
+    },
+    {
+      "word": "fuckingsanatorium"
+    },
+    {
+      "word": "drug"
+    },
+    {
+      "word": "fuker"
+    },
+    {
+      "word": "*ganja"
+    },
+    {
+      "word": "ganja*"
+    },
+    {
+      "word": "*hashish"
+    },
+    {
+      "word": "hashish*"
+    },
+    {
+      "word": "*charas"
+    },
+    {
+      "word": "charas*"
+    },
+    {
+      "word": "*phukki"
+    },
+    {
+      "word": "phukki*"
+    },
+    {
+      "word": "*poppy husk"
+    },
+    {
+      "word": "poppy husk*"
+    },
+    {
+      "word": "*ecstasy"
+    },
+    {
+      "word": "ecstasy*"
+    },
+    {
+      "word": "*molly"
+    },
+    {
+      "word": "molly*"
+    },
+    {
+      "word": "*XTC"
+    },
+    {
+      "word": "XTC*"
+    },
+    {
+      "word": "*MDMA"
+    },
+    {
+      "word": "MDMA*"
+    },
+    {
+      "word": "*meth"
+    },
+    {
+      "word": "meth*"
+    },
+    {
+      "word": "*dendrite"
+    },
+    {
+      "word": "dendrite*"
+    },
+    {
+      "word": "*chillam"
+    },
+    {
+      "word": "chillam*"
+    },
+    {
+      "word": "*chillum"
+    },
+    {
+      "word": "chillum*"
+    },
+    {
+      "word": "*chilam"
+    },
+    {
+      "word": "chilam*"
+    },
+    {
+      "word": "*maal"
+    },
+    {
+      "word": "maal*"
+    },
+    {
+      "word": "*puria"
+    },
+    {
+      "word": "puria*"
+    },
+    {
+      "word": "*tola"
+    },
+    {
+      "word": "tola*"
+    },
+    {
+      "word": "kidnap"
+    },
+    {
+      "word": "smuggle"
+    },
+    {
+      "word": "smuggling"
+    },
+    {
+      "word": "traffick"
+    },
+    {
+      "word": "*pety"
+    },
+    {
+      "word": "pety*"
+    },
+    {
+      "word": "*peti"
+    },
+    {
+      "word": "peti*"
+    },
+    {
+      "word": "*petee"
+    },
+    {
+      "word": "petee*"
+    },
+    {
+      "word": "*khoka"
+    },
+    {
+      "word": "khoka*"
+    },
+    {
+      "word": "*LSD"
+    },
+    {
+      "word": "LSD*"
+    },
+    {
+      "word": "Biot"
+    },
+    {
+      "word": "Bayot"
+    }
+  ]
+}

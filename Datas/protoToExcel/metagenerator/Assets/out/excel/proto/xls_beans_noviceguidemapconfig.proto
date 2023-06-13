@@ -1,0 +1,40 @@
+/**
+* @file:   excel\NoviceGuideMapConfig.xlsx\NoviceGuideMapConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message NoviceGuideMapConfig{
+	// id 
+	uint32 id = 1;
+	// 模式id 
+	uint32 modeid = 2;
+	// 地图id 
+	uint32 mapid = 3;
+	// 引导key前缀 
+	string prefix = 4;
+	// 完成的guideID 
+	uint32 guideID = 5;
+	// 引导检查类型 
+	uint32 condition = 6;
+	// 主动退出是否自动完成 
+	bool autoFinish = 7;
+	// 显示结算信息 
+	bool showBattleResult = 8;
+	// 主动创建队伍 
+	bool showMatchTeam = 9;
+	// 特殊loading 
+	uint32 loadingType = 10;
+	// 跳过确认弹框标题 
+	string skipWindowTitle = 11;
+	// 跳过的ID 
+	uint32 skipStep = 12;
+}
+
+message NoviceGuideMapConfig_Array {
+	repeated NoviceGuideMapConfig items = 1;
+}

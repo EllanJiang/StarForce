@@ -1,0 +1,154 @@
+{
+  "items": [
+    {
+      "id": 1006,
+      "maxHpBuffId": 11,
+      "sprint": [
+        {
+          "BeginTime": 90,
+          "EndTime": 120
+        },
+        {
+          "BeginTime": 210,
+          "EndTime": 240
+        },
+        {
+          "BeginTime": 330,
+          "EndTime": 360
+        },
+        {
+          "BeginTime": 450,
+          "EndTime": 480
+        },
+        {
+          "BeginTime": 630,
+          "EndTime": 660
+        },
+        {
+          "BeginTime": 750,
+          "EndTime": 780
+        }
+      ]
+    },
+    {
+      "id": 1042,
+      "maxHpBuffId": 11,
+      "sprint": [
+        {
+          "BeginTime": 90,
+          "EndTime": 120
+        },
+        {
+          "BeginTime": 210,
+          "EndTime": 240
+        },
+        {
+          "BeginTime": 330,
+          "EndTime": 360
+        },
+        {
+          "BeginTime": 450,
+          "EndTime": 480
+        },
+        {
+          "BeginTime": 630,
+          "EndTime": 600
+        },
+        {
+          "BeginTime": 750,
+          "EndTime": 780
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "maxHpBuffId": 11,
+      "sprint": [
+        {
+          "BeginTime": 90,
+          "EndTime": 120
+        },
+        {
+          "BeginTime": 210,
+          "EndTime": 240
+        },
+        {
+          "BeginTime": 330,
+          "EndTime": 360
+        },
+        {
+          "BeginTime": 450,
+          "EndTime": 480
+        },
+        {
+          "BeginTime": 630,
+          "EndTime": 600
+        },
+        {
+          "BeginTime": 750,
+          "EndTime": 780
+        }
+      ]
+    },
+    {
+      "id": 1058,
+      "maxHpBuffId": 11,
+      "sprint": [
+        {
+          "BeginTime": 90,
+          "EndTime": 120
+        },
+        {
+          "BeginTime": 210,
+          "EndTime": 240
+        },
+        {
+          "BeginTime": 330,
+          "EndTime": 360
+        },
+        {
+          "BeginTime": 450,
+          "EndTime": 480
+        },
+        {
+          "BeginTime": 630,
+          "EndTime": 660
+        },
+        {
+          "BeginTime": 750,
+          "EndTime": 780
+        }
+      ]
+    },
+    {
+      "id": 1056,
+      "maxHpBuffId": 11,
+      "sprint": [
+        {
+          "BeginTime": 90,
+          "EndTime": 120
+        },
+        {
+          "BeginTime": 210,
+          "EndTime": 240
+        },
+        {
+          "BeginTime": 330,
+          "EndTime": 360
+        },
+        {
+          "BeginTime": 450,
+          "EndTime": 480
+        },
+        {
+          "BeginTime": 630,
+          "EndTime": 660
+        },
+        {
+          "BeginTime": 750,
+          "EndTime": 780
+        }
+      ]
+    }
+  ]
+}

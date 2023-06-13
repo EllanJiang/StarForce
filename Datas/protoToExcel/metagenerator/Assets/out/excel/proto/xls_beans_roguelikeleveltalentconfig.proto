@@ -1,0 +1,42 @@
+/**
+* @file:   excel\RogueLikeLevelTalentConfig.xlsx\RogueLikeLevelTalentConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RogueLikeLevelTalentConfig{
+	// 包id 
+	uint32 id = 1;
+	// 关卡 
+	uint32 atLevel = 2;
+	// 难度 
+	uint32 gameLevel = 3;
+	// 第一组 
+	bool firstGroup = 4;
+	// 包名 
+	string packetName = 5;
+	// 品质 
+	uint32 quality = 6;
+	// 天赋ID 
+	uint32 TalentId = 7;
+	// 天赋权重 
+	uint32 TalentWeight = 8;
+	// 武器种类 
+	uint32 weaponId = 9;
+	// 品质等级 
+	uint32 qualityLevel = 10;
+	// 武器等级 
+	uint32 weaponLevel = 11;
+	// 医疗针数量 
+	uint32 medsNum = 12;
+	// 金钱数量 
+	uint32 money = 13;
+}
+
+message RogueLikeLevelTalentConfig_Array {
+	repeated RogueLikeLevelTalentConfig items = 1;
+}

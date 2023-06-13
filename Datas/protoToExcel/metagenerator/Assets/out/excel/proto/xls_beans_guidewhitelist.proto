@@ -1,0 +1,18 @@
+/**
+* @file:   excel\GuideWhiteList.xlsx\GuideWhiteList
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GuideWhiteList{
+	// uuid 
+	string id = 1;
+}
+
+message GuideWhiteList_Array {
+	repeated GuideWhiteList items = 1;
+}

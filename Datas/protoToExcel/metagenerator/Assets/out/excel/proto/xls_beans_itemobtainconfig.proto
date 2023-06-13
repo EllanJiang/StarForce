@@ -1,0 +1,22 @@
+/**
+* @file:   excel\ItemObtainConfig.xlsx\ItemObtainConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemObtainConfig{
+	// 唯一值/mainType 
+	string id = 1;
+	// 值1(quality/是否区分subType) 
+	uint32 value = 2;
+	// 值2(subType) 
+	repeated uint32 subTypes = 3;
+}
+
+message ItemObtainConfig_Array {
+	repeated ItemObtainConfig items = 1;
+}

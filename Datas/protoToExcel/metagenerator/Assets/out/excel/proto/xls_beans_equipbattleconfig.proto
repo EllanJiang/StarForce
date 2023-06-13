@@ -1,0 +1,30 @@
+/**
+* @file:   excel\EquipBattleConfig.xlsx\EquipBattleConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message EquipBattleConfig{
+	// 编号 
+	uint32 id = 1;
+	// 物品名称 
+	string name = 2;
+	// 装备类型 
+	uint32 EquipType = 3;
+	// HUD图标 
+	uint32 icon = 4;
+	// AttributeConfig 
+	string weaponConfigName = 5;
+	//  
+	string Describe = 6;
+	// 推荐&特点列表 
+	repeated uint32 attributes = 7;
+}
+
+message EquipBattleConfig_Array {
+	repeated EquipBattleConfig items = 1;
+}

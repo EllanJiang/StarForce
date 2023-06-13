@@ -1,0 +1,54 @@
+/**
+* @file:   excel\GameMapConfig.xlsx\GameMapConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameMapConfig{
+	// 地图显示ID(局外规则) 
+	uint32 id = 1;
+	// 地图玩法ID 
+	uint32 idMS = 2;
+	// 难度 
+	uint32 gameLevel = 3;
+	// 正式名称 
+	string name = 4;
+	// 预告时间 
+	int64 displayTime = 5;
+	// 上架时间 
+	int64 openTime = 6;
+	// 下架时间 
+	int64 closeTime = 7;
+	// 排序（越小越靠前） 
+	uint32 sortNum = 8;
+	// 标签ID 
+	uint32 tagID = 9;
+	// 分包场景位ID 
+	uint32 subPackageSceneBit = 10;
+	// 所属地图组id 
+	uint32 mapGroupID = 11;
+	// 预览图ID（暂时没用） 
+	uint32 previewID = 12;
+	// loading毛玻璃图ID 
+	uint32 loadingPicMBL = 13;
+	// loading清晰图ID 
+	uint32 loadingPicQX = 14;
+	// loading小地图 
+	uint32 loadingMiniMap = 15;
+	// 小地图是否屏蔽A包点 
+	bool MapASiteShow = 16;
+	// 小地图是否屏蔽B包点 
+	bool MapBSiteShow = 17;
+	// 随机权重 
+	uint32 matchWeight = 18;
+	// 开放最低段位 
+	uint32 unlockRankLevel = 19;
+}
+
+message GameMapConfig_Array {
+	repeated GameMapConfig items = 1;
+}

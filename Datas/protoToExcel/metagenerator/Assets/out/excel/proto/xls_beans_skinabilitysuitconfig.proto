@@ -1,0 +1,43 @@
+/**
+* @file:   excel\SkinAbilitySuitConfig.xlsx\SkinAbilitySuitConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SkinAbilitySuitConfig{
+	// 套装id 
+	uint32 id = 1;
+	// 套装名称 
+	string name = 2;
+	// 稀有度 
+	uint32 quality = 3;
+	// 套装图标 
+	uint32 bgId = 4;
+	// 菜单选项背景 
+	uint32 menuBgId = 5;
+	// 面板背景 
+	uint32 panelBgId = 6;
+	// 面板分数颜色 
+	string panelScoreColor = 7;
+	// 面板属性未激活颜色 
+	string panelAbilityInactiveColor = 8;
+	// 面板属性已激活颜色 
+	string panelAbilityActivedColor = 9;
+	// 套装内武器id 
+	repeated SkinAbilitySuitConfig_weaponList weaponList = 10;
+}
+
+message SkinAbilitySuitConfig_weaponList{
+	// 套装内武器id 
+	uint32 weaponID = 1;
+	// 套装内武器位置 
+	string position = 2;
+}
+
+message SkinAbilitySuitConfig_Array {
+	repeated SkinAbilitySuitConfig items = 1;
+}

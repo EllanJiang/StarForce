@@ -1,0 +1,32 @@
+/**
+* @file:   excel\PlayerReportEffectConfig.xlsx\PlayerReportEffectConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerReportEffectConfig{
+	// 规则id 
+	uint32 id = 1;
+	// 禁赛初始时间 
+	uint32 blockInitSec = 2;
+	// 禁赛多次举报延长时间 
+	uint32 blockReportExtendSec = 3;
+	// 禁赛多次触发延长时间 
+	uint32 blockRepeatExtendSec = 4;
+	// 单位时间内禁赛最长时间 
+	uint32 blockMaxiumSec = 5;
+	// 禁赛重置时间 
+	uint32 blockRefreshLoopSec = 6;
+	// 被举报成功邮件文案 
+	string sendmailText = 7;
+	// 被举报成功邮件标题文案 
+	string sendmailTitle = 8;
+}
+
+message PlayerReportEffectConfig_Array {
+	repeated PlayerReportEffectConfig items = 1;
+}

@@ -1,0 +1,26 @@
+/**
+* @file:   excel\HumanoidTargetBattleConfig.xlsx\HumanoidTargetBattleConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HumanoidTargetBattleConfig{
+	// 靶子id 
+	uint32 id = 1;
+	// TargetBaseConfig中的id 
+	uint32 BaseConfigId = 2;
+	// 护甲类型0.无甲1.半甲2.全甲 
+	uint32 ArmorType = 3;
+	// 最大血量 
+	float MaxHp = 4;
+	// 移动速度 
+	float MoveSpeed = 5;
+}
+
+message HumanoidTargetBattleConfig_Array {
+	repeated HumanoidTargetBattleConfig items = 1;
+}

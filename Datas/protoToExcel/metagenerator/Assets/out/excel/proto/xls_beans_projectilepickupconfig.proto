@@ -1,0 +1,22 @@
+/**
+* @file:   excel\ProjectilePickUpConfig.xlsx\ProjectilePickUpConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ProjectilePickUpConfig{
+	// id 
+	uint32 id = 1;
+	// 类型 
+	uint32 subType = 2;
+	// 时间 
+	uint32 showTime = 3;
+}
+
+message ProjectilePickUpConfig_Array {
+	repeated ProjectilePickUpConfig items = 1;
+}

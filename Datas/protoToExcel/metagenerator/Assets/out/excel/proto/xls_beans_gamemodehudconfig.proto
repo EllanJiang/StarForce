@@ -1,0 +1,50 @@
+/**
+* @file:   excel\GameModeHudConfig.xlsx\GameModeHudConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameModeHudConfig{
+	// 模式 
+	uint32 id = 1;
+	// 未被发现是否显示 
+	int32 MapGhostType = 2;
+	// 地图显示所有头像 
+	bool MapShowAllPlayer = 3;
+	// 是否显示爆破相关 
+	bool Bomb = 4;
+	// 是否显示C4携带者 
+	bool ShowBombCarry = 5;
+	// 是否AB包点浮标提示 
+	bool TitleShowABSite = 6;
+	// 包点浮标仅提示C4所在的点 
+	bool TitleOnlyShowC4Site = 7;
+	// 包点浮标是否屏蔽A包点 
+	bool OffASiteTitleShow = 8;
+	// 包点浮标是否屏蔽B包点 
+	bool OffBSiteTitleShow = 9;
+	// 是否观战显示时间 
+	bool CanTimeWatch = 10;
+	// 是否观战显示头像 
+	bool CanHeadWatch = 11;
+	// 是否推荐购买 
+	bool HasRecommend = 12;
+	// 头顶UI显示前三标记 
+	bool TitleShowTopRank = 13;
+	// 是否能打开麦克风 
+	bool CanOpenVolume = 14;
+	// 是否能打开扬声器 
+	bool CanOpenVoice = 15;
+	// 是否能打开聊天界面 
+	bool CanOpenChat = 16;
+	// 计分版模式 
+	uint32 ScoreRankMode = 17;
+}
+
+message GameModeHudConfig_Array {
+	repeated GameModeHudConfig items = 1;
+}

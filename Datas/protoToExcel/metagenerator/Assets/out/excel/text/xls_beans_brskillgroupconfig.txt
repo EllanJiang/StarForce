@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "modeId": 1101,
+      "skillId": 612000201,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000202,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000298,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000299,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000208,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000209,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000210,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000211,
+      "trackId": 1
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000203,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000204,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000272,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000273,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000208,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000209,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000210,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000211,
+      "trackId": 2
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000205,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000206,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000207,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000274,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000208,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000209,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000210,
+      "trackId": 3
+    },
+    {
+      "modeId": 1101,
+      "skillId": 612000211,
+      "trackId": 3
+    }
+  ]
+}

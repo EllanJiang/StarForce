@@ -1,0 +1,28 @@
+/**
+* @file:   excel\MVPExcellenceReason.xlsx\MVPExcellenceReason
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MVPExcellenceReason{
+	// 精彩类型 
+	uint32 excellenceType = 1;
+	// 达成条件 
+	uint32 cond = 2;
+	// 条件比较 
+	string compare = 3;
+	// 显示内容 
+	string showText = 4;
+	// 模式id 
+	repeated uint32 modeid = 5;
+	// 优先级（最高5最低1） 
+	uint32 showLevel = 6;
+}
+
+message MVPExcellenceReason_Array {
+	repeated MVPExcellenceReason items = 1;
+}

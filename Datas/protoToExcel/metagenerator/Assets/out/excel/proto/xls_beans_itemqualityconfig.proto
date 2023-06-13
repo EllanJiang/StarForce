@@ -1,0 +1,38 @@
+/**
+* @file:   excel\ItemQualityConfig.xlsx\ItemQualityConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemQualityConfig{
+	// 品质等级 
+	uint32 id = 1;
+	// 品质条色 
+	string colorLine = 2;
+	// 品质板色 
+	string colorSquare = 3;
+	// 品质底线色 
+	string colorUnder = 4;
+	// 边框图片名 
+	uint32 framepath = 5;
+	// 武器名 
+	string weaponqualityname = 6;
+	// 角色名 
+	string rolequalityname = 7;
+	//  
+	string itemqualityname = 8;
+	// 稀有物品背景图 
+	uint32 unpackedBackgroundPath = 9;
+	// 任务奖励品质背景 
+	uint32 taskRewardItemQualityBg = 10;
+	// 品质GS系数 
+	uint32 qualityScore = 11;
+}
+
+message ItemQualityConfig_Array {
+	repeated ItemQualityConfig items = 1;
+}

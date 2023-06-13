@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "iconID": 5300001,
+      "id": 1,
+      "isLock": 1,
+      "slotID": 1001
+    },
+    {
+      "iconID": 0,
+      "id": 2,
+      "isLock": 0,
+      "slotID": 1002
+    },
+    {
+      "iconID": 0,
+      "id": 3,
+      "isLock": 0,
+      "slotID": 1003
+    },
+    {
+      "iconID": 0,
+      "id": 4,
+      "isLock": 0,
+      "slotID": 1004
+    },
+    {
+      "iconID": 0,
+      "id": 5,
+      "isLock": 0,
+      "slotID": 1005
+    },
+    {
+      "iconID": 0,
+      "id": 6,
+      "isLock": 0,
+      "slotID": 1006
+    },
+    {
+      "iconID": 0,
+      "id": 7,
+      "isLock": 0,
+      "slotID": 1007
+    },
+    {
+      "iconID": 5300002,
+      "id": 8,
+      "isLock": 1,
+      "slotID": 1008
+    }
+  ]
+}

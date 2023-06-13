@@ -1,0 +1,316 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "mode": 1055,
+      "skillId": 612000001,
+      "weight": 10
+    },
+    {
+      "id": 2,
+      "mode": 1055,
+      "skillId": 612000002,
+      "weight": 10
+    },
+    {
+      "id": 3,
+      "mode": 1055,
+      "skillId": 612000003,
+      "weight": 10
+    },
+    {
+      "id": 4,
+      "mode": 1055,
+      "skillId": 612000004,
+      "weight": 10
+    },
+    {
+      "id": 5,
+      "mode": 1055,
+      "skillId": 612000005,
+      "weight": 10
+    },
+    {
+      "id": 6,
+      "mode": 1055,
+      "skillId": 612000006,
+      "weight": 10
+    },
+    {
+      "id": 7,
+      "mode": 1055,
+      "skillId": 612000007,
+      "weight": 10
+    },
+    {
+      "id": 8,
+      "mode": 1055,
+      "skillId": 612000008,
+      "weight": 10
+    },
+    {
+      "id": 9,
+      "mode": 1055,
+      "skillId": 612000009,
+      "weight": 10
+    },
+    {
+      "id": 10,
+      "mode": 1055,
+      "skillId": 612000010,
+      "weight": 10
+    },
+    {
+      "id": 11,
+      "mode": 1055,
+      "skillId": 612000011,
+      "weight": 10
+    },
+    {
+      "id": 12,
+      "mode": 1055,
+      "skillId": 612000012,
+      "weight": 10
+    },
+    {
+      "id": 13,
+      "mode": 1055,
+      "skillId": 612000013,
+      "weight": 10
+    },
+    {
+      "id": 14,
+      "mode": 1055,
+      "skillId": 612000020,
+      "weight": 10
+    },
+    {
+      "id": 15,
+      "mode": 1055,
+      "skillId": 612000022,
+      "weight": 10
+    },
+    {
+      "id": 16,
+      "mode": 1055,
+      "skillId": 612000023,
+      "weight": 10
+    },
+    {
+      "id": 17,
+      "mode": 1055,
+      "skillId": 612000025,
+      "weight": 0
+    },
+    {
+      "id": 18,
+      "mode": 1055,
+      "skillId": 612000026,
+      "weight": 0
+    },
+    {
+      "id": 19,
+      "mode": 1055,
+      "skillId": 612000027,
+      "weight": 10
+    },
+    {
+      "id": 20,
+      "mode": 1055,
+      "skillId": 612000028,
+      "weight": 10
+    },
+    {
+      "id": 21,
+      "mode": 1055,
+      "skillId": 612000033,
+      "weight": 10
+    },
+    {
+      "id": 22,
+      "mode": 1055,
+      "skillId": 612000034,
+      "weight": 10
+    },
+    {
+      "id": 23,
+      "mode": 1055,
+      "skillId": 612000035,
+      "weight": 10
+    },
+    {
+      "id": 24,
+      "mode": 1055,
+      "skillId": 612000037,
+      "weight": 10
+    },
+    {
+      "id": 25,
+      "mode": 1055,
+      "skillId": 612000038,
+      "weight": 10
+    },
+    {
+      "id": 26,
+      "mode": 1055,
+      "skillId": 612000039,
+      "weight": 0
+    },
+    {
+      "id": 27,
+      "mode": 1055,
+      "skillId": 612000040,
+      "weight": 10
+    },
+    {
+      "id": 28,
+      "mode": 1055,
+      "skillId": 612000041,
+      "weight": 0
+    },
+    {
+      "id": 29,
+      "mode": 1055,
+      "skillId": 612000042,
+      "weight": 0
+    },
+    {
+      "id": 30,
+      "mode": 1055,
+      "skillId": 612000043,
+      "weight": 10
+    },
+    {
+      "id": 31,
+      "mode": 1055,
+      "skillId": 612000044,
+      "weight": 10
+    },
+    {
+      "id": 32,
+      "mode": 1055,
+      "skillId": 612000045,
+      "weight": 0
+    },
+    {
+      "id": 33,
+      "mode": 1055,
+      "skillId": 612000046,
+      "weight": 0
+    },
+    {
+      "id": 34,
+      "mode": 1055,
+      "skillId": 612000047,
+      "weight": 0
+    },
+    {
+      "id": 35,
+      "mode": 1055,
+      "skillId": 612000048,
+      "weight": 10
+    },
+    {
+      "id": 36,
+      "mode": 1055,
+      "skillId": 612000049,
+      "weight": 10
+    },
+    {
+      "id": 37,
+      "mode": 1055,
+      "skillId": 612000050,
+      "weight": 10
+    },
+    {
+      "id": 38,
+      "mode": 1055,
+      "skillId": 612000051,
+      "weight": 0
+    },
+    {
+      "id": 39,
+      "mode": 1055,
+      "skillId": 612000052,
+      "weight": 0
+    },
+    {
+      "id": 40,
+      "mode": 1055,
+      "skillId": 612000053,
+      "weight": 0
+    },
+    {
+      "id": 41,
+      "mode": 1055,
+      "skillId": 612000054,
+      "weight": 10
+    },
+    {
+      "id": 42,
+      "mode": 1055,
+      "skillId": 612000055,
+      "weight": 0
+    },
+    {
+      "id": 43,
+      "mode": 1055,
+      "skillId": 612000056,
+      "weight": 10
+    },
+    {
+      "id": 44,
+      "mode": 1055,
+      "skillId": 612000057,
+      "weight": 10
+    },
+    {
+      "id": 45,
+      "mode": 1055,
+      "skillId": 612000058,
+      "weight": 10
+    },
+    {
+      "id": 46,
+      "mode": 1055,
+      "skillId": 612000059,
+      "weight": 10
+    },
+    {
+      "id": 47,
+      "mode": 1055,
+      "skillId": 612000060,
+      "weight": 10
+    },
+    {
+      "id": 48,
+      "mode": 1055,
+      "skillId": 612000061,
+      "weight": 10
+    },
+    {
+      "id": 49,
+      "mode": 1055,
+      "skillId": 612000062,
+      "weight": 10
+    },
+    {
+      "id": 50,
+      "mode": 1055,
+      "skillId": 612000063,
+      "weight": 10
+    },
+    {
+      "id": 51,
+      "mode": 1055,
+      "skillId": 612000064,
+      "weight": 10
+    },
+    {
+      "id": 52,
+      "mode": 1055,
+      "skillId": 612000080,
+      "weight": 10
+    }
+  ]
+}

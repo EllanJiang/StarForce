@@ -1,0 +1,38 @@
+/**
+* @file:   excel\GameMapGroupConfig.xlsx\GameMapGroupConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameMapGroupConfig{
+	// 地图组ID 
+	uint32 id = 1;
+	// 匹配key 
+	uint32 matchKey = 2;
+	// 匹配模式 
+	uint32 mode = 3;
+	// 地图组名称 
+	string name = 4;
+	// 卡面图片id 
+	uint32 iconID = 5;
+	// 所属页签 
+	uint32 menuID = 6;
+	// 活动标签 
+	uint32 groupTag = 7;
+	// 自动补齐队友开关 
+	uint32 joinMatchSwitch = 8;
+	// 实际参与匹配的地图组 
+	repeated uint32 groups = 9;
+	// 大厅推荐位 
+	uint32 lobbyRecommend = 10;
+	// 大厅推荐时显示的文本 
+	string lobbyRecommendDesc = 11;
+}
+
+message GameMapGroupConfig_Array {
+	repeated GameMapGroupConfig items = 1;
+}

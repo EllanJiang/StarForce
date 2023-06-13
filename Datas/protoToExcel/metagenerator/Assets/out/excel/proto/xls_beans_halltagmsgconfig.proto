@@ -1,0 +1,22 @@
+/**
+* @file:   excel\HallTagMsgConfig.xlsx\HallTagMsgConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HallTagMsgConfig{
+	// 标签ID 
+	uint32 id = 1;
+	// 标签文本 
+	string tagName = 2;
+	// 标签底板 
+	uint32 tagBgId = 3;
+}
+
+message HallTagMsgConfig_Array {
+	repeated HallTagMsgConfig items = 1;
+}

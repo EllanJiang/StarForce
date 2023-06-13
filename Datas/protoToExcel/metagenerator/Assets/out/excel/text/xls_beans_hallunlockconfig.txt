@@ -1,0 +1,342 @@
+{
+  "items": [
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": false,
+      "id": 1,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        18,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 2,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": false,
+      "id": 3,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 4,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 5,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 6,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 7,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 8,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 9,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        28,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 10,
+      "isShowBG": 0,
+      "unlockLevel": 8
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 11,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 12,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 13,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        18,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 14,
+      "isShowBG": 0,
+      "unlockLevel": 3
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 15,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 16,
+      "isShowBG": 0,
+      "unlockLevel": 3
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        24,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 17,
+      "isShowBG": 0,
+      "unlockLevel": 3
+    },
+    {
+      "currencyTypes": [
+        1,
+        2,
+        29,
+        30
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 18,
+      "isShowBG": 0,
+      "unlockLevel": 3
+    },
+    {
+      "currencyTypes": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": false,
+      "id": 19,
+      "isShowBG": 1,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": false,
+      "id": 20,
+      "isShowBG": 0,
+      "unlockLevel": 10
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 21,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 22,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": false,
+      "id": 23,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 24,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 25,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    },
+    {
+      "currencyTypes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "desc": "",
+      "enableNavigate": true,
+      "id": 26,
+      "isShowBG": 0,
+      "unlockLevel": 0
+    }
+  ]
+}

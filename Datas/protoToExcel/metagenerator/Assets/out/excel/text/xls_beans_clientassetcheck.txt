@@ -1,0 +1,508 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "com.tencent.ig"
+    },
+    {
+      "id": 2,
+      "name": "com.tencent.iglite"
+    },
+    {
+      "id": 3,
+      "name": "com.activision.callofduty.shooter"
+    },
+    {
+      "id": 4,
+      "name": "com.whatsapp"
+    },
+    {
+      "id": 5,
+      "name": "com.vkontakte.android"
+    },
+    {
+      "id": 6,
+      "name": "com.instagram.android"
+    },
+    {
+      "id": 7,
+      "name": "com.criticalforceentertainment.criticalops"
+    },
+    {
+      "id": 8,
+      "name": "com.critical.strike2"
+    },
+    {
+      "id": 9,
+      "name": "com.moderncounterstrike.fpsshooting.freegames"
+    },
+    {
+      "id": 10,
+      "name": "com.ForgeGames.SpecialForcesGroup2"
+    },
+    {
+      "id": 11,
+      "name": "com.axlebolt.standoff2"
+    },
+    {
+      "id": 12,
+      "name": "com.fungames.sniper3d"
+    },
+    {
+      "id": 13,
+      "name": "com.zhiliaoapp.musically"
+    },
+    {
+      "id": 14,
+      "name": "com.netflix.mediaclient"
+    },
+    {
+      "id": 15,
+      "name": "com.google.android.youtube"
+    },
+    {
+      "id": 16,
+      "name": "com.mobile.legends"
+    },
+    {
+      "id": 17,
+      "name": "com.kiloo.subwaysurf"
+    },
+    {
+      "id": 18,
+      "name": "com.facebook.katana"
+    },
+    {
+      "id": 19,
+      "name": "com.supercell.brawlstars"
+    },
+    {
+      "id": 20,
+      "name": "com.mojang.minecraftpe"
+    },
+    {
+      "id": 21,
+      "name": "com.roblox.client"
+    },
+    {
+      "id": 22,
+      "name": "com.dts.freefiremax"
+    },
+    {
+      "id": 23,
+      "name": "com.dts.freefireth"
+    },
+    {
+      "id": 24,
+      "name": "com.battlefun.c1game.na"
+    },
+    {
+      "id": 25,
+      "name": "com.hitrock.hideonline"
+    },
+    {
+      "id": 26,
+      "name": "com.chaloapps.roosterrudy"
+    },
+    {
+      "id": 27,
+      "name": "com.topgamestudio.americanblocksnipersurvival"
+    },
+    {
+      "id": 28,
+      "name": "com.tfgame.criticalstrike"
+    },
+    {
+      "id": 29,
+      "name": "block.app.wars"
+    },
+    {
+      "id": 30,
+      "name": "com.nobodyshot.POLYWAR"
+    },
+    {
+      "id": 31,
+      "name": "com.sgs.antiterrorism.counterattack.commandomissiongame"
+    },
+    {
+      "id": 32,
+      "name": "com.ohbibi.fps"
+    },
+    {
+      "id": 33,
+      "name": "com.rexetstudio.blockstrike"
+    },
+    {
+      "id": 34,
+      "name": "com.Nobodyshot.kuboom"
+    },
+    {
+      "id": 35,
+      "name": "com.wildlife.games.battle.royale.free.zooba"
+    },
+    {
+      "id": 36,
+      "name": "com.devgame66.csshot"
+    },
+    {
+      "id": 37,
+      "name": "com.SevenBulls.CounterAttackShooter"
+    },
+    {
+      "id": 38,
+      "name": "com.netease.h75na"
+    },
+    {
+      "id": 39,
+      "name": "com.glu.zbs"
+    },
+    {
+      "id": 40,
+      "name": "com.gamedevltd.wwh"
+    },
+    {
+      "id": 41,
+      "name": "com.cdgames.fidget3d"
+    },
+    {
+      "id": 42,
+      "name": "com.Garawell.BridgeRace"
+    },
+    {
+      "id": 43,
+      "name": "com.Upperpik.HairChallenge"
+    },
+    {
+      "id": 44,
+      "name": "com.pronetis.ironball2"
+    },
+    {
+      "id": 45,
+      "name": "com.robtopx.geometryjumplite"
+    },
+    {
+      "id": 46,
+      "name": "com.nexters.herowars"
+    },
+    {
+      "id": 47,
+      "name": "com.kingsgroup.sos"
+    },
+    {
+      "id": 48,
+      "name": "com.smallgiantgames.empires"
+    },
+    {
+      "id": 49,
+      "name": "net.wargaming.wot.blitz"
+    },
+    {
+      "id": 50,
+      "name": "com.avito.android"
+    },
+    {
+      "id": 51,
+      "name": "org.telegram.messenger"
+    },
+    {
+      "id": 52,
+      "name": "app.zenly.locator"
+    },
+    {
+      "id": 53,
+      "name": "app.source.getcontact"
+    },
+    {
+      "id": 54,
+      "name": "ru.ozon.app.android"
+    },
+    {
+      "id": 55,
+      "name": "com.wildberries.ru"
+    },
+    {
+      "id": 56,
+      "name": "com.plarium.raidlegends"
+    },
+    {
+      "id": 57,
+      "name": "com.playrix.gardenscapes"
+    },
+    {
+      "id": 58,
+      "name": "com.playrix.homescapes"
+    },
+    {
+      "id": 59,
+      "name": "ru.aliexpress.buyer"
+    },
+    {
+      "id": 60,
+      "name": "com.ZtepGC.BubbleKvass"
+    },
+    {
+      "id": 61,
+      "name": "ua.com.avias.app"
+    },
+    {
+      "id": 62,
+      "name": "com.playstrom.dop2"
+    },
+    {
+      "id": 63,
+      "name": "com.innersloth.spacemafia"
+    },
+    {
+      "id": 64,
+      "name": "com.fugo.wow"
+    },
+    {
+      "id": 65,
+      "name": "com.kumobius.android.walljumper"
+    },
+    {
+      "id": 66,
+      "name": "com.TeamTerrible.BabyInYellow"
+    },
+    {
+      "id": 67,
+      "name": "com.GybeGames.FillTheFridgeTest"
+    },
+    {
+      "id": 68,
+      "name": "com.KisekiGames.smart"
+    },
+    {
+      "id": 69,
+      "name": "com.wildlifestudios.jet.airplane.games.sky.warriors"
+    },
+    {
+      "id": 70,
+      "name": "com.ea.gp.apexlegendsmobilefps"
+    },
+    {
+      "id": 71,
+      "name": "com.edkongames.ww2"
+    },
+    {
+      "id": 72,
+      "name": "com.AlfaBravo.CombatMaster"
+    },
+    {
+      "id": 73,
+      "name": "com.ubisoft.rainbowsixmobile.r6.fps.pvp.shooter"
+    },
+    {
+      "id": 74,
+      "name": "com.square_enix.android_googleplay.ff7fsww"
+    },
+    {
+      "id": 75,
+      "name": "com.ea.gp.odessa"
+    },
+    {
+      "id": 76,
+      "name": "com.ea.game.pvz2_row"
+    },
+    {
+      "id": 77,
+      "name": "com.blizzard.diablo.immortal"
+    },
+    {
+      "id": 78,
+      "name": "com.discord"
+    },
+    {
+      "id": 79,
+      "name": "com.yappy"
+    },
+    {
+      "id": 80,
+      "name": "video.like"
+    },
+    {
+      "id": 81,
+      "name": "ru.rutube.app"
+    },
+    {
+      "id": 82,
+      "name": "com.twitter.android"
+    },
+    {
+      "id": 83,
+      "name": "tv.twitch.android.app"
+    },
+    {
+      "id": 84,
+      "name": "com.gamedevltd.modernstrike"
+    },
+    {
+      "id": 85,
+      "name": "com.edkongames.mobs"
+    },
+    {
+      "id": 86,
+      "name": "com.vng.g6.a.zombie"
+    },
+    {
+      "id": 87,
+      "name": "com.cg.cowboy"
+    },
+    {
+      "id": 88,
+      "name": "net.mobigame.zombietsunami"
+    },
+    {
+      "id": 89,
+      "name": "com.kitkagames.fallbuddies"
+    },
+    {
+      "id": 90,
+      "name": "com.nianticlabs.pokemongo"
+    },
+    {
+      "id": 91,
+      "name": "com.miniclip.eightballpool"
+    },
+    {
+      "id": 92,
+      "name": "me.pou.app"
+    },
+    {
+      "id": 93,
+      "name": "com.outfit7.mytalkingtomfree"
+    },
+    {
+      "id": 94,
+      "name": "com.outfit7.mytalkingangelafree"
+    },
+    {
+      "id": 95,
+      "name": "com.elt2.sg"
+    },
+    {
+      "id": 96,
+      "name": "com.wn.hairtattoo"
+    },
+    {
+      "id": 97,
+      "name": "com.candywriter.bitlife"
+    },
+    {
+      "id": 98,
+      "name": "com.tencent.tmgp.ssksea"
+    },
+    {
+      "id": 99,
+      "name": "com.king.candycrushsaga"
+    },
+    {
+      "id": 100,
+      "name": "com.miracle.savethedoge.an"
+    },
+    {
+      "id": 101,
+      "name": "com.supercell.clashroyale"
+    },
+    {
+      "id": 102,
+      "name": "com.shopee.th"
+    },
+    {
+      "id": 103,
+      "name": "com.zzkko"
+    },
+    {
+      "id": 104,
+      "name": "com.scretmobile"
+    },
+    {
+      "id": 105,
+      "name": "online.megaflix.trailers.v2"
+    },
+    {
+      "id": 106,
+      "name": "com.facebook.orca"
+    },
+    {
+      "id": 107,
+      "name": "com.univision.prendetv"
+    },
+    {
+      "id": 108,
+      "name": "com.spotify.music"
+    },
+    {
+      "id": 109,
+      "name": "com.dts.freefireth+"
+    },
+    {
+      "id": 110,
+      "name": "in.sweatco.app"
+    },
+    {
+      "id": 111,
+      "name": "com.brave.browser"
+    },
+    {
+      "id": 112,
+      "name": "com.snapchat.android"
+    },
+    {
+      "id": 113,
+      "name": "subway+surfers&c=apps"
+    },
+    {
+      "id": 114,
+      "name": "com.videoeditorpro.android"
+    },
+    {
+      "id": 115,
+      "name": "com.engro.cleanerforsns"
+    },
+    {
+      "id": 116,
+      "name": "com.starmakerinteractive.starmaker"
+    },
+    {
+      "id": 117,
+      "name": "com.whatsapp.w4b"
+    },
+    {
+      "id": 118,
+      "name": "com.bravo.booster"
+    },
+    {
+      "id": 119,
+      "name": "com.mercadolibre"
+    },
+    {
+      "id": 120,
+      "name": "com.disney.disneyplus"
+    },
+    {
+      "id": 121,
+      "name": "com.hbo.hbonow"
+    },
+    {
+      "id": 122,
+      "name": "com.teacapps.barcodescanner"
+    },
+    {
+      "id": 123,
+      "name": "com.pinterest"
+    },
+    {
+      "id": 124,
+      "name": "com.snowcorp.stickerly.android"
+    },
+    {
+      "id": 125,
+      "name": "com.lemon.lvoverseas"
+    },
+    {
+      "id": 126,
+      "name": "com.easygames.race"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+/**
+* @file:   excel\StoreBlackMarketItemPool.xlsx\StoreBlackMarketItemPool
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreBlackMarketItemPool{
+	// 商品池 
+	uint32 poolId = 1;
+	// 商品ID（对应store表） 
+	uint32 goodsId = 2;
+	// 权重 
+	uint32 weight = 3;
+	// 登场标识（1代表有登场表现，空代表没有登场表现) 
+	uint32 mark = 4;
+}
+
+message StoreBlackMarketItemPool_Array {
+	repeated StoreBlackMarketItemPool items = 1;
+}

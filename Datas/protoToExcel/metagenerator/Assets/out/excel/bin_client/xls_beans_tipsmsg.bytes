@@ -1,0 +1,504 @@
+
+
+err_accNotValid	649648397
+'
+err_alreadyInAnotherRoom	245127722
+
+err_alreadyLogin	429985065
+
+	err_dbErr	342187759
+
+err_forbidden	469988379
+
+err_inGaming	512884499
+ 
+err_levelNotMatch	110907312
+
+err_invalidMod	327183395
+
+
+err_noRole	127988488
+
+err_notInRoom	604293744
+
+err_otherInPos	699298465
+
+err_paramMissing	090187318
+
+err_paramsFailed	436238552
+
+
+err_passwd	071313498
+
+err_posFull	731932589
+
+	err_retry	951640383
+
+err_serverBusy	470435015
+ 
+err_targetInvalid	961656012
+
+err_notOwner	459307773
+
+err_unknown	958413383
+!
+err_noAvaliableDsA	254585686
+!
+err_invalidVersion	936964963
+
+err_alreadyIn	807123334
+ 
+err_itemNotEnough	181745856
+
+err_itemNotSell	497222800
+
+err_attrid_1	003456870
+
+err_attrid_2	480491518
+#
+err_itemUseForbidden	676438928
+"
+err_channelNotExist	723280754
+
+err_notInChannel	041511858
+
+err_mailNoReward	964942846
+
+err_bagFull	942003094
+
+err_mailInvalid	005084724
+
+err_itemEquiped	801644747
+
+err_isSwaping	682404921
+
+err_Timeout	880437139
+
+err_Refused	571574182
+-
+err_notAvaliableKeyOrValueType	275483715
+ 
+err_invalidGender	355383875
+ 
+err_invalidString	990852636
+!
+err_playerNotExist	522400053
+ 
+err_targetNotIdle	349206375
+*
+err_inviteNotExistOrTimeout	684449196
+
+err_invalidBagid	639112852
+!
+err_statusNotRight	913021363
+
+err_toolongName	432630248
+ 
+err_notAllowEnter	782069740
+ 
+err_gamingNotJoin	162655947
+"
+unlockPersonalDress	327185273
+!
+err_inviladRoomSet	652797987
+
+err_notForSale	972155881
+ 
+err_purchaseLimit	114771143
+'
+err_alreadyInAnotherTeam	525603705
+
+err_notInTeam	360446898
+(
+err_createTeamTooFrequent	850286174
+(
+err_createRoomTooFrequent	850286174
+"
+err_invalidFastCond	074711126
+
+err_deviceId	210532533
+
+
+err_config	856025556
+
+err_noReward	792963459
+!
+err_goodsTimeError	369307438
+
+err_paramError	126867258
+
+err_taskNotExist	816966375
+
+err_taskExpired	758729304
+ 
+err_exchangeLimit	703018372
+
+err_taskNotFini	126407549
+"
+err_alreadyMatching	757678889
+ 
+err_playerNotWait	748799251
+
+err_timeDuration	191385752
+ 
+err_invalidPerson	153132404
+
+err_nameOverLen	348948743
+"
+err_searchcondition	259827997
+#
+err_applyJoinTimeOut	099029418
+)
+err_DayLikeCountReachLimit	252712252
+
+err_serverBusy	581242485
+
+err_serverClosed	603380595
+)
+err_P2PLikeCountReachLimit	252712252
+'
+err_battleDetailNotExist	671070487
+!
+err_campCountLimit	626631698
+"
+err_sdkVerifyFailed	738818320
+$
+err_chatAuthorityFail	880101390
+1
+"err_PersonalityConfigurationFailed	676438928
+#
+err_signatureTooLong	728349747
+$
+err_invalidCampPerson	985175125
+
+err_inBlacklist	797444386
+"
+err_gamingNotCancel	341646887
+
+err_teamNotExist	259483664
+#
+err_matchingOrGaming	189973662
+$
+err_inTeamNotJoinRoom	814284259
+&
+err_inGamingNotJoinRoom	345394965
+
+
+err_inTeam	672156086
+
+err_inMatching	842038519
+'
+err_applyJoinTeamTimeOut	420559407
+'
+err_statusForSelectGroup	749269805
+$
+err_statusFroInteract	489954876
+ 
+err_notTeamLeader	324472940
+%
+err_teamMemberNotReady	455716625
+%
+err_teamStatusNotMatch	643974235
+!
+err_teamMemberOver	356668698
+%
+err_matchingCannotKick	462180045
+
+err_matchTimeOut	105437259
+!
+err_matchForCancel	205514650
+!
+err_roleForceLeave	721502044
+#
+err_leaderKickPlayer	095104181
+&
+err_inGamingNotJoinTeam	527801779
+#
+err_roomGameNotStart	404274190
+$
+err_matchGameNotStart	404274190
+ 
+err_notWaitStatus	986873315
+"
+err_noClientVersion	450616095
+$
+err_teamMemberOffline	797139897
++
+err_playerOfflineCancelMatch	300111645
+#
+err_svrConnectionOut	217827706
+$
+err_teamMemberLvlLess	946943614
+ 
+err_alreadyFollow	018189547
+
+err_roomLimit	982228818
+
+err_taskFinished	964942846
+
+err_taskInput	130704065
+
+err_taskNotOpen	772632734
+
+err_taskNoReward	978349485
+
+err_roomNotExist	047903714
+
+err_selfNotIdle	137240303
+ 
+err_invalidStatus	652607224
+"
+err_invalidMemCount	565035592
+!
+err_rankSeasonOver	076275005
+*
+err_roleOfflineNotStartGame	734986743
+$
+err_battlePassNotOpen	004096652
+"
+err_battlePassInput	126867258
+'
+err_battlePassLevelLimit	647260622
+%
+err_battlePassAwardGot	964942846
+%
+err_battlePassAdvanced	778734504
+
+err_tokenExpire	544664167
+
+err_tokenInvalid	273303723
+ 
+err_signinExpired	775121867
+ 
+err_signinNotFini	356254328
+!
+err_signinFinished	065457882
+ 
+err_levelFinished	964942846
+
+err_levelNotFini	034725397
+ 
+err_noLevelReward	978349485
+"
+err_alreadyRewarded	964942846
+
+err_paramErr	958413383
+%
+err_chestConfigNotFind	958413383
+"
+err_chestDayOpenMax	136283237
+&
+err_oneChestIsUnlocking	263764408
+$
+err_chestRetNotLocked	656144543
+
+err_notAviliable	760493466
+#
+err_teamAlreadyExist	609437086
+#
+err_noRealGamePlayer	966901864
+'
+err_playerAlreadyObserve	542257847
+
+err_loginClosed	383333861
+!
+err_accountNotAuth	590532825
+"
+err_loginAddressErr	527950028
+
+err_achiNotOpen	301566164
+ 
+err_achiNotFinish	338611478
+ 
+err_achiRewardGot	964942846
+$
+err_achiScoreNoReward	311904855
+&
+err_invalidReportTarget	153148988
+ 
+err_inBattleBlock	264572807
+"
+err_questionareCond	657954258
+
+err_observerSwap	297125634
+
+err_guestCanBind	606620978
+
+err_bindConfilct	359905013
+$
+err_platformUserExist	322489444
+(
+err_operateFailForTimeOut	282327522
+%
+err_luckyStrikeExpired	376376441
+%
+err_luckyStrikeNotOpen	680066275
+&
+err_luckyStrikeFinished	705242322
++
+err_luckyStrikeNotEnoughCoin	576288012
+*
+err_luckyStrikeIsResetFalse	963721981
+&
+err_luckyStrikeNotReset	650900585
+ 
+err_tokenNotMatch	492068770
+$
+err_createRoleNotAuth	887525931
+!
+err_chatMsgTooLong	042210176
+#
+err_followReachLimit	144641451
+#
+err_playerAlreadySit	672253282
+)
+err_inviteApplyTooFrequent	850286174
+$
+err_activitiesExpired	836782849
+%
+err_activitiesFinished	964942846
+!
+err_bpRefreshCount	926505458
+#
+err_bpTaskNotRefresh	630587895
+!
+err_bpRefreshRetry	958413383
+#
+err_noMapMatchMember	021093239
+$
+err_guestBindNotLogin	192651195
+
+err_paymentFail	042311580
+*
+err_repeatedPointBalanceOpt	436733976
+ 
+err_commentInited	958413383
+!
+err_itemCommentNum	488509817
+"
+err_itemCommentTime	567781545
+$
+err_commentStrTooLong	257887406
+&
+err_itemCommentStrDirty	031542140
+ 
+err_alreadyUpdown	226193623
+$
+err_itemScoreShowCond	703646967
+(
+err_itemScoreItemNoExists	829901272
+&
+err_itemCommentShowCond	703646967
+
+err_dirtyWord	031542140
+
+err_observerFull	787847856
+
+err_notOpenSet	675435707
+&
+err_rankedLevelNotMatch	084174637
+'
+err_rankedSeasonNotMatch	844541331
+
+err_slotLimit	137133125
+
+err_keyExist	958413383
+
+err_forbitDel	675426645
+
+err_isLogin	156446235
+
+err_uid	958413383
+
+err_NotFoundBag	958413383
+ 
+err_allocGateFail	242654715
+ 
+err_invalidRegion	180333597
+
+err_loginTimeOut	142225291
+'
+err_noviceCareerNoReward	699552668
+-
+err_tenInOneLuckyRoleCaseCount	903232802
+/
+ err_tenInOneLuckyCaseAwardedRecv	964942846
+1
+"err_tenInOneLuckyCaseRewardAllRecv	978349485
+'
+err_tenInOneLuckyActTime	836782849
+,
+err_tenInOneLuckyRoleShowCond	476476960
+
+err_attrid_29	908131697
+
+err_attrid_30	558309053
+!
+err_loadingDsFiles	966705865
+!
+err_mapNotDownload	383491935
+'
+err_modeCannotGamingJoin	538474740
+*
+err_placementMatchNotFinish	378151269
+
+err_useLimit	927545887
+
+err_privilegeCardNotActive
+
+err_privilegeCardExpired
+
+err_privilegeCardAwarded
+
+err_privilegeCardPurchased
+#
+err_lobbyVersionDrop	672825372
+&
+err_resourceVersionDrop	672825372
+ 
+err_bpRefreshPool	366422356
+ 
+err_dailyRegLimit	631091755
+&
+err_navigateGotoCurrent	404163297
+
+err_fundNotOpen	355546911
+%
+err_fundUnPurachasable	922252697
+$
+err_fundInvalidTarget	424819659
+"
+err_fundNotPurchase	183245748
+$
+err_battlePassNotOpen	411478796
+
+
+err_preReg	797841182
+
+err_inQueue	046915154
+*
+ClientCheat_Kictout_NoParms	429887157
+(
+ClientCheat_Kictout_Parms	594496504
+
+err_rankLevelGap	023453320
+
+err_preModeNotClear
+
+err_forbidGameForDiamond
+
+err_forbidGameForGM
+
+err_nameRepeat	163260661
+
+err_luckyStrikeRoleShowCond
+#
+err_senderFriendFull	627915419
+
+err_friendFull	023726016
+
+err_blockFull	813810613
+!
+err_startGameTimeout	581242485
+!
+err_weaponFeelDiff	913021363

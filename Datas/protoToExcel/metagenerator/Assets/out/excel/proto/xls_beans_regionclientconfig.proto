@@ -1,0 +1,20 @@
+/**
+* @file:   excel\RegionClientConfig.xlsx\RegionClientConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RegionClientConfig{
+	// 大区ID 
+	string id = 1;
+	// 默认多语言类型 
+	string defaultLanguage = 2;
+}
+
+message RegionClientConfig_Array {
+	repeated RegionClientConfig items = 1;
+}

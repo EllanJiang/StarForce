@@ -1,0 +1,24 @@
+/**
+* @file:   excel\BagPageConfig.xlsx\BagPageConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BagPageConfig{
+	//  
+	int32 id = 1;
+	//  
+	string name = 2;
+	// 类型 
+	uint32 type = 3;
+	// 筛选项ID 
+	repeated uint32 filters = 4;
+}
+
+message BagPageConfig_Array {
+	repeated BagPageConfig items = 1;
+}

@@ -1,0 +1,21 @@
+{
+  "Height": 0.8, //无人机高度
+  "Radius": 0.5, //无人机半径
+  "MaxHp": 80, //最大血量
+  "DimScanHz": 1.0, //模糊扫描频率S
+  "DimConeAngle": 150, //模糊锥形角度
+  "DimConeRadius": 150, //模糊锥形半径
+  "AccurateConeAngle": 120, //精确锥形角度
+  "AccurateConeRadius": 100, //精确锥形半径
+  "AccurateGuideTime": 3.0, //精确锁定引导时间S
+  "AccurateLockTime": 5.0, //精确锁定时间S
+  "MaxMoveSpeed": 8.0, //移动速度
+  "VerticalSpeed": 5.0, //垂直速度
+  "MaxRange": 150, //最大活动范围
+  "SpawnOffPos": {
+    "x": 0,
+    "y": 2,
+    "z": 2
+  }, //飞机出生点跟玩家位置关系
+  "SpawnXRot": 30 //飞机出生点初始俯视角度
+}

@@ -1,0 +1,38 @@
+/**
+* @file:   excel\RoleAttrDef.xlsx\RoleAttrDef
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleAttrDef{
+	// id 
+	uint32 id = 1;
+	// 初始值 
+	uint32 init = 2;
+	// 拥有上限(跟其他配置中的限制并存，0不限制） 
+	uint32 limit = 3;
+	// 物品名称 
+	string name = 4;
+	// 资源id 
+	uint32 iconID = 5;
+	// 大图id 
+	uint32 bigIconID = 6;
+	// 资源id 
+	uint32 miniIconID = 7;
+	// 品质 
+	uint32 quality = 8;
+	// 所属种类 
+	string typeName = 9;
+	// 道具描述tips 
+	string description = 10;
+	// 获得弹窗类型 
+	uint32 obtainType = 11;
+}
+
+message RoleAttrDef_Array {
+	repeated RoleAttrDef items = 1;
+}

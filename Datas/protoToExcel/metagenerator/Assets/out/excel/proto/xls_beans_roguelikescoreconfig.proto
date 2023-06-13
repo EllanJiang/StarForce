@@ -1,0 +1,78 @@
+/**
+* @file:   excel\RogueLikeScoreConfig.xlsx\RogueLikeScoreConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RogueLikeScoreConfig{
+	// 难度 
+	uint32 id = 1;
+	// 击杀怪物得分上限 
+	uint32 killMaxScore = 2;
+	// 击杀怪物起始计分点 
+	uint32 killScoreStartPoint = 3;
+	// 击杀怪物终止计分点 
+	uint32 killScoreEndPoint = 4;
+	// 伤害得分上限 
+	uint32 damageMaxScore = 5;
+	// 伤害起始计分点 
+	uint32 damageScoreStartPoint = 6;
+	// 伤害终止计分点 
+	uint32 damageScoreEndPoint = 7;
+	// 金钱得分上限 
+	uint32 moneyMaxScore = 8;
+	// 金钱起始计分点 
+	uint32 moneyScoreStartPoint = 9;
+	// 金钱终止计分点 
+	uint32 moneyScoreEndPoint = 10;
+	// 爆头得分上限 
+	uint32 shotHeadMaxScore = 11;
+	// 爆头起始计分点 
+	uint32 shotHeadScoreStartPoint = 12;
+	// 爆头终止计分点 
+	uint32 shotHeadScoreEndPoint = 13;
+	// 死亡扣分上限 
+	uint32 deadMaxScore = 14;
+	// 死亡起始扣分点 
+	uint32 deadScoreStartPoint = 15;
+	// 死亡终止扣分点 
+	uint32 deadScoreEndPoint = 16;
+	// 获得武器得分上限 
+	uint32 getWeaponMaxScore = 17;
+	// 获得武器起始计分点 
+	uint32 getWeaponScoreStartPoint = 18;
+	// 获得武器终止计分点 
+	uint32 getWeaponScoreEndPoint = 19;
+	// 单次伤害得分上限 
+	uint32 singleDamageMaxScore = 20;
+	// 单次伤害起始计分点 
+	uint32 singleDamageScoreStartPoint = 21;
+	// 单次伤害计分步长 
+	uint32 singleDamageStep = 22;
+	// 使用道具得分上限 
+	uint32 usePropMaxScore = 23;
+	// 使用道具起始计分点 
+	uint32 usePropScoreStartPoint = 24;
+	// 使用道具终止计分点 
+	uint32 usePropScoreEndPoint = 25;
+	// 使用投掷物得分上限 
+	uint32 useProjMaxScore = 26;
+	// 使用投掷物起始计分点 
+	uint32 useProjScoreStartPoint = 27;
+	// 使用投掷物终止计分点 
+	uint32 useProjScoreEndPoint = 28;
+	// 通关时长得分上限 
+	uint32 passTimeMaxScore = 29;
+	// 通关时长最大得分点 
+	uint32 passTimeGetMScorePoint = 30;
+	// 通关时长不能得分点 
+	uint32 passTimeNoScorePoint = 31;
+}
+
+message RogueLikeScoreConfig_Array {
+	repeated RogueLikeScoreConfig items = 1;
+}

@@ -1,0 +1,108 @@
+
+4µ”=HitAOEBallisticConfigData=Bomb0
+8
+@2Jµ[∂[X
+6∂”= HitAOEBallisticConfigData=Bomb_10
+8
+@2Jµ[∂[X
+:ô‘=$FixedFigureBallisticConfigData=Type00
+8
+@2Jµ[∂[X
+Jö‘=4FixedFigureBallisticConfigData=Type_famas_threepoint0
+8
+@2Jµ[∂[X
+Iõ‘=3FixedFigureBallisticConfigData=Type_famas_fourpoint0
+8
+@2Jµ[∂[X
+Iú‘=3FixedFigureBallisticConfigData=Type_famas_fivepoint0
+8
+@2Jµ[∂[X
+Jù‘=4FixedFigureBallisticConfigData=Type_galil_threepoint0
+8
+@2Jµ[∂[X
+Iû‘=3FixedFigureBallisticConfigData=Type_galil_fourpoint0
+8
+@2Jµ[∂[X
+Iü‘=3FixedFigureBallisticConfigData=Type_galil_fivepoint0
+8
+@2Jµ[∂[X
+G†‘=1FixedFigureBallisticConfigData=Type_M4_threepoint0
+8
+@2Jµ[∂[X
+F°‘=0FixedFigureBallisticConfigData=Type_M4_fivepoint0
+8
+@2Jµ[∂[X
+G¢‘=1FixedFigureBallisticConfigData=Type_M4_sevenpoint0
+8
+@2Jµ[∂[X
+I£‘=3FixedFigureBallisticConfigData=Type_AK47_threepoint0
+8
+@2Jµ[∂[X
+H§‘=2FixedFigureBallisticConfigData=Type_AK47_fivepoint0
+8
+@2Jµ[∂[X
+I•‘=3FixedFigureBallisticConfigData=Type_AK47_sevenpoint0
+8
+@2Jµ[∂[X
+N¶‘=-FixedFigureBallisticConfigData=Type_P90_round*	1842938490
+8
+@2Jµ[∂[X
+Uß‘=4FixedFigureBallisticConfigData=Type_Glock_threepoint*	1842938490
+8
+@2Jµ[∂[X
+>˝‘=BallisticLogicConfigHingeData*	5057585350
+8
+@2Jµ[∂[X
+6˛‘= BallisticLogicConfigHingeData==a0
+8
+@2Jµ[∂[X
+6ˇ‘= BallisticLogicConfigHingeData==b0
+8
+@2Jµ[∂[X
+8Ä’="BallisticLogicConfigHingeData==PVE0
+8
+@2Jµ[∂[X
+5·’=BallisticLogicConfigData=Bullet0
+8
+@2Jµ[∂[X
+:‚’=$BallisticLogicConfigData=BulletWater0
+8
+@2Jµ[∂[X
+C≈÷="BallisticLogicConfigSphereData=AOE*	7510269630
+8
+@2Jµ[∂[X
+I∆÷=(BallisticLogicConfigSphereData=SpellArea*	6273293610
+8
+@2Jµ[∂[X
+C«÷="BallisticLogicConfigSphereData=Fly*	8892360200
+8
+@2Jµ[∂[X
+J»÷=)BallisticLogicConfigSphereData=AOE_Bubble*	8089527180
+8
+@2Jµ[∂[X
+L…÷=+BallisticLogicConfigSphereData=AOE_Bubble01*	8089527180
+8
+@2Jµ[∂[X
+D©◊=#BallisticLogicConfigLineData=Bounce*	2620609930
+8
+@2Jµ[∂[X
+I™◊=(BallisticLogicConfigLineData=BounceSplit*	9483069620
+8
+@2Jµ[∂[X
+C´◊="BallisticLogicConfigLineData=Split*	2925123950
+8
+@2Jµ[∂[X
+F¨◊=%BallisticLogicConfigLineData=Bounce01*	2620609930
+8
+@2Jµ[∂[X
+4éÿ=$BallisticLogicConfigData=BulletWaterJµ[∂[X
+'çÿ=BallisticLogicConfigData=Bullet
+LÒÿ=+BallisticLogicConfigLineData=Bounce_LuanDou*	2620609930
+8
+@2Jµ[∂[X
+QÚÿ=0BallisticLogicConfigLineData=BounceSplit_LuanDou*	9483069620
+8
+@2Jµ[∂[X
+QÛÿ=0BallisticLogicConfigSphereData=SpellArea_LuanDou*	6273293610
+8
+@2Jµ[∂[X

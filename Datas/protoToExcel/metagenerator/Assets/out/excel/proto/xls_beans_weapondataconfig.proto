@@ -1,0 +1,108 @@
+/**
+* @file:   excel\WeaponDataConfig.xlsx\WeaponDataConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponDataConfig{
+	// 编号 
+	uint32 id = 1;
+	// 对应黑皮id 
+	uint32 fallbackId = 2;
+	// 物品名称 
+	string name = 3;
+	// 阵营(1-T 2-CT 3-all) 
+	uint32 camp = 4;
+	// 物品类型 
+	uint32 mainType = 5;
+	// 武器主类型（子类型） 
+	uint32 subType1 = 6;
+	// 二级子类型 
+	uint32 subType2 = 7;
+	// 三级子类型 
+	uint32 subType3 = 8;
+	// 等级 
+	uint32 level = 9;
+	// 武器类型 
+	uint32 weaponType = 10;
+	// 主题标记图标 
+	uint32 themeIcon = 11;
+	// 主题背景图标 
+	uint32 themeBackgroundIcon = 12;
+	// 仓库主题底板图标 
+	uint32 bagBackgroundIcon = 13;
+	// 仓库主题底板图标（小） 
+	uint32 bagSmallBackgroundIcon = 14;
+	// 分享图 
+	uint32 shareIcon = 15;
+	// HUD图标 
+	uint32 icon = 16;
+	// HUD小图标 
+	uint32 iconSmall = 17;
+	// 局外图标资源id 
+	uint32 iconID = 18;
+	// 特殊公告板图标 （飞行投掷物ICON，其他区分与icon字段的武器类型图标也走这） 
+	uint32 SpecialBillboardIcon = 19;
+	// 武器配置 
+	string weaponConfigName = 20;
+	// 分地区额外武器配置 
+	repeated string extraWeaponConfigName = 21;
+	// 拥有上限(0不限制） 
+	uint32 limit = 22;
+	// 可以使用的皮肤编号 
+	repeated uint32 paintKitLimit = 23;
+	// 品质 
+	uint32 quality = 24;
+	// 重要道具优先级 
+	uint32 priority = 25;
+	// 排序(从小到大) 
+	uint32 order = 26;
+	// 卖店货币 
+	uint32 sellType = 27;
+	// 卖店价格 
+	uint32 sellingPrice = 28;
+	// 是否可堆叠(0不可以 1可以) 
+	uint32 stackMax = 29;
+	// 是否自动装备(0为否,1为是) 
+	uint32 autoEquip = 30;
+	// 武器携带的buffId 
+	repeated uint32 settlementBuff = 31;
+	// 道具描述tips 
+	string description = 32;
+	// 局内背包道具描述tips 
+	string brDescription = 33;
+	// 3P资源名 
+	string tpAssetName = 34;
+	// 1P资源名 
+	string fpAssetName = 35;
+	// 获得界面骚话 
+	string getItemWords = 36;
+	// 特殊功能 
+	uint32 specialFunc = 37;
+	// 普通状态下资源id 
+	uint32 normalStateID = 38;
+	// 特殊功能状态下资源id 
+	uint32 specailStateID = 39;
+	// 特殊捡拾物 
+	uint32 specialPickUp = 40;
+	// 专属击杀正反馈id 
+	uint32 killNotifyId = 41;
+	// 特性Id列表 
+	repeated uint32 features = 42;
+	// 推荐&特点列表 
+	repeated uint32 attributes = 43;
+	// 基础Gs值 
+	uint32 baseGs = 44;
+	// 离线生成的图标文件夹名字 
+	string iconDirName = 45;
+	// 是否是收藏品（计入藏品收集统计） 
+	bool isCollection = 46;
+}
+
+message WeaponDataConfig_Array {
+	repeated WeaponDataConfig items = 1;
+}

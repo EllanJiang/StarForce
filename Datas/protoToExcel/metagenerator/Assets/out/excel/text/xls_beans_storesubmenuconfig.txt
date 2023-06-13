@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "718100511",
+      "weaponGroup": 0
+    },
+    {
+      "id": 2,
+      "name": "350479424",
+      "weaponGroup": 1
+    },
+    {
+      "id": 3,
+      "name": "161548899",
+      "weaponGroup": 2
+    },
+    {
+      "id": 4,
+      "name": "249006520",
+      "weaponGroup": 3
+    },
+    {
+      "id": 5,
+      "name": "159781448",
+      "weaponGroup": 4
+    },
+    {
+      "id": 6,
+      "name": "708071590",
+      "weaponGroup": 5
+    },
+    {
+      "id": 7,
+      "name": "323135076",
+      "weaponGroup": 6
+    },
+    {
+      "id": 8,
+      "name": "165162836",
+      "weaponGroup": 7
+    },
+    {
+      "id": 9,
+      "name": "133715926",
+      "weaponGroup": 8
+    }
+  ]
+}

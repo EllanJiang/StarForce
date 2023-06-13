@@ -1,0 +1,7 @@
+{
+	"BuffList":[130002,130003],
+	"MoveInterrupt":true,
+	"GuideAnim":"",
+	"ValidDis":7.5,
+	"ValidAngle":40.0
+}

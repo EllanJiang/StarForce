@@ -1,0 +1,28 @@
+/**
+* @file:   excel\RechargeConfig_CN.xlsx\RechargeConfig_CN
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RechargeConfig_CN{
+	// 页签id 
+	uint32 menuId = 1;
+	// 充值类型 
+	uint32 type = 2;
+	// 商品id 
+	uint32 id = 3;
+	// ios商品id前缀 
+	string prefix = 4;
+	// 商品类型id 
+	uint32 goodsTypeId = 5;
+	// 充值额外奖励id 
+	uint32 chargeAwardId = 6;
+}
+
+message RechargeConfig_CN_Array {
+	repeated RechargeConfig_CN items = 1;
+}

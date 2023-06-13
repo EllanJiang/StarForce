@@ -1,0 +1,30 @@
+/**
+* @file:   excel\BRItemSlotConfig.xlsx\BRItemSlotConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRItemSlotConfig{
+	// 槽位ID 
+	uint32 id = 1;
+	// 携带上限数 
+	uint32 maxLimit = 2;
+	// 是否可替换 
+	bool canReplace = 3;
+	// 替换时是否掉落 
+	bool canReplaceDrop = 4;
+	// 是否可丢弃 
+	bool canDrop = 5;
+	// 长按非空槽位战术提示 
+	uint32 slotTacticalId = 6;
+	// 长按空槽位战术提示 
+	uint32 emptySlotTacticalId = 7;
+}
+
+message BRItemSlotConfig_Array {
+	repeated BRItemSlotConfig items = 1;
+}

@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "MaxMatchElo": 1999,
+      "MinMatchElo": 0,
+      "SeleMatchElo": 1100
+    },
+    {
+      "MaxMatchElo": 2999,
+      "MinMatchElo": 2000,
+      "SeleMatchElo": 1300
+    },
+    {
+      "MaxMatchElo": 0,
+      "MinMatchElo": 3000,
+      "SeleMatchElo": 1500
+    }
+  ]
+}

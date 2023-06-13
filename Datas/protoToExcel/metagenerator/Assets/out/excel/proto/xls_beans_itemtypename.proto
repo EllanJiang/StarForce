@@ -1,0 +1,28 @@
+/**
+* @file:   excel\ItemTypeName.xlsx\ItemTypeName
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemTypeName{
+	// id 
+	uint32 id = 1;
+	// 类型 
+	uint32 mainType = 2;
+	// 子类型 
+	uint32 subType1 = 3;
+	// 二级子类型 
+	uint32 subType2 = 4;
+	// 三级子类型 
+	uint32 subType3 = 5;
+	// 所属种类 
+	string typeName = 6;
+}
+
+message ItemTypeName_Array {
+	repeated ItemTypeName items = 1;
+}

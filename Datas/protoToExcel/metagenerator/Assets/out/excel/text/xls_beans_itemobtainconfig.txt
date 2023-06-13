@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "LowestQuality",
+      "subTypes": [],
+      "value": 7
+    },
+    {
+      "id": "1",
+      "subTypes": [
+        1,
+        2,
+        3
+      ],
+      "value": 0
+    },
+    {
+      "id": "2",
+      "subTypes": [],
+      "value": 0
+    },
+    {
+      "id": "3",
+      "subTypes": [
+        4,
+        6
+      ],
+      "value": 1
+    }
+  ]
+}

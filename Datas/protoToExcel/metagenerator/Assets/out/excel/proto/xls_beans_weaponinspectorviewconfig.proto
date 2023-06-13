@@ -1,0 +1,36 @@
+/**
+* @file:   excel\WeaponInspectorViewConfig.xlsx\WeaponInspectorViewConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponInspectorViewConfig{
+	// 填weaponType 
+	uint32 id = 1;
+	// 偏移 
+	string offset = 2;
+	// 旋转 
+	string angles = 3;
+	// 缩放 
+	string scale = 4;
+	// 包围盒 
+	string extents = 5;
+	// 俯仰角限制 
+	string pitchLimit = 6;
+	// 初始旋转角 
+	float initYaw = 7;
+	// 观测距离限制 
+	string distanceLimit = 8;
+	// 启用动画 
+	uint32 enableAnimator = 9;
+	// 动画路径 
+	string acPath = 10;
+}
+
+message WeaponInspectorViewConfig_Array {
+	repeated WeaponInspectorViewConfig items = 1;
+}

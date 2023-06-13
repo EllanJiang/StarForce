@@ -1,0 +1,22 @@
+/**
+* @file:   excel\BRContractTaskTypeConfig.xlsx\BRContractTaskTypeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRContractTaskTypeConfig{
+	// 合约类型 
+	uint32 id = 1;
+	// 合约名字 
+	string taskName = 2;
+	// 进度说明文字 
+	string processDes = 3;
+}
+
+message BRContractTaskTypeConfig_Array {
+	repeated BRContractTaskTypeConfig items = 1;
+}

@@ -1,0 +1,76 @@
+/**
+* @file:   excel\StoreGoodsConfig.xlsx\StoreGoodsConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreGoodsConfig{
+	// 商品ID 
+	uint32 id = 1;
+	// 关联物品ID 
+	uint32 itemId = 2;
+	// 商品类型 
+	uint32 groupId = 3;
+	// 商店类型（服务器用于校验购买是否合法） 
+	uint32 storeType = 4;
+	// 非贩售显示 
+	uint32 descriptionID = 5;
+	// 标签 
+	uint32 label = 6;
+	// 折扣(0-100) 
+	uint32 discount = 7;
+	// 消耗id 
+	repeated StoreGoodsConfig_cost cost = 8;
+	// 限购类型 
+	string limitBuyType = 9;
+	// 限购数量 
+	uint32 limitBuyCount = 10;
+	// 单次购买最大购买数量 
+	uint32 maxBuyCount = 11;
+	// 单次销售数量 
+	uint32 quantity = 12;
+	// 上架时间 
+	int64 startTime = 13;
+	// 下架时间 
+	int64 endTime = 14;
+	// 排序优先级 
+	uint32 priority = 15;
+	// 是否售卖 
+	bool isSell = 16;
+	// 是否显示红点 
+	bool isShowRedPoint = 17;
+	// 购买限制条件 
+	repeated StoreGoodsConfig_limit limit = 18;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 19;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 20;
+	// 气泡开始时间 
+	int64 bubbleStartTime = 21;
+	// 气泡结束时间 
+	int64 bubbleEndTime = 22;
+	// 武器箱背景 
+	uint32 boxBg = 23;
+}
+
+message StoreGoodsConfig_cost{
+	// 消耗id 
+	uint32 id = 1;
+	// 消耗数量（折后价） 
+	uint32 value = 2;
+}
+
+message StoreGoodsConfig_limit{
+	// 购买限制条件 
+	uint32 id = 1;
+	// 条件对应值 
+	uint32 value = 2;
+}
+
+message StoreGoodsConfig_Array {
+	repeated StoreGoodsConfig items = 1;
+}

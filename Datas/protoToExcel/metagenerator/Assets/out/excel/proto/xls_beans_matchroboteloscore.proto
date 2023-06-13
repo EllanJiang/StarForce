@@ -1,0 +1,20 @@
+/**
+* @file:   excel\MatchRobotEloScore.xlsx\MatchRobotEloScore
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchRobotEloScore{
+	// AILevel 
+	uint32 id = 1;
+	// 假人elo分 
+	uint32 MatchElo = 2;
+}
+
+message MatchRobotEloScore_Array {
+	repeated MatchRobotEloScore items = 1;
+}

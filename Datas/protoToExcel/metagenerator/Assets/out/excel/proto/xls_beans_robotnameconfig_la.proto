@@ -1,0 +1,22 @@
+/**
+* @file:   excel\RobotNameConfig_LA.xlsx\RobotNameConfig_LA
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RobotNameConfig_LA{
+	// 名字一 
+	string robotFirstName = 1;
+	// 名字二 
+	string robotSecondName = 2;
+	// 名字三 
+	string robotThreeName = 3;
+}
+
+message RobotNameConfig_LA_Array {
+	repeated RobotNameConfig_LA items = 1;
+}

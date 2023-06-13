@@ -1,0 +1,20 @@
+/**
+* @file:   excel\RegionTableConfig.xlsx\RegionTableConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RegionTableConfig{
+	// 分区配置的表名 
+	string id = 1;
+	// 服务器regionId 
+	repeated string regionId = 2;
+}
+
+message RegionTableConfig_Array {
+	repeated RegionTableConfig items = 1;
+}

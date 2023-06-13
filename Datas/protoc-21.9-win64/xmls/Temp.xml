@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <!-- 
+        目前支持的配置类型
+       "bool";
+       "byte";
+       "short";
+       "int";
+       "enum";
+       "float";
+       "long";
+       "string";
+       
+       "array";
+       "list";
+       "dict";
+    -->
+    <!-- 枚举配置规则-->
+    <enum name="E_PLAYER_TYPE" namespace="Protos">
+        <field name="Main">1</field>
+        <field name="Pet"/>
+        <field name="Other">3</field>
+    </enum>
+    <enum name="E_HERO_TYPE" namespace="Protos">
+        <field name="None">0</field>
+        <field name="Main"/>
+        <field name="Other"/>
+    </enum>
+    <!-- 数据配置规则-->
+    <data name="PlayerData" namespace="Protos">
+        <field type="int" name="id"/>               <!-- 字段类型是int，字段名是id-->
+    </data>
+    
+     <!-- 数据配置规则-->
+    <data name="PlayerDataTemp" namespace="Protos">
+        <field type="int" name="id"/>               <!-- 字段类型是int，字段名是id-->
+        <field type="float" name="age"/>
+        <field type="bool" name="sex"/>
+        <field type="long" name="lv"/>
+        <field type="array" T="string" name="myArray"/>        <!-- 字段类型是array，字段名是myArray-->
+        <field type="list" T="int" name="myList"/>  <!-- 字段类型是list，字段名是myList-->
+        <field type="dict" Tkey="int" Tvalue="string" name="myDict"/> <!--字段类型是Dictionay<int,string>，字段名是myDict-->
+        <field type="enum" T="E_HERO_TYPE" name="myHeroType"/>
+    </data>
+    
+    <data name="HeartData" namespace="Protos">
+		<field type="long" name="time"/>
+	</data>
+    <!-- 消息配置规则-->
+    <message id="MsgID.PlayerMsgReq" name="PlayerMsg" namespace="Protos">
+        <field type="int" name="playerID"/>  
+        <field type="PlayerData" name="myData"/>                  
+    </message>
+
+    <message id="MsgID.HeartBeatMsgReq" name="HeartBeatMsg" namespace="Protos"/>
+    
+    <message id="MsgID.QuitMsgReq" name="QuitMsg" namespace="Protos"/>
+</messages>

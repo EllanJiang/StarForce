@@ -1,0 +1,28 @@
+/**
+* @file:   excel\WeaponTypeConfig.xlsx\WeaponTypeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponTypeConfig{
+	// weaponType 
+	uint32 id = 1;
+	// 名字 
+	string name = 2;
+	// 阵营(1-T 2-CT 3-all) 
+	uint32 camp = 3;
+	// 分组名称 
+	string groupName = 4;
+	// 武器分类 
+	uint32 weaponGroup = 5;
+	// 品名 
+	uint32 groupId = 6;
+}
+
+message WeaponTypeConfig_Array {
+	repeated WeaponTypeConfig items = 1;
+}

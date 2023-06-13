@@ -1,0 +1,33 @@
+/**
+* @file:   excel\StoreRecommendVersionConfig.xlsx\StoreRecommendVersionConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreRecommendVersionConfig{
+	// key 
+	uint32 id = 1;
+	// 强推荐开始时间 
+	int64 recommendStartTime = 2;
+	// 强推荐结束时间 
+	int64 recommendEndTime = 3;
+	// 全屏动画id 
+	uint32 animationId = 4;
+	// 关联主题ID 
+	repeated StoreRecommendVersionConfig_versionDisplay versionDisplay = 5;
+}
+
+message StoreRecommendVersionConfig_versionDisplay{
+	// 关联主题ID 
+	uint32 themeId = 1;
+	// 主题背景 
+	uint32 bg = 2;
+}
+
+message StoreRecommendVersionConfig_Array {
+	repeated StoreRecommendVersionConfig items = 1;
+}

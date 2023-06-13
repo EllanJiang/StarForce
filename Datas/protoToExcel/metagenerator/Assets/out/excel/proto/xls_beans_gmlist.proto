@@ -1,0 +1,24 @@
+/**
+* @file:   excel\GmList.xlsx\GmList
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GmList{
+	//  
+	int32 id = 1;
+	// uuid模式串 
+	string pattern = 2;
+	// 视野（被谁看到） 
+	int32 visible = 3;
+	// 权限 
+	int32 privilege = 4;
+}
+
+message GmList_Array {
+	repeated GmList items = 1;
+}

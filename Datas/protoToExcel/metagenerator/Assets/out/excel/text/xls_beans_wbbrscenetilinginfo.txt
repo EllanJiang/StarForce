@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "IndexX": 1,
+      "IndexZ": 1,
+      "TilingPath": "Scene_BR/wb_drstone/area_whiteboxlevel/area_whiteboxlevel.unity",
+      "WorldId": 2005
+    },
+    {
+      "IndexX": 1,
+      "IndexZ": 1,
+      "TilingPath": "Scene_BR\\wb_drstone/area_poi011_Prison/area_poi011_Prison.unity",
+      "WorldId": 2005
+    }
+  ]
+}

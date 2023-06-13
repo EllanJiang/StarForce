@@ -1,0 +1,20 @@
+/**
+* @file:   excel\MatchScoreSupWeaponFeel.xlsx\MatchScoreSupWeaponFeel
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchScoreSupWeaponFeel{
+	// 手感配置参数id 
+	uint32 id = 1;
+	// 对应得分 
+	repeated uint32 weaponFeel = 2;
+}
+
+message MatchScoreSupWeaponFeel_Array {
+	repeated MatchScoreSupWeaponFeel items = 1;
+}

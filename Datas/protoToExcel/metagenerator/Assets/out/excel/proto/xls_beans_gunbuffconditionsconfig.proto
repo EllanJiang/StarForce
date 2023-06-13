@@ -1,0 +1,22 @@
+/**
+* @file:   excel\GunBuffConditionsConfig.xlsx\GunBuffConditionsConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GunBuffConditionsConfig{
+	// 词条id(3000000） 
+	uint32 id = 1;
+	// 对应程序Enum结构体(策划先添加备注信息) 
+	uint32 BuffConditionType = 2;
+	// buff参数 (int 类型)可以多参 
+	uint32 BuffIntPara = 3;
+}
+
+message GunBuffConditionsConfig_Array {
+	repeated GunBuffConditionsConfig items = 1;
+}

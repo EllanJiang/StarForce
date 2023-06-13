@@ -1,0 +1,295 @@
+{
+  "items": [
+    {
+      "configName": "ZombieMonsterData",
+      "fieldName": "MonsterId",
+      "relyConfigName": "MonsterData",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "ChickenMonsterData",
+      "fieldName": "MonsterDataID",
+      "relyConfigName": "MonsterData",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "ZombieMonsterData",
+      "fieldName": "Level",
+      "relyConfigName": "MonsterLevelData",
+      "relyFieldName": "id",
+      "relyParam": [
+        "Level",
+        "100000",
+        "MonsterId",
+        "1"
+      ],
+      "relyType": 2,
+      "skipZero": false
+    },
+    {
+      "configName": "ChickenMonsterData",
+      "fieldName": "Level",
+      "relyConfigName": "MonsterLevelData",
+      "relyFieldName": "id",
+      "relyParam": [
+        "Level",
+        "100000",
+        "MonsterDataID",
+        "1"
+      ],
+      "relyType": 2,
+      "skipZero": false
+    },
+    {
+      "configName": "ChickenMonsterData",
+      "fieldName": "AddChickenIDList",
+      "relyConfigName": "ChickenMonsterData",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 3,
+      "skipZero": false
+    },
+    {
+      "configName": "MonsterLevelData",
+      "fieldName": "MonsterId",
+      "relyConfigName": "MonsterData",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "MonsterData",
+      "fieldName": "id",
+      "relyConfigName": "MonsterLevelData",
+      "relyFieldName": "MonsterId",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "RogueLikeMonsterSpawnConfig",
+      "fieldName": "crowd",
+      "relyConfigName": "ZombieMonsterData",
+      "relyFieldName": "id",
+      "relyParam": [
+        "id"
+      ],
+      "relyType": 4,
+      "skipZero": false
+    },
+    {
+      "configName": "RogueLikeShopItemsGroup",
+      "fieldName": "shopId",
+      "relyConfigName": "RogueLikeShopItems",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "RogueLikeTalent",
+      "fieldName": "buffId",
+      "relyConfigName": "BuffDataV2Config",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BuffDataV2Config",
+      "fieldName": "attributeModifier",
+      "relyConfigName": "AttributeConfig",
+      "relyFieldName": "id",
+      "relyParam": [
+        "attributeId"
+      ],
+      "relyType": 4,
+      "skipZero": true
+    },
+    {
+      "configName": "WeaponDataConfig",
+      "fieldName": "weaponConfigName",
+      "relyConfigName": "WeaponDataConfig",
+      "relyFieldName": "weaponConfigName",
+      "relyParam": [
+        "define/json_config/",
+        ".json",
+        "weapon"
+      ],
+      "relyType": 5,
+      "skipZero": false
+    },
+    {
+      "configName": "WeaponDataConfig",
+      "fieldName": "icon",
+      "relyConfigName": "ItemResource",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "GunFunctionQualityGropConfig",
+      "fieldName": "ID",
+      "relyConfigName": "GunFunctionQualityGropConfig",
+      "relyFieldName": "ID",
+      "relyParam": [
+        "ID",
+        "qualityLevel"
+      ],
+      "relyType": 6,
+      "skipZero": false
+    },
+    {
+      "configName": "ShopToModeMapConfig",
+      "fieldName": "shopTabId",
+      "relyConfigName": "ShopShowItems",
+      "relyFieldName": "shopTabId",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "SkillGroupChooseConfig",
+      "fieldName": "skillList",
+      "relyConfigName": "PlayerSkillConfig",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 3,
+      "skipZero": false
+    },
+    {
+      "configName": "SkillGroupChooseConfig",
+      "fieldName": "DefaultInit",
+      "relyConfigName": "PlayerSkillConfig",
+      "relyFieldName": "id",
+      "relyParam": [
+        "skillId"
+      ],
+      "relyType": 4,
+      "skipZero": true
+    },
+    {
+      "configName": "ProfessionModeConfig",
+      "fieldName": "skillGroup",
+      "relyConfigName": "SkillGroupChooseConfig",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "GunBuffListConfig",
+      "fieldName": "BuffDes",
+      "relyConfigName": "GunBuffListConfig",
+      "relyFieldName": "BuffDes",
+      "relyParam": [],
+      "relyType": 7,
+      "skipZero": true
+    },
+    {
+      "configName": "ArmsRaceConfig",
+      "fieldName": "id",
+      "relyConfigName": "ArmsRaceConfig",
+      "relyFieldName": "id",
+      "relyParam": [
+        "Grade",
+        "WeaponId"
+      ],
+      "relyType": 6,
+      "skipZero": false
+    },
+    {
+      "configName": "BRShopItemGroupConfig",
+      "fieldName": "itemId",
+      "relyConfigName": "BRItemConfig",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BRShopLotteryConfig",
+      "fieldName": "itemId",
+      "relyConfigName": "BRItemConfig",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BRShopConfig",
+      "fieldName": "ItemGroupId",
+      "relyConfigName": "BRShopItemGroupConfig",
+      "relyFieldName": "itemGroupId",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BRShopConfig",
+      "fieldName": "lotteryGroupId",
+      "relyConfigName": "BRShopLotteryConfig",
+      "relyFieldName": "itemGroupId",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BRShopConfig",
+      "fieldName": "flashSale",
+      "relyConfigName": "BRShopItemGroupConfig",
+      "relyFieldName": "itemGroupId",
+      "relyParam": [
+        "groupId"
+      ],
+      "relyType": 4,
+      "skipZero": false
+    },
+    {
+      "configName": "BRSkillGroupConfig",
+      "fieldName": "skillId",
+      "relyConfigName": "PlayerSkillConfig",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BRSkillCardConfig",
+      "fieldName": "initSkill",
+      "relyConfigName": "PlayerSkillConfig",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": false
+    },
+    {
+      "configName": "BRSkillCardConfig",
+      "fieldName": "initItem",
+      "relyConfigName": "BRItemConfig",
+      "relyFieldName": "id",
+      "relyParam": [
+        "id"
+      ],
+      "relyType": 4,
+      "skipZero": false
+    },
+    {
+      "configName": "WeaponGroupCard",
+      "fieldName": "shopShowItem",
+      "relyConfigName": "ShopShowItems",
+      "relyFieldName": "id",
+      "relyParam": [],
+      "relyType": 1,
+      "skipZero": true
+    }
+  ]
+}

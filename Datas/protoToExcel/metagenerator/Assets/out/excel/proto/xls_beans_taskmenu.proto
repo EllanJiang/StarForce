@@ -1,0 +1,24 @@
+/**
+* @file:   excel\TaskMenu.xlsx\TaskMenu
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TaskMenu{
+	// ID 
+	uint32 id = 1;
+	// 名称 
+	string name = 2;
+	// 选择图标Id 
+	uint32 iconSelectId = 3;
+	// 默认图标Id 
+	uint32 iconResetId = 4;
+}
+
+message TaskMenu_Array {
+	repeated TaskMenu items = 1;
+}

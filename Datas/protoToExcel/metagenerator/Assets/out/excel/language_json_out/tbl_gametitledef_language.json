@@ -1,0 +1,822 @@
+{
+  "521273025": [
+    "C_GamePlay_Result_TitleName_1",
+    "C_GamePlay_Result_TitleName_1"
+  ],
+  "617337124": [
+    "C_GamePlay_Result_TitleDetailName_1",
+    "C_GamePlay_Result_TitleDetailName_1"
+  ],
+  "453769236": [
+    "C_GamePlay_Result_TitleName_2",
+    "C_GamePlay_Result_TitleName_2"
+  ],
+  "346967223": [
+    "C_GamePlay_Result_TitleDetailName_2",
+    "C_GamePlay_Result_TitleDetailName_2"
+  ],
+  "295316346": [
+    "C_GamePlay_Result_TitleName_3",
+    "C_GamePlay_Result_TitleName_3"
+  ],
+  "031015991": [
+    "C_GamePlay_Result_TitleDetailName_3",
+    "C_GamePlay_Result_TitleDetailName_3"
+  ],
+  "860951980": [
+    "C_GamePlay_Result_TitleName_4",
+    "C_GamePlay_Result_TitleName_4"
+  ],
+  "966908170": [
+    "C_GamePlay_Result_TitleDetailName_4",
+    "C_GamePlay_Result_TitleDetailName_4"
+  ],
+  "441974918": [
+    "C_GamePlay_Result_TitleName_5",
+    "C_GamePlay_Result_TitleName_5"
+  ],
+  "914306042": [
+    "C_GamePlay_Result_TitleDetailName_5",
+    "C_GamePlay_Result_TitleDetailName_5"
+  ],
+  "224746202": [
+    "C_GamePlay_Result_TitleName_6",
+    "C_GamePlay_Result_TitleName_6"
+  ],
+  "106457528": [
+    "C_GamePlay_Result_TitleDetailName_6",
+    "C_GamePlay_Result_TitleDetailName_6"
+  ],
+  "273567427": [
+    "C_GamePlay_Result_TitleName_7",
+    "C_GamePlay_Result_TitleName_7"
+  ],
+  "090677400": [
+    "C_GamePlay_Result_TitleDetailName_7",
+    "C_GamePlay_Result_TitleDetailName_7"
+  ],
+  "053107710": [
+    "C_GamePlay_Result_TitleName_8",
+    "C_GamePlay_Result_TitleName_8"
+  ],
+  "736650876": [
+    "C_GamePlay_Result_TitleDetailName_8",
+    "C_GamePlay_Result_TitleDetailName_8"
+  ],
+  "490335134": [
+    "C_GamePlay_Result_TitleName_9",
+    "C_GamePlay_Result_TitleName_9"
+  ],
+  "609659546": [
+    "C_GamePlay_Result_TitleDetailName_9",
+    "C_GamePlay_Result_TitleDetailName_9"
+  ],
+  "379615919": [
+    "C_GamePlay_Result_TitleName_10",
+    "C_GamePlay_Result_TitleName_10"
+  ],
+  "663010755": [
+    "C_GamePlay_Result_TitleDetailName_10",
+    "C_GamePlay_Result_TitleDetailName_10"
+  ],
+  "679629719": [
+    "C_GamePlay_Result_TitleName_11",
+    "C_GamePlay_Result_TitleName_11"
+  ],
+  "748510936": [
+    "C_GamePlay_Result_TitleDetailName_11",
+    "C_GamePlay_Result_TitleDetailName_11"
+  ],
+  "711745347": [
+    "C_GamePlay_Result_TitleName_12",
+    "C_GamePlay_Result_TitleName_12"
+  ],
+  "592267881": [
+    "C_GamePlay_Result_TitleDetailName_12",
+    "C_GamePlay_Result_TitleDetailName_12"
+  ],
+  "613759924": [
+    "C_GamePlay_Result_TitleName_13",
+    "C_GamePlay_Result_TitleName_13"
+  ],
+  "382904719": [
+    "C_GamePlay_Result_TitleDetailName_13",
+    "C_GamePlay_Result_TitleDetailName_13"
+  ],
+  "409273945": [
+    "C_GamePlay_Result_TitleName_14",
+    "C_GamePlay_Result_TitleName_14"
+  ],
+  "555169666": [
+    "C_GamePlay_Result_TitleDetailName_14",
+    "C_GamePlay_Result_TitleDetailName_14"
+  ],
+  "456503789": [
+    "C_GamePlay_Result_TitleName_15",
+    "C_GamePlay_Result_TitleName_15"
+  ],
+  "280355534": [
+    "C_GamePlay_Result_TitleDetailName_15",
+    "C_GamePlay_Result_TitleDetailName_15"
+  ],
+  "347958135": [
+    "C_GamePlay_Result_TitleName_16",
+    "C_GamePlay_Result_TitleName_16"
+  ],
+  "922892664": [
+    "C_GamePlay_Result_TitleDetailName_16",
+    "C_GamePlay_Result_TitleDetailName_16"
+  ],
+  "433530872": [
+    "C_GamePlay_Result_TitleName_17",
+    "C_GamePlay_Result_TitleName_17"
+  ],
+  "785745255": [
+    "C_GamePlay_Result_TitleDetailName_17",
+    "C_GamePlay_Result_TitleDetailName_17"
+  ],
+  "847882963": [
+    "C_GamePlay_Result_TitleName_18",
+    "C_GamePlay_Result_TitleName_18"
+  ],
+  "425332461": [
+    "C_GamePlay_Result_TitleDetailName_18",
+    "C_GamePlay_Result_TitleDetailName_18"
+  ],
+  "806623397": [
+    "C_GamePlay_Result_TitleName_103",
+    "C_GamePlay_Result_TitleName_103"
+  ],
+  "233095158": [
+    "C_GamePlay_Result_TitleDetailName_103",
+    "C_GamePlay_Result_TitleDetailName_103"
+  ],
+  "979842528": [
+    "C_GamePlay_Result_TitleName_19",
+    "C_GamePlay_Result_TitleName_19"
+  ],
+  "520221583": [
+    "C_GamePlay_Result_TitleDetailName_19",
+    "C_GamePlay_Result_TitleDetailName_19"
+  ],
+  "155518637": [
+    "C_GamePlay_Result_TitleName_20",
+    "C_GamePlay_Result_TitleName_20"
+  ],
+  "663227020": [
+    "C_GamePlay_Result_TitleDetailName_20",
+    "C_GamePlay_Result_TitleDetailName_20"
+  ],
+  "780138665": [
+    "C_GamePlay_Result_TitleName_21",
+    "C_GamePlay_Result_TitleName_21"
+  ],
+  "163791150": [
+    "C_GamePlay_Result_TitleDetailName_21",
+    "C_GamePlay_Result_TitleDetailName_21"
+  ],
+  "605090866": [
+    "C_GamePlay_Result_TitleName_22",
+    "C_GamePlay_Result_TitleName_22"
+  ],
+  "397490529": [
+    "C_GamePlay_Result_TitleDetailName_22",
+    "C_GamePlay_Result_TitleDetailName_22"
+  ],
+  "521741133": [
+    "C_GamePlay_Result_TitleName_23",
+    "C_GamePlay_Result_TitleName_23"
+  ],
+  "462193273": [
+    "C_GamePlay_Result_TitleDetailName_23",
+    "C_GamePlay_Result_TitleDetailName_23"
+  ],
+  "525894585": [
+    "C_GamePlay_Result_TitleName_24",
+    "C_GamePlay_Result_TitleName_24"
+  ],
+  "896237793": [
+    "C_GamePlay_Result_TitleDetailName_24",
+    "C_GamePlay_Result_TitleDetailName_24"
+  ],
+  "609019561": [
+    "C_GamePlay_Result_TitleName_25",
+    "C_GamePlay_Result_TitleName_25"
+  ],
+  "926062887": [
+    "C_GamePlay_Result_TitleDetailName_25",
+    "C_GamePlay_Result_TitleDetailName_25"
+  ],
+  "667061745": [
+    "C_GamePlay_Result_TitleName_26",
+    "C_GamePlay_Result_TitleName_26"
+  ],
+  "093558215": [
+    "C_GamePlay_Result_TitleDetailName_26",
+    "C_GamePlay_Result_TitleDetailName_26"
+  ],
+  "389253252": [
+    "C_GamePlay_Result_TitleName_27",
+    "C_GamePlay_Result_TitleName_27"
+  ],
+  "421576122": [
+    "C_GamePlay_Result_TitleDetailName_27",
+    "C_GamePlay_Result_TitleDetailName_27"
+  ],
+  "768455932": [
+    "C_GamePlay_Result_TitleName_28",
+    "C_GamePlay_Result_TitleName_28"
+  ],
+  "821715607": [
+    "C_GamePlay_Result_TitleDetailName_28",
+    "C_GamePlay_Result_TitleDetailName_28"
+  ],
+  "690171176": [
+    "C_GamePlay_Result_TitleName_29",
+    "C_GamePlay_Result_TitleName_29"
+  ],
+  "819524604": [
+    "C_GamePlay_Result_TitleDetailName_29",
+    "C_GamePlay_Result_TitleDetailName_29"
+  ],
+  "168870536": [
+    "C_GamePlay_Result_TitleName_30",
+    "C_GamePlay_Result_TitleName_30"
+  ],
+  "312508128": [
+    "C_GamePlay_Result_TitleDetailName_30",
+    "C_GamePlay_Result_TitleDetailName_30"
+  ],
+  "894148624": [
+    "C_GamePlay_Result_TitleName_31",
+    "C_GamePlay_Result_TitleName_31"
+  ],
+  "780682941": [
+    "C_GamePlay_Result_TitleDetailName_31",
+    "C_GamePlay_Result_TitleDetailName_31"
+  ],
+  "563764676": [
+    "C_GamePlay_Result_TitleName_32",
+    "C_GamePlay_Result_TitleName_32"
+  ],
+  "102554929": [
+    "C_GamePlay_Result_TitleDetailName_32",
+    "C_GamePlay_Result_TitleDetailName_32"
+  ],
+  "672582084": [
+    "C_GamePlay_Result_TitleName_33",
+    "C_GamePlay_Result_TitleName_33"
+  ],
+  "473850201": [
+    "C_GamePlay_Result_TitleDetailName_33",
+    "C_GamePlay_Result_TitleDetailName_33"
+  ],
+  "221968989": [
+    "C_GamePlay_Result_TitleName_34",
+    "C_GamePlay_Result_TitleName_34"
+  ],
+  "284331947": [
+    "C_GamePlay_Result_TitleDetailName_34",
+    "C_GamePlay_Result_TitleDetailName_34"
+  ],
+  "465170456": [
+    "C_GamePlay_Result_TitleName_35",
+    "C_GamePlay_Result_TitleName_35"
+  ],
+  "458089510": [
+    "C_GamePlay_Result_TitleDetailName_35",
+    "C_GamePlay_Result_TitleDetailName_35"
+  ],
+  "264068985": [
+    "C_GamePlay_Result_TitleName_36",
+    "C_GamePlay_Result_TitleName_36"
+  ],
+  "134412865": [
+    "C_GamePlay_Result_TitleDetailName_36",
+    "C_GamePlay_Result_TitleDetailName_36"
+  ],
+  "866073686": [
+    "C_GamePlay_Result_TitleName_37",
+    "C_GamePlay_Result_TitleName_37"
+  ],
+  "315706056": [
+    "C_GamePlay_Result_TitleDetailName_37",
+    "C_GamePlay_Result_TitleDetailName_37"
+  ],
+  "874943223": [
+    "C_GamePlay_Result_TitleName_38",
+    "C_GamePlay_Result_TitleName_38"
+  ],
+  "342387497": [
+    "C_GamePlay_Result_TitleDetailName_38",
+    "C_GamePlay_Result_TitleDetailName_38"
+  ],
+  "126937056": [
+    "C_GamePlay_Result_TitleName_39",
+    "C_GamePlay_Result_TitleName_39"
+  ],
+  "899802377": [
+    "C_GamePlay_Result_TitleDetailName_39",
+    "C_GamePlay_Result_TitleDetailName_39"
+  ],
+  "494247983": [
+    "C_GamePlay_Result_TitleName_40",
+    "C_GamePlay_Result_TitleName_40"
+  ],
+  "779617255": [
+    "C_GamePlay_Result_TitleDetailName_40",
+    "C_GamePlay_Result_TitleDetailName_40"
+  ],
+  "835758542": [
+    "C_GamePlay_Result_TitleName_41",
+    "C_GamePlay_Result_TitleName_41"
+  ],
+  "173545772": [
+    "C_GamePlay_Result_TitleDetailName_41",
+    "C_GamePlay_Result_TitleDetailName_41"
+  ],
+  "917526510": [
+    "C_GamePlay_Result_TitleName_42",
+    "C_GamePlay_Result_TitleName_42"
+  ],
+  "221722534": [
+    "C_GamePlay_Result_TitleDetailName_42",
+    "C_GamePlay_Result_TitleDetailName_42"
+  ],
+  "164814447": [
+    "C_GamePlay_Result_TitleName_43",
+    "C_GamePlay_Result_TitleName_43"
+  ],
+  "822632771": [
+    "C_GamePlay_Result_TitleDetailName_43",
+    "C_GamePlay_Result_TitleDetailName_43"
+  ],
+  "983586341": [
+    "C_GamePlay_Result_TitleName_45",
+    "C_GamePlay_Result_TitleName_45"
+  ],
+  "567628275": [
+    "C_GamePlay_Result_TitleDetailName_45",
+    "C_GamePlay_Result_TitleDetailName_45"
+  ],
+  "601979155": [
+    "C_GamePlay_Result_TitleName_72",
+    "C_GamePlay_Result_TitleName_72"
+  ],
+  "674966267": [
+    "C_GamePlay_Result_TitleDetailName_72",
+    "C_GamePlay_Result_TitleDetailName_72"
+  ],
+  "832194025": [
+    "C_GamePlay_Result_TitleName_73",
+    "C_GamePlay_Result_TitleName_73"
+  ],
+  "024319756": [
+    "C_GamePlay_Result_TitleDetailName_73",
+    "C_GamePlay_Result_TitleDetailName_73"
+  ],
+  "815124244": [
+    "C_GamePlay_Result_TitleName_74",
+    "C_GamePlay_Result_TitleName_74"
+  ],
+  "543430227": [
+    "C_GamePlay_Result_TitleDetailName_74",
+    "C_GamePlay_Result_TitleDetailName_74"
+  ],
+  "728554144": [
+    "C_GamePlay_Result_TitleName_76",
+    "C_GamePlay_Result_TitleName_76"
+  ],
+  "909630005": [
+    "C_GamePlay_Result_TitleDetailName_76",
+    "C_GamePlay_Result_TitleDetailName_76"
+  ],
+  "401886954": [
+    "C_GamePlay_Result_TitleName_77",
+    "C_GamePlay_Result_TitleName_77"
+  ],
+  "990943371": [
+    "C_GamePlay_Result_TitleDetailName_77",
+    "C_GamePlay_Result_TitleDetailName_77"
+  ],
+  "560518643": [
+    "C_GamePlay_Result_TitleName_78",
+    "C_GamePlay_Result_TitleName_78"
+  ],
+  "800017247": [
+    "C_GamePlay_Result_TitleDetailName_78",
+    "C_GamePlay_Result_TitleDetailName_78"
+  ],
+  "611338725": [
+    "C_GamePlay_Result_TitleName_79",
+    "C_GamePlay_Result_TitleName_79"
+  ],
+  "898002109": [
+    "C_GamePlay_Result_TitleDetailName_79",
+    "C_GamePlay_Result_TitleDetailName_79"
+  ],
+  "989734346": [
+    "C_GamePlay_Result_TitleName_80",
+    "C_GamePlay_Result_TitleName_80"
+  ],
+  "290957191": [
+    "C_GamePlay_Result_TitleDetailName_80",
+    "C_GamePlay_Result_TitleDetailName_80"
+  ],
+  "106819432": [
+    "C_GamePlay_Result_TitleName_81",
+    "C_GamePlay_Result_TitleName_81"
+  ],
+  "190199152": [
+    "C_GamePlay_Result_TitleDetailName_81",
+    "C_GamePlay_Result_TitleDetailName_81"
+  ],
+  "878223730": [
+    "C_GamePlay_Result_TitleName_82",
+    "C_GamePlay_Result_TitleName_82"
+  ],
+  "170770825": [
+    "C_GamePlay_Result_TitleDetailName_82",
+    "C_GamePlay_Result_TitleDetailName_82"
+  ],
+  "171195046": [
+    "C_GamePlay_Result_TitleName_83",
+    "C_GamePlay_Result_TitleName_83"
+  ],
+  "726060412": [
+    "C_GamePlay_Result_TitleDetailName_83",
+    "C_GamePlay_Result_TitleDetailName_83"
+  ],
+  "399037991": [
+    "C_GamePlay_Result_TitleName_44",
+    "C_GamePlay_Result_TitleName_44"
+  ],
+  "587930701": [
+    "C_GamePlay_Result_TitleDetailName_44",
+    "C_GamePlay_Result_TitleDetailName_44"
+  ],
+  "655436038": [
+    "C_GamePlay_Result_TitleName_46",
+    "C_GamePlay_Result_TitleName_46"
+  ],
+  "387846970": [
+    "C_GamePlay_Result_TitleDetailName_46",
+    "C_GamePlay_Result_TitleDetailName_46"
+  ],
+  "074781556": [
+    "C_GamePlay_Result_TitleName_47",
+    "C_GamePlay_Result_TitleName_47"
+  ],
+  "452438552": [
+    "C_GamePlay_Result_TitleDetailName_47",
+    "C_GamePlay_Result_TitleDetailName_47"
+  ],
+  "400375256": [
+    "C_GamePlay_Result_TitleName_48",
+    "C_GamePlay_Result_TitleName_48"
+  ],
+  "144953983": [
+    "C_GamePlay_Result_TitleDetailName_48",
+    "C_GamePlay_Result_TitleDetailName_48"
+  ],
+  "509400397": [
+    "C_GamePlay_Result_TitleName_49",
+    "C_GamePlay_Result_TitleName_49"
+  ],
+  "084748514": [
+    "C_GamePlay_Result_TitleDetailName_49",
+    "C_GamePlay_Result_TitleDetailName_49"
+  ],
+  "135515302": [
+    "C_GamePlay_Result_TitleName_50",
+    "C_GamePlay_Result_TitleName_50"
+  ],
+  "354856184": [
+    "C_GamePlay_Result_TitleDetailName_50",
+    "C_GamePlay_Result_TitleDetailName_50"
+  ],
+  "211198170": [
+    "C_GamePlay_Result_TitleName_51",
+    "C_GamePlay_Result_TitleName_51"
+  ],
+  "315825921": [
+    "C_GamePlay_Result_TitleDetailName_51",
+    "C_GamePlay_Result_TitleDetailName_51"
+  ],
+  "105194593": [
+    "C_GamePlay_Result_TitleName_52",
+    "C_GamePlay_Result_TitleName_52"
+  ],
+  "985088501": [
+    "C_GamePlay_Result_TitleDetailName_52",
+    "C_GamePlay_Result_TitleDetailName_52"
+  ],
+  "262408093": [
+    "C_GamePlay_Result_TitleName_53",
+    "C_GamePlay_Result_TitleName_53"
+  ],
+  "828747697": [
+    "C_GamePlay_Result_TitleDetailName_53",
+    "C_GamePlay_Result_TitleDetailName_53"
+  ],
+  "259615693": [
+    "C_GamePlay_Result_TitleName_54",
+    "C_GamePlay_Result_TitleName_54"
+  ],
+  "490856099": [
+    "C_GamePlay_Result_TitleName_55",
+    "C_GamePlay_Result_TitleName_55"
+  ],
+  "325470821": [
+    "C_GamePlay_Result_TitleDetailName_55",
+    "C_GamePlay_Result_TitleDetailName_55"
+  ],
+  "083469920": [
+    "C_GamePlay_Result_TitleName_56",
+    "C_GamePlay_Result_TitleName_56"
+  ],
+  "791006358": [
+    "C_GamePlay_Result_TitleDetailName_56",
+    "C_GamePlay_Result_TitleDetailName_56"
+  ],
+  "776528323": [
+    "C_GamePlay_Result_TitleName_57",
+    "C_GamePlay_Result_TitleName_57"
+  ],
+  "677195661": [
+    "C_GamePlay_Result_TitleDetailName_57",
+    "C_GamePlay_Result_TitleDetailName_57"
+  ],
+  "076348191": [
+    "C_GamePlay_Result_TitleName_58",
+    "C_GamePlay_Result_TitleName_58"
+  ],
+  "166066117": [
+    "C_GamePlay_Result_TitleDetailName_58",
+    "C_GamePlay_Result_TitleDetailName_58"
+  ],
+  "404591262": [
+    "C_GamePlay_Result_TitleName_59",
+    "C_GamePlay_Result_TitleName_59"
+  ],
+  "322955473": [
+    "C_GamePlay_Result_TitleDetailName_59",
+    "C_GamePlay_Result_TitleDetailName_59"
+  ],
+  "300743811": [
+    "C_GamePlay_Result_TitleName_60",
+    "C_GamePlay_Result_TitleName_60"
+  ],
+  "674272831": [
+    "C_GamePlay_Result_TitleDetailName_60",
+    "C_GamePlay_Result_TitleDetailName_60"
+  ],
+  "859158398": [
+    "C_GamePlay_Result_TitleName_61",
+    "C_GamePlay_Result_TitleName_61"
+  ],
+  "622451580": [
+    "C_GamePlay_Result_TitleDetailName_61",
+    "C_GamePlay_Result_TitleDetailName_61"
+  ],
+  "471651189": [
+    "C_GamePlay_Result_TitleName_62",
+    "C_GamePlay_Result_TitleName_62"
+  ],
+  "658516935": [
+    "C_GamePlay_Result_TitleDetailName_62",
+    "C_GamePlay_Result_TitleDetailName_62"
+  ],
+  "839830695": [
+    "C_GamePlay_Result_TitleName_63",
+    "C_GamePlay_Result_TitleName_63"
+  ],
+  "498990622": [
+    "C_GamePlay_Result_TitleDetailName_63",
+    "C_GamePlay_Result_TitleDetailName_63"
+  ],
+  "918123081": [
+    "C_GamePlay_Result_TitleName_64",
+    "C_GamePlay_Result_TitleName_64"
+  ],
+  "325664958": [
+    "C_GamePlay_Result_TitleDetailName_64",
+    "C_GamePlay_Result_TitleDetailName_64"
+  ],
+  "474916667": [
+    "C_GamePlay_Result_TitleName_65",
+    "C_GamePlay_Result_TitleName_65"
+  ],
+  "040129772": [
+    "C_GamePlay_Result_TitleDetailName_65",
+    "C_GamePlay_Result_TitleDetailName_65"
+  ],
+  "356198938": [
+    "C_GamePlay_Result_TitleName_66",
+    "C_GamePlay_Result_TitleName_66"
+  ],
+  "808541652": [
+    "C_GamePlay_Result_TitleDetailName_66",
+    "C_GamePlay_Result_TitleDetailName_66"
+  ],
+  "087443380": [
+    "C_GamePlay_Result_TitleName_67",
+    "C_GamePlay_Result_TitleName_67"
+  ],
+  "886160459": [
+    "C_GamePlay_Result_TitleDetailName_67",
+    "C_GamePlay_Result_TitleDetailName_67"
+  ],
+  "943212599": [
+    "C_GamePlay_Result_TitleName_68",
+    "C_GamePlay_Result_TitleName_68"
+  ],
+  "585874289": [
+    "C_GamePlay_Result_TitleDetailName_68",
+    "C_GamePlay_Result_TitleDetailName_68"
+  ],
+  "718554641": [
+    "C_GamePlay_Result_TitleName_69",
+    "C_GamePlay_Result_TitleName_69"
+  ],
+  "371467469": [
+    "C_GamePlay_Result_TitleDetailName_69",
+    "C_GamePlay_Result_TitleDetailName_69"
+  ],
+  "441330148": [
+    "C_GamePlay_Result_TitleName_70",
+    "C_GamePlay_Result_TitleName_70"
+  ],
+  "948987880": [
+    "C_GamePlay_Result_TitleDetailName_70",
+    "C_GamePlay_Result_TitleDetailName_70"
+  ],
+  "719692184": [
+    "C_GamePlay_Result_TitleName_71",
+    "C_GamePlay_Result_TitleName_71"
+  ],
+  "015626852": [
+    "C_GamePlay_Result_TitleDetailName_71",
+    "C_GamePlay_Result_TitleDetailName_71"
+  ],
+  "504220418": [
+    "C_GamePlay_Result_TitleName_75",
+    "C_GamePlay_Result_TitleName_75"
+  ],
+  "702566697": [
+    "C_GamePlay_Result_TitleDetailName_75",
+    "C_GamePlay_Result_TitleDetailName_75"
+  ],
+  "004089951": [
+    "C_GamePlay_Result_TitleName_84",
+    "C_GamePlay_Result_TitleName_84"
+  ],
+  "443299586": [
+    "C_GamePlay_Result_TitleDetailName_84",
+    "C_GamePlay_Result_TitleDetailName_84"
+  ],
+  "761459791": [
+    "C_GamePlay_Result_TitleName_95",
+    "C_GamePlay_Result_TitleName_95"
+  ],
+  "973513344": [
+    "C_GamePlay_Result_TitleName_96",
+    "C_GamePlay_Result_TitleName_96"
+  ],
+  "821342397": [
+    "C_GamePlay_Result_TitleName_97",
+    "C_GamePlay_Result_TitleName_97"
+  ],
+  "902473401": [
+    "C_GamePlay_Result_TitleName_98",
+    "C_GamePlay_Result_TitleName_98"
+  ],
+  "358016597": [
+    "C_GamePlay_Result_TitleName_99",
+    "C_GamePlay_Result_TitleName_99"
+  ],
+  "175630513": [
+    "C_GamePlay_Result_TitleName_100",
+    "C_GamePlay_Result_TitleName_100"
+  ],
+  "342742008": [
+    "C_GamePlay_Result_TitleName_101",
+    "C_GamePlay_Result_TitleName_101"
+  ],
+  "561520108": [
+    "C_GamePlay_Result_TitleName_85",
+    "C_GamePlay_Result_TitleName_85"
+  ],
+  "116003378": [
+    "C_GamePlay_Result_TitleName_86",
+    "C_GamePlay_Result_TitleName_86"
+  ],
+  "482445530": [
+    "C_GamePlay_Result_TitleName_87",
+    "C_GamePlay_Result_TitleName_87"
+  ],
+  "648971790": [
+    "C_GamePlay_Result_TitleName_88",
+    "C_GamePlay_Result_TitleName_88"
+  ],
+  "769416170": [
+    "C_GamePlay_Result_TitleName_89",
+    "C_GamePlay_Result_TitleName_89"
+  ],
+  "589245068": [
+    "C_GamePlay_Result_TitleName_90",
+    "C_GamePlay_Result_TitleName_90"
+  ],
+  "649555913": [
+    "C_GamePlay_Result_TitleName_91",
+    "C_GamePlay_Result_TitleName_91"
+  ],
+  "214703741": [
+    "C_GamePlay_Result_TitleDetailName_91",
+    "C_GamePlay_Result_TitleDetailName_91"
+  ],
+  "381531012": [
+    "C_GamePlay_Result_TitleName_92",
+    "C_GamePlay_Result_TitleName_92"
+  ],
+  "151167489": [
+    "C_GamePlay_Result_TitleDetailName_92",
+    "C_GamePlay_Result_TitleDetailName_92"
+  ],
+  "022509995": [
+    "C_GamePlay_Result_TitleName_93",
+    "C_GamePlay_Result_TitleName_93"
+  ],
+  "980386648": [
+    "C_GamePlay_Result_TitleName_94",
+    "C_GamePlay_Result_TitleName_94"
+  ],
+  "886762361": [
+    "C_GamePlay_Result_TitleDetailName_94",
+    "C_GamePlay_Result_TitleDetailName_94"
+  ],
+  "462176882": [
+    "C_GamePlay_Result_DesignationName_Kill",
+    "C_GamePlay_Result_DesignationName_Kill"
+  ],
+  "147518382": [
+    "C_GamePlay_Result_DesignationName_Desc_Kill",
+    "C_GamePlay_Result_DesignationName_Desc_Kill"
+  ],
+  "009883877": [
+    "C_GamePlay_Result_DesignationName_Assist",
+    "C_GamePlay_Result_DesignationName_Assist"
+  ],
+  "801305315": [
+    "C_GamePlay_Result_DesignationName_Desc_Assist",
+    "C_GamePlay_Result_DesignationName_Desc_Assist"
+  ],
+  "044744033": [
+    "C_GamePlay_Result_DesignationName_Head",
+    "C_GamePlay_Result_DesignationName_Head"
+  ],
+  "546208034": [
+    "C_GamePlay_Result_DesignationName_Desc_Head",
+    "C_GamePlay_Result_DesignationName_Desc_Head"
+  ],
+  "358636532": [
+    "C_GamePlay_Result_DesignationName_Damage",
+    "C_GamePlay_Result_DesignationName_Damage"
+  ],
+  "719480312": [
+    "C_GamePlay_Result_DesignationName_Desc_Damage",
+    "C_GamePlay_Result_DesignationName_Desc_Damage"
+  ],
+  "385821585": [
+    "C_GamePlay_Result_DesignationName_Throw",
+    "C_GamePlay_Result_DesignationName_Throw"
+  ],
+  "813297626": [
+    "C_GamePlay_Result_DesignationName_Desc_Throw",
+    "C_GamePlay_Result_DesignationName_Desc_Throw"
+  ],
+  "891273902": [
+    "C_GamePlay_Result_DesignationName_Blast",
+    "C_GamePlay_Result_DesignationName_Blast"
+  ],
+  "090362844": [
+    "C_GamePlay_Result_DesignationName_Desc_Blast",
+    "C_GamePlay_Result_DesignationName_Desc_Blast"
+  ],
+  "652161779": [
+    "C_GamePlay_Result_DesignationName_Money",
+    "C_GamePlay_Result_DesignationName_Money"
+  ],
+  "037962585": [
+    "C_GamePlay_Result_DesignationName_Desc_Money",
+    "C_GamePlay_Result_DesignationName_Desc_Money"
+  ],
+  "362277232": [
+    "C_GamePlay_Result_DesignationName_MultipleKill",
+    "C_GamePlay_Result_DesignationName_MultipleKill"
+  ],
+  "072484729": [
+    "C_GamePlay_Result_DesignationName_Desc_MultipleKill",
+    "C_GamePlay_Result_DesignationName_Desc_MultipleKill"
+  ]
+}

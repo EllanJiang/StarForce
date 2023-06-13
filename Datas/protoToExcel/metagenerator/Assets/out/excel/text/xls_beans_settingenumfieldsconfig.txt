@@ -1,0 +1,2998 @@
+{
+  "items": [
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        3
+      ],
+      "fieldDisplayName": "869689103",
+      "fieldName": "SlientMode",
+      "fieldType": 202,
+      "id": 2010,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "089335814",
+          "value": 1
+        },
+        {
+          "name": "462890754",
+          "value": 2
+        },
+        {
+          "name": "027070106",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 2460,
+      "tipsContent": "715749365"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "347029567",
+      "fieldName": "CrouchMode",
+      "fieldType": 201,
+      "id": 2020,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "560620876",
+          "value": 1
+        },
+        {
+          "name": "721035795",
+          "value": 2
+        },
+        {
+          "name": "503581576",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "818541323",
+      "fieldName": "ThumpMode",
+      "fieldType": 202,
+      "id": 2030,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "594200169",
+          "value": 1
+        },
+        {
+          "name": "582838540",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 2540,
+      "tipsContent": "906020659"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "418385087",
+      "fieldName": "ZoomMode",
+      "fieldType": 201,
+      "id": 2040,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "185409088",
+          "value": 1
+        },
+        {
+          "name": "435572913",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [
+        "LeftFire"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        3
+      ],
+      "fieldDisplayName": "954710225",
+      "fieldName": "LeftFireMode",
+      "fieldType": 201,
+      "id": 2050,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "909502796",
+          "value": 1
+        },
+        {
+          "name": "974436875",
+          "value": 3
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "579309844"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "871603856",
+      "fieldName": "FireMode",
+      "fieldType": 201,
+      "id": 2060,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "825951996",
+          "value": 1
+        },
+        {
+          "name": "831051734",
+          "value": 2
+        },
+        {
+          "name": "118108014",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "781628186",
+      "fieldName": "MapSide",
+      "fieldType": 201,
+      "id": 2080,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "623551503",
+          "value": 1
+        },
+        {
+          "name": "038921996",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "241579756",
+      "fieldName": "SidestepShooting",
+      "fieldType": 202,
+      "id": 2090,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "720525968",
+          "value": 1
+        },
+        {
+          "name": "788780355",
+          "value": 2
+        },
+        {
+          "name": "484180731",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 2200,
+      "tipsContent": "520925002"
+    },
+    {
+      "brDefaultValue": [
+        12
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        12,
+        12,
+        12
+      ],
+      "fieldDisplayName": "558511874",
+      "fieldName": "SwitchWeaponByTypeMode",
+      "fieldType": 203,
+      "id": 2100,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "790373401",
+          "value": 1
+        },
+        {
+          "name": "223064437",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "897962694",
+      "fieldName": "PoseMode",
+      "fieldType": 201,
+      "id": 2110,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "689323415",
+          "value": 1
+        },
+        {
+          "name": "255750419",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "891961088",
+      "fieldName": "AutoAimMode",
+      "fieldType": 201,
+      "id": 2120,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "757048698"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "489927877",
+      "fieldName": "CrossHair",
+      "fieldType": 201,
+      "id": 2130,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "714424740",
+          "value": 1
+        },
+        {
+          "name": "316109831",
+          "value": 2
+        },
+        {
+          "name": "156234549",
+          "value": 3
+        },
+        {
+          "name": "547340745",
+          "value": 4
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "213257456"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "449955475",
+      "fieldName": "BombDisposalMode",
+      "fieldType": 201,
+      "id": 2140,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "841253641",
+          "value": 1
+        },
+        {
+          "name": "748765743",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "376198380",
+      "fieldName": "ShowCrossHair",
+      "fieldType": 201,
+      "id": 2180,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "866584035",
+      "fieldName": "CrossHairColor",
+      "fieldType": 201,
+      "id": 2190,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "336363130",
+          "value": 1
+        },
+        {
+          "name": "457074046",
+          "value": 2
+        },
+        {
+          "name": "920569638",
+          "value": 3
+        },
+        {
+          "name": "788704894",
+          "value": 4
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [
+        "ImmediateStopMoveArea",
+        "ImmediateStopMove"
+      ],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "601030913",
+      "fieldName": "SidestepShootingSwitch",
+      "fieldType": 201,
+      "id": 2200,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "515712729",
+      "fieldName": "RadarStyle",
+      "fieldType": 201,
+      "id": 2210,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "279247540",
+          "value": 2
+        },
+        {
+          "name": "646962468",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "462896971",
+      "fieldName": "IsJumpThrowFire",
+      "fieldType": 201,
+      "id": 2220,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "240168361",
+      "fieldName": "ThrowGrenadeMode",
+      "fieldType": 201,
+      "id": 2230,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "368998668",
+          "value": 1
+        },
+        {
+          "name": "611183826",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "521365070"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "748205161",
+      "fieldName": "FireCloseStaticWalk",
+      "fieldType": 201,
+      "id": 2240,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "188196826"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "901591627",
+      "fieldName": "PrivateChatAuthority",
+      "fieldType": 201,
+      "id": 2250,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "624885900",
+          "value": 1
+        },
+        {
+          "name": "334704498",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "897589148"
+    },
+    {
+      "brDefaultValue": [
+        3
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        3,
+        3,
+        3
+      ],
+      "fieldDisplayName": "046115544",
+      "fieldName": "AccuracyTips",
+      "fieldType": 201,
+      "id": 2260,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "698063267",
+          "value": 1
+        },
+        {
+          "name": "576130736",
+          "value": 2
+        },
+        {
+          "name": "503581576",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "222066855",
+      "fieldName": "SingleSniperMirrorFireMode",
+      "fieldType": 201,
+      "id": 2270,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "605927561",
+          "value": 1
+        },
+        {
+          "name": "163562772",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "007219878"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "222066855",
+      "fieldName": "SingleSniperMirrorLensMode",
+      "fieldType": 201,
+      "id": 2280,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "605927561",
+          "value": 1
+        },
+        {
+          "name": "163562772",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "994345239"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "781628186",
+      "fieldName": "CustomLayoutPlanIndex",
+      "fieldType": 201,
+      "id": 2290,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "623551503",
+          "value": 1
+        },
+        {
+          "name": "038921996",
+          "value": 2
+        },
+        {
+          "name": "757035073",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "385676109",
+      "fieldName": "SnipeType",
+      "fieldType": 201,
+      "id": 2300,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "487958113",
+          "value": 1
+        },
+        {
+          "name": "616028398",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "711324612",
+      "fieldName": "IsShowDamageInfo",
+      "fieldType": 201,
+      "id": 2310,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "657169064",
+      "fieldName": "SingleSniperMirrorButton",
+      "fieldType": 204,
+      "id": 2330,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "799614673",
+          "value": 1
+        },
+        {
+          "name": "049145764",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "727305385",
+      "fieldName": "DoubleSniperMirrorButton",
+      "fieldType": 204,
+      "id": 2340,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "799614673",
+          "value": 1
+        },
+        {
+          "name": "049145764",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "222066855",
+      "fieldName": "DoubleSniperMirrorFireMode",
+      "fieldType": 201,
+      "id": 2350,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "605927561",
+          "value": 1
+        },
+        {
+          "name": "163562772",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "789478327"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "222066855",
+      "fieldName": "DoubleSniperMirrorLensMode",
+      "fieldType": 201,
+      "id": 2360,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "605927561",
+          "value": 1
+        },
+        {
+          "name": "163562772",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "837995964"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "222066855",
+      "fieldName": "SingleSniperMirrorMode",
+      "fieldType": 201,
+      "id": 2370,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "605927561",
+          "value": 1
+        },
+        {
+          "name": "163562772",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "507765774"
+    },
+    {
+      "brDefaultValue": [
+        4
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        4,
+        4,
+        4
+      ],
+      "fieldDisplayName": "222066855",
+      "fieldName": "DoubleSniperMirrorMode",
+      "fieldType": 201,
+      "id": 2380,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "605927561",
+          "value": 1
+        },
+        {
+          "name": "163562772",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "528291286"
+    },
+    {
+      "brDefaultValue": [
+        5
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        5,
+        5,
+        5
+      ],
+      "fieldDisplayName": "180461953",
+      "fieldName": "LanguageSwitch",
+      "fieldType": 201,
+      "id": 2390,
+      "img": [],
+      "isCommon": 1,
+      "items": [],
+      "saveServer": 0,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        0
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "fieldDisplayName": "831754065",
+      "fieldName": "ScreenQuality",
+      "fieldType": 201,
+      "id": 2400,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "327168715",
+          "value": 1
+        },
+        {
+          "name": "713695550",
+          "value": 2
+        },
+        {
+          "name": "280415656",
+          "value": 3
+        },
+        {
+          "name": "111626287",
+          "value": 4
+        },
+        {
+          "name": "292801313",
+          "value": 5
+        }
+      ],
+      "saveServer": 0,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "310076217"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "353884231",
+      "fieldName": "BulletTipActive",
+      "fieldType": 201,
+      "id": 2410,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "735266662"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [
+        "AppreciateWeapon"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "404992487",
+      "fieldName": "AppreciateWeaponActive",
+      "fieldType": 201,
+      "id": 2420,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "624374236"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "639339291",
+      "fieldName": "PingActive",
+      "fieldType": 201,
+      "id": 2430,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "201676482",
+      "fieldName": "FPSActive",
+      "fieldType": 201,
+      "id": 2440,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "517182115",
+      "fieldName": "BatteryActive",
+      "fieldType": 201,
+      "id": 2450,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [
+        "Slient"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "586535108",
+      "fieldName": "SlientButton",
+      "fieldType": 201,
+      "id": 2460,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "893907297",
+      "fieldName": "WeaponModeSwitch",
+      "fieldType": 201,
+      "id": 2470,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "647065950"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [
+        "QuickSwitchWeapon",
+        "RightMapQuickSwitchWeapon"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        2
+      ],
+      "fieldDisplayName": "602381604",
+      "fieldName": "QuickSwitchWeapon",
+      "fieldType": 201,
+      "id": 2480,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "596652952",
+      "fieldName": "SnipeMagnification",
+      "fieldType": 201,
+      "id": 2490,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "327747744"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "073643688",
+      "fieldName": "HearingImpairmentMode",
+      "fieldType": 201,
+      "id": 2500,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "367156273"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "934740443",
+      "fieldName": "BombSiteActive",
+      "fieldType": 201,
+      "id": 2510,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "593615110",
+      "fieldName": "LockMoveDirection",
+      "fieldType": 201,
+      "id": 2520,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "245910019"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [
+        "LowHighThrow"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "874299857",
+      "fieldName": "ThrowSwitch",
+      "fieldType": 201,
+      "id": 2530,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "034195112"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "666981933",
+      "fieldName": "ThumpFunction",
+      "fieldType": 201,
+      "id": 2540,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "345414334",
+      "fieldName": "SidestepSusceptibility",
+      "fieldType": 201,
+      "id": 2550,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "172418297",
+          "value": 1
+        },
+        {
+          "name": "754884534",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "382449053",
+      "fieldName": "QuickMirrorAndFire",
+      "fieldType": 201,
+      "id": 2580,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "234519175",
+          "value": 1
+        },
+        {
+          "name": "948289028",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "762194872"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "250629696",
+      "fieldName": "ThrowMapShow",
+      "fieldType": 201,
+      "id": 2590,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "015514009",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "493986546",
+      "fieldName": "IsAutoCruch",
+      "fieldType": 201,
+      "id": 2600,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "015514009",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "284880511"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "532606478",
+      "fieldName": "IsAutoInteract",
+      "fieldType": 201,
+      "id": 2610,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "015514009",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "302092845",
+      "fieldName": "JumpChangeCrouch",
+      "fieldType": 201,
+      "id": 2620,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "015514009",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "904582744"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "483718088",
+      "fieldName": "SprintSwitch",
+      "fieldType": 201,
+      "id": 2630,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "015514009",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "623024982",
+      "fieldName": "ShopDesign",
+      "fieldType": 201,
+      "id": 2640,
+      "img": [
+        823003,
+        823004
+      ],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "623551503",
+          "value": 1
+        },
+        {
+          "name": "038921996",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "875906686",
+      "fieldName": "RelationshipNotification",
+      "fieldType": 201,
+      "id": 2650,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "958070364"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [
+        "OpenTacticalVoice"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "967064619",
+      "fieldName": "OpenTacticalVoice",
+      "fieldType": 201,
+      "id": 2660,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "544931086",
+      "fieldName": "GyroVerticalInversion",
+      "fieldType": 201,
+      "id": 2670,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "230521918"
+    },
+    {
+      "brDefaultValue": [
+        0
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "fieldDisplayName": "586886942",
+      "fieldName": "FPSlimit",
+      "fieldType": 201,
+      "id": 2680,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "012460382",
+          "value": 30
+        },
+        {
+          "name": "759450978",
+          "value": 45
+        },
+        {
+          "name": "285595157",
+          "value": 60
+        }
+      ],
+      "saveServer": 0,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "152985721"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "832136776",
+      "fieldName": "ShotGunBtnUpFire",
+      "fieldType": 201,
+      "id": 2690,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "524096069",
+          "value": 1
+        },
+        {
+          "name": "440084872",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "872934612"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "349395183",
+      "fieldName": "SingleSniperQuick",
+      "fieldType": 201,
+      "id": 2700,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "234519175",
+          "value": 1
+        },
+        {
+          "name": "948289028",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "379164579"
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "261079910",
+      "fieldName": "DoubleSniperQuick",
+      "fieldType": 201,
+      "id": 2710,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "234519175",
+          "value": 1
+        },
+        {
+          "name": "948289028",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "525113459"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "883121615",
+      "fieldName": "MirrorRegulation",
+      "fieldType": 201,
+      "id": 2720,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "311093485",
+          "value": 1
+        },
+        {
+          "name": "761407526",
+          "value": 2
+        },
+        {
+          "name": "269373119",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "798308663"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "828573955",
+      "fieldName": "MirrorButtonLive",
+      "fieldType": 201,
+      "id": 2730,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [
+        "ChangeClip",
+        "RightMapChangeClip"
+      ],
+      "defaultValue": [
+        1,
+        1,
+        2
+      ],
+      "fieldDisplayName": "788367068",
+      "fieldName": "ReloadButton",
+      "fieldType": 201,
+      "id": 2740,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "SoundRateSwitch",
+      "fieldType": 201,
+      "id": 2750,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "MusicRateSwitch",
+      "fieldType": 201,
+      "id": 2760,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "StartRoundSoundSwitch",
+      "fieldType": 201,
+      "id": 2770,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "StartActionSoundSwitch",
+      "fieldType": 201,
+      "id": 2780,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "BombPlantedSoundSwitch",
+      "fieldType": 201,
+      "id": 2790,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "BombTensecSoundSwitch",
+      "fieldType": 201,
+      "id": 2800,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "RoundTensecSoundSwitch",
+      "fieldType": 201,
+      "id": 2810,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "EndroundSoundSwitch",
+      "fieldType": 201,
+      "id": 2820,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "UISoundRateSwitch",
+      "fieldType": 201,
+      "id": 2830,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "RoleSoundRateSwitch",
+      "fieldType": 201,
+      "id": 2840,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "BattleSoundRateSwitch",
+      "fieldType": 201,
+      "id": 2850,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "GyroRateSwitch",
+      "fieldType": 201,
+      "id": 2860,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "ChattingSoundRateSwitch",
+      "fieldType": 201,
+      "id": 2870,
+      "img": [],
+      "isCommon": 1,
+      "items": [
+        {
+          "name": "573088411",
+          "value": 0
+        },
+        {
+          "name": "809479212",
+          "value": 0
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "895467228",
+      "fieldName": "SoundLanguageSwitch",
+      "fieldType": 201,
+      "id": 2880,
+      "img": [],
+      "isCommon": 1,
+      "items": [],
+      "saveServer": 0,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        12
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        12,
+        12,
+        12
+      ],
+      "fieldDisplayName": "512762965",
+      "fieldName": "SelfDamage",
+      "fieldType": 203,
+      "id": 2900,
+      "img": [
+        823001,
+        823002
+      ],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "749780096",
+          "value": 1
+        },
+        {
+          "name": "512790829",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        12
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        12,
+        12,
+        12
+      ],
+      "fieldDisplayName": "244341598",
+      "fieldName": "GrenadeOperation",
+      "fieldType": 203,
+      "id": 2910,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "494095860",
+          "value": 1
+        },
+        {
+          "name": "127110372",
+          "value": 2
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "",
+      "fieldName": "PreviewLayoutIndex",
+      "fieldType": 201,
+      "id": 2920,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "825951996",
+          "value": 1
+        },
+        {
+          "name": "831051734",
+          "value": 2
+        },
+        {
+          "name": "118108014",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "418612892",
+      "fieldName": "GlobalSensitivitySelect",
+      "fieldType": 201,
+      "id": 2930,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "436031001",
+          "value": 1
+        },
+        {
+          "name": "890780728",
+          "value": 2
+        },
+        {
+          "name": "963350832",
+          "value": 3
+        },
+        {
+          "name": "733824855",
+          "value": 4
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        2
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        2,
+        2,
+        2
+      ],
+      "fieldDisplayName": "865787310",
+      "fieldName": "QuickInspectWeapon",
+      "fieldType": 203,
+      "id": 2940,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "858884406",
+          "value": 1
+        },
+        {
+          "name": "032891987",
+          "value": 2
+        },
+        {
+          "name": "642640557",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "997795001"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "694975904",
+      "fieldName": "SniperAutoAimMode",
+      "fieldType": 201,
+      "id": 2950,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "903320426"
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "496649125",
+      "fieldName": "KnifeAutoAimMode",
+      "fieldType": 201,
+      "id": 2960,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "820796137",
+          "value": 1
+        },
+        {
+          "name": "503581576",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": "062865455"
+    },
+    {
+      "brDefaultValue": [
+        0
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "fieldDisplayName": "263496039",
+      "fieldName": "AntiAliasing",
+      "fieldType": 201,
+      "id": 2970,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "496029205",
+          "value": 1
+        },
+        {
+          "name": "270402444",
+          "value": 2
+        },
+        {
+          "name": "765637185",
+          "value": 4
+        }
+      ],
+      "saveServer": 0,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        0
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "fieldDisplayName": "032319602",
+      "fieldName": "Resolution",
+      "fieldType": 201,
+      "id": 2980,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "124522745",
+          "value": 544
+        },
+        {
+          "name": "449596239",
+          "value": 640
+        },
+        {
+          "name": "150286629",
+          "value": 720
+        },
+        {
+          "name": "655011940",
+          "value": 960
+        }
+      ],
+      "saveServer": 0,
+      "showRelease": true,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "228398035",
+      "fieldName": "WeaponFeelControl",
+      "fieldType": 201,
+      "id": 2990,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "405686411",
+          "value": 1
+        },
+        {
+          "name": "574761509",
+          "value": 2
+        },
+        {
+          "name": "629882321",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": false,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        1
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        1,
+        1,
+        1
+      ],
+      "fieldDisplayName": "906555969",
+      "fieldName": "AutoAimAssistantMode",
+      "fieldType": 201,
+      "id": 2320,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "542267797",
+          "value": 1
+        },
+        {
+          "name": "771684051",
+          "value": 2
+        },
+        {
+          "name": "363778307",
+          "value": 3
+        }
+      ],
+      "saveServer": 1,
+      "showRelease": false,
+      "switchId": 0,
+      "tipsContent": ""
+    },
+    {
+      "brDefaultValue": [
+        0
+      ],
+      "buttonKeys": [],
+      "defaultValue": [
+        0,
+        0,
+        0
+      ],
+      "fieldDisplayName": "444969172",
+      "fieldName": "SceneTexture",
+      "fieldType": 201,
+      "id": 2991,
+      "img": [],
+      "isCommon": 0,
+      "items": [
+        {
+          "name": "375252670",
+          "value": 512
+        },
+        {
+          "name": "349619035",
+          "value": 1024
+        },
+        {
+          "name": "293389475",
+          "value": 2048
+        }
+      ],
+      "saveServer": 0,
+      "showRelease": false,
+      "switchId": 0,
+      "tipsContent": ""
+    }
+  ]
+}

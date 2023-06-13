@@ -1,0 +1,138 @@
+/**
+* @file:   excel\ZombieMonsterData.xlsx\ZombieMonsterData
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ZombieMonsterData{
+	// ZombieID 
+	uint32 id = 1;
+	// MonsterData中的ID 
+	uint32 MonsterId = 2;
+	// 等级 
+	uint32 Level = 3;
+	// Zombie类型 
+	uint32 ZombieType = 4;
+	// 感知记忆时长 
+	float MemorySpan = 5;
+	// 视野感知目标的角度 
+	uint32 VisionPerceptionTargetAngle = 6;
+	// 视野感知目标的距离 
+	uint32 VisionPerceptionTargetDistance = 7;
+	// 选择目标的时间间隔 
+	float SelectTargetTimeInterval = 8;
+	// 收集多少秒所受的伤害 
+	float CollectDamegeTimeInterval = 9;
+	// 旋转后的等待时间 
+	float RotationBeforeWaitTime = 10;
+	// 瞄准敌人时角度换算成时间的倍率 
+	float AngleToAimAtTargetContinueTime = 11;
+	// 动态转向时的Power参数 
+	float DynamicRotationPower = 12;
+	// 攻击持续时间 
+	float AttackDurationTime = 13;
+	// 攻击持续时间偏差 
+	float AttackDurationTimeDeviation = 14;
+	// 攻击节奏 
+	float AttackCadence = 15;
+	// 攻击冷却时间 
+	float AttackCooldownTime = 16;
+	// 攻击冷却时间偏差 
+	float AttackCooldownTimeDeviation = 17;
+	// 最小伤害范围 
+	float MinAttackDamageRadius = 18;
+	// 最大伤害范围 
+	float MaxAttackDamageRadius = 19;
+	// 攻击距离 
+	uint32 AttackDistance = 20;
+	// 攻击距离偏差 
+	uint32 AttackDistanceDeviation = 21;
+	// 最小攻击伤害（无范围伤害该字段就为实际伤害） 
+	uint32 MinAttackDamage = 22;
+	// 最大攻击伤害 
+	uint32 MaxAttackDamage = 23;
+	// 对Zombie的伤害衰减比例 
+	float DecayDamageRateToZombie = 24;
+	// 爆炸中心点距离脚的偏移 
+	float ExplodeCenter = 25;
+	// 近战攻击高度 
+	float AttackHeight = 26;
+	// 近战攻击角度 
+	uint32 AttackAngle = 27;
+	// 护甲穿透比例 
+	float AttackDamageArmorScale = 28;
+	// 视野检测过滤Zombie 
+	bool FiltrationZombie = 29;
+	// 枪头部伤害系数 
+	float InstantHeadRate = 30;
+	// 枪背部伤害系数 
+	float InstantBackRate = 31;
+	// 刀伤害系数 
+	float MeleeHurtRate = 32;
+	// 可伤害人数上限 
+	uint32 AttackCount = 33;
+	// 闪躲CD 
+	float DodgeIntervalTime = 34;
+	// 闪躲概率 
+	float DodgeRate = 35;
+	// 朝向角度限制 
+	float DodgeAngleLimit = 36;
+	// 闪躲的距离 
+	float DodgeDistance = 37;
+	// 闪躲所需时间 
+	float DodgeCostTime = 38;
+	// 近战伤害延时 
+	float HurtDelay = 39;
+	// 武器ID 
+	uint32 WeaponId = 40;
+	// 躲闪前摇时长 
+	float PreDodgeTime = 41;
+	// 躲闪后摇时长 
+	float AfterDodgeTime = 42;
+	// 攻击间隔游荡概率 
+	float WanderRate = 43;
+	// 出生攻击冷却时间 
+	float BornAttackCoolDownTime = 44;
+	// 开火位置高度偏差 
+	float FirePositionHeightDeviation = 45;
+	// 开火位置角度偏差 
+	float FirePositionAngleDeviation = 46;
+	// 开火位置距离偏差 
+	float FirePositionDistanceDeviation = 47;
+	// 瞄准目标胸部水平方向的最小偏移 
+	float AimAtTargetHorizontalMinDeviation = 48;
+	// 瞄准目标胸部垂直方向的最小偏移 
+	float AimAtTargetVerticalMinDeviation = 49;
+	// 瞄准目标胸部水平方向的最大偏移 
+	float AimAtTargetHorizontalMaxDeviation = 50;
+	// 瞄准目标胸部垂直方向的最大偏移 
+	float AimAtTargetVerticalMaxDeviation = 51;
+	// 冲向敌人的距离限制 
+	float RushToEnemyDistanceLimit = 52;
+	// 移动时间 
+	float MoveContinueTime = 53;
+	// 移动时间偏差 
+	float MoveContinueTimeDeviation = 54;
+	// 站立时间 
+	float IdleContinueTime = 55;
+	// 站立时间偏差 
+	float IdleContinueTimeDeviation = 56;
+	// 原地巡逻半径 
+	float SituPatrolRadius = 57;
+	// 原地巡逻半径偏差 
+	float SituPatrolRadiusDeviation = 58;
+	// 原地Idle时间 
+	float SituPatrolIdleTime = 59;
+	// 原地Idle时间偏差 
+	float SituPatrolIdleTimeDeviation = 60;
+	// 原地索敌半径 
+	float SituRiggingRadius = 61;
+}
+
+message ZombieMonsterData_Array {
+	repeated ZombieMonsterData items = 1;
+}

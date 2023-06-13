@@ -1,0 +1,30 @@
+/**
+* @file:   excel\SkinAbilitySuitModeConfig.xlsx\SkinAbilitySuitModeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SkinAbilitySuitModeConfig{
+	// 模式 
+	uint32 id = 1;
+	// 钻石产出概率(万分比) 
+	uint32 headShotDiamondRate = 2;
+	// 金币产出概率(万分比) 
+	uint32 headShotGoldRate = 3;
+	// 排位币产出概率(万分比) 
+	uint32 headShotRankedCoinRate = 4;
+	// 钻石产出概率(万分比) 
+	uint32 normalDiamondRate = 5;
+	// 金币产出概率(万分比) 
+	uint32 normalGoldRate = 6;
+	// 排位币产出概率(万分比) 
+	uint32 normalRankedCoinRate = 7;
+}
+
+message SkinAbilitySuitModeConfig_Array {
+	repeated SkinAbilitySuitModeConfig items = 1;
+}

@@ -1,0 +1,689 @@
+{
+  "items": [
+    {
+      "id": 2041,
+      "quality": [
+        {
+          "dropID": 20411,
+          "level": 3,
+          "weight": 950
+        },
+        {
+          "dropID": 20412,
+          "level": 4,
+          "weight": 49
+        },
+        {
+          "dropID": 20413,
+          "level": 5,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": 2042,
+      "quality": [
+        {
+          "dropID": 20412,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2043,
+      "quality": [
+        {
+          "dropID": 20413,
+          "level": 5,
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "id": 2051,
+      "quality": [
+        {
+          "dropID": 20511,
+          "level": 1,
+          "weight": 967
+        },
+        {
+          "dropID": 20512,
+          "level": 3,
+          "weight": 30
+        },
+        {
+          "dropID": 20513,
+          "level": 4,
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": 2052,
+      "quality": [
+        {
+          "dropID": 20511,
+          "level": 1,
+          "weight": 925
+        },
+        {
+          "dropID": 20512,
+          "level": 3,
+          "weight": 30
+        },
+        {
+          "dropID": 20513,
+          "level": 4,
+          "weight": 40
+        },
+        {
+          "dropID": 20514,
+          "level": 5,
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "id": 2053,
+      "quality": [
+        {
+          "dropID": 20511,
+          "level": 1,
+          "weight": 938
+        },
+        {
+          "dropID": 20512,
+          "level": 3,
+          "weight": 55
+        },
+        {
+          "dropID": 20513,
+          "level": 4,
+          "weight": 6
+        },
+        {
+          "dropID": 20514,
+          "level": 5,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": 2054,
+      "quality": [
+        {
+          "dropID": 20512,
+          "level": 3,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2055,
+      "quality": [
+        {
+          "dropID": 20513,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2056,
+      "quality": [
+        {
+          "dropID": 20514,
+          "level": 5,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2061,
+      "quality": [
+        {
+          "dropID": 20611,
+          "level": 1,
+          "weight": 967
+        },
+        {
+          "dropID": 20612,
+          "level": 3,
+          "weight": 30
+        },
+        {
+          "dropID": 20613,
+          "level": 4,
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": 2062,
+      "quality": [
+        {
+          "dropID": 20611,
+          "level": 1,
+          "weight": 922
+        },
+        {
+          "dropID": 20612,
+          "level": 3,
+          "weight": 30
+        },
+        {
+          "dropID": 20613,
+          "level": 4,
+          "weight": 40
+        },
+        {
+          "dropID": 20614,
+          "level": 5,
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "id": 2063,
+      "quality": [
+        {
+          "dropID": 20611,
+          "level": 1,
+          "weight": 937
+        },
+        {
+          "dropID": 20612,
+          "level": 3,
+          "weight": 55
+        },
+        {
+          "dropID": 20613,
+          "level": 4,
+          "weight": 6
+        },
+        {
+          "dropID": 20614,
+          "level": 5,
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "id": 2064,
+      "quality": [
+        {
+          "dropID": 20612,
+          "level": 3,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2065,
+      "quality": [
+        {
+          "dropID": 20613,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2066,
+      "quality": [
+        {
+          "dropID": 20614,
+          "level": 5,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2071,
+      "quality": [
+        {
+          "dropID": 20711,
+          "level": 1,
+          "weight": 960
+        },
+        {
+          "dropID": 20712,
+          "level": 3,
+          "weight": 35
+        },
+        {
+          "dropID": 20713,
+          "level": 4,
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": 2072,
+      "quality": [
+        {
+          "dropID": 20711,
+          "level": 1,
+          "weight": 925
+        },
+        {
+          "dropID": 20712,
+          "level": 3,
+          "weight": 30
+        },
+        {
+          "dropID": 20713,
+          "level": 4,
+          "weight": 49
+        }
+      ]
+    },
+    {
+      "id": 2073,
+      "quality": [
+        {
+          "dropID": 20711,
+          "level": 1,
+          "weight": 930
+        },
+        {
+          "dropID": 20712,
+          "level": 3,
+          "weight": 63
+        },
+        {
+          "dropID": 20713,
+          "level": 4,
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": 2074,
+      "quality": [
+        {
+          "dropID": 20712,
+          "level": 3,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2075,
+      "quality": [
+        {
+          "dropID": 20713,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2081,
+      "quality": [
+        {
+          "dropID": 20811,
+          "level": 3,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2091,
+      "quality": [
+        {
+          "dropID": 20911,
+          "level": 3,
+          "weight": 950
+        },
+        {
+          "dropID": 20912,
+          "level": 4,
+          "weight": 49
+        },
+        {
+          "dropID": 20913,
+          "level": 5,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": 2092,
+      "quality": [
+        {
+          "dropID": 20912,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2093,
+      "quality": [
+        {
+          "dropID": 20913,
+          "level": 5,
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "id": 2101,
+      "quality": [
+        {
+          "dropID": 21011,
+          "level": 1,
+          "weight": 320
+        },
+        {
+          "dropID": 21012,
+          "level": 4,
+          "weight": 150
+        },
+        {
+          "dropID": 21013,
+          "level": 5,
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "id": 2111,
+      "quality": [
+        {
+          "dropID": 21111,
+          "level": 1,
+          "weight": 303
+        },
+        {
+          "dropID": 21112,
+          "level": 3,
+          "weight": 388
+        },
+        {
+          "dropID": 21113,
+          "level": 4,
+          "weight": 300
+        },
+        {
+          "dropID": 21114,
+          "level": 5,
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "id": 2112,
+      "quality": [
+        {
+          "dropID": 21112,
+          "level": 3,
+          "weight": 300
+        },
+        {
+          "dropID": 21113,
+          "level": 4,
+          "weight": 600
+        },
+        {
+          "dropID": 21114,
+          "level": 5,
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "id": 2121,
+      "quality": [
+        {
+          "dropID": 21211,
+          "level": 1,
+          "weight": 570
+        }
+      ]
+    },
+    {
+      "id": 2122,
+      "quality": [
+        {
+          "dropID": 21212,
+          "level": 1,
+          "weight": 570
+        }
+      ]
+    },
+    {
+      "id": 2123,
+      "quality": [
+        {
+          "dropID": 21213,
+          "level": 1,
+          "weight": 570
+        }
+      ]
+    },
+    {
+      "id": 2131,
+      "quality": [
+        {
+          "dropID": 21311,
+          "level": 1,
+          "weight": 450
+        },
+        {
+          "dropID": 21312,
+          "level": 3,
+          "weight": 350
+        },
+        {
+          "dropID": 21313,
+          "level": 4,
+          "weight": 250
+        }
+      ]
+    },
+    {
+      "id": 2132,
+      "quality": [
+        {
+          "dropID": 21311,
+          "level": 1,
+          "weight": 200
+        },
+        {
+          "dropID": 21312,
+          "level": 3,
+          "weight": 300
+        },
+        {
+          "dropID": 21313,
+          "level": 4,
+          "weight": 500
+        }
+      ]
+    },
+    {
+      "id": 2141,
+      "quality": [
+        {
+          "dropID": 21411,
+          "level": 1,
+          "weight": 750
+        },
+        {
+          "dropID": 21412,
+          "level": 3,
+          "weight": 250
+        },
+        {
+          "dropID": 21413,
+          "level": 4,
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "id": 2142,
+      "quality": [
+        {
+          "dropID": 21412,
+          "level": 3,
+          "weight": 300
+        }
+      ]
+    },
+    {
+      "id": 2143,
+      "quality": [
+        {
+          "dropID": 21411,
+          "level": 1,
+          "weight": 300
+        },
+        {
+          "dropID": 21412,
+          "level": 3,
+          "weight": 550
+        },
+        {
+          "dropID": 21413,
+          "level": 4,
+          "weight": 150
+        }
+      ]
+    },
+    {
+      "id": 2151,
+      "quality": [
+        {
+          "dropID": 21511,
+          "level": 1,
+          "weight": 4380
+        },
+        {
+          "dropID": 21512,
+          "level": 2,
+          "weight": 4260
+        },
+        {
+          "dropID": 21513,
+          "level": 3,
+          "weight": 90
+        },
+        {
+          "dropID": 21514,
+          "level": 4,
+          "weight": 28
+        }
+      ]
+    },
+    {
+      "id": 2152,
+      "quality": [
+        {
+          "dropID": 21513,
+          "level": 3,
+          "weight": 90
+        },
+        {
+          "dropID": 21514,
+          "level": 4,
+          "weight": 28
+        }
+      ]
+    },
+    {
+      "id": 2153,
+      "quality": [
+        {
+          "dropID": 21515,
+          "level": 5,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": 2154,
+      "quality": [
+        {
+          "dropID": 21511,
+          "level": 1,
+          "weight": 4380
+        },
+        {
+          "dropID": 21512,
+          "level": 2,
+          "weight": 4260
+        },
+        {
+          "dropID": 21512,
+          "level": 3,
+          "weight": 900
+        },
+        {
+          "dropID": 21513,
+          "level": 4,
+          "weight": 280
+        },
+        {
+          "dropID": 21515,
+          "level": 5,
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "id": 2155,
+      "quality": [
+        {
+          "dropID": 21511,
+          "level": 1,
+          "weight": 850
+        },
+        {
+          "dropID": 21512,
+          "level": 2,
+          "weight": 4260
+        },
+        {
+          "dropID": 21512,
+          "level": 3,
+          "weight": 450
+        },
+        {
+          "dropID": 21513,
+          "level": 4,
+          "weight": 150
+        },
+        {
+          "dropID": 21515,
+          "level": 5,
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "id": 2161,
+      "quality": [
+        {
+          "dropID": 21611,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    },
+    {
+      "id": 2171,
+      "quality": [
+        {
+          "dropID": 21711,
+          "level": 4,
+          "weight": 1000
+        }
+      ]
+    }
+  ]
+}

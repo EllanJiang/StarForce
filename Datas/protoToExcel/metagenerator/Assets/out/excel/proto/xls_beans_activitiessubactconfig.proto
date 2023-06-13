@@ -1,0 +1,53 @@
+/**
+* @file:   excel\ActivitiesSubActConfig.xlsx\ActivitiesSubActConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ActivitiesSubActConfig{
+	// key 
+	uint32 id = 1;
+	// 子活动名称 
+	string name = 2;
+	// 开始时间 
+	int64 startTime = 3;
+	// 结束时间 
+	int64 endTime = 4;
+	// 开始天 
+	uint32 startDay = 5;
+	// 结束天 
+	uint32 endDay = 6;
+	// 循环类型 
+	string cycleType = 7;
+	// 循环开始日期 
+	uint32 cycleStartDate = 8;
+	// 循环结束日期 
+	uint32 cycleEndDate = 9;
+	// 对应活动ID 
+	uint32 catalogId = 10;
+	// 显示条件 
+	repeated ActivitiesSubActConfig_showCond showCond = 11;
+	// 子活动背景图 
+	uint32 backgroundImg = 12;
+	// 跳转执行函数 
+	string navigateFuncName = 13;
+	// 跳转执行参数 
+	uint32 navigateParam = 14;
+	// 跳转网页URL 
+	string webURL = 15;
+}
+
+message ActivitiesSubActConfig_showCond{
+	// 显示条件 
+	string condId = 1;
+	// 显示参数 
+	uint32 condValue = 2;
+}
+
+message ActivitiesSubActConfig_Array {
+	repeated ActivitiesSubActConfig items = 1;
+}

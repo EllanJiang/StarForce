@@ -1,0 +1,28 @@
+/**
+* @file:   excel\RechargeTypeConfig.xlsx\RechargeTypeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RechargeTypeConfig{
+	// 类型id 
+	uint32 id = 1;
+	// 价格 
+	float price = 2;
+	// 货币符号 
+	string currencySymbol = 3;
+	// 图标资源ID 
+	uint32 iconID = 4;
+	// 货币id 
+	uint32 currencyId = 5;
+	// 货币数量 
+	uint32 currencyCount = 6;
+}
+
+message RechargeTypeConfig_Array {
+	repeated RechargeTypeConfig items = 1;
+}

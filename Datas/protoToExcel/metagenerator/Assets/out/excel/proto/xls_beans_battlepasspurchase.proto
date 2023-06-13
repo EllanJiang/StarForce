@@ -1,0 +1,57 @@
+/**
+* @file:   excel\BattlePassPurchase.xlsx\BattlePassPurchase
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattlePassPurchase{
+	// 购买类型 
+	uint32 id = 1;
+	// 商品类型 
+	uint32 goodsType = 2;
+	// 消耗道具ID1、属性ID 
+	repeated BattlePassPurchase_costs costs = 3;
+	// 折扣 
+	uint32 discount = 4;
+	// 折扣限制类型 
+	repeated BattlePassPurchase_limit limit = 5;
+	// 道具ID、属性ID 
+	repeated BattlePassPurchase_effect effect = 6;
+}
+
+message BattlePassPurchase_costs{
+	// 消耗道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+}
+
+message BattlePassPurchase_limit{
+	// 折扣限制类型 
+	uint32 id = 1;
+	// 折扣限制值 
+	uint32 value = 2;
+}
+
+message BattlePassPurchase_effect{
+	// 道具ID、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message BattlePassPurchase_Array {
+	repeated BattlePassPurchase items = 1;
+}

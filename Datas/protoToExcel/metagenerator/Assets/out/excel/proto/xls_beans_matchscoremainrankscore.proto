@@ -1,0 +1,43 @@
+/**
+* @file:   excel\MatchScoreMainRankscore.xlsx\MatchScoreMainRankscore
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchScoreMainRankscore{
+	// 评分策略id[关联表MatchPoolDef中rankedScoreStrategyId这一列] 
+	uint32 rankScoreStrategyId = 1;
+	// 发起者段位分范围下限 
+	uint32 minMatchRankScore = 2;
+	// 发起者段位分范围上限 
+	uint32 maxMatchRankScore = 3;
+	// 匹配等待时间起始 
+	uint32 minMatchWaitTime = 4;
+	// 匹配等待时间终止 
+	uint32 maxMatchWaitTime = 5;
+	// 拉取玩家段位分范围下限 
+	int32 rankScoreLowerLimit = 6;
+	// 拉取玩家段位分范围上限 
+	int32 rankScoreUpperLimit = 7;
+	// 拉取区间差值起 
+	repeated MatchScoreMainRankscore_rankScoreDiff rankScoreDiff = 8;
+}
+
+message MatchScoreMainRankscore_rankScoreDiff{
+	// 拉取区间差值起 
+	int32 start = 1;
+	// 拉取区间差值止 
+	int32 stop = 2;
+	// 评分公式基础分值 
+	int32 base = 3;
+	// 评分公式系数（计算时除以100） 
+	int32 param = 4;
+}
+
+message MatchScoreMainRankscore_Array {
+	repeated MatchScoreMainRankscore items = 1;
+}

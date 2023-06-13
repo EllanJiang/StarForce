@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "id": 101,
+      "limit": 8,
+      "weight": 130
+    },
+    {
+      "id": 102,
+      "limit": 5,
+      "weight": 1297
+    },
+    {
+      "id": 103,
+      "limit": 4,
+      "weight": 1946
+    },
+    {
+      "id": 104,
+      "limit": 4,
+      "weight": 1946
+    },
+    {
+      "id": 105,
+      "limit": 4,
+      "weight": 6485
+    },
+    {
+      "id": 106,
+      "limit": 0,
+      "weight": 10376
+    },
+    {
+      "id": 107,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 108,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 109,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 110,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 10001,
+      "limit": 0,
+      "weight": 10000
+    },
+    {
+      "id": 201,
+      "limit": 8,
+      "weight": 130
+    },
+    {
+      "id": 202,
+      "limit": 5,
+      "weight": 1297
+    },
+    {
+      "id": 203,
+      "limit": 5,
+      "weight": 1297
+    },
+    {
+      "id": 204,
+      "limit": 4,
+      "weight": 1946
+    },
+    {
+      "id": 205,
+      "limit": 4,
+      "weight": 6485
+    },
+    {
+      "id": 206,
+      "limit": 0,
+      "weight": 10376
+    },
+    {
+      "id": 207,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 208,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 209,
+      "limit": 0,
+      "weight": 19455
+    },
+    {
+      "id": 210,
+      "limit": 0,
+      "weight": 19455
+    }
+  ]
+}

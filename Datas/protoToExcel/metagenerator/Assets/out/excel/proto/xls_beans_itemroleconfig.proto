@@ -1,0 +1,61 @@
+/**
+* @file:   excel\ItemRoleConfig.xlsx\ItemRoleConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemRoleConfig{
+	// 编号 
+	uint32 id = 1;
+	// 道具类型 
+	uint32 itemType = 2;
+	// 阵营(1-T 2-CT 3-all) 
+	uint32 camp = 3;
+	// 类型 
+	uint32 mainType = 4;
+	// 子类型 
+	uint32 subType1 = 5;
+	// 二级子类型 
+	uint32 subType2 = 6;
+	// 三级子类型 
+	uint32 subType3 = 7;
+	// 四级子类型 
+	uint32 subType4 = 8;
+	// 品质 
+	uint32 quality = 9;
+	// 重要道具优先级 
+	uint32 priority = 10;
+	// 排序(从小到大) 
+	uint32 order = 11;
+	// 卖店货币 
+	uint32 sellType = 12;
+	// 卖店价格 
+	uint32 sellingPrice = 13;
+	// 是否可堆叠(0不可以 1可以) 
+	uint32 stackMax = 14;
+	// 是否自动使用(1可以) 
+	uint32 autoUse = 15;
+	// 是否自动装备(0为否,1为是) 
+	uint32 autoEquip = 16;
+	// 物品加成buffId 
+	repeated uint32 settlementBuff = 17;
+	// 基础Gs值 
+	uint32 baseGs = 18;
+	// 是否是收藏品（计入藏品收集统计） 
+	bool isCollection = 19;
+	// 头像1 
+	repeated ItemRoleConfig_headIds headIds = 20;
+}
+
+message ItemRoleConfig_headIds{
+	// 头像1 
+	uint32 id = 1;
+}
+
+message ItemRoleConfig_Array {
+	repeated ItemRoleConfig items = 1;
+}

@@ -1,0 +1,24 @@
+/**
+* @file:   excel\ArmsRaceConfig.xlsx\ArmsRaceConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ArmsRaceConfig{
+	// ID 
+	uint32 id = 1;
+	// 等级 
+	uint32 Grade = 2;
+	// 权重 
+	uint32 Weight  = 3;
+	// 武器ID 
+	uint32 WeaponId = 4;
+}
+
+message ArmsRaceConfig_Array {
+	repeated ArmsRaceConfig items = 1;
+}

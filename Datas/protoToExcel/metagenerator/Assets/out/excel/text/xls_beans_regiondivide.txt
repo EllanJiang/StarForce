@@ -1,0 +1,1004 @@
+{
+  "items": [
+    {
+      "countryGroup": "CN1",
+      "id": "CN"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "HK"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "TW"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "TH"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "MY"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "DK"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "CK"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "CC"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "LS"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MS"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "RS"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SS"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "PS"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "EC"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "WS"
+    },
+    {
+      "countryGroup": "LA1",
+      "id": "US"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "AZ"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "AQ"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "DZ"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "CZ"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BZ"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "KH"
+    },
+    {
+      "countryGroup": "BR1",
+      "id": "BR"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "MH"
+    },
+    {
+      "countryGroup": "LA1",
+      "id": "CA"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "GR"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "FR"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ER"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "PH"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "PF"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "DJ"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "KP"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "JP"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SX"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BB"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "AX"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "FJ"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "GB"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "VI"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "PR"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "MP"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "GU"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "NU"
+    },
+    {
+      "countryGroup": "LA1",
+      "id": "MX"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "WF"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "NC"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "TO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "LC"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "SK"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "XK"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "SC"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "TK"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "MC"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "LK"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "MK"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TC"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "AS"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "PK"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GS"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MU"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "ES"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BI"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "IQ"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "PY"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "CL"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "FI"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "SY"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "BA"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "UY"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "AD"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "GY"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "PA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CD"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "KY"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "LY"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "AR"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CR"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "VN"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "RO"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "NF"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SN"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "HN"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GT"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "PN"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "IR"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "BL"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "MN"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MF"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "KN"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TF"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "IN"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "CH"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "MV"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "LV"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GP"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GH"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "VC"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "VG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "AW"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "AG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GM"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TV"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SV"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "AI"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BM"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BS"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MQ"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "LA"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "MA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "NA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CU"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "BY"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "QA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BQ"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "SA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CW"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "KI"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "LI"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "FK"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "NI"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "NP"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ZA"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GQ"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MW"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "BG"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "KW"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "FO"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "CO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "DO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "AO"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "BO"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "GL"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "BH"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "GG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "EG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "RW"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "PW"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BJ"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "SM"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BV"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "SI"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "HR"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ZW"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "TL"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "MD"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "NL"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ML"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "PL"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CV"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TD"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "IL"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "VA"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "IM"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "LT"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "AF"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "JE"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "MT"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "HT"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "BN"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "IT"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TT"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ST"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "LU"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "GF"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "PT"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "BE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SH"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CF"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "IS"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "YE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TN"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "PG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "NG"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "KG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "YT"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "EH"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "NE"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "MO"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "NO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "UG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BW"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "SG"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "JO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GN"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "FM"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "AE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "HM"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "AM"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "HU"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CM"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "DM"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "GE"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "GI"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "IE"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "VU"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SL"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "DE"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "EE"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "RU"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MR"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "TJ"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "SJ"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "LB"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "SB"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GW"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TG"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "BF"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "CI"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "AL"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "KM"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ET"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "IO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SD"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "BT"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "AT"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "KR"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "UA"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "BD"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "NZ"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "UZ"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "NR"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SZ"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "LR"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "SR"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "GD"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "CY"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "ID"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "MZ"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "ZM"
+    },
+    {
+      "countryGroup": "RU1",
+      "id": "KZ"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "TR"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "UM"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "PE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "SO"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "RE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "KE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "TZ"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "ME"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "TM"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "MM"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "CX"
+    },
+    {
+      "countryGroup": "SG2",
+      "id": "OM"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "PM"
+    },
+    {
+      "countryGroup": "RU2",
+      "id": "SE"
+    },
+    {
+      "countryGroup": "LA3",
+      "id": "JM"
+    },
+    {
+      "countryGroup": "SG1",
+      "id": "AU"
+    },
+    {
+      "countryGroup": "LA2",
+      "id": "VE"
+    }
+  ]
+}

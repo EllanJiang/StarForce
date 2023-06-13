@@ -1,0 +1,24 @@
+/**
+* @file:   excel\WbBRSceneTilingInfo.xlsx\WbBRSceneTilingInfo
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WbBRSceneTilingInfo{
+	// 世界ID 
+	int32 WorldId = 1;
+	// 索引号X 
+	int32 IndexX = 2;
+	// 索引号Z 
+	int32 IndexZ = 3;
+	// 路径 
+	string TilingPath = 4;
+}
+
+message WbBRSceneTilingInfo_Array {
+	repeated WbBRSceneTilingInfo items = 1;
+}

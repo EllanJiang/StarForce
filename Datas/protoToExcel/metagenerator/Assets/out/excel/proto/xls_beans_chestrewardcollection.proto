@@ -1,0 +1,37 @@
+/**
+* @file:   excel\ChestRewardCollection.xlsx\ChestRewardCollection
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ChestRewardCollection{
+	// key 
+	uint32 id = 1;
+	// 道具ID1 
+	repeated ChestRewardCollection_effect effect = 2;
+}
+
+message ChestRewardCollection_effect{
+	// 道具ID1 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间 
+	uint32 lockTime = 3;
+	// 有效时间 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+	// 是否特殊 
+	uint32 special = 7;
+}
+
+message ChestRewardCollection_Array {
+	repeated ChestRewardCollection items = 1;
+}

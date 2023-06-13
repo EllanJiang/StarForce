@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "FightSoundVolume": "Fight_SoundVolume",
+      "MainSoundVolume": "Main_SoundVolume",
+      "MusicSoundVolume": "Music_SoundVolume",
+      "UISoundVolume": "UI_SoundVolume",
+      "VoxSoundVolume": "VOX_SoundVolume"
+    }
+  ]
+}

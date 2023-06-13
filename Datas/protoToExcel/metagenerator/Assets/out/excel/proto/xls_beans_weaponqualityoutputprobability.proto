@@ -1,0 +1,29 @@
+/**
+* @file:   excel\WeaponQualityOutputProbability.xlsx\WeaponQualityOutputProbability
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponQualityOutputProbability{
+	// 武器品质级别 
+	uint32 id = 1;
+	// 不产出暗金的武器主类型 
+	repeated WeaponQualityOutputProbability_statTrakBanWeaponType statTrakBanWeaponType = 2;
+	// 暗金概率（单位：万分之一） 
+	uint32 statTrak = 3;
+}
+
+message WeaponQualityOutputProbability_statTrakBanWeaponType{
+	// 不产出暗金的武器主类型 
+	uint32 subType1 = 1;
+	// 不产出暗金的武器二级子类型 
+	uint32 subType2 = 2;
+}
+
+message WeaponQualityOutputProbability_Array {
+	repeated WeaponQualityOutputProbability items = 1;
+}

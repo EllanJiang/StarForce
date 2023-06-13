@@ -1,0 +1,12 @@
+{
+	"BuffList": [
+		130008
+	],
+	"PrepareBuffList": [
+		130011
+	],
+	"Interval": 10,
+	"KillInterval": 3,
+	"AnimName":"",
+	"AnimTime": 5
+}

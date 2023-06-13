@@ -1,0 +1,52 @@
+/**
+* @file:   excel\EditionWelfare.xlsx\EditionWelfare
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message EditionWelfare{
+	// key 
+	uint32 id = 1;
+	// 限制条件：属性id 
+	repeated EditionWelfare_attrCond attrCond = 2;
+	// 测试返利开始时间 
+	int64 startTime = 3;
+	// 测试返利结束时间 
+	int64 endTime = 4;
+	// 邮件标题索引key 
+	string mailTitle = 5;
+	// 邮件内容索引key 
+	string mailContext = 6;
+	// 道具ID1、属性ID 
+	repeated EditionWelfare_effect effect = 7;
+}
+
+message EditionWelfare_attrCond{
+	// 限制条件：属性id 
+	uint32 id = 1;
+	// 限制条件：属性值 
+	uint32 value = 2;
+}
+
+message EditionWelfare_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message EditionWelfare_Array {
+	repeated EditionWelfare items = 1;
+}

@@ -1,0 +1,31 @@
+/**
+* @file:   excel\BRSkillCardConfig.xlsx\BRSkillCardConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRSkillCardConfig{
+	// 模式ID 
+	uint32 modeId = 1;
+	// 赛道ID 
+	uint32 trackId = 2;
+	// 技能 
+	uint32 initSkill = 3;
+	// 初始道具id 
+	repeated BRSkillCardConfig_initItem initItem = 4;
+}
+
+message BRSkillCardConfig_initItem{
+	// 初始道具id 
+	uint32 id = 1;
+	// 初始道具数量 
+	uint32 num = 2;
+}
+
+message BRSkillCardConfig_Array {
+	repeated BRSkillCardConfig items = 1;
+}

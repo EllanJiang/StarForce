@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "id": "startround",
+      "name": "819691787"
+    },
+    {
+      "id": "startaction",
+      "name": "686114573"
+    },
+    {
+      "id": "role",
+      "name": "561408655"
+    },
+    {
+      "id": "hall",
+      "name": "191317061"
+    },
+    {
+      "id": "room",
+      "name": "376388943"
+    },
+    {
+      "id": "roundend",
+      "name": "408121396"
+    },
+    {
+      "id": "bombplanted",
+      "name": "700854919"
+    },
+    {
+      "id": "bombtenseccount",
+      "name": "362766621"
+    },
+    {
+      "id": "deathcam",
+      "name": "447846168"
+    },
+    {
+      "id": "lostround",
+      "name": "383749553"
+    },
+    {
+      "id": "roundmvp",
+      "name": "025371377"
+    },
+    {
+      "id": "roundtenseccount",
+      "name": "985032536"
+    },
+    {
+      "id": "winround",
+      "name": "002406589"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+/**
+* @file:   excel\ResourceItemDescriptionConfig.xlsx\ResourceItemDescriptionConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ResourceItemDescriptionConfig{
+	//  
+	uint32 id = 1;
+	// 描述 
+	string description = 2;
+}
+
+message ResourceItemDescriptionConfig_Array {
+	repeated ResourceItemDescriptionConfig items = 1;
+}

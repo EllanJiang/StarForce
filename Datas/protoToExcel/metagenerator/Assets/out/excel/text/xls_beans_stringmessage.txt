@@ -1,0 +1,1540 @@
+{
+  "items": [
+    {
+      "id": "self_damage_enemy",
+      "message": "110571706"
+    },
+    {
+      "id": "enemy_damage_self",
+      "message": "914065353"
+    },
+    {
+      "id": "damage_count",
+      "message": "027631956"
+    },
+    {
+      "id": "camp_ct_name",
+      "message": "550450058"
+    },
+    {
+      "id": "camp_t_name",
+      "message": "927843808"
+    },
+    {
+      "id": "mvp_broadcast",
+      "message": "595184519"
+    },
+    {
+      "id": "win_ct_broadcast",
+      "message": "261418795"
+    },
+    {
+      "id": "win_t_broadcast",
+      "message": "042650559"
+    },
+    {
+      "id": "swtich_camp_broadcast",
+      "message": "365481351"
+    },
+    {
+      "id": "enemy_surplus_broadcast",
+      "message": "320430041"
+    },
+    {
+      "id": "waiting_broadcast",
+      "message": "858273194"
+    },
+    {
+      "id": "warm_broadcast",
+      "message": "158895354"
+    },
+    {
+      "id": "warm_final_broadcast",
+      "message": "392881733"
+    },
+    {
+      "id": "round_broadcast",
+      "message": "892654123"
+    },
+    {
+      "id": "round_waiting_broadcast",
+      "message": "138647505"
+    },
+    {
+      "id": "mvp_reason_highscore",
+      "message": "254941583"
+    },
+    {
+      "id": "c4_bomb_planted",
+      "message": "928880234"
+    },
+    {
+      "id": "c4_bomb_defused",
+      "message": "252743251"
+    },
+    {
+      "id": "c4_bomb_droped",
+      "message": "767413197"
+    },
+    {
+      "id": "c4_bomb_pickedup",
+      "message": "728849134"
+    },
+    {
+      "id": "c4_bomb_defusingTips",
+      "message": "969976590"
+    },
+    {
+      "id": "c4_bomb_plantTips",
+      "message": "101384797"
+    },
+    {
+      "id": "bomb_ct_target",
+      "message": "515444800"
+    },
+    {
+      "id": "bomb_t_target",
+      "message": "265354068"
+    },
+    {
+      "id": "bomb_respawn_tip",
+      "message": "451861467"
+    },
+    {
+      "id": "shopping_lack_money",
+      "message": "427076692"
+    },
+    {
+      "id": "shopping_not_allow",
+      "message": "011963013"
+    },
+    {
+      "id": "shopping_success",
+      "message": "985732874"
+    },
+    {
+      "id": "ct_camp",
+      "message": "550450058"
+    },
+    {
+      "id": "t_camp",
+      "message": "927843808"
+    },
+    {
+      "id": "be_killed",
+      "message": "083329322"
+    },
+    {
+      "id": "round_count",
+      "message": "008665962"
+    },
+    {
+      "id": "round_prepare",
+      "message": "220678046"
+    },
+    {
+      "id": "hunting_prepare",
+      "message": "507550526"
+    },
+    {
+      "id": "hunting_in_progress",
+      "message": "299290986"
+    },
+    {
+      "id": "hunting_end",
+      "message": "203863853"
+    },
+    {
+      "id": "hunting_kill_tip",
+      "message": "859676543"
+    },
+    {
+      "id": "hunting_rank_tip",
+      "message": "091738067"
+    },
+    {
+      "id": "hunting_streng_hp",
+      "message": "877609519"
+    },
+    {
+      "id": "can_not_move",
+      "message": "813733553"
+    },
+    {
+      "id": "t_plant_c4",
+      "message": "733167542"
+    },
+    {
+      "id": "ct_find_c4",
+      "message": "817947997"
+    },
+    {
+      "id": "a_point",
+      "message": "182588616"
+    },
+    {
+      "id": "b_point",
+      "message": "699366777"
+    },
+    {
+      "id": "silence",
+      "message": "516234349"
+    },
+    {
+      "id": "single_shot",
+      "message": "257955641"
+    },
+    {
+      "id": "continue_shot",
+      "message": "177719892"
+    },
+    {
+      "id": "repeat_kill",
+      "message": "010645035"
+    },
+    {
+      "id": "unarm",
+      "message": "492701798"
+    },
+    {
+      "id": "use_tirebal",
+      "message": "805001404"
+    },
+    {
+      "id": "competition_start_tip",
+      "message": "245680906"
+    },
+    {
+      "id": "first_kill_tip",
+      "message": "625171411"
+    },
+    {
+      "id": "first_kill_title",
+      "message": "578128570"
+    },
+    {
+      "id": "match_point_score_tip",
+      "message": "241116578"
+    },
+    {
+      "id": "match_countdown_tip",
+      "message": "254979990"
+    },
+    {
+      "id": "enemy_camp",
+      "message": "489544915"
+    },
+    {
+      "id": "owner_camp",
+      "message": "369801922"
+    },
+    {
+      "id": "Shop_Sell_Fail",
+      "message": "446187848"
+    },
+    {
+      "id": "Shop_Sell_Succeed",
+      "message": "188419739"
+    },
+    {
+      "id": "Shop_Purchase_Succeed",
+      "message": "708721351"
+    },
+    {
+      "id": "Shop_AskHelpPurchase_Succeed",
+      "message": "764481375"
+    },
+    {
+      "id": "Shop_HelpPurchase_Succeed",
+      "message": "196876674"
+    },
+    {
+      "id": "Shop_BeHelpPurchase_Succeed",
+      "message": "986701302"
+    },
+    {
+      "id": "Shop_Money_NotEnough",
+      "message": "724522559"
+    },
+    {
+      "id": "Shop_BuyTime_Exceed",
+      "message": "009286277"
+    },
+    {
+      "id": "Shop_BuyArea_Exceed",
+      "message": "957513226"
+    },
+    {
+      "id": "Shop_MaxOwn_Exceed",
+      "message": "092497777"
+    },
+    {
+      "id": "Shop_BuyNum_Exceed",
+      "message": "701819175"
+    },
+    {
+      "id": "Shop_Other_NotFound",
+      "message": "773673085"
+    },
+    {
+      "id": "Shop_Other_Dead",
+      "message": "477456963"
+    },
+    {
+      "id": "Shop_AskHelpPurchase_NotExist",
+      "message": "008976206"
+    },
+    {
+      "id": "Shop_AskHelp_TimesOut",
+      "message": "452503308"
+    },
+    {
+      "id": "Shop_AskHelp_Open",
+      "message": "547809084"
+    },
+    {
+      "id": "Shop_RequestWeapon",
+      "message": "381572096"
+    },
+    {
+      "id": "Shop_Requester_HasDead",
+      "message": "750830768"
+    },
+    {
+      "id": "Shop_Request_TypeLimit",
+      "message": "477462499"
+    },
+    {
+      "id": "Shop_Request_InCD",
+      "message": "016937929"
+    },
+    {
+      "id": "Shop_Shop_TheSame_Weapon",
+      "message": "089467020"
+    },
+    {
+      "id": "Shop_Revoke_Succeed",
+      "message": "770616564"
+    },
+    {
+      "id": "Shop_Revoke_Error",
+      "message": "291614843"
+    },
+    {
+      "id": "Shop_PurchasRecommendGroup_Succeed",
+      "message": "218329704"
+    },
+    {
+      "id": "Shop_PurchasRecommendGroup_Failed",
+      "message": "659624112"
+    },
+    {
+      "id": "Shop_PurchasRecommendGroup_NoChance",
+      "message": "154098896"
+    },
+    {
+      "id": "Shop_SelfPurchase",
+      "message": "316384459"
+    },
+    {
+      "id": "Shop_ReqPurchase",
+      "message": "752142297"
+    },
+    {
+      "id": "Shop_ReqPurchase_CountDown",
+      "message": "272077073"
+    },
+    {
+      "id": "pop_gamemode_matchPoint",
+      "message": "083631111"
+    },
+    {
+      "id": "Pop_KillBroad_KillerTitle",
+      "message": "552152751"
+    },
+    {
+      "id": "Pop_KillBroad_KilledTitle",
+      "message": "568686730"
+    },
+    {
+      "id": "Pop_KillBroad_AttackTitle",
+      "message": "865236923"
+    },
+    {
+      "id": "m_Pop_RoundExcellence_CTCamp",
+      "message": "550450058"
+    },
+    {
+      "id": "m_Pop_RoundExcellence_TCamp",
+      "message": "927843808"
+    },
+    {
+      "id": "m_Pop_RoundExcellence_MidCamp",
+      "message": "977398443"
+    },
+    {
+      "id": "m_Pop_RoundExcellence_MVPContent",
+      "message": "254941583"
+    },
+    {
+      "id": "watching_1p",
+      "message": "313287142"
+    },
+    {
+      "id": "watching_3p",
+      "message": "115701191"
+    },
+    {
+      "id": "InnerChat_All",
+      "message": "006650997"
+    },
+    {
+      "id": "InnerChat_Self",
+      "message": "369801922"
+    },
+    {
+      "id": "InnerChat_MySelf",
+      "message": "568686730"
+    },
+    {
+      "id": "InnerChat_Neutral",
+      "message": "355635443"
+    },
+    {
+      "id": "Chat_System",
+      "message": "648900260"
+    },
+    {
+      "id": "Precision_Low",
+      "message": "643158394"
+    },
+    {
+      "id": "Recommend_Weapon",
+      "message": "793118128"
+    },
+    {
+      "id": "Recommend_TacticalProp",
+      "message": "763993633"
+    },
+    {
+      "id": "Recommend_Equip",
+      "message": "153776243"
+    },
+    {
+      "id": "Recommend_Grenade",
+      "message": "143312319"
+    },
+    {
+      "id": "single_Game_Is_Over",
+      "message": "665684908"
+    },
+    {
+      "id": "swap_team_tip",
+      "message": "720922385"
+    },
+    {
+      "id": "Low_Bullet",
+      "message": "941138204"
+    },
+    {
+      "id": "In_ChangeClip",
+      "message": "486838252"
+    },
+    {
+      "id": "No_Bullet",
+      "message": "452532083"
+    },
+    {
+      "id": "m_TitleView_Revenge",
+      "message": "346952052"
+    },
+    {
+      "id": "self_camp_win",
+      "message": "609844056"
+    },
+    {
+      "id": "enemy_camp_win",
+      "message": "729785232"
+    },
+    {
+      "id": "chickenmode_01",
+      "message": "536603220"
+    },
+    {
+      "id": "chickenmode_02",
+      "message": "629399662"
+    },
+    {
+      "id": "chickenmode_03",
+      "message": "279773627"
+    },
+    {
+      "id": "chickenmode_04",
+      "message": "890099360"
+    },
+    {
+      "id": "chickenmode_05",
+      "message": "125053966"
+    },
+    {
+      "id": "chickenmode_06",
+      "message": "541596304"
+    },
+    {
+      "id": "chickenmode_07",
+      "message": "720867736"
+    },
+    {
+      "id": "chickenmode_08",
+      "message": ""
+    },
+    {
+      "id": "chickenmode_trapwarning",
+      "message": "990078418"
+    },
+    {
+      "id": "trackball_spawn_tip",
+      "message": "258182627"
+    },
+    {
+      "id": "pawn_defeated_tip",
+      "message": "496265024"
+    },
+    {
+      "id": "last_kill",
+      "message": "104794417"
+    },
+    {
+      "id": "last_kill_title",
+      "message": "420085646"
+    },
+    {
+      "id": "GameOverToHall",
+      "message": "416191224"
+    },
+    {
+      "id": "notice_hang_up",
+      "message": "283588511"
+    },
+    {
+      "id": "HealthShot_GetNew",
+      "message": "850858491"
+    },
+    {
+      "id": "BuffShot_GetNew",
+      "message": "343188449"
+    },
+    {
+      "id": "player_exit",
+      "message": "667169061"
+    },
+    {
+      "id": "player_get_mvp",
+      "message": "302101006"
+    },
+    {
+      "id": "become_bighead",
+      "message": "198000569"
+    },
+    {
+      "id": "Resurrect_Failed",
+      "message": "570592142"
+    },
+    {
+      "id": "reconnect_tips_message",
+      "message": "414010267"
+    },
+    {
+      "id": "scan_enemy",
+      "message": "537888301"
+    },
+    {
+      "id": "scaned_by_enemy",
+      "message": "855540835"
+    },
+    {
+      "id": "scan_and_scaned",
+      "message": "027603877"
+    },
+    {
+      "id": "joker_dance_will_start",
+      "message": "924704279"
+    },
+    {
+      "id": "joker_fanatical_will_start",
+      "message": "419647270"
+    },
+    {
+      "id": "joker_dance_will_end",
+      "message": "584863998"
+    },
+    {
+      "id": "joker_fanatical_will_end",
+      "message": "752913579"
+    },
+    {
+      "id": "joker_kill_AI",
+      "message": "579725270"
+    },
+    {
+      "id": "joker_consume_AI",
+      "message": "937749346"
+    },
+    {
+      "id": "joker_kt_start_describe",
+      "message": "780733790"
+    },
+    {
+      "id": "joker_kct_start_describe",
+      "message": "875286700"
+    },
+    {
+      "id": "joker_kt_dance_describe",
+      "message": "159371825"
+    },
+    {
+      "id": "joker_kct_dance_describe",
+      "message": "624945730"
+    },
+    {
+      "id": "joker_kt_fanatical_describe",
+      "message": "020583717"
+    },
+    {
+      "id": "joker_kct_fanatical_describe",
+      "message": "351507132"
+    },
+    {
+      "id": "joker_changeside_describe",
+      "message": "129999506"
+    },
+    {
+      "id": "joker_AI_killedName",
+      "message": "854845708"
+    },
+    {
+      "id": "kill_score",
+      "message": "658301268"
+    },
+    {
+      "id": "revenge_score",
+      "message": "423491749"
+    },
+    {
+      "id": "weapon_score",
+      "message": "881924115"
+    },
+    {
+      "id": "top_rank_score",
+      "message": "646965174"
+    },
+    {
+      "id": "top_rank_kill_score",
+      "message": "839080293"
+    },
+    {
+      "id": "autofire_on",
+      "message": "439345572"
+    },
+    {
+      "id": "autofire_off",
+      "message": "392918294"
+    },
+    {
+      "id": "Limit_Refresh_Count",
+      "message": "167455890"
+    },
+    {
+      "id": "Refresh_Success",
+      "message": "979471483"
+    },
+    {
+      "id": "pve_respawn_panel",
+      "message": "224828040"
+    },
+    {
+      "id": "pve_respawn_respawn_button",
+      "message": "843581574"
+    },
+    {
+      "id": "pve_respawn_request_button",
+      "message": "802604784"
+    },
+    {
+      "id": "pve_respawn_skip_button",
+      "message": "854219069"
+    },
+    {
+      "id": "pve_respawn_currency_out",
+      "message": "067388688"
+    },
+    {
+      "id": "pve_respawn_request_again",
+      "message": "171554918"
+    },
+    {
+      "id": "pve_respawn_cannot_help",
+      "message": "611543068"
+    },
+    {
+      "id": "pve_respawn_help_button",
+      "message": "913950251"
+    },
+    {
+      "id": "send_msg_fail",
+      "message": "701672864"
+    },
+    {
+      "id": "smoke_missile_bomb_area",
+      "message": "500738403"
+    },
+    {
+      "id": "out_map",
+      "message": "619948470"
+    },
+    {
+      "id": "double_kill_like",
+      "message": "200798851"
+    },
+    {
+      "id": "triple_kill_like",
+      "message": "568716055"
+    },
+    {
+      "id": "quadra_kill_like",
+      "message": "671283216"
+    },
+    {
+      "id": "penta_kill_like",
+      "message": "033832204"
+    },
+    {
+      "id": "spray_paint_not_equip",
+      "message": "700273016"
+    },
+    {
+      "id": "spray_paint_too_far",
+      "message": "461945726"
+    },
+    {
+      "id": "time_to_respawn",
+      "message": "839820510"
+    },
+    {
+      "id": "cant_send_empty_msg",
+      "message": "884357279"
+    },
+    {
+      "id": "click_too_mush",
+      "message": "243288001"
+    },
+    {
+      "id": "target_score",
+      "message": "480518545"
+    },
+    {
+      "id": "HealthShot_CantUse",
+      "message": "318018776"
+    },
+    {
+      "id": "Capturing_Point",
+      "message": "220855827"
+    },
+    {
+      "id": "Capturing_Point_Tip",
+      "message": "334619823"
+    },
+    {
+      "id": "Invincible_Time_Left",
+      "message": "776916502"
+    },
+    {
+      "id": "DeathMatch_Buff_Tip",
+      "message": "873143456"
+    },
+    {
+      "id": "Joker_Respawn_Progress",
+      "message": "119868325"
+    },
+    {
+      "id": "Joker_Respawn_Tip",
+      "message": "300919931"
+    },
+    {
+      "id": "Capture_Point_Broadcast",
+      "message": "399148583"
+    },
+    {
+      "id": "InspectWeapon_1",
+      "message": "938536867"
+    },
+    {
+      "id": "battle_global_tip_ball",
+      "message": "817308933"
+    },
+    {
+      "id": "battle_global_tip_protect",
+      "message": "722244327"
+    },
+    {
+      "id": "battle_global_tip_defense",
+      "message": "187457972"
+    },
+    {
+      "id": "observer_battle",
+      "message": "184296367"
+    },
+    {
+      "id": "DanceEndTime",
+      "message": "260067368"
+    },
+    {
+      "id": "Skill_Energy_Not_Enough",
+      "message": "667980106"
+    },
+    {
+      "id": "Skill_Times_Not_Enough",
+      "message": "347492414"
+    },
+    {
+      "id": "Skill_Get",
+      "message": "516796659"
+    },
+    {
+      "id": "Skill_Use",
+      "message": "939515872"
+    },
+    {
+      "id": "SkillGuideing",
+      "message": "054817086"
+    },
+    {
+      "id": "SkillCanNotUse",
+      "message": "077716063"
+    },
+    {
+      "id": "SkillInterrupt",
+      "message": "588573026"
+    },
+    {
+      "id": "SkillGrenadeScanNotify",
+      "message": "170415863"
+    },
+    {
+      "id": "SkillResidualBloodScanNotify",
+      "message": "539680129"
+    },
+    {
+      "id": "SkillBeScanNotify",
+      "message": "159527887"
+    },
+    {
+      "id": "Roguelike_tips_title_1",
+      "message": "359567287"
+    },
+    {
+      "id": "Roguelike_tips_title_2",
+      "message": "179136709"
+    },
+    {
+      "id": "Roguelike_tips_title_3",
+      "message": "146672805"
+    },
+    {
+      "id": "Roguelike_tips_title_4",
+      "message": "808210642"
+    },
+    {
+      "id": "Roguelike_tips_title_5",
+      "message": "120087281"
+    },
+    {
+      "id": "Roguelike_tips_title_6",
+      "message": "061870635"
+    },
+    {
+      "id": "Roguelike_tips_title_7",
+      "message": "067720672"
+    },
+    {
+      "id": "Roguelike_tips_title_8",
+      "message": "133728698"
+    },
+    {
+      "id": "Roguelike_tips_title_9",
+      "message": "296415103"
+    },
+    {
+      "id": "Roguelike_tips_title_10",
+      "message": "630146109"
+    },
+    {
+      "id": "Roguelike_tips_title_11",
+      "message": "912647344"
+    },
+    {
+      "id": "Roguelike_tips_bossword",
+      "message": "030458222"
+    },
+    {
+      "id": "Roguelike_task_tips_1",
+      "message": "450563212"
+    },
+    {
+      "id": "Roguelike_task_tips_2",
+      "message": "039872788"
+    },
+    {
+      "id": "Roguelike_task_tips_3",
+      "message": "858365304"
+    },
+    {
+      "id": "Roguelike_task_tips_4",
+      "message": "020514838"
+    },
+    {
+      "id": "Roguelike_task_tips_5",
+      "message": "177379931"
+    },
+    {
+      "id": "Roguelike_task_tips_6",
+      "message": "232942305"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_1",
+      "message": "450563212"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_2",
+      "message": "039872788"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_3",
+      "message": "858365304"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_4",
+      "message": "187075057"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_5",
+      "message": "399232806"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_6",
+      "message": "638877728"
+    },
+    {
+      "id": "Roguelike_task_tipsMonitor_7",
+      "message": "721216984"
+    },
+    {
+      "id": "Roguelike_about_tobe_teleported",
+      "message": "696269635"
+    },
+    {
+      "id": "Roguelike_Select_CountDown",
+      "message": "834253486"
+    },
+    {
+      "id": "Joker_Dance_Tip",
+      "message": "960785454"
+    },
+    {
+      "id": "Roguelike_respawn_dead_tips",
+      "message": "796959803"
+    },
+    {
+      "id": "Roguelike_respawn_acepanel",
+      "message": "041079408"
+    },
+    {
+      "id": "Roguelike_respawn_pay",
+      "message": "564444281"
+    },
+    {
+      "id": "Roguelike_respawn_skip_wait",
+      "message": "397353721"
+    },
+    {
+      "id": "Roguelike_respawn_request_wait",
+      "message": "397353721"
+    },
+    {
+      "id": "Rougelike_respawn_requested_tips",
+      "message": "180341912"
+    },
+    {
+      "id": "Roguelike_respawn_end",
+      "message": "216344989"
+    },
+    {
+      "id": "Roguelike_talent_select_tips",
+      "message": "607006383"
+    },
+    {
+      "id": "Roguelike_respawn_own_done",
+      "message": "325540248"
+    },
+    {
+      "id": "Roguelike_respawn_respawncoin_pay",
+      "message": "417030642"
+    },
+    {
+      "id": "Roguelike_respawn_goldcoin_pay",
+      "message": "726807994"
+    },
+    {
+      "id": "Roguelike_respawn_content",
+      "message": "052599686"
+    },
+    {
+      "id": "Roguelike_respawn_other_dead_tips",
+      "message": "037564567"
+    },
+    {
+      "id": "Roguelike_respawn_help_icon",
+      "message": "951160413"
+    },
+    {
+      "id": "Roguelike_respawn_self",
+      "message": "003861736"
+    },
+    {
+      "id": "ReplaceCampTip",
+      "message": "189227867"
+    },
+    {
+      "id": "AppreciateWeaponTip1",
+      "message": "870663460"
+    },
+    {
+      "id": "AppreciateWeaponTip2",
+      "message": "209413716"
+    },
+    {
+      "id": "AppreciateBodyTip1",
+      "message": "072371657"
+    },
+    {
+      "id": "AppreciateBodyTip2",
+      "message": "660041022"
+    },
+    {
+      "id": "AppreciateBodyTip3",
+      "message": "804643406"
+    },
+    {
+      "id": "C4AreaCheckFailedTip",
+      "message": "619634693"
+    },
+    {
+      "id": "TopTaskTipsTaskTitle",
+      "message": "722217801"
+    },
+    {
+      "id": "NoviceGuide_SkipConfirmBtnText",
+      "message": "398803460"
+    },
+    {
+      "id": "NoviceGuide_SkipCancelBtnText",
+      "message": "017136768"
+    },
+    {
+      "id": "NoviceGuide_SelectTip_Again",
+      "message": "069109395"
+    },
+    {
+      "id": "NoviceGuide_SelectTip_Exit",
+      "message": "653988679"
+    },
+    {
+      "id": "MarkTacticalAction_CountDown",
+      "message": "446345960"
+    },
+    {
+      "id": "BurstFire_Mode_Switch_on",
+      "message": "162844731"
+    },
+    {
+      "id": "BurstFire_Mode_Switch_off",
+      "message": "086458990"
+    },
+    {
+      "id": "GrenadeThrow_Mode_Switch_on",
+      "message": "463483076"
+    },
+    {
+      "id": "GrenadeThrow_Mode_Switch_off",
+      "message": "788289288"
+    },
+    {
+      "id": "ThumpKnife_Mode_Switch_on",
+      "message": "300077044"
+    },
+    {
+      "id": "ThumpKnife_Mode_Switch_off",
+      "message": "972740346"
+    },
+    {
+      "id": "JumpThrow_Mode_Switch_on",
+      "message": "848196803"
+    },
+    {
+      "id": "JumpThrow_Mode_Switch_off",
+      "message": "732623555"
+    },
+    {
+      "id": "Volume_Can_Not_Use_ThisMode_N",
+      "message": "034039239"
+    },
+    {
+      "id": "Voice_Can_Not_Use_ThisMode_N",
+      "message": "747911025"
+    },
+    {
+      "id": "Chat_Can_Not_Use_ThisMode_N",
+      "message": "953993210"
+    },
+    {
+      "id": "ShowOffWeapon",
+      "message": "762000462"
+    },
+    {
+      "id": "ShowOffBody",
+      "message": "033890492"
+    },
+    {
+      "id": "UsePaintCD",
+      "message": "747684515"
+    },
+    {
+      "id": "ChatTooFast",
+      "message": "579126751"
+    },
+    {
+      "id": "Response_Tactical_Action",
+      "message": "112264556"
+    },
+    {
+      "id": "InvincibleOnDamage",
+      "message": "343487634"
+    },
+    {
+      "id": "MiniMapViewAttack",
+      "message": "842652038"
+    },
+    {
+      "id": "MiniMapViewGuard",
+      "message": "143315465"
+    },
+    {
+      "id": "UseBuffCard",
+      "message": "538029013"
+    },
+    {
+      "id": "Dead_Message0",
+      "message": "781119043"
+    },
+    {
+      "id": "Dead_Message1",
+      "message": "831859365"
+    },
+    {
+      "id": "Dead_Message2",
+      "message": "604540754"
+    },
+    {
+      "id": "Dead_Message3",
+      "message": "554615661"
+    },
+    {
+      "id": "Gameplay_hud_Roguelike_talenttype_1_N",
+      "message": "762810842"
+    },
+    {
+      "id": "Gameplay_hud_Roguelike_talenttype_2_N",
+      "message": "439388280"
+    },
+    {
+      "id": "Gameplay_hud_Roguelike_talenttype_3_N",
+      "message": "571884031"
+    },
+    {
+      "id": "mc_battle_global_tip_ball",
+      "message": "335571341"
+    },
+    {
+      "id": "PVE_Teleporting",
+      "message": "633890876"
+    },
+    {
+      "id": "PVE__Accelerate_Teleporting",
+      "message": "545788839"
+    },
+    {
+      "id": "PVE_Ready_To_Next_Round",
+      "message": "242241880"
+    },
+    {
+      "id": "PVE_Immediate_Enter",
+      "message": "189026785"
+    },
+    {
+      "id": "RoundExcellenceView_Draw",
+      "message": "433911719"
+    },
+    {
+      "id": "PVE_Refresh_Count",
+      "message": "819101195"
+    },
+    {
+      "id": "player_enter",
+      "message": "340349956"
+    },
+    {
+      "id": "respawn_ArmraceDegrade",
+      "message": "934696673"
+    },
+    {
+      "id": "respawn_ArmraceUpgrade_Other",
+      "message": "025850066"
+    },
+    {
+      "id": "respawn_ArmraceUpgrade_Self",
+      "message": "130618521"
+    },
+    {
+      "id": "start_ArmraceTipInfo",
+      "message": "856789396"
+    },
+    {
+      "id": "topRank_ArmraceTipInfo",
+      "message": "206583656"
+    },
+    {
+      "id": "sublevel_ArmraceInfo",
+      "message": "133528142"
+    },
+    {
+      "id": "MCUpdateMoney",
+      "message": "335334846"
+    },
+    {
+      "id": "MCGMResetMoney",
+      "message": "998033328"
+    },
+    {
+      "id": "MC_AddBegin",
+      "message": "800425670"
+    },
+    {
+      "id": "MCTeamWinAward",
+      "message": "926172709"
+    },
+    {
+      "id": "MCTeamDefeatAward",
+      "message": "449501618"
+    },
+    {
+      "id": "MCTeamSetC4Award",
+      "message": "300529713"
+    },
+    {
+      "id": "MCPersonKillAward",
+      "message": "224128250"
+    },
+    {
+      "id": "MCPersonSuicideAward",
+      "message": "621903043"
+    },
+    {
+      "id": "MCPersonSetC4Award",
+      "message": "504095606"
+    },
+    {
+      "id": "MCPersonUnsetC4Award",
+      "message": "379902918"
+    },
+    {
+      "id": "MCKillMonster",
+      "message": "076003186"
+    },
+    {
+      "id": "MCPickup",
+      "message": "102562655"
+    },
+    {
+      "id": "MCRevocateBuy",
+      "message": "109882328"
+    },
+    {
+      "id": "MCBuffAdd",
+      "message": "151372960"
+    },
+    {
+      "id": "MCTalentAward",
+      "message": "586141436"
+    },
+    {
+      "id": "MCDrop",
+      "message": "577900618"
+    },
+    {
+      "id": "MCDecisiveMoney",
+      "message": "920601072"
+    },
+    {
+      "id": "MC_AddEnd",
+      "message": "485939415"
+    },
+    {
+      "id": "MC_SubBegin",
+      "message": "385100402"
+    },
+    {
+      "id": "MC_TLogSubBegin",
+      "message": "356793006"
+    },
+    {
+      "id": "MCBuy",
+      "message": "890190580"
+    },
+    {
+      "id": "MCHelpBuy",
+      "message": "543477346"
+    },
+    {
+      "id": "MCStrengthen",
+      "message": "991193650"
+    },
+    {
+      "id": "MCRefreshBuff",
+      "message": "777375416"
+    },
+    {
+      "id": "MC_TLogSubEnd",
+      "message": "389572681"
+    },
+    {
+      "id": "MCPersonKillFriendPunish",
+      "message": "309745835"
+    },
+    {
+      "id": "MCBuffReduce",
+      "message": "746616173"
+    },
+    {
+      "id": "MC_SubEnd",
+      "message": "648033973"
+    },
+    {
+      "id": "Roguelike_respawn_skip_waittime",
+      "message": "715622249"
+    },
+    {
+      "id": "Roguelike_respawn_skip_waithint",
+      "message": "040442984"
+    },
+    {
+      "id": "Revenge_Title",
+      "message": "099102769"
+    },
+    {
+      "id": "RoundExcellenceView_Win",
+      "message": "960411409"
+    },
+    {
+      "id": "RoundExcellenceView_Lose",
+      "message": "040243370"
+    },
+    {
+      "id": "MCInitMoney",
+      "message": "895210225"
+    },
+    {
+      "id": "LowFPStips",
+      "message": "780098126"
+    },
+    {
+      "id": "Pause_Killer_Tip",
+      "message": "976930628"
+    },
+    {
+      "id": "GameResultPveWin",
+      "message": "932435495"
+    },
+    {
+      "id": "GameResultPveLose",
+      "message": "044841107"
+    },
+    {
+      "id": "GameResultRank",
+      "message": "268935343"
+    },
+    {
+      "id": "ReplaceCampCurCT",
+      "message": "840383750"
+    },
+    {
+      "id": "ReplaceCampCurT",
+      "message": "612099038"
+    },
+    {
+      "id": "ReplaceCampNextCT",
+      "message": "824467156"
+    },
+    {
+      "id": "ReplaceCampNextT",
+      "message": "598334752"
+    },
+    {
+      "id": "Show_Kill_Like_Tips",
+      "message": "958934255"
+    },
+    {
+      "id": "Spray_Paint_Newbee_Hint",
+      "message": "657896600"
+    },
+    {
+      "id": "Radar_Mark_Newbee_Hint",
+      "message": "542592031"
+    },
+    {
+      "id": "Br_Rank_Describe",
+      "message": "446145555"
+    },
+    {
+      "id": "Br_Rank_Help_Describe_Num1",
+      "message": "796356744"
+    },
+    {
+      "id": "Br_Rank_Help_Describe",
+      "message": "226624110"
+    },
+    {
+      "id": "Br_Rank_WatchCountDown",
+      "message": "811207911"
+    },
+    {
+      "id": "Br_Rank_EndCountDown",
+      "message": "802447577"
+    },
+    {
+      "id": "Br_PoisonCircle_ShrinkCountDown",
+      "message": "644614406"
+    },
+    {
+      "id": "Br_PoisonCircle_LeftTimeToShrink",
+      "message": "113567757"
+    },
+    {
+      "id": "Br_PoisonCircle_Shrinking",
+      "message": "479464239"
+    },
+    {
+      "id": "Show_Watch_Like_Tips",
+      "message": "832956145"
+    },
+    {
+      "id": "BR_Item_Pickup_Success_Tips",
+      "message": "421589696"
+    },
+    {
+      "id": "BR_Item_Pickup_Limited_Tips",
+      "message": "294000983"
+    },
+    {
+      "id": "BR_Item_Pickup_Exchange_Tips",
+      "message": "024069124"
+    },
+    {
+      "id": "BR_Looking_For_HpShield_Tips",
+      "message": "576805162"
+    },
+    {
+      "id": "BR_HpShield_Full_Tips",
+      "message": "408859957"
+    },
+    {
+      "id": "BR_TextBroadcast_Eliminate_Tip1",
+      "message": "047913929"
+    },
+    {
+      "id": "BR_TextBroadcast_Eliminate_Tip2",
+      "message": "356236010"
+    },
+    {
+      "id": "BR_TextBroadcast_Eliminate_Tip3",
+      "message": "562606509"
+    },
+    {
+      "id": "BR_TextBroadcast_KnockDown_Tip1",
+      "message": "421082658"
+    },
+    {
+      "id": "BR_TextBroadcast_KnockDown_Tip2",
+      "message": "705864353"
+    },
+    {
+      "id": "BR_TextBroadcast_Respawn_Tip1",
+      "message": "827902875"
+    },
+    {
+      "id": "BR_TextBroadcast_Respawn_Tip2",
+      "message": "732278602"
+    },
+    {
+      "id": "BR_TextBroadcast_Assist_Tip1",
+      "message": "422297335"
+    },
+    {
+      "id": "BR_ElectronicReconnaissance_Be_Scan",
+      "message": "120913273"
+    },
+    {
+      "id": "BR_ElectronicReconnaissance_Scan_Num",
+      "message": "374180527"
+    },
+    {
+      "id": "BR_Looking_For_Projectile_Tips",
+      "message": "992141659"
+    },
+    {
+      "id": "BR_NoWeapon_NeedWeapon_ChatMessage",
+      "message": "321031980"
+    },
+    {
+      "id": "Br_ContractTask_Picked",
+      "message": "146127614"
+    },
+    {
+      "id": "Br_ContractTask_Limited",
+      "message": "746617127"
+    },
+    {
+      "id": "BR_FallDown_Constant_Tips",
+      "message": "964530129"
+    },
+    {
+      "id": "BR_FallDown_Giveup_Title_Tips",
+      "message": "495186447"
+    },
+    {
+      "id": "BR_FallDown_Giveup_Discription_Tips",
+      "message": "123291339"
+    },
+    {
+      "id": "BR_FallDown_Giveup_Button",
+      "message": "808325525"
+    },
+    {
+      "id": "BR_FallDown_RequireHelp_Button",
+      "message": "045165047"
+    },
+    {
+      "id": "BR_FallDown_SelfHelp_Button",
+      "message": "956420772"
+    }
+  ]
+}

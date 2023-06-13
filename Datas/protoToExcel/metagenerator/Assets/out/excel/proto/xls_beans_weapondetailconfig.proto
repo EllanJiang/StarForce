@@ -1,0 +1,38 @@
+/**
+* @file:   excel\WeaponDetailConfig.xlsx\WeaponDetailConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponDetailConfig{
+	// 武器编号 
+	uint32 id = 1;
+	//  
+	repeated WeaponDetailConfig_slider slider = 2;
+	//  
+	repeated WeaponDetailConfig_tag tag = 3;
+}
+
+message WeaponDetailConfig_slider{
+	//  
+	string key = 1;
+	//  
+	uint32 value = 2;
+	//  
+	uint32 maxValue = 3;
+}
+
+message WeaponDetailConfig_tag{
+	//  
+	string key = 1;
+	//  
+	string value = 2;
+}
+
+message WeaponDetailConfig_Array {
+	repeated WeaponDetailConfig items = 1;
+}

@@ -1,0 +1,18 @@
+/**
+* @file:   excel\DirtyWords_SG.xlsx\DirtyWords_SG
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message DirtyWords_SG{
+	// 过滤词 
+	string word = 1;
+}
+
+message DirtyWords_SG_Array {
+	repeated DirtyWords_SG items = 1;
+}

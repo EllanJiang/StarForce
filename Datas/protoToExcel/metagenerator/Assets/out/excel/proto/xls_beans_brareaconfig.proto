@@ -1,0 +1,20 @@
+/**
+* @file:   excel\BRAreaConfig.xlsx\BRAreaConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRAreaConfig{
+	// 区域ID 
+	uint32 id = 1;
+	// 场景分块路径 
+	string scenPath = 2;
+}
+
+message BRAreaConfig_Array {
+	repeated BRAreaConfig items = 1;
+}

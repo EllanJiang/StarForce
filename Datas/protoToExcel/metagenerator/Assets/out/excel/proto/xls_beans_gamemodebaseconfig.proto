@@ -1,0 +1,252 @@
+/**
+* @file:   excel\GameModeBaseConfig.xlsx\GameModeBaseConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameModeBaseConfig{
+	// 模式 
+	uint32 id = 1;
+	// 最大人数 
+	int32 numMatchMaxPlayers = 2;
+	// 最少人数 
+	int32 numStartMatchMinPlayers = 3;
+	// 防守最少人数 
+	int32 numDefenderCampMinPlayers = 4;
+	// 进攻最少人数 
+	int32 numAttackerCampMinPlayers = 5;
+	// 等待玩家加入时间 
+	int32 matchPrepareSecs = 6;
+	// 结束等待阶段方式 
+	int32 prePareEndType = 7;
+	// 热身阶段时间 
+	int32 warmUpSecs = 8;
+	// 热身结束阶段时间 
+	int32 warmUpEndSecs = 9;
+	// 回合准备时间 
+	int32 roundPrepareSecs = 10;
+	// 回合准备阶段禁止移动灰屏时间 
+	int32 roundPrepareGrayFilterSeconds = 11;
+	// 中途加入延长时间 
+	int32 joinMidWayExtendSecs = 12;
+	// 回合可求购次数 
+	uint32 roundReqHelpBuyTimes = 13;
+	// 回合购买时间 
+	int32 roundBuySecs = 14;
+	// 回合购买卡组时间 
+	int32 roundBuyCardSecs = 15;
+	// 是否可切换购买阵营 
+	bool canChangeShopCamp = 16;
+	// 购买是否消耗金钱 
+	bool costMoney = 17;
+	// 回合时间 
+	int32 roundInProgressSecs = 18;
+	// 回合结束阶段时间 
+	int32 endRoundSecs = 19;
+	// 交换阵营阶段时间 
+	int32 swapCampSecs = 20;
+	// 切换场景时间 
+	int32 switchSceneSecs = 21;
+	// 结束阶段时间 
+	int32 endMatchSecs = 22;
+	// 结束阶段结算胜负 
+	bool endMatchShowResult = 23;
+	// 结算显示方式 
+	uint32 endMatchResultEffect = 24;
+	// 回合总时间限制 
+	int32 matchTotalSecs = 25;
+	// 局内无玩家结束单局时间 
+	int32 connectionAFKTime = 26;
+	// 局内玩家无击杀结束单局时间 
+	int32 hangUpTimeOutSecs = 27;
+	// 胜利类型 
+	int32 WinType = 28;
+	// 回合数 
+	int32 numTotalRounds = 29;
+	// 目标分数 
+	int32 targetScore = 30;
+	// 得分方式（2：对手死亡得分，1：杀人得分，0回合得分） 
+	int32 matchCampScoreWay = 31;
+	// loading胜利条件说明 
+	string BattleLoadingWin = 32;
+	// 初始血量 
+	int32 initHP = 33;
+	// 最大血量 
+	int32 maxHP = 34;
+	// 半甲护甲值 
+	int32 HalfArmor = 35;
+	// 全甲护甲值 
+	int32 FullArmor = 36;
+	//  最大速度系数 
+	float maxSpeedRate = 37;
+	//  摩擦力倍数 
+	float frictionRate = 38;
+	// 爆头唯一伤害 
+	bool headShootOnly = 39;
+	// 重力倍数 
+	float gravityRate = 40;
+	// 自动起甲(客户端用) 
+	bool autoArmor = 41;
+	// 开启友方碰撞 
+	bool allyColliderActive = 42;
+	// 开启敌方碰撞 
+	bool enemyColliderActive = 43;
+	// 敌对模式 
+	uint32 hostileMode = 44;
+	// 是否检测队友伤害 
+	bool checkFriendDamage = 45;
+	// 雷是否可以穿过队友 
+	bool grenadesCanCrossFriend = 46;
+	// 死亡之后需要丢武器吗 
+	bool deadNeedDropWeapon = 47;
+	// 所有玩家武器丢弃的总数量限制 
+	int32 projectileTotalLimit = 48;
+	// 单个玩家武器丢弃的数量限制 
+	int32 projectilePersonLimit = 49;
+	// 是否可以死亡观战 
+	bool canWatch = 50;
+	// 最大ob观战人数 
+	int32 numMaxObserver = 51;
+	// 是否可以观战敌人 
+	bool canWatchEnemy = 52;
+	// 是否有观战中立频道 
+	bool hasWatchNeutralChannel = 53;
+	// 观战时，敌人是否可以有描边 
+	bool watchEnemyCanOutline = 54;
+	// 观战时，能否切换TP和FP 
+	bool watchBattleCanSwitchFT = 55;
+	// 死亡动作用时多少秒(人物动作) 
+	float deathAniSeconds = 56;
+	// 镜头旋转到敌人时间 
+	float cameraLookAroundSeconds = 57;
+	// 镜头跟随敌人时间 
+	float deathSceneSeconds = 58;
+	// 镜头保持不动时间 
+	float remindKillerSeconds = 59;
+	// 死亡回放用时多少秒(击杀过程回放) 
+	float deathBackSeconds = 60;
+	// 最少的连续击杀起报数 
+	int32 minRepeateKillCount = 61;
+	// 连续击杀时间间隔 
+	float repeateKillInterval = 62;
+	// 死亡后画面变红多少秒 
+	float deathRedFilterSeconds = 63;
+	// 无敌buffId 
+	uint32 invincibleBuffId = 64;
+	// 奖励武器初始推荐时间 
+	float rewardWeaponBeginTime = 65;
+	// 奖励武器推荐刷新时间 
+	float rewardWeaponRepeatTime = 66;
+	// 奖励武器推荐持续时间 
+	float rewardWeaponDuration = 67;
+	// 死斗复活购买时间 
+	int32 respawnBuySecs = 68;
+	// 复活检测范围 
+	float respawnPointCheckDisatance = 69;
+	// 复活点CD 
+	int32 respawnPointCdSecs = 70;
+	// 奖励武器额外奖励积分 
+	int32 awardWeaponScore = 71;
+	// 主弹夹系数 
+	int32 ClipMultiple = 72;
+	// 副弹夹系数 
+	int32 CarriedClipMultiple = 73;
+	// 关闭后坐力 
+	bool CloseRecoil = 74;
+	// 关闭散发 
+	bool CloseSpread = 75;
+	// 无限副弹夹 
+	bool InfinitSubClip = 76;
+	// 进入游戏时随机主武器开关 
+	bool randomMainWeapon = 77;
+	// 交换阵营开关 
+	bool SwapTeamsEnable = 78;
+	// 交换阵营回合数 
+	int32 SwapTeamRounds = 79;
+	// 拆弹时间 
+	float DefuseC4Time = 80;
+	// 安装时间 
+	float DeployBombTime = 81;
+	// C4下包的时候警显示发现包点 
+	bool OnPlantC4ShowFind = 82;
+	// 计分规则 
+	int32 scoreType = 83;
+	// 允许重连最大时间 
+	int32 MaxReconnectTime = 84;
+	// AI开关 
+	bool AIEnable = 85;
+	// 阵营积分规则 
+	int32 CampScoreRule = 86;
+	// 生成丢弃的武器可捡拾物 
+	bool SpawnDiscardWeapon = 87;
+	// 跟踪球数量（先暂存后面模式看是不是开新表） 
+	int32 BallNum = 88;
+	// 辅助瞄准是否生效 
+	bool AutoAimEnable = 89;
+	// 是否能够自动开火(012分别为不可/可开/默认开) 
+	uint32 AutoFireEnable = 90;
+	// 开火是否消耗弹药 
+	bool FireCost = 91;
+	// 投掷物是否消耗弹药 
+	bool GrenadeCost = 92;
+	// 死亡之后需要丢投掷物吗 
+	bool deadNeedDropGrenade = 93;
+	// 新手引导检测开关 
+	bool NoviceGuideCheckEnable = 94;
+	// 是否有皮肤枪击杀特效功能 
+	bool HasSkinLastKill = 95;
+	// 是否有准心瞄准敌人名字UI 
+	bool HasEnemyTitle = 96;
+	// 开启声源可视化 
+	bool HasSoundAssist = 97;
+	// 允许布娃娃 
+	bool canRagDoll = 98;
+	// 允许滑铲 
+	bool CanSlide = 99;
+	// 允许攀爬 
+	bool CanClimb = 100;
+	// 延迟触发观战系统，如PVE复活选择 
+	bool DelayTriggerWatchBattle = 101;
+	// 是否有队友编号UI 
+	bool HasTitleIndex = 102;
+	// RLBuff系统是否开启 
+	bool RogueLikeBuff = 103;
+	//  
+	bool PlayMusicBoxEnable = 104;
+	// 动态加载场景模式 
+	bool DynamicScene = 105;
+	// 主动丢弃武器 
+	bool DiscardWeaponInitiative = 106;
+	// 武器失去物显示头顶图标 
+	bool PickUpWeaponIconShow = 107;
+	// 小地图的声源可视化 
+	bool MiniMapSoundAssist = 108;
+	// 战术标记模式页码下标 
+	uint32 TacticalActionPageIndex = 109;
+	// 伤害数字表现等级 
+	int32 DamgeNumShowLevel = 110;
+	// 最后一击规则 
+	int32 LastRoundKillRule = 111;
+	// 是否有金币 
+	bool HasMoney = 112;
+	// 等待玩家阶段是否有开场场景漫游 
+	bool HasSceneRoam = 113;
+	// 开局头顶GUI显示时间 
+	int32 PrepareShowHeadGUITime = 114;
+	// 移动多久才出现声音 
+	float MoveSoundTriggerTIme = 115;
+	// 武器使用BR双武器 
+	bool FreeWeapon = 116;
+	// 武器使用特殊的衰减数据 
+	bool WeaponBRDecay = 117;
+	// 点赞组ID 
+	int32 LikeGroupId = 118;
+}
+
+message GameModeBaseConfig_Array {
+	repeated GameModeBaseConfig items = 1;
+}

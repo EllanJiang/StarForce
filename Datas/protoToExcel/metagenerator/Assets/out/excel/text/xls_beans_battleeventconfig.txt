@@ -1,0 +1,2106 @@
+{
+  "items": [
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 0,
+      "FloatValue": [
+        3.0,
+        10.0,
+        0.0
+      ],
+      "IntValue": [
+        10,
+        1,
+        0
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 1,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        8.0,
+        12.0,
+        8.0
+      ],
+      "IntValue": [
+        100056,
+        100057,
+        100058
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 2,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 3,
+      "stringValue": [
+        "Bell_Do"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 4,
+      "stringValue": [
+        "Bell_Mi"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 5,
+      "stringValue": [
+        "Bell_Sol"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 6,
+      "stringValue": [
+        "Bell_Do2"
+      ]
+    },
+    {
+      "AudioCD": 3.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 7,
+      "stringValue": [
+        "Amb_Drum_Bomb"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100062
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 8,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        99999.0
+      ],
+      "IntValue": [
+        100063
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 9,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 4,
+      "FloatValue": [],
+      "IntValue": [
+        1
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 10,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 4,
+      "FloatValue": [],
+      "IntValue": [
+        2
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 11,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 4,
+      "FloatValue": [],
+      "IntValue": [
+        3
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 12,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 10.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [
+        10.0
+      ],
+      "IntValue": [
+        3
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 13,
+      "stringValue": [
+        "Scene_Thailand_Music_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        1.0
+      ],
+      "IntValue": [
+        100064
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 14,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 15,
+      "stringValue": [
+        "JJWar_Explode"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 16,
+      "stringValue": [
+        "JJWar_Appear"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 0,
+      "FloatValue": [
+        1.0,
+        2.0
+      ],
+      "IntValue": [
+        50,
+        20
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 17,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.0,
+        3.0
+      ],
+      "IntValue": [
+        100056,
+        100057
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 18,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        1000000.0,
+        99999.0,
+        99999.0
+      ],
+      "IntValue": [
+        100075
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 19,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        4.0
+      ],
+      "IntValue": [
+        100076
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 20,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 21,
+      "stringValue": [
+        "OldTree"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 22,
+      "stringValue": [
+        "Chicken_Death"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 5,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 23,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 24,
+      "stringValue": [
+        "Idle"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 25,
+      "stringValue": [
+        "Dead"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 26,
+      "stringValue": [
+        "Weapon_Bullet_Hit"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 27,
+      "stringValue": [
+        "Scene_Destroy_Wood"
+      ]
+    },
+    {
+      "AudioCD": 3.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 28,
+      "stringValue": [
+        "Thailand_TukTuk_Play"
+      ]
+    },
+    {
+      "AudioCD": 22.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 29,
+      "stringValue": [
+        "Scene_Thailand_Music_Play"
+      ]
+    },
+    {
+      "AudioCD": 3.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 30,
+      "stringValue": [
+        "Morocco_Elephant_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 31,
+      "stringValue": [
+        "Scene_Destroy_Pottery"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 32,
+      "stringValue": [
+        "Scene_Destroy_Glass"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 33,
+      "stringValue": [
+        "Scene_Destroy_Metal"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [],
+      "IntValue": [
+        100094
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 34,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 5.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 35,
+      "stringValue": [
+        "IceWorld_Snow_Drop_1"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100095
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 36,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100096
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 37,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100097
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 38,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100098
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 39,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 1.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100099
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 40,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 8.0,
+      "EventType": 1,
+      "FloatValue": [
+        8.0
+      ],
+      "IntValue": [
+        100100
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 41,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 5.0,
+      "EventType": 1,
+      "FloatValue": [
+        5.0
+      ],
+      "IntValue": [
+        100101
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 42,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        10.0
+      ],
+      "IntValue": [
+        100102
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 43,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.0
+      ],
+      "IntValue": [
+        100103
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 44,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.0
+      ],
+      "IntValue": [
+        100104
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 45,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.0
+      ],
+      "IntValue": [
+        100105
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 46,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.0
+      ],
+      "IntValue": [
+        100106
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 47,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        -1.0
+      ],
+      "IntValue": [
+        100107
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 48,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 22.0,
+      "EventType": 1,
+      "FloatValue": [
+        22.0
+      ],
+      "IntValue": [
+        100109
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 49,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100110
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 50,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100111
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 51,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 3.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100112
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 52,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 7,
+      "FloatValue": [
+        1.5
+      ],
+      "IntValue": [
+        54
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 53,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 8,
+      "FloatValue": [],
+      "IntValue": [
+        23
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 54,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 7,
+      "FloatValue": [
+        0.3
+      ],
+      "IntValue": [
+        56,
+        57,
+        7
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 55,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 0,
+      "FloatValue": [
+        1.0,
+        3.0,
+        0.0
+      ],
+      "IntValue": [
+        10,
+        1,
+        0
+      ],
+      "OffsetX": -1.3,
+      "OffsetY": -2.3,
+      "OffsetZ": 0.0,
+      "id": 56,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100045
+      ],
+      "OffsetX": -1.3,
+      "OffsetY": -2.3,
+      "OffsetZ": 0.0,
+      "id": 57,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100148
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 58,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100149
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 59,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100150
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 60,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100151
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 61,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100152
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 62,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100153
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 63,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100154
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 64,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        -1.0
+      ],
+      "IntValue": [
+        100155
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 65,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        -1.0
+      ],
+      "IntValue": [
+        100156
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 66,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 10.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 67,
+      "stringValue": [
+        "Morocco_Duominuo_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 68,
+      "stringValue": [
+        "Amb_Drum_Fire_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 69,
+      "stringValue": [
+        "WestWorld_Waterfall_Play"
+      ]
+    },
+    {
+      "AudioCD": 8.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 70,
+      "stringValue": [
+        "Morocco_Guitar_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 71,
+      "stringValue": [
+        "Venice_Piano_DO"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 72,
+      "stringValue": [
+        "Venice_Piano_DO2"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 73,
+      "stringValue": [
+        "Venice_Piano_RE"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 74,
+      "stringValue": [
+        "Venice_Piano_RE2"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 75,
+      "stringValue": [
+        "Venice_Piano_MI"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 76,
+      "stringValue": [
+        "Venice_Piano_FA"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 77,
+      "stringValue": [
+        "Venice_Piano_FA2"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 78,
+      "stringValue": [
+        "Venice_Piano_SOL"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 79,
+      "stringValue": [
+        "Venice_Piano_SOL2"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 80,
+      "stringValue": [
+        "Venice_Piano_LA"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 81,
+      "stringValue": [
+        "Venice_Piano_LA2"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 82,
+      "stringValue": [
+        "Venice_Piano_SI"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 83,
+      "stringValue": [
+        "Fly"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 84,
+      "stringValue": [
+        "Drop"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 85,
+      "stringValue": [
+        "TurnL"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 10,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 86,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 11,
+      "FloatValue": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0
+      ],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 87,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [
+        1
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 88,
+      "stringValue": [
+        "Venice_Boat_Showup_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 1,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [
+        1
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 89,
+      "stringValue": [
+        "Venice_Boat_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100240
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 90,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100241
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 91,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100242
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 92,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 93,
+      "stringValue": [
+        "Main"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [
+        true
+      ],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 0,
+      "FloatValue": [
+        1.0,
+        4.0,
+        0.0
+      ],
+      "IntValue": [
+        90,
+        66,
+        0
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 94,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        8.0,
+        12.0,
+        8.0
+      ],
+      "IntValue": [
+        100249
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 95,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 96,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        9
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 97,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        10
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 98,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        11
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 99,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        12
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 100,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 13,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 101,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [
+        true
+      ],
+      "ClientOrServer": 1,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        1000000.0
+      ],
+      "IntValue": [
+        100251
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 102,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 1,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        1.5
+      ],
+      "IntValue": [
+        100252
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 104,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100257
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 105,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 106,
+      "stringValue": [
+        "Westworld_Bell"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 14,
+      "FloatValue": [],
+      "IntValue": [
+        87
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 107,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100283
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 108,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 1,
+      "FloatValue": [
+        3.5
+      ],
+      "IntValue": [
+        100284
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 109,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 15,
+      "FloatValue": [],
+      "IntValue": [
+        1
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 110,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 15,
+      "FloatValue": [],
+      "IntValue": [
+        2
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 111,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 112,
+      "stringValue": [
+        "AMB_1917_Container_Drop"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 113,
+      "stringValue": [
+        "Scene_Destroy_Brick"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        13
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 114,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        14
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 115,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        15
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 116,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        16
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 117,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 3,
+      "FloatValue": [],
+      "IntValue": [
+        17
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 118,
+      "stringValue": []
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 119,
+      "stringValue": [
+        "Amb_Station_Bells_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 2,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 120,
+      "stringValue": [
+        "Amb_Station_Train_Play"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 121,
+      "stringValue": [
+        "BrProp_Lootbox_Close"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 122,
+      "stringValue": [
+        "BrProp_Lootbox_Open"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 6,
+      "FloatValue": [],
+      "IntValue": [],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 123,
+      "stringValue": [
+        "BrProp_Lootbox_Opening"
+      ]
+    },
+    {
+      "AudioCD": 0.0,
+      "BoolValue": [],
+      "ClientOrServer": 0,
+      "EffetcCD": 0.0,
+      "EventType": 7,
+      "FloatValue": [
+        1.0
+      ],
+      "IntValue": [
+        122
+      ],
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "OffsetZ": 0.0,
+      "id": 124,
+      "stringValue": []
+    }
+  ]
+}

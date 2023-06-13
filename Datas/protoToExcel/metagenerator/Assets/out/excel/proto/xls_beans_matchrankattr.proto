@@ -1,0 +1,24 @@
+/**
+* @file:   excel\MatchRankAttr.xlsx\MatchRankAttr
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchRankAttr{
+	// 模式id 
+	uint32 id = 1;
+	// 段位分属性id（对应RoleAttrDef中的Id） 
+	uint32 rankScoreAttrId = 2;
+	// 段位属性id（对应RoleAttrDef中的Id） 
+	uint32 rankLevelAttrId = 3;
+	// 段位属性id（对应RoleAttrDef中的Id） 
+	uint32 braveScoreAttrId = 4;
+}
+
+message MatchRankAttr_Array {
+	repeated MatchRankAttr items = 1;
+}

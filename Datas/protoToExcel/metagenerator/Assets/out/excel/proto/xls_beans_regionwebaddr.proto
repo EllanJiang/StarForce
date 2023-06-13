@@ -1,0 +1,20 @@
+/**
+* @file:   excel\RegionWebAddr.xlsx\RegionWebAddr
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RegionWebAddr{
+	// 服务器regionId 
+	string id = 1;
+	// 删除用户网页 
+	string delUserWeb = 2;
+}
+
+message RegionWebAddr_Array {
+	repeated RegionWebAddr items = 1;
+}

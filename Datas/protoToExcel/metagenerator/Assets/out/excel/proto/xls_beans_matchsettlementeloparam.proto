@@ -1,0 +1,33 @@
+/**
+* @file:   excel\MatchSettlementEloParam.xlsx\MatchSettlementEloParam
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchSettlementEloParam{
+	// 规则key 
+	uint32 ruleId = 1;
+	// elo分数范围 
+	uint32 rangeEloStart = 2;
+	// elo分数范围 
+	uint32 rangeEloStop = 3;
+	// elo计算公式参数K 
+	uint32 paramK = 4;
+	// 对战排名 
+	repeated MatchSettlementEloParam_rankEloScore rankEloScore = 5;
+}
+
+message MatchSettlementEloParam_rankEloScore{
+	// 对战排名 
+	uint32 rank = 1;
+	// 排名获得elo分 
+	int32 score = 2;
+}
+
+message MatchSettlementEloParam_Array {
+	repeated MatchSettlementEloParam items = 1;
+}

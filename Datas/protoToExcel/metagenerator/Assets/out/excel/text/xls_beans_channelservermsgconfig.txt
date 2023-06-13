@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "event": "luckyStrikeGetItem",
+      "id": 1,
+      "param": 0,
+      "text_key": "get_award_TenInOneLucky_text"
+    },
+    {
+      "event": "tenInOneGetItem",
+      "id": 2,
+      "param": 111050009,
+      "text_key": "get_award_TenInOneLucky_text"
+    },
+    {
+      "event": "tenInOneGetItem",
+      "id": 3,
+      "param": 310080108,
+      "text_key": "get_award_TenInOneLucky_text"
+    },
+    {
+      "event": "openCaseGetItem",
+      "id": 4,
+      "param": 0,
+      "text_key": "get_award_TenInOneLucky_text"
+    }
+  ]
+}

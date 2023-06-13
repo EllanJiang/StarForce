@@ -1,0 +1,24 @@
+/**
+* @file:   excel\SettingGroupConfig.xlsx\SettingGroupConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SettingGroupConfig{
+	//  
+	uint32 id = 1;
+	// 标题名称 
+	string groupName = 2;
+	// 组类型 
+	uint32 groupType = 3;
+	// 字段ID 
+	repeated uint32 fields = 4;
+}
+
+message SettingGroupConfig_Array {
+	repeated SettingGroupConfig items = 1;
+}

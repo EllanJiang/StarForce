@@ -1,0 +1,78 @@
+{
+  "957370370": [
+    "C_General_PersonalProfile_Record_GunType_1_N",
+    "C_General_PersonalProfile_Record_GunType_1_N"
+  ],
+  "962036706": [
+    "C_General_PersonalProfile_Record_GunType_2_N",
+    "C_General_PersonalProfile_Record_GunType_2_N"
+  ],
+  "973275340": [
+    "C_General_PersonalProfile_Record_GunType_3_N",
+    "C_General_PersonalProfile_Record_GunType_3_N"
+  ],
+  "561445095": [
+    "C_General_PersonalProfile_Record_GunType_4_N",
+    "C_General_PersonalProfile_Record_GunType_4_N"
+  ],
+  "552369278": [
+    "C_General_PersonalProfile_Record_GunType_5_N",
+    "C_General_PersonalProfile_Record_GunType_5_N"
+  ],
+  "992318598": [
+    "C_General_PersonalProfile_Record_ThrowType_1_N",
+    "C_General_PersonalProfile_Record_ThrowType_1_N"
+  ],
+  "370392056": [
+    "C_RoleWeaponPerformance_textArgs[]_BuyCount",
+    "C_RoleWeaponPerformance_textArgs[]_BuyCount"
+  ],
+  "991777736": [
+    "C_RoleWeaponPerformance_textArgs[]_ThrowCount",
+    "C_RoleWeaponPerformance_textArgs[]_ThrowCount"
+  ],
+  "830426020": [
+    "C_RoleWeaponPerformance_textArgs[]_HitRate",
+    "C_RoleWeaponPerformance_textArgs[]_HitRate"
+  ],
+  "173301176": [
+    "C_RoleWeaponPerformance_textArgs[]_Damage",
+    "C_RoleWeaponPerformance_textArgs[]_Damage"
+  ],
+  "795728306": [
+    "C_RoleWeaponPerformance_textArgs[]_Kill",
+    "C_RoleWeaponPerformance_textArgs[]_Kill"
+  ],
+  "183360832": [
+    "C_RoleWeaponPerformance_textArgs[]_FriendDamage",
+    "C_RoleWeaponPerformance_textArgs[]_FriendDamage"
+  ],
+  "191306186": [
+    "C_General_PersonalProfile_Record_ThrowType_2_N",
+    "C_General_PersonalProfile_Record_ThrowType_2_N"
+  ],
+  "914360096": [
+    "C_RoleWeaponPerformance_textArgs[]_FlashWhiteEnemyCount",
+    "C_RoleWeaponPerformance_textArgs[]_FlashWhiteEnemyCount"
+  ],
+  "036694778": [
+    "C_RoleWeaponPerformance_textArgs[]_FlashWhiteFriendCount",
+    "C_RoleWeaponPerformance_textArgs[]_FlashWhiteFriendCount"
+  ],
+  "248597653": [
+    "C_RoleWeaponPerformance_textArgs[]_AssistKill",
+    "C_RoleWeaponPerformance_textArgs[]_AssistKill"
+  ],
+  "154549290": [
+    "C_General_PersonalProfile_Record_ThrowType_3_N",
+    "C_General_PersonalProfile_Record_ThrowType_3_N"
+  ],
+  "940435812": [
+    "C_RoleWeaponPerformance_textArgs[]_BlindnessRate",
+    "C_RoleWeaponPerformance_textArgs[]_BlindnessRate"
+  ],
+  "863238938": [
+    "C_General_PersonalProfile_Record_CommonlyUsed_N",
+    "C_General_PersonalProfile_Record_CommonlyUsed_N"
+  ]
+}

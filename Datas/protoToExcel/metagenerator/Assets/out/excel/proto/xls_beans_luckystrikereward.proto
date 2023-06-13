@@ -1,0 +1,39 @@
+/**
+* @file:   excel\LuckyStrikeReward.xlsx\LuckyStrikeReward
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message LuckyStrikeReward{
+	// key 
+	uint32 id = 1;
+	// 道具ID1、属性ID 
+	repeated LuckyStrikeReward_effect effect = 2;
+}
+
+message LuckyStrikeReward_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 是否是特殊奖励 
+	bool isSpecial = 3;
+	// gif 
+	uint32 gif = 4;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 5;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 6;
+	// 是否暗金 
+	uint32 statTrak = 7;
+	// 指定皮肤编号 
+	uint32 paintKit = 8;
+}
+
+message LuckyStrikeReward_Array {
+	repeated LuckyStrikeReward items = 1;
+}

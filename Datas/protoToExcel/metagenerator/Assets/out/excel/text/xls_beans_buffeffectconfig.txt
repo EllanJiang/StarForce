@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "BuffTimer": "",
+      "Fx": 100251,
+      "FxSocket": "",
+      "Hud": [
+        "BuffSpeedUpEffect",
+        "BuffSpeedUpEffectTip",
+        "BuffCountDownView"
+      ],
+      "id": 1
+    },
+    {
+      "BuffTimer": "",
+      "Fx": 100251,
+      "FxSocket": "",
+      "Hud": [
+        "BuffSpeedUpEffect",
+        "BuffBulletChangeUpEtcEffectTip",
+        "BuffCountDownView"
+      ],
+      "id": 2
+    },
+    {
+      "BuffTimer": "",
+      "Fx": 100251,
+      "FxSocket": "",
+      "Hud": [
+        "BuffSilentStepEffect",
+        "BuffSpeedUpEffectTip",
+        "BuffCountDownView"
+      ],
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "reward": [
+        {
+          "expire": 0,
+          "itemid": 1,
+          "lockTime": 0,
+          "paintKit": 0,
+          "statTrak": 0,
+          "value": 100,
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "reward": [
+        {
+          "expire": 0,
+          "itemid": 1,
+          "lockTime": 0,
+          "paintKit": 0,
+          "statTrak": 0,
+          "value": 500,
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "reward": [
+        {
+          "expire": 0,
+          "itemid": 1,
+          "lockTime": 0,
+          "paintKit": 0,
+          "statTrak": 0,
+          "value": 2000,
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}

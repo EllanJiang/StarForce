@@ -1,0 +1,47 @@
+/**
+* @file:   excel\BattlePropsConfig.xlsx\BattlePropsConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattlePropsConfig{
+	// 编号 
+	uint32 id = 1;
+	// 物品名称 
+	string name = 2;
+	// 属性id EBattlePickupProp） 
+	uint32 AttributeId = 3;
+	// 数量(专属掉落物品 跟装备没啥关系) 
+	float AttributeNum = 4;
+	// 队友分成数量(专属掉落物品 跟装备没啥关系) 
+	float TeamMateAttributeNum = 5;
+	// 可自动拾取 
+	uint32 AutoPickupEnable = 6;
+	// 一个能容纳的最大Num 
+	uint32 MaxNum = 7;
+	// 预制体 
+	string PrefabName = 8;
+	// 最小数量 
+	repeated BattlePropsConfig_NumDesignPrefab NumDesignPrefab = 9;
+	//  
+	string Describe = 10;
+	//  
+	uint32 ItemSpriteId = 11;
+	// 拾取音效 
+	string AutoPickupEvent = 12;
+}
+
+message BattlePropsConfig_NumDesignPrefab{
+	// 最小数量 
+	uint32 minNum = 1;
+	// 预制件 
+	string prefabName = 2;
+}
+
+message BattlePropsConfig_Array {
+	repeated BattlePropsConfig items = 1;
+}

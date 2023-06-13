@@ -1,0 +1,30 @@
+/**
+* @file:   excel\RechargeMenuConfig.xlsx\RechargeMenuConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RechargeMenuConfig{
+	// ID 
+	uint32 id = 1;
+	// 名称 
+	string name = 2;
+	// 解锁表配置ID 
+	uint32 unlockID = 3;
+	// 解锁等级 
+	uint32 unlockLevel = 4;
+	// 开始时间 
+	int64 startTime = 5;
+	// 结束时间 
+	int64 stopTime = 6;
+	// 基金ID 
+	uint32 fundId = 7;
+}
+
+message RechargeMenuConfig_Array {
+	repeated RechargeMenuConfig items = 1;
+}

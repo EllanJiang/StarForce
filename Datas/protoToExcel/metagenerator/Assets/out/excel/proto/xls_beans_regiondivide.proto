@@ -1,0 +1,20 @@
+/**
+* @file:   excel\RegionDivide.xlsx\RegionDivide
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RegionDivide{
+	// 国家ISO 3166-1代码 
+	string id = 1;
+	// 划分的逻辑区域 
+	string countryGroup = 2;
+}
+
+message RegionDivide_Array {
+	repeated RegionDivide items = 1;
+}

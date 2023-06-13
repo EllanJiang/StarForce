@@ -1,0 +1,40 @@
+/**
+* @file:   excel\BattleEventConfig.xlsx\BattleEventConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattleEventConfig{
+	// 编号 
+	uint32 id = 1;
+	// 事件类型 
+	uint32 EventType = 2;
+	// 客户端/服务器指令 
+	uint32 ClientOrServer = 3;
+	// 整型数据1 
+	repeated int32 IntValue = 4;
+	// 浮点数据1 
+	repeated float FloatValue = 5;
+	// 布尔数据1 
+	repeated bool BoolValue = 6;
+	// 字符串数据1 
+	repeated string stringValue = 7;
+	// 特效CD 
+	float EffetcCD = 8;
+	// 音效CD 
+	float AudioCD = 9;
+	// 偏移X 
+	float OffsetX = 10;
+	// 偏移Y 
+	float OffsetY = 11;
+	// 偏移Z 
+	float OffsetZ = 12;
+}
+
+message BattleEventConfig_Array {
+	repeated BattleEventConfig items = 1;
+}

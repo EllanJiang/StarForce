@@ -1,0 +1,112 @@
+{
+  "items": [
+    {
+      "canDrop": true,
+      "canReplace": true,
+      "canReplaceDrop": true,
+      "emptySlotTacticalId": 136,
+      "id": 1,
+      "maxLimit": 0,
+      "slotTacticalId": 135
+    },
+    {
+      "canDrop": false,
+      "canReplace": true,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 0,
+      "id": 2,
+      "maxLimit": 1,
+      "slotTacticalId": 0
+    },
+    {
+      "canDrop": true,
+      "canReplace": true,
+      "canReplaceDrop": true,
+      "emptySlotTacticalId": 138,
+      "id": 3,
+      "maxLimit": 0,
+      "slotTacticalId": 137
+    },
+    {
+      "canDrop": false,
+      "canReplace": true,
+      "canReplaceDrop": true,
+      "emptySlotTacticalId": 140,
+      "id": 4,
+      "maxLimit": 9999,
+      "slotTacticalId": 139
+    },
+    {
+      "canDrop": true,
+      "canReplace": false,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 142,
+      "id": 5,
+      "maxLimit": 0,
+      "slotTacticalId": 141
+    },
+    {
+      "canDrop": true,
+      "canReplace": false,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 144,
+      "id": 6,
+      "maxLimit": 500,
+      "slotTacticalId": 143
+    },
+    {
+      "canDrop": true,
+      "canReplace": false,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 144,
+      "id": 7,
+      "maxLimit": 500,
+      "slotTacticalId": 143
+    },
+    {
+      "canDrop": true,
+      "canReplace": false,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 144,
+      "id": 8,
+      "maxLimit": 500,
+      "slotTacticalId": 143
+    },
+    {
+      "canDrop": true,
+      "canReplace": false,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 144,
+      "id": 9,
+      "maxLimit": 500,
+      "slotTacticalId": 143
+    },
+    {
+      "canDrop": true,
+      "canReplace": false,
+      "canReplaceDrop": false,
+      "emptySlotTacticalId": 146,
+      "id": 10,
+      "maxLimit": 99999,
+      "slotTacticalId": 145
+    },
+    {
+      "canDrop": true,
+      "canReplace": true,
+      "canReplaceDrop": true,
+      "emptySlotTacticalId": 147,
+      "id": 11,
+      "maxLimit": 0,
+      "slotTacticalId": 143
+    },
+    {
+      "canDrop": true,
+      "canReplace": true,
+      "canReplaceDrop": true,
+      "emptySlotTacticalId": 0,
+      "id": 12,
+      "maxLimit": 0,
+      "slotTacticalId": 0
+    }
+  ]
+}

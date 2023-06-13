@@ -1,0 +1,35 @@
+/**
+* @file:   excel\NoviceGuideRewardConfig.xlsx\NoviceGuideRewardConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message NoviceGuideRewardConfig{
+	// 引导的id 
+	uint32 id = 1;
+	// 奖品物品id 
+	repeated NoviceGuideRewardConfig_effect effect = 2;
+}
+
+message NoviceGuideRewardConfig_effect{
+	// 奖品物品id 
+	uint32 id = 1;
+	// 奖品1数量 
+	uint32 value = 2;
+	// 暗金概率（n/1000） 
+	uint32 statTrak = 3;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 4;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message NoviceGuideRewardConfig_Array {
+	repeated NoviceGuideRewardConfig items = 1;
+}

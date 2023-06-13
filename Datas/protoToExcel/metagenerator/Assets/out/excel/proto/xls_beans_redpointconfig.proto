@@ -1,0 +1,38 @@
+/**
+* @file:   excel\RedpointConfig.xlsx\RedpointConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RedpointConfig{
+	// 红点key 
+	string id = 1;
+	// 分组 
+	string group = 2;
+	// 关联红点key 
+	repeated string relations = 3;
+	// 传递目标key 
+	repeated string transfers = 4;
+	// 状态更新函数 
+	string updateFunc = 5;
+	// 红点样式 
+	uint32 style = 6;
+	// 互斥组 
+	uint32 mutex = 7;
+	// 互斥权重 
+	uint32 mutexWeight = 8;
+	// 红点挂点路径 
+	string innerPath = 9;
+	// 挂点X坐标偏移 
+	int32 offsetX = 10;
+	// 挂点Y坐标偏移 
+	int32 offsetY = 11;
+}
+
+message RedpointConfig_Array {
+	repeated RedpointConfig items = 1;
+}

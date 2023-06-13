@@ -1,0 +1,543 @@
+{
+  "items": [
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 113020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114050001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1006,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114070001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 113020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114050001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1017,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114070001,
+      "weight": 1
+    },
+    {
+      "modeId": 1022,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111050017,
+      "weight": 1
+    },
+    {
+      "modeId": 1022,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111030013,
+      "weight": 1
+    },
+    {
+      "modeId": 1022,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114060008,
+      "weight": 1
+    },
+    {
+      "modeId": 1022,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 113020004,
+      "weight": 1
+    },
+    {
+      "modeId": 1022,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115010003,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 111010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 111030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 112010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 111060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 112020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 112030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 113020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114050001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1021,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114070001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 111010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 111030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 112010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 111060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 112030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 113020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114050001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1042,
+      "rankBegin": 4,
+      "rankEnd": 16,
+      "weaponid": 114070001,
+      "weight": 1
+    },
+    {
+      "modeId": 1058,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1058,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1058,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 111060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 112030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 115030001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 113020001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114010001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114050001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114060001,
+      "weight": 1
+    },
+    {
+      "modeId": 1056,
+      "rankBegin": 1,
+      "rankEnd": 16,
+      "weaponid": 114070001,
+      "weight": 1
+    }
+  ]
+}

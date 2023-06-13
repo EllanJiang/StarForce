@@ -1,0 +1,43 @@
+/**
+* @file:   excel\MatchScoreMainLvl.xlsx\MatchScoreMainLvl
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchScoreMainLvl{
+	// 评分策略id关联表MatchPoolDef中lvlStrategyId这一列] 
+	uint32 lvlStrategyId = 1;
+	// 匹配等待时间起始 
+	uint32 minMatchWaitTime = 2;
+	// 匹配等待时间终止 
+	uint32 maxMatchWaitTime = 3;
+	// 发起者等级范围 
+	uint32 minMatchLvl = 4;
+	// 发起等级范围 
+	uint32 maxMatchLvl = 5;
+	// 拉取玩家等级范围下限 
+	int32 lvlLowerLimit = 6;
+	// 拉取玩家等级范围上限 
+	int32 lvlUpperLimit = 7;
+	// 拉取区间差值起 
+	repeated MatchScoreMainLvl_lvlDiff lvlDiff = 8;
+}
+
+message MatchScoreMainLvl_lvlDiff{
+	// 拉取区间差值起 
+	int32 start = 1;
+	// 拉取区间差值止 
+	int32 stop = 2;
+	// 公式基础分值 
+	int32 base = 3;
+	// 公式系数（计算时除以100） 
+	int32 param = 4;
+}
+
+message MatchScoreMainLvl_Array {
+	repeated MatchScoreMainLvl items = 1;
+}

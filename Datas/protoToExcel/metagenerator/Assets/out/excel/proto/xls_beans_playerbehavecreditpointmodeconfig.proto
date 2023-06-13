@@ -1,0 +1,48 @@
+/**
+* @file:   excel\PlayerBehaveCreditPointModeConfig.xlsx\PlayerBehaveCreditPointModeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerBehaveCreditPointModeConfig{
+	// 模式ID 
+	uint32 id = 1;
+	// 禁赛最低信用分等级 
+	uint32 creditLevelRequire = 2;
+	// 基础扣分 
+	uint32 baseDeductPoint = 3;
+	// 恢复点数 
+	uint32 recoverPoint = 4;
+	// 模式扣分系数 
+	float modeRate = 5;
+	// 举报扣分系数初值 
+	PlayerBehaveCreditPointModeConfig_reportRate reportRate = 6;
+	// 违规次数系数初值 
+	PlayerBehaveCreditPointModeConfig_frequencyRate frequencyRate = 7;
+	// 段位信用分系数配置表Id 
+	uint32 rankConfigId = 8;
+}
+
+message PlayerBehaveCreditPointModeConfig_reportRate{
+	// 举报扣分系数初值 
+	float init = 1;
+	// 重复举报扣分系数 
+	float repeatAdd = 2;
+}
+
+message PlayerBehaveCreditPointModeConfig_frequencyRate{
+	// 违规次数系数初值 
+	float init = 1;
+	// 违规次数系数每次增加值 
+	float repeatIncrement = 2;
+	// 违规次数系数最大值 
+	float maxium = 3;
+}
+
+message PlayerBehaveCreditPointModeConfig_Array {
+	repeated PlayerBehaveCreditPointModeConfig items = 1;
+}

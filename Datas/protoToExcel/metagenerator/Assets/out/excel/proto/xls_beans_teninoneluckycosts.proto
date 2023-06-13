@@ -1,0 +1,39 @@
+/**
+* @file:   excel\TenInOneLuckyCosts.xlsx\TenInOneLuckyCosts
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TenInOneLuckyCosts{
+	// key 
+	uint32 id = 1;
+	// 折扣开始时间 
+	repeated TenInOneLuckyCosts_discounts discounts = 2;
+	// 消耗id 
+	uint32 costId = 3;
+	// 消耗数量 
+	uint32 costValue = 4;
+	// 首次十连抽折扣 
+	uint32 firstDiscount = 5;
+	// 免费单抽刷新周期 
+	string freeRefreshTimeType = 6;
+	// 免费单抽刷新时间点 
+	string freeRefreshTime = 7;
+}
+
+message TenInOneLuckyCosts_discounts{
+	// 折扣开始时间 
+	int64 startTime = 1;
+	// 折扣结束时间 
+	int64 stopTime = 2;
+	// 折扣 
+	uint32 discount = 3;
+}
+
+message TenInOneLuckyCosts_Array {
+	repeated TenInOneLuckyCosts items = 1;
+}

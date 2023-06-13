@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "btnIcon": 910056,
+      "id": 1,
+      "order": 1,
+      "reflectionBtnIcon": 910057
+    },
+    {
+      "btnIcon": 910030,
+      "id": 3,
+      "order": 3,
+      "reflectionBtnIcon": 910031
+    }
+  ]
+}

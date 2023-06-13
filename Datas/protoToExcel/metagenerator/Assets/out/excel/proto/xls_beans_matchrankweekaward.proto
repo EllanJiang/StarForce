@@ -1,0 +1,41 @@
+/**
+* @file:   excel\MatchRankWeekAward.xlsx\MatchRankWeekAward
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchRankWeekAward{
+	// key 
+	uint32 id = 1;
+	// 奖励开始时间 
+	int64 awardStartTime = 2;
+	// 奖励结束时间 
+	int64 awardEndTime = 3;
+	// 活跃度要求 
+	uint32 activationLimit = 4;
+	// 道具ID1、属性ID 
+	repeated MatchRankWeekAward_effect effect = 5;
+}
+
+message MatchRankWeekAward_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message MatchRankWeekAward_Array {
+	repeated MatchRankWeekAward items = 1;
+}

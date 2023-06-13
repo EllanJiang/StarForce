@@ -1,0 +1,43 @@
+/**
+* @file:   excel\StoreRecommendThemeConfig.xlsx\StoreRecommendThemeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreRecommendThemeConfig{
+	// 主题id 
+	uint32 themeId = 1;
+	// 主题类型 
+	uint32 themeType = 2;
+	// 主题名称 
+	string name = 3;
+	// 主题颜色 
+	string themeColor = 4;
+	// 主题背景 
+	uint32 themeBg = 5;
+	// 主题标题底图 
+	uint32 titleBg = 6;
+	// 排序优先级 
+	uint32 priority = 7;
+	// 主题关联商品ID 
+	repeated StoreRecommendThemeConfig_themeDisplay themeDisplay = 8;
+}
+
+message StoreRecommendThemeConfig_themeDisplay{
+	// 主题关联商品ID 
+	uint32 goodsId = 1;
+	// 版本关联图片（固定展示位） 
+	uint32 image = 2;
+	// 跳转执行函数 
+	string navigateFuncName = 3;
+	// 跳转执行参数 
+	uint32 navigateParam = 4;
+}
+
+message StoreRecommendThemeConfig_Array {
+	repeated StoreRecommendThemeConfig items = 1;
+}

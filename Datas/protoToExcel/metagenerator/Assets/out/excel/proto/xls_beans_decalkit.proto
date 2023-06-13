@@ -1,0 +1,58 @@
+/**
+* @file:   excel\DecalKit.xlsx\DecalKit
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message DecalKit{
+	// DecalKit的id 
+	uint32 id = 1;
+	// 风格 
+	uint32 decalStyle = 2;
+	// 贴图名字 
+	string name = 3;
+	// 描述 
+	string descriptionString = 4;
+	// 描述标签 
+	string descriptionTag = 5;
+	// 磨损值偏移 
+	float wearBias  = 6;
+	// 不被磨损的宽度 
+	float unwearStrength  = 7;
+	// 最小磨损值 
+	float wearWidthMin = 8;
+	// 最大磨损值 
+	float wearWidthMax = 9;
+	// 最小磨损映射值 
+	float wearRemapMin  = 10;
+	// 中间磨损映射值 
+	float wearRemapMid  = 11;
+	// 最大磨损映射值 
+	float wearRemapMax  = 12;
+	// 环境光颜色系数 
+	string envmapTint = 13;
+	// 颜色0 
+	string colorTint  = 14;
+	// 颜色1 
+	string colorTint2 = 15;
+	// 颜色2 
+	string colorTint3 = 16;
+	// 颜色3 
+	string colorTint4 = 17;
+	// 贴图路径 
+	string baseTexture  = 18;
+	// 法线名 
+	string normal = 19;
+	// 全息图,菲涅尔 
+	string HologramSpectrum = 20;
+	// 全息遮罩贴图 
+	string HologramMask = 21;
+}
+
+message DecalKit_Array {
+	repeated DecalKit items = 1;
+}

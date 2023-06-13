@@ -1,0 +1,62 @@
+/**
+* @file:   excel\ItemPropConfig.xlsx\ItemPropConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemPropConfig{
+	// 编号 
+	uint32 id = 1;
+	// 道具类型 
+	uint32 itemType = 2;
+	// 阵营(1-T 2-CT 3-all) 
+	uint32 camp = 3;
+	// 类型 
+	uint32 mainType = 4;
+	// 子类型 
+	uint32 subType1 = 5;
+	// 二级子类型 
+	uint32 subType2 = 6;
+	// 三级子类型 
+	uint32 subType3 = 7;
+	// 四级子类型 
+	uint32 subType4 = 8;
+	// 品质 
+	uint32 quality = 9;
+	// 用于生成磨损度 
+	repeated uint32 paintKitLimit = 10;
+	// 重要道具优先级 
+	uint32 priority = 11;
+	// 排序(从小到大) 
+	uint32 order = 12;
+	// 卖店货币 
+	uint32 sellType = 13;
+	// 卖店价格 
+	uint32 sellingPrice = 14;
+	// 物品加成buffId 
+	repeated uint32 settlementBuff = 15;
+	// 基础Gs值 
+	uint32 baseGs = 16;
+	// 是否可堆叠(0不可以 1可以) 
+	uint32 stackMax = 17;
+	// 是否自动装备(0为否,1为是) 
+	uint32 autoEquip = 18;
+	// 是否自动使用(1可以) 
+	uint32 autoUse = 19;
+	// 使用后消失(0否1是) 
+	uint32 useClean = 20;
+	// 限使用数量 
+	uint32 limitUseCount = 21;
+	// 是否是收藏品（计入藏品收集统计） 
+	bool isCollection = 22;
+	// 获得弹窗类型 
+	uint32 obtainType = 23;
+}
+
+message ItemPropConfig_Array {
+	repeated ItemPropConfig items = 1;
+}

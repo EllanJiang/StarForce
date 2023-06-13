@@ -1,0 +1,548 @@
+{
+  "items": [
+    {
+      "buffIndex": [],
+      "buffType": 1,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 2,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 3,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 4,
+      "minParam": 3,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 5,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 6,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 7,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 8,
+      "minParam": 3,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 9,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 10,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 11,
+      "minParam": 2,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        2
+      ],
+      "buffType": 12,
+      "minParam": 2,
+      "nonZeroIndex": [
+        2
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 13,
+      "minParam": 2,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 14,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [
+        2
+      ],
+      "buffType": 15,
+      "minParam": 2,
+      "nonZeroIndex": [
+        1,
+        2
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 16,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 17,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 18,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 19,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 20,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 21,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 22,
+      "minParam": 3,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        -1
+      ],
+      "buffType": 23,
+      "minParam": -1,
+      "nonZeroIndex": [
+        -1
+      ]
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 24,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [
+        1,
+        2
+      ],
+      "buffType": 25,
+      "minParam": 2,
+      "nonZeroIndex": [
+        1,
+        2
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 26,
+      "minParam": 2,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 27,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 28,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 29,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        4
+      ],
+      "buffType": 30,
+      "minParam": 4,
+      "nonZeroIndex": [
+        4
+      ]
+    },
+    {
+      "buffIndex": [
+        2
+      ],
+      "buffType": 31,
+      "minParam": 2,
+      "nonZeroIndex": [
+        2
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 32,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        -1
+      ],
+      "buffType": 33,
+      "minParam": 2,
+      "nonZeroIndex": [
+        -1
+      ]
+    },
+    {
+      "buffIndex": [
+        -1
+      ],
+      "buffType": 34,
+      "minParam": 2,
+      "nonZeroIndex": [
+        -1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 35,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 36,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 37,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 38,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 39,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 40,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 41,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 42,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 43,
+      "minParam": 2,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 44,
+      "minParam": 2,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 45,
+      "minParam": 1,
+      "nonZeroIndex": [
+        1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 46,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 47,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 48,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 49,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 50,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 51,
+      "minParam": 3,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 52,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 53,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 54,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        2
+      ],
+      "buffType": 55,
+      "minParam": 2,
+      "nonZeroIndex": [
+        2
+      ]
+    },
+    {
+      "buffIndex": [
+        2,
+        3
+      ],
+      "buffType": 56,
+      "minParam": 3,
+      "nonZeroIndex": [
+        2,
+        3
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 57,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 58,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 59,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 60,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 61,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        -1
+      ],
+      "buffType": 62,
+      "minParam": -1,
+      "nonZeroIndex": [
+        -1
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 63,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 64,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 65,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 66,
+      "minParam": 3,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 67,
+      "minParam": 1,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 68,
+      "minParam": 4,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        1
+      ],
+      "buffType": 69,
+      "minParam": 2,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 70,
+      "minParam": 2,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 71,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 72,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [],
+      "buffType": 73,
+      "minParam": 0,
+      "nonZeroIndex": []
+    },
+    {
+      "buffIndex": [
+        2
+      ],
+      "buffType": 74,
+      "minParam": 2,
+      "nonZeroIndex": [
+        1,
+        2
+      ]
+    },
+    {
+      "buffIndex": [],
+      "buffType": 75,
+      "minParam": 0,
+      "nonZeroIndex": []
+    }
+  ]
+}

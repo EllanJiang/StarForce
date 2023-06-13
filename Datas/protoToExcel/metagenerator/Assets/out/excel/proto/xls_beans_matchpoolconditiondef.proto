@@ -1,0 +1,52 @@
+/**
+* @file:   excel\MatchPoolConditionDef.xlsx\MatchPoolConditionDef
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchPoolConditionDef{
+	// key 
+	uint32 id = 1;
+	// 匹配池id 
+	uint32 poolId = 2;
+	// 匹配key[表MatchRankMapGroupConfig和表GameMapGroupConfig里面的matchKey] 
+	uint32 matchKey = 3;
+	// 温暖局buffid 
+	uint32 buffId = 4;
+	// 玩家等级下限 
+	uint32 minLevel = 5;
+	// 玩家等级上限 
+	uint32 maxLevel = 6;
+	// 玩家类型（1仅新手生效，2老手，0无限制） 
+	uint32 playerType = 7;
+	// 击杀数下限 
+	uint32 minKill = 8;
+	// 击杀数上限 
+	uint32 maxKill = 9;
+	// KD下限 
+	float minKD = 10;
+	// KD上限 
+	float maxKD = 11;
+	// 队伍人数下限 
+	uint32 minTeamMember = 12;
+	// 队伍人数上限 
+	uint32 maxTeamMember = 13;
+	// 最小人机难度 
+	uint32 minPVELevel = 14;
+	// 最大人机难度 
+	uint32 maxPVELevel = 15;
+	// 模拟器登录(1:是） 
+	uint32 simulator = 16;
+	// elo分数下限 
+	uint32 minElo = 17;
+	// elo分数上限 
+	uint32 maxElo = 18;
+}
+
+message MatchPoolConditionDef_Array {
+	repeated MatchPoolConditionDef items = 1;
+}

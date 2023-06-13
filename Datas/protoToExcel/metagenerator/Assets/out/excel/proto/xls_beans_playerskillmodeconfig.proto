@@ -1,0 +1,37 @@
+/**
+* @file:   excel\PlayerSkillModeConfig.xlsx\PlayerSkillModeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerSkillModeConfig{
+	// 模式id 
+	uint32 id = 1;
+	// 免费刷新次数上限 
+	uint32 refreshLimit = 2;
+	// 自动刷新周期(单位/小时) 
+	uint32 refreshCycle = 3;
+	// 技能数量 
+	uint32 skillCount = 4;
+	// 技能点数上限 
+	uint32 skillCostLimit = 5;
+	// 付费刷新次数 
+	repeated PlayerSkillModeConfig_refreshCost refreshCost = 6;
+}
+
+message PlayerSkillModeConfig_refreshCost{
+	// 付费刷新次数 
+	uint32 count = 1;
+	// 付费刷新消耗物品id 
+	uint32 id = 2;
+	// 付费刷新消耗数量 
+	uint32 value = 3;
+}
+
+message PlayerSkillModeConfig_Array {
+	repeated PlayerSkillModeConfig items = 1;
+}

@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "ID": 1,
+      "dropID": 11,
+      "weight": 80
+    },
+    {
+      "ID": 1,
+      "dropID": 12,
+      "weight": 10
+    },
+    {
+      "ID": 1,
+      "dropID": 13,
+      "weight": 10
+    },
+    {
+      "ID": 2,
+      "dropID": 20,
+      "weight": 80
+    },
+    {
+      "ID": 2,
+      "dropID": 21,
+      "weight": 0
+    },
+    {
+      "ID": 2,
+      "dropID": 22,
+      "weight": 0
+    },
+    {
+      "ID": 3,
+      "dropID": 101,
+      "weight": 20
+    },
+    {
+      "ID": 4,
+      "dropID": 102,
+      "weight": 20
+    },
+    {
+      "ID": 5,
+      "dropID": 103,
+      "weight": 20
+    },
+    {
+      "ID": 6,
+      "dropID": 104,
+      "weight": 20
+    },
+    {
+      "ID": 7,
+      "dropID": 105,
+      "weight": 20
+    },
+    {
+      "ID": 8,
+      "dropID": 106,
+      "weight": 20
+    },
+    {
+      "ID": 9,
+      "dropID": 101,
+      "weight": 20
+    },
+    {
+      "ID": 10,
+      "dropID": 102,
+      "weight": 20
+    },
+    {
+      "ID": 11,
+      "dropID": 103,
+      "weight": 20
+    },
+    {
+      "ID": 12,
+      "dropID": 104,
+      "weight": 20
+    },
+    {
+      "ID": 13,
+      "dropID": 105,
+      "weight": 20
+    },
+    {
+      "ID": 14,
+      "dropID": 106,
+      "weight": 20
+    },
+    {
+      "ID": 15,
+      "dropID": 107,
+      "weight": 20
+    },
+    {
+      "ID": 16,
+      "dropID": 108,
+      "weight": 20
+    },
+    {
+      "ID": 17,
+      "dropID": 109,
+      "weight": 20
+    }
+  ]
+}

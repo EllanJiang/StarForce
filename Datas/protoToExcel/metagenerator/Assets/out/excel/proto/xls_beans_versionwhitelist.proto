@@ -1,0 +1,18 @@
+/**
+* @file:   excel\VersionWhiteList.xlsx\VersionWhiteList
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message VersionWhiteList{
+	// 版本号 
+	string id = 1;
+}
+
+message VersionWhiteList_Array {
+	repeated VersionWhiteList items = 1;
+}

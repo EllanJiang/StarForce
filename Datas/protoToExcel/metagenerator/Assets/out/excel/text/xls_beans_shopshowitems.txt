@@ -1,0 +1,5891 @@
+{
+  "items": [
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010003,
+      "itemTypes": [
+        11201
+      ],
+      "itemid_ct": 112010001,
+      "itemid_t": 112010001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010004,
+      "itemTypes": [
+        11106,
+        11107
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010005,
+      "itemTypes": [
+        11202
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010006,
+      "itemTypes": [
+        11203,
+        11204
+      ],
+      "itemid_ct": 112030001,
+      "itemid_t": 112040001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010010,
+      "itemTypes": [
+        12106
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010011,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121090001,
+      "itemid_t": 121090001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010012,
+      "itemTypes": [
+        13114
+      ],
+      "itemid_ct": 131140001,
+      "itemid_t": 131140001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010013,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010014,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010015,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010016,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010017,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010036,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010037,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010018,
+      "itemTypes": [
+        11401,
+        11402
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010019,
+      "itemTypes": [
+        11404,
+        11403
+      ],
+      "itemid_ct": 114030001,
+      "itemid_t": 114040001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010020,
+      "itemTypes": [
+        11405
+      ],
+      "itemid_ct": 114050001,
+      "itemid_t": 114050001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010021,
+      "itemTypes": [
+        11406
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010022,
+      "itemTypes": [
+        11407
+      ],
+      "itemid_ct": 114070001,
+      "itemid_t": 114070001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010025,
+      "itemTypes": [
+        16101
+      ],
+      "itemid_ct": 161010001,
+      "itemid_t": 161010001,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010026,
+      "itemTypes": [
+        15101
+      ],
+      "itemid_ct": 151010001,
+      "itemid_t": 151010001,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010027,
+      "itemTypes": [
+        11702
+      ],
+      "itemid_ct": 117020001,
+      "itemid_t": 117020001,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010028,
+      "itemTypes": [
+        11701
+      ],
+      "itemid_ct": 117010001,
+      "itemid_t": 117010001,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010029,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010030,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010031,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010032,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010033,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010034,
+      "itemTypes": [
+        17401
+      ],
+      "itemid_ct": 174010001,
+      "itemid_t": 174010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10010035,
+      "itemTypes": [
+        16101
+      ],
+      "itemid_ct": 161010001,
+      "itemid_t": 161010001,
+      "pageName": "533317850",
+      "pageid": 7,
+      "priority": 0,
+      "shopTabId": 2,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 99990001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 1,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 99990002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 1,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 99990003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 1,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 99990004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 99990005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 99990006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 99990007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 99990010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 99990011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 1,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 99990012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 1,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 99990013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 1,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 99990014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 99990016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 99990015,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 99990018,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 1,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 99990017,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 1,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 99990019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 1,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 99990020,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 1,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 99990021,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 1,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 99990022,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 1,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 99990023,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 1,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 99990024,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 1,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10021001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 3,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10021002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 3,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10021004,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 3,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10021003,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10021005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10021006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10021007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10021010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10021011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 3,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10021012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 3,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10021013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 3,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10021014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10021015,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10021016,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10021017,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 3,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10021018,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 3,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10021019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 3,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10021024,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 3,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10021025,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 3,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10021026,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 3,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10021027,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 3,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10021028,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 3,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10050001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 5,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10050002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 5,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10050003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 5,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10050004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10050005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10050006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10050007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10050010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10050011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 5,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10050012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 5,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10050013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 5,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10050014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10050016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10050022,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 5,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10050023,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 5,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10050017,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 5,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10050019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 5,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10060004,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 6,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10060005,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 6,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10060006,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 6,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10060007,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10060008,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10060009,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10060010,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10060013,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10060014,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 6,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10060015,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 6,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10060016,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 6,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10060017,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10060019,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10060025,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 6,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10060026,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 6,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10060020,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 6,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10060022,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 6,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10160001,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 11,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10160002,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 11,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10160003,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 11,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10300004,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 15,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10300005,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 15,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10300006,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 15,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10300007,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10300008,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10300009,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10300010,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10300013,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10300014,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 15,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10300015,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 15,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10300016,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 15,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10300017,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10300019,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10300020,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10300022,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 15,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10300023,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 15,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10300024,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 15,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10300025,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 15,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10300026,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 15,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10300027,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 15,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10300028,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 15,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10300029,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 15,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10340001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 16,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10340002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 16,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10340003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 16,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10340004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10340005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10340006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10340007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10340010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10340011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 16,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10340012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 16,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10340013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 16,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10340014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10340016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10340017,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 16,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10340019,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 16,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10340020,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 16,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10340021,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 16,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10370001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 17,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10370002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 17,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10370003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 17,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10370004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10370005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10370006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10370007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10370010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10370011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 17,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10370012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 17,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10370013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 17,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10370014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10370016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10370031,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10370032,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 17,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10370017,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 17,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10370019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 17,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10370020,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 17,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10370021,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 17,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10370022,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 17,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10370023,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 17,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10370024,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 17,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10250004,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 14,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10250005,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 14,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10250006,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 14,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10250007,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10250008,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10250009,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10250010,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10250013,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10250014,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 14,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10250015,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 14,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10250016,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 14,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10250017,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10250019,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10250025,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 14,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10250021,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 14,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10250020,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 14,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10250022,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 14,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10390004,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 18,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10390005,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 18,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10390006,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 18,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10390007,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10390008,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10390009,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10390010,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10390011,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10390012,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 18,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10390013,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 18,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10390014,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 18,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10390015,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10390016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10390017,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10390018,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 18,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10390019,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 18,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10390020,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 18,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10390021,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 18,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10390022,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 18,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10390023,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 18,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10390024,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 18,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10390025,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 18,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10451001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 22,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10451002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 22,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10451003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 22,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10451004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10451005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10451006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10451007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10451010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10451011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 22,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10451012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 22,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10451013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 22,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10451014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10451015,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10451016,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10451017,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 22,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10451018,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 22,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10451019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 22,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10451020,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 22,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10451021,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 22,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10451022,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 22,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10451023,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 22,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10451024,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 22,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10461001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 23,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10461002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 23,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10461003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 23,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10461004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10461005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10461006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10461007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10461008,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10461009,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 23,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10461010,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 23,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10461011,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 23,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10461012,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10461013,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10461014,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 23,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10461015,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 23,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10461016,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 23,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10461017,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 23,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10501001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 24,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10501002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 24,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10501003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 24,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10501004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10501005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10501006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10501007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10501008,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10501009,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 24,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10501010,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 24,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10501011,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 24,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10501012,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10501013,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10501014,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10501015,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 24,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10501016,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 24,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10501017,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 24,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10501018,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 24,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10501019,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 24,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10501022,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 24,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10501023,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 24,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10501024,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 24,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10491001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 25,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10491002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 25,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10491003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 25,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10491004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10491005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10491006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10491007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10491010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10491011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 25,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10491012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 25,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10491013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 25,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10491014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10491016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10491030,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10491031,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 25,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10491017,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 25,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10491019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 25,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10491020,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 25,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10491021,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 25,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10491022,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 25,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10491023,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 25,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10491024,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 25,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10201001,
+      "itemTypes": [
+        13115
+      ],
+      "itemid_ct": 131150001,
+      "itemid_t": 131150001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 26,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10201002,
+      "itemTypes": [
+        13119
+      ],
+      "itemid_ct": 131190001,
+      "itemid_t": 131190001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 26,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 5,
+      "id": 10201003,
+      "itemTypes": [
+        13114
+      ],
+      "itemid_ct": 131140001,
+      "itemid_t": 131140001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10201004,
+      "itemTypes": [
+        13109
+      ],
+      "itemid_ct": 131090001,
+      "itemid_t": 131090001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 26,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10201005,
+      "itemTypes": [
+        13110
+      ],
+      "itemid_ct": 131100001,
+      "itemid_t": 131100001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10201006,
+      "itemTypes": [
+        13118
+      ],
+      "itemid_ct": 131180001,
+      "itemid_t": 131180001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201008,
+      "itemTypes": [
+        12106
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10201009,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121090001,
+      "itemid_t": 121090001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 26,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201010,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201011,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201012,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10201013,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 26,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10201014,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 26,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10201015,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 26,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 4,
+      "id": 10201016,
+      "itemTypes": [
+        11401,
+        11402
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 6,
+      "shopTabId": 26,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201017,
+      "itemTypes": [
+        11405
+      ],
+      "itemid_ct": 114050001,
+      "itemid_t": 114050001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 6,
+      "shopTabId": 26,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10201018,
+      "itemTypes": [
+        11406
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 26,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10201019,
+      "itemTypes": [
+        11407
+      ],
+      "itemid_ct": 114070001,
+      "itemid_t": 114070001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10201020,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10201021,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10201022,
+      "itemTypes": [
+        16201
+      ],
+      "itemid_ct": 162010001,
+      "itemid_t": 162010001,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10201023,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 5,
+      "priority": 0,
+      "shopTabId": 26,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10201024,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 1,
+      "shopTabId": 26,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10201025,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 4,
+      "shopTabId": 26,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10201026,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 2,
+      "shopTabId": 26,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10201027,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 6,
+      "priority": 3,
+      "shopTabId": 26,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10521001,
+      "itemTypes": [
+        13119
+      ],
+      "itemid_ct": 131190002,
+      "itemid_t": 131190002,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 5,
+      "shopTabId": 27,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10521002,
+      "itemTypes": [
+        11702
+      ],
+      "itemid_ct": 117020004,
+      "itemid_t": 117020004,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 5,
+      "shopTabId": 27,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10521003,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020005,
+      "itemid_t": 113020005,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 5,
+      "shopTabId": 27,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10190001,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 28,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10190002,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 28,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10190003,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 28,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10570001,
+      "itemTypes": [
+        12101,
+        12103
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 29,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10570002,
+      "itemTypes": [
+        12106
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 29,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10570003,
+      "itemTypes": [
+        12109
+      ],
+      "itemid_ct": 121090001,
+      "itemid_t": 121090001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 29,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10570004,
+      "itemTypes": [
+        12110
+      ],
+      "itemid_ct": 121100001,
+      "itemid_t": 121100001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 29,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10580001,
+      "itemTypes": [
+        11201
+      ],
+      "itemid_ct": 112010001,
+      "itemid_t": 112010001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 30,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10580002,
+      "itemTypes": [
+        11202
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 30,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10580003,
+      "itemTypes": [
+        11203,
+        11204
+      ],
+      "itemid_ct": 112030001,
+      "itemid_t": 112040001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 30,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 31,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530003,
+      "itemTypes": [
+        11201
+      ],
+      "itemid_ct": 112010001,
+      "itemid_t": 112010001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530004,
+      "itemTypes": [
+        11106,
+        11107
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530005,
+      "itemTypes": [
+        11202
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 31,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530006,
+      "itemTypes": [
+        11203,
+        11204
+      ],
+      "itemid_ct": 112030001,
+      "itemid_t": 112040001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530008,
+      "itemTypes": [
+        12106
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530009,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121090001,
+      "itemid_t": 121090001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530010,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530011,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530012,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530013,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530014,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530015,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530016,
+      "itemTypes": [
+        11401,
+        11402
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530017,
+      "itemTypes": [
+        11405
+      ],
+      "itemid_ct": 114050001,
+      "itemid_t": 114050001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530018,
+      "itemTypes": [
+        11406
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 31,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10530019,
+      "itemTypes": [
+        11407
+      ],
+      "itemid_ct": 114070001,
+      "itemid_t": 114070001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 31,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 2,
+      "id": 10551001,
+      "itemTypes": [
+        11101,
+        11102
+      ],
+      "itemid_ct": 111010001,
+      "itemid_t": 111020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 3,
+      "shopTabId": 32,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10551002,
+      "itemTypes": [
+        11103,
+        11104,
+        11105,
+        11112,
+        11111
+      ],
+      "itemid_ct": 111030001,
+      "itemid_t": 111050001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 1,
+      "shopTabId": 32,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 3,
+      "id": 10551003,
+      "itemTypes": [
+        11106,
+        11107,
+        11203,
+        11204
+      ],
+      "itemid_ct": 111060001,
+      "itemid_t": 111070001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 2,
+      "shopTabId": 32,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10551004,
+      "itemTypes": [
+        11201,
+        11202,
+        11203,
+        11204
+      ],
+      "itemid_ct": 112020001,
+      "itemid_t": 112020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 1,
+      "id": 10551005,
+      "itemTypes": [
+        11401,
+        11402,
+        11407
+      ],
+      "itemid_ct": 114010001,
+      "itemid_t": 114020001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10551006,
+      "itemTypes": [
+        11406,
+        11405
+      ],
+      "itemid_ct": 114060001,
+      "itemid_t": 114060001,
+      "pageName": "533317850",
+      "pageid": 1,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10551007,
+      "itemTypes": [
+        12101,
+        12102,
+        12103,
+        12106
+      ],
+      "itemid_ct": 121010001,
+      "itemid_t": 121030001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10551010,
+      "itemTypes": [
+        12109,
+        12110
+      ],
+      "itemid_ct": 121060001,
+      "itemid_t": 121060001,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10551011,
+      "itemTypes": [],
+      "itemid_ct": 305020101,
+      "itemid_t": 305020101,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 32,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10551012,
+      "itemTypes": [],
+      "itemid_ct": 305020201,
+      "itemid_t": 305020201,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 32,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10551013,
+      "itemTypes": [],
+      "itemid_ct": 305010101,
+      "itemid_t": 0,
+      "pageName": "533317850",
+      "pageid": 2,
+      "priority": 1,
+      "shopTabId": 32,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10551014,
+      "itemTypes": [
+        11501
+      ],
+      "itemid_ct": 115010001,
+      "itemid_t": 115010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10551016,
+      "itemTypes": [
+        11502
+      ],
+      "itemid_ct": 115020001,
+      "itemid_t": 115020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 0,
+      "id": 10551030,
+      "itemTypes": [
+        11503,
+        11504
+      ],
+      "itemid_ct": 115030001,
+      "itemid_t": 115040001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10551031,
+      "itemTypes": [
+        11302
+      ],
+      "itemid_ct": 113020001,
+      "itemid_t": 113020001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 32,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10551017,
+      "itemTypes": [
+        11301
+      ],
+      "itemid_ct": 113010001,
+      "itemid_t": 113010001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 32,
+      "slot": 5
+    },
+    {
+      "IgnoreRequireSkin": false,
+      "Recommendpriority": 5,
+      "id": 10551019,
+      "itemTypes": [
+        11303
+      ],
+      "itemid_ct": 113030001,
+      "itemid_t": 113030001,
+      "pageName": "533317850",
+      "pageid": 3,
+      "priority": 5,
+      "shopTabId": 32,
+      "slot": 6
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 1,
+      "id": 10551020,
+      "itemTypes": [
+        14301
+      ],
+      "itemid_ct": 143010001,
+      "itemid_t": 143010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 1,
+      "shopTabId": 32,
+      "slot": 1
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 3,
+      "id": 10551021,
+      "itemTypes": [
+        14401
+      ],
+      "itemid_ct": 144010001,
+      "itemid_t": 144010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 4,
+      "shopTabId": 32,
+      "slot": 2
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 2,
+      "id": 10551022,
+      "itemTypes": [
+        14501
+      ],
+      "itemid_ct": 145010001,
+      "itemid_t": 145010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 2,
+      "shopTabId": 32,
+      "slot": 3
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 4,
+      "id": 10551023,
+      "itemTypes": [
+        14101,
+        14102
+      ],
+      "itemid_ct": 141010001,
+      "itemid_t": 141020001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 3,
+      "shopTabId": 32,
+      "slot": 4
+    },
+    {
+      "IgnoreRequireSkin": true,
+      "Recommendpriority": 0,
+      "id": 10551024,
+      "itemTypes": [
+        14201
+      ],
+      "itemid_ct": 142010001,
+      "itemid_t": 142010001,
+      "pageName": "533317850",
+      "pageid": 4,
+      "priority": 0,
+      "shopTabId": 32,
+      "slot": 5
+    }
+  ]
+}

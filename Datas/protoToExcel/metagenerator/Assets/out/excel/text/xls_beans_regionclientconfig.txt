@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "defaultLanguage": "ru",
+      "id": "RU"
+    },
+    {
+      "defaultLanguage": "en",
+      "id": "CN"
+    },
+    {
+      "defaultLanguage": "es",
+      "id": "LATAM"
+    },
+    {
+      "defaultLanguage": "en",
+      "id": "SG"
+    },
+    {
+      "defaultLanguage": "pt",
+      "id": "BR"
+    },
+    {
+      "defaultLanguage": "en",
+      "id": "OTHER"
+    },
+    {
+      "defaultLanguage": "en",
+      "id": "IN"
+    }
+  ]
+}

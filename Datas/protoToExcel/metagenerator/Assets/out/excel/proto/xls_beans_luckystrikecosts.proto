@@ -1,0 +1,40 @@
+/**
+* @file:   excel\LuckyStrikeCosts.xlsx\LuckyStrikeCosts
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message LuckyStrikeCosts{
+	// key 
+	uint32 id = 1;
+	// 折扣开始时间 
+	repeated LuckyStrikeCosts_discounts discounts = 2;
+	// 抽奖次数 
+	repeated LuckyStrikeCosts_costs costs = 3;
+}
+
+message LuckyStrikeCosts_discounts{
+	// 折扣开始时间 
+	int64 startTime = 1;
+	// 折扣结束时间 
+	int64 endTime = 2;
+	// 折扣 
+	uint32 discount = 3;
+}
+
+message LuckyStrikeCosts_costs{
+	// 抽奖次数 
+	uint32 count = 1;
+	// 消耗道具ID1、属性ID 
+	uint32 id = 2;
+	// 数量 
+	uint32 value = 3;
+}
+
+message LuckyStrikeCosts_Array {
+	repeated LuckyStrikeCosts items = 1;
+}

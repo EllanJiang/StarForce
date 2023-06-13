@@ -1,0 +1,4731 @@
+{
+  "items": [
+    {
+      "buttonKey": "Movement",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.5,
+          "posY": 213.3,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.5,
+          "posY": 213.3,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.5,
+          "posY": 213.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11001,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Fire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        }
+      ],
+      "frame": false,
+      "id": 11002,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ThumpFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.9,
+          "posY": 215.8,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11003,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Jump",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11004,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Crouch",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11005,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Slient",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        }
+      ],
+      "frame": false,
+      "id": 11006,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeClip",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11007,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "QuickSwitchWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11008,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -73.0,
+          "posY": 725.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 11009,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "CloseSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11010,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11011,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "LeftFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 85.5,
+          "posY": 388.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 94.5,
+          "posY": 645.0,
+          "scale": 1.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.5,
+          "posY": 672.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 11012,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RewardWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.8,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -138.5,
+          "posY": -293.32,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 11013,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Grenades",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.5,
+          "posY": -267.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -281.0,
+          "posY": -272.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -258.74,
+          "posY": -312.08,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 11014,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeGrenadesHeight",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -308.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -308.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -308.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11015,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShopping",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 2.92,
+          "posY": 223.2,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 2.92,
+          "posY": 223.2,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 2.92,
+          "posY": 223.2,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11016,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "C4Button",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11017,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "DefuseTool",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11018,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MeleeThumpMode",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11019,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "SwitchSpecialFunc",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11020,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ImmediateStopMove",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11021,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ImmediateStopMoveArea",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11022,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AccumulateFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11023,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Setting",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 35.21,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 215.8,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 215.8,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11024,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "PickUp",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -479.0,
+          "posY": 160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -479.0,
+          "posY": 160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -464.5,
+          "posY": 111.89,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11025,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BottomShow",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 60.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 60.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 60.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11026,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "HealthShotButton",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11027,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "PropBag",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 148.5,
+          "posY": 31.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 148.5,
+          "posY": 31.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 148.5,
+          "posY": 31.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11028,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AutoFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -412.0,
+          "posY": -101.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -412.0,
+          "posY": -101.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -214.0,
+          "posY": -70.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11029,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Voice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 131.2,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 311.95,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 311.95,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11030,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "OpenVoiceView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Volume",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 83.2,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 263.95,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 263.95,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11031,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "OpenVolumeView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenInnerChat",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 179.1,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 359.85,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 359.85,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11032,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "InnerChatView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "C4Bomb",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -324.0,
+          "posY": -78.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -324.0,
+          "posY": -78.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -295.94,
+          "posY": -138.82,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 11033,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShowOff",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -314.5,
+          "posY": -233.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11034,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenTacticalVoice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -314.5,
+          "posY": -312.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11035,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RecommendShop",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11036,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RadarMap",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 11.0,
+          "posY": -11.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 191.75,
+          "posY": -11.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 191.75,
+          "posY": -11.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11037,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Broadcast",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11038,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "InnerChatOutRecord",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 381.0,
+          "posY": -166.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 549.29,
+          "posY": -200.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 549.29,
+          "posY": -200.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 11039,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MeleeSecondaryFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 11040,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MainWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -69.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -69.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -137.0,
+          "posY": -139.0,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 11041,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "SubWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -216.0,
+          "posY": -157.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -216.0,
+          "posY": -157.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -199.5,
+          "posY": -215.0,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 11042,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OtherWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -78.0,
+          "posY": -157.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -78.0,
+          "posY": -157.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -74.5,
+          "posY": -216.5,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 11043,
+      "layoutIndex": 1,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Movement",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12001,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Fire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        }
+      ],
+      "frame": false,
+      "id": 12002,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ThumpFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.4,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12003,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Jump",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12004,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Crouch",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12005,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Slient",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        }
+      ],
+      "frame": false,
+      "id": 12006,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapChangeClip",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -363.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12007,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapQuickSwitchWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12008,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -73.0,
+          "posY": 725.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 12009,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "CloseSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12010,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12011,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "LeftFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 85.5,
+          "posY": 388.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 94.5,
+          "posY": 645.0,
+          "scale": 1.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.5,
+          "posY": 672.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 12012,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RewardWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -138.5,
+          "posY": -293.32,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 12013,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Grenades",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.5,
+          "posY": -267.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -281.0,
+          "posY": -272.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -258.74,
+          "posY": -312.08,
+          "scale": 0.9
+        }
+      ],
+      "frame": true,
+      "id": 12014,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeGrenadesHeight",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -500.0,
+          "posY": 80.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -500.0,
+          "posY": 80.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -500.0,
+          "posY": 80.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12015,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShopping",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 3.4,
+          "posY": 238.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 3.4,
+          "posY": 238.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 3.4,
+          "posY": 238.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12016,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "C4Button",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12017,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "DefuseTool",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12018,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MeleeThumpMode",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12019,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapSwitchSpecialFunc",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12020,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ImmediateStopMove",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12021,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ImmediateStopMoveArea",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12022,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AccumulateFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12023,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapSetting",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -35.0,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -35.0,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -192.4,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12024,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "PickUp",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -479.0,
+          "posY": 160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -479.0,
+          "posY": 160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -464.5,
+          "posY": 111.89,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12025,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapBottom",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -14.5,
+          "posY": 35.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -14.5,
+          "posY": 35.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -14.5,
+          "posY": 35.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12026,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "HealthShotButton",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12027,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapPropBag",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 222.0,
+          "posY": 29.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 222.0,
+          "posY": 29.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 222.0,
+          "posY": 29.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12028,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AutoFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -512.0,
+          "posY": -609.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -512.0,
+          "posY": -609.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -512.0,
+          "posY": -609.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12029,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapVoice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -131.1,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -131.1,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -288.3,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12030,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "OpenVoiceView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapVolume",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -82.9,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -82.9,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -240.3,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12031,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "OpenVolumeView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapOpenInnerChat",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -178.9,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -178.9,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -335.7,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12032,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "InnerChatView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapC4Bomb",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -243.4,
+          "posY": 87.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -243.4,
+          "posY": 87.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -243.4,
+          "posY": 87.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12033,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShowOff",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -314.5,
+          "posY": -233.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12034,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenTacticalVoice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -314.5,
+          "posY": -312.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12035,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RecommendShop",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12036,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapRadarMap",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -11.0,
+          "posY": -11.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -11.0,
+          "posY": -11.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -168.47,
+          "posY": -11.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12037,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Broadcast",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12038,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "InnerChatOutRecord",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 180.5,
+          "posY": -143.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 490.25,
+          "posY": -200.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 490.25,
+          "posY": -200.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12039,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapMeleeSecondaryFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 12040,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapMainWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 87.0,
+          "posY": 85.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 87.0,
+          "posY": 85.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 87.0,
+          "posY": 85.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12041,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapSubWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -66.0,
+          "posY": 85.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -66.0,
+          "posY": 85.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -66.0,
+          "posY": 85.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12042,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapOtherWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -167.0,
+          "posY": 85.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -167.0,
+          "posY": 85.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -167.0,
+          "posY": 85.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 12043,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Movement",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.5,
+          "posY": 213.3,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.5,
+          "posY": 213.3,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.5,
+          "posY": 213.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13001,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Fire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        }
+      ],
+      "frame": false,
+      "id": 13002,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ThumpFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.9,
+          "posY": 215.8,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13003,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Jump",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13004,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Crouch",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13005,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Slient",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": -94.0,
+          "posY": 64.0,
+          "scale": 0.75
+        }
+      ],
+      "frame": false,
+      "id": 13006,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeClip",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -363.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13007,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "QuickSwitchWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13008,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -73.0,
+          "posY": 725.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 13009,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "CloseSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13010,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13011,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "LeftFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 85.5,
+          "posY": 388.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 94.5,
+          "posY": 645.0,
+          "scale": 1.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.5,
+          "posY": 672.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 13012,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RewardWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.8,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -146.2,
+          "posY": -245.8,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13013,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "SimplifyGrenades",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -90.0,
+          "posY": -228.75,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -90.0,
+          "posY": -228.75,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -90.0,
+          "posY": -228.75,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13014,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeGrenadesHeight",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -308.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -308.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -147.0,
+          "posY": -308.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13015,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShopping",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 4.69,
+          "posY": 209.6,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 4.69,
+          "posY": 209.6,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 4.69,
+          "posY": 209.6,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13016,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "C4Button",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13017,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "DefuseTool",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13018,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MeleeThumpMode",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13019,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "SwitchSpecialFunc",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13020,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ImmediateStopMove",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 526.6,
+          "posY": 218.1,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13021,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ImmediateStopMoveArea",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13022,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AccumulateFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13023,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Setting",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 35.21,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 215.8,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 215.8,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13024,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "PickUp",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -479.0,
+          "posY": 160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -479.0,
+          "posY": 160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 160.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13025,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BottomShow",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 60.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 60.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 60.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13026,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "HealthShotButton",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -328.0,
+          "posY": 434.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13027,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "PropBag",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 148.5,
+          "posY": 31.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 148.5,
+          "posY": 31.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 148.5,
+          "posY": 31.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13028,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "SimplifyWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -161.0,
+          "posY": -146.75,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -161.0,
+          "posY": -146.75,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -161.0,
+          "posY": -146.75,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13029,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AutoFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -254.0,
+          "posY": -78.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -254.0,
+          "posY": -78.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -254.0,
+          "posY": -78.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13030,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Voice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 131.2,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 311.95,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 311.95,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13031,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "OpenVoiceView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Volume",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 83.2,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 263.95,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 263.95,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13032,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "OpenVolumeView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenInnerChat",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 179.1,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 359.85,
+          "posY": -179.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 359.85,
+          "posY": -179.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13033,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "InnerChatView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShowOff",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -161.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13034,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenTacticalVoice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -342.0,
+          "posY": -235.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13035,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RecommendShop",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13036,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RadarMap",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 11.0,
+          "posY": -11.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 191.75,
+          "posY": -11.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 191.75,
+          "posY": -11.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13037,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Broadcast",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13038,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "InnerChatOutRecord",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 381.0,
+          "posY": -166.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 549.29,
+          "posY": -200.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 549.29,
+          "posY": -200.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 13039,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MeleeSecondaryFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 13040,
+      "layoutIndex": 3,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Movement",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 276.0,
+          "posY": 213.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22001,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Fire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        },
+        {
+          "alpha": 1.0,
+          "posX": -236.0,
+          "posY": 196.0,
+          "scale": 1.1
+        }
+      ],
+      "frame": false,
+      "id": 22002,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ThumpFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.4,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22003,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Jump",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 244.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22004,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Crouch",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -67.0,
+          "posY": 145.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22005,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapChangeClip",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -282.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -363.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22007,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapQuickSwitchWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -189.0,
+          "posY": 64.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22008,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -73.0,
+          "posY": 725.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 22009,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "CloseSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 450.5,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22010,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "ChangeSniperMirror",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 338.0,
+          "posY": 366.4,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22011,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "LeftFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 85.5,
+          "posY": 388.5,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 94.5,
+          "posY": 645.0,
+          "scale": 1.75
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.5,
+          "posY": 672.0,
+          "scale": 2.5
+        }
+      ],
+      "frame": false,
+      "id": 22012,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShopping",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 3.4,
+          "posY": 238.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 3.4,
+          "posY": 238.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 3.4,
+          "posY": 238.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22016,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "C4Button",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -410.0,
+          "posY": 328.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22017,
+      "layoutIndex": 2,
+      "modeId": 1,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "DefuseTool",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 67.7,
+          "posY": 182.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22018,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "MeleeThumpMode",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22019,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapSwitchSpecialFunc",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22020,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "AccumulateFire",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -68.0,
+          "posY": 341.0,
+          "scale": 1.25
+        },
+        {
+          "alpha": 1.0,
+          "posX": -416.5,
+          "posY": 217.3,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22023,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapSetting",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -35.0,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -35.0,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -35.0,
+          "posY": -206.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22024,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapVoice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -131.1,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -131.1,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -131.1,
+          "posY": -206.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22030,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "OpenVoiceView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapVolume",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -82.9,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -82.9,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -82.9,
+          "posY": -206.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22031,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "OpenVolumeView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RightMapOpenInnerChat",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -178.9,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -178.9,
+          "posY": -206.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -178.9,
+          "posY": -206.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22032,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "InnerChatView",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenShowOff",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -271.0,
+          "posY": -157.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -271.0,
+          "posY": -157.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -271.0,
+          "posY": -157.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22034,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "OpenTacticalVoice",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -271.0,
+          "posY": -233.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -271.0,
+          "posY": -233.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -271.0,
+          "posY": -233.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22035,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "RecommendShop",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 347.8,
+          "posY": 76.7,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22036,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "Broadcast",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 10.0,
+          "posY": -219.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22038,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "InnerChatOutRecord",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 440.0,
+          "posY": -160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 440.0,
+          "posY": -160.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 440.0,
+          "posY": -160.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22039,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BR_FirstWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -145.0,
+          "posY": 70.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -145.0,
+          "posY": 70.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -145.0,
+          "posY": 70.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22040,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BR_SecondWeapon",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 128.0,
+          "posY": 70.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 128.0,
+          "posY": 70.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 128.0,
+          "posY": 70.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22041,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRLoadHpShield",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -180.0,
+          "posY": -320.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -180.0,
+          "posY": -320.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -180.0,
+          "posY": -320.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22042,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRCancelLoadHpShield",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 159.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 159.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 0.0,
+          "posY": 159.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22043,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRBigKillMachine",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -70.0,
+          "posY": -320.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -70.0,
+          "posY": -320.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -70.0,
+          "posY": -320.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22044,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRHpAndHpShield",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 26.0,
+          "posY": 20.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 26.0,
+          "posY": 20.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 26.0,
+          "posY": 20.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22045,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRPropBag",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 297.0,
+          "posY": 30.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 297.0,
+          "posY": 30.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 297.0,
+          "posY": 30.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22046,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BrNavigationMap",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -107.0,
+          "posY": -100.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -107.0,
+          "posY": -100.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -107.0,
+          "posY": -100.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22047,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRTeam",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 178.0,
+          "posY": -118.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 178.0,
+          "posY": -118.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 178.0,
+          "posY": -118.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22048,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRBagEntry",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": 98.0,
+          "posY": 98.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 98.0,
+          "posY": 98.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": 98.0,
+          "posY": 98.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": false,
+      "id": 22049,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    },
+    {
+      "buttonKey": "BRPickUp",
+      "config": [
+        {
+          "alpha": 1.0,
+          "posX": -460.0,
+          "posY": 158.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -460.0,
+          "posY": 158.0,
+          "scale": 1.0
+        },
+        {
+          "alpha": 1.0,
+          "posX": -460.0,
+          "posY": 158.0,
+          "scale": 1.0
+        }
+      ],
+      "frame": true,
+      "id": 22050,
+      "layoutIndex": 2,
+      "modeId": 2,
+      "openView": "",
+      "slot": ""
+    }
+  ]
+}

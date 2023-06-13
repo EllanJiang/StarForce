@@ -1,0 +1,1892 @@
+{
+  "items": [
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "defaultId": 3,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        },
+        {
+          "des": "008239771",
+          "id": 3,
+          "initHp": 200,
+          "maxHp": 200
+        }
+      ],
+      "id": 2002,
+      "observer": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 4,
+          "id": 1,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 5
+        },
+        {
+          "gamingJoinCond": 5,
+          "id": 2,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 6
+        },
+        {
+          "gamingJoinCond": 6,
+          "id": 3,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 7
+        },
+        {
+          "gamingJoinCond": 7,
+          "id": 4,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 8
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": true,
+        "enable": true
+      },
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2004,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 4,
+          "id": 1,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 5
+        },
+        {
+          "gamingJoinCond": 5,
+          "id": 2,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 6
+        },
+        {
+          "gamingJoinCond": 6,
+          "id": 3,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 7
+        },
+        {
+          "gamingJoinCond": 7,
+          "id": 4,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 8
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        },
+        {
+          "des": "008239771",
+          "id": 3,
+          "initHp": 200,
+          "maxHp": 200
+        }
+      ],
+      "id": 2005,
+      "observer": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 35,
+          "id": 1,
+          "recommend": 25,
+          "winType": "kills",
+          "winValue": 50
+        },
+        {
+          "gamingJoinCond": 210,
+          "id": 2,
+          "recommend": 150,
+          "winType": "time",
+          "winValue": 300
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2006,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 270,
+          "id": 1,
+          "recommend": 120,
+          "winType": "time",
+          "winValue": 360
+        },
+        {
+          "gamingJoinCond": 300,
+          "id": 2,
+          "recommend": 120,
+          "winType": "time",
+          "winValue": 420
+        },
+        {
+          "gamingJoinCond": 480,
+          "id": 3,
+          "recommend": 120,
+          "winType": "time",
+          "winValue": 600
+        },
+        {
+          "gamingJoinCond": 780,
+          "id": 4,
+          "recommend": 120,
+          "winType": "time",
+          "winValue": 900
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2008,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 40,
+          "id": 1,
+          "recommend": 20,
+          "winType": "kills",
+          "winValue": 50
+        },
+        {
+          "gamingJoinCond": 240,
+          "id": 2,
+          "recommend": 60,
+          "winType": "time",
+          "winValue": 300
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "defaultId": 3,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2009,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 4,
+          "id": 1,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 5
+        },
+        {
+          "gamingJoinCond": 5,
+          "id": 2,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 6
+        },
+        {
+          "gamingJoinCond": 6,
+          "id": 3,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 7
+        },
+        {
+          "gamingJoinCond": 7,
+          "id": 4,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 8
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2010,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2011,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2013,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 270,
+          "id": 1,
+          "recommend": 120,
+          "winType": "time",
+          "winValue": 360
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2014,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2015,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2016,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2018,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2019,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2020,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 40,
+          "id": 1,
+          "recommend": 20,
+          "winType": "kills",
+          "winValue": 50
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2021,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2022,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2025,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 270,
+          "id": 1,
+          "recommend": 120,
+          "winType": "time",
+          "winValue": 360
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "autoArmor": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2026,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 40,
+          "id": 1,
+          "recommend": 20,
+          "winType": "kills",
+          "winValue": 50
+        },
+        {
+          "gamingJoinCond": 210,
+          "id": 2,
+          "recommend": 150,
+          "winType": "time",
+          "winValue": 300
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2030,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 1,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2031,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": [
+        {
+          "gamingJoinCond": 3,
+          "id": 1,
+          "recommend": 2,
+          "winType": "round",
+          "winValue": 4
+        }
+      ]
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2032,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2033,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2039,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2040,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2041,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2042,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2047,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2049,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2050,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2051,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2052,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2055,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2056,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2057,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2058,
+      "observer": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        },
+        {
+          "des": "373010142",
+          "id": 2,
+          "level": 2
+        },
+        {
+          "des": "874189997",
+          "id": 3,
+          "level": 3
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [
+        {
+          "des": "594636918",
+          "id": 2,
+          "initHp": 150,
+          "maxHp": 150
+        }
+      ],
+      "id": 2059,
+      "observer": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    },
+    {
+      "aiLevels": [
+        {
+          "des": "623091768",
+          "id": 1,
+          "level": 1
+        }
+      ],
+      "defaultId": 0,
+      "frictionRate": [],
+      "gravityRate": [],
+      "headShootOnly": {
+        "defaultValue": false,
+        "enable": false
+      },
+      "hp": [],
+      "id": 2101,
+      "observer": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "requirePassword": {
+        "defaultValue": false,
+        "enable": true
+      },
+      "winCondition": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "costs": [
+        {
+          "id": 2,
+          "value": 10
+        }
+      ],
+      "discounts": [],
+      "effect": [
+        {
+          "expire": 0,
+          "id": 24,
+          "lockTime": 0,
+          "paintKit": 0,
+          "statTrak": 0,
+          "value": 1
+        }
+      ],
+      "id": 10001,
+      "maxNum": 400
+    }
+  ]
+}

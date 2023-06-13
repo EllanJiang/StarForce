@@ -1,0 +1,22 @@
+/**
+* @file:   excel\PropsPageConfig.xlsx\PropsPageConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PropsPageConfig{
+	//  
+	int32 id = 1;
+	//  
+	string name = 2;
+	//  
+	repeated int32 Types = 3;
+}
+
+message PropsPageConfig_Array {
+	repeated PropsPageConfig items = 1;
+}

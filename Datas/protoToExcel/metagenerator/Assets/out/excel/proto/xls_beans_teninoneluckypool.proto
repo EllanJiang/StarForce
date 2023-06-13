@@ -1,0 +1,25 @@
+/**
+* @file:   excel\TenInOneLuckyPool.xlsx\TenInOneLuckyPool
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TenInOneLuckyPool{
+	// key 
+	uint32 id = 1;
+	// 自选id 
+	repeated TenInOneLuckyPool_choices choices = 2;
+}
+
+message TenInOneLuckyPool_choices{
+	// 自选id 
+	uint32 id = 1;
+}
+
+message TenInOneLuckyPool_Array {
+	repeated TenInOneLuckyPool items = 1;
+}

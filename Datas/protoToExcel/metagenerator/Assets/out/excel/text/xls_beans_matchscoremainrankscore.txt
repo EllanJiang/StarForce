@@ -1,0 +1,142 @@
+{
+  "items": [
+    {
+      "maxMatchRankScore": 1599,
+      "maxMatchWaitTime": 21,
+      "minMatchRankScore": 0,
+      "minMatchWaitTime": 0,
+      "rankScoreDiff": [
+        {
+          "base": 100,
+          "param": 10,
+          "start": 0,
+          "stop": 500
+        },
+        {
+          "base": 50,
+          "param": 5,
+          "start": 500,
+          "stop": 9999
+        }
+      ],
+      "rankScoreLowerLimit": -800,
+      "rankScoreStrategyId": 3,
+      "rankScoreUpperLimit": 800
+    },
+    {
+      "maxMatchRankScore": 2399,
+      "maxMatchWaitTime": 21,
+      "minMatchRankScore": 1600,
+      "minMatchWaitTime": 0,
+      "rankScoreDiff": [
+        {
+          "base": 100,
+          "param": 10,
+          "start": 0,
+          "stop": 500
+        },
+        {
+          "base": 50,
+          "param": 5,
+          "start": 500,
+          "stop": 9999
+        }
+      ],
+      "rankScoreLowerLimit": -800,
+      "rankScoreStrategyId": 3,
+      "rankScoreUpperLimit": 800
+    },
+    {
+      "maxMatchRankScore": 0,
+      "maxMatchWaitTime": 21,
+      "minMatchRankScore": 2400,
+      "minMatchWaitTime": 0,
+      "rankScoreDiff": [
+        {
+          "base": 100,
+          "param": 10,
+          "start": 0,
+          "stop": 500
+        },
+        {
+          "base": 50,
+          "param": 5,
+          "start": 500,
+          "stop": 9999
+        }
+      ],
+      "rankScoreLowerLimit": -1300,
+      "rankScoreStrategyId": 3,
+      "rankScoreUpperLimit": 9999
+    },
+    {
+      "maxMatchRankScore": 1599,
+      "maxMatchWaitTime": 0,
+      "minMatchRankScore": 0,
+      "minMatchWaitTime": 22,
+      "rankScoreDiff": [
+        {
+          "base": 100,
+          "param": 10,
+          "start": 0,
+          "stop": 500
+        },
+        {
+          "base": 50,
+          "param": 5,
+          "start": 500,
+          "stop": 9999
+        }
+      ],
+      "rankScoreLowerLimit": -800,
+      "rankScoreStrategyId": 3,
+      "rankScoreUpperLimit": 800
+    },
+    {
+      "maxMatchRankScore": 2399,
+      "maxMatchWaitTime": 0,
+      "minMatchRankScore": 1600,
+      "minMatchWaitTime": 22,
+      "rankScoreDiff": [
+        {
+          "base": 100,
+          "param": 10,
+          "start": 0,
+          "stop": 500
+        },
+        {
+          "base": 50,
+          "param": 5,
+          "start": 500,
+          "stop": 9999
+        }
+      ],
+      "rankScoreLowerLimit": -1000,
+      "rankScoreStrategyId": 3,
+      "rankScoreUpperLimit": 9999
+    },
+    {
+      "maxMatchRankScore": 0,
+      "maxMatchWaitTime": 0,
+      "minMatchRankScore": 2400,
+      "minMatchWaitTime": 22,
+      "rankScoreDiff": [
+        {
+          "base": 100,
+          "param": 10,
+          "start": 0,
+          "stop": 500
+        },
+        {
+          "base": 50,
+          "param": 5,
+          "start": 500,
+          "stop": 9999
+        }
+      ],
+      "rankScoreLowerLimit": -1300,
+      "rankScoreStrategyId": 3,
+      "rankScoreUpperLimit": 9999
+    }
+  ]
+}

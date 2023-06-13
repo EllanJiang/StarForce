@@ -1,0 +1,716 @@
+{
+  "items": [
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1001
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1002
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1003
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 4,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 3,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 5000
+        },
+        {
+          "Decrease": 700,
+          "Max": 5000,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1004
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1005
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1006
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1008
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1009
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1010
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1011
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1012
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1013
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1014
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1015
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 4,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 3,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 5000
+        },
+        {
+          "Decrease": 700,
+          "Max": 5000,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1016
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1018
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1019
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1020
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1021
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1022
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1025
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1030
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1041
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1039
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1038
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1049
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1051
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1052
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1053
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1054
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1045
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1055
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1057
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1058
+    },
+    {
+      "ArmorMoneyRanges": [],
+      "EquipOrder": 0,
+      "GrenadeOrder": 0,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [],
+      "WeaponOrder": 0,
+      "id": 1056
+    },
+    {
+      "ArmorMoneyRanges": [
+        1300,
+        700,
+        400
+      ],
+      "EquipOrder": 1,
+      "GrenadeOrder": 3,
+      "KeepMoney": 0,
+      "RepeatGrenade": false,
+      "SubWeaponOrder": 0,
+      "TacticalPropOrder": 0,
+      "WeaponMoneyRanges": [
+        {
+          "Decrease": 0,
+          "Max": 9999999,
+          "Min": 4000
+        },
+        {
+          "Decrease": 1050,
+          "Max": 4000,
+          "Min": 2500
+        },
+        {
+          "Decrease": 700,
+          "Max": 2500,
+          "Min": 0
+        }
+      ],
+      "WeaponOrder": 2,
+      "id": 1059
+    }
+  ]
+}

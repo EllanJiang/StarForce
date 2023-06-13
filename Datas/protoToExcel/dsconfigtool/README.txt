@@ -1,0 +1,6 @@
+export_svn.exe 启动拉取svn对应版本的protocol
+import_cdn.exe 启动上传protocol文件夹中的导出的配置至cdn
+
+注意：
+执行export_svn.exe 会拉取svn对应版本的protocol，使用本地protocol可以不执行这个文件
+若当前目录存在protocol，优先使用当前目录的protocol，否则会去找上一级的protocol

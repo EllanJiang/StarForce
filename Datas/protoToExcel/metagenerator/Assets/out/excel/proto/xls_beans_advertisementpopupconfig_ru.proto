@@ -1,0 +1,73 @@
+/**
+* @file:   excel\AdvertisementPopupConfig_RU.xlsx\AdvertisementPopupConfig_RU
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AdvertisementPopupConfig_RU{
+	// id 
+	int32 id = 1;
+	// 触发窗口 
+	string triggerWindow = 2;
+	// 弹脸类型 
+	uint32 popupType = 3;
+	// 展示资源 
+	string asset = 4;
+	// 额外参数 
+	string extraParam = 5;
+	// 起始等级 
+	uint32 startLevel = 6;
+	// 等级间隔 
+	uint32 levelInterval = 7;
+	// 结束等级 
+	uint32 endLevel = 8;
+	// 资源来源 
+	uint32 assetSource = 9;
+	// 优先级 
+	uint32 priority = 10;
+	// 展示开始时间 
+	int64 startTime = 11;
+	// 展示结束时间 
+	int64 endTime = 12;
+	// 显示条件 
+	repeated AdvertisementPopupConfig_RU_showCond showCond = 13;
+	// 是否显示 
+	bool isShow = 14;
+	// 展示注册开始天数 
+	string registStartDay = 15;
+	// 展示注册结束天数 
+	string registEndDay = 16;
+	// 跳转执行函数 
+	string navigateFuncName = 17;
+	// 跳转执行参数 
+	uint32 navigateParam = 18;
+	// 跳转网页URL 
+	string webURL = 19;
+	// 结束跳转执行函数 
+	string endNavigateFuncName = 20;
+	// 结束跳转执行参数 
+	uint32 endNavigateParam = 21;
+	// 结束跳转网页URL 
+	string endWebURL = 22;
+	// 关闭按钮样式 
+	string closeBtnStyle = 23;
+	// task对应的type 
+	string taskType = 24;
+	// 对应taskCatalog表中的id 
+	uint32 taskCatalogID = 25;
+}
+
+message AdvertisementPopupConfig_RU_showCond{
+	// 显示条件 
+	string condId = 1;
+	// 显示参数 
+	string condValue = 2;
+}
+
+message AdvertisementPopupConfig_RU_Array {
+	repeated AdvertisementPopupConfig_RU items = 1;
+}

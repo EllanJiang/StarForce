@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "AssetName": "Sooting_Target_Man_01",
+      "id": 1
+    },
+    {
+      "AssetName": "Sooting_Target_Man_01",
+      "id": 2
+    },
+    {
+      "AssetName": "Sooting_Target_Man_01",
+      "id": 3
+    }
+  ]
+}

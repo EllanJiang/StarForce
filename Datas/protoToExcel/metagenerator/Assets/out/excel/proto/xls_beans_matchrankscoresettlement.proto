@@ -1,0 +1,54 @@
+/**
+* @file:   excel\MatchRankScoreSettlement.xlsx\MatchRankScoreSettlement
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchRankScoreSettlement{
+	// 模式ID 
+	uint32 mode = 1;
+	// 玩家段位分下限 
+	uint32 minRankScore = 2;
+	// 玩家段位分上限 
+	uint32 maxRankScore = 3;
+	// 胜利获得段位分 
+	int32 winRankScore = 4;
+	// 失败获得段位分 
+	int32 failRankScore = 5;
+	// 平局获得段位分 
+	int32 drawRankScore = 6;
+	// 胜方MVP[胜方第一名] 
+	int32 winMvp = 7;
+	// 负方MVP[负方第一名] 
+	int32 failMvp = 8;
+	// 对战强度系数1 
+	float battleStrengthParam1 = 9;
+	// 对战强度系数2 
+	float battleStrengthParam2 = 10;
+	// 连胜场次 
+	repeated MatchRankScoreSettlement_streakWin streakWin = 11;
+	// 对战排名 
+	repeated MatchRankScoreSettlement_battleRankScore battleRankScore = 12;
+}
+
+message MatchRankScoreSettlement_streakWin{
+	// 连胜场次 
+	uint32 count = 1;
+	// 连胜获得段位分 
+	int32 rankScore = 2;
+}
+
+message MatchRankScoreSettlement_battleRankScore{
+	// 对战排名 
+	uint32 rank = 1;
+	// 对战排名第一获得段位分 
+	int32 score = 2;
+}
+
+message MatchRankScoreSettlement_Array {
+	repeated MatchRankScoreSettlement items = 1;
+}

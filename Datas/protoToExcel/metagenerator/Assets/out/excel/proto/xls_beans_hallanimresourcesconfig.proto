@@ -1,0 +1,32 @@
+/**
+* @file:   excel\HallAnimResourcesConfig.xlsx\HallAnimResourcesConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HallAnimResourcesConfig{
+	// 唯一动画Id 
+	uint32 id = 1;
+	// 动画文件路径(Assets/Animation/ 
+	string path = 2;
+	// 类型 
+	uint32 type = 3;
+	// 子类型 
+	uint32 subType1 = 4;
+	// 名称 
+	string name = 5;
+	// 图标Id 
+	uint32 iconId = 6;
+	// 播放时需隐藏武器 
+	bool hideWeapon = 7;
+	// 播放时需显示挂件 
+	bool showEquip = 8;
+}
+
+message HallAnimResourcesConfig_Array {
+	repeated HallAnimResourcesConfig items = 1;
+}

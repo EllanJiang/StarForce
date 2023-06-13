@@ -1,0 +1,230 @@
+{
+  "734572085": [
+    "C_GamePlay_Mode_Menu_Name_1",
+    "C_GamePlay_Mode_Menu_Name_1"
+  ],
+  "513801643": [
+    "C_GamePlay_Mode_Menu_Desc_1005",
+    "C_GamePlay_Mode_Menu_Desc_1005"
+  ],
+  "523741336": [
+    "C_GamePlay_Mode_Menu_PlayerCount_5v5",
+    "C_GamePlay_Mode_Menu_PlayerCount_5v5"
+  ],
+  "986371410": [
+    "C_GamePlay_Mode_TitleName_1004",
+    "C_GamePlay_Mode_TitleName_1004"
+  ],
+  "996431459": [
+    "C_GamePlay_Mode_Menu_Desc_1004",
+    "C_GamePlay_Mode_Menu_Desc_1004"
+  ],
+  "823108010": [
+    "C_GamePlay_Mode_Menu_PlayerCount_8v8",
+    "C_GamePlay_Mode_Menu_PlayerCount_8v8"
+  ],
+  "022546677": [
+    "C_GamePlay_Mode_TitleName_1002",
+    "C_GamePlay_Mode_TitleName_1002"
+  ],
+  "630061290": [
+    "C_GamePlay_Mode_Menu_Desc_1002",
+    "C_GamePlay_Mode_Menu_Desc_1002"
+  ],
+  "425023156": [
+    "C_GamePlay_Mode_Menu_Name_4",
+    "C_GamePlay_Mode_Menu_Name_4"
+  ],
+  "613907712": [
+    "C_GamePlay_Mode_Menu_Desc_1009",
+    "C_GamePlay_Mode_Menu_Desc_1009"
+  ],
+  "970449369": [
+    "C_GamePlay_Mode_Menu_PlayerCount_4v3",
+    "C_GamePlay_Mode_Menu_PlayerCount_4v3"
+  ],
+  "618843483": [
+    "C_GamePlay_Mode_Menu_Name_5",
+    "C_GamePlay_Mode_Menu_Name_5"
+  ],
+  "946192436": [
+    "C_GamePlay_Mode_Menu_Desc_1006",
+    "C_GamePlay_Mode_Menu_Desc_1006"
+  ],
+  "447711519": [
+    "C_GamePlay_Mode_Menu_Name_7",
+    "C_GamePlay_Mode_Menu_Name_7"
+  ],
+  "367956823": [
+    "C_GamePlay_Mode_Menu_Desc_1008",
+    "C_GamePlay_Mode_Menu_Desc_1008"
+  ],
+  "506217037": [
+    "C_GamePlay_Mode_Menu_Name_8",
+    "C_GamePlay_Mode_Menu_Name_8"
+  ],
+  "975637800": [
+    "C_GamePlay_Mode_Menu_Desc_1013",
+    "C_GamePlay_Mode_Menu_Desc_1013"
+  ],
+  "037739583": [
+    "C_GamePlay_Mode_Menu_Name_9",
+    "C_GamePlay_Mode_Menu_Name_9"
+  ],
+  "176789940": [
+    "C_GamePlay_Mode_Menu_Desc_1025",
+    "C_GamePlay_Mode_Menu_Desc_1025"
+  ],
+  "740623825": [
+    "C_GamePlay_Mode_Menu_Name_11",
+    "C_GamePlay_Mode_Menu_Name_11"
+  ],
+  "372728034": [
+    "C_GamePlay_Mode_Menu_Desc_1031",
+    "C_GamePlay_Mode_Menu_Desc_1031"
+  ],
+  "728190419": [
+    "C_GamePlay_Mode_Menu_PlayerCount_16",
+    "C_GamePlay_Mode_Menu_PlayerCount_16"
+  ],
+  "308082644": [
+    "C_GamePlay_Mode_Menu_Name_12",
+    "C_GamePlay_Mode_Menu_Name_12"
+  ],
+  "609345724": [
+    "C_GamePlay_Mode_Menu_Desc_1020",
+    "C_GamePlay_Mode_Menu_Desc_1020"
+  ],
+  "921090520": [
+    "C_GamePlay_Mode_Menu_Name_13",
+    "C_GamePlay_Mode_Menu_Name_13"
+  ],
+  "247860308": [
+    "C_GamePlay_Mode_Menu_Desc_1033",
+    "C_GamePlay_Mode_Menu_Desc_1033"
+  ],
+  "090649356": [
+    "C_GamePlay_Mode_Menu_PlayerCount_3",
+    "C_GamePlay_Mode_Menu_PlayerCount_3"
+  ],
+  "921967605": [
+    "C_GamePlay_MapGroup_Name_114",
+    "C_GamePlay_MapGroup_Name_114"
+  ],
+  "934448799": [
+    "C_GamePlay_Mode_Menu_Desc_1026",
+    "C_GamePlay_Mode_Menu_Desc_1026"
+  ],
+  "805999104": [
+    "C_GamePlay_MapGroup_Name_Random",
+    "C_GamePlay_MapGroup_Name_Random"
+  ],
+  "321536442": [
+    "C_GamePlay_Mode_Menu_Desc_Random",
+    "C_GamePlay_Mode_Menu_Desc_Random"
+  ],
+  "813570778": [
+    "C_GamePlay_Mode_Menu_Name_18",
+    "C_GamePlay_Mode_Menu_Name_18"
+  ],
+  "923260517": [
+    "C_GamePlay_Mode_TitleName_1051",
+    "C_GamePlay_Mode_TitleName_1051"
+  ],
+  "374442569": [
+    "C_GamePlay_Mode_Menu_Desc_1051",
+    "C_GamePlay_Mode_Menu_Desc_1051"
+  ],
+  "891996124": [
+    "C_GamePlay_Mode_Menu_PlayerCount_4V4",
+    "C_GamePlay_Mode_Menu_PlayerCount_4V4"
+  ],
+  "345397266": [
+    "C_GamePlay_Mode_TitleName_1016",
+    "C_GamePlay_Mode_TitleName_1016"
+  ],
+  "682713680": [
+    "C_GamePlay_Mode_Menu_Desc_1016",
+    "C_GamePlay_Mode_Menu_Desc_1016"
+  ],
+  "063397063": [
+    "C_GamePlay_Mode_TitleName_1019",
+    "C_GamePlay_Mode_TitleName_1019"
+  ],
+  "200479865": [
+    "C_GamePlay_Mode_Menu_Desc_1019",
+    "C_GamePlay_Mode_Menu_Desc_1019"
+  ],
+  "288496318": [
+    "C_GamePlay_Mode_TitleName_1021",
+    "C_GamePlay_Mode_TitleName_1021"
+  ],
+  "797185215": [
+    "C_GamePlay_Mode_Menu_Desc_1021",
+    "C_GamePlay_Mode_Menu_Desc_1021"
+  ],
+  "780135536": [
+    "C_GamePlay_Mode_Menu_Name_27",
+    "C_GamePlay_Mode_Menu_Name_27"
+  ],
+  "464253795": [
+    "C_GamePlay_Mode_Menu_Desc_1049",
+    "C_GamePlay_Mode_Menu_Desc_1049"
+  ],
+  "338646909": [
+    "C_GamePlay_Mode_Menu_PlayerCount_2v2",
+    "C_GamePlay_Mode_Menu_PlayerCount_2v2"
+  ],
+  "016284902": [
+    "C_GamePlay_Mode_TitleName_1057",
+    "C_GamePlay_Mode_TitleName_1057"
+  ],
+  "204230906": [
+    "C_GamePlay_Mode_Menu_Desc_1057",
+    "C_GamePlay_Mode_Menu_Desc_1057"
+  ],
+  "558952897": [
+    "C_GamePlay_Mode_TitleName_1058",
+    "C_GamePlay_Mode_TitleName_1058"
+  ],
+  "984767230": [
+    "C_GamePlay_Mode_Menu_Desc_1058",
+    "C_GamePlay_Mode_Menu_Desc_1058"
+  ],
+  "416558563": [
+    "C_GamePlay_Mode_TitleName_1055",
+    "C_GamePlay_Mode_TitleName_1055"
+  ],
+  "639301364": [
+    "C_GamePlay_Mode_Menu_Desc_1055",
+    "C_GamePlay_Mode_Menu_Desc_1055"
+  ],
+  "148674197": [
+    "C_GamePlay_Mode_TitleName_1056",
+    "C_GamePlay_Mode_TitleName_1056"
+  ],
+  "633125478": [
+    "C_GamePlay_Mode_Menu_Desc_1056",
+    "C_GamePlay_Mode_Menu_Desc_1056"
+  ],
+  "531918278": [
+    "C_GamePlay_Mode_TitleName_1059",
+    "C_GamePlay_Mode_TitleName_1059"
+  ],
+  "644198655": [
+    "C_GamePlay_Mode_Menu_Desc_1059",
+    "C_GamePlay_Mode_Menu_Desc_1059"
+  ],
+  "567216530": [
+    "C_GamePlay_Mode_TitleName_1901",
+    "C_GamePlay_Mode_TitleName_1901"
+  ],
+  "023157528": [
+    "C_GamePlay_Mode_TitleName_1101",
+    "C_GamePlay_Mode_TitleName_1101"
+  ],
+  "527156931": [
+    "C_GamePlay_Mode_TitleName_1102",
+    "C_GamePlay_Mode_TitleName_1102"
+  ]
+}

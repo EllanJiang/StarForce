@@ -1,0 +1,256 @@
+{
+  "items": [
+    {
+      "goodsId": 5001,
+      "mark": 1,
+      "poolId": 1,
+      "weight": 10
+    },
+    {
+      "goodsId": 5002,
+      "mark": 1,
+      "poolId": 1,
+      "weight": 10
+    },
+    {
+      "goodsId": 5003,
+      "mark": 1,
+      "poolId": 1,
+      "weight": 10
+    },
+    {
+      "goodsId": 5004,
+      "mark": 1,
+      "poolId": 1,
+      "weight": 10
+    },
+    {
+      "goodsId": 5005,
+      "mark": 1,
+      "poolId": 1,
+      "weight": 10
+    },
+    {
+      "goodsId": 5006,
+      "mark": 1,
+      "poolId": 1,
+      "weight": 10
+    },
+    {
+      "goodsId": 5101,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5102,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5103,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5104,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5105,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5106,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5107,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5108,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5109,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5110,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5111,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5112,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5113,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5114,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5115,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5116,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5117,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5118,
+      "mark": 0,
+      "poolId": 2,
+      "weight": 10
+    },
+    {
+      "goodsId": 5201,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5202,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5203,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5204,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5205,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5206,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5207,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5208,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5209,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5210,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5211,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5212,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5213,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5214,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5215,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5216,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5217,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    },
+    {
+      "goodsId": 5218,
+      "mark": 0,
+      "poolId": 3,
+      "weight": 10
+    }
+  ]
+}

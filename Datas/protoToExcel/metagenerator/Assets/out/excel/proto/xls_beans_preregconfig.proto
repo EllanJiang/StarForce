@@ -1,0 +1,24 @@
+/**
+* @file:   excel\PreRegConfig.xlsx\PreRegConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PreRegConfig{
+	// 服务器regionId 
+	string id = 1;
+	// 预注册地址 
+	string preRegAddr = 2;
+	// 预注册开关（on/off） 
+	string preRegSwitch = 3;
+	// 每周注册上限 
+	uint32 dailyRegLimit = 4;
+}
+
+message PreRegConfig_Array {
+	repeated PreRegConfig items = 1;
+}

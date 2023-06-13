@@ -1,0 +1,34 @@
+/**
+* @file:   excel\TreasureBoxConfig.xlsx\TreasureBoxConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TreasureBoxConfig{
+	// ID 
+	uint32 id = 1;
+	// 模型名字 
+	string ModelName = 2;
+	// 血量上限（血量为0开启） 
+	uint32 MaxHp = 3;
+	// 拾取次数 
+	uint32 PickupCount = 4;
+	// 拾取类型（1正常拾取 2 爆地拾取 3Pve随机宝箱） 
+	uint32 PickupType = 5;
+	// 拾取半径 
+	float PickupRadius = 6;
+	// 物品名 
+	repeated uint32 ItemID = 7;
+	// 物品类型（1 金币 2 武器 具体看策划） 
+	repeated uint32 ItemTypes = 8;
+	// 物品数量 
+	repeated uint32 ItemNum = 9;
+}
+
+message TreasureBoxConfig_Array {
+	repeated TreasureBoxConfig items = 1;
+}

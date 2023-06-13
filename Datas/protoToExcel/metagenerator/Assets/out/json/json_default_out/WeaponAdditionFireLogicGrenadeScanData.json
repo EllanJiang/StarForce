@@ -1,0 +1,15 @@
+{
+  "GrenadeScanBuffId": 0,
+  "GrenadeScanDamageTickTime": 0.0,
+  "GrenadeScanLogicLifeTime": 0.0,
+  "Hp": 0.0,
+  "IsBounce": false,
+  "MapExposedBuffId": 0,
+  "PlayBeepAudioEventName": "",
+  "PlaySearchAudioEventName": "",
+  "ScanRadius": 0.0,
+  "SearchSpaceCount": 0,
+  "SearchSpaceTime": 0.0,
+  "StopBeepAudioEventName": "",
+  "StopSearchAudioEventName": ""
+}

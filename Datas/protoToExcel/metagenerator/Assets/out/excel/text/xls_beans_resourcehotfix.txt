@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "appVersion": "0.1.1",
+      "hotfix": [
+        {
+          "md5": "111",
+          "timeStamp": "111",
+          "type": "logic"
+        }
+      ],
+      "id": 1,
+      "version": "1"
+    }
+  ]
+}

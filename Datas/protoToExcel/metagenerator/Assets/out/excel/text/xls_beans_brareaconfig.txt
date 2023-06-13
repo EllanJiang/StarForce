@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "id": 200200,
+      "scenPath": "Scene_BR/br_bigWorld/br_bigworld_global.unity"
+    },
+    {
+      "id": 200201,
+      "scenPath": "Scene_BR/br_bigWorld/area_Factory/area_factory.unity"
+    },
+    {
+      "id": 200202,
+      "scenPath": "Scene_BR/br_bigWorld/area_Port/area_port.unity"
+    },
+    {
+      "id": 200400,
+      "scenPath": "Scene_BR/br_drstone/br_drstone_global.unity"
+    },
+    {
+      "id": 200401,
+      "scenPath": "Scene_BR/br_drstone/area_inferno/area_inferno.unity"
+    },
+    {
+      "id": 200402,
+      "scenPath": "Scene_BR/br_drstone/area_dust/area_dust.unity"
+    },
+    {
+      "id": 200403,
+      "scenPath": "Scene_BR/br_drstone/area_dust2/area_dust2.unity"
+    },
+    {
+      "id": 200404,
+      "scenPath": "Scene_BR/br_drstone/area_mirage/area_mirage.unity"
+    },
+    {
+      "id": 200500,
+      "scenPath": "Scene_BR/wb_drstone/wb_drstone_global.unity"
+    },
+    {
+      "id": 200501,
+      "scenPath": "Scene_BR/wb_drstone/area_whiteboxlevel/area_whiteboxlevel.unity"
+    },
+    {
+      "id": 200600,
+      "scenPath": "Scene_BR/br_d11zone/br_d11zone_global.unity"
+    },
+    {
+      "id": 200601,
+      "scenPath": "Scene_BR/br_d11zone/area_poi01_westlife/area_poi01_westlife.unity"
+    },
+    {
+      "id": 200602,
+      "scenPath": "Scene_BR/br_d11zone/area_poi02_centralpark/area_poi02_centralpark.unity"
+    },
+    {
+      "id": 200603,
+      "scenPath": "Scene_BR/br_d11zone/area_poi03_factory/area_poi03_factory.unity"
+    },
+    {
+      "id": 200604,
+      "scenPath": "Scene_BR/br_d11zone/area_poi04_highrise/area_poi04_highrise.unity"
+    },
+    {
+      "id": 200605,
+      "scenPath": "Scene_BR/br_d11zone/area_poi05_port/area_poi05_port.unity"
+    },
+    {
+      "id": 200606,
+      "scenPath": "Scene_BR/br_d11zone/area_poi06_moonbayplaza/area_poi06_moonbayplaza.unity"
+    },
+    {
+      "id": 200607,
+      "scenPath": "Scene_BR/br_d11zone/area_poi07_supermarket/area_poi07_supermarket.unity"
+    },
+    {
+      "id": 200608,
+      "scenPath": "Scene_BR/br_d11zone/area_poi08_diamondhotel/area_poi08_diamondhotel.unity"
+    },
+    {
+      "id": 200609,
+      "scenPath": "Scene_BR/br_d11zone/area_poi09_radarbase/area_poi09_radarbase.unity"
+    },
+    {
+      "id": 200610,
+      "scenPath": "Scene_BR/br_d11zone/area_poi010_gasstation/area_poi010_gasstation.unity"
+    }
+  ]
+}

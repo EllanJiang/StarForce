@@ -1,0 +1,27 @@
+/**
+* @file:   excel\MatchRankHistoryFields.xlsx\MatchRankHistoryFields
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchRankHistoryFields{
+	// 模式id 
+	uint32 id = 1;
+	//  
+	repeated MatchRankHistoryFields_fields fields = 2;
+}
+
+message MatchRankHistoryFields_fields{
+	//  
+	string name = 1;
+	//  
+	string serverName = 2;
+}
+
+message MatchRankHistoryFields_Array {
+	repeated MatchRankHistoryFields items = 1;
+}

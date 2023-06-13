@@ -1,0 +1,33 @@
+/**
+* @file:   excel\MusicBoxItemConfig.xlsx\MusicBoxItemConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MusicBoxItemConfig{
+	// 道具ID 
+	uint32 id = 1;
+	// Bank名称 
+	string bank = 2;
+	// 事件前缀 
+	string eventPrefix = 3;
+	// 音轨开始 
+	repeated MusicBoxItemConfig_music music = 4;
+}
+
+message MusicBoxItemConfig_music{
+	// 音轨开始 
+	string eventPlay = 1;
+	// 音轨结束 
+	string eventStop = 2;
+	// 名字 
+	string key = 3;
+}
+
+message MusicBoxItemConfig_Array {
+	repeated MusicBoxItemConfig items = 1;
+}

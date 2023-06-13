@@ -1,0 +1,53 @@
+/**
+* @file:   excel\RoleLevelDef.xlsx\RoleLevelDef
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleLevelDef{
+	// 等级 
+	uint32 id = 1;
+	// 升级所需经验 
+	uint32 exp = 2;
+	// 等级 
+	string levelNum = 3;
+	// 图标 
+	uint32 iconIndex = 4;
+	// 资源id 
+	uint32 iconID = 5;
+	// 大图id 
+	uint32 bigIconID = 6;
+	// 特效图ID 
+	uint32 textureIconID = 7;
+	// 大奖预览图 
+	uint32 previewBg = 8;
+	// 奖励类型 
+	uint32 rewardType = 9;
+	// 解锁文本 
+	repeated string unlockTextGroup = 10;
+	// 道具ID1、属性ID 
+	repeated RoleLevelDef_effect effect = 11;
+}
+
+message RoleLevelDef_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message RoleLevelDef_Array {
+	repeated RoleLevelDef items = 1;
+}

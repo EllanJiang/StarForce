@@ -1,0 +1,35 @@
+/**
+* @file:   excel\SkinGamePlayConfig.xlsx\SkinGamePlayConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SkinGamePlayConfig{
+	// 技能ID (给AbilityUseConfig用) 
+	uint32 id = 1;
+	// action(功能) 
+	uint32 action = 2;
+	// buff参数 
+	repeated uint32 BuffList = 3;
+	// 特殊武器功能开启 
+	repeated uint32 WeaponSpecialList = 4;
+	// Money[] 
+	repeated SkinGamePlayConfig_Money Money = 5;
+}
+
+message SkinGamePlayConfig_Money{
+	// Money[] 
+	uint32 type = 1;
+	// 数量 
+	uint32 value = 2;
+	// 每日上限 
+	uint32 dayLimit = 3;
+}
+
+message SkinGamePlayConfig_Array {
+	repeated SkinGamePlayConfig items = 1;
+}

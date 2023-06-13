@@ -1,0 +1,22 @@
+/**
+* @file:   excel\MatchSelementEloForRun.xlsx\MatchSelementEloForRun
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchSelementEloForRun{
+	// 获胜方平均elo最低值 
+	uint32 MinMatchElo = 1;
+	// 获胜方平均elo最高值 
+	uint32 MaxMatchElo = 2;
+	// 逃跑方机器人适配elo分 
+	uint32 SeleMatchElo = 3;
+}
+
+message MatchSelementEloForRun_Array {
+	repeated MatchSelementEloForRun items = 1;
+}

@@ -1,0 +1,64 @@
+/**
+* @file:   excel\TenInOneLuckyConfig.xlsx\TenInOneLuckyConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TenInOneLuckyConfig{
+	// key 
+	uint32 id = 1;
+	// 名称 
+	string name = 2;
+	// 首次十连抽Tips 
+	string firstTenLuckyTips = 3;
+	// 首次之后十连抽Tips 
+	string otherTenLuckyTips = 4;
+	// 任务开始时间 
+	int64 startTime = 5;
+	// 任务结束时间 
+	int64 stopTime = 6;
+	// 显示条件 
+	repeated TenInOneLuckyConfig_showCond showCond = 7;
+	// 消耗id 
+	uint32 costsId = 8;
+	// 箱子id 
+	uint32 caseId = 9;
+	// 展示奖池 
+	uint32 showPoolId = 10;
+	// 免费奖池 
+	uint32 freePoolId = 11;
+	// 单抽奖池 
+	uint32 singlePoolId = 12;
+	// 十连抽奖池 
+	uint32 tenInOnePoolId = 13;
+	// 首次十连抽奖池 
+	uint32 firstTenInOnePoolId = 14;
+	// 前九抽奖池 
+	uint32 topNinePoolId = 15;
+	// 循环起始次数 
+	repeated TenInOneLuckyConfig_luckyCount luckyCount = 16;
+}
+
+message TenInOneLuckyConfig_showCond{
+	// 显示条件 
+	string condId = 1;
+	// 显示参数 
+	uint32 condValue = 2;
+}
+
+message TenInOneLuckyConfig_luckyCount{
+	// 循环起始次数 
+	uint32 startCount       = 1;
+	// 循环次数 
+	uint32 count       = 2;
+	// 循环奖池 
+	uint32 poolId    = 3;
+}
+
+message TenInOneLuckyConfig_Array {
+	repeated TenInOneLuckyConfig items = 1;
+}

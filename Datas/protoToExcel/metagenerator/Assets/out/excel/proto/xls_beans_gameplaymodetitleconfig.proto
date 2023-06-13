@@ -1,0 +1,22 @@
+/**
+* @file:   excel\GamePlayModeTitleConfig.xlsx\GamePlayModeTitleConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GamePlayModeTitleConfig{
+	// 模式 
+	uint32 id = 1;
+	// 击杀王 
+	int32 killKing = 2;
+	//  副击杀王 
+	int32 SecondkillKing = 3;
+}
+
+message GamePlayModeTitleConfig_Array {
+	repeated GamePlayModeTitleConfig items = 1;
+}

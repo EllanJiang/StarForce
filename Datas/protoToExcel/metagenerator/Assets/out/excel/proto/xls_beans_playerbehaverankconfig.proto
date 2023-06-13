@@ -1,0 +1,27 @@
+/**
+* @file:   excel\PlayerBehaveRankConfig.xlsx\PlayerBehaveRankConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerBehaveRankConfig{
+	// 配置Id 
+	uint32 id = 1;
+	// 大段位 
+	repeated PlayerBehaveRankConfig_gradeInfoList gradeInfoList = 2;
+}
+
+message PlayerBehaveRankConfig_gradeInfoList{
+	// 大段位 
+	uint32 grade = 1;
+	// 扣分系数 
+	float rate = 2;
+}
+
+message PlayerBehaveRankConfig_Array {
+	repeated PlayerBehaveRankConfig items = 1;
+}

@@ -1,0 +1,22 @@
+/**
+* @file:   excel\BRShopLotteryConfig.xlsx\BRShopLotteryConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRShopLotteryConfig{
+	// 商店道具组ID 
+	uint32 itemGroupId = 1;
+	// 道具ID 
+	uint32 itemId = 2;
+	// 阶段1权重 
+	repeated uint32 rate = 3;
+}
+
+message BRShopLotteryConfig_Array {
+	repeated BRShopLotteryConfig items = 1;
+}

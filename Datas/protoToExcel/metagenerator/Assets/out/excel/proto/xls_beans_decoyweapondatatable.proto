@@ -1,0 +1,28 @@
+/**
+* @file:   excel\DecoyWeaponDataTable.xlsx\DecoyWeaponDataTable
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message DecoyWeaponDataTable{
+	// 编号 
+	uint32 id = 1;
+	// 最小射击数 
+	uint32 MinShots = 2;
+	// 最大射击数 
+	uint32 MaxShots = 3;
+	// 最小暂停时间 
+	float PauseMin = 4;
+	// 最大暂停时间 
+	float PauseMax = 5;
+	// 额外时间 
+	float ExtraDelay = 6;
+}
+
+message DecoyWeaponDataTable_Array {
+	repeated DecoyWeaponDataTable items = 1;
+}

@@ -1,0 +1,24 @@
+/**
+* @file:   excel\ItemFilterConfig.xlsx\ItemFilterConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemFilterConfig{
+	// 编号 
+	uint32 id = 1;
+	// 筛选项名称 
+	string name = 2;
+	// 包含类型ID 
+	repeated uint32 include = 3;
+	// 排除类型ID 
+	repeated uint32 exclude = 4;
+}
+
+message ItemFilterConfig_Array {
+	repeated ItemFilterConfig items = 1;
+}

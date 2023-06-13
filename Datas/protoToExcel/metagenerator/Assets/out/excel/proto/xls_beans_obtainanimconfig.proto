@@ -1,0 +1,30 @@
+/**
+* @file:   excel\ObtainAnimConfig.xlsx\ObtainAnimConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ObtainAnimConfig{
+	//  
+	uint32 id = 1;
+	//  
+	uint32 mainType = 2;
+	//  
+	uint32 subType1 = 3;
+	//  
+	uint32 subType2 = 4;
+	//  
+	uint32 subType3 = 5;
+	//  
+	repeated uint32 quality = 6;
+	// Timeline动画资源全路径 
+	string timelineAssetPath = 7;
+}
+
+message ObtainAnimConfig_Array {
+	repeated ObtainAnimConfig items = 1;
+}

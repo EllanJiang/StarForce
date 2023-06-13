@@ -1,0 +1,30 @@
+/**
+* @file:   excel\ChickenModeRefreshRule.xlsx\ChickenModeRefreshRule
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ChickenModeRefreshRule{
+	// id 
+	uint32 id = 1;
+	// 名称 
+	string Name = 2;
+	// 最多刷多少波 
+	uint32 MaxWaveCount = 3;
+	// 每隔多少秒刷一个波次 
+	uint32 CD = 4;
+	// 默认波次id 
+	uint32 DefaultWaveID = 5;
+	// 定制波次-1 
+	repeated uint32 WaveNumList = 6;
+	// 波次数据id 
+	repeated uint32 WaveIDList = 7;
+}
+
+message ChickenModeRefreshRule_Array {
+	repeated ChickenModeRefreshRule items = 1;
+}

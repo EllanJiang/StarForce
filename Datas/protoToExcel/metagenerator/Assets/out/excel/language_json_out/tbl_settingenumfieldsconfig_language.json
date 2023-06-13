@@ -1,0 +1,802 @@
+{
+  "869689103": [
+    "C_General_Setting_SlientMode_N",
+    "C_General_Setting_SlientMode_N"
+  ],
+  "715749365": [
+    "C_General_Setting_SlientMode_D_1",
+    "C_General_Setting_SlientMode_D_1"
+  ],
+  "089335814": [
+    "C_General_Setting_SlientMode__Button_1_N",
+    "C_General_Setting_SlientMode__Button_1_N"
+  ],
+  "462890754": [
+    "C_General_Setting_SlientMode__Button_2_N",
+    "C_General_Setting_SlientMode__Button_2_N"
+  ],
+  "027070106": [
+    "C_General_Setting_SlientMode__Button_3_N",
+    "C_General_Setting_SlientMode__Button_3_N"
+  ],
+  "347029567": [
+    "C_General_Setting_CrouchMode_N",
+    "C_General_Setting_CrouchMode_N"
+  ],
+  "560620876": [
+    "C_General_Setting_CrouchMode_Button_1_N",
+    "C_General_Setting_CrouchMode_Button_1_N"
+  ],
+  "721035795": [
+    "C_General_Setting_CrouchMode_Button_2_N",
+    "C_General_Setting_CrouchMode_Button_2_N"
+  ],
+  "503581576": [
+    "C_General_Setting_CrouchMode_Button_3_N",
+    "C_General_Setting_CrouchMode_Button_3_N"
+  ],
+  "818541323": [
+    "C_General_Setting_ThumpMode_N",
+    "C_General_Setting_ThumpMode_N"
+  ],
+  "906020659": [
+    "C_General_Setting_ThumpMode_D_1",
+    "C_General_Setting_ThumpMode_D_1"
+  ],
+  "594200169": [
+    "C_General_Setting_ThumpMode_Button_1_N",
+    "C_General_Setting_ThumpMode_Button_1_N"
+  ],
+  "582838540": [
+    "C_General_Setting_ThumpMode_Button_2_N",
+    "C_General_Setting_ThumpMode_Button_2_N"
+  ],
+  "418385087": [
+    "C_General_Setting_ZoomMode_N",
+    "C_General_Setting_ZoomMode_N"
+  ],
+  "185409088": [
+    "C_General_Setting_ZoomMode_Button_1_N",
+    "C_General_Setting_ZoomMode_Button_1_N"
+  ],
+  "435572913": [
+    "C_General_Setting_ZoomMode_Button_2_N",
+    "C_General_Setting_ZoomMode_Button_2_N"
+  ],
+  "954710225": [
+    "C_General_Setting_LeftFireMode_N",
+    "C_General_Setting_LeftFireMode_N"
+  ],
+  "579309844": [
+    "C_General_Setting_LeftFireMode_D_1",
+    "C_General_Setting_LeftFireMode_D_1"
+  ],
+  "909502796": [
+    "C_General_Setting_LeftFireMode_Button_2_N",
+    "C_General_Setting_LeftFireMode_Button_2_N"
+  ],
+  "974436875": [
+    "C_General_Setting_LeftFireMode_Button_3_N",
+    "C_General_Setting_LeftFireMode_Button_3_N"
+  ],
+  "871603856": [
+    "C_General_Setting_FireMode_N",
+    "C_General_Setting_FireMode_N"
+  ],
+  "825951996": [
+    "C_General_Setting_FireMode_Button_1_N",
+    "C_General_Setting_FireMode_Button_1_N"
+  ],
+  "831051734": [
+    "C_General_Setting_FireMode_Button_2_N",
+    "C_General_Setting_FireMode_Button_2_N"
+  ],
+  "118108014": [
+    "C_General_Setting_FireMode_Button_3_N",
+    "C_General_Setting_FireMode_Button_3_N"
+  ],
+  "781628186": [
+    "C_General_Setting_MapSide_N",
+    "C_General_Setting_MapSide_N"
+  ],
+  "623551503": [
+    "C_General_Setting_MapSide_Button_1_N",
+    "C_General_Setting_MapSide_Button_1_N"
+  ],
+  "038921996": [
+    "C_General_Setting_MapSide_Button_2_N",
+    "C_General_Setting_MapSide_Button_2_N"
+  ],
+  "241579756": [
+    "C_General_Setting_SidestepShooting_N",
+    "C_General_Setting_SidestepShooting_N"
+  ],
+  "520925002": [
+    "C_General_Setting_SidestepShooting_D_1",
+    "C_General_Setting_SidestepShooting_D_1"
+  ],
+  "720525968": [
+    "C_General_Setting_SidestepShooting_Button_1_N",
+    "C_General_Setting_SidestepShooting_Button_1_N"
+  ],
+  "788780355": [
+    "C_General_Setting_SidestepShooting_Button_3_N",
+    "C_General_Setting_SidestepShooting_Button_3_N"
+  ],
+  "484180731": [
+    "C_General_Setting_SidestepShooting_Button_2_N",
+    "C_General_Setting_SidestepShooting_Button_2_N"
+  ],
+  "558511874": [
+    "C_General_Setting_AutoWeaponChange_N",
+    "C_General_Setting_AutoWeaponChange_N"
+  ],
+  "790373401": [
+    "C_General_Setting_AutoWeaponChange_Button_1_N",
+    "C_General_Setting_AutoWeaponChange_Button_1_N"
+  ],
+  "223064437": [
+    "C_General_Setting_AutoWeaponChange_Button_2_N",
+    "C_General_Setting_AutoWeaponChange_Button_2_N"
+  ],
+  "897962694": [
+    "C_General_Setting_PoseMode_N",
+    "C_General_Setting_PoseMode_N"
+  ],
+  "689323415": [
+    "C_General_Setting_PoseMode_Button_1_N",
+    "C_General_Setting_PoseMode_Button_1_N"
+  ],
+  "255750419": [
+    "C_General_Setting_PoseMode_Button_2_N",
+    "C_General_Setting_PoseMode_Button_2_N"
+  ],
+  "891961088": [
+    "C_General_Setting_AutoAimMode_N",
+    "C_General_Setting_AutoAimMode_N"
+  ],
+  "757048698": [
+    "C_General_Setting_AutoAimMode_D_1",
+    "C_General_Setting_AutoAimMode_D_1"
+  ],
+  "820796137": [
+    "C_General_Setting_LeftFireMode_Button_1_N",
+    "C_General_Setting_LeftFireMode_Button_1_N"
+  ],
+  "489927877": [
+    "C_General_Setting_CrossHair_N",
+    "C_General_Setting_CrossHair_N"
+  ],
+  "213257456": [
+    "C_General_Setting_CrossHair_D_1",
+    "C_General_Setting_CrossHair_D_1"
+  ],
+  "714424740": [
+    "C_General_Setting_CrossHair_Button_1_N",
+    "C_General_Setting_CrossHair_Button_1_N"
+  ],
+  "316109831": [
+    "C_General_Setting_CrossHair_Button_2_N",
+    "C_General_Setting_CrossHair_Button_2_N"
+  ],
+  "156234549": [
+    "C_General_Setting_CrossHair_Button_3_N",
+    "C_General_Setting_CrossHair_Button_3_N"
+  ],
+  "547340745": [
+    "C_General_Setting_CrossHair_Button_4_N",
+    "C_General_Setting_CrossHair_Button_4_N"
+  ],
+  "449955475": [
+    "C_General_Setting_BombDisposalMode_N",
+    "C_General_Setting_BombDisposalMode_N"
+  ],
+  "841253641": [
+    "C_General_Setting_BombDisposalMode_Button_1_N",
+    "C_General_Setting_BombDisposalMode_Button_1_N"
+  ],
+  "748765743": [
+    "C_General_Setting_BombDisposalMode_Button_2_N",
+    "C_General_Setting_BombDisposalMode_Button_2_N"
+  ],
+  "376198380": [
+    "C_General_Setting_ShowCrossHair_N",
+    "C_General_Setting_ShowCrossHair_N"
+  ],
+  "866584035": [
+    "C_General_Setting_CrossHairColor_N",
+    "C_General_Setting_CrossHairColor_N"
+  ],
+  "601030913": [
+    "C_General_Setting_SidestepShootingSwitch_N",
+    "C_General_Setting_SidestepShootingSwitch_N"
+  ],
+  "515712729": [
+    "C_General_Setting_RadarStyle_N",
+    "C_General_Setting_RadarStyle_N"
+  ],
+  "279247540": [
+    "C_General_Setting_RadarStyle_Button_1_N",
+    "C_General_Setting_RadarStyle_Button_1_N"
+  ],
+  "646962468": [
+    "C_General_Setting_RadarStyle_Button_2_N",
+    "C_General_Setting_RadarStyle_Button_2_N"
+  ],
+  "462896971": [
+    "C_General_Setting_IsJumpThrowFire_N",
+    "C_General_Setting_IsJumpThrowFire_N"
+  ],
+  "240168361": [
+    "C_General_Setting_ThrowGrenadeMode_N",
+    "C_General_Setting_ThrowGrenadeMode_N"
+  ],
+  "521365070": [
+    "C_General_Setting_ThrowGrenadeMode_D_1",
+    "C_General_Setting_ThrowGrenadeMode_D_1"
+  ],
+  "368998668": [
+    "C_General_Setting_ThrowGrenadeMode_Button_1_N",
+    "C_General_Setting_ThrowGrenadeMode_Button_1_N"
+  ],
+  "611183826": [
+    "C_General_Setting_ThrowGrenadeMode_Button_2_N",
+    "C_General_Setting_ThrowGrenadeMode_Button_2_N"
+  ],
+  "748205161": [
+    "C_General_Setting_FireCloseStaticWalk_N",
+    "C_General_Setting_FireCloseStaticWalk_N"
+  ],
+  "188196826": [
+    "C_General_Setting_FireCloseStaticWalk_D_1",
+    "C_General_Setting_FireCloseStaticWalk_D_1"
+  ],
+  "901591627": [
+    "C_General_Setting_PrivateChatAuthority_N",
+    "C_General_Setting_PrivateChatAuthority_N"
+  ],
+  "897589148": [
+    "C_General_Setting_PrivateChatAuthority_D_1",
+    "C_General_Setting_PrivateChatAuthority_D_1"
+  ],
+  "624885900": [
+    "C_General_Setting_PrivateChatAuthority_Button_1_N",
+    "C_General_Setting_PrivateChatAuthority_Button_1_N"
+  ],
+  "334704498": [
+    "C_General_Setting_PrivateChatAuthority_Button_2_N",
+    "C_General_Setting_PrivateChatAuthority_Button_2_N"
+  ],
+  "046115544": [
+    "C_General_Setting_AccuracyTips_N",
+    "C_General_Setting_AccuracyTips_N"
+  ],
+  "698063267": [
+    "C_General_Setting_AccuracyTips_Button_1_N",
+    "C_General_Setting_AccuracyTips_Button_1_N"
+  ],
+  "576130736": [
+    "C_General_Setting_AccuracyTips_Button_2_N",
+    "C_General_Setting_AccuracyTips_Button_2_N"
+  ],
+  "222066855": [
+    "C_General_Setting_SingleSniperMirrorFireMode_N",
+    "C_General_Setting_SingleSniperMirrorFireMode_N"
+  ],
+  "007219878": [
+    "C_General_Setting_SingleSniperMirrorFireMode_D_1",
+    "C_General_Setting_SingleSniperMirrorFireMode_D_1"
+  ],
+  "605927561": [
+    "C_General_Setting_SingleSniperMirrorFireMode_Button_1_N",
+    "C_General_Setting_SingleSniperMirrorFireMode_Button_1_N"
+  ],
+  "163562772": [
+    "C_General_Setting_SingleSniperMirrorFireMode_Button_2_N",
+    "C_General_Setting_SingleSniperMirrorFireMode_Button_2_N"
+  ],
+  "994345239": [
+    "C_General_Setting_SingleSniperMirrorLensMode_D_1",
+    "C_General_Setting_SingleSniperMirrorLensMode_D_1"
+  ],
+  "757035073": [
+    "C_General_Setting_MapSide_Button_3_N",
+    "C_General_Setting_MapSide_Button_3_N"
+  ],
+  "385676109": [
+    "C_General_Setting_SnipeType_N",
+    "C_General_Setting_SnipeType_N"
+  ],
+  "487958113": [
+    "C_General_Setting_SnipeType_Button_1_N",
+    "C_General_Setting_SnipeType_Button_1_N"
+  ],
+  "616028398": [
+    "C_General_Setting_SnipeType_Button_2_N",
+    "C_General_Setting_SnipeType_Button_2_N"
+  ],
+  "711324612": [
+    "C_General_Setting_IsShowDamageInfo_N",
+    "C_General_Setting_IsShowDamageInfo_N"
+  ],
+  "657169064": [
+    "C_General_Setting_SingleSniperMirrorButton_N",
+    "C_General_Setting_SingleSniperMirrorButton_N"
+  ],
+  "799614673": [
+    "C_General_Setting_SingleSniperMirrorButton_Button_1_N",
+    "C_General_Setting_SingleSniperMirrorButton_Button_1_N"
+  ],
+  "049145764": [
+    "C_General_Setting_SingleSniperMirrorButton_Button_2_N",
+    "C_General_Setting_SingleSniperMirrorButton_Button_2_N"
+  ],
+  "727305385": [
+    "C_General_Setting_DoubleSniperMirrorButton_N",
+    "C_General_Setting_DoubleSniperMirrorButton_N"
+  ],
+  "789478327": [
+    "C_General_Setting_DoubleSniperMirrorFireMode_D_1",
+    "C_General_Setting_DoubleSniperMirrorFireMode_D_1"
+  ],
+  "837995964": [
+    "C_General_Setting_DoubleSniperMirrorLensMode_D_1",
+    "C_General_Setting_DoubleSniperMirrorLensMode_D_1"
+  ],
+  "507765774": [
+    "C_General_Setting_SingleSniperMirrorMode_D_1",
+    "C_General_Setting_SingleSniperMirrorMode_D_1"
+  ],
+  "528291286": [
+    "C_General_Setting_DoubleSniperMirrorMode_D_1",
+    "C_General_Setting_DoubleSniperMirrorMode_D_1"
+  ],
+  "180461953": [
+    "C_General_Setting_TextLanguageSwitch_N",
+    "C_General_Setting_TextLanguageSwitch_N"
+  ],
+  "831754065": [
+    "C_General_Setting_ScreenQuality_N",
+    "C_General_Setting_ScreenQuality_N"
+  ],
+  "310076217": [
+    "C_General_Setting_ScreenQuality_D_1",
+    "C_General_Setting_ScreenQuality_D_1"
+  ],
+  "327168715": [
+    "C_General_Setting_ScreenQuality_Button_1_N",
+    "C_General_Setting_ScreenQuality_Button_1_N"
+  ],
+  "713695550": [
+    "C_General_Setting_ScreenQuality_Button_2_N",
+    "C_General_Setting_ScreenQuality_Button_2_N"
+  ],
+  "280415656": [
+    "C_General_Setting_ScreenQuality_Button_3_N",
+    "C_General_Setting_ScreenQuality_Button_3_N"
+  ],
+  "111626287": [
+    "C_General_Setting_ScreenQuality_Button_4_N",
+    "C_General_Setting_ScreenQuality_Button_4_N"
+  ],
+  "292801313": [
+    "C_General_Setting_ScreenQuality_Button_5_N",
+    "C_General_Setting_ScreenQuality_Button_5_N"
+  ],
+  "353884231": [
+    "C_General_Setting_BulletTipActive_N",
+    "C_General_Setting_BulletTipActive_N"
+  ],
+  "735266662": [
+    "C_General_Setting_BulletTipActive_D_1",
+    "C_General_Setting_BulletTipActive_D_1"
+  ],
+  "404992487": [
+    "C_General_Setting_AppreciateWeaponActive_N",
+    "C_General_Setting_AppreciateWeaponActive_N"
+  ],
+  "624374236": [
+    "C_General_Setting_AppreciateWeaponActive_D_1",
+    "C_General_Setting_AppreciateWeaponActive_D_1"
+  ],
+  "639339291": [
+    "C_General_Setting_PingActive_N",
+    "C_General_Setting_PingActive_N"
+  ],
+  "201676482": [
+    "C_General_Setting_FPSActive_N",
+    "C_General_Setting_FPSActive_N"
+  ],
+  "517182115": [
+    "C_General_Setting_BatteryActive_N",
+    "C_General_Setting_BatteryActive_N"
+  ],
+  "586535108": [
+    "C_General_Setting_SlientButton_N",
+    "C_General_Setting_SlientButton_N"
+  ],
+  "893907297": [
+    "C_General_Setting_WeaponModeSwitch_N",
+    "C_General_Setting_WeaponModeSwitch_N"
+  ],
+  "647065950": [
+    "C_General_Setting_WeaponModeSwitch_D_1",
+    "C_General_Setting_WeaponModeSwitch_D_1"
+  ],
+  "602381604": [
+    "C_General_Setting_QuickSwitchWeapon_N",
+    "C_General_Setting_QuickSwitchWeapon_N"
+  ],
+  "596652952": [
+    "C_General_Setting_SnipeMagnification_N",
+    "C_General_Setting_SnipeMagnification_N"
+  ],
+  "327747744": [
+    "C_General_Setting_SnipeMagnification_D_1",
+    "C_General_Setting_SnipeMagnification_D_1"
+  ],
+  "073643688": [
+    "C_General_Setting_HearingImpairmentMode_N",
+    "C_General_Setting_HearingImpairmentMode_N"
+  ],
+  "367156273": [
+    "C_General_Setting_HearingImpairmentMode_D_1",
+    "C_General_Setting_HearingImpairmentMode_D_1"
+  ],
+  "934740443": [
+    "C_General_Setting_BombSiteActive_N",
+    "C_General_Setting_BombSiteActive_N"
+  ],
+  "593615110": [
+    "C_General_Setting_LockMoveDirection_N",
+    "C_General_Setting_LockMoveDirection_N"
+  ],
+  "245910019": [
+    "C_General_Setting_LockMoveDirection_D_1",
+    "C_General_Setting_LockMoveDirection_D_1"
+  ],
+  "874299857": [
+    "C_General_Setting_ThrowSwitch_N",
+    "C_General_Setting_ThrowSwitch_N"
+  ],
+  "034195112": [
+    "C_General_Setting_ThrowSwitch_D_1",
+    "C_General_Setting_ThrowSwitch_D_1"
+  ],
+  "666981933": [
+    "C_General_Setting_ThumpFunction_N",
+    "C_General_Setting_ThumpFunction_N"
+  ],
+  "345414334": [
+    "C_General_Setting_SidestepSusceptibility_N",
+    "C_General_Setting_SidestepSusceptibility_N"
+  ],
+  "172418297": [
+    "C_General_Setting_SidestepSusceptibility_Button_1_N",
+    "C_General_Setting_SidestepSusceptibility_Button_1_N"
+  ],
+  "754884534": [
+    "C_General_Setting_SidestepSusceptibility_Button_2_N",
+    "C_General_Setting_SidestepSusceptibility_Button_2_N"
+  ],
+  "382449053": [
+    "C_General_Setting_QuickMirrorAndFire_N",
+    "C_General_Setting_QuickMirrorAndFire_N"
+  ],
+  "762194872": [
+    "C_General_Setting_QuickMirrorAndFire_D_1",
+    "C_General_Setting_QuickMirrorAndFire_D_1"
+  ],
+  "234519175": [
+    "C_General_Setting_QuickMirrorAndFire_Button_1_N",
+    "C_General_Setting_QuickMirrorAndFire_Button_1_N"
+  ],
+  "948289028": [
+    "C_General_Setting_QuickMirrorAndFire_Button_2_N",
+    "C_General_Setting_QuickMirrorAndFire_Button_2_N"
+  ],
+  "250629696": [
+    "C_General_Setting_ThrowMapShow_N",
+    "C_General_Setting_ThrowMapShow_N"
+  ],
+  "015514009": [
+    "C_General_Setting_ThrowMapShow_Button_1_N",
+    "C_General_Setting_ThrowMapShow_Button_1_N"
+  ],
+  "493986546": [
+    "C_General_Setting_IsAutoCruch_N",
+    "C_General_Setting_IsAutoCruch_N"
+  ],
+  "284880511": [
+    "C_General_Setting_IsAutoCruch_D_1",
+    "C_General_Setting_IsAutoCruch_D_1"
+  ],
+  "532606478": [
+    "C_General_Setting_IsAutoInteract_N",
+    "C_General_Setting_IsAutoInteract_N"
+  ],
+  "302092845": [
+    "C_General_Setting_JumpChangeCrouch_N",
+    "C_General_Setting_JumpChangeCrouch_N"
+  ],
+  "904582744": [
+    "C_General_Setting_JumpChangeCrouch_D_1",
+    "C_General_Setting_JumpChangeCrouch_D_1"
+  ],
+  "483718088": [
+    "C_General_Setting_SprintSwitch_N",
+    "C_General_Setting_SprintSwitch_N"
+  ],
+  "623024982": [
+    "C_General_Setting_ShopDesign_N",
+    "C_General_Setting_ShopDesign_N"
+  ],
+  "875906686": [
+    "C_General_Setting_RelationshipNotification_N",
+    "C_General_Setting_RelationshipNotification_N"
+  ],
+  "958070364": [
+    "C_General_Setting_RelationshipNotification_D_1",
+    "C_General_Setting_RelationshipNotification_D_1"
+  ],
+  "967064619": [
+    "C_General_Setting_OpenTacticalVoice_N",
+    "C_General_Setting_OpenTacticalVoice_N"
+  ],
+  "544931086": [
+    "C_General_Setting_GyroVerticalInversion_N",
+    "C_General_Setting_GyroVerticalInversion_N"
+  ],
+  "230521918": [
+    "C_General_Setting_GyroVerticalInversion_D_1",
+    "C_General_Setting_GyroVerticalInversion_D_1"
+  ],
+  "586886942": [
+    "C_General_Setting_FPSlimit_N",
+    "C_General_Setting_FPSlimit_N"
+  ],
+  "152985721": [
+    "C_General_Setting_FPSlimit_D_1",
+    "C_General_Setting_FPSlimit_D_1"
+  ],
+  "012460382": [
+    "C_General_Setting_FPSlimit_Button_1_N",
+    "C_General_Setting_FPSlimit_Button_1_N"
+  ],
+  "759450978": [
+    "C_General_Setting_FPSlimit_Button_2_N",
+    "C_General_Setting_FPSlimit_Button_2_N"
+  ],
+  "285595157": [
+    "C_General_Setting_FPSlimit_Button_3_N",
+    "C_General_Setting_FPSlimit_Button_3_N"
+  ],
+  "832136776": [
+    "C_Genral_Setting_ShotGunBtnUpFire_N",
+    "C_Genral_Setting_ShotGunBtnUpFire_N"
+  ],
+  "872934612": [
+    "C_Genral_Setting_ShotGunBtnUpFire_D_1",
+    "C_Genral_Setting_ShotGunBtnUpFire_D_1"
+  ],
+  "524096069": [
+    "C_General_Setting_ShotGunBtnUpFire_Button_1_N",
+    "C_General_Setting_ShotGunBtnUpFire_Button_1_N"
+  ],
+  "440084872": [
+    "C_General_Setting_ShotGunBtnUpFire_Button_2_N",
+    "C_General_Setting_ShotGunBtnUpFire_Button_2_N"
+  ],
+  "349395183": [
+    "C_General_Setting_SingleSniperQuick_N",
+    "C_General_Setting_SingleSniperQuick_N"
+  ],
+  "379164579": [
+    "C_Genral_Setting_SingleSniperQuick_D_1",
+    "C_Genral_Setting_SingleSniperQuick_D_1"
+  ],
+  "261079910": [
+    "C_General_Setting_DoubleSniperQuick_N",
+    "C_General_Setting_DoubleSniperQuick_N"
+  ],
+  "525113459": [
+    "C_Genral_Setting_DoubleSniperQuick_D_1",
+    "C_Genral_Setting_DoubleSniperQuick_D_1"
+  ],
+  "883121615": [
+    "C_General_Setting_MirrorRegulation_N",
+    "C_General_Setting_MirrorRegulation_N"
+  ],
+  "798308663": [
+    "C_Genral_Setting_MirrorRegulation_D_1",
+    "C_Genral_Setting_MirrorRegulation_D_1"
+  ],
+  "311093485": [
+    "C_General_Setting_MirrorRegulation_Button_1_N",
+    "C_General_Setting_MirrorRegulation_Button_1_N"
+  ],
+  "761407526": [
+    "C_General_Setting_MirrorRegulation_Button_2_N",
+    "C_General_Setting_MirrorRegulation_Button_2_N"
+  ],
+  "269373119": [
+    "C_General_Setting_MirrorRegulation_Button_3_N",
+    "C_General_Setting_MirrorRegulation_Button_3_N"
+  ],
+  "828573955": [
+    "C_General_Setting_MirrorButtonLive_N",
+    "C_General_Setting_MirrorButtonLive_N"
+  ],
+  "788367068": [
+    "C_General_Setting_ReloadButton_N",
+    "C_General_Setting_ReloadButton_N"
+  ],
+  "895467228": [
+    "C_General_Setting_SoundLanguageSwitch_N",
+    "C_General_Setting_SoundLanguageSwitch_N"
+  ],
+  "512762965": [
+    "C_General_Setting_SelfDamage_N",
+    "C_General_Setting_SelfDamage_N"
+  ],
+  "749780096": [
+    "C_General_Setting_SelfDamage_Button_1_N",
+    "C_General_Setting_SelfDamage_Button_1_N"
+  ],
+  "512790829": [
+    "C_General_Setting_SelfDamage_Button_2_N",
+    "C_General_Setting_SelfDamage_Button_2_N"
+  ],
+  "244341598": [
+    "C_General_Setting_GrenadeOperation_N",
+    "C_General_Setting_GrenadeOperation_N"
+  ],
+  "494095860": [
+    "C_General_Setting_GrenadeOperation_Button_1_N",
+    "C_General_Setting_GrenadeOperation_Button_1_N"
+  ],
+  "127110372": [
+    "C_General_Setting_GrenadeOperation_Button_2_N",
+    "C_General_Setting_GrenadeOperation_Button_2_N"
+  ],
+  "418612892": [
+    "C_General_Setting_GlobalSensitivitySelect_N",
+    "C_General_Setting_GlobalSensitivitySelect_N"
+  ],
+  "436031001": [
+    "C_General_Setting_GlobalSensitivitySelect_1_Button_N",
+    "C_General_Setting_GlobalSensitivitySelect_1_Button_N"
+  ],
+  "890780728": [
+    "C_General_Setting_GlobalSensitivitySelect_2_Button_N",
+    "C_General_Setting_GlobalSensitivitySelect_2_Button_N"
+  ],
+  "963350832": [
+    "C_General_Setting_GlobalSensitivitySelect_3_Button_N",
+    "C_General_Setting_GlobalSensitivitySelect_3_Button_N"
+  ],
+  "733824855": [
+    "C_General_Setting_GlobalSensitivitySelect_4_Button_N",
+    "C_General_Setting_GlobalSensitivitySelect_4_Button_N"
+  ],
+  "865787310": [
+    "C_General_Setting_QuickInspectWeapon_N",
+    "C_General_Setting_QuickInspectWeapon_N"
+  ],
+  "997795001": [
+    "C_Genral_Setting_QuickInspectWeapon_D_1",
+    "C_Genral_Setting_QuickInspectWeapon_D_1"
+  ],
+  "858884406": [
+    "C_General_Setting_QuickInspectWeapon_1_Button_N",
+    "C_General_Setting_QuickInspectWeapon_1_Button_N"
+  ],
+  "032891987": [
+    "C_General_Setting_QuickInspectWeapon_2_Button_N",
+    "C_General_Setting_QuickInspectWeapon_2_Button_N"
+  ],
+  "642640557": [
+    "C_General_Setting_QuickInspectWeapon_3_Button_N",
+    "C_General_Setting_QuickInspectWeapon_3_Button_N"
+  ],
+  "694975904": [
+    "C_General_Setting_SniperAutoAimMode_N",
+    "C_General_Setting_SniperAutoAimMode_N"
+  ],
+  "903320426": [
+    "C_Genral_Setting_SniperAutoAimMode_D_1",
+    "C_Genral_Setting_SniperAutoAimMode_D_1"
+  ],
+  "496649125": [
+    "C_General_Setting_KnifeAutoAimMode_N",
+    "C_General_Setting_KnifeAutoAimMode_N"
+  ],
+  "062865455": [
+    "C_Genral_Setting_KnifeAutoAimMode_D_1",
+    "C_Genral_Setting_KnifeAutoAimMode_D_1"
+  ],
+  "263496039": [
+    "C_General_Setting_AntiAliasing_N",
+    "C_General_Setting_AntiAliasing_N"
+  ],
+  "496029205": [
+    "C_General_Setting_AntiAliasing_Button_1_N",
+    "C_General_Setting_AntiAliasing_Button_1_N"
+  ],
+  "270402444": [
+    "C_General_Setting_AntiAliasing_Button_2_N",
+    "C_General_Setting_AntiAliasing_Button_2_N"
+  ],
+  "765637185": [
+    "C_General_Setting_AntiAliasing_Button_3_N",
+    "C_General_Setting_AntiAliasing_Button_3_N"
+  ],
+  "032319602": [
+    "C_General_Setting_Resolution_N",
+    "C_General_Setting_Resolution_N"
+  ],
+  "124522745": [
+    "C_General_Setting_Resolution_Button_1_N",
+    "C_General_Setting_Resolution_Button_1_N"
+  ],
+  "449596239": [
+    "C_General_Setting_Resolution_Button_2_N",
+    "C_General_Setting_Resolution_Button_2_N"
+  ],
+  "150286629": [
+    "C_General_Setting_Resolution_Button_3_N",
+    "C_General_Setting_Resolution_Button_3_N"
+  ],
+  "655011940": [
+    "C_General_Setting_Resolution_Button_4_N",
+    "C_General_Setting_Resolution_Button_4_N"
+  ],
+  "228398035": [
+    "C_General_Setting_TestWeaponControl_N",
+    "C_General_Setting_TestWeaponControl_N"
+  ],
+  "405686411": [
+    "C_General_Setting_TestWeaponControl_Button_1_N",
+    "C_General_Setting_TestWeaponControl_Button_1_N"
+  ],
+  "574761509": [
+    "C_General_Setting_TestWeaponControl_Button_2_N",
+    "C_General_Setting_TestWeaponControl_Button_2_N"
+  ],
+  "629882321": [
+    "C_General_Setting_TestWeaponControl_Button_3_N",
+    "C_General_Setting_TestWeaponControl_Button_3_N"
+  ],
+  "906555969": [
+    "C_General_Setting_TestAutoAimMode_N",
+    "C_General_Setting_TestAutoAimMode_N"
+  ],
+  "542267797": [
+    "C_General_Setting_TestAutoAimMode_Button_1_N",
+    "C_General_Setting_TestAutoAimMode_Button_1_N"
+  ],
+  "771684051": [
+    "C_General_Setting_TestAutoAimMode_Button_2_N",
+    "C_General_Setting_TestAutoAimMode_Button_2_N"
+  ],
+  "363778307": [
+    "C_General_Setting_TestAutoAimMode_Button_3_N",
+    "C_General_Setting_TestAutoAimMode_Button_3_N"
+  ],
+  "444969172": [
+    "C_General_Setting_SceneTexture_N",
+    "C_General_Setting_SceneTexture_N"
+  ],
+  "375252670": [
+    "C_General_Setting_SceneTexture_Button_1_N",
+    "C_General_Setting_SceneTexture_Button_1_N"
+  ],
+  "349619035": [
+    "C_General_Setting_SceneTexture_Button_2_N",
+    "C_General_Setting_SceneTexture_Button_2_N"
+  ],
+  "293389475": [
+    "C_General_Setting_SceneTexture_Button_3_N",
+    "C_General_Setting_SceneTexture_Button_3_N"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "dayLimitCnt": 10,
+      "endTime": 1663621199,
+      "id": 306010101,
+      "matchLimitCnt": 5,
+      "startTime": 1660942800,
+      "totalLimitCnt": 15
+    },
+    {
+      "dayLimitCnt": 10,
+      "endTime": 1663621199,
+      "id": 306010201,
+      "matchLimitCnt": 9999,
+      "startTime": 1660942800,
+      "totalLimitCnt": 15
+    },
+    {
+      "dayLimitCnt": 9999,
+      "endTime": 1663621199,
+      "id": 306010301,
+      "matchLimitCnt": 5,
+      "startTime": 1660942800,
+      "totalLimitCnt": 15
+    },
+    {
+      "dayLimitCnt": 10,
+      "endTime": 1663621199,
+      "id": 306010302,
+      "matchLimitCnt": 5,
+      "startTime": 1660942800,
+      "totalLimitCnt": 9999
+    },
+    {
+      "dayLimitCnt": 10,
+      "endTime": 1663621199,
+      "id": 306010401,
+      "matchLimitCnt": 5,
+      "startTime": 1662757200,
+      "totalLimitCnt": 15
+    },
+    {
+      "dayLimitCnt": 10,
+      "endTime": 1661374799,
+      "id": 306010402,
+      "matchLimitCnt": 5,
+      "startTime": 1660942800,
+      "totalLimitCnt": 15
+    },
+    {
+      "dayLimitCnt": 9999,
+      "endTime": 1663621199,
+      "id": 306010403,
+      "matchLimitCnt": 5,
+      "startTime": 1660942800,
+      "totalLimitCnt": 9999
+    },
+    {
+      "dayLimitCnt": 10,
+      "endTime": 1663621199,
+      "id": 310090209,
+      "matchLimitCnt": 9999,
+      "startTime": 1660942800,
+      "totalLimitCnt": 9999
+    },
+    {
+      "dayLimitCnt": 9999,
+      "endTime": 1663621199,
+      "id": 310090210,
+      "matchLimitCnt": 9999,
+      "startTime": 1660942800,
+      "totalLimitCnt": 15
+    },
+    {
+      "dayLimitCnt": 9999,
+      "endTime": 1663621199,
+      "id": 311010201,
+      "matchLimitCnt": 9999,
+      "startTime": 1660942800,
+      "totalLimitCnt": 9999
+    }
+  ]
+}

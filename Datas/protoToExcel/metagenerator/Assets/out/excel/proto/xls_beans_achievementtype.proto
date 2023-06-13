@@ -1,0 +1,37 @@
+/**
+* @file:   excel\AchievementType.xlsx\AchievementType
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AchievementType{
+	// 类型ID 
+	uint32 id = 1;
+	// 检测条件关联事件 
+	string triggerId = 2;
+	// 地图模式 
+	string gameMode = 3;
+	// 地图类型 
+	string gameMap = 4;
+	// 任务检测主条件 
+	string mainCondId = 5;
+	// 任务检测参数 
+	string mainCondValue = 6;
+	// 任务检测条件 
+	repeated AchievementType_taskSubCond taskSubCond = 7;
+}
+
+message AchievementType_taskSubCond{
+	// 任务检测条件 
+	string condId = 1;
+	// 任务检测参数 
+	string condValue = 2;
+}
+
+message AchievementType_Array {
+	repeated AchievementType items = 1;
+}

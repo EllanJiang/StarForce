@@ -1,0 +1,43 @@
+/**
+* @file:   excel\MatchScoreMainElo.xlsx\MatchScoreMainElo
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchScoreMainElo{
+	// 评分策略id关联表MatchPoolDef中eloStrategyId这一列] 
+	uint32 eloStrategyId = 1;
+	// 匹配等待时间起始 
+	uint32 minMatchWaitTime = 2;
+	// 匹配等待时间终止 
+	uint32 maxMatchWaitTime = 3;
+	// 发起者elo范围 
+	uint32 minMatchElo = 4;
+	// 发起者elo范围 
+	uint32 maxMatchElo = 5;
+	// 拉取的玩家elo范围下限 
+	int32 eloLowerLimit = 6;
+	// 拉取的玩家elo范围上限 
+	int32 eloUpperLimit = 7;
+	// 拉取区间差值起 
+	repeated MatchScoreMainElo_eloDiff eloDiff = 8;
+}
+
+message MatchScoreMainElo_eloDiff{
+	// 拉取区间差值起 
+	int32 start = 1;
+	// 拉取区间差值止 
+	int32 stop = 2;
+	// 公式基础分值 
+	int32 base = 3;
+	// 公式系数（计算时除以100） 
+	int32 param = 4;
+}
+
+message MatchScoreMainElo_Array {
+	repeated MatchScoreMainElo items = 1;
+}

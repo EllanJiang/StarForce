@@ -1,0 +1,36 @@
+/**
+* @file:   excel\ModeBGMConfig.xlsx\ModeBGMConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ModeBGMConfig{
+	// 模式 
+	uint32 id = 1;
+	// bank资源名 
+	string BankName = 2;
+	// 音乐播放event名 （Init阶段） 
+	string PlayEventName = 3;
+	// 音乐停止event名（endmatch阶段） 
+	string StopEventName = 4;
+	// 准备阶段音乐播放event名 
+	string RoundPreparePlayEventName = 5;
+	// 停止准备阶段音乐播放event名 
+	string StopRoundPreparePlayEventName = 6;
+	// 普通战斗进行阶段音乐播放event名 
+	string CommonFightPlayEventName = 7;
+	// 停止普通战斗进行阶段音乐播放event名 
+	string StopCommonFightPlayEventName = 8;
+	// Boss战斗进行阶段音乐播放event名 
+	string BossFightPlayEventName = 9;
+	// 停止Boss战斗进行阶段音乐播放event名 
+	string StopBossFightPlayEventName = 10;
+}
+
+message ModeBGMConfig_Array {
+	repeated ModeBGMConfig items = 1;
+}

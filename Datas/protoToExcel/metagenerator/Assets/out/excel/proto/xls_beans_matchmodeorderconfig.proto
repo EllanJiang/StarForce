@@ -1,0 +1,22 @@
+/**
+* @file:   excel\MatchModeOrderConfig.xlsx\MatchModeOrderConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchModeOrderConfig{
+	// 随机池ID 
+	uint32 randomId = 1;
+	// 模式 
+	uint32 mode = 2;
+	// 模式开局数量 
+	uint32 step = 3;
+}
+
+message MatchModeOrderConfig_Array {
+	repeated MatchModeOrderConfig items = 1;
+}

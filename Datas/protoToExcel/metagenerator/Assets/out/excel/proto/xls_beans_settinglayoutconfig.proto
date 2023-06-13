@@ -1,0 +1,43 @@
+/**
+* @file:   excel\SettingLayoutConfig.xlsx\SettingLayoutConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SettingLayoutConfig{
+	// id 
+	uint32 id = 1;
+	// 按钮名称 
+	string buttonKey = 2;
+	// 模式id 
+	uint32 modeId = 3;
+	// 布局id 
+	uint32 layoutIndex = 4;
+	// 父节点名称 
+	string slot = 5;
+	// 透明度 
+	repeated SettingLayoutConfig_config config = 6;
+	// 是否是框 
+	bool frame = 7;
+	// 二级菜单 
+	string openView = 8;
+}
+
+message SettingLayoutConfig_config{
+	// 透明度 
+	float alpha = 1;
+	// 大小 
+	float scale = 2;
+	// 坐标X 
+	float posX = 3;
+	// 坐标Y 
+	float posY = 4;
+}
+
+message SettingLayoutConfig_Array {
+	repeated SettingLayoutConfig items = 1;
+}

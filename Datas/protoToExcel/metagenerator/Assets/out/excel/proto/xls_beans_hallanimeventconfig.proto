@@ -1,0 +1,44 @@
+/**
+* @file:   excel\HallAnimEventConfig.xlsx\HallAnimEventConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HallAnimEventConfig{
+	// 对应动画Id 
+	uint32 id = 1;
+	// 动画事件时间 
+	repeated HallAnimEventConfig_eventList eventList = 2;
+	// 操作id 
+	repeated HallAnimEventConfig_actionList actionList = 3;
+}
+
+message HallAnimEventConfig_eventList{
+	// 动画事件时间 
+	float time = 1;
+	// 调用的操作id 
+	uint32 actionId = 2;
+}
+
+message HallAnimEventConfig_actionList{
+	// 操作id 
+	uint32 id = 1;
+	// 对应人物挂件表里的id 
+	uint32 itemIndex = 2;
+	// 改可见性 
+	uint32 toggleActive = 3;
+	// 改挂点 
+	string switchSocket = 4;
+	// 改位置 
+	string setPos = 5;
+	// 改旋转 
+	string setAngle = 6;
+}
+
+message HallAnimEventConfig_Array {
+	repeated HallAnimEventConfig items = 1;
+}

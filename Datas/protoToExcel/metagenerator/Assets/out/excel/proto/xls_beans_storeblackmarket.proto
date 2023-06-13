@@ -1,0 +1,46 @@
+/**
+* @file:   excel\StoreBlackMarket.xlsx\StoreBlackMarket
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreBlackMarket{
+	// key 
+	uint32 id = 1;
+	// 是否激活 
+	bool isActive = 2;
+	// 背景图 
+	string backgroundImg = 3;
+	// 开始时间 
+	int64 startTime = 4;
+	// 结束时间 
+	int64 stopTime = 5;
+	// 每天几点自动刷新 
+	uint32 autoRefreshHour = 6;
+	// 消耗组 
+	uint32 costGroupId = 7;
+	// 保存最近刷新次数 
+	uint32 saveRefreshCount = 8;
+	// 首次刷新随机组 
+	repeated StoreBlackMarket_firstSelectItemPoolId firstSelectItemPoolId = 9;
+	// 正常刷新随机组 
+	repeated StoreBlackMarket_normalSelectItemPoolId normalSelectItemPoolId = 10;
+}
+
+message StoreBlackMarket_firstSelectItemPoolId{
+	// 首次刷新随机组 
+	uint32 id = 1;
+}
+
+message StoreBlackMarket_normalSelectItemPoolId{
+	// 正常刷新随机组 
+	uint32 id = 1;
+}
+
+message StoreBlackMarket_Array {
+	repeated StoreBlackMarket items = 1;
+}

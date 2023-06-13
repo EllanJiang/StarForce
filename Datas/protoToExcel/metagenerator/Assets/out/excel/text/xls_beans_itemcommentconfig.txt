@@ -1,0 +1,101 @@
+{
+  "items": [
+    {
+      "coolingTime": 14,
+      "id": 1,
+      "minimum": 0.0,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        }
+      ]
+    },
+    {
+      "coolingTime": 14,
+      "id": 2,
+      "minimum": 0.0,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        }
+      ]
+    },
+    {
+      "coolingTime": 14,
+      "id": 3,
+      "minimum": 2.0,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        },
+        {
+          "condId": "recharge ",
+          "condValue": 100
+        }
+      ]
+    },
+    {
+      "coolingTime": 14,
+      "id": 4,
+      "minimum": 3.0,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        },
+        {
+          "condId": "recharge ",
+          "condValue": 100
+        }
+      ]
+    },
+    {
+      "coolingTime": 14,
+      "id": 5,
+      "minimum": 3.0,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        },
+        {
+          "condId": "recharge ",
+          "condValue": 100
+        }
+      ]
+    },
+    {
+      "coolingTime": 14,
+      "id": 6,
+      "minimum": 3.5,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        },
+        {
+          "condId": "recharge ",
+          "condValue": 100
+        }
+      ]
+    },
+    {
+      "coolingTime": 14,
+      "id": 7,
+      "minimum": 3.5,
+      "showCond": [
+        {
+          "condId": "levelMin",
+          "condValue": 5
+        },
+        {
+          "condId": "recharge ",
+          "condValue": 100
+        }
+      ]
+    }
+  ]
+}

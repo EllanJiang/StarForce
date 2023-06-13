@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "RobotNameConfig",
+      "regionId": [
+        "RU",
+        "CN",
+        "LATAM",
+        "SG",
+        "BR"
+      ]
+    },
+    {
+      "id": "DirtyWords",
+      "regionId": [
+        "RU",
+        "CN",
+        "LATAM",
+        "SG",
+        "BR"
+      ]
+    },
+    {
+      "id": "AdvertisementPopupConfig",
+      "regionId": [
+        "RU",
+        "CN",
+        "LATAM",
+        "SG",
+        "BR"
+      ]
+    },
+    {
+      "id": "QuestionareConfig",
+      "regionId": [
+        "RU",
+        "CN",
+        "LATAM",
+        "SG",
+        "BR"
+      ]
+    },
+    {
+      "id": "TaskConfig",
+      "regionId": [
+        "RU",
+        "CN",
+        "LATAM",
+        "SG",
+        "BR"
+      ]
+    },
+    {
+      "id": "RechargeConfig",
+      "regionId": [
+        "RU",
+        "CN",
+        "LATAM",
+        "SG",
+        "BR"
+      ]
+    }
+  ]
+}

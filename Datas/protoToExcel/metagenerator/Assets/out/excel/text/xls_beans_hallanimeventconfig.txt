@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "actionList": [
+        {
+          "id": 1,
+          "itemIndex": 1,
+          "setAngle": "0|0|0",
+          "setPos": "0|0|0",
+          "switchSocket": "t_rample",
+          "toggleActive": 1
+        }
+      ],
+      "eventList": [
+        {
+          "actionId": 1,
+          "time": 0.0
+        }
+      ],
+      "id": 80
+    },
+    {
+      "actionList": [
+        {
+          "id": 1,
+          "itemIndex": 1,
+          "setAngle": "0|0|0",
+          "setPos": "0|0|0",
+          "switchSocket": "t_rample",
+          "toggleActive": 1
+        }
+      ],
+      "eventList": [
+        {
+          "actionId": 1,
+          "time": 0.0
+        }
+      ],
+      "id": 79
+    },
+    {
+      "actionList": [
+        {
+          "id": 1,
+          "itemIndex": 1,
+          "setAngle": "0|0|0",
+          "setPos": "0|0|0",
+          "switchSocket": "t_rample",
+          "toggleActive": 1
+        }
+      ],
+      "eventList": [
+        {
+          "actionId": 1,
+          "time": 0.0
+        }
+      ],
+      "id": 174
+    }
+  ]
+}

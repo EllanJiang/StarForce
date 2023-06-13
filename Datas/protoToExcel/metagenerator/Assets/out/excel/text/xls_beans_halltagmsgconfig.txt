@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "tagBgId": 902,
+      "tagName": "711370740"
+    },
+    {
+      "id": 2,
+      "tagBgId": 903,
+      "tagName": "244327904"
+    },
+    {
+      "id": 3,
+      "tagBgId": 901,
+      "tagName": "716978290"
+    },
+    {
+      "id": 4,
+      "tagBgId": 904,
+      "tagName": "058181366"
+    },
+    {
+      "id": 5,
+      "tagBgId": 902,
+      "tagName": "925506174"
+    },
+    {
+      "id": 6,
+      "tagBgId": 903,
+      "tagName": "353466037"
+    },
+    {
+      "id": 7,
+      "tagBgId": 902,
+      "tagName": "382645581"
+    }
+  ]
+}

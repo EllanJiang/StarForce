@@ -1,0 +1,300 @@
+{
+  "items": [
+    {
+      "bgId": 4005,
+      "id": 41004,
+      "menuBgId": 9201,
+      "name": "176470827",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 5,
+      "weaponList": [
+        {
+          "position": "-250,150",
+          "weaponID": 111020003
+        },
+        {
+          "position": "-300,40",
+          "weaponID": 111030013
+        },
+        {
+          "position": "-300,-75",
+          "weaponID": 111060007
+        },
+        {
+          "position": "-254,-188",
+          "weaponID": 111070007
+        },
+        {
+          "position": "250,120",
+          "weaponID": 114060014
+        },
+        {
+          "position": "300,0",
+          "weaponID": 115020004
+        },
+        {
+          "position": "250,-120",
+          "weaponID": 121090006
+        }
+      ]
+    },
+    {
+      "bgId": 4002,
+      "id": 41005,
+      "menuBgId": 9201,
+      "name": "788184467",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 5,
+      "weaponList": [
+        {
+          "position": "-250,150",
+          "weaponID": 111030014
+        },
+        {
+          "position": "-300,40",
+          "weaponID": 111050019
+        },
+        {
+          "position": "-300,-75",
+          "weaponID": 111060008
+        },
+        {
+          "position": "-254,-188",
+          "weaponID": 111070006
+        },
+        {
+          "position": "250,120",
+          "weaponID": 112160012
+        },
+        {
+          "position": "300,0",
+          "weaponID": 114060013
+        },
+        {
+          "position": "250,-120",
+          "weaponID": 121090008
+        }
+      ]
+    },
+    {
+      "bgId": 4001,
+      "id": 41006,
+      "menuBgId": 9201,
+      "name": "684576627",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 5,
+      "weaponList": [
+        {
+          "position": "-250,150",
+          "weaponID": 112010003
+        },
+        {
+          "position": "-300,40",
+          "weaponID": 111170001
+        },
+        {
+          "position": "-300,-75",
+          "weaponID": 112020015
+        },
+        {
+          "position": "-254,-188",
+          "weaponID": 113020002
+        },
+        {
+          "position": "250,120",
+          "weaponID": 121010008
+        },
+        {
+          "position": "300,0",
+          "weaponID": 121030007
+        },
+        {
+          "position": "250,-120",
+          "weaponID": 131100003
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 42001,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 2,
+      "weaponList": [
+        {
+          "position": "-200,50",
+          "weaponID": 112010008
+        },
+        {
+          "position": "-200,-50",
+          "weaponID": 114050004
+        },
+        {
+          "position": "200,50",
+          "weaponID": 115020005
+        },
+        {
+          "position": "200,-50",
+          "weaponID": 121090002
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 42007,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 2,
+      "weaponList": [
+        {
+          "position": "-200,50",
+          "weaponID": 111030014
+        },
+        {
+          "position": "-200,-50",
+          "weaponID": 111050019
+        },
+        {
+          "position": "200,0",
+          "weaponID": 111060008
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43001,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,51",
+          "weaponID": 111030001
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43002,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,52",
+          "weaponID": 111030001
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43003,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,53",
+          "weaponID": 111030001
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43004,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,54",
+          "weaponID": 111030001
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43005,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,55",
+          "weaponID": 111030001
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43006,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,56",
+          "weaponID": 111030001
+        }
+      ]
+    },
+    {
+      "bgId": 5001,
+      "id": 43007,
+      "menuBgId": 9201,
+      "name": "054950324",
+      "panelAbilityActivedColor": "FFEB65",
+      "panelAbilityInactiveColor": "FFFFFF",
+      "panelBgId": 9201,
+      "panelScoreColor": "FFFFFF",
+      "quality": 1,
+      "weaponList": [
+        {
+          "position": "-200,57",
+          "weaponID": 111030001
+        }
+      ]
+    }
+  ]
+}

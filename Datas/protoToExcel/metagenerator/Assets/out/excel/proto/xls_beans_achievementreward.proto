@@ -1,0 +1,35 @@
+/**
+* @file:   excel\AchievementReward.xlsx\AchievementReward
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AchievementReward{
+	// 成就奖励ID 
+	uint32 id = 1;
+	// 道具ID1、属性ID 
+	AchievementReward_effect effect = 2;
+}
+
+message AchievementReward_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message AchievementReward_Array {
+	repeated AchievementReward items = 1;
+}

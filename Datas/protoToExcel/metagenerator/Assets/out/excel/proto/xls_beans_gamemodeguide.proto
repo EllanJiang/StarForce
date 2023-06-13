@@ -1,0 +1,22 @@
+/**
+* @file:   excel\GameModeGuide.xlsx\GameModeGuide
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GameModeGuide{
+	// 对应模式id 
+	uint32 id = 1;
+	// 引导图路径 
+	string bgPath = 2;
+	// 详情描述文案 
+	string desc = 3;
+}
+
+message GameModeGuide_Array {
+	repeated GameModeGuide items = 1;
+}

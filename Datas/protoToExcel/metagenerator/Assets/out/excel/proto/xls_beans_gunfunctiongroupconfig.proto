@@ -1,0 +1,24 @@
+/**
+* @file:   excel\GunFunctionGroupConfig.xlsx\GunFunctionGroupConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GunFunctionGroupConfig{
+	// 刷新包ID 
+	uint32 ID = 1;
+	// 物品id 
+	uint32 GunBuffId = 2;
+	// 1 为buff  2 弹道 
+	uint32 FunctionType = 3;
+	// 权重 
+	uint32 Weight = 4;
+}
+
+message GunFunctionGroupConfig_Array {
+	repeated GunFunctionGroupConfig items = 1;
+}

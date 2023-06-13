@@ -1,0 +1,28 @@
+/**
+* @file:   excel\ItemTypeConfig.xlsx\ItemTypeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemTypeConfig{
+	// 编号 
+	uint32 id = 1;
+	// 类型 
+	uint32 mainType = 2;
+	// 子类型 
+	uint32 subType1 = 3;
+	// 二级子类型 
+	uint32 subType2 = 4;
+	// 三级子类型 
+	uint32 subType3 = 5;
+	// 阵营(1-T 2-CT 3-all) 
+	uint32 camp = 6;
+}
+
+message ItemTypeConfig_Array {
+	repeated ItemTypeConfig items = 1;
+}

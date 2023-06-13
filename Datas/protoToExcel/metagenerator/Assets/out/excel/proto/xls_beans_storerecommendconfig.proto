@@ -1,0 +1,38 @@
+/**
+* @file:   excel\StoreReCommendConfig.xlsx\StoreReCommendConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreReCommendConfig{
+	// key 
+	uint32 id = 1;
+	// 组ID 
+	uint32 groupId = 2;
+	// 主题名称 
+	string name = 3;
+	// 开始时间 
+	int64 recommendStartTime = 4;
+	// 结束时间 
+	int64 recommendEndTime = 5;
+	// CDN路径 
+	string pathRoot = 6;
+	// 轮播图 
+	uint32 imagePath = 7;
+	// 跳转执行函数 
+	string navigateFuncName = 8;
+	// 标签图 
+	uint32 labelFlagPath = 9;
+	// 标记当前推荐页状态 
+	uint32 labelFlagType = 10;
+	// 配置参数 
+	uint32 labelFlagParms = 11;
+}
+
+message StoreReCommendConfig_Array {
+	repeated StoreReCommendConfig items = 1;
+}

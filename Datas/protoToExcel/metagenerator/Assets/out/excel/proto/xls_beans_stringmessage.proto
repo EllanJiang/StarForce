@@ -1,0 +1,20 @@
+/**
+* @file:   excel\StringMessage.xlsx\StringMessage
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StringMessage{
+	// 字符串key 
+	string id = 1;
+	// 用于局内的中文字符串 
+	string message = 2;
+}
+
+message StringMessage_Array {
+	repeated StringMessage items = 1;
+}

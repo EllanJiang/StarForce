@@ -1,0 +1,39 @@
+/**
+* @file:   excel\RoleSoundConfig.xlsx\RoleSoundConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleSoundConfig{
+	// 角色ID 
+	uint32 id = 1;
+	// 检视开始事件 
+	string inspectorEventStart = 2;
+	// 检视结束事件 
+	string inspectorEventStop = 3;
+	// 获得开始事件 
+	string obtainEventStart = 4;
+	// 获得结束事件 
+	string obtainEventStop = 5;
+	// 名字 
+	repeated RoleSoundConfig_actions actions = 6;
+}
+
+message RoleSoundConfig_actions{
+	// 名字 
+	string name = 1;
+	// 图标 
+	string icon = 2;
+	// 开始事件 
+	string eventStart = 3;
+	// 结束事件 
+	string eventStop = 4;
+}
+
+message RoleSoundConfig_Array {
+	repeated RoleSoundConfig items = 1;
+}

@@ -1,0 +1,1249 @@
+{
+  "items": [
+    {
+      "code": "err_accNotValid",
+      "msgCn": "649648397",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyInAnotherRoom",
+      "msgCn": "245127722",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyLogin",
+      "msgCn": "429985065",
+      "msgType": 1
+    },
+    {
+      "code": "err_dbErr",
+      "msgCn": "342187759",
+      "msgType": 1
+    },
+    {
+      "code": "err_forbidden",
+      "msgCn": "469988379",
+      "msgType": 1
+    },
+    {
+      "code": "err_inGaming",
+      "msgCn": "512884499",
+      "msgType": 1
+    },
+    {
+      "code": "err_levelNotMatch",
+      "msgCn": "110907312",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidMod",
+      "msgCn": "327183395",
+      "msgType": 1
+    },
+    {
+      "code": "err_noRole",
+      "msgCn": "127988488",
+      "msgType": 1
+    },
+    {
+      "code": "err_notInRoom",
+      "msgCn": "604293744",
+      "msgType": 1
+    },
+    {
+      "code": "err_otherInPos",
+      "msgCn": "699298465",
+      "msgType": 1
+    },
+    {
+      "code": "err_paramMissing",
+      "msgCn": "090187318",
+      "msgType": 1
+    },
+    {
+      "code": "err_paramsFailed",
+      "msgCn": "436238552",
+      "msgType": 1
+    },
+    {
+      "code": "err_passwd",
+      "msgCn": "071313498",
+      "msgType": 1
+    },
+    {
+      "code": "err_posFull",
+      "msgCn": "731932589",
+      "msgType": 1
+    },
+    {
+      "code": "err_retry",
+      "msgCn": "951640383",
+      "msgType": 1
+    },
+    {
+      "code": "err_serverBusy",
+      "msgCn": "470435015",
+      "msgType": 1
+    },
+    {
+      "code": "err_targetInvalid",
+      "msgCn": "961656012",
+      "msgType": 1
+    },
+    {
+      "code": "err_notOwner",
+      "msgCn": "459307773",
+      "msgType": 1
+    },
+    {
+      "code": "err_unknown",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_noAvaliableDsA",
+      "msgCn": "254585686",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidVersion",
+      "msgCn": "936964963",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyIn",
+      "msgCn": "807123334",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemNotEnough",
+      "msgCn": "181745856",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemNotSell",
+      "msgCn": "497222800",
+      "msgType": 1
+    },
+    {
+      "code": "err_attrid_1",
+      "msgCn": "003456870",
+      "msgType": 1
+    },
+    {
+      "code": "err_attrid_2",
+      "msgCn": "480491518",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemUseForbidden",
+      "msgCn": "676438928",
+      "msgType": 1
+    },
+    {
+      "code": "err_channelNotExist",
+      "msgCn": "723280754",
+      "msgType": 1
+    },
+    {
+      "code": "err_notInChannel",
+      "msgCn": "041511858",
+      "msgType": 1
+    },
+    {
+      "code": "err_mailNoReward",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_bagFull",
+      "msgCn": "942003094",
+      "msgType": 1
+    },
+    {
+      "code": "err_mailInvalid",
+      "msgCn": "005084724",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemEquiped",
+      "msgCn": "801644747",
+      "msgType": 1
+    },
+    {
+      "code": "err_isSwaping",
+      "msgCn": "682404921",
+      "msgType": 1
+    },
+    {
+      "code": "err_Timeout",
+      "msgCn": "880437139",
+      "msgType": 1
+    },
+    {
+      "code": "err_Refused",
+      "msgCn": "571574182",
+      "msgType": 1
+    },
+    {
+      "code": "err_notAvaliableKeyOrValueType",
+      "msgCn": "275483715",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidGender",
+      "msgCn": "355383875",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidString",
+      "msgCn": "990852636",
+      "msgType": 1
+    },
+    {
+      "code": "err_playerNotExist",
+      "msgCn": "522400053",
+      "msgType": 1
+    },
+    {
+      "code": "err_targetNotIdle",
+      "msgCn": "349206375",
+      "msgType": 1
+    },
+    {
+      "code": "err_inviteNotExistOrTimeout",
+      "msgCn": "684449196",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidBagid",
+      "msgCn": "639112852",
+      "msgType": 1
+    },
+    {
+      "code": "err_statusNotRight",
+      "msgCn": "913021363",
+      "msgType": 1
+    },
+    {
+      "code": "err_toolongName",
+      "msgCn": "432630248",
+      "msgType": 1
+    },
+    {
+      "code": "err_notAllowEnter",
+      "msgCn": "782069740",
+      "msgType": 1
+    },
+    {
+      "code": "err_gamingNotJoin",
+      "msgCn": "162655947",
+      "msgType": 1
+    },
+    {
+      "code": "unlockPersonalDress",
+      "msgCn": "327185273",
+      "msgType": 1
+    },
+    {
+      "code": "err_inviladRoomSet",
+      "msgCn": "652797987",
+      "msgType": 1
+    },
+    {
+      "code": "err_notForSale",
+      "msgCn": "972155881",
+      "msgType": 1
+    },
+    {
+      "code": "err_purchaseLimit",
+      "msgCn": "114771143",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyInAnotherTeam",
+      "msgCn": "525603705",
+      "msgType": 1
+    },
+    {
+      "code": "err_notInTeam",
+      "msgCn": "360446898",
+      "msgType": 1
+    },
+    {
+      "code": "err_createTeamTooFrequent",
+      "msgCn": "850286174",
+      "msgType": 1
+    },
+    {
+      "code": "err_createRoomTooFrequent",
+      "msgCn": "850286174",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidFastCond",
+      "msgCn": "074711126",
+      "msgType": 1
+    },
+    {
+      "code": "err_deviceId",
+      "msgCn": "210532533",
+      "msgType": 1
+    },
+    {
+      "code": "err_config",
+      "msgCn": "856025556",
+      "msgType": 1
+    },
+    {
+      "code": "err_noReward",
+      "msgCn": "792963459",
+      "msgType": 1
+    },
+    {
+      "code": "err_goodsTimeError",
+      "msgCn": "369307438",
+      "msgType": 1
+    },
+    {
+      "code": "err_paramError",
+      "msgCn": "126867258",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskNotExist",
+      "msgCn": "816966375",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskExpired",
+      "msgCn": "758729304",
+      "msgType": 1
+    },
+    {
+      "code": "err_exchangeLimit",
+      "msgCn": "703018372",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskNotFini",
+      "msgCn": "126407549",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyMatching",
+      "msgCn": "757678889",
+      "msgType": 1
+    },
+    {
+      "code": "err_playerNotWait",
+      "msgCn": "748799251",
+      "msgType": 1
+    },
+    {
+      "code": "err_timeDuration",
+      "msgCn": "191385752",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidPerson",
+      "msgCn": "153132404",
+      "msgType": 1
+    },
+    {
+      "code": "err_nameOverLen",
+      "msgCn": "348948743",
+      "msgType": 1
+    },
+    {
+      "code": "err_searchcondition",
+      "msgCn": "259827997",
+      "msgType": 1
+    },
+    {
+      "code": "err_applyJoinTimeOut",
+      "msgCn": "099029418",
+      "msgType": 1
+    },
+    {
+      "code": "err_DayLikeCountReachLimit",
+      "msgCn": "252712252",
+      "msgType": 1
+    },
+    {
+      "code": "err_serverBusy",
+      "msgCn": "581242485",
+      "msgType": 1
+    },
+    {
+      "code": "err_serverClosed",
+      "msgCn": "603380595",
+      "msgType": 1
+    },
+    {
+      "code": "err_P2PLikeCountReachLimit",
+      "msgCn": "252712252",
+      "msgType": 1
+    },
+    {
+      "code": "err_battleDetailNotExist",
+      "msgCn": "671070487",
+      "msgType": 1
+    },
+    {
+      "code": "err_campCountLimit",
+      "msgCn": "626631698",
+      "msgType": 1
+    },
+    {
+      "code": "err_sdkVerifyFailed",
+      "msgCn": "738818320",
+      "msgType": 1
+    },
+    {
+      "code": "err_chatAuthorityFail",
+      "msgCn": "880101390",
+      "msgType": 1
+    },
+    {
+      "code": "err_PersonalityConfigurationFailed",
+      "msgCn": "676438928",
+      "msgType": 1
+    },
+    {
+      "code": "err_signatureTooLong",
+      "msgCn": "728349747",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidCampPerson",
+      "msgCn": "985175125",
+      "msgType": 1
+    },
+    {
+      "code": "err_inBlacklist",
+      "msgCn": "797444386",
+      "msgType": 1
+    },
+    {
+      "code": "err_gamingNotCancel",
+      "msgCn": "341646887",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamNotExist",
+      "msgCn": "259483664",
+      "msgType": 1
+    },
+    {
+      "code": "err_matchingOrGaming",
+      "msgCn": "189973662",
+      "msgType": 1
+    },
+    {
+      "code": "err_inTeamNotJoinRoom",
+      "msgCn": "814284259",
+      "msgType": 1
+    },
+    {
+      "code": "err_inGamingNotJoinRoom",
+      "msgCn": "345394965",
+      "msgType": 1
+    },
+    {
+      "code": "err_inTeam",
+      "msgCn": "672156086",
+      "msgType": 1
+    },
+    {
+      "code": "err_inMatching",
+      "msgCn": "842038519",
+      "msgType": 1
+    },
+    {
+      "code": "err_applyJoinTeamTimeOut",
+      "msgCn": "420559407",
+      "msgType": 1
+    },
+    {
+      "code": "err_statusForSelectGroup",
+      "msgCn": "749269805",
+      "msgType": 1
+    },
+    {
+      "code": "err_statusFroInteract",
+      "msgCn": "489954876",
+      "msgType": 1
+    },
+    {
+      "code": "err_notTeamLeader",
+      "msgCn": "324472940",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamMemberNotReady",
+      "msgCn": "455716625",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamStatusNotMatch",
+      "msgCn": "643974235",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamMemberOver",
+      "msgCn": "356668698",
+      "msgType": 1
+    },
+    {
+      "code": "err_matchingCannotKick",
+      "msgCn": "462180045",
+      "msgType": 1
+    },
+    {
+      "code": "err_matchTimeOut",
+      "msgCn": "105437259",
+      "msgType": 1
+    },
+    {
+      "code": "err_matchForCancel",
+      "msgCn": "205514650",
+      "msgType": 1
+    },
+    {
+      "code": "err_roleForceLeave",
+      "msgCn": "721502044",
+      "msgType": 1
+    },
+    {
+      "code": "err_leaderKickPlayer",
+      "msgCn": "095104181",
+      "msgType": 1
+    },
+    {
+      "code": "err_inGamingNotJoinTeam",
+      "msgCn": "527801779",
+      "msgType": 1
+    },
+    {
+      "code": "err_roomGameNotStart",
+      "msgCn": "404274190",
+      "msgType": 1
+    },
+    {
+      "code": "err_matchGameNotStart",
+      "msgCn": "404274190",
+      "msgType": 1
+    },
+    {
+      "code": "err_notWaitStatus",
+      "msgCn": "986873315",
+      "msgType": 1
+    },
+    {
+      "code": "err_noClientVersion",
+      "msgCn": "450616095",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamMemberOffline",
+      "msgCn": "797139897",
+      "msgType": 1
+    },
+    {
+      "code": "err_playerOfflineCancelMatch",
+      "msgCn": "300111645",
+      "msgType": 1
+    },
+    {
+      "code": "err_svrConnectionOut",
+      "msgCn": "217827706",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamMemberLvlLess",
+      "msgCn": "946943614",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyFollow",
+      "msgCn": "018189547",
+      "msgType": 1
+    },
+    {
+      "code": "err_roomLimit",
+      "msgCn": "982228818",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskFinished",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskInput",
+      "msgCn": "130704065",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskNotOpen",
+      "msgCn": "772632734",
+      "msgType": 1
+    },
+    {
+      "code": "err_taskNoReward",
+      "msgCn": "978349485",
+      "msgType": 1
+    },
+    {
+      "code": "err_roomNotExist",
+      "msgCn": "047903714",
+      "msgType": 1
+    },
+    {
+      "code": "err_selfNotIdle",
+      "msgCn": "137240303",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidStatus",
+      "msgCn": "652607224",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidMemCount",
+      "msgCn": "565035592",
+      "msgType": 1
+    },
+    {
+      "code": "err_rankSeasonOver",
+      "msgCn": "076275005",
+      "msgType": 1
+    },
+    {
+      "code": "err_roleOfflineNotStartGame",
+      "msgCn": "734986743",
+      "msgType": 1
+    },
+    {
+      "code": "err_battlePassNotOpen",
+      "msgCn": "004096652",
+      "msgType": 1
+    },
+    {
+      "code": "err_battlePassInput",
+      "msgCn": "126867258",
+      "msgType": 1
+    },
+    {
+      "code": "err_battlePassLevelLimit",
+      "msgCn": "647260622",
+      "msgType": 1
+    },
+    {
+      "code": "err_battlePassAwardGot",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_battlePassAdvanced",
+      "msgCn": "778734504",
+      "msgType": 1
+    },
+    {
+      "code": "err_tokenExpire",
+      "msgCn": "544664167",
+      "msgType": 1
+    },
+    {
+      "code": "err_tokenInvalid",
+      "msgCn": "273303723",
+      "msgType": 1
+    },
+    {
+      "code": "err_signinExpired",
+      "msgCn": "775121867",
+      "msgType": 1
+    },
+    {
+      "code": "err_signinNotFini",
+      "msgCn": "356254328",
+      "msgType": 1
+    },
+    {
+      "code": "err_signinFinished",
+      "msgCn": "065457882",
+      "msgType": 1
+    },
+    {
+      "code": "err_levelFinished",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_levelNotFini",
+      "msgCn": "034725397",
+      "msgType": 1
+    },
+    {
+      "code": "err_noLevelReward",
+      "msgCn": "978349485",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyRewarded",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_paramErr",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_chestConfigNotFind",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_chestDayOpenMax",
+      "msgCn": "136283237",
+      "msgType": 1
+    },
+    {
+      "code": "err_oneChestIsUnlocking",
+      "msgCn": "263764408",
+      "msgType": 1
+    },
+    {
+      "code": "err_chestRetNotLocked",
+      "msgCn": "656144543",
+      "msgType": 1
+    },
+    {
+      "code": "err_notAviliable",
+      "msgCn": "760493466",
+      "msgType": 1
+    },
+    {
+      "code": "err_teamAlreadyExist",
+      "msgCn": "609437086",
+      "msgType": 1
+    },
+    {
+      "code": "err_noRealGamePlayer",
+      "msgCn": "966901864",
+      "msgType": 1
+    },
+    {
+      "code": "err_playerAlreadyObserve",
+      "msgCn": "542257847",
+      "msgType": 1
+    },
+    {
+      "code": "err_loginClosed",
+      "msgCn": "383333861",
+      "msgType": 1
+    },
+    {
+      "code": "err_accountNotAuth",
+      "msgCn": "590532825",
+      "msgType": 1
+    },
+    {
+      "code": "err_loginAddressErr",
+      "msgCn": "527950028",
+      "msgType": 1
+    },
+    {
+      "code": "err_achiNotOpen",
+      "msgCn": "301566164",
+      "msgType": 1
+    },
+    {
+      "code": "err_achiNotFinish",
+      "msgCn": "338611478",
+      "msgType": 1
+    },
+    {
+      "code": "err_achiRewardGot",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_achiScoreNoReward",
+      "msgCn": "311904855",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidReportTarget",
+      "msgCn": "153148988",
+      "msgType": 1
+    },
+    {
+      "code": "err_inBattleBlock",
+      "msgCn": "264572807",
+      "msgType": 1
+    },
+    {
+      "code": "err_questionareCond",
+      "msgCn": "657954258",
+      "msgType": 1
+    },
+    {
+      "code": "err_observerSwap",
+      "msgCn": "297125634",
+      "msgType": 1
+    },
+    {
+      "code": "err_guestCanBind",
+      "msgCn": "606620978",
+      "msgType": 1
+    },
+    {
+      "code": "err_bindConfilct",
+      "msgCn": "359905013",
+      "msgType": 1
+    },
+    {
+      "code": "err_platformUserExist",
+      "msgCn": "322489444",
+      "msgType": 1
+    },
+    {
+      "code": "err_operateFailForTimeOut",
+      "msgCn": "282327522",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeExpired",
+      "msgCn": "376376441",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeNotOpen",
+      "msgCn": "680066275",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeFinished",
+      "msgCn": "705242322",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeNotEnoughCoin",
+      "msgCn": "576288012",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeIsResetFalse",
+      "msgCn": "963721981",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeNotReset",
+      "msgCn": "650900585",
+      "msgType": 1
+    },
+    {
+      "code": "err_tokenNotMatch",
+      "msgCn": "492068770",
+      "msgType": 1
+    },
+    {
+      "code": "err_createRoleNotAuth",
+      "msgCn": "887525931",
+      "msgType": 1
+    },
+    {
+      "code": "err_chatMsgTooLong",
+      "msgCn": "042210176",
+      "msgType": 1
+    },
+    {
+      "code": "err_followReachLimit",
+      "msgCn": "144641451",
+      "msgType": 1
+    },
+    {
+      "code": "err_playerAlreadySit",
+      "msgCn": "672253282",
+      "msgType": 1
+    },
+    {
+      "code": "err_inviteApplyTooFrequent",
+      "msgCn": "850286174",
+      "msgType": 1
+    },
+    {
+      "code": "err_activitiesExpired",
+      "msgCn": "836782849",
+      "msgType": 1
+    },
+    {
+      "code": "err_activitiesFinished",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_bpRefreshCount",
+      "msgCn": "926505458",
+      "msgType": 1
+    },
+    {
+      "code": "err_bpTaskNotRefresh",
+      "msgCn": "630587895",
+      "msgType": 1
+    },
+    {
+      "code": "err_bpRefreshRetry",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_noMapMatchMember",
+      "msgCn": "021093239",
+      "msgType": 1
+    },
+    {
+      "code": "err_guestBindNotLogin",
+      "msgCn": "192651195",
+      "msgType": 1
+    },
+    {
+      "code": "err_paymentFail",
+      "msgCn": "042311580",
+      "msgType": 1
+    },
+    {
+      "code": "err_repeatedPointBalanceOpt",
+      "msgCn": "436733976",
+      "msgType": 1
+    },
+    {
+      "code": "err_commentInited",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemCommentNum",
+      "msgCn": "488509817",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemCommentTime",
+      "msgCn": "567781545",
+      "msgType": 1
+    },
+    {
+      "code": "err_commentStrTooLong",
+      "msgCn": "257887406",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemCommentStrDirty",
+      "msgCn": "031542140",
+      "msgType": 1
+    },
+    {
+      "code": "err_alreadyUpdown",
+      "msgCn": "226193623",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemScoreShowCond",
+      "msgCn": "703646967",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemScoreItemNoExists",
+      "msgCn": "829901272",
+      "msgType": 1
+    },
+    {
+      "code": "err_itemCommentShowCond",
+      "msgCn": "703646967",
+      "msgType": 1
+    },
+    {
+      "code": "err_dirtyWord",
+      "msgCn": "031542140",
+      "msgType": 1
+    },
+    {
+      "code": "err_observerFull",
+      "msgCn": "787847856",
+      "msgType": 1
+    },
+    {
+      "code": "err_notOpenSet",
+      "msgCn": "675435707",
+      "msgType": 1
+    },
+    {
+      "code": "err_rankedLevelNotMatch",
+      "msgCn": "084174637",
+      "msgType": 1
+    },
+    {
+      "code": "err_rankedSeasonNotMatch",
+      "msgCn": "844541331",
+      "msgType": 1
+    },
+    {
+      "code": "err_slotLimit",
+      "msgCn": "137133125",
+      "msgType": 1
+    },
+    {
+      "code": "err_keyExist",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_forbitDel",
+      "msgCn": "675426645",
+      "msgType": 1
+    },
+    {
+      "code": "err_isLogin",
+      "msgCn": "156446235",
+      "msgType": 1
+    },
+    {
+      "code": "err_uid",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_NotFoundBag",
+      "msgCn": "958413383",
+      "msgType": 1
+    },
+    {
+      "code": "err_allocGateFail",
+      "msgCn": "242654715",
+      "msgType": 1
+    },
+    {
+      "code": "err_invalidRegion",
+      "msgCn": "180333597",
+      "msgType": 1
+    },
+    {
+      "code": "err_loginTimeOut",
+      "msgCn": "142225291",
+      "msgType": 1
+    },
+    {
+      "code": "err_noviceCareerNoReward",
+      "msgCn": "699552668",
+      "msgType": 1
+    },
+    {
+      "code": "err_tenInOneLuckyRoleCaseCount",
+      "msgCn": "903232802",
+      "msgType": 1
+    },
+    {
+      "code": "err_tenInOneLuckyCaseAwardedRecv",
+      "msgCn": "964942846",
+      "msgType": 1
+    },
+    {
+      "code": "err_tenInOneLuckyCaseRewardAllRecv",
+      "msgCn": "978349485",
+      "msgType": 1
+    },
+    {
+      "code": "err_tenInOneLuckyActTime",
+      "msgCn": "836782849",
+      "msgType": 1
+    },
+    {
+      "code": "err_tenInOneLuckyRoleShowCond",
+      "msgCn": "476476960",
+      "msgType": 1
+    },
+    {
+      "code": "err_attrid_29",
+      "msgCn": "908131697",
+      "msgType": 1
+    },
+    {
+      "code": "err_attrid_30",
+      "msgCn": "558309053",
+      "msgType": 1
+    },
+    {
+      "code": "err_loadingDsFiles",
+      "msgCn": "966705865",
+      "msgType": 1
+    },
+    {
+      "code": "err_mapNotDownload",
+      "msgCn": "383491935",
+      "msgType": 1
+    },
+    {
+      "code": "err_modeCannotGamingJoin",
+      "msgCn": "538474740",
+      "msgType": 1
+    },
+    {
+      "code": "err_placementMatchNotFinish",
+      "msgCn": "378151269",
+      "msgType": 1
+    },
+    {
+      "code": "err_useLimit",
+      "msgCn": "927545887",
+      "msgType": 1
+    },
+    {
+      "code": "err_privilegeCardNotActive",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_privilegeCardExpired",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_privilegeCardAwarded",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_privilegeCardPurchased",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_lobbyVersionDrop",
+      "msgCn": "672825372",
+      "msgType": 1
+    },
+    {
+      "code": "err_resourceVersionDrop",
+      "msgCn": "672825372",
+      "msgType": 1
+    },
+    {
+      "code": "err_bpRefreshPool",
+      "msgCn": "366422356",
+      "msgType": 1
+    },
+    {
+      "code": "err_dailyRegLimit",
+      "msgCn": "631091755",
+      "msgType": 1
+    },
+    {
+      "code": "err_navigateGotoCurrent",
+      "msgCn": "404163297",
+      "msgType": 1
+    },
+    {
+      "code": "err_fundNotOpen",
+      "msgCn": "355546911",
+      "msgType": 1
+    },
+    {
+      "code": "err_fundUnPurachasable",
+      "msgCn": "922252697",
+      "msgType": 1
+    },
+    {
+      "code": "err_fundInvalidTarget",
+      "msgCn": "424819659",
+      "msgType": 1
+    },
+    {
+      "code": "err_fundNotPurchase",
+      "msgCn": "183245748",
+      "msgType": 1
+    },
+    {
+      "code": "err_battlePassNotOpen",
+      "msgCn": "411478796",
+      "msgType": 1
+    },
+    {
+      "code": "err_preReg",
+      "msgCn": "797841182",
+      "msgType": 1
+    },
+    {
+      "code": "err_inQueue",
+      "msgCn": "046915154",
+      "msgType": 1
+    },
+    {
+      "code": "ClientCheat_Kictout_NoParms",
+      "msgCn": "429887157",
+      "msgType": 1
+    },
+    {
+      "code": "ClientCheat_Kictout_Parms",
+      "msgCn": "594496504",
+      "msgType": 1
+    },
+    {
+      "code": "err_rankLevelGap",
+      "msgCn": "023453320",
+      "msgType": 1
+    },
+    {
+      "code": "err_preModeNotClear",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_forbidGameForDiamond",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_forbidGameForGM",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_nameRepeat",
+      "msgCn": "163260661",
+      "msgType": 1
+    },
+    {
+      "code": "err_luckyStrikeRoleShowCond",
+      "msgCn": "",
+      "msgType": 1
+    },
+    {
+      "code": "err_senderFriendFull",
+      "msgCn": "627915419",
+      "msgType": 1
+    },
+    {
+      "code": "err_friendFull",
+      "msgCn": "023726016",
+      "msgType": 1
+    },
+    {
+      "code": "err_blockFull",
+      "msgCn": "813810613",
+      "msgType": 1
+    },
+    {
+      "code": "err_startGameTimeout",
+      "msgCn": "581242485",
+      "msgType": 0
+    },
+    {
+      "code": "err_weaponFeelDiff",
+      "msgCn": "913021363",
+      "msgType": 1
+    }
+  ]
+}

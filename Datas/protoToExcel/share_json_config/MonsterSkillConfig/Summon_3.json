@@ -1,0 +1,10 @@
+{
+	"WarningEffect":0,
+	"PrepareEffect":0,
+	"BeginEffect":0,
+	"EndingEffect":0,
+	"SpawnInterval":3.5,
+	"Offset":{"x":1,"y":0,"z":0},
+	"SkipSkillLimit":3,
+	"ZombieList":[101020101,103020101]
+}

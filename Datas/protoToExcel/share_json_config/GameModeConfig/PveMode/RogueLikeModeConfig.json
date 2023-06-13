@@ -1,0 +1,18 @@
+{
+	"m_UseCashCoinBaseNum": 5, //现金币消耗的基数
+	"m_FirstUseCashCoinNum": 500, //首次消耗的现金币数量
+	"m_RespawnOverTimeSec": 30, //复活超时时间（秒）
+	"m_ReqHelpDelayTimeSec": 5, //请求队友帮助复活的延时时间
+	"m_UseResurrectionCoinNum": 1, //一次复活，复活币消耗的数量
+	"m_CheckZombieDodgeMaxDistance": 10,
+	"m_CheckZombieDodgeMinDistance": 1,
+	"SwitchSceneTimeOneConfirm":10,//单人确认传送时间
+	"SwitchSceneTimeAllConfirm":3,//全体确认传送时间
+    "SummonDropProbability":20,   //狙击精英怪召唤怪物生成掉落的概率0.
+    "SummonDropID":[90002,90002,90002,173010001], //狙击精英怪召唤怪的掉落组ID（均分概率）
+	"BossSummonDropProbability":75,   //Boss召唤怪物生成掉落的概率
+    "BossSummonDropID":[90002], //Boss召唤怪的掉落组ID（均分概率）
+    "m_RoundTalentCardSelecetTimesList":[0,0,3],//不同等级回合天赋卡牌购买次数 0表示每个回合选择一次 >0 则第一回合n+1  第二回合开始n
+	"m_PveTalentCardNum":3,   //总天赋数量
+    "m_PveLastTalentEffectCardNum":2   //受第一关影响的天赋数量
+}

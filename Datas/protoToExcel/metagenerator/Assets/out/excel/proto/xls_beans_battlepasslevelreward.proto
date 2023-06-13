@@ -1,0 +1,48 @@
+/**
+* @file:   excel\BattlePassLevelReward.xlsx\BattlePassLevelReward
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattlePassLevelReward{
+	// 奖励ID 
+	uint32 id = 1;
+	// 领取限制类型 
+	repeated BattlePassLevelReward_limit limit = 2;
+	// 奖励类型 
+	uint32 rewardType = 3;
+	// 默认奖励 
+	uint32 defaultReward = 4;
+	// 道具ID、属性ID 
+	BattlePassLevelReward_effect effect = 5;
+}
+
+message BattlePassLevelReward_limit{
+	// 领取限制类型 
+	uint32 id = 1;
+	// 领取限制值 
+	uint32 value = 2;
+}
+
+message BattlePassLevelReward_effect{
+	// 道具ID、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message BattlePassLevelReward_Array {
+	repeated BattlePassLevelReward items = 1;
+}

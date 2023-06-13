@@ -1,0 +1,22 @@
+/**
+* @file:   excel\LikeGroupConfig.xlsx\LikeGroupConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message LikeGroupConfig{
+	// 点赞组ID 
+	uint32 id = 1;
+	// 连续击杀次数 
+	uint32 MultiKill = 2;
+	// 点赞概率(万分比) 
+	uint32 MultiKillLikeRate = 3;
+}
+
+message LikeGroupConfig_Array {
+	repeated LikeGroupConfig items = 1;
+}

@@ -1,0 +1,11 @@
+{
+  "TimePercentOff": 0.0,
+  "TimeValueOff": 0.0,
+  "parent": {
+    "CanDeadDrop": false,
+    "DropAsset": "",
+    "EquipHangOnPoint": "",
+    "EquipItemID": 0,
+    "EquipNickName": ""
+  }
+}

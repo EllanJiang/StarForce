@@ -1,0 +1,26 @@
+/**
+* @file:   excel\BattlePassTaskPool.xlsx\BattlePassTaskPool
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattlePassTaskPool{
+	// 唯一值 
+	uint32 id = 1;
+	// 任务池 
+	uint32 poolId = 2;
+	// 权重值 
+	uint32 weight = 3;
+	// 刷新标识 
+	uint32 refreshFlag = 4;
+	// 模式 
+	uint32 mode = 5;
+}
+
+message BattlePassTaskPool_Array {
+	repeated BattlePassTaskPool items = 1;
+}

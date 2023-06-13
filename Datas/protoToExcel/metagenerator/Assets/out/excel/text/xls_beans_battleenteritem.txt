@@ -1,0 +1,8 @@
+{
+  "items": [
+    {
+      "costId": 305040101,
+      "costMaxVal": 3
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+/**
+* @file:   excel\SkinAbilityGearScoreConfig.xlsx\SkinAbilityGearScoreConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message SkinAbilityGearScoreConfig{
+	// GS值类型 
+	string scoreType = 1;
+	// 套装id 
+	uint32 suitID = 2;
+	// 套装名称 
+	string name = 3;
+	// 分数 
+	repeated SkinAbilityGearScoreConfig_unlockInfo unlockInfo = 4;
+}
+
+message SkinAbilityGearScoreConfig_unlockInfo{
+	// 分数 
+	uint32 score = 1;
+	// 武器收集数 
+	uint32 weaponCount = 2;
+	// 属性 
+	uint32 suitEffectId = 3;
+}
+
+message SkinAbilityGearScoreConfig_Array {
+	repeated SkinAbilityGearScoreConfig items = 1;
+}

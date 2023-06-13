@@ -1,0 +1,534 @@
+{
+  "items": [
+    {
+      "ItemDes": "",
+      "ItemId": 10204,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5010204
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 10303,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5010303
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 20201,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5020201
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 20202,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5020202
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 20203,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5020203
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 20204,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5020204
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 20205,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5020205
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40201,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040201
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40202,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040202
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40203,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040203
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40204,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040204
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40205,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040205
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40301,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040301
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40302,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040302
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40303,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040303
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 40304,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 5,
+      "id": 5040304
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 305020201,
+      "ItemName": "",
+      "ItemPrice": 1000,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 2,
+      "id": 2000101
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 144010001,
+      "ItemName": "",
+      "ItemPrice": 500,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 2,
+      "id": 2000201
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 173010001,
+      "ItemName": "",
+      "ItemPrice": 500,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 2,
+      "id": 2000301
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 90002,
+      "ItemName": "",
+      "ItemPrice": 200,
+      "ItemQuality": 0,
+      "ItemSpriteId": 0,
+      "ItemType": 3,
+      "id": 2000401
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111020001,
+      "ItemName": "",
+      "ItemPrice": 1200,
+      "ItemQuality": 1,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110201
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111020001,
+      "ItemName": "",
+      "ItemPrice": 1800,
+      "ItemQuality": 2,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110202
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111020001,
+      "ItemName": "",
+      "ItemPrice": 2700,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110203
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111020001,
+      "ItemName": "",
+      "ItemPrice": 4050,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110204
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111020001,
+      "ItemName": "",
+      "ItemPrice": 6075,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110205
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111050001,
+      "ItemName": "",
+      "ItemPrice": 2000,
+      "ItemQuality": 1,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110501
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111050001,
+      "ItemName": "",
+      "ItemPrice": 2700,
+      "ItemQuality": 2,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110502
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111050001,
+      "ItemName": "",
+      "ItemPrice": 3650,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110503
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111050001,
+      "ItemName": "",
+      "ItemPrice": 4900,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110504
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111050001,
+      "ItemName": "",
+      "ItemPrice": 6650,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110505
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 115040001,
+      "ItemName": "",
+      "ItemPrice": 800,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1150403
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 115040001,
+      "ItemName": "",
+      "ItemPrice": 1600,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1150404
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 115040001,
+      "ItemName": "",
+      "ItemPrice": 2400,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1150405
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111070001,
+      "ItemName": "",
+      "ItemPrice": 1900,
+      "ItemQuality": 1,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110701
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111070001,
+      "ItemName": "",
+      "ItemPrice": 1900,
+      "ItemQuality": 2,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110702
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111070001,
+      "ItemName": "",
+      "ItemPrice": 1900,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110703
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111070001,
+      "ItemName": "",
+      "ItemPrice": 1900,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110704
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 111070001,
+      "ItemName": "",
+      "ItemPrice": 1900,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1110705
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 113020001,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 1,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1130201
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 113020001,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 2,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1130202
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 113020001,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1130203
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 113020001,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1130204
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 113020001,
+      "ItemName": "",
+      "ItemPrice": 5000,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1130205
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 117020001,
+      "ItemName": "",
+      "ItemPrice": 6000,
+      "ItemQuality": 1,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1170201
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 117020001,
+      "ItemName": "",
+      "ItemPrice": 7000,
+      "ItemQuality": 2,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1170202
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 117020001,
+      "ItemName": "",
+      "ItemPrice": 8000,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1170203
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 117020001,
+      "ItemName": "",
+      "ItemPrice": 9000,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1170204
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 117020001,
+      "ItemName": "",
+      "ItemPrice": 10000,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1170205
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 114070001,
+      "ItemName": "",
+      "ItemPrice": 1900,
+      "ItemQuality": 1,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1140701
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 114070001,
+      "ItemName": "",
+      "ItemPrice": 2280,
+      "ItemQuality": 2,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1140702
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 114070001,
+      "ItemName": "",
+      "ItemPrice": 2736,
+      "ItemQuality": 3,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1140703
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 114070001,
+      "ItemName": "",
+      "ItemPrice": 3283,
+      "ItemQuality": 4,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1140704
+    },
+    {
+      "ItemDes": "",
+      "ItemId": 114070001,
+      "ItemName": "",
+      "ItemPrice": 3939,
+      "ItemQuality": 5,
+      "ItemSpriteId": 0,
+      "ItemType": 1,
+      "id": 1140705
+    }
+  ]
+}

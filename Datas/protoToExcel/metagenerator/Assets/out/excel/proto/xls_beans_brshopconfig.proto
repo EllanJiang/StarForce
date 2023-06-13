@@ -1,0 +1,66 @@
+/**
+* @file:   excel\BRShopConfig.xlsx\BRShopConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRShopConfig{
+	// 商店ID 
+	uint32 id = 1;
+	// 商店道具组ID 
+	uint32 ItemGroupId = 2;
+	// 买活价格 
+	uint32 rescuePrice = 3;
+	// 买活后增加的价格 
+	uint32 rescuePriceIncrease = 4;
+	// 买活次数限制 
+	uint32 rescueTimesLimit = 5;
+	// 买活关闭阶段(第几圈) 
+	uint32 disableRescuePhase = 6;
+	// 抽奖价格 
+	uint32 lotteryPrice = 7;
+	// 抽奖后增加的价格 
+	uint32 lotteryPriceIncrease = 8;
+	// 抽奖次数限制 
+	uint32 lotteryTimesLimit = 9;
+	// 抽奖道具组ID 
+	uint32 lotteryGroupId = 10;
+	// 抽奖道具组描述 
+	string lotteryDesc1 = 11;
+	// 抽奖道具组描述 
+	string lotteryDesc2 = 12;
+	// 抽奖道具组名字 
+	string lotteryName = 13;
+	// 抽奖道具组图标 
+	uint32 lotteryIcon = 14;
+	// 限时购买组id 
+	repeated BRShopConfig_flashSale flashSale = 15;
+	// 打折系数(百分制) 
+	repeated BRShopConfig_discount discount = 16;
+}
+
+message BRShopConfig_flashSale{
+	// 限时购买组id 
+	uint32 groupId = 1;
+	// 限时购买开始时间S 
+	uint32 beginTime = 2;
+	// 限时购买持续时间S 
+	uint32 duration = 3;
+}
+
+message BRShopConfig_discount{
+	// 打折系数(百分制) 
+	uint32 rate = 1;
+	// 打折开始时间S 
+	uint32 beginTime = 2;
+	// 打折持续时间S 
+	uint32 duration = 3;
+}
+
+message BRShopConfig_Array {
+	repeated BRShopConfig items = 1;
+}

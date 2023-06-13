@@ -1,0 +1,28 @@
+/**
+* @file:   excel\AchievementGoal.xlsx\AchievementGoal
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AchievementGoal{
+	// 成就目标ID 
+	uint32 id = 1;
+	// 成就类型ID 
+	uint32 typeId = 2;
+	// 成就类型值 
+	uint32 count = 3;
+	// 目标名称 
+	string name = 4;
+	// 目标描述 
+	string desc = 5;
+	// 积分奖励 
+	uint32 score = 6;
+}
+
+message AchievementGoal_Array {
+	repeated AchievementGoal items = 1;
+}

@@ -1,0 +1,2797 @@
+{
+  "items": [
+    {
+      "word": "fag*"
+    },
+    {
+      "word": "*hoe"
+    },
+    {
+      "word": "hoe*"
+    },
+    {
+      "word": "gay*"
+    },
+    {
+      "word": "shit*"
+    },
+    {
+      "word": "anal*"
+    },
+    {
+      "word": "anus*"
+    },
+    {
+      "word": "*arab"
+    },
+    {
+      "word": "arab*"
+    },
+    {
+      "word": "cumn*"
+    },
+    {
+      "word": "cunt*"
+    },
+    {
+      "word": "*kunt"
+    },
+    {
+      "word": "kunt*"
+    },
+    {
+      "word": "dick*"
+    },
+    {
+      "word": "wank*"
+    },
+    {
+      "word": "pimp*"
+    },
+    {
+      "word": "fuck"
+    },
+    {
+      "word": "AIDS"
+    },
+    {
+      "word": "boob*"
+    },
+    {
+      "word": "cock*"
+    },
+    {
+      "word": "clit*"
+    },
+    {
+      "word": "cllt*"
+    },
+    {
+      "word": "dyke*"
+    },
+    {
+      "word": "fcuk"
+    },
+    {
+      "word": "fukk"
+    },
+    {
+      "word": "fvck"
+    },
+    {
+      "word": "homo*"
+    },
+    {
+      "word": "nigr"
+    },
+    {
+      "word": "nazi"
+    },
+    {
+      "word": "*rape"
+    },
+    {
+      "word": "rape*"
+    },
+    {
+      "word": "tits*"
+    },
+    {
+      "word": "shits"
+    },
+    {
+      "word": "lesbo"
+    },
+    {
+      "word": "allah"
+    },
+    {
+      "word": "Nazis"
+    },
+    {
+      "word": "sperm"
+    },
+    {
+      "word": "opium"
+    },
+    {
+      "word": "penis"
+    },
+    {
+      "word": "kicap"
+    },
+    {
+      "word": "tocum"
+    },
+    {
+      "word": "nigga"
+    },
+    {
+      "word": "jihad"
+    },
+    {
+      "word": "bitch"
+    },
+    {
+      "word": "boner"
+    },
+    {
+      "word": "boobs"
+    },
+    {
+      "word": "jesus"
+    },
+    {
+      "word": "islam"
+    },
+    {
+      "word": "chink*"
+    },
+    {
+      "word": "*chink"
+    },
+    {
+      "word": "pimps"
+    },
+    {
+      "word": "*semen"
+    },
+    {
+      "word": "semen*"
+    },
+    {
+      "word": "negro"
+    },
+    {
+      "word": "fucks"
+    },
+    {
+      "word": "horny*"
+    },
+    {
+      "word": "*horny"
+    },
+    {
+      "word": "pubes"
+    },
+    {
+      "word": "pussy"
+    },
+    {
+      "word": "dicky"
+    },
+    {
+      "word": "dildo"
+    },
+    {
+      "word": "porno"
+    },
+    {
+      "word": "queef"
+    },
+    {
+      "word": "satan"
+    },
+    {
+      "word": "orgasm"
+    },
+    {
+      "word": "fagget"
+    },
+    {
+      "word": "faggit"
+    },
+    {
+      "word": "niggas"
+    },
+    {
+      "word": "faggot"
+    },
+    {
+      "word": "fucker"
+    },
+    {
+      "word": "fatass"
+    },
+    {
+      "word": "banged"
+    },
+    {
+      "word": "beaver"
+    },
+    {
+      "word": "goddam"
+    },
+    {
+      "word": "breast"
+    },
+    {
+      "word": "niglet"
+    },
+    {
+      "word": "hardon"
+    },
+    {
+      "word": "reefer"
+    },
+    {
+      "word": "rectum"
+    },
+    {
+      "word": "christ"
+    },
+    {
+      "word": "coochy"
+    },
+    {
+      "word": "furpie"
+    },
+    {
+      "word": "nitwit"
+    },
+    {
+      "word": "fucked"
+    },
+    {
+      "word": "rimjob"
+    },
+    {
+      "word": "sexual"
+    },
+    {
+      "word": "gringo"
+    },
+    {
+      "word": "nympho"
+    },
+    {
+      "word": "pisses"
+    },
+    {
+      "word": "idiots"
+    },
+    {
+      "word": "gonads"
+    },
+    {
+      "word": "erotic"
+    },
+    {
+      "word": "whores"
+    },
+    {
+      "word": "Rapist"
+    },
+    {
+      "word": "fuckup"
+    },
+    {
+      "word": "nigger"
+    },
+    {
+      "word": "niggaz"
+    },
+    {
+      "word": "sodomy"
+    },
+    {
+      "word": "condom"
+    },
+    {
+      "word": "theass"
+    },
+    {
+      "word": "thetit"
+    },
+    {
+      "word": "tobang"
+    },
+    {
+      "word": "tobarf"
+    },
+    {
+      "word": "tobeat"
+    },
+    {
+      "word": "nipple"
+    },
+    {
+      "word": "gayass"
+    },
+    {
+      "word": "tofart"
+    },
+    {
+      "word": "tofuck"
+    },
+    {
+      "word": "heroin"
+    },
+    {
+      "word": "dicked"
+    },
+    {
+      "word": "topoop"
+    },
+    {
+      "word": "torape"
+    },
+    {
+      "word": "toshit"
+    },
+    {
+      "word": "tosuck"
+    },
+    {
+      "word": "toejam"
+    },
+    {
+      "word": "toerag"
+    },
+    {
+      "word": "pigdog"
+    },
+    {
+      "word": "Vagina"
+    },
+    {
+      "word": "queers"
+    },
+    {
+      "word": "jerkof"
+    },
+    {
+      "word": "wanker"
+    },
+    {
+      "word": "Fuckass"
+    },
+    {
+      "word": "fuckoff"
+    },
+    {
+      "word": "fuckyou"
+    },
+    {
+      "word": "raffish"
+    },
+    {
+      "word": "puttana"
+    },
+    {
+      "word": "nutsack"
+    },
+    {
+      "word": "nitwits"
+    },
+    {
+      "word": "fuckery"
+    },
+    {
+      "word": "Fucking"
+    },
+    {
+      "word": "pussies"
+    },
+    {
+      "word": "puntang"
+    },
+    {
+      "word": "punanny"
+    },
+    {
+      "word": "fuckton"
+    },
+    {
+      "word": "fucktoy"
+    },
+    {
+      "word": "pollock"
+    },
+    {
+      "word": "nipples"
+    },
+    {
+      "word": "getlaid"
+    },
+    {
+      "word": "pissing"
+    },
+    {
+      "word": "niggers"
+    },
+    {
+      "word": "goddamn"
+    },
+    {
+      "word": "handjob"
+    },
+    {
+      "word": "Havesex"
+    },
+    {
+      "word": "pissoff"
+    },
+    {
+      "word": "hookers"
+    },
+    {
+      "word": "infidel"
+    },
+    {
+      "word": "jackass"
+    },
+    {
+      "word": "jackoff"
+    },
+    {
+      "word": "pervert"
+    },
+    {
+      "word": "jerkoff"
+    },
+    {
+      "word": "jerking"
+    },
+    {
+      "word": "jigaboo"
+    },
+    {
+      "word": "penises"
+    },
+    {
+      "word": "keaster"
+    },
+    {
+      "word": "keester"
+    },
+    {
+      "word": "orgasms"
+    },
+    {
+      "word": "lameass"
+    },
+    {
+      "word": "lardass"
+    },
+    {
+      "word": "lazyass"
+    },
+    {
+      "word": "Lesbian"
+    },
+    {
+      "word": "analsex"
+    },
+    {
+      "word": "shitass"
+    },
+    {
+      "word": "shitton"
+    },
+    {
+      "word": "shiznit"
+    },
+    {
+      "word": "asexual"
+    },
+    {
+      "word": "oralsex"
+    },
+    {
+      "word": "assface"
+    },
+    {
+      "word": "assfuck"
+    },
+    {
+      "word": "asshole"
+    },
+    {
+      "word": "asswipe"
+    },
+    {
+      "word": "slyarse"
+    },
+    {
+      "word": "bastard"
+    },
+    {
+      "word": "shitbag"
+    },
+    {
+      "word": "blowjob"
+    },
+    {
+      "word": "bukkake"
+    },
+    {
+      "word": "spastic"
+    },
+    {
+      "word": "breasts"
+    },
+    {
+      "word": "cocaine"
+    },
+    {
+      "word": "strapon"
+    },
+    {
+      "word": "scumbag"
+    },
+    {
+      "word": "thecunt"
+    },
+    {
+      "word": "thedick"
+    },
+    {
+      "word": "theporn"
+    },
+    {
+      "word": "theshit"
+    },
+    {
+      "word": "cumshot"
+    },
+    {
+      "word": "thetits"
+    },
+    {
+      "word": "Scrotum"
+    },
+    {
+      "word": "dickbag"
+    },
+    {
+      "word": "negroes"
+    },
+    {
+      "word": "dicking"
+    },
+    {
+      "word": "screwup"
+    },
+    {
+      "word": "dickwad"
+    },
+    {
+      "word": "dilldoe"
+    },
+    {
+      "word": "dilldos"
+    },
+    {
+      "word": "dogbark"
+    },
+    {
+      "word": "dogcunt"
+    },
+    {
+      "word": "doghorn"
+    },
+    {
+      "word": "Vaginal"
+    },
+    {
+      "word": "vaginas"
+    },
+    {
+      "word": "vjayjay"
+    },
+    {
+      "word": "Eatshit"
+    },
+    {
+      "word": "retards"
+    },
+    {
+      "word": "faggots"
+    },
+    {
+      "word": "wankers"
+    },
+    {
+      "word": "wanking"
+    },
+    {
+      "word": "fuckface"
+    },
+    {
+      "word": "dickface"
+    },
+    {
+      "word": "screwyou"
+    },
+    {
+      "word": "dickhead"
+    },
+    {
+      "word": "slackass"
+    },
+    {
+      "word": "holyshit"
+    },
+    {
+      "word": "pissdick"
+    },
+    {
+      "word": "maryjane"
+    },
+    {
+      "word": "gangbang"
+    },
+    {
+      "word": "screwing"
+    },
+    {
+      "word": "cuntface"
+    },
+    {
+      "word": "cumeater"
+    },
+    {
+      "word": "sodomise"
+    },
+    {
+      "word": "sodomite"
+    },
+    {
+      "word": "sodomize"
+    },
+    {
+      "word": "gangrape"
+    },
+    {
+      "word": "fuckyour"
+    },
+    {
+      "word": "manwhore"
+    },
+    {
+      "word": "Creampie"
+    },
+    {
+      "word": "cockhead"
+    },
+    {
+      "word": "cockface"
+    },
+    {
+      "word": "poontang"
+    },
+    {
+      "word": "cocksuck"
+    },
+    {
+      "word": "clitoris"
+    },
+    {
+      "word": "cameltoe"
+    },
+    {
+      "word": "testicle"
+    },
+    {
+      "word": "theasses"
+    },
+    {
+      "word": "thebitch"
+    },
+    {
+      "word": "buttplug"
+    },
+    {
+      "word": "thecunts"
+    },
+    {
+      "word": "poonanny"
+    },
+    {
+      "word": "thedicks"
+    },
+    {
+      "word": "infidels"
+    },
+    {
+      "word": "thedykes"
+    },
+    {
+      "word": "butthole"
+    },
+    {
+      "word": "thefools"
+    },
+    {
+      "word": "butthead"
+    },
+    {
+      "word": "thehells"
+    },
+    {
+      "word": "theidiot"
+    },
+    {
+      "word": "themoron"
+    },
+    {
+      "word": "thenegro"
+    },
+    {
+      "word": "phimosis"
+    },
+    {
+      "word": "buttfuck"
+    },
+    {
+      "word": "buttface"
+    },
+    {
+      "word": "theshits"
+    },
+    {
+      "word": "fistfuck"
+    },
+    {
+      "word": "theswine"
+    },
+    {
+      "word": "getdrunk"
+    },
+    {
+      "word": "fuckhead"
+    },
+    {
+      "word": "thewhore"
+    },
+    {
+      "word": "placenta"
+    },
+    {
+      "word": "sheister"
+    },
+    {
+      "word": "fucktard"
+    },
+    {
+      "word": "tobeatup"
+    },
+    {
+      "word": "fuckhole"
+    },
+    {
+      "word": "bunghole"
+    },
+    {
+      "word": "bullshit"
+    },
+    {
+      "word": "bigboobs"
+    },
+    {
+      "word": "gotocunt"
+    },
+    {
+      "word": "jigaboos"
+    },
+    {
+      "word": "tofuckup"
+    },
+    {
+      "word": "bigbitch"
+    },
+    {
+      "word": "ballsack"
+    },
+    {
+      "word": "Foreskin"
+    },
+    {
+      "word": "fuckedup"
+    },
+    {
+      "word": "assmunch"
+    },
+    {
+      "word": "shitboot"
+    },
+    {
+      "word": "pederast"
+    },
+    {
+      "word": "tramping"
+    },
+    {
+      "word": "madbitch"
+    },
+    {
+      "word": "fuckbutt"
+    },
+    {
+      "word": "uglycunt"
+    },
+    {
+      "word": "looseass"
+    },
+    {
+      "word": "onanists"
+    },
+    {
+      "word": "lewdworm"
+    },
+    {
+      "word": "erection"
+    },
+    {
+      "word": "vajayjay"
+    },
+    {
+      "word": "vibrator"
+    },
+    {
+      "word": "arsehole"
+    },
+    {
+      "word": "vitrator"
+    },
+    {
+      "word": "retarded"
+    },
+    {
+      "word": "dunecoon"
+    },
+    {
+      "word": "shitface"
+    },
+    {
+      "word": "dogpenis"
+    },
+    {
+      "word": "Fuckarse"
+    },
+    {
+      "word": "lesbians"
+    },
+    {
+      "word": "adultery"
+    },
+    {
+      "word": "shithead"
+    },
+    {
+      "word": "shithloe"
+    },
+    {
+      "word": "shithole"
+    },
+    {
+      "word": "wetbacks"
+    },
+    {
+      "word": "dickless"
+    },
+    {
+      "word": "whoredom"
+    },
+    {
+      "word": "thesperm"
+    },
+    {
+      "word": "rudebitch"
+    },
+    {
+      "word": "theidiots"
+    },
+    {
+      "word": "sandnegro"
+    },
+    {
+      "word": "themorons"
+    },
+    {
+      "word": "shameless"
+    },
+    {
+      "word": "thenigger"
+    },
+    {
+      "word": "thenitwit"
+    },
+    {
+      "word": "shiteater"
+    },
+    {
+      "word": "shitbrain"
+    },
+    {
+      "word": "theretard"
+    },
+    {
+      "word": "shitheads"
+    },
+    {
+      "word": "adulterer"
+    },
+    {
+      "word": "assmaggot"
+    },
+    {
+      "word": "assmonkey"
+    },
+    {
+      "word": "assfucked"
+    },
+    {
+      "word": "assfucker"
+    },
+    {
+      "word": "thevagina"
+    },
+    {
+      "word": "thewanker"
+    },
+    {
+      "word": "testicles"
+    },
+    {
+      "word": "thewhores"
+    },
+    {
+      "word": "tickedoff"
+    },
+    {
+      "word": "tittyfuck"
+    },
+    {
+      "word": "asskisser"
+    },
+    {
+      "word": "asslicker"
+    },
+    {
+      "word": "skullfuck"
+    },
+    {
+      "word": "cumbubble"
+    },
+    {
+      "word": "cummeater"
+    },
+    {
+      "word": "dickeater"
+    },
+    {
+      "word": "dickheads"
+    },
+    {
+      "word": "dicksmack"
+    },
+    {
+      "word": "ejaculate"
+    },
+    {
+      "word": "fuckedhim"
+    },
+    {
+      "word": "fuckedyou"
+    },
+    {
+      "word": "furburger"
+    },
+    {
+      "word": "tojerkoff"
+    },
+    {
+      "word": "snoteater"
+    },
+    {
+      "word": "gazongers"
+    },
+    {
+      "word": "gloryhole"
+    },
+    {
+      "word": "goddammit"
+    },
+    {
+      "word": "goddamnit"
+    },
+    {
+      "word": "horsedick"
+    },
+    {
+      "word": "horsecock"
+    },
+    {
+      "word": "towelhead"
+    },
+    {
+      "word": "impotency"
+    },
+    {
+      "word": "lameasses"
+    },
+    {
+      "word": "typhislut"
+    },
+    {
+      "word": "lazyasses"
+    },
+    {
+      "word": "marijuana"
+    },
+    {
+      "word": "masochist"
+    },
+    {
+      "word": "mongoloid"
+    },
+    {
+      "word": "muffdiver"
+    },
+    {
+      "word": "Testicule"
+    },
+    {
+      "word": "Nazibitch"
+    },
+    {
+      "word": "pussylips"
+    },
+    {
+      "word": "ogrenegro"
+    },
+    {
+      "word": "pedophile"
+    },
+    {
+      "word": "vulgarman"
+    },
+    {
+      "word": "thecrotch"
+    },
+    {
+      "word": "pigpriest"
+    },
+    {
+      "word": "pissstain"
+    },
+    {
+      "word": "pisswhore"
+    },
+    {
+      "word": "thedevils"
+    },
+    {
+      "word": "pubichair"
+    },
+    {
+      "word": "pussyface"
+    },
+    {
+      "word": "pussyhead"
+    },
+    {
+      "word": "pussydick"
+    },
+    {
+      "word": "thefaggot"
+    },
+    {
+      "word": "pussywhip"
+    },
+    {
+      "word": "whoreslut"
+    },
+    {
+      "word": "queerbait"
+    },
+    {
+      "word": "rottenman"
+    },
+    {
+      "word": "horsedicks"
+    },
+    {
+      "word": "licentious"
+    },
+    {
+      "word": "buttpirate"
+    },
+    {
+      "word": "thebitches"
+    },
+    {
+      "word": "buttpicker"
+    },
+    {
+      "word": "outdoorsex"
+    },
+    {
+      "word": "sexualorgy"
+    },
+    {
+      "word": "crackwhore"
+    },
+    {
+      "word": "peckerhead"
+    },
+    {
+      "word": "theretards"
+    },
+    {
+      "word": "cumchugger"
+    },
+    {
+      "word": "pedophilia"
+    },
+    {
+      "word": "knockboots"
+    },
+    {
+      "word": "thecrybaby"
+    },
+    {
+      "word": "dickbreath"
+    },
+    {
+      "word": "sluttycunt"
+    },
+    {
+      "word": "thenegroes"
+    },
+    {
+      "word": "uglyperson"
+    },
+    {
+      "word": "Prostitute"
+    },
+    {
+      "word": "thenitwits"
+    },
+    {
+      "word": "dicksucker"
+    },
+    {
+      "word": "transexual"
+    },
+    {
+      "word": "dirtyswine"
+    },
+    {
+      "word": "homosexual"
+    },
+    {
+      "word": "satyriasis"
+    },
+    {
+      "word": "neckblower"
+    },
+    {
+      "word": "sandnigger"
+    },
+    {
+      "word": "pussyjuice"
+    },
+    {
+      "word": "sonofbitch"
+    },
+    {
+      "word": "thefaggots"
+    },
+    {
+      "word": "dominatrix"
+    },
+    {
+      "word": "fornicator"
+    },
+    {
+      "word": "yourmother"
+    },
+    {
+      "word": "yourfather"
+    },
+    {
+      "word": "theniggers"
+    },
+    {
+      "word": "littledick"
+    },
+    {
+      "word": "fuckingbig"
+    },
+    {
+      "word": "getspunkup"
+    },
+    {
+      "word": "adulteress"
+    },
+    {
+      "word": "fuckaround"
+    },
+    {
+      "word": "arsefucker"
+    },
+    {
+      "word": "stupidhead"
+    },
+    {
+      "word": "thewankers"
+    },
+    {
+      "word": "suckmydick"
+    },
+    {
+      "word": "fuckingway"
+    },
+    {
+      "word": "looseasses"
+    },
+    {
+      "word": "arseguitar"
+    },
+    {
+      "word": "masterbate"
+    },
+    {
+      "word": "asslickers"
+    },
+    {
+      "word": "pooppusher"
+    },
+    {
+      "word": "thevaginas"
+    },
+    {
+      "word": "thebastard"
+    },
+    {
+      "word": "pussyheads"
+    },
+    {
+      "word": "masturbate"
+    },
+    {
+      "word": "bigbreasts"
+    },
+    {
+      "word": "rottenwoman"
+    },
+    {
+      "word": "nymphomania"
+    },
+    {
+      "word": "dirtyswines"
+    },
+    {
+      "word": "transexuals"
+    },
+    {
+      "word": "dicksuckers"
+    },
+    {
+      "word": "uglypersons"
+    },
+    {
+      "word": "Nazibitches"
+    },
+    {
+      "word": "junglebunny"
+    },
+    {
+      "word": "dickanchovy"
+    },
+    {
+      "word": "vaginasweat"
+    },
+    {
+      "word": "cunnilingus"
+    },
+    {
+      "word": "pieceofshit"
+    },
+    {
+      "word": "vulgarwoman"
+    },
+    {
+      "word": "wackassdumb"
+    },
+    {
+      "word": "oldmandevil"
+    },
+    {
+      "word": "intercourse"
+    },
+    {
+      "word": "littlebitch"
+    },
+    {
+      "word": "brainfucker"
+    },
+    {
+      "word": "arseguitars"
+    },
+    {
+      "word": "sonofabitch"
+    },
+    {
+      "word": "sonofawhore"
+    },
+    {
+      "word": "whoremonger"
+    },
+    {
+      "word": "wobblepussy"
+    },
+    {
+      "word": "sonuvabitch"
+    },
+    {
+      "word": "handicapped"
+    },
+    {
+      "word": "motherfucka"
+    },
+    {
+      "word": "funnelwhore"
+    },
+    {
+      "word": "fudgepacker"
+    },
+    {
+      "word": "pooppushers"
+    },
+    {
+      "word": "thebastards"
+    },
+    {
+      "word": "porchmonkey"
+    },
+    {
+      "word": "thecrotches"
+    },
+    {
+      "word": "pornography"
+    },
+    {
+      "word": "masturbator"
+    },
+    {
+      "word": "fuckingcunt"
+    },
+    {
+      "word": "pussychaser"
+    },
+    {
+      "word": "camelfucker"
+    },
+    {
+      "word": "masturbates"
+    },
+    {
+      "word": "masturbated"
+    },
+    {
+      "word": "cumdumpster"
+    },
+    {
+      "word": "fuckyourmom"
+    },
+    {
+      "word": "fuckyourdad"
+    },
+    {
+      "word": "fornication"
+    },
+    {
+      "word": "Ejaculation"
+    },
+    {
+      "word": "foreigndevil"
+    },
+    {
+      "word": "mastrubation"
+    },
+    {
+      "word": "pussychasers"
+    },
+    {
+      "word": "fuckingmouth"
+    },
+    {
+      "word": "knockingshop"
+    },
+    {
+      "word": "tomasturbate"
+    },
+    {
+      "word": "motherfucker"
+    },
+    {
+      "word": "Prostitution"
+    },
+    {
+      "word": "dirtybastard"
+    },
+    {
+      "word": "piecesofshit"
+    },
+    {
+      "word": "thecrybabies"
+    },
+    {
+      "word": "cowardshitty"
+    },
+    {
+      "word": "fucksmbdover"
+    },
+    {
+      "word": "fuckingpower"
+    },
+    {
+      "word": "sonsofabitch"
+    },
+    {
+      "word": "Masturbation"
+    },
+    {
+      "word": "yourancestor"
+    },
+    {
+      "word": "fuckyourself"
+    },
+    {
+      "word": "fuckingdodge"
+    },
+    {
+      "word": "fuckingthing"
+    },
+    {
+      "word": "ejaculations"
+    },
+    {
+      "word": "hornybastard"
+    },
+    {
+      "word": "stupidfucker"
+    },
+    {
+      "word": "fuckinggreat"
+    },
+    {
+      "word": "knockingshops"
+    },
+    {
+      "word": "prostategland"
+    },
+    {
+      "word": "pearlnecklace"
+    },
+    {
+      "word": "knockingboots"
+    },
+    {
+      "word": "theuglyperson"
+    },
+    {
+      "word": "smartfuckface"
+    },
+    {
+      "word": "sadomasochism"
+    },
+    {
+      "word": "motherfucking"
+    },
+    {
+      "word": "Japanesebitch"
+    },
+    {
+      "word": "sonsofbitches"
+    },
+    {
+      "word": "dirtybastards"
+    },
+    {
+      "word": "masturbations"
+    },
+    {
+      "word": "fuckyourpussy"
+    },
+    {
+      "word": "dontgiveafuck"
+    },
+    {
+      "word": "thecrackwhore"
+    },
+    {
+      "word": "dickanchovies"
+    },
+    {
+      "word": "rustytrombone"
+    },
+    {
+      "word": "thepooppusher"
+    },
+    {
+      "word": "thearseguitar"
+    },
+    {
+      "word": "childofawhore"
+    },
+    {
+      "word": "sadomasochist"
+    },
+    {
+      "word": "getthefuckout"
+    },
+    {
+      "word": "thebitchwhore"
+    },
+    {
+      "word": "intercruralsex"
+    },
+    {
+      "word": "thecrackwhores"
+    },
+    {
+      "word": "thepooppushers"
+    },
+    {
+      "word": "fuckyourmother"
+    },
+    {
+      "word": "rudesonofbitch"
+    },
+    {
+      "word": "fuckingawesome"
+    },
+    {
+      "word": "thebitchwhores"
+    },
+    {
+      "word": "theejaculation"
+    },
+    {
+      "word": "fuckyoursister"
+    },
+    {
+      "word": "thearseguitars"
+    },
+    {
+      "word": "Letitfuckingbe"
+    },
+    {
+      "word": "thedickanchovy"
+    },
+    {
+      "word": "theuglypersons"
+    },
+    {
+      "word": "outcallservice"
+    },
+    {
+      "word": "fuckshitdamnit"
+    },
+    {
+      "word": "fuckingbastard"
+    },
+    {
+      "word": "havinganorgasm"
+    },
+    {
+      "word": "homelesspeople"
+    },
+    {
+      "word": "somethingshitty"
+    },
+    {
+      "word": "fuckingstarship"
+    },
+    {
+      "word": "internalcumshot"
+    },
+    {
+      "word": "themasturbation"
+    },
+    {
+      "word": "fuckingholyshit"
+    },
+    {
+      "word": "theejaculations"
+    },
+    {
+      "word": "fuckyourbrother"
+    },
+    {
+      "word": "workfuckinghard"
+    },
+    {
+      "word": "youmotherfucker"
+    },
+    {
+      "word": "younghornybitch"
+    },
+    {
+      "word": "fuckyourpussies"
+    },
+    {
+      "word": "stickitupyourass"
+    },
+    {
+      "word": "daughterofabitch"
+    },
+    {
+      "word": "thedickanchovies"
+    },
+    {
+      "word": "disgustingperson"
+    },
+    {
+      "word": "yourmotherspussy"
+    },
+    {
+      "word": "daughtersofabitch"
+    },
+    {
+      "word": "fuckingsanatorium"
+    },
+    {
+      "word": "drug"
+    },
+    {
+      "word": "fuker"
+    },
+    {
+      "word": "*ganja"
+    },
+    {
+      "word": "ganja*"
+    },
+    {
+      "word": "*hashish"
+    },
+    {
+      "word": "hashish*"
+    },
+    {
+      "word": "*charas"
+    },
+    {
+      "word": "charas*"
+    },
+    {
+      "word": "*phukki"
+    },
+    {
+      "word": "phukki*"
+    },
+    {
+      "word": "*poppy husk"
+    },
+    {
+      "word": "poppy husk*"
+    },
+    {
+      "word": "*ecstasy"
+    },
+    {
+      "word": "ecstasy*"
+    },
+    {
+      "word": "*molly"
+    },
+    {
+      "word": "molly*"
+    },
+    {
+      "word": "*XTC"
+    },
+    {
+      "word": "XTC*"
+    },
+    {
+      "word": "*MDMA"
+    },
+    {
+      "word": "MDMA*"
+    },
+    {
+      "word": "*meth"
+    },
+    {
+      "word": "meth*"
+    },
+    {
+      "word": "*dendrite"
+    },
+    {
+      "word": "dendrite*"
+    },
+    {
+      "word": "*chillam"
+    },
+    {
+      "word": "chillam*"
+    },
+    {
+      "word": "*chillum"
+    },
+    {
+      "word": "chillum*"
+    },
+    {
+      "word": "*chilam"
+    },
+    {
+      "word": "chilam*"
+    },
+    {
+      "word": "*maal"
+    },
+    {
+      "word": "maal*"
+    },
+    {
+      "word": "*puria"
+    },
+    {
+      "word": "puria*"
+    },
+    {
+      "word": "*tola"
+    },
+    {
+      "word": "tola*"
+    },
+    {
+      "word": "kidnap"
+    },
+    {
+      "word": "smuggle"
+    },
+    {
+      "word": "smuggling"
+    },
+    {
+      "word": "traffick"
+    },
+    {
+      "word": "*pety"
+    },
+    {
+      "word": "pety*"
+    },
+    {
+      "word": "*peti"
+    },
+    {
+      "word": "peti*"
+    },
+    {
+      "word": "*petee"
+    },
+    {
+      "word": "petee*"
+    },
+    {
+      "word": "*khoka"
+    },
+    {
+      "word": "khoka*"
+    },
+    {
+      "word": "*LSD"
+    },
+    {
+      "word": "LSD*"
+    },
+    {
+      "word": "Biot"
+    },
+    {
+      "word": "Bayot"
+    },
+    {
+      "word": "法輪"
+    },
+    {
+      "word": "哭爸"
+    },
+    {
+      "word": "子宮"
+    },
+    {
+      "word": "打手槍"
+    },
+    {
+      "word": "查緝"
+    },
+    {
+      "word": "異常"
+    },
+    {
+      "word": "獎品"
+    },
+    {
+      "word": "通知"
+    },
+    {
+      "word": "稽核"
+    },
+    {
+      "word": "稽查"
+    },
+    {
+      "word": "稽察"
+    },
+    {
+      "word": "緝查"
+    },
+    {
+      "word": "你娘"
+    },
+    {
+      "word": "肛門"
+    },
+    {
+      "word": "廣播"
+    },
+    {
+      "word": "公告"
+    },
+    {
+      "word": "系統"
+    },
+    {
+      "word": "專員"
+    },
+    {
+      "word": "客服"
+    },
+    {
+      "word": "客戶"
+    },
+    {
+      "word": "管理員"
+    },
+    {
+      "word": "特派員"
+    },
+    {
+      "word": "官方"
+    },
+    {
+      "word": "幹"
+    },
+    {
+      "word": "口交"
+    },
+    {
+      "word": "淫"
+    },
+    {
+      "word": "蕩"
+    },
+    {
+      "word": "北七"
+    },
+    {
+      "word": "奶子"
+    },
+    {
+      "word": "白濫"
+    },
+    {
+      "word": "白癡"
+    },
+    {
+      "word": "白爛"
+    },
+    {
+      "word": "老母"
+    },
+    {
+      "word": "老味"
+    },
+    {
+      "word": "佬未"
+    },
+    {
+      "word": "吹簫"
+    },
+    {
+      "word": "吹喇叭"
+    },
+    {
+      "word": "性交"
+    },
+    {
+      "word": "性虐待"
+    },
+    {
+      "word": "高潮"
+    },
+    {
+      "word": "雜種"
+    },
+    {
+      "word": "肉洞"
+    },
+    {
+      "word": "肉棒"
+    },
+    {
+      "word": "耖"
+    },
+    {
+      "word": "基掰"
+    },
+    {
+      "word": "娼"
+    },
+    {
+      "word": "強暴"
+    },
+    {
+      "word": "陰毛"
+    },
+    {
+      "word": "陰門"
+    },
+    {
+      "word": "陰莖"
+    },
+    {
+      "word": "陰囊"
+    },
+    {
+      "word": "援交"
+    },
+    {
+      "word": "智障"
+    },
+    {
+      "word": "低能"
+    },
+    {
+      "word": "弱智"
+    },
+    {
+      "word": "陽物"
+    },
+    {
+      "word": "陽莖"
+    },
+    {
+      "word": "睪丸"
+    },
+    {
+      "word": "嫩B"
+    },
+    {
+      "word": "嫩逼"
+    },
+    {
+      "word": "靠邀"
+    },
+    {
+      "word": "靠么"
+    },
+    {
+      "word": "靠妖"
+    },
+    {
+      "word": "早洩"
+    },
+    {
+      "word": "卵子"
+    },
+    {
+      "word": "愛液"
+    },
+    {
+      "word": "精子"
+    },
+    {
+      "word": "精液"
+    },
+    {
+      "word": "精蟲"
+    },
+    {
+      "word": "機掰"
+    },
+    {
+      "word": "龜頭"
+    },
+    {
+      "word": "績掰"
+    },
+    {
+      "word": "雜交"
+    },
+    {
+      "word": "雜碎"
+    },
+    {
+      "word": "雞八"
+    },
+    {
+      "word": "雞扒"
+    },
+    {
+      "word": "雞吧"
+    },
+    {
+      "word": "雞歪"
+    },
+    {
+      "word": "雞掰"
+    },
+    {
+      "word": "濫交"
+    },
+    {
+      "word": "爛貨"
+    },
+    {
+      "word": "中出"
+    },
+    {
+      "word": "中國"
+    },
+    {
+      "word": "港狗"
+    },
+    {
+      "word": "中共"
+    },
+    {
+      "word": "共產"
+    },
+    {
+      "word": "國民黨"
+    },
+    {
+      "word": "大陸"
+    },
+    {
+      "word": "反共"
+    },
+    {
+      "word": "反動"
+    },
+    {
+      "word": "反黨"
+    },
+    {
+      "word": "台灣"
+    },
+    {
+      "word": "台獨"
+    },
+    {
+      "word": "台聯台聯"
+    },
+    {
+      "word": "台灣獨立"
+    },
+    {
+      "word": "奶泡"
+    },
+    {
+      "word": "奶炮"
+    },
+    {
+      "word": "奶頭"
+    },
+    {
+      "word": "乳頭"
+    },
+    {
+      "word": "民主進步黨"
+    },
+    {
+      "word": "民進黨"
+    },
+    {
+      "word": "交易"
+    },
+    {
+      "word": "共軍"
+    },
+    {
+      "word": "共匪"
+    },
+    {
+      "word": "共黨"
+    },
+    {
+      "word": "冰毒"
+    },
+    {
+      "word": "搖頭丸"
+    },
+    {
+      "word": "K他命"
+    },
+    {
+      "word": "安非他命"
+    },
+    {
+      "word": "大麻"
+    },
+    {
+      "word": "毒品"
+    },
+    {
+      "word": "吸毒"
+    },
+    {
+      "word": "馬英九"
+    },
+    {
+      "word": "蔡英文"
+    },
+    {
+      "word": "陳水扁"
+    },
+    {
+      "word": "宋楚瑜"
+    },
+    {
+      "word": "屁眼"
+    },
+    {
+      "word": "馬皇"
+    },
+    {
+      "word": "武力統一"
+    },
+    {
+      "word": "紅杉軍"
+    },
+    {
+      "word": "海洛因"
+    },
+    {
+      "word": "政府"
+    },
+    {
+      "word": "國共"
+    },
+    {
+      "word": "梅毒"
+    },
+    {
+      "word": "淫水"
+    },
+    {
+      "word": "處女"
+    },
+    {
+      "word": "釣魚台"
+    },
+    {
+      "word": "陰唇"
+    },
+    {
+      "word": "陰核"
+    },
+    {
+      "word": "陰道"
+    },
+    {
+      "word": "測試"
+    },
+    {
+      "word": "陽具"
+    },
+    {
+      "word": "解放軍"
+    },
+    {
+      "word": "鴉片"
+    },
+    {
+      "word": "親民黨"
+    },
+    {
+      "word": "王八蛋"
+    },
+    {
+      "word": "總統"
+    },
+    {
+      "word": "黨派"
+    },
+    {
+      "word": "甘林"
+    },
+    {
+      "word": "練功"
+    },
+    {
+      "word": "代客"
+    },
+    {
+      "word": "帶客"
+    },
+    {
+      "word": "小朋友"
+    },
+    {
+      "word": "破麻"
+    },
+    {
+      "word": "賣帳號"
+    },
+    {
+      "word": "法輪功"
+    },
+    {
+      "word": "空白ID"
+    },
+    {
+      "word": "掛爽爽"
+    },
+    {
+      "word": "外掛"
+    },
+    {
+      "word": "你老母"
+    },
+    {
+      "word": "競舞娛樂"
+    },
+    {
+      "word": "台灣競舞娛樂有限公司"
+    },
+    {
+      "word": "線上GM"
+    },
+    {
+      "word": "線上特派員"
+    },
+    {
+      "word": "在線GM"
+    },
+    {
+      "word": "幣商"
+    },
+    {
+      "word": "競舞台"
+    },
+    {
+      "word": "台灣競舞"
+    },
+    {
+      "word": "吊你"
+    },
+    {
+      "word": "代打"
+    },
+    {
+      "word": "自慰"
+    },
+    {
+      "word": "作愛"
+    },
+    {
+      "word": "吹蕭"
+    },
+    {
+      "word": "含撚"
+    },
+    {
+      "word": "妓女"
+    },
+    {
+      "word": "操你"
+    },
+    {
+      "word": "性高潮"
+    },
+    {
+      "word": "狗母養"
+    },
+    {
+      "word": "狗娘"
+    },
+    {
+      "word": "狗養的"
+    },
+    {
+      "word": "狗雜碎"
+    },
+    {
+      "word": "狗雜種"
+    },
+    {
+      "word": "阻橪住曬"
+    },
+    {
+      "word": "俗啦"
+    },
+    {
+      "word": "肉捧"
+    },
+    {
+      "word": "肉棍"
+    },
+    {
+      "word": "流淫水"
+    },
+    {
+      "word": "唔燃同佢"
+    },
+    {
+      "word": "婊子"
+    },
+    {
+      "word": "強奸"
+    },
+    {
+      "word": "強姦"
+    },
+    {
+      "word": "雲起"
+    },
+    {
+      "word": "塞妮糧勒"
+    },
+    {
+      "word": "跡掰"
+    },
+    {
+      "word": "睾丸"
+    },
+    {
+      "word": "陰蒂"
+    },
+    {
+      "word": "嫖娼"
+    },
+    {
+      "word": "雞巴"
+    },
+    {
+      "word": "雞奸"
+    },
+    {
+      "word": "雞姦"
+    },
+    {
+      "word": "鹹家鏟"
+    },
+    {
+      "word": "爛交"
+    },
+    {
+      "word": "爛妓女"
+    },
+    {
+      "word": "爛婊"
+    },
+    {
+      "word": "爛雞"
+    },
+    {
+      "word": "爛雞巴"
+    },
+    {
+      "word": "中國人民解放軍"
+    },
+    {
+      "word": "中國共產黨"
+    },
+    {
+      "word": "中國國民黨"
+    },
+    {
+      "word": "台聯"
+    },
+    {
+      "word": "台灣民主聯盟"
+    },
+    {
+      "word": "民盟"
+    },
+    {
+      "word": "交易網"
+    },
+    {
+      "word": "姦殺"
+    },
+    {
+      "word": "姦淫"
+    },
+    {
+      "word": "法轮"
+    },
+    {
+      "word": "子宫"
+    },
+    {
+      "word": "打手枪"
+    },
+    {
+      "word": "查缉"
+    },
+    {
+      "word": "施明德"
+    },
+    {
+      "word": "异常"
+    },
+    {
+      "word": "奖品"
+    },
+    {
+      "word": "缉查"
+    },
+    {
+      "word": "肛门"
+    },
+    {
+      "word": "广播"
+    },
+    {
+      "word": "系统"
+    },
+    {
+      "word": "专员"
+    },
+    {
+      "word": "客户"
+    },
+    {
+      "word": "管理员"
+    },
+    {
+      "word": "特派员"
+    },
+    {
+      "word": "荡"
+    },
+    {
+      "word": "白滥"
+    },
+    {
+      "word": "白痴"
+    },
+    {
+      "word": "白烂"
+    },
+    {
+      "word": "吹箫"
+    },
+    {
+      "word": "杂种"
+    },
+    {
+      "word": "强暴"
+    },
+    {
+      "word": "阴毛"
+    },
+    {
+      "word": "阴门"
+    },
+    {
+      "word": "阴茎"
+    },
+    {
+      "word": "阴囊"
+    },
+    {
+      "word": "阳物"
+    },
+    {
+      "word": "阳茎"
+    },
+    {
+      "word": "早泄"
+    },
+    {
+      "word": "爱液"
+    },
+    {
+      "word": "精虫"
+    },
+    {
+      "word": "机掰"
+    },
+    {
+      "word": "龟头"
+    },
+    {
+      "word": "骚"
+    },
+    {
+      "word": "绩掰"
+    },
+    {
+      "word": "杂交"
+    },
+    {
+      "word": "杂碎"
+    },
+    {
+      "word": "鸡八"
+    },
+    {
+      "word": "鸡扒"
+    },
+    {
+      "word": "鸡吧"
+    },
+    {
+      "word": "鸡歪"
+    },
+    {
+      "word": "鸡掰"
+    },
+    {
+      "word": "滥交"
+    },
+    {
+      "word": "烂货"
+    },
+    {
+      "word": "中国"
+    },
+    {
+      "word": "共产"
+    },
+    {
+      "word": "国民党"
+    },
+    {
+      "word": "大陆"
+    },
+    {
+      "word": "反动"
+    },
+    {
+      "word": "反党"
+    },
+    {
+      "word": "台湾"
+    },
+    {
+      "word": "台独"
+    },
+    {
+      "word": "台联台联"
+    },
+    {
+      "word": "台湾独立"
+    },
+    {
+      "word": "奶头"
+    },
+    {
+      "word": "乳头"
+    },
+    {
+      "word": "民主进步党"
+    },
+    {
+      "word": "民进党"
+    },
+    {
+      "word": "共军"
+    },
+    {
+      "word": "共党"
+    },
+    {
+      "word": "摇头丸"
+    },
+    {
+      "word": "马英九"
+    },
+    {
+      "word": "陈水扁"
+    },
+    {
+      "word": "马皇"
+    },
+    {
+      "word": "武力统一"
+    },
+    {
+      "word": "红杉军"
+    },
+    {
+      "word": "国共"
+    },
+    {
+      "word": "处女"
+    },
+    {
+      "word": "钓鱼台"
+    },
+    {
+      "word": "阴唇"
+    },
+    {
+      "word": "阴核"
+    },
+    {
+      "word": "阴道"
+    },
+    {
+      "word": "测试"
+    },
+    {
+      "word": "阳具"
+    },
+    {
+      "word": "解放军"
+    },
+    {
+      "word": "银行"
+    },
+    {
+      "word": "鸦片"
+    },
+    {
+      "word": "亲民党"
+    },
+    {
+      "word": "总统"
+    },
+    {
+      "word": "党派"
+    },
+    {
+      "word": "练功"
+    },
+    {
+      "word": "带客"
+    },
+    {
+      "word": "屄"
+    },
+    {
+      "word": "姦"
+    },
+    {
+      "word": "屌"
+    },
+    {
+      "word": "淦"
+    },
+    {
+      "word": "鳩"
+    },
+    {
+      "word": "榦"
+    },
+    {
+      "word": "紅衫軍"
+    },
+    {
+      "word": "國民政府"
+    },
+    {
+      "word": "國共合作"
+    },
+    {
+      "word": "淋病"
+    },
+    {
+      "word": "莖肛"
+    },
+    {
+      "word": "處女膜"
+    },
+    {
+      "word": "陽萎"
+    },
+    {
+      "word": "精水"
+    },
+    {
+      "word": "蔣介石"
+    },
+    {
+      "word": "賤女人"
+    },
+    {
+      "word": "罌粟"
+    },
+    {
+      "word": "帶老闆練功"
+    },
+    {
+      "word": "援助交際"
+    },
+    {
+      "word": "歐塞康"
+    },
+    {
+      "word": "雞歪歪"
+    },
+    {
+      "word": "獸交"
+    },
+    {
+      "word": "三級片"
+    },
+    {
+      "word": "小穴"
+    },
+    {
+      "word": "小妞來打砲"
+    },
+    {
+      "word": "打炮"
+    },
+    {
+      "word": "性愛"
+    },
+    {
+      "word": "東條英機"
+    },
+    {
+      "word": "淫穴"
+    },
+    {
+      "word": "嫩穴"
+    },
+    {
+      "word": "嫩枝擺"
+    },
+    {
+      "word": "槓暴妳後庭"
+    },
+    {
+      "word": "慰安婦"
+    },
+    {
+      "word": "操死"
+    },
+    {
+      "word": "龜蘭勃火"
+    },
+    {
+      "word": "擠蘭較自殺"
+    },
+    {
+      "word": "媽的"
+    },
+    {
+      "word": "你媽"
+    },
+    {
+      "word": "妳媽"
+    },
+    {
+      "word": "我操"
+    }
+  ]
+}

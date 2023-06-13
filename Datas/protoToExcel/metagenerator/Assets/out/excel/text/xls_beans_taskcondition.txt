@@ -1,0 +1,829 @@
+{
+  "items": [
+    {
+      "condEvent": "Gaming",
+      "id": "battleFirstKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "winCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "joinCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "gameTime",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killCount",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalKillCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "damage",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalDamage",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "RoleTick",
+      "id": "limitLogin",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "RoleTick",
+      "id": "online",
+      "processFlag": 2
+    },
+    {
+      "condEvent": "Login",
+      "id": "totalLogin",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Login",
+      "id": "continueLogin",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange1",
+      "id": "attrChange1",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "AttrChange2",
+      "id": "attrChange2",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange3",
+      "id": "attrChange3",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange4",
+      "id": "attrChange4",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "AttrChange5",
+      "id": "attrChange5",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange6",
+      "id": "attrChange6",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange7",
+      "id": "attrChange7",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange8",
+      "id": "attrChange8",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange9",
+      "id": "attrChange9",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange10",
+      "id": "attrChange10",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange11",
+      "id": "attrChange11",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange12",
+      "id": "attrChange12",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange13",
+      "id": "attrChange13",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange14",
+      "id": "attrChange14",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "AttrChange15",
+      "id": "attrChange15",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange16",
+      "id": "attrChange16",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange17",
+      "id": "attrChange17",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange18",
+      "id": "attrChange18",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange22",
+      "id": "attrChange22",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange23",
+      "id": "attrChange23",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange24",
+      "id": "attrChange24",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange25",
+      "id": "attrChange25",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange27",
+      "id": "attrChange27",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange28",
+      "id": "attrChange28",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange29",
+      "id": "attrChange29",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange30",
+      "id": "attrChange30",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "AttrChange33",
+      "id": "attrChange33",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "FansChange",
+      "id": "follower",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "FinishQuestionare",
+      "id": "finishQuestionare",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "DoLike",
+      "id": "doLike",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "BeLiked",
+      "id": "beLiked",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Following",
+      "id": "following",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "ItemUse",
+      "id": "itemBoxOpen",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "GainItem",
+      "id": "gainItem",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "ChatTask",
+      "id": "channelChat",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "RecruitTask",
+      "id": "recruit",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "ShopTrade",
+      "id": "shopTrade",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "battleWithFollow",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "battlePurchase",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalHeadShotKill",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "headShotKill",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "gainMvp",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "setUpC4",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "defuseC4",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killMonster",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalHitCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalFireCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Invite",
+      "id": "invite",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "InviteAnswer",
+      "id": "invitationAgreed",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "BattleLike",
+      "id": "battleLike",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "BattleLiked",
+      "id": "battleLiked",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalWinRound",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalMoveDistance",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "limitCamp",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "roundTotalMoney",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "limitWinType",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "battleTitle",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "battleRank",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalAssist",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "multiKillCount",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "totalBlindKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "continueDeathNoKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "BattleQuit",
+      "id": "leaveGame",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "campSurvive",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "lastSurvive",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "variedWeaponKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "limitRole",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killAllEnemyAndTeamUnhurt",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killDefuseC4ByGrenades",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "gunKillFromBack",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "daggerKillFromBack",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killOpenMirrorByDagger",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "flashedDagger",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killEnemyInSmoke",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killWithoutMirror",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "throwWeaponCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "throwWeaponHitTotal",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "weaponAssist",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "throwWeaponkill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "throwWeaponHit",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "oneBulletKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "multiAttackSurvived",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killLowHpEnemy",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "suicide",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "grenadesKillWhenDead",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "dyingKillEnemy",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killedByProjectile",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killedInSmoke",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "deadInFlashByTeam",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "uronKillAssist",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "uronDamageByProjectile",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "uronAssistByFlash",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "sceneDestroyed",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "easterEgg",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "setUpC4ToKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "defuseC4AndEnemySurvive",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "comingEndSetUpC4",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killDefusingC4",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "defusingC4Kill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killSetUpC4",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "comingEndDefuseC4",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killChickenByBurn",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "smallKillBig",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "notHeadshotKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killByDagger",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killJoker",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killPolice",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "capturePoint",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "perfectDance",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killAllAndDefuseC4",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killDefuseC4ComingEnd",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "defuseC4ButExplosion",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "lastAmmoKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "surviveTimeWithLowHp",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "surviveTillEnd",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "bigHeadTime",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "assistKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "roundHitRate",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "roundKillAllEnemyBySelf",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "talentTotal",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "usePropTotal",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "ERoleEquipChange",
+      "id": "equipTakeOn",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killBig",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killEnemyInAir",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "meleeFireHeavyKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killBlindedEnemy",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killRankedPlayer",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "beRankedPlayer",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "lastKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "pickUpItem ",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killEnemyAfterDeath",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "FinishTask",
+      "id": "finishTaskCount",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "firstRoundWin",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "DownLoadPacket",
+      "id": "finishResourcePacket",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killSmokedEnemy",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "surviveWithLowHp",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "killEnemyWithMixedSmoke",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "LuckyDraw",
+      "id": "luckyDraw",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "streakKill",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "pveNobodyHelpRespawn",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "deadByZombieGrenades",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "pveRespawnTotalCount",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "pveHelpRespawnCount",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "WinBySetC4OfDeadPartner",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "EquipGSChange",
+      "id": "equipGsTotalScore",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "EquipGSChange",
+      "id": "equipGsTotalActive",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "snipeKillNotMirror",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "NoviceShoot",
+      "id": "noviceShoot",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Gaming",
+      "id": "damageToMonster",
+      "processFlag": 1
+    },
+    {
+      "condEvent": "Login",
+      "id": "updateClientApp",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "Login",
+      "id": "updateClientResource",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "FriendGift",
+      "id": "friendGiftSend",
+      "processFlag": 0
+    },
+    {
+      "condEvent": "FriendGift",
+      "id": "friendGiftRecv",
+      "processFlag": 0
+    }
+  ]
+}

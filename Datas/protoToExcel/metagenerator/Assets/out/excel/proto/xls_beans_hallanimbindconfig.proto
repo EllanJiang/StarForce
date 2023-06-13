@@ -1,0 +1,34 @@
+/**
+* @file:   excel\HallAnimBindConfig.xlsx\HallAnimBindConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message HallAnimBindConfig{
+	// 对应动画Id 
+	uint32 animId = 1;
+	// 阵营 
+	uint32 camp = 2;
+	// 性别 
+	uint32 gender = 3;
+	// 具体人物 
+	uint32 roleSubType3 = 4;
+	// 主武器副武器啥的 
+	uint32 weaponSubType1 = 5;
+	// 枪型 
+	uint32 weaponSubType2 = 6;
+	// 具体枪种类 
+	uint32 weaponSubType3 = 7;
+	// 枪皮肤编号 
+	uint32 weaponLevel = 8;
+	// 权重(默认1) 
+	uint32 weight = 9;
+}
+
+message HallAnimBindConfig_Array {
+	repeated HallAnimBindConfig items = 1;
+}

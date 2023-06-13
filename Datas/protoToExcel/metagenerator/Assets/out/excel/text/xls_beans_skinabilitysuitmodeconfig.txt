@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "headShotDiamondRate": 0,
+      "headShotGoldRate": 0,
+      "headShotRankedCoinRate": 0,
+      "id": 1001,
+      "normalDiamondRate": 0,
+      "normalGoldRate": 0,
+      "normalRankedCoinRate": 0
+    },
+    {
+      "headShotDiamondRate": 5000,
+      "headShotGoldRate": 5000,
+      "headShotRankedCoinRate": 5000,
+      "id": 1002,
+      "normalDiamondRate": 5000,
+      "normalGoldRate": 5000,
+      "normalRankedCoinRate": 5000
+    },
+    {
+      "headShotDiamondRate": 5000,
+      "headShotGoldRate": 5000,
+      "headShotRankedCoinRate": 5000,
+      "id": 1004,
+      "normalDiamondRate": 5000,
+      "normalGoldRate": 5000,
+      "normalRankedCoinRate": 5000
+    }
+  ]
+}

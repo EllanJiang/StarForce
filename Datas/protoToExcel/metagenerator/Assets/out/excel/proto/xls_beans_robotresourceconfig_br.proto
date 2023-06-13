@@ -1,0 +1,31 @@
+/**
+* @file:   excel\RobotResourceConfig_BR.xlsx\RobotResourceConfig_BR
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RobotResourceConfig_BR{
+	// 类型 
+	string resourceType = 1;
+	// 生效范围（0:不生效，1：房间、匹配 2：房间 3：匹配） 
+	uint32 effectScope = 2;
+	// 随机列表 
+	repeated RobotResourceConfig_BR_randomList randomList = 3;
+}
+
+message RobotResourceConfig_BR_randomList{
+	// 随机列表 
+	uint32 id = 1;
+	// 随机权重 
+	uint32 weight = 2;
+	// 开放时间 
+	int64 openTime = 3;
+}
+
+message RobotResourceConfig_BR_Array {
+	repeated RobotResourceConfig_BR items = 1;
+}

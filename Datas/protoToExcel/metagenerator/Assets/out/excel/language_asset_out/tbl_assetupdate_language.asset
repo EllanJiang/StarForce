@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07097ec1edce9e4bb61bca48a4849c2, type: 3}
+  m_Name: tbl_assetupdate_language
+  m_EditorClassIdentifier: 
+  Source:
+    entries:
+    - key: '389329543'
+      showkey: C_AssetUpdate_msg_Init
+      type: 0
+      value:
+        dataValue: 5q2j5Zyo5Yid5aeL5YyW54mI5pys5L+h5oGv
+    - key: '446642631'
+      showkey: C_AssetUpdate_msg_CheckUpdate
+      type: 0
+      value:
+        dataValue: 5q2j5Zyo5qOA5p+l54Ot5pu05paw
+    - key: '399968945'
+      showkey: C_AssetUpdate_msg_DownloadProgress
+      type: 0
+      value:
+        dataValue: 5LiL6L295LitezB9IOS4i+i9vemAn+W6pnsxfQ==
+    - key: 018788412
+      showkey: C_AssetUpdate_msg_Unziping
+      type: 0
+      value:
+        dataValue: 5q2j5Zyo6Kej5Y6LezB9
+    - key: '411861434'
+      showkey: C_AssetUpdate_msg_NetError
+      type: 0
+      value:
+        dataValue: 572R57uc6L+e5o6l5byC5bi477yM5peg5rOV6L+e5o6l5pyN5Yqh5Zmo77yM6K+36YeN6K+V
+    - key: '513994946'
+      showkey: C_AssetUpdate_msg_InitError
+      type: 0
+      value:
+        dataValue: 5Yid5aeL5YyW54Ot5pu054mI5pys5pWw5o2u5aSx6LSl77yM6K+36YeN6K+V
+    - key: '503174809'
+      showkey: C_AssetUpdate_msg_HardDiskFull
+      type: 0
+      value:
+        dataValue: 6K6+5aSH5a2Y5YKo56m66Ze05LiN6Laz77yM6ZyA6KaB5a2Y5YKo56m66Ze077yaezB9
+    - key: '254783820'
+      showkey: C_AssetUpdate_msg_DownloadError
+      type: 0
+      value:
+        dataValue: 5LiL6L295pu05paw5paH5Lu25aSx6LSl77yM6K+36YeN6K+V
+    - key: '924508914'
+      showkey: C_AssetUpdate_msg_Error
+      type: 0
+      value:
+        dataValue: 5pu05paw5byC5bi477yM6K+36YeN6K+V
+    - key: '247526995'
+      showkey: C_AssetUpdate_msg_AppStoreDownload
+      type: 0
+      value:
+        dataValue: 5b2T5YmN5LiN5piv5pyA5paw54mI5pys77yM6K+35YmN5b6A5bqU55So5ZWG5bqX5pu05paw
+    - key: '469620253'
+      showkey: C_AssetUpdate_msg_RecommendDownload
+      type: 0
+      value:
+        dataValue: 5o6o6I2Q5pu05paw77yM5b2T5YmN54mI5pys77yaezB9LOebruagh+eJiOacrO+8mnsxfSzmlofku7blpKflsI/vvJp7Mn0=
+    - key: '961086474'
+      showkey: C_AssetUpdate_msg_PreDownload
+      type: 0
+      value:
+        dataValue: 5piv5ZCm6aKE5LiL6L295pu05paw54mI5pys77yM5b2T5YmN54mI5pys77yaezB9LOebruagh+eJiOacrO+8mnsxfSzmlofku7blpKflsI/vvJp7Mn0=
+    - key: '501708304'
+      showkey: C_AssetUpdate_msg_Repair
+      type: 0
+      value:
+        dataValue: 5b2T5YmN54mI5pys5paH5Lu25byC5bi477yM5piv5ZCm5bCd6K+V5L+u5aSN5bm25LiU6YeN5ZCv5ri45oiP
+    - key: '419159655'
+      showkey: C_AssetUpdate_msg_HttpStatusCode404Error
+      type: 0
+      value:
+        dataValue: 6I635Y+W54mI5pys5L+h5oGv5aSx6LSl77yM6K+36YeN6K+V
+    - key: 080757760
+      showkey: C_AssetUpdate_msg_Confirm
+      type: 0
+      value:
+        dataValue: 56Gu6K6k
+    - key: 061453882
+      showkey: C_AssetUpdate_msg_Cancel
+      type: 0
+      value:
+        dataValue: 5Y+W5raI
+    - key: 060099736
+      showkey: C_AssetUpdate_msg_AssetPackDownloadProgress
+      type: 0
+      value:
+        dataValue: 5q2j5Zyo5Li65oKo5LiL6L296LWE5rqQ5YyF77yIezB9L3sxfe+8iQ==
+    - key: '738937377'
+      showkey: C_AssetUpdate_msg_DownloadLanguageFailTip
+      type: 0
+      value:
+        dataValue: 6K+t6KiA5YyF5LiL6L295aSx6LSl77yM5Y+v5Lul5Zyo6K6+572u6aG16Z2i6YeN5paw5LiL6L29

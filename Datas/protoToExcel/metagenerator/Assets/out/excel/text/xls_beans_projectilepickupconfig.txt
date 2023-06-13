@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "showTime": 8,
+      "subType": 1
+    },
+    {
+      "id": 2,
+      "showTime": 8,
+      "subType": 2
+    },
+    {
+      "id": 3,
+      "showTime": 8,
+      "subType": 3
+    },
+    {
+      "id": 4,
+      "showTime": 99999,
+      "subType": 4
+    },
+    {
+      "id": 5,
+      "showTime": 8,
+      "subType": 5
+    },
+    {
+      "id": 6,
+      "showTime": 99999,
+      "subType": 6
+    },
+    {
+      "id": 7,
+      "showTime": 8,
+      "subType": 7
+    },
+    {
+      "id": 40,
+      "showTime": 99999,
+      "subType": 0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+/**
+* @file:   excel\MaterialDataConfig.xlsx\MaterialDataConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MaterialDataConfig{
+	// 编号 
+	uint32 id = 1;
+	// 材质名 
+	string name = 2;
+	// 能否被穿透 
+	bool canPene = 3;
+	// 最小穿透力 
+	float minPene = 4;
+	// 基础穿透衰减值 
+	float baseDecay = 5;
+	// 额外穿透衰减比例 
+	float extraDecay = 6;
+	// 能否避免坠落伤害 
+	bool CanAvoidFallDamage = 7;
+	// 摩擦系数 
+	float FrictionCoefficient  = 8;
+	// 移动摩擦系数 
+	float MoveFriction = 9;
+	// 是否属于地面材质 
+	bool IsEarth = 10;
+}
+
+message MaterialDataConfig_Array {
+	repeated MaterialDataConfig items = 1;
+}

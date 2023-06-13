@@ -1,0 +1,22 @@
+/**
+* @file:   excel\RoleLikeConfig.xlsx\RoleLikeConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleLikeConfig{
+	// 点赞类型 
+	string id = 1;
+	// 日限制 
+	uint32 dayLimit = 2;
+	// 点赞文本 
+	string Text = 3;
+}
+
+message RoleLikeConfig_Array {
+	repeated RoleLikeConfig items = 1;
+}

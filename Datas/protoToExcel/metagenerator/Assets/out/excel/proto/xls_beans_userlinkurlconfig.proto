@@ -1,0 +1,20 @@
+/**
+* @file:   excel\UserLinkUrlConfig.xlsx\UserLinkUrlConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message UserLinkUrlConfig{
+	// id 
+	string id = 1;
+	// 地址 
+	string url = 2;
+}
+
+message UserLinkUrlConfig_Array {
+	repeated UserLinkUrlConfig items = 1;
+}

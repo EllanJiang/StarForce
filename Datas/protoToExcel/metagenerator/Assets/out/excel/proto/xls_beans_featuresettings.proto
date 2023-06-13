@@ -1,0 +1,24 @@
+/**
+* @file:   excel\FeatureSettings.xlsx\FeatureSettings
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message FeatureSettings{
+	// 特性id 
+	int32 id = 1;
+	// 特性名称 
+	string  feature_name = 2;
+	// 流畅 
+	repeated int32 tiers = 3;
+	// 目标管线(0: Lobby, 1: Battle, 2: Both) 
+	int32 target_scenario = 4;
+}
+
+message FeatureSettings_Array {
+	repeated FeatureSettings items = 1;
+}

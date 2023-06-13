@@ -1,0 +1,31 @@
+/**
+* @file:   excel\MazeClashRandomStageConfig.xlsx\MazeClashRandomStageConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MazeClashRandomStageConfig{
+	// 模式关卡 
+	uint32 modeStageId = 1;
+	// 回合数 
+	uint32 roundNum = 2;
+	// config组ID 
+	repeated MazeClashRandomStageConfig_stageList stageList = 3;
+}
+
+message MazeClashRandomStageConfig_stageList{
+	// config组ID 
+	uint32 configId = 1;
+	// dynamic组ID 
+	uint32 dynamicId = 2;
+	// 随机权重 
+	uint32 randomWeight = 3;
+}
+
+message MazeClashRandomStageConfig_Array {
+	repeated MazeClashRandomStageConfig items = 1;
+}

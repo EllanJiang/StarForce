@@ -1,0 +1,20 @@
+/**
+* @file:   excel\RoleEnterSceneVoice.xlsx\RoleEnterSceneVoice
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoleEnterSceneVoice{
+	// 场景id 
+	uint32 id = 1;
+	// role0的语音222010801 
+	repeated string role = 2;
+}
+
+message RoleEnterSceneVoice_Array {
+	repeated RoleEnterSceneVoice items = 1;
+}

@@ -1,0 +1,1012 @@
+{
+  "items": [
+    {
+      "attenuation": 0,
+      "id": 101,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 1
+        }
+      ],
+      "weight": 5
+    },
+    {
+      "attenuation": 0,
+      "id": 102,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 2
+        }
+      ],
+      "weight": 7
+    },
+    {
+      "attenuation": 0,
+      "id": 103,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 3
+        }
+      ],
+      "weight": 7
+    },
+    {
+      "attenuation": 0,
+      "id": 104,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 4
+        }
+      ],
+      "weight": 7
+    },
+    {
+      "attenuation": 0,
+      "id": 105,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 5
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 106,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 6
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 107,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 7
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 108,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 8
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 109,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 9
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 110,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 10
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 111,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 11
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 112,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 12
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 113,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 13
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 114,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 14
+        }
+      ],
+      "weight": 12
+    },
+    {
+      "attenuation": 0,
+      "id": 115,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 15
+        }
+      ],
+      "weight": 40
+    },
+    {
+      "attenuation": 0,
+      "id": 116,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 16
+        }
+      ],
+      "weight": 40
+    },
+    {
+      "attenuation": 0,
+      "id": 117,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 17
+        }
+      ],
+      "weight": 40
+    },
+    {
+      "attenuation": 0,
+      "id": 118,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 20
+        }
+      ],
+      "weight": 60
+    },
+    {
+      "attenuation": 0,
+      "id": 119,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 21
+        }
+      ],
+      "weight": 50
+    },
+    {
+      "attenuation": 0,
+      "id": 120,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 22
+        }
+      ],
+      "weight": 60
+    },
+    {
+      "attenuation": 0,
+      "id": 121,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 23
+        }
+      ],
+      "weight": 50
+    },
+    {
+      "attenuation": 0,
+      "id": 301,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 5
+        }
+      ],
+      "weight": 1
+    },
+    {
+      "attenuation": 0,
+      "id": 302,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 6
+        }
+      ],
+      "weight": 1
+    },
+    {
+      "attenuation": 0,
+      "id": 303,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 7
+        }
+      ],
+      "weight": 1
+    },
+    {
+      "attenuation": 0,
+      "id": 304,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 8
+        }
+      ],
+      "weight": 2
+    },
+    {
+      "attenuation": 0,
+      "id": 305,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 9
+        }
+      ],
+      "weight": 2
+    },
+    {
+      "attenuation": 0,
+      "id": 306,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 10
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "attenuation": 0,
+      "id": 307,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 11
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "attenuation": 0,
+      "id": 308,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 12
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "attenuation": 0,
+      "id": 309,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 13
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "attenuation": 0,
+      "id": 310,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 14
+        }
+      ],
+      "weight": 3
+    },
+    {
+      "attenuation": 0,
+      "id": 1001,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 1
+        }
+      ],
+      "weight": 1
+    },
+    {
+      "attenuation": 0,
+      "id": 1002,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 2
+        }
+      ],
+      "weight": 2
+    },
+    {
+      "attenuation": 0,
+      "id": 1003,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 3
+        }
+      ],
+      "weight": 2
+    },
+    {
+      "attenuation": 0,
+      "id": 1004,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 4
+        }
+      ],
+      "weight": 2
+    },
+    {
+      "attenuation": 0,
+      "id": 1005,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 5
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 1006,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 6
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 1007,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 7
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 401,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 1
+        }
+      ],
+      "weight": 1
+    },
+    {
+      "attenuation": 0,
+      "id": 402,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 2
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 403,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 3
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 404,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 4
+        }
+      ],
+      "weight": 10
+    },
+    {
+      "attenuation": 0,
+      "id": 501,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 1
+        }
+      ],
+      "weight": 1000
+    },
+    {
+      "attenuation": 0,
+      "id": 601,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 36
+        }
+      ],
+      "weight": 19
+    },
+    {
+      "attenuation": 0,
+      "id": 602,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 37
+        }
+      ],
+      "weight": 30
+    },
+    {
+      "attenuation": 0,
+      "id": 603,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 38
+        }
+      ],
+      "weight": 30
+    },
+    {
+      "attenuation": 0,
+      "id": 604,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 39
+        }
+      ],
+      "weight": 30
+    },
+    {
+      "attenuation": 0,
+      "id": 605,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 40
+        }
+      ],
+      "weight": 30
+    },
+    {
+      "attenuation": 0,
+      "id": 606,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 41
+        }
+      ],
+      "weight": 57
+    },
+    {
+      "attenuation": 0,
+      "id": 607,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 42
+        }
+      ],
+      "weight": 57
+    },
+    {
+      "attenuation": 0,
+      "id": 608,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 43
+        }
+      ],
+      "weight": 57
+    },
+    {
+      "attenuation": 0,
+      "id": 609,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 44
+        }
+      ],
+      "weight": 57
+    },
+    {
+      "attenuation": 0,
+      "id": 610,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 45
+        }
+      ],
+      "weight": 531
+    },
+    {
+      "attenuation": 0,
+      "id": 611,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 46
+        }
+      ],
+      "weight": 455
+    },
+    {
+      "attenuation": 0,
+      "id": 612,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 47
+        }
+      ],
+      "weight": 531
+    },
+    {
+      "attenuation": 0,
+      "id": 613,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 48
+        }
+      ],
+      "weight": 455
+    },
+    {
+      "attenuation": 0,
+      "id": 614,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 49
+        }
+      ],
+      "weight": 531
+    },
+    {
+      "attenuation": 0,
+      "id": 615,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 50
+        }
+      ],
+      "weight": 455
+    },
+    {
+      "attenuation": 0,
+      "id": 616,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 51
+        }
+      ],
+      "weight": 531
+    },
+    {
+      "attenuation": 0,
+      "id": 617,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 52
+        }
+      ],
+      "weight": 455
+    },
+    {
+      "attenuation": 0,
+      "id": 618,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 53
+        }
+      ],
+      "weight": 531
+    },
+    {
+      "attenuation": 0,
+      "id": 619,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 54
+        }
+      ],
+      "weight": 455
+    },
+    {
+      "attenuation": 0,
+      "id": 620,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 55
+        }
+      ],
+      "weight": 607
+    },
+    {
+      "attenuation": 0,
+      "id": 621,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 56
+        }
+      ],
+      "weight": 569
+    },
+    {
+      "attenuation": 0,
+      "id": 622,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 57
+        }
+      ],
+      "weight": 607
+    },
+    {
+      "attenuation": 0,
+      "id": 623,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 58
+        }
+      ],
+      "weight": 569
+    },
+    {
+      "attenuation": 0,
+      "id": 624,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 59
+        }
+      ],
+      "weight": 607
+    },
+    {
+      "attenuation": 0,
+      "id": 625,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 60
+        }
+      ],
+      "weight": 569
+    },
+    {
+      "attenuation": 0,
+      "id": 626,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 61
+        }
+      ],
+      "weight": 607
+    },
+    {
+      "attenuation": 0,
+      "id": 627,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 62
+        }
+      ],
+      "weight": 569
+    },
+    {
+      "attenuation": 0,
+      "id": 701,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 37
+        }
+      ],
+      "weight": 420
+    },
+    {
+      "attenuation": 0,
+      "id": 702,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 38
+        }
+      ],
+      "weight": 420
+    },
+    {
+      "attenuation": 0,
+      "id": 703,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 39
+        }
+      ],
+      "weight": 420
+    },
+    {
+      "attenuation": 0,
+      "id": 704,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 40
+        }
+      ],
+      "weight": 420
+    },
+    {
+      "attenuation": 0,
+      "id": 705,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 41
+        }
+      ],
+      "weight": 2080
+    },
+    {
+      "attenuation": 0,
+      "id": 706,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 42
+        }
+      ],
+      "weight": 2080
+    },
+    {
+      "attenuation": 0,
+      "id": 707,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 43
+        }
+      ],
+      "weight": 2080
+    },
+    {
+      "attenuation": 0,
+      "id": 708,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 44
+        }
+      ],
+      "weight": 2080
+    },
+    {
+      "attenuation": 0,
+      "id": 801,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 36
+        }
+      ],
+      "weight": 200
+    },
+    {
+      "attenuation": 0,
+      "id": 802,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 37
+        }
+      ],
+      "weight": 2450
+    },
+    {
+      "attenuation": 0,
+      "id": 803,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 38
+        }
+      ],
+      "weight": 2450
+    },
+    {
+      "attenuation": 0,
+      "id": 804,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 39
+        }
+      ],
+      "weight": 2450
+    },
+    {
+      "attenuation": 0,
+      "id": 805,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 40
+        }
+      ],
+      "weight": 2450
+    },
+    {
+      "attenuation": 0,
+      "id": 901,
+      "limit": 0,
+      "limitTimeType": "",
+      "rewards": [
+        {
+          "id": 36
+        }
+      ],
+      "weight": 1000
+    }
+  ]
+}

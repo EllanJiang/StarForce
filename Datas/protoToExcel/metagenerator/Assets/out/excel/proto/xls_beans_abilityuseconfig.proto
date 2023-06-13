@@ -1,0 +1,49 @@
+/**
+* @file:   excel\AbilityUseConfig.xlsx\AbilityUseConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message AbilityUseConfig{
+	// Ability id 
+	uint32 id = 1;
+	// 生效入口 
+	repeated uint32 EntranceType = 2;
+	// 生效模式ID 
+	repeated uint32 GameMode = 3;
+	// 能力类型 
+	uint32 AbilityType = 4;
+	// 对应能力类型填充的参数 
+	uint32 AbilityParameter = 5;
+	// 受益武器id 
+	repeated uint32 weaponList = 6;
+	// 品质 
+	uint32 quality = 7;
+	// 名称 
+	string Name = 8;
+	// 描述 
+	string Description = 9;
+	// 分组 
+	uint32 Group = 10;
+	// 效果类型 
+	uint32 EffectType = 11;
+	// 描述参数1 
+	repeated AbilityUseConfig_DescriptionParams DescriptionParams = 12;
+	// 图标 
+	uint32 IconID = 13;
+}
+
+message AbilityUseConfig_DescriptionParams{
+	// 描述参数1 
+	float Value = 1;
+	// 参数可累加 
+	bool CanAdd = 2;
+}
+
+message AbilityUseConfig_Array {
+	repeated AbilityUseConfig items = 1;
+}

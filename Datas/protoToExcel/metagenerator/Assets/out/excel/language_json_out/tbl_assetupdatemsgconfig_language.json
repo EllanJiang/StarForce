@@ -1,0 +1,70 @@
+{
+  "389329543": [
+    "C_AssetUpdate_msg_Init",
+    "C_AssetUpdate_msg_Init"
+  ],
+  "446642631": [
+    "C_AssetUpdate_msg_CheckUpdate",
+    "C_AssetUpdate_msg_CheckUpdate"
+  ],
+  "399968945": [
+    "C_AssetUpdate_msg_DownloadProgress",
+    "C_AssetUpdate_msg_DownloadProgress"
+  ],
+  "018788412": [
+    "C_AssetUpdate_msg_Unziping",
+    "C_AssetUpdate_msg_Unziping"
+  ],
+  "411861434": [
+    "C_AssetUpdate_msg_NetError",
+    "C_AssetUpdate_msg_NetError"
+  ],
+  "513994946": [
+    "C_AssetUpdate_msg_InitError",
+    "C_AssetUpdate_msg_InitError"
+  ],
+  "503174809": [
+    "C_AssetUpdate_msg_HardDiskFull",
+    "C_AssetUpdate_msg_HardDiskFull"
+  ],
+  "254783820": [
+    "C_AssetUpdate_msg_DownloadError",
+    "C_AssetUpdate_msg_DownloadError"
+  ],
+  "924508914": [
+    "C_AssetUpdate_msg_Error",
+    "C_AssetUpdate_msg_Error"
+  ],
+  "247526995": [
+    "C_AssetUpdate_msg_AppStoreDownload",
+    "C_AssetUpdate_msg_AppStoreDownload"
+  ],
+  "469620253": [
+    "C_AssetUpdate_msg_RecommendDownload",
+    "C_AssetUpdate_msg_RecommendDownload"
+  ],
+  "961086474": [
+    "C_AssetUpdate_msg_PreDownload",
+    "C_AssetUpdate_msg_PreDownload"
+  ],
+  "501708304": [
+    "C_AssetUpdate_msg_Repair",
+    "C_AssetUpdate_msg_Repair"
+  ],
+  "419159655": [
+    "C_AssetUpdate_msg_HttpStatusCode404Error",
+    "C_AssetUpdate_msg_HttpStatusCode404Error"
+  ],
+  "080757760": [
+    "C_AssetUpdate_msg_Confirm",
+    "C_AssetUpdate_msg_Confirm"
+  ],
+  "061453882": [
+    "C_AssetUpdate_msg_Cancel",
+    "C_AssetUpdate_msg_Cancel"
+  ],
+  "060099736": [
+    "C_AssetUpdate_msg_AssetPackDownloadProgress",
+    "C_AssetUpdate_msg_AssetPackDownloadProgress"
+  ]
+}

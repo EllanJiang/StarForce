@@ -1,0 +1,24 @@
+/**
+* @file:   excel\BRWeaponDataConfig.xlsx\BRWeaponDataConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRWeaponDataConfig{
+	// BR武器识别id 
+	uint32 id = 1;
+	// 品质 
+	uint32 quality = 2;
+	// 描述ID(多语言key) 
+	string descId = 3;
+	// buffid 
+	repeated uint32 buff = 4;
+}
+
+message BRWeaponDataConfig_Array {
+	repeated BRWeaponDataConfig items = 1;
+}

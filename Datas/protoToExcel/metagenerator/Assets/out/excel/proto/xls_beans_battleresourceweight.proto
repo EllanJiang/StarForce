@@ -1,0 +1,26 @@
+/**
+* @file:   excel\BattleResourceWeight.xlsx\BattleResourceWeight
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattleResourceWeight{
+	// key 
+	uint32 id = 1;
+	// 基础资源 
+	uint32 initResouece = 2;
+	// 每个真实玩家占用资源 
+	uint32 roleResource = 3;
+	// 每个机器人占用资源 
+	uint32 robotResource = 4;
+	// 独占ds 
+	uint32 separateDs = 5;
+}
+
+message BattleResourceWeight_Array {
+	repeated BattleResourceWeight items = 1;
+}

@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "itemPool": [
+        {
+          "poolId": 1,
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "itemPool": [
+        {
+          "poolId": 2,
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "itemPool": [
+        {
+          "poolId": 3,
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "itemPool": [
+        {
+          "poolId": 1,
+          "weight": 40
+        },
+        {
+          "poolId": 2,
+          "weight": 30
+        },
+        {
+          "poolId": 3,
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

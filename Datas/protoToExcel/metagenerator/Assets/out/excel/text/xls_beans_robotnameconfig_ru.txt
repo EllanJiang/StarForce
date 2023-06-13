@@ -1,0 +1,1009 @@
+{
+  "items": [
+    {
+      "robotFirstName": "Мара",
+      "robotSecondName": "Пак",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Кура",
+      "robotSecondName": "Грил",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тоня",
+      "robotSecondName": "Мышь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Соня",
+      "robotSecondName": "Пила",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Кара",
+      "robotSecondName": "Ночь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тома",
+      "robotSecondName": "Кусь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мира",
+      "robotSecondName": "Парк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Молли",
+      "robotSecondName": "Ким",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мила",
+      "robotSecondName": "Пик",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Рики",
+      "robotSecondName": "Тики",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Алия",
+      "robotSecondName": "Река",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лия",
+      "robotSecondName": "Лиса",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Фара",
+      "robotSecondName": "Гром",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Злюка",
+      "robotSecondName": "Мор",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Крошка",
+      "robotSecondName": "Мета",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Цветик",
+      "robotSecondName": "Луна",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Уля",
+      "robotSecondName": "Мина",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Сова",
+      "robotSecondName": "Иль",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лина",
+      "robotSecondName": "Рок",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Нина",
+      "robotSecondName": "Сказ",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Наташа",
+      "robotSecondName": "Кот",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лика",
+      "robotSecondName": "Фитц",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Катя",
+      "robotSecondName": "Маль",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Яна",
+      "robotSecondName": "Тори",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Камила",
+      "robotSecondName": "Ток",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Агнес",
+      "robotSecondName": "Муха",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Полина",
+      "robotSecondName": "Ван",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Нариз",
+      "robotSecondName": "Пли",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Сара",
+      "robotSecondName": "Рост",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Китти",
+      "robotSecondName": "Скил",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Аглая",
+      "robotSecondName": "Лик",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ая",
+      "robotSecondName": "Бор",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тара",
+      "robotSecondName": "Тик",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лола",
+      "robotSecondName": "Рай",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ева",
+      "robotSecondName": "Жиза",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вера",
+      "robotSecondName": "Заря",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Надя",
+      "robotSecondName": "Хлоп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Дария",
+      "robotSecondName": "Приз",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ива",
+      "robotSecondName": "Игла",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Маша",
+      "robotSecondName": "Ось",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мать",
+      "robotSecondName": "Роса",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лань",
+      "robotSecondName": "Мед",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лизи",
+      "robotSecondName": "Мар",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Оливка",
+      "robotSecondName": "Миг",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Соль",
+      "robotSecondName": "Лими",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Реми",
+      "robotSecondName": "Маэр",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Окко",
+      "robotSecondName": "Рэи",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Пума",
+      "robotSecondName": "Суль",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вета",
+      "robotSecondName": "Май",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Алекс",
+      "robotSecondName": "Айли",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Робин",
+      "robotSecondName": "Сати",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Маля",
+      "robotSecondName": "Киса",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Аля",
+      "robotSecondName": "Сама",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Нулия",
+      "robotSecondName": "Яма",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Света",
+      "robotSecondName": "Умь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Грета",
+      "robotSecondName": "Ост",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Елена",
+      "robotSecondName": "Пинг",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лена",
+      "robotSecondName": "Утка",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Яло",
+      "robotSecondName": "Агар",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лити",
+      "robotSecondName": "Коса",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Галя",
+      "robotSecondName": "Боль",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мина",
+      "robotSecondName": "Эхо",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ики",
+      "robotSecondName": "Киж",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Нуи",
+      "robotSecondName": "Ой",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Айки",
+      "robotSecondName": "Око",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лусия",
+      "robotSecondName": "Липа",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Сиа",
+      "robotSecondName": "Лунь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Шиман",
+      "robotSecondName": "Море",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ани",
+      "robotSecondName": "Гора",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Марина",
+      "robotSecondName": "Моль",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Таня",
+      "robotSecondName": "Ай",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лейсан",
+      "robotSecondName": "Яга",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Сата",
+      "robotSecondName": "Инг",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Амелия",
+      "robotSecondName": "Доля",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Жанна",
+      "robotSecondName": "Коми",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Эния",
+      "robotSecondName": "Ранк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Гея",
+      "robotSecondName": "Хор",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Точка",
+      "robotSecondName": "Хан",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Чика",
+      "robotSecondName": "Анк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Каска",
+      "robotSecondName": "Горе",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тамара",
+      "robotSecondName": "Твар",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Амара",
+      "robotSecondName": "Гнев",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Рия",
+      "robotSecondName": "Вера",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ашрия",
+      "robotSecondName": "Тира",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Шура",
+      "robotSecondName": "Три",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Сима",
+      "robotSecondName": "Два",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Слива",
+      "robotSecondName": "Один",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вита",
+      "robotSecondName": "Писк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Рита",
+      "robotSecondName": "Сими",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Марго",
+      "robotSecondName": "Миля",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лекси",
+      "robotSecondName": "Лям",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Аия",
+      "robotSecondName": "Опал",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Имис",
+      "robotSecondName": "Руд",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лора",
+      "robotSecondName": "Пали",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лариса",
+      "robotSecondName": "Лопь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Асия",
+      "robotSecondName": "Шина",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ася",
+      "robotSecondName": "Квин",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Настя",
+      "robotSecondName": "Ель",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Пойа",
+      "robotSecondName": "Надо",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Суми",
+      "robotSecondName": "Хаха",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Амалия",
+      "robotSecondName": "Нуи",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Луи",
+      "robotSecondName": "Кор",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Комар",
+      "robotSecondName": "Ясь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Гоша",
+      "robotSecondName": "Куп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Таир",
+      "robotSecondName": "Пул",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Рик",
+      "robotSecondName": "Пол",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тихон",
+      "robotSecondName": "Орк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Икар",
+      "robotSecondName": "Клен",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Услав",
+      "robotSecondName": "Ирис",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Гаф",
+      "robotSecondName": "Пал",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Карл",
+      "robotSecondName": "Аут",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Карп",
+      "robotSecondName": "Брек",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Пол",
+      "robotSecondName": "Мяч",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лемон",
+      "robotSecondName": "Грот",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Марат",
+      "robotSecondName": "Псих",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Петр",
+      "robotSecondName": "Хит",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Клод",
+      "robotSecondName": "Снег",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Гор",
+      "robotSecondName": "Илим",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Азар",
+      "robotSecondName": "Сих",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Эм",
+      "robotSecondName": "Угол",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Зик",
+      "robotSecondName": "Угрь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Йос",
+      "robotSecondName": "Бобр",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Кир",
+      "robotSecondName": "Яд",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Артем",
+      "robotSecondName": "Йад",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тема",
+      "robotSecondName": "Лив",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Али",
+      "robotSecondName": "Оток",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лим",
+      "robotSecondName": "Куир",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Виктор",
+      "robotSecondName": "Юс",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ильдар",
+      "robotSecondName": "Усун",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Зевс",
+      "robotSecondName": "Нес",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Арам",
+      "robotSecondName": "Пат",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Алаир",
+      "robotSecondName": "Шах",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Кол",
+      "robotSecondName": "Март",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Фир",
+      "robotSecondName": "План",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ливан",
+      "robotSecondName": "Род",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лекс",
+      "robotSecondName": "Эос",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Техник",
+      "robotSecondName": "Бог",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Химик",
+      "robotSecondName": "Йазь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вирус",
+      "robotSecondName": "Мем",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Бонус",
+      "robotSecondName": "Мим",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Владир",
+      "robotSecondName": "Грас",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Димас",
+      "robotSecondName": "Лорд",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Йарик",
+      "robotSecondName": "Тапк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Митас",
+      "robotSecondName": "Танк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Октан",
+      "robotSecondName": "Кэп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мислав",
+      "robotSecondName": "Конь",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вадир",
+      "robotSecondName": "Плен",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Доук",
+      "robotSecondName": "Клуб",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Матвей",
+      "robotSecondName": "Бура",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мотя",
+      "robotSecondName": "Наст",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ян",
+      "robotSecondName": "Грип",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Миша",
+      "robotSecondName": "Шток",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Антон",
+      "robotSecondName": "Кол",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Иван",
+      "robotSecondName": "Мист",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Люк",
+      "robotSecondName": "Пит",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тип",
+      "robotSecondName": "Курс",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Влад",
+      "robotSecondName": "Опа",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Дима",
+      "robotSecondName": "Пан",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Егор",
+      "robotSecondName": "Крот",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тост",
+      "robotSecondName": "Ус",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Феликс",
+      "robotSecondName": "Суп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Илья",
+      "robotSecondName": "Пуск",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Марк",
+      "robotSecondName": "Стоп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Макс",
+      "robotSecondName": "Топ",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Алек$",
+      "robotSecondName": "Хром",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Серж",
+      "robotSecondName": "Мол",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Роман",
+      "robotSecondName": "Куст",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ник",
+      "robotSecondName": "Тарк",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вася",
+      "robotSecondName": "Ваз",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Андрей",
+      "robotSecondName": "Укол",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Роберт",
+      "robotSecondName": "Удав",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тимур",
+      "robotSecondName": "Такт",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тим",
+      "robotSecondName": "Лом",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Майк",
+      "robotSecondName": "Рев",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Адам",
+      "robotSecondName": "Иньо",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вадим",
+      "robotSecondName": "Хлюп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Влас",
+      "robotSecondName": "Бам",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Вл@д",
+      "robotSecondName": "Лок",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лев",
+      "robotSecondName": "Тут",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мирон",
+      "robotSecondName": "Ять",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Франк",
+      "robotSecondName": "Пост",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Артур",
+      "robotSecondName": "Йоло",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Генри",
+      "robotSecondName": "Глаз",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ярик",
+      "robotSecondName": "Лис",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Риск",
+      "robotSecondName": "Лист",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Крис",
+      "robotSecondName": "Гр0м",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Себ",
+      "robotSecondName": "Храм",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Борис",
+      "robotSecondName": "Плащ",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Эрик",
+      "robotSecondName": "Сто",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Роджер",
+      "robotSecondName": "Оса",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Лео",
+      "robotSecondName": "Тост",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Дон",
+      "robotSecondName": "Орел",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мик",
+      "robotSecondName": "Троп",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Раф",
+      "robotSecondName": "Смок",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Фил",
+      "robotSecondName": "Ок",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Мирк",
+      "robotSecondName": "Альт",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Степан",
+      "robotSecondName": "Лоск",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Тони",
+      "robotSecondName": "Шлем",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Жора",
+      "robotSecondName": "Скар",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Сэм",
+      "robotSecondName": "Гол",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ким",
+      "robotSecondName": "Соло",
+      "robotThreeName": ""
+    }
+  ]
+}

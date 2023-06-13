@@ -1,0 +1,38 @@
+/**
+* @file:   excel\BallisticListConfig.xlsx\BallisticListConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BallisticListConfig{
+	// 词条id 1001（1000000开头弹幕词条；2000000开头数值词条） 
+	uint32 id = 1;
+	// 弹道类型 对应程序Enum结构 
+	uint32 BallisticType = 2;
+	// 弹道配置表名称 
+	string ConfigName = 3;
+	// 弹幕名 
+	string BallisticName = 4;
+	// 词条内容说明 
+	string BallisticDes = 5;
+	// 超低配下显示个数 
+	     uint32 UltraldLimitCount = 6;
+	// 低配下显示个数 
+	     uint32 LdLimitCount = 7;
+	// 高配 
+	uint32 HdLimitCount = 8;
+	// 枪械种类限制 
+	repeated uint32 LimitGunTypeID = 9;
+	// 特有词条枪械种类 
+	repeated uint32 SpecificGunTypeID = 10;
+	// 品质 
+	uint32 Quality = 11;
+}
+
+message BallisticListConfig_Array {
+	repeated BallisticListConfig items = 1;
+}

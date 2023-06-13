@@ -1,0 +1,272 @@
+{
+  "items": [
+    {
+      "AddChickenIDList": [
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Ordinary",
+      "CollectScore": 1,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "790962973",
+      "Level": 1,
+      "MonsterDataID": 1,
+      "Name": "774518839",
+      "RunSpeedRate": 2.0,
+      "SoundDetectDis": 5,
+      "SoundDetectRate": 20,
+      "id": 1
+    },
+    {
+      "AddChickenIDList": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 1,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Blood volume_01.png",
+      "DetailStr": "767951669",
+      "Level": 1,
+      "MonsterDataID": 2,
+      "Name": "158880650",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 2
+    },
+    {
+      "AddChickenIDList": [
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Accelerat",
+      "CollectScore": 1,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Accelerate_01.png",
+      "DetailStr": "518127110",
+      "Level": 1,
+      "MonsterDataID": 3,
+      "Name": "474368407",
+      "RunSpeedRate": 2.0,
+      "SoundDetectDis": 5,
+      "SoundDetectRate": 1,
+      "id": 3
+    },
+    {
+      "AddChickenIDList": [
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Money",
+      "CollectScore": 1,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Money_01.png",
+      "DetailStr": "152690058",
+      "Level": 1,
+      "MonsterDataID": 4,
+      "Name": "967352123",
+      "RunSpeedRate": 2.0,
+      "SoundDetectDis": 5,
+      "SoundDetectRate": 10,
+      "id": 4
+    },
+    {
+      "AddChickenIDList": [
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Blast",
+      "CollectScore": 1,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Blast_01.png",
+      "DetailStr": "094878891",
+      "Level": 1,
+      "MonsterDataID": 5,
+      "Name": "404715632",
+      "RunSpeedRate": 2.0,
+      "SoundDetectDis": 5,
+      "SoundDetectRate": 10,
+      "id": 5
+    },
+    {
+      "AddChickenIDList": [],
+      "AnimatorStateName": "FX_Chick_Ordinary",
+      "CollectScore": 1,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "790962973",
+      "Level": 1,
+      "MonsterDataID": 6,
+      "Name": "220642917",
+      "RunSpeedRate": 2.0,
+      "SoundDetectDis": 20,
+      "SoundDetectRate": 100,
+      "id": 6
+    },
+    {
+      "AddChickenIDList": [
+        8,
+        1,
+        1,
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Ordinary",
+      "CollectScore": 2,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 2,
+      "MonsterDataID": 2,
+      "Name": "657728804",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 7
+    },
+    {
+      "AddChickenIDList": [
+        9,
+        3,
+        3,
+        1
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 3,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 3,
+      "MonsterDataID": 2,
+      "Name": "477607272",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 8
+    },
+    {
+      "AddChickenIDList": [
+        10,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 4,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 4,
+      "MonsterDataID": 2,
+      "Name": "137375227",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 9
+    },
+    {
+      "AddChickenIDList": [
+        11,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 5,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 5,
+      "MonsterDataID": 2,
+      "Name": "900449446",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 10
+    },
+    {
+      "AddChickenIDList": [
+        12,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 6,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 6,
+      "MonsterDataID": 2,
+      "Name": "804875836",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 11
+    },
+    {
+      "AddChickenIDList": [
+        13,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 7,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 7,
+      "MonsterDataID": 2,
+      "Name": "667504368",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 12
+    },
+    {
+      "AddChickenIDList": [
+        14,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 8,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 8,
+      "MonsterDataID": 2,
+      "Name": "157192875",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 13
+    },
+    {
+      "AddChickenIDList": [
+        15,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 9,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 9,
+      "MonsterDataID": 2,
+      "Name": "393095704",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 14
+    },
+    {
+      "AddChickenIDList": [
+        15,
+        3,
+        3,
+        3
+      ],
+      "AnimatorStateName": "FX_Chick_Blood",
+      "CollectScore": 10,
+      "DetailIconMini": "UI/Atlas/Hud_Mode_Chick/Hud_Chicken_Mode_Ordinary_01.png",
+      "DetailStr": "767951669",
+      "Level": 10,
+      "MonsterDataID": 2,
+      "Name": "127740308",
+      "RunSpeedRate": 1.0,
+      "SoundDetectDis": 1,
+      "SoundDetectRate": 1,
+      "id": 15
+    }
+  ]
+}

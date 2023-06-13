@@ -1,0 +1,20 @@
+/**
+* @file:   excel\BattlePassLevelDef.xlsx\BattlePassLevelDef
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattlePassLevelDef{
+	// 等级 
+	uint32 id = 1;
+	// 升级所需经验 
+	uint32 exp = 2;
+}
+
+message BattlePassLevelDef_Array {
+	repeated BattlePassLevelDef items = 1;
+}

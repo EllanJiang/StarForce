@@ -1,0 +1,18 @@
+/**
+* @file:   excel\DsVersionWhiteList.xlsx\DsVersionWhiteList
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message DsVersionWhiteList{
+	// 版本号 
+	string id = 1;
+}
+
+message DsVersionWhiteList_Array {
+	repeated DsVersionWhiteList items = 1;
+}

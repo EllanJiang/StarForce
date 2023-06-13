@@ -1,0 +1,20 @@
+/**
+* @file:   excel\PlayerSkillEffectConfig.xlsx\PlayerSkillEffectConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message PlayerSkillEffectConfig{
+	// 技能效果的id 
+	uint32 id = 1;
+	// 1PHud效果 
+	repeated string Hud = 2;
+}
+
+message PlayerSkillEffectConfig_Array {
+	repeated PlayerSkillEffectConfig items = 1;
+}

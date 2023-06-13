@@ -1,0 +1,20 @@
+/**
+* @file:   excel\RogueLikeStageListConfig.xlsx\RogueLikeStageListConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RogueLikeStageListConfig{
+	// ID 
+	uint32 id = 1;
+	// 关卡ID 
+	repeated uint32 stage = 2;
+}
+
+message RogueLikeStageListConfig_Array {
+	repeated RogueLikeStageListConfig items = 1;
+}

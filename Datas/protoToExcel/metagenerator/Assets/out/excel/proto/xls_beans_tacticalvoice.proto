@@ -1,0 +1,34 @@
+/**
+* @file:   excel\TacticalVoice.xlsx\TacticalVoice
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message TacticalVoice{
+	// 检查用 
+	uint32 id = 1;
+	// 战术动作类型（非0 ID读voxData表）获取语音和文本 
+	uint32 tacticalActionId = 2;
+	// 指示点类型 
+	uint32 targetType = 3;
+	// 是否UI显示 
+	uint32 TitleEnable = 4;
+	// 不是战术标记 
+	uint32 IsNotTacticalTitle = 5;
+	// 轮盘入口名称 
+	string entrance = 6;
+	// GUI资源id 
+	uint32 iconID = 7;
+	// 局外GUI资源Id 
+	uint32 hallIconID = 8;
+	// 是否需要携带地名 
+	bool IsNeddAreaName = 9;
+}
+
+message TacticalVoice_Array {
+	repeated TacticalVoice items = 1;
+}

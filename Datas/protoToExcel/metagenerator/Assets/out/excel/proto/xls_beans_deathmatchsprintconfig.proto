@@ -1,0 +1,29 @@
+/**
+* @file:   excel\DeathMatchSprintConfig.xlsx\DeathMatchSprintConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message DeathMatchSprintConfig{
+	// 模式 
+	uint32 id = 1;
+	// 前3血量BuffId 
+	uint32 maxHpBuffId = 2;
+	// 冲刺开始 
+	repeated DeathMatchSprintConfig_sprint sprint = 3;
+}
+
+message DeathMatchSprintConfig_sprint{
+	// 冲刺开始 
+	uint32 BeginTime = 1;
+	// 冲刺结束 
+	uint32 EndTime = 2;
+}
+
+message DeathMatchSprintConfig_Array {
+	repeated DeathMatchSprintConfig items = 1;
+}

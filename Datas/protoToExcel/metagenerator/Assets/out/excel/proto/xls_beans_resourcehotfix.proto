@@ -1,0 +1,33 @@
+/**
+* @file:   excel\ResourceHotFix.xlsx\ResourceHotFix
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ResourceHotFix{
+	// 唯一标识id 
+	uint32 id = 1;
+	// 版本号 
+	string version = 2;
+	// 底包版本 
+	string appVersion = 3;
+	// 热更类型 
+	repeated ResourceHotFix_hotfix hotfix = 4;
+}
+
+message ResourceHotFix_hotfix{
+	// 热更类型 
+	string type = 1;
+	// 时间戳 
+	string timeStamp = 2;
+	// md5码 
+	string md5 = 3;
+}
+
+message ResourceHotFix_Array {
+	repeated ResourceHotFix items = 1;
+}

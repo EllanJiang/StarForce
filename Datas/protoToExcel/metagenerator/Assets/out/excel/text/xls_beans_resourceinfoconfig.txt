@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": 5022,
+      "path": "UI/Effects/Prefabs/Hall_View/FX_UI_Bg_ZhunXin_Joker.prefab"
+    },
+    {
+      "id": 5023,
+      "path": "UI/Effects/Prefabs/Hall_View/FX_UI_BG_GeneralChar.prefab"
+    },
+    {
+      "id": 5024,
+      "path": "UI/Effects/Prefabs/Hall_View/FX_UI_BG_LiRen_TideCool.prefab"
+    },
+    {
+      "id": 5025,
+      "path": "UI/Effects/Prefabs/Hall_View/FX_UI_BG_MeiYing_Cowgirl.prefab"
+    }
+  ]
+}

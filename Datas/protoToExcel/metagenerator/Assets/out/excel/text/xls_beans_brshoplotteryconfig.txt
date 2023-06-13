@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "itemGroupId": 101,
+      "itemId": 143010001,
+      "rate": [
+        100,
+        500
+      ]
+    },
+    {
+      "itemGroupId": 101,
+      "itemId": 144010001,
+      "rate": [
+        200,
+        300
+      ]
+    },
+    {
+      "itemGroupId": 101,
+      "itemId": 141010001,
+      "rate": [
+        300,
+        200
+      ]
+    },
+    {
+      "itemGroupId": 101,
+      "itemId": 145010001,
+      "rate": [
+        500,
+        100
+      ]
+    }
+  ]
+}

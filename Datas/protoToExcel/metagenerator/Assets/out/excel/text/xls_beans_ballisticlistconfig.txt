@@ -1,0 +1,593 @@
+{
+  "items": [
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 1,
+      "ConfigName": "HitAOEBallisticConfigData=Bomb",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010101
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 1,
+      "ConfigName": "HitAOEBallisticConfigData=Bomb_1",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010102
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type0",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010201
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_famas_threepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010202
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_famas_fourpoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010203
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_famas_fivepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010204
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_galil_threepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010205
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_galil_fourpoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010206
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_galil_fivepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010207
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_M4_threepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010208
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_M4_fivepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010209
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_M4_sevenpoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010210
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_AK47_threepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010211
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_AK47_fivepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010212
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_AK47_sevenpoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010213
+    },
+    {
+      "BallisticDes": "184293849",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_P90_round",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010214
+    },
+    {
+      "BallisticDes": "184293849",
+      "BallisticName": "",
+      "BallisticType": 2,
+      "ConfigName": "FixedFigureBallisticConfigData=Type_Glock_threepoint",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010215
+    },
+    {
+      "BallisticDes": "505758535",
+      "BallisticName": "",
+      "BallisticType": 3,
+      "ConfigName": "BallisticLogicConfigHingeData",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010301
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 3,
+      "ConfigName": "BallisticLogicConfigHingeData==a",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010302
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 3,
+      "ConfigName": "BallisticLogicConfigHingeData==b",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010303
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 3,
+      "ConfigName": "BallisticLogicConfigHingeData==PVE",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010304
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 4,
+      "ConfigName": "BallisticLogicConfigData=Bullet",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010401
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 4,
+      "ConfigName": "BallisticLogicConfigData=BulletWater",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010402
+    },
+    {
+      "BallisticDes": "751026963",
+      "BallisticName": "",
+      "BallisticType": 5,
+      "ConfigName": "BallisticLogicConfigSphereData=AOE",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010501
+    },
+    {
+      "BallisticDes": "627329361",
+      "BallisticName": "",
+      "BallisticType": 5,
+      "ConfigName": "BallisticLogicConfigSphereData=SpellArea",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010502
+    },
+    {
+      "BallisticDes": "889236020",
+      "BallisticName": "",
+      "BallisticType": 5,
+      "ConfigName": "BallisticLogicConfigSphereData=Fly",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010503
+    },
+    {
+      "BallisticDes": "808952718",
+      "BallisticName": "",
+      "BallisticType": 5,
+      "ConfigName": "BallisticLogicConfigSphereData=AOE_Bubble",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010504
+    },
+    {
+      "BallisticDes": "808952718",
+      "BallisticName": "",
+      "BallisticType": 5,
+      "ConfigName": "BallisticLogicConfigSphereData=AOE_Bubble01",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010505
+    },
+    {
+      "BallisticDes": "262060993",
+      "BallisticName": "",
+      "BallisticType": 6,
+      "ConfigName": "BallisticLogicConfigLineData=Bounce",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010601
+    },
+    {
+      "BallisticDes": "948306962",
+      "BallisticName": "",
+      "BallisticType": 6,
+      "ConfigName": "BallisticLogicConfigLineData=BounceSplit",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010602
+    },
+    {
+      "BallisticDes": "292512395",
+      "BallisticName": "",
+      "BallisticType": 6,
+      "ConfigName": "BallisticLogicConfigLineData=Split",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010603
+    },
+    {
+      "BallisticDes": "262060993",
+      "BallisticName": "",
+      "BallisticType": 6,
+      "ConfigName": "BallisticLogicConfigLineData=Bounce01",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010604
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 4,
+      "ConfigName": "BallisticLogicConfigData=BulletWater",
+      "HdLimitCount": 0,
+      "LdLimitCount": 0,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 0,
+      "id": 1010702
+    },
+    {
+      "BallisticDes": "",
+      "BallisticName": "",
+      "BallisticType": 4,
+      "ConfigName": "BallisticLogicConfigData=Bullet",
+      "HdLimitCount": 0,
+      "LdLimitCount": 0,
+      "LimitGunTypeID": [],
+      "Quality": 0,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 0,
+      "id": 1010701
+    },
+    {
+      "BallisticDes": "262060993",
+      "BallisticName": "",
+      "BallisticType": 6,
+      "ConfigName": "BallisticLogicConfigLineData=Bounce_LuanDou",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010801
+    },
+    {
+      "BallisticDes": "948306962",
+      "BallisticName": "",
+      "BallisticType": 6,
+      "ConfigName": "BallisticLogicConfigLineData=BounceSplit_LuanDou",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010802
+    },
+    {
+      "BallisticDes": "627329361",
+      "BallisticName": "",
+      "BallisticType": 5,
+      "ConfigName": "BallisticLogicConfigSphereData=SpellArea_LuanDou",
+      "HdLimitCount": 50,
+      "LdLimitCount": 10,
+      "LimitGunTypeID": [
+        11701,
+        11702
+      ],
+      "Quality": 2,
+      "SpecificGunTypeID": [],
+      "UltraldLimitCount": 10,
+      "id": 1010803
+    }
+  ]
+}

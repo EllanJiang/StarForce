@@ -1,0 +1,350 @@
+{
+  "408942792": [
+    "C_RookieGuide_lobby_force_ask_Text",
+    "C_RookieGuide_lobby_force_ask_Text"
+  ],
+  "521629000": [
+    "C_RookieGuide_lobby_force_beforetest_Text",
+    "C_RookieGuide_lobby_force_beforetest_Text"
+  ],
+  "887257240": [
+    "C_RookieGuide_lobby_force_12_Text",
+    "C_RookieGuide_lobby_force_12_Text"
+  ],
+  "920748540": [
+    "C_RookieGuide_lobby_force_ready_Text",
+    "C_RookieGuide_lobby_force_ready_Text"
+  ],
+  "521493422": [
+    "C_RookieGuide_lobby_system_result_intro_Text",
+    "C_RookieGuide_lobby_system_result_intro_Text"
+  ],
+  "424844751": [
+    "C_RookieGuide_lobby_system_result_team_Text",
+    "C_RookieGuide_lobby_system_result_team_Text"
+  ],
+  "912826026": [
+    "C_RookieGuide_lobby_system_result_state_Text",
+    "C_RookieGuide_lobby_system_result_state_Text"
+  ],
+  "038939094": [
+    "C_RookieGuide_lobby_system_result_153_Text",
+    "C_RookieGuide_lobby_system_result_153_Text"
+  ],
+  "341848104": [
+    "C_RookieGuide_lobby_system_result_154_Text",
+    "C_RookieGuide_lobby_system_result_154_Text"
+  ],
+  "660241184": [
+    "C_RookieGuide_lobby_force_D_start_Text",
+    "C_RookieGuide_lobby_force_D_start_Text"
+  ],
+  "114086618": [
+    "C_RookieGuide_lobby_force_C_start_Text",
+    "C_RookieGuide_lobby_force_C_start_Text"
+  ],
+  "316896868": [
+    "C_RookieGuide_lobby_force_A_start_Text",
+    "C_RookieGuide_lobby_force_A_start_Text"
+  ],
+  "092605045": [
+    "C_RookieGuide_lobby_force_B_start_Text",
+    "C_RookieGuide_lobby_force_B_start_Text"
+  ],
+  "408980283": [
+    "C_RookieGuide_lobby_force_introPVP_Text",
+    "C_RookieGuide_lobby_force_introPVP_Text"
+  ],
+  "130084401": [
+    "C_RookieGuide_lobby_force_introRank_Text",
+    "C_RookieGuide_lobby_force_introRank_Text"
+  ],
+  "477296766": [
+    "C_RookieGuide_lobby_force_introBR_Text",
+    "C_RookieGuide_lobby_force_introBR_Text"
+  ],
+  "418996906": [
+    "C_RookieGuide_lobby_force_clickPVP_Text",
+    "C_RookieGuide_lobby_force_clickPVP_Text"
+  ],
+  "216614998": [
+    "C_RookieGuide_lobby_force_modeguide1_Text",
+    "C_RookieGuide_lobby_force_modeguide1_Text"
+  ],
+  "336499314": [
+    "C_RookieGuide_lobby_force_modeguide2_Text",
+    "C_RookieGuide_lobby_force_modeguide2_Text"
+  ],
+  "115011449": [
+    "C_RookieGuide_lobby_force_modeguide3_Text",
+    "C_RookieGuide_lobby_force_modeguide3_Text"
+  ],
+  "549358581": [
+    "C_RookieGuide_lobby_force_modeteam1_Text",
+    "C_RookieGuide_lobby_force_modeteam1_Text"
+  ],
+  "137224651": [
+    "C_RookieGuide_lobby_force_modeteam2_Text",
+    "C_RookieGuide_lobby_force_modeteam2_Text"
+  ],
+  "133334028": [
+    "C_RookieGuide_lobby_system_CR_first_Text",
+    "C_RookieGuide_lobby_system_CR_first_Text"
+  ],
+  "231237534": [
+    "C_RookieGuide_lobby_system_CR_box_Text",
+    "C_RookieGuide_lobby_system_CR_box_Text"
+  ],
+  "403471406": [
+    "C_RookieGuide_lobby_system_CR_comfirm_Text",
+    "C_RookieGuide_lobby_system_CR_comfirm_Text"
+  ],
+  "876247530": [
+    "C_RookieGuide_lobby_system_CR_unclock_Text",
+    "C_RookieGuide_lobby_system_CR_unclock_Text"
+  ],
+  "075889132": [
+    "C_RookieGuide_lobby_system_CR_reward_Text",
+    "C_RookieGuide_lobby_system_CR_reward_Text"
+  ],
+  "836441337": [
+    "C_RookieGuide_lobby_system_CR_seeyou_Text",
+    "C_RookieGuide_lobby_system_CR_seeyou_Text"
+  ],
+  "111111691": [
+    "C_RookieGuide_lobby_system_CR_help_Text",
+    "C_RookieGuide_lobby_system_CR_help_Text"
+  ],
+  "957848694": [
+    "C_RookieGuide_lobby_force_modeteamagain_Text",
+    "C_RookieGuide_lobby_force_modeteamagain_Text"
+  ],
+  "528006266": [
+    "C_RookieGuide_lobby_force_modedeath1_Text",
+    "C_RookieGuide_lobby_force_modedeath1_Text"
+  ],
+  "486352468": [
+    "C_RookieGuide_lobby_force_modedeathagain_Text",
+    "C_RookieGuide_lobby_force_modedeathagain_Text"
+  ],
+  "152128807": [
+    "C_RookieGuide_lobby_force_modefblast1_Text",
+    "C_RookieGuide_lobby_force_modefblast1_Text"
+  ],
+  "786540905": [
+    "C_RookieGuide_lobby_force_modefblastagain_Text",
+    "C_RookieGuide_lobby_force_modefblastagain_Text"
+  ],
+  "257026443": [
+    "C_RookieGuide_lobby_force_modepve1_Text",
+    "C_RookieGuide_lobby_force_modepve1_Text"
+  ],
+  "492067644": [
+    "C_RookieGuide_lobby_force_modeteamagain2_Text",
+    "C_RookieGuide_lobby_force_modeteamagain2_Text"
+  ],
+  "665736747": [
+    "C_RookieGuide_lobby_force_modeblastagain_Text",
+    "C_RookieGuide_lobby_force_modeblastagain_Text"
+  ],
+  "315438447": [
+    "C_RookieGuide_lobby_force_backtohall_Text",
+    "C_RookieGuide_lobby_force_backtohall_Text"
+  ],
+  "607727375": [
+    "C_RookieGuide_lobby_force_34_Text",
+    "C_RookieGuide_lobby_force_34_Text"
+  ],
+  "589611683": [
+    "C_RookieGuide_lobby_force_10_Text",
+    "C_RookieGuide_lobby_force_10_Text"
+  ],
+  "474149559": [
+    "C_RookieGuide_lobby_force_11_Text",
+    "C_RookieGuide_lobby_force_11_Text"
+  ],
+  "408791187": [
+    "C_RookieGuide_lobby_force_13_Text",
+    "C_RookieGuide_lobby_force_13_Text"
+  ],
+  "310912787": [
+    "C_RookieGuide_lobby_system_equip_139_Text",
+    "C_RookieGuide_lobby_system_equip_139_Text"
+  ],
+  "947151982": [
+    "C_RookieGuide_lobby_system_result_155_Text",
+    "C_RookieGuide_lobby_system_result_155_Text"
+  ],
+  "800428129": [
+    "C_RookieGuide_lobby_system_result_156_Text",
+    "C_RookieGuide_lobby_system_result_156_Text"
+  ],
+  "519561049": [
+    "C_RookieGuide_lobby_force_20_Text",
+    "C_RookieGuide_lobby_force_20_Text"
+  ],
+  "509848549": [
+    "C_RookieGuide_lobby_force_21_Text",
+    "C_RookieGuide_lobby_force_21_Text"
+  ],
+  "992626215": [
+    "C_RookieGuide_lobby_system_result_157_Text",
+    "C_RookieGuide_lobby_system_result_157_Text"
+  ],
+  "451305713": [
+    "C_RookieGuide_lobby_force_30_Text",
+    "C_RookieGuide_lobby_force_30_Text"
+  ],
+  "041574764": [
+    "C_RookieGuide_lobby_force_31_Text",
+    "C_RookieGuide_lobby_force_31_Text"
+  ],
+  "171205985": [
+    "C_RookieGuide_lobby_force_53_Text",
+    "C_RookieGuide_lobby_force_53_Text"
+  ],
+  "760090111": [
+    "C_RookieGuide_lobby_force_60_Text",
+    "C_RookieGuide_lobby_force_60_Text"
+  ],
+  "566561001": [
+    "C_RookieGuide_lobby_force_61_Text",
+    "C_RookieGuide_lobby_force_61_Text"
+  ],
+  "334843211": [
+    "C_RookieGuide_lobby_force_62_Text",
+    "C_RookieGuide_lobby_force_62_Text"
+  ],
+  "712885006": [
+    "C_RookieGuide_lobby_force_63_Text",
+    "C_RookieGuide_lobby_force_63_Text"
+  ],
+  "843495986": [
+    "C_RookieGuide_lobby_force_70_Text",
+    "C_RookieGuide_lobby_force_70_Text"
+  ],
+  "297824371": [
+    "C_RookieGuide_lobby_force_71_Text",
+    "C_RookieGuide_lobby_force_71_Text"
+  ],
+  "230344339": [
+    "C_RookieGuide_lobby_force_72_Text",
+    "C_RookieGuide_lobby_force_72_Text"
+  ],
+  "956810749": [
+    "C_RookieGuide_lobby_force_73_Text",
+    "C_RookieGuide_lobby_force_73_Text"
+  ],
+  "626386322": [
+    "C_RookieGuide_lobby_force_74_Text",
+    "C_RookieGuide_lobby_force_74_Text"
+  ],
+  "087277923": [
+    "C_RookieGuide_lobby_system_apart_1_Text",
+    "C_RookieGuide_lobby_system_apart_1_Text"
+  ],
+  "983502441": [
+    "C_RookieGuide_lobby_system_apart_2_Text",
+    "C_RookieGuide_lobby_system_apart_2_Text"
+  ],
+  "461563208": [
+    "C_RookieGuide_lobby_system_bp_101_Text",
+    "C_RookieGuide_lobby_system_bp_101_Text"
+  ],
+  "913302472": [
+    "C_RookieGuide_lobby_system_bp_102_Text",
+    "C_RookieGuide_lobby_system_bp_102_Text"
+  ],
+  "281757947": [
+    "C_RookieGuide_lobby_system_bp_103_Text",
+    "C_RookieGuide_lobby_system_bp_103_Text"
+  ],
+  "774560031": [
+    "C_RookieGuide_lobby_system_setting_111_Text",
+    "C_RookieGuide_lobby_system_setting_111_Text"
+  ],
+  "076636295": [
+    "C_RookieGuide_lobby_system_setting_115_Text",
+    "C_RookieGuide_lobby_system_setting_115_Text"
+  ],
+  "434028673": [
+    "C_RookieGuide_lobby_system_role_121_Text",
+    "C_RookieGuide_lobby_system_role_121_Text"
+  ],
+  "196114856": [
+    "C_RookieGuide_lobby_system_role_122_Text",
+    "C_RookieGuide_lobby_system_role_122_Text"
+  ],
+  "757024964": [
+    "C_RookieGuide_lobby_system_role_123_Text",
+    "C_RookieGuide_lobby_system_role_123_Text"
+  ],
+  "512198601": [
+    "C_RookieGuide_lobby_system_role_124_Text",
+    "C_RookieGuide_lobby_system_role_124_Text"
+  ],
+  "943139919": [
+    "C_RookieGuide_lobby_system_role_125_Text",
+    "C_RookieGuide_lobby_system_role_125_Text"
+  ],
+  "838054042": [
+    "C_RookieGuide_lobby_system_equip_131_Text",
+    "C_RookieGuide_lobby_system_equip_131_Text"
+  ],
+  "325036155": [
+    "C_RookieGuide_lobby_system_equip_132_Text",
+    "C_RookieGuide_lobby_system_equip_132_Text"
+  ],
+  "228044406": [
+    "C_RookieGuide_lobby_system_equip_133_Text",
+    "C_RookieGuide_lobby_system_equip_133_Text"
+  ],
+  "547835619": [
+    "C_RookieGuide_lobby_system_equip_134_Text",
+    "C_RookieGuide_lobby_system_equip_134_Text"
+  ],
+  "886110630": [
+    "C_RookieGuide_lobby_system_equip_135_Text",
+    "C_RookieGuide_lobby_system_equip_135_Text"
+  ],
+  "331261620": [
+    "C_RookieGuide_lobby_system_equip_136_Text",
+    "C_RookieGuide_lobby_system_equip_136_Text"
+  ],
+  "700070090": [
+    "C_RookieGuide_lobby_system_task_161_Text",
+    "C_RookieGuide_lobby_system_task_161_Text"
+  ],
+  "048468315": [
+    "C_RookieGuide_lobby_system_task_162_Text",
+    "C_RookieGuide_lobby_system_task_162_Text"
+  ],
+  "225208319": [
+    "C_RookieGuide_lobby_system_task_163_Text",
+    "C_RookieGuide_lobby_system_task_163_Text"
+  ],
+  "658337040": [
+    "C_RookieGuide_lobby_system_task_164_Text",
+    "C_RookieGuide_lobby_system_task_164_Text"
+  ],
+  "039269709": [
+    "C_RookieGuide_lobby_system_task_165_Text",
+    "C_RookieGuide_lobby_system_task_165_Text"
+  ],
+  "064303683": [
+    "C_RookieGuide_lobby_system_rank_171_Text",
+    "C_RookieGuide_lobby_system_rank_171_Text"
+  ],
+  "633264652": [
+    "C_RookieGuide_lobby_system_result_180_Text",
+    "C_RookieGuide_lobby_system_result_180_Text"
+  ],
+  "786013934": [
+    "C_RookieGuide_lobby_recommend_rankmode_Text",
+    "C_RookieGuide_lobby_recommend_rankmode_Text"
+  ],
+  "148872934": [
+    "C_RookieGuide_lobby_recommend_setting_Text",
+    "C_RookieGuide_lobby_recommend_setting_Text"
+  ]
+}

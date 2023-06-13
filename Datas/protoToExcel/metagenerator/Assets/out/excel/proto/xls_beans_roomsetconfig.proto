@@ -1,0 +1,117 @@
+/**
+* @file:   excel\RoomSetConfig.xlsx\RoomSetConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RoomSetConfig{
+	// 模式ID 
+	uint32 id = 1;
+	// 默认条件Id 
+	uint32 defaultId = 2;
+	// 条件Id 
+	repeated RoomSetConfig_winCondition winCondition = 3;
+	// 自动起甲-显示 
+	RoomSetConfig_autoArmor autoArmor = 4;
+	// ai难度id 
+	repeated RoomSetConfig_aiLevels aiLevels = 5;
+	// 仅爆头伤害有效-显示 
+	RoomSetConfig_headShootOnly headShootOnly = 6;
+	// 重力选项-id 
+	repeated RoomSetConfig_gravityRate gravityRate = 7;
+	// 摩擦力选项-id 
+	repeated RoomSetConfig_frictionRate frictionRate = 8;
+	// 血量选项-id 
+	repeated RoomSetConfig_hp hp = 9;
+	// 是否允许观战 
+	RoomSetConfig_observer observer = 10;
+	// 是否开启密码 
+	RoomSetConfig_requirePassword requirePassword = 11;
+}
+
+message RoomSetConfig_winCondition{
+	// 条件Id 
+	uint32 id = 1;
+	// 设置类型 
+	string winType = 2;
+	// 胜利条件 
+	uint32 winValue = 3;
+	// 中途加入条件 
+	uint32 gamingJoinCond = 4;
+	// 推荐条件，用于快速加入、房间列表显示优先级排序 
+	uint32 recommend = 5;
+}
+
+message RoomSetConfig_autoArmor{
+	// 自动起甲-显示 
+	bool enable = 1;
+	// 自动起甲-初始值 
+	bool defaultValue = 2;
+}
+
+message RoomSetConfig_aiLevels{
+	// ai难度id 
+	uint32 id = 1;
+	// ai难度等级 
+	uint32 level = 2;
+	// 描述 
+	string des = 3;
+}
+
+message RoomSetConfig_headShootOnly{
+	// 仅爆头伤害有效-显示 
+	bool enable = 1;
+	// 仅爆头伤害有效-初始值 
+	bool defaultValue = 2;
+}
+
+message RoomSetConfig_gravityRate{
+	// 重力选项-id 
+	uint32 id = 1;
+	// 重力选项-描述 
+	string des = 2;
+	// 重力选项-数值 
+	float gravityRate = 3;
+}
+
+message RoomSetConfig_frictionRate{
+	// 摩擦力选项-id 
+	uint32 id = 1;
+	// 摩擦力选项-描述 
+	string des = 2;
+	// 摩擦力选项-数值 
+	float frictionRate = 3;
+}
+
+message RoomSetConfig_hp{
+	// 血量选项-id 
+	uint32 id = 1;
+	// 血量选项-描述 
+	string des = 2;
+	// 血量选项-初始数值 
+	uint32 initHp = 3;
+	// 血量选项-最大数值 
+	uint32 maxHp = 4;
+}
+
+message RoomSetConfig_observer{
+	// 是否允许观战 
+	bool enable = 1;
+	// 默认是否开启观战 
+	bool defaultValue = 2;
+}
+
+message RoomSetConfig_requirePassword{
+	// 是否开启密码 
+	bool enable = 1;
+	// 默认是否开启密码 
+	bool defaultValue = 2;
+}
+
+message RoomSetConfig_Array {
+	repeated RoomSetConfig items = 1;
+}

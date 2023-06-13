@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "Hud": [
+        "BuffSpeedUpEffect"
+      ],
+      "id": 1
+    },
+    {
+      "Hud": [
+        "BuffSpeedUpEffect"
+      ],
+      "id": 2
+    },
+    {
+      "Hud": [
+        "BuffSpeedUpEffect"
+      ],
+      "id": 3
+    },
+    {
+      "Hud": [
+        "BuffSpeedUpEffect"
+      ],
+      "id": 4
+    }
+  ]
+}

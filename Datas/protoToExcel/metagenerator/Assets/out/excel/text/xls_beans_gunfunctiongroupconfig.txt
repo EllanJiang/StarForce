@@ -1,0 +1,4330 @@
+{
+  "items": [
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 1,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 1,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 1,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 1,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 1,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 1,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 1,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 1,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 1,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 1,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 1,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 1,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 1,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 2,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 2,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 2,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 2,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 2,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 2,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 2,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 2,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 2,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 2,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 2,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 2,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 2,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 3,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 3,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 3,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 4,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 4,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 4,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 4,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 4,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 4,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 4,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 4,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 4,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 4,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 4,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 4,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 4,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 5,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 5,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 6,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 6,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 6,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 6,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 6,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 6,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 6,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 6,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 7,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 7,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 7,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 7,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 7,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 7,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 7,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 7,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 8,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 8,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 8,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 9,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 9,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 9,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 9,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 9,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 9,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 9,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 9,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 10,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 10,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 11,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 11,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 11,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 11,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 11,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 11,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 11,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 11,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 12,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 12,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 12,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 12,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 12,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 12,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 12,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 12,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 13,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 13,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 13,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 14,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 14,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 14,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 14,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 14,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 14,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 14,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 14,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 15,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 15,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 16,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 16,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 16,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 16,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 16,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 16,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 16,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 16,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 16,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 16,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 16,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 16,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 16,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 17,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 17,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 17,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 17,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 17,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 17,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 17,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 17,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 17,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 17,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 17,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 17,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 17,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 18,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 18,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 18,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 19,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 19,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 19,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 19,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 19,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 19,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 19,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 19,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 19,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 19,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 19,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 19,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 19,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 20,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 20,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 21,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 21,
+      "Weight": 300
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 21,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 21,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 21,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 21,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010015,
+      "ID": 21,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020015,
+      "ID": 21,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2030015,
+      "ID": 21,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 22,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 22,
+      "Weight": 400
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 22,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 22,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 22,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 22,
+      "Weight": 70
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010015,
+      "ID": 22,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020015,
+      "ID": 22,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2030015,
+      "ID": 22,
+      "Weight": 5
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 23,
+      "Weight": 600
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010015,
+      "ID": 23,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020015,
+      "ID": 23,
+      "Weight": 50
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2030015,
+      "ID": 23,
+      "Weight": 25
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000001,
+      "ID": 24,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010001,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000004,
+      "ID": 24,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010004,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000005,
+      "ID": 24,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010005,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000006,
+      "ID": 24,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010006,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000007,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010007,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000008,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010008,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020008,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000009,
+      "ID": 24,
+      "Weight": 1
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010009,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000010,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010010,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000011,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010011,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000012,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010015,
+      "ID": 24,
+      "Weight": 0
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020015,
+      "ID": 24,
+      "Weight": 9
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2030015,
+      "ID": 24,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020004,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020005,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020006,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020007,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020009,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010012,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2030015,
+      "ID": 25,
+      "Weight": 90
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2030006,
+      "ID": 26,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 202000501,
+      "ID": 26,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 201001001,
+      "ID": 26,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2010013,
+      "ID": 26,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2020001,
+      "ID": 26,
+      "Weight": 2
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 26,
+      "Weight": 2
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010214,
+      "ID": 30,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010504,
+      "ID": 31,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010101,
+      "ID": 32,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010501,
+      "ID": 33,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010502,
+      "ID": 34,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010503,
+      "ID": 35,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010601,
+      "ID": 36,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010602,
+      "ID": 37,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010603,
+      "ID": 38,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010604,
+      "ID": 39,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010505,
+      "ID": 40,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010215,
+      "ID": 41,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010214,
+      "ID": 20201,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010301,
+      "ID": 20301,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010101,
+      "ID": 20201,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010501,
+      "ID": 20501,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010502,
+      "ID": 20502,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010503,
+      "ID": 20503,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010601,
+      "ID": 20601,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010602,
+      "ID": 20602,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 2,
+      "GunBuffId": 1010603,
+      "ID": 20603,
+      "Weight": 10
+    },
+    {
+      "FunctionType": 1,
+      "GunBuffId": 2000003,
+      "ID": 42,
+      "Weight": 100
+    }
+  ]
+}

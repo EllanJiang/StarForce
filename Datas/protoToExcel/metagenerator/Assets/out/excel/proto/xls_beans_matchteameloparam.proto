@@ -1,0 +1,31 @@
+/**
+* @file:   excel\MatchTeamEloParam.xlsx\MatchTeamEloParam
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchTeamEloParam{
+	// key 
+	uint32 id = 1;
+	// 队伍人数 
+	repeated MatchTeamEloParam_ParamK ParamK = 2;
+}
+
+message MatchTeamEloParam_ParamK{
+	// 队伍人数 
+	uint32 TeamMember = 1;
+	// elo分数人数系数 
+	float EloParam = 2;
+	// 队伍等级人数系数 
+	float LvlParam = 3;
+	// 排位分人数系数 
+	float RankScoreParam = 4;
+}
+
+message MatchTeamEloParam_Array {
+	repeated MatchTeamEloParam items = 1;
+}

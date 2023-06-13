@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": 9999,
+      "shopTabId": 1
+    },
+    {
+      "id": 1001,
+      "shopTabId": 2
+    },
+    {
+      "id": 1002,
+      "shopTabId": 3
+    },
+    {
+      "id": 1004,
+      "shopTabId": 1
+    },
+    {
+      "id": 1005,
+      "shopTabId": 5
+    },
+    {
+      "id": 1006,
+      "shopTabId": 6
+    },
+    {
+      "id": 1010,
+      "shopTabId": 1
+    },
+    {
+      "id": 1011,
+      "shopTabId": 1
+    },
+    {
+      "id": 1014,
+      "shopTabId": 1
+    },
+    {
+      "id": 1016,
+      "shopTabId": 1
+    },
+    {
+      "id": 1019,
+      "shopTabId": 28
+    },
+    {
+      "id": 1021,
+      "shopTabId": 6
+    },
+    {
+      "id": 1022,
+      "shopTabId": 6
+    },
+    {
+      "id": 1025,
+      "shopTabId": 14
+    },
+    {
+      "id": 1030,
+      "shopTabId": 15
+    },
+    {
+      "id": 1034,
+      "shopTabId": 16
+    },
+    {
+      "id": 1037,
+      "shopTabId": 17
+    },
+    {
+      "id": 1039,
+      "shopTabId": 18
+    },
+    {
+      "id": 1040,
+      "shopTabId": 5
+    },
+    {
+      "id": 1041,
+      "shopTabId": 3
+    },
+    {
+      "id": 1042,
+      "shopTabId": 1
+    },
+    {
+      "id": 1045,
+      "shopTabId": 22
+    },
+    {
+      "id": 1046,
+      "shopTabId": 23
+    },
+    {
+      "id": 1050,
+      "shopTabId": 24
+    },
+    {
+      "id": 1049,
+      "shopTabId": 25
+    },
+    {
+      "id": 1020,
+      "shopTabId": 26
+    },
+    {
+      "id": 1052,
+      "shopTabId": 27
+    },
+    {
+      "id": 1057,
+      "shopTabId": 29
+    },
+    {
+      "id": 1058,
+      "shopTabId": 30
+    },
+    {
+      "id": 1055,
+      "shopTabId": 32
+    }
+  ]
+}

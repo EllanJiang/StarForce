@@ -1,0 +1,28 @@
+/**
+* @file:   excel\ItemDropLimitConfig.xlsx\ItemDropLimitConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ItemDropLimitConfig{
+	// 物品ID 
+	uint32 id = 1;
+	// 单局上限 
+	uint32 matchLimitCnt = 2;
+	// 单日上限 
+	uint32 dayLimitCnt = 3;
+	// 总上限 
+	uint32 totalLimitCnt = 4;
+	// 掉落时间段开始时间 
+	int64 startTime = 5;
+	// 掉落时间结束时间 
+	int64 endTime = 6;
+}
+
+message ItemDropLimitConfig_Array {
+	repeated ItemDropLimitConfig items = 1;
+}

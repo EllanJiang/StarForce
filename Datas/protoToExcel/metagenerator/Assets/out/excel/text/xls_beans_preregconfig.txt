@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "dailyRegLimit": 21000000,
+      "id": "RU",
+      "preRegAddr": "https://vk.com/alphaacecis",
+      "preRegSwitch": "off"
+    },
+    {
+      "dailyRegLimit": 3000000,
+      "id": "CN",
+      "preRegAddr": "https://www.facebook.com/Alpha-Ace-104570778951791",
+      "preRegSwitch": "off"
+    },
+    {
+      "dailyRegLimit": 2000000,
+      "id": "LATAM",
+      "preRegAddr": "https://www.facebook.com/Alpha-Ace-Latam-104025289016085",
+      "preRegSwitch": "off"
+    },
+    {
+      "dailyRegLimit": 1000000,
+      "id": "SG",
+      "preRegAddr": "https://www.facebook.com/Alpha-Ace-104570778951791",
+      "preRegSwitch": "off"
+    },
+    {
+      "dailyRegLimit": 4200000,
+      "id": "BR",
+      "preRegAddr": "https://www.facebook.com/alphaacebr",
+      "preRegSwitch": "off"
+    },
+    {
+      "dailyRegLimit": 1000000,
+      "id": "OTHER",
+      "preRegAddr": "https://www.facebook.com/Alpha-Ace-104570778951791",
+      "preRegSwitch": "off"
+    }
+  ]
+}

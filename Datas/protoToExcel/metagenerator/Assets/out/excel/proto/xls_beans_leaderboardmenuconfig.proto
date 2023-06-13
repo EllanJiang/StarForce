@@ -1,0 +1,26 @@
+/**
+* @file:   excel\LeaderboardMenuConfig.xlsx\LeaderboardMenuConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message LeaderboardMenuConfig{
+	// key 
+	uint32 id = 1;
+	// 目录名 
+	string name = 2;
+	// 子目录id 
+	repeated uint32 childMenuIDs = 3;
+	// 排行榜id 
+	uint32 rankID = 4;
+	// 排行榜标头 
+	string headerName = 5;
+}
+
+message LeaderboardMenuConfig_Array {
+	repeated LeaderboardMenuConfig items = 1;
+}

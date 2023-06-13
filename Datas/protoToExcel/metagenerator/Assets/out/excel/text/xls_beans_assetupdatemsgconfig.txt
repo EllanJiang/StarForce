@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "id": "AssetUpdate_Init",
+      "msg": "389329543"
+    },
+    {
+      "id": "AssetUpdate_CheckUpdate",
+      "msg": "446642631"
+    },
+    {
+      "id": "AssetUpdate_DownloadProgress",
+      "msg": "399968945"
+    },
+    {
+      "id": "AssetUpdate_Unziping",
+      "msg": "018788412"
+    },
+    {
+      "id": "AssetUpdate_NetError",
+      "msg": "411861434"
+    },
+    {
+      "id": "AssetUpdate_InitError",
+      "msg": "513994946"
+    },
+    {
+      "id": "AssetUpdate_HardDiskFull",
+      "msg": "503174809"
+    },
+    {
+      "id": "AssetUpdate_DownloadError",
+      "msg": "254783820"
+    },
+    {
+      "id": "AssetUpdate_Error",
+      "msg": "924508914"
+    },
+    {
+      "id": "AssetUpdate_AppStoreDownload",
+      "msg": "247526995"
+    },
+    {
+      "id": "AssetUpdate_RecommendDownload",
+      "msg": "469620253"
+    },
+    {
+      "id": "AssetUpdate_PreDownload",
+      "msg": "961086474"
+    },
+    {
+      "id": "AssetUpdate_Repair",
+      "msg": "501708304"
+    },
+    {
+      "id": "AssetUpdate_HttpStatusCode404Error",
+      "msg": "419159655"
+    },
+    {
+      "id": "AssetUpdate_Confirm",
+      "msg": "080757760"
+    },
+    {
+      "id": "AssetUpdate_Cancel",
+      "msg": "061453882"
+    },
+    {
+      "id": "AssetUpdate_AssetPackDownloadProgress",
+      "msg": "060099736"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+/**
+* @file:   excel\RogueLikeRandomStageConfig.xlsx\RogueLikeRandomStageConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RogueLikeRandomStageConfig{
+	// 关卡组号(配置在模式中) 
+	uint32 stageGroup = 1;
+	// 关卡列表ID 
+	repeated RogueLikeRandomStageConfig_stageList stageList = 2;
+}
+
+message RogueLikeRandomStageConfig_stageList{
+	// 关卡列表ID 
+	uint32 id = 1;
+	// 概率 
+	uint32 rate = 2;
+}
+
+message RogueLikeRandomStageConfig_Array {
+	repeated RogueLikeRandomStageConfig items = 1;
+}

@@ -1,0 +1,48 @@
+/**
+* @file:   excel\GroupItemsShop.xlsx\GroupItemsShop
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message GroupItemsShop{
+	// Id（自动生成） 
+	uint32 id = 1;
+	// 模式Id 
+	uint32 ModeId = 2;
+	// 难度等级 
+	uint32 Level = 3;
+	// 阶段id 
+	uint32 StatgId = 4;
+	// 最大刷新次数 
+	uint32 MaxRefreshCount = 5;
+	// 刷新金币 
+	repeated uint32 RefreshPrice = 6;
+	// 武器商品个数 
+	uint32 WeaponItemNum = 7;
+	// 道具商品个数 
+	uint32 ShopItemNum = 8;
+	// 武器掉落组id 
+	repeated GroupItemsShop_WeaponItemGroup WeaponItemGroup = 9;
+	// 道具id 
+	repeated GroupItemsShop_ShopItemGroup ShopItemGroup = 10;
+}
+
+message GroupItemsShop_WeaponItemGroup{
+	// 武器掉落组id 
+	uint32 id = 1;
+	// 掉落组权重 
+	uint32 weight = 2;
+}
+
+message GroupItemsShop_ShopItemGroup{
+	// 道具id 
+	uint32 id = 1;
+}
+
+message GroupItemsShop_Array {
+	repeated GroupItemsShop items = 1;
+}

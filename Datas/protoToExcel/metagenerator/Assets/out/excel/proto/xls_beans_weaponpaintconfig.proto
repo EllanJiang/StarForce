@@ -1,0 +1,35 @@
+/**
+* @file:   excel\WeaponPaintConfig.xlsx\WeaponPaintConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message WeaponPaintConfig{
+	// configid，武器id 前五位 
+	uint32 id = 1;
+	// 黑皮材质路径 
+	string resourceName = 2;
+	// WEAR贴图的缩放旋转平移值 
+	string WearSRT = 3;
+	// Grunge贴图的缩放旋转平移值 
+	string GrungeSRT = 4;
+	// 皮肤默认缩放系数 
+	repeated WeaponPaintConfig_paintData paintData = 5;
+	// 开启透明通道 
+	bool UseAlphaBlended = 6;
+}
+
+message WeaponPaintConfig_paintData{
+	// 皮肤默认缩放系数 
+	float UVScale = 1;
+	// 武器的长度 
+	float WeaponLength = 2;
+}
+
+message WeaponPaintConfig_Array {
+	repeated WeaponPaintConfig items = 1;
+}

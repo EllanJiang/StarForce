@@ -1,0 +1,20 @@
+/**
+* @file:   excel\BotConstConfig.xlsx\BotConstConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BotConstConfig{
+	// ID 
+	uint32 id = 1;
+	// 数据 
+	uint32 Value = 2;
+}
+
+message BotConstConfig_Array {
+	repeated BotConstConfig items = 1;
+}

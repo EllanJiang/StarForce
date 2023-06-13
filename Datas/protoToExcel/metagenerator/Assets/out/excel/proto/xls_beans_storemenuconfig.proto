@@ -1,0 +1,24 @@
+/**
+* @file:   excel\StoreMenuConfig.xlsx\StoreMenuConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message StoreMenuConfig{
+	// key 
+	uint32 id = 1;
+	// 目录名 
+	string name = 2;
+	// 页签类型 
+	uint32 pageType = 3;
+	// 窗口路径 
+	string windowPath = 4;
+}
+
+message StoreMenuConfig_Array {
+	repeated StoreMenuConfig items = 1;
+}

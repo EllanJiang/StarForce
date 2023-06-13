@@ -1,0 +1,44 @@
+/**
+* @file:   excel\FundConfig.xlsx\FundConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message FundConfig{
+	// ID 
+	uint32 id = 1;
+	// 截止购买时间 
+	int64 stopBuyTime = 2;
+	// 基金类型 
+	uint32 fundType = 3;
+	// 期限类型 
+	uint32 period = 4;
+	// 购买类型 
+	uint32 buyType = 5;
+	// 货币符号 
+	string currencySymbol = 6;
+	// 消耗类型 
+	uint32 currencyType = 7;
+	// 消耗数量 
+	uint32 currencyCount = 8;
+	// 原价值 
+	uint32 originalCount = 9;
+	// 面板 
+	uint32 panelId = 10;
+	// 背景配置 
+	uint32 backgroundId = 11;
+	// 起源币过期邮件标题 
+	string fundMailTitle = 12;
+	// 起源币过期邮件内容 
+	string fundMailContent = 13;
+	// 任务ID 
+	repeated uint32 tasks = 14;
+}
+
+message FundConfig_Array {
+	repeated FundConfig items = 1;
+}

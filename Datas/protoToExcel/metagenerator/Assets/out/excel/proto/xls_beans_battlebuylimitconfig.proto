@@ -1,0 +1,53 @@
+/**
+* @file:   excel\BattleBuyLimitConfig.xlsx\BattleBuyLimitConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BattleBuyLimitConfig{
+	// 模式ID 
+	uint32 id = 1;
+	// 默认最大持有数:武器类型 
+	int32 maxOwnNum = 2;
+	// 默认购买次数:武器类型 
+	int32 maxBuyNum = 3;
+	// 武器主类型:subType1 
+	repeated BattleBuyLimitConfig_SubTypeLimit SubTypeLimit = 4;
+	// 武器类型1 
+	repeated BattleBuyLimitConfig_ShareKindIdLimit ShareKindIdLimit = 5;
+	// 燃烧弹 
+	repeated BattleBuyLimitConfig_KindIdLimit KindIdLimit = 6;
+}
+
+message BattleBuyLimitConfig_SubTypeLimit{
+	// 武器主类型:subType1 
+	uint32 subType = 1;
+	// 持有最大数 
+	int32 maxOwnNum = 2;
+	// 购买次数 
+	int32 maxBuyNum = 3;
+}
+
+message BattleBuyLimitConfig_ShareKindIdLimit{
+	// 武器类型1 
+	string kindId = 1;
+	// 合计持有数 
+	int32 maxOwnNum = 2;
+}
+
+message BattleBuyLimitConfig_KindIdLimit{
+	// 燃烧弹 
+	uint32 kindId = 1;
+	// 持有最大数 
+	int32 maxOwnNum = 2;
+	// 购买次数 
+	int32 maxBuyNum = 3;
+}
+
+message BattleBuyLimitConfig_Array {
+	repeated BattleBuyLimitConfig items = 1;
+}

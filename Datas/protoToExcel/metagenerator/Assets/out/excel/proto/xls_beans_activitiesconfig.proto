@@ -1,0 +1,77 @@
+/**
+* @file:   excel\ActivitiesConfig.xlsx\ActivitiesConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ActivitiesConfig{
+	// key 
+	uint32 id = 1;
+	// 活动合集名称 
+	string name = 2;
+	// 活动类型 
+	uint32 type = 3;
+	// 系统类型 
+	uint32 systemType = 4;
+	// 推送类型，用于限制显示次数与时机 
+	uint32 displayType = 5;
+	// 对应活动ID 
+	uint32 catalogId = 6;
+	// 排序优先级，数字越大优先级越高 
+	uint32 sortWeight = 7;
+	// 显示条件 
+	repeated ActivitiesConfig_showCond showCond = 8;
+	// 开始时间 
+	int64 startTime = 9;
+	// 结束时间 
+	int64 endTime = 10;
+	// 开始天 
+	uint32 startDay = 11;
+	// 结束天 
+	uint32 endDay = 12;
+	// 活动循环类型 
+	string cycleType = 13;
+	// 子活动index 
+	repeated ActivitiesConfig_subs subs = 14;
+	// 奖励循环时间类型 
+	string effectTimeType = 15;
+	// 道具ID1、属性ID 
+	repeated ActivitiesConfig_effect effect = 16;
+}
+
+message ActivitiesConfig_showCond{
+	// 显示条件 
+	string condId = 1;
+	// 显示参数 
+	uint32 condValue = 2;
+}
+
+message ActivitiesConfig_subs{
+	// 子活动index 
+	uint32 index = 1;
+	// 子活动id 
+	uint32 id = 2;
+}
+
+message ActivitiesConfig_effect{
+	// 道具ID1、属性ID 
+	uint32 id = 1;
+	// 数量 
+	uint32 value = 2;
+	// 交易锁定时间（秒，0无限制） 
+	uint32 lockTime = 3;
+	// 有效时间（秒，0无限制） 
+	uint32 expire = 4;
+	// 是否暗金 
+	uint32 statTrak = 5;
+	// 指定皮肤编号 
+	uint32 paintKit = 6;
+}
+
+message ActivitiesConfig_Array {
+	repeated ActivitiesConfig items = 1;
+}

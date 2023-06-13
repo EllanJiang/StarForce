@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "deviceModel": "",
+      "height": 960,
+      "id": 1,
+      "innerWidth": 0,
+      "width": 1198
+    }
+  ]
+}

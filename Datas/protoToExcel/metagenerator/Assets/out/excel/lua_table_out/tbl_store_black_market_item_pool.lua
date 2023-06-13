@@ -1,0 +1,50 @@
+--[[
+* @file:   StoreBlackMarketItemPool
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+]]--
+
+local StoreBlackMarketItemPoolTable = {
+	{lineNumber = 1, goodsId = 5001, mark = 1, poolId = 1, weight = 10}, 
+	{lineNumber = 2, goodsId = 5002, mark = 1, poolId = 1, weight = 10}, 
+	{lineNumber = 3, goodsId = 5003, mark = 1, poolId = 1, weight = 10}, 
+	{lineNumber = 4, goodsId = 5004, mark = 1, poolId = 1, weight = 10}, 
+	{lineNumber = 5, goodsId = 5005, mark = 1, poolId = 1, weight = 10}, 
+	{lineNumber = 6, goodsId = 5006, mark = 1, poolId = 1, weight = 10}, 
+	{lineNumber = 7, goodsId = 5101, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 8, goodsId = 5102, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 9, goodsId = 5103, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 10, goodsId = 5104, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 11, goodsId = 5105, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 12, goodsId = 5106, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 13, goodsId = 5107, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 14, goodsId = 5108, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 15, goodsId = 5109, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 16, goodsId = 5110, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 17, goodsId = 5111, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 18, goodsId = 5112, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 19, goodsId = 5113, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 20, goodsId = 5114, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 21, goodsId = 5115, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 22, goodsId = 5116, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 23, goodsId = 5117, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 24, goodsId = 5118, mark = 0, poolId = 2, weight = 10}, 
+	{lineNumber = 25, goodsId = 5201, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 26, goodsId = 5202, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 27, goodsId = 5203, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 28, goodsId = 5204, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 29, goodsId = 5205, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 30, goodsId = 5206, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 31, goodsId = 5207, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 32, goodsId = 5208, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 33, goodsId = 5209, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 34, goodsId = 5210, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 35, goodsId = 5211, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 36, goodsId = 5212, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 37, goodsId = 5213, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 38, goodsId = 5214, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 39, goodsId = 5215, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 40, goodsId = 5216, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 41, goodsId = 5217, mark = 0, poolId = 3, weight = 10}, 
+	{lineNumber = 42, goodsId = 5218, mark = 0, poolId = 3, weight = 10}
+}
+return StoreBlackMarketItemPoolTable

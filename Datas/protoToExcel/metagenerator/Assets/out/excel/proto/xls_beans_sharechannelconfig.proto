@@ -1,0 +1,24 @@
+/**
+* @file:   excel\ShareChannelConfig.xlsx\ShareChannelConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message ShareChannelConfig{
+	// 渠道id 
+	uint32 id = 1;
+	// 排序 
+	uint32 order = 2;
+	// 按钮图标 
+	uint32 btnIcon = 3;
+	// 按钮倒影图标 
+	uint32 reflectionBtnIcon = 4;
+}
+
+message ShareChannelConfig_Array {
+	repeated ShareChannelConfig items = 1;
+}

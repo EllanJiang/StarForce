@@ -1,0 +1,54 @@
+/**
+* @file:   excel\MusicBoxConfig.xlsx\MusicBoxConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MusicBoxConfig{
+	// ID 
+	uint64 id = 1;
+	// 道具ID 
+	uint32 itemID = 2;
+	// 局内iconID 
+	uint32 insideIconID = 3;
+	// 未下载分包资源时替换用的id 
+	uint32 fallbackId = 4;
+	// 音乐盒名称（废弃） 
+	string name = 5;
+	// 音乐盒名称（英） 
+	string nameEN = 6;
+	// Bank名称 
+	string Bank = 7;
+	// 等级 
+	uint32 level = 8;
+	// 局内音乐EventPlay 
+	string InsideMusicName_Play = 9;
+	// 局内音乐EventStop 
+	string InsideMusicName_Stop = 10;
+	// StayState 
+	uint32 StayState = 11;
+	// ActionState 
+	uint32 ActionState = 12;
+	// BombplantedState 
+	uint32 BombplantedState = 13;
+	// BombtenseccountState 
+	uint32 BombtenseccountState = 14;
+	// DeathcamState 
+	uint32 DeathcamState = 15;
+	// RoundtenseccountState 
+	uint32 RoundtenseccountState = 16;
+	// RoundmvpanthemState 
+	uint32 RoundmvpanthemState = 17;
+	// WonState 
+	uint32 WonState = 18;
+	// LostState 
+	uint32 LostState = 19;
+}
+
+message MusicBoxConfig_Array {
+	repeated MusicBoxConfig items = 1;
+}

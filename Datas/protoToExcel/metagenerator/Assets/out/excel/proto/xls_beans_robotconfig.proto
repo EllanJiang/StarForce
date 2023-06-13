@@ -1,0 +1,40 @@
+/**
+* @file:   excel\RobotConfig.xlsx\RobotConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message RobotConfig{
+	// key 
+	uint32 id = 1;
+	// 机器人类型 
+	uint32 aiType = 2;
+	// 模式 
+	uint32 mode = 3;
+	// AI等级 
+	uint32 levelID = 4;
+	// AI类型 
+	uint32 CTRobotType = 5;
+	// 角色ID 
+	uint32 CTCampCharacter = 6;
+	// AI类型 
+	uint32 TRobotType = 7;
+	// 角色ID 
+	uint32 TCampCharacter = 8;
+	// 昵称 
+	uint32 nameId = 9;
+	// 头像 
+	uint32 avatar = 10;
+	// 头像框 
+	uint32 avatarFrame = 11;
+	// 名片 
+	uint32 businessCard = 12;
+}
+
+message RobotConfig_Array {
+	repeated RobotConfig items = 1;
+}

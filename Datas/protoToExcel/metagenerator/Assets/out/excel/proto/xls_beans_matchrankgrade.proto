@@ -1,0 +1,28 @@
+/**
+* @file:   excel\MatchRankGrade.xlsx\MatchRankGrade
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message MatchRankGrade{
+	// key 
+	uint32 id = 1;
+	// 段位名称 
+	string name = 2;
+	// 背景板色值 
+	string bgColor = 3;
+	// 背景中间logo色值 
+	string logoColor = 4;
+	// 组队最低大段 
+	uint32 teamUpMinGrade = 5;
+	// 组队最高大段 
+	uint32 teamUpMaxGrade = 6;
+}
+
+message MatchRankGrade_Array {
+	repeated MatchRankGrade items = 1;
+}

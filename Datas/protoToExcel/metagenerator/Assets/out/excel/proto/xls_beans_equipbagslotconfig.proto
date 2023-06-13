@@ -1,0 +1,26 @@
+/**
+* @file:   excel\EquipBagSlotConfig.xlsx\EquipBagSlotConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message EquipBagSlotConfig{
+	// 编号 
+	uint32 id = 1;
+	// 是否只有单个背包(1=>True)  
+	uint32 isCommon = 2;
+	// 可装备数量，装备多个多个随机选择一个 
+	uint32 equipNum = 3;
+	// 配置类型（itemconfig的maintype，如无配置则是固定不可改变） 
+	uint32 itemType = 4;
+	// 装入物品类型（武器对应bagType，角色无限制，物品对应subtype1） 
+	repeated uint32 itemLimit = 5;
+}
+
+message EquipBagSlotConfig_Array {
+	repeated EquipBagSlotConfig items = 1;
+}

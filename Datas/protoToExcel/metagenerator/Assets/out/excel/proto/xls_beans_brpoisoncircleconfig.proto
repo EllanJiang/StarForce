@@ -1,0 +1,44 @@
+/**
+* @file:   excel\BRPoisonCircleConfig.xlsx\BRPoisonCircleConfig
+* @author: bommy
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+syntax = "proto3";
+
+package D11.Pbeans;
+
+message BRPoisonCircleConfig{
+	// 模式id 
+	uint32 modeId = 1;
+	// 场景id 
+	uint32 sceneId = 2;
+	// 回合id 
+	int32 roundId = 3;
+	// 半径 
+	float radius = 4;
+	// 延时创建时间S 
+	uint32 createDelay = 5;
+	// 毒圈停留时间S 
+	uint32 stayTime = 6;
+	// 缩圈时间S 
+	uint32 moveTime = 7;
+	// 惩罚参数 
+	float punishmentParameter = 8;
+	// 惩罚参数频率S 
+	float punishmentFrequency = 9;
+	// 不可移动区域最大占比 
+	float maxImmovableArea = 10;
+	// 中心x范围下 
+	int32 minX = 11;
+	// 中心x范围上 
+	int32 maxX = 12;
+	// 中心y范围下 
+	int32 minZ = 13;
+	// 中心y范围上 
+	int32 maxZ = 14;
+}
+
+message BRPoisonCircleConfig_Array {
+	repeated BRPoisonCircleConfig items = 1;
+}

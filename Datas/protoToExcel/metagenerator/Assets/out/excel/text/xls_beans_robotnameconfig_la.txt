@@ -1,0 +1,1939 @@
+{
+  "items": [
+    {
+      "robotFirstName": "Hadón",
+      "robotSecondName": "Brisa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Alfredo",
+      "robotSecondName": "Brise",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Wenfrig",
+      "robotSecondName": "Bried",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Linda",
+      "robotSecondName": "Dulce",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Beilu",
+      "robotSecondName": "Miren",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ares",
+      "robotSecondName": "Mira",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Artemis",
+      "robotSecondName": "Apolo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dorado",
+      "robotSecondName": "Wen",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rosa",
+      "robotSecondName": "Izaro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Miria",
+      "robotSecondName": "Zenda",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Roble",
+      "robotSecondName": "Zyr",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Violeta",
+      "robotSecondName": "Sirel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Azel",
+      "robotSecondName": "Aldai",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Axol",
+      "robotSecondName": "Allen",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rayo",
+      "robotSecondName": "Rojo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ray",
+      "robotSecondName": "Kah",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fresa",
+      "robotSecondName": "Kyrie",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Custos",
+      "robotSecondName": "Key",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mey",
+      "robotSecondName": "Amira",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Denzel",
+      "robotSecondName": "Ander",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cronos",
+      "robotSecondName": "Angus",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ares",
+      "robotSecondName": "Anker",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hades",
+      "robotSecondName": "Azrel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Kaol",
+      "robotSecondName": "Karin",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Volcan",
+      "robotSecondName": "Leon",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hermes",
+      "robotSecondName": "Daske",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hestio",
+      "robotSecondName": "Koll",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hestio",
+      "robotSecondName": "Austo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Akile",
+      "robotSecondName": "Anna",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zonu",
+      "robotSecondName": "Berry",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Argen",
+      "robotSecondName": "Ajax",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arion",
+      "robotSecondName": "Demi",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Aria",
+      "robotSecondName": "Dante",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ihan",
+      "robotSecondName": "Azul",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sol",
+      "robotSecondName": "Eco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Feris",
+      "robotSecondName": "Felin",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cali",
+      "robotSecondName": "Crimson",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Iren",
+      "robotSecondName": "Iris",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cyril",
+      "robotSecondName": "Cross",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arelin",
+      "robotSecondName": "Gris",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dareios",
+      "robotSecondName": "Eitan",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Owen",
+      "robotSecondName": "Irina",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Yun",
+      "robotSecondName": "Emil",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eyrx",
+      "robotSecondName": "Emir",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eryx",
+      "robotSecondName": "Yune",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Drazen",
+      "robotSecondName": "Yumme",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rae",
+      "robotSecondName": "Irima",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gertie",
+      "robotSecondName": "Riza",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Risa",
+      "robotSecondName": "Bruja",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Margale",
+      "robotSecondName": "Val",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Magnoli",
+      "robotSecondName": "Valor",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eliezer",
+      "robotSecondName": "Varel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eron",
+      "robotSecondName": "Ale",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ceril",
+      "robotSecondName": "Cecil",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mikael",
+      "robotSecondName": "Mike",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Karsten",
+      "robotSecondName": "Mikale",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Paloma",
+      "robotSecondName": "Erend",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lysande",
+      "robotSecondName": "Leon",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Randel",
+      "robotSecondName": "Elia",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Flamel",
+      "robotSecondName": "Rey",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Erin",
+      "robotSecondName": "Lukas",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Leande",
+      "robotSecondName": "Ayre",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Trentin",
+      "robotSecondName": "Shura",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lander",
+      "robotSecondName": "Roan",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Roril",
+      "robotSecondName": "Yure",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Marine",
+      "robotSecondName": "Bruno",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Caterin",
+      "robotSecondName": "Ron",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Margare",
+      "robotSecondName": "Luz",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Catrin",
+      "robotSecondName": "Blanca",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ayra",
+      "robotSecondName": "Zoe",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sirene",
+      "robotSecondName": "Zoey",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Doril",
+      "robotSecondName": "Walles",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Noche",
+      "robotSecondName": "Tae",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Suni",
+      "robotSecondName": "Furia",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Angus",
+      "robotSecondName": "Bruce",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Augus",
+      "robotSecondName": "Buck",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gin",
+      "robotSecondName": "Virgo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tao",
+      "robotSecondName": "Atlas",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mirelle",
+      "robotSecondName": "Atel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Finn",
+      "robotSecondName": "Iker",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Delia",
+      "robotSecondName": "Kenzo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Marcos",
+      "robotSecondName": "2ctor",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Walter_",
+      "robotSecondName": "Benji",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lionel",
+      "robotSecondName": "Brea",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Malla0",
+      "robotSecondName": "Roco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Coral",
+      "robotSecondName": "Yair",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Myron",
+      "robotSecondName": "Dario",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Alexa",
+      "robotSecondName": "Bien",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Alex",
+      "robotSecondName": "Remi",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Neo",
+      "robotSecondName": "Zuri",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rhodes",
+      "robotSecondName": "Izan",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Armando",
+      "robotSecondName": "Eos",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sirius",
+      "robotSecondName": "Dali",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cyrius",
+      "robotSecondName": "Luca",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eremes",
+      "robotSecondName": "Lucca",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Nale",
+      "robotSecondName": "Zein",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ragnar_",
+      "robotSecondName": "Tymon",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Neil",
+      "robotSecondName": "Emma",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ryone",
+      "robotSecondName": "Ermes",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Illai",
+      "robotSecondName": "Odin",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Montu",
+      "robotSecondName": "Lex",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Amaya",
+      "robotSecondName": "Lexa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Melanie",
+      "robotSecondName": "Rex",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Halsey",
+      "robotSecondName": "Rexo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hectory",
+      "robotSecondName": "Rexa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Yago",
+      "robotSecondName": "Lexie",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Deimos",
+      "robotSecondName": "Zaid",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Elene",
+      "robotSecondName": "Zaid",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Armonia",
+      "robotSecondName": "Alice",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ren",
+      "robotSecondName": "Saul",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rea",
+      "robotSecondName": "H_ugo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Esai",
+      "robotSecondName": "Ezio",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Vesta",
+      "robotSecondName": "Lucy",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Adai",
+      "robotSecondName": "Lucin",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sobek",
+      "robotSecondName": "Kana",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Evan",
+      "robotSecondName": "Aerol",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Haku",
+      "robotSecondName": "Eriol",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Unay",
+      "robotSecondName": "Aura",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mixcoa",
+      "robotSecondName": "Yessi",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Haru",
+      "robotSecondName": "Kael",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Daniel",
+      "robotSecondName": "Yumi",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Olimpia",
+      "robotSecondName": "Aldo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Izei",
+      "robotSecondName": "Izeil",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Julio",
+      "robotSecondName": "Kalu",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Vito",
+      "robotSecondName": "Igor",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Aneu",
+      "robotSecondName": "Kaela",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Koda",
+      "robotSecondName": "Eyra",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ayun",
+      "robotSecondName": "Leon",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zain",
+      "robotSecondName": "Lima",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Aidel",
+      "robotSecondName": "Enzo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Kilian",
+      "robotSecondName": "Adril",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zigora",
+      "robotSecondName": "Tony",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Abril",
+      "robotSecondName": "Zeth",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ivaran",
+      "robotSecondName": "Itze",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Axel",
+      "robotSecondName": "Alin",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Axek",
+      "robotSecondName": "Ciro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Danae",
+      "robotSecondName": "Esli",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Elian",
+      "robotSecondName": "Tyrn",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Yurel",
+      "robotSecondName": "Zeil",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Emily",
+      "robotSecondName": "Aella",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Erin",
+      "robotSecondName": "Enol",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hans",
+      "robotSecondName": "Huadi",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Kile",
+      "robotSecondName": "Iban",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Leire",
+      "robotSecondName": "Atina",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Milos",
+      "robotSecondName": "Adeka",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tahiel",
+      "robotSecondName": "Adella",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mario",
+      "robotSecondName": "Brie",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gloria",
+      "robotSecondName": "Brai",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zigo",
+      "robotSecondName": "Hrime",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Jaguar_",
+      "robotSecondName": "Zyon",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Valle",
+      "robotSecondName": "Kaan",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Maider_",
+      "robotSecondName": "Kaba",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Areu",
+      "robotSecondName": "Kabe",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Emilio",
+      "robotSecondName": "Kaci",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Teresa",
+      "robotSecondName": "Abel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Jazmín",
+      "robotSecondName": "Enya",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Pollo",
+      "robotSecondName": "Leia",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Granado",
+      "robotSecondName": "Asha",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Diego",
+      "robotSecondName": "Kade",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lavanda",
+      "robotSecondName": "Kaede",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Kaen",
+      "robotSecondName": "Aixa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Emilia",
+      "robotSecondName": "Tara",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Jade",
+      "robotSecondName": "Izen",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Deria",
+      "robotSecondName": "Lea",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zoe",
+      "robotSecondName": "Leah",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Alana",
+      "robotSecondName": "Izan",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Andrin",
+      "robotSecondName": "Suri",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Maia",
+      "robotSecondName": "Iean",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Aday",
+      "robotSecondName": "Iesa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Trae",
+      "robotSecondName": "Igore",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Salma",
+      "robotSecondName": "Ikai",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Laia",
+      "robotSecondName": "Elif",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ikee",
+      "robotSecondName": "Auroe",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ioan",
+      "robotSecondName": "Luka",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Daria",
+      "robotSecondName": "Luke",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rain",
+      "robotSecondName": "Aurea",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Smokie",
+      "robotSecondName": "Emma",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cecil",
+      "robotSecondName": "Vega",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Shecil",
+      "robotSecondName": "Zair",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Soheon",
+      "robotSecondName": "Zare",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sohee",
+      "robotSecondName": "Zafir",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fresia",
+      "robotSecondName": "Yuna",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rekiel",
+      "robotSecondName": "Yunna",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Nicole",
+      "robotSecondName": "Yune",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fany",
+      "robotSecondName": "Yunne",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arin",
+      "robotSecondName": "Eire",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fanny",
+      "robotSecondName": "Kora",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Haki",
+      "robotSecondName": "Izel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arlet",
+      "robotSecondName": "Zayd",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arlett",
+      "robotSecondName": "Aide",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gabi",
+      "robotSecondName": "Ayde",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eilan",
+      "robotSecondName": "Hralo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Daya",
+      "robotSecondName": "Hyale",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dash",
+      "robotSecondName": "Hyame",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ariel",
+      "robotSecondName": "Eari",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Amber_",
+      "robotSecondName": "Amina",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Erick",
+      "robotSecondName": "Ikal",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Brake",
+      "robotSecondName": "Alia",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Anna",
+      "robotSecondName": "Amira",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Super",
+      "robotSecondName": "Acto",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sultán",
+      "robotSecondName": "Afro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Clon",
+      "robotSecondName": "Vid",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Filo",
+      "robotSecondName": "Agua",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Alfa",
+      "robotSecondName": "Ajo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cerdo",
+      "robotSecondName": "Ala",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Asado",
+      "robotSecondName": "Alfa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mosco",
+      "robotSecondName": "Amar",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Azote",
+      "robotSecondName": "Amo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sol",
+      "robotSecondName": "Vela",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rudo",
+      "robotSecondName": "Anís",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Inglés",
+      "robotSecondName": "Apto",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Foco",
+      "robotSecondName": "Aqua",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Odio",
+      "robotSecondName": "Arco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zar",
+      "robotSecondName": "Atún",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tigre",
+      "robotSecondName": "Auge",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gurú",
+      "robotSecondName": "Auto",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ozono",
+      "robotSecondName": "Ave",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Melón",
+      "robotSecondName": "Azul",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Atleta",
+      "robotSecondName": "Bajo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Muak",
+      "robotSecondName": "Bam",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Koala",
+      "robotSecondName": "Bang",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Robot",
+      "robotSecondName": "Beso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cielo",
+      "robotSecondName": "Beta",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Boa",
+      "robotSecondName": "Boa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Norte",
+      "robotSecondName": "Boli",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Pato",
+      "robotSecondName": "Bono",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bolo",
+      "robotSecondName": "Boom",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Audio",
+      "robotSecondName": "Bota",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Auto",
+      "robotSecondName": "Búho",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lente",
+      "robotSecondName": "Buzo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tritón",
+      "robotSecondName": "Café",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Aire",
+      "robotSecondName": "Cal",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Jojo",
+      "robotSecondName": "Cano",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Pie",
+      "robotSecondName": "Caos",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bufón",
+      "robotSecondName": "Caro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mono",
+      "robotSecondName": "Cima",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Muro",
+      "robotSecondName": "Coco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cuyo",
+      "robotSecondName": "Codo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Burro",
+      "robotSecondName": "Cojo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Frío",
+      "robotSecondName": "Col",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Venado",
+      "robotSecondName": "Coma",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Corgie",
+      "robotSecondName": "Cono",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Husky",
+      "robotSecondName": "Cría",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Asno",
+      "robotSecondName": "Cruz",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Avión",
+      "robotSecondName": "Cubo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dedo",
+      "robotSecondName": "Dado",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Marte",
+      "robotSecondName": "Vil",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Litio",
+      "robotSecondName": "Dedo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Piloto",
+      "robotSecondName": "Deli",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bufet",
+      "robotSecondName": "Diez",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Atún",
+      "robotSecondName": "Dino",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Barco",
+      "robotSecondName": "Diva",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bote",
+      "robotSecondName": "Doce",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tesoro",
+      "robotSecondName": "Domo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cuarzo",
+      "robotSecondName": "Dos",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eje",
+      "robotSecondName": "DPS",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Audaz",
+      "robotSecondName": "Dron",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cómic",
+      "robotSecondName": "Duro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Alien",
+      "robotSecondName": "Eco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rayo",
+      "robotSecondName": "Elfo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fuego",
+      "robotSecondName": "Ente",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Pincel",
+      "robotSecondName": "Fiel",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Novel",
+      "robotSecondName": "Foca",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lord",
+      "robotSecondName": "Foco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gran",
+      "robotSecondName": "FPS",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Anillo",
+      "robotSecondName": "Frío",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Huevo",
+      "robotSecondName": "Gajo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dado",
+      "robotSecondName": "Gama",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arco",
+      "robotSecondName": "Giro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Carbón",
+      "robotSecondName": "Gis",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bate",
+      "robotSecondName": "Gota",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fósil",
+      "robotSecondName": "Gris",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Islote",
+      "robotSecondName": "Guau",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Papá",
+      "robotSecondName": "Heno",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arce",
+      "robotSecondName": "Hijo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lunar",
+      "robotSecondName": "Hipo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hielo",
+      "robotSecondName": "Hito",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Amor",
+      "robotSecondName": "Hoja",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lémur",
+      "robotSecondName": "Hoyo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "León",
+      "robotSecondName": "Imán",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mimo",
+      "robotSecondName": "Jazz",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Casco",
+      "robotSecondName": "Jugo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Enojo",
+      "robotSecondName": "Justo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Zombi",
+      "robotSecondName": "Kiwi",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Café",
+      "robotSecondName": "Lado",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cubo",
+      "robotSecondName": "Laso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Equis",
+      "robotSecondName": "Lata",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Nuez",
+      "robotSecondName": "Leal",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Buey",
+      "robotSecondName": "Vino",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Video",
+      "robotSecondName": "Leve",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Miss",
+      "robotSecondName": "Lila",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Azteca",
+      "robotSecondName": "Lío",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Túnel",
+      "robotSecondName": "Liso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Guapo",
+      "robotSecondName": "Lobo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sastre",
+      "robotSecondName": "Loco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "PEM",
+      "robotSecondName": "Loto",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Loco",
+      "robotSecondName": "Lujo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Orco",
+      "robotSecondName": "Luz",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lodo",
+      "robotSecondName": "Mal",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Oso",
+      "robotSecondName": "Mano",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hongo",
+      "robotSecondName": "Meta",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Error",
+      "robotSecondName": "Miau",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Jefe",
+      "robotSecondName": "Mini",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Higo",
+      "robotSecondName": "Mito",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Pulpo",
+      "robotSecondName": "Moco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hipo",
+      "robotSecondName": "Mole",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cometa",
+      "robotSecondName": "Mono",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hoyo",
+      "robotSecondName": "Yema",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Loto",
+      "robotSecondName": "Moto",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bebé",
+      "robotSecondName": "Mozo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Juego",
+      "robotSecondName": "Mudo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dragón",
+      "robotSecondName": "Musa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Hurón",
+      "robotSecondName": "Muu",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mole",
+      "robotSecondName": "Nato",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Jade",
+      "robotSecondName": "Neón",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ente",
+      "robotSecondName": "Nerd",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Fémur",
+      "robotSecondName": "Yeso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Kilo",
+      "robotSecondName": "Nodo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Noble",
+      "robotSecondName": "Yeti",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Líder",
+      "robotSecondName": "Nudo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Baya",
+      "robotSecondName": "Nuez",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lobo",
+      "robotSecondName": "Ocio",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Elote",
+      "robotSecondName": "Ocre",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mito",
+      "robotSecondName": "Olmo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Grillo",
+      "robotSecondName": "Once",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Elfo",
+      "robotSecondName": "Orbe",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Buzo",
+      "robotSecondName": "Orco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Muerte",
+      "robotSecondName": "Oro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Perico",
+      "robotSecondName": "Yugo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Taco",
+      "robotSecondName": "Ovni",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cóndor",
+      "robotSecondName": "Palo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Frijol",
+      "robotSecondName": "Pan",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lazo",
+      "robotSecondName": "Papa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cisne",
+      "robotSecondName": "Pata",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ogro",
+      "robotSecondName": "Pavo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Buho",
+      "robotSecondName": "Pera",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Pez",
+      "robotSecondName": "Zaz",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mago",
+      "robotSecondName": "Pino",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Urano",
+      "robotSecondName": "Pío",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Saco",
+      "robotSecondName": "Piso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bici",
+      "robotSecondName": "Plaf",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Eco",
+      "robotSecondName": "Poco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Chita",
+      "robotSecondName": "Poni",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sal",
+      "robotSecondName": "Pop",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Arroz",
+      "robotSecondName": "Pow",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Marfil",
+      "robotSecondName": "Pro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Plutón",
+      "robotSecondName": "Púa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Uva",
+      "robotSecondName": "Pum",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Puma",
+      "robotSecondName": "Puma",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Juez",
+      "robotSecondName": "Punk",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Gorila",
+      "robotSecondName": "Zinc",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mazo",
+      "robotSecondName": "Puré",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Carro",
+      "robotSecondName": "Raíz",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Reno",
+      "robotSecondName": "Ralo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Mar",
+      "robotSecondName": "Ramo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tuza",
+      "robotSecondName": "Rana",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Bardo",
+      "robotSecondName": "Raro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Dulce",
+      "robotSecondName": "Raso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Solar",
+      "robotSecondName": "Rata",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Radio",
+      "robotSecondName": "Rayo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Lady",
+      "robotSecondName": "Real",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ojo",
+      "robotSecondName": "Res",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ion",
+      "robotSecondName": "Río",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Shiba",
+      "robotSecondName": "Rizo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cono",
+      "robotSecondName": "Rock",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Caviar",
+      "robotSecondName": "Rojo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Beso",
+      "robotSecondName": "Romo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Chisme",
+      "robotSecondName": "Rosa",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Drama",
+      "robotSecondName": "Roto",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ninja",
+      "robotSecondName": "Ruin",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Salmón",
+      "robotSecondName": "Sano",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tucán",
+      "robotSecondName": "Sapo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cáliz",
+      "robotSecondName": "Seco",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ataque",
+      "robotSecondName": "Seis",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Cuco",
+      "robotSecondName": "Seso",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Reptil",
+      "robotSecondName": "Snob",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Ejote",
+      "robotSecondName": "Sumo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Topo",
+      "robotSecondName": "Tofu",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Copete",
+      "robotSecondName": "Topo",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Tapir",
+      "robotSecondName": "Toro",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Sapo",
+      "robotSecondName": "Trol",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Rino",
+      "robotSecondName": "Uff",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Coco",
+      "robotSecondName": "Zoom",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Monte",
+      "robotSecondName": "Vago",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Espía",
+      "robotSecondName": "Vals",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Astro",
+      "robotSecondName": "Vano",
+      "robotThreeName": ""
+    },
+    {
+      "robotFirstName": "Vial",
+      "robotSecondName": "Vara",
+      "robotThreeName": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "case": [
+        {
+          "rewardId": 101,
+          "ruleId": 10001
+        }
+      ],
+      "id": 1
+    },
+    {
+      "case": [
+        {
+          "rewardId": 101,
+          "ruleId": 10001
+        }
+      ],
+      "id": 2
+    }
+  ]
+}
