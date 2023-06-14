@@ -1,6 +1,5 @@
-set WORKSPACE=..
 rem set GEN_CLIENT=dotnet ..\Tools\Luban.ClientServer\Luban.ClientServer.dll
-set GEN_CLIENT=%WORKSPACE%\Config\Luban.ClientServer\Luban.ClientServer.exe
+set GEN_CLIENT=..\Tools\Luban.ClientServer\Luban.ClientServer.exe
 
 %GEN_CLIENT% -j cfg --^
  -d Defines\__root__.xml ^
