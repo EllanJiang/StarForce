@@ -1,9 +1,0 @@
-{
-	"Damage":75,
-	"RollDistance":5,
-	"AreaScale":{
-	  "x": 6,
-	  "y": 0,
-	  "z": 3
-	}
-}

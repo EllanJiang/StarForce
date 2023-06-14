@@ -1,0 +1,18 @@
+{
+    "name": "GameMain",
+    "rootNamespace": "",
+    "references": [
+        "GUID:98a685ae4c71d244493e1a8c2fde8adf",
+        "GUID:363c5eb08ff8e6a439b85e37b8c20d96",
+        "GUID:242f8e9bb85660448b6f7212c7098c4b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

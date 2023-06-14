@@ -1,7 +1,0 @@
-{
-  "HPShieldSlotTotalNum":3,
-  "HPShieldSlotInitNum":1,
-  "MaxShieldValue":50,
-  "SpawnYHeight":200,	//出生重生高度
-  "WarmUpBeginInvincibleTimeToEnd":5	//热身结束前X秒无敌
-}
