@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using GameMain;
 using UnityEngine;
 
 namespace StarForce
@@ -26,10 +27,13 @@ namespace StarForce
             private set;
         }
 
+        public static FileComponent File;
+
         private static void InitCustomComponents()
         {
             BuiltinData = UnityGameFramework.Runtime.GameEntry.GetComponent<BuiltinDataComponent>();
             HPBar = UnityGameFramework.Runtime.GameEntry.GetComponent<HPBarComponent>();
+            File =  UnityGameFramework.Runtime.GameEntry.GetComponent<FileComponent>();
         }
     }
 }

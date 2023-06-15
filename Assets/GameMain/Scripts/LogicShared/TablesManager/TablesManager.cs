@@ -8,6 +8,7 @@
 
 using System;
 using Bright.Serialization;
+using LogicShared.FileLoader;
 
 namespace cfg.luban
 {
@@ -37,14 +38,14 @@ namespace cfg.luban
         {
             get
             {
-#if UNITY_EDITOR
-                // todo 运行时需要重新设置loader
-                _tableLoader = (file) =>
+                if (_tableLoader == null)
                 {
-                    var fullPath = $"Assets/GameMain/DataTables/LubanByteDatas/{file}.bytes";
-                    return new ByteBuf(System.IO.File.ReadAllBytes(fullPath));
-                };
-#endif
+                    _tableLoader = (file) =>
+                    {
+                        var filePath = $"DataTables/LubanByteDatas/{file}.bytes";
+                        return new ByteBuf(FileLoaderUtil.ReadStreamingFile(filePath));
+                    };
+                }
                 return _tableLoader;
             }
 
