@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.982FBD6D" = "t:assemblydefinitionasset "
+	"last_search.982FBD6D" = "t:motion "
 	"OpenInspectorPreview.982FBD6D" = "0"
 	"currentGroup.982FBD6D" = "all"
 }
