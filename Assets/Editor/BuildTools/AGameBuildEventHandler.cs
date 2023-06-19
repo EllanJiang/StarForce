@@ -48,13 +48,13 @@ public class AGameBuildEventHandler : IBuildEventHandler
     public void OnOutputUpdatableVersionListData(Platform platform, string versionListPath, int versionListLength,
         int versionListHashCode, int versionListCompressedLength, int versionListCompressedHashCode)
     {
-        var dirPath = $"{outputDirectory}/testServer_{platform}/appVersion";
-        Debug.LogError("----------------------:"+dirPath);
-        if(Directory.Exists(dirPath))
-            Directory.Delete(dirPath,true);
-        Directory.CreateDirectory(dirPath);
-        Debug.LogError("innn "+internalResourceVersion);
-        WriteVersionDat($"{dirPath}/version.bat",internalResourceVersion, versionListLength,versionListHashCode,versionListCompressedLength,versionListCompressedHashCode);
+        // var dirPath = $"{outputDirectory}/testServer_{platform}/appVersion";
+        // Debug.LogError("----------------------:"+dirPath);
+        // if(Directory.Exists(dirPath))
+        //     Directory.Delete(dirPath,true);
+        // Directory.CreateDirectory(dirPath);
+        // Debug.LogError("innn "+internalResourceVersion);
+        // WriteVersionDat($"{dirPath}/version.bat",internalResourceVersion, versionListLength,versionListHashCode,versionListCompressedLength,versionListCompressedHashCode);
     }
 
     public void OnPostprocessPlatform(Platform platform, string workingPath, bool outputPackageSelected, string outputPackagePath,

@@ -1,0 +1,529 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.5f1c1 (23e20ff61267) revision 2351631'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'zh' Physical Memory: 32489 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.5f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/Learn/Unity_Learn/UGF/StarForce
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57816
+Successfully changed project path to: D:/Learn/Unity_Learn/UGF/StarForce
+D:/Learn/Unity_Learn/UGF/StarForce
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 57.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.5f1c1 (23e20ff61267)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Learn/Unity_Learn/UGF/StarForce/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   NVIDIA
+    VRAM:     5979 MB
+    Driver:   31.0.15.2824
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005143 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 52.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.486 seconds
+Domain Reload Profiling:
+	ReloadAssembly (486ms)
+		BeginReloadAssembly (53ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (354ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (80ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (207ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (49ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007072 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Learn\Unity_Learn\UGF\StarForce\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Learn\Unity_Learn\UGF\StarForce\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.879 seconds
+Domain Reload Profiling:
+	ReloadAssembly (880ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (604ms)
+			LoadAssemblies (62ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (212ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (255ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4058 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (55.4 KB). Loaded Objects now: 4520.
+Memory consumption went from 138.3 MB to 138.3 MB.
+Total: 2.505800 ms (FindLiveObjects: 0.218800 ms CreateObjectMapping: 0.113900 ms MarkObjects: 2.115000 ms  DeleteObjects: 0.057200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 34348.264009 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Bonus/soldier_05.mat
+  artifactKey: Guid(e2c35ee33af95ae4d8aa91528be22642) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Bonus/soldier_05.mat using Guid(e2c35ee33af95ae4d8aa91528be22642) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '580e0ae7b631b3a2e14db4b069379f57') in 0.154312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TankConstructor/Images/Hulls/HeavyHullB.png
+  artifactKey: Guid(4b2a9ffca2dd69347821d99550885818) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/Hulls/HeavyHullB.png using Guid(4b2a9ffca2dd69347821d99550885818) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5cb8d996e41a9004e8fa9f52f8939d50') in 0.082679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Armata
+  artifactKey: Guid(22cc616618a72d747980a801696bfae4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Armata using Guid(22cc616618a72d747980a801696bfae4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '181c22fe98f4991aec0958a6afb84551') in 0.006781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TankConstructor/Images/GunConnectors/GunConnectorC.png
+  artifactKey: Guid(7f2347a43a312f34196dd2688bcb4f66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/GunConnectors/GunConnectorC.png using Guid(7f2347a43a312f34196dd2688bcb4f66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'deb97a6ed19885130309c883f9975603') in 0.078923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Hamvy
+  artifactKey: Guid(b9ad1b27d61fa0748ad30b2f12ba318a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Hamvy using Guid(b9ad1b27d61fa0748ad30b2f12ba318a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4da37cdb176f278fbb5b32a65a9c7e71') in 0.004233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TankConstructor/Images/GunConnectors/GunConnectorF.png
+  artifactKey: Guid(43863ac6cf4a4634b9d02375d97d18b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/GunConnectors/GunConnectorF.png using Guid(43863ac6cf4a4634b9d02375d97d18b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb8e0a13c5c8799280d186cafbcf8060') in 0.039679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TankConstructor/Images/Towers/MediumTowerA.png
+  artifactKey: Guid(31081d7c2be8bc34d8981be9ebf32e0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/Towers/MediumTowerA.png using Guid(31081d7c2be8bc34d8981be9ebf32e0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '527e69346b99dad6c85caca94f288aaa') in 0.236290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Abrams/abrams_blue.prefab
+  artifactKey: Guid(315aa66d69102104b938ab4079183bf3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Abrams/abrams_blue.prefab using Guid(315aa66d69102104b938ab4079183bf3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c25903913900bc30ed1a96703038a6a2') in 0.359160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Armata/armata_green.png
+  artifactKey: Guid(a4f4b77acc43abf4ba4b263a37b59baf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Armata/armata_green.png using Guid(a4f4b77acc43abf4ba4b263a37b59baf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3a8f19c413a88eb94202a3f2f8521876') in 0.557498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Hamvy/hamvy_sand.mat
+  artifactKey: Guid(a645347642959bc48976e60fa0486f32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Hamvy/hamvy_sand.mat using Guid(a645347642959bc48976e60fa0486f32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bbf354853ecca732e5831f905f29b074') in 0.120874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GameMain/Scripts/LogicShared/FileLoader/FileLoaderUtil.cs
+  artifactKey: Guid(075dbd5d5a01408eb6b88af2ea260c9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/LogicShared/FileLoader/FileLoaderUtil.cs using Guid(075dbd5d5a01408eb6b88af2ea260c9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '12f0d944cd20695bd0e173b74e24f5ad') in 0.008278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Bonus/soldier_04.png
+  artifactKey: Guid(1b5f4c447a8ef3d42b6be5742c0e45ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Bonus/soldier_04.png using Guid(1b5f4c447a8ef3d42b6be5742c0e45ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72e866ac5b50620ddd569f521decefc3') in 0.140056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TankConstructor/Demo.unity
+  artifactKey: Guid(325358c6e2ed1144bb2020bd8effef3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Demo.unity using Guid(325358c6e2ed1144bb2020bd8effef3c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '64126b087ff4acddeff6c2d468e24a29') in 0.003953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TankConstructor/Images/GunConnectors/GunConnectorE.png
+  artifactKey: Guid(24111c3867af83d438bfe9c330823230) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/GunConnectors/GunConnectorE.png using Guid(24111c3867af83d438bfe9c330823230) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '290eab95263df08bfe7a4141f0ff5016') in 0.033920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GameMain/Scripts/Tools/Singleton.cs
+  artifactKey: Guid(f5d6eeeb85114f3d9b87409508d11390) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Scripts/Tools/Singleton.cs using Guid(f5d6eeeb85114f3d9b87409508d11390) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '47ef3bca7c0f1ac1137749cd5c601e4a') in 0.011133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/The War Gods vol.1/Assets/Meshes/Tigr
+  artifactKey: Guid(7ef6cfdff1ac3a546be7852be8279292) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Meshes/Tigr using Guid(7ef6cfdff1ac3a546be7852be8279292) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4cc57ecf3e859957983b379052cfc9d4') in 0.004637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TankConstructor/Images/Guns/RocketLauncherB.png
+  artifactKey: Guid(1c95c15e5b175194d9ef050f9da5caca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/Guns/RocketLauncherB.png using Guid(1c95c15e5b175194d9ef050f9da5caca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5c52d96cd9898c9090c507711deaa903') in 0.102412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Tigr
+  artifactKey: Guid(3a8c0bfc62e19da4698df08480880ced) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Tigr using Guid(3a8c0bfc62e19da4698df08480880ced) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3e1e1c2107a494b57284e32cd47eb631') in 0.003100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/The War Gods vol.1/Assets/Scenes/Bonus/HamvyTigrSoldiersHog.unity
+  artifactKey: Guid(c53cbe5f4166e8b4d8420aedababd774) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Scenes/Bonus/HamvyTigrSoldiersHog.unity using Guid(c53cbe5f4166e8b4d8420aedababd774) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f59b2ac9b56b6df1fab03711ed012725') in 0.008729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Abrams/abrams_haki.mat
+  artifactKey: Guid(b45fdda973f2c2741a81179fdc562f01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Abrams/abrams_haki.mat using Guid(b45fdda973f2c2741a81179fdc562f01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3437ddb884b4354d9d988244e523b135') in 0.701584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Abrams/abrams_green.png
+  artifactKey: Guid(dfc52592b8c6cd74d92d4edc4cddadf7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Abrams/abrams_green.png using Guid(dfc52592b8c6cd74d92d4edc4cddadf7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5e7f2771a99750236afd0e4bd02d5b2b') in 0.119789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Abrams/abrams.prefab
+  artifactKey: Guid(20de287f753b30945b8560a21190fc4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Abrams/abrams.prefab using Guid(20de287f753b30945b8560a21190fc4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ee2825f3b6525f4f0bceb2b877152a91') in 0.193209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/The War Gods vol.1/Assets/Meshes/Armata/armata_yellow.obj
+  artifactKey: Guid(54d9ea9749a76a0499ba17f633b0857f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Meshes/Armata/armata_yellow.obj using Guid(54d9ea9749a76a0499ba17f633b0857f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e567f9d98a49b770b6d02f2b739a91dd') in 0.167767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Tigr/tigr_sand.png
+  artifactKey: Guid(e17f9461df467df4fa941486c46b8fa2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Tigr/tigr_sand.png using Guid(e17f9461df467df4fa941486c46b8fa2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '99642d8b90af2d710acb7fea009984a0') in 0.190426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Abrams/abrams_red.prefab
+  artifactKey: Guid(123e23033b530a24a9e69b493e609fd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Abrams/abrams_red.prefab using Guid(123e23033b530a24a9e69b493e609fd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b5943f78fd3b51b8b81d5f2b0bf44d6e') in 0.784972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/The War Gods vol.1/Assets/Meshes/Abrams
+  artifactKey: Guid(621c94234de3af845afbe20acd539141) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Meshes/Abrams using Guid(621c94234de3af845afbe20acd539141) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '60561e51cc50861967d5a68523668d32') in 0.003701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/The War Gods vol.1/Assets/Meshes/Armata/armata_green.obj
+  artifactKey: Guid(71047fa8bb3e4ed4b8ea140378710844) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Meshes/Armata/armata_green.obj using Guid(71047fa8bb3e4ed4b8ea140378710844) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0aaaf86b8149e882a1c4625be1034c34') in 0.494311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Hamvy/hamvy_haki.mat
+  artifactKey: Guid(647b2298dc3e46f4aa71860c131d774a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Hamvy/hamvy_haki.mat using Guid(647b2298dc3e46f4aa71860c131d774a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '512e3e3ce00a9eef8064473516b69367') in 0.167306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Abrams/abrams_yellow.png
+  artifactKey: Guid(e43a7ab49b1da5c41b6292568d6baac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Abrams/abrams_yellow.png using Guid(e43a7ab49b1da5c41b6292568d6baac8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'be3cb2bfa2fcf3ad9002d3604b13984a') in 0.165986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Abrams/abrams_yellow.mat
+  artifactKey: Guid(ccb94d3ec882e2246a79aee562e0905a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Abrams/abrams_yellow.mat using Guid(ccb94d3ec882e2246a79aee562e0905a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4712a33cfe6771ed0b920e428bc33efe') in 0.348225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Bonus/soldier_03.prefab
+  artifactKey: Guid(c60a48715f59364408594e400754ff8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Bonus/soldier_03.prefab using Guid(c60a48715f59364408594e400754ff8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e7b28465c3cc0a65e713ef3ba97be90e') in 0.303099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Tigr/tigr_gray.png
+  artifactKey: Guid(abbe3ec4c182e954b92f4e5ee1cb0ec9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Tigr/tigr_gray.png using Guid(abbe3ec4c182e954b92f4e5ee1cb0ec9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9360e1b4ebcf638aee84d3159fbe1128') in 0.013549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Tigr/tigr_haki.prefab
+  artifactKey: Guid(6ba0b4a3c256b5d4a9777a75bd221d37) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Tigr/tigr_haki.prefab using Guid(6ba0b4a3c256b5d4a9777a75bd221d37) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f3d4a5f1e55334504306c2b55ee47a1') in 0.637740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GameMain/Configs/ResourceCollection.xml
+  artifactKey: Guid(b44bfac45a6cb7f448eb320ecc030a9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Configs/ResourceCollection.xml using Guid(b44bfac45a6cb7f448eb320ecc030a9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f4a9a297584fcec441f9d1a30f42cd3d') in 0.224976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Army Bunker/Army_Bunker.fbm
+  artifactKey: Guid(aedd958b50dd2fd43b39ae54a41ff4c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Army Bunker/Army_Bunker.fbm using Guid(aedd958b50dd2fd43b39ae54a41ff4c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c6bf1113e3836a679e57fe4d9e2602c') in 0.007364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Army Bunker/Army_Bunker.fbm/Bunker_Spec_TXTR.tif
+  artifactKey: Guid(1cf1a4c5a7b5a194bbb439a9891bb126) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Army Bunker/Army_Bunker.fbm/Bunker_Spec_TXTR.tif using Guid(1cf1a4c5a7b5a194bbb439a9891bb126) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '75ecd484c04b85d65a5d9f6d552b5b98') in 0.532818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/The War Gods vol.1/Assets/Materials/Armata/armata_gray.mat
+  artifactKey: Guid(c00da7897e92d9747a7b18659fbe747d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Materials/Armata/armata_gray.mat using Guid(c00da7897e92d9747a7b18659fbe747d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4213c7ac4ff60f9481df096564f90b2a') in 0.469863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GameMain/Textures/T90Textures/ForrestCamo/DefaultMaterial_Base_Color.jpg
+  artifactKey: Guid(3300162785f59fe45832beab61542a39) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Textures/T90Textures/ForrestCamo/DefaultMaterial_Base_Color.jpg using Guid(3300162785f59fe45832beab61542a39) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4b8570b0e25d421db1f418d990f30d34') in 0.012776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GameMain/Textures/T90Textures/Desert/DefaultMaterial_Base_Color.jpg
+  artifactKey: Guid(a45abd75fe2506f42a388aa55bccf7eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Textures/T90Textures/Desert/DefaultMaterial_Base_Color.jpg using Guid(a45abd75fe2506f42a388aa55bccf7eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f014820693f4ed626b797d0ae7ce69fe') in 0.184355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GameMain/Textures/T90Textures/Aditional/DefaultMaterial_Metallic.jpg
+  artifactKey: Guid(f12bf5c646cfcb8448c7ba3debb2ddb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Textures/T90Textures/Aditional/DefaultMaterial_Metallic.jpg using Guid(f12bf5c646cfcb8448c7ba3debb2ddb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa36c99777a07f06f65d1d4621c080a9') in 0.113619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GameMain/Textures/T90Textures/TankTracks/DefaultMaterial_Height.png
+  artifactKey: Guid(c47c5b95385299a42851fb94882aa89a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Textures/T90Textures/TankTracks/DefaultMaterial_Height.png using Guid(c47c5b95385299a42851fb94882aa89a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '91d96b426124bb92f84660fa8937bf37') in 0.025866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/GameMain/Textures/T90Textures/ForrestWavyCamo/DefaultMaterial_Normal.jpg
+  artifactKey: Guid(912852c6df2996449993f2ce454209cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Textures/T90Textures/ForrestWavyCamo/DefaultMaterial_Normal.jpg using Guid(912852c6df2996449993f2ce454209cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '12cc1fbe840aa933c663130b126bdff2') in 1.022622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GameMain/Textures/T90Textures/ForrestWavyCamo/DefaultMaterial_Height.jpg
+  artifactKey: Guid(6b396e7ad6493ad49b994b37d09d2d0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GameMain/Textures/T90Textures/ForrestWavyCamo/DefaultMaterial_Height.jpg using Guid(6b396e7ad6493ad49b994b37d09d2d0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c53f9cbf56fdf621b852b8db666a3efe') in 0.404190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/The War Gods vol.1/Assets/VoxModels/Abrams/abrams_yellow.vox
+  artifactKey: Guid(2ef4733aa740a984e99793006bd75f4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/VoxModels/Abrams/abrams_yellow.vox using Guid(2ef4733aa740a984e99793006bd75f4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '64e0564d21a674afee555b08b47b3e5d') in 0.005328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/TankConstructor/Images/Towers/SmallTowerA.png
+  artifactKey: Guid(d4560c6d6fc01cb42a07c7c64db28fde) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/Towers/SmallTowerA.png using Guid(d4560c6d6fc01cb42a07c7c64db28fde) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd66d241a17669e0a2865376d287d674c') in 0.162539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/The War Gods vol.1/Assets/Prefabs/Hamvy/hamvy_sand.prefab
+  artifactKey: Guid(b661a746c0542854cb47dd3c485022b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Prefabs/Hamvy/hamvy_sand.prefab using Guid(b661a746c0542854cb47dd3c485022b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c0f605274805be6a8d4104f496e93e17') in 0.218356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/The War Gods vol.1/Assets/Texture/Bonus/soldier_02.png
+  artifactKey: Guid(181b308f35ff04f4f8d4a85194959a5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Texture/Bonus/soldier_02.png using Guid(181b308f35ff04f4f8d4a85194959a5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '869a7c8d4ce058173e5fb2bf901d67b1') in 0.188769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/The War Gods vol.1/Assets/Meshes/Hamvy/Materials/hamvy_green_0_Mat.mat
+  artifactKey: Guid(295e2def65eae7c4c8f16adc943329d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Meshes/Hamvy/Materials/hamvy_green_0_Mat.mat using Guid(295e2def65eae7c4c8f16adc943329d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '693a23a9ab217bbeff413e04527fcccf') in 0.177339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TankConstructor/Images/Platforms/PlatformB.png
+  artifactKey: Guid(be7a40e048917e14b92dda9a1144294f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TankConstructor/Images/Platforms/PlatformB.png using Guid(be7a40e048917e14b92dda9a1144294f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'afab8942e93b588de1e033b32b928883') in 0.423046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/The War Gods vol.1/Assets/VoxModels/Bonus/soldier_02.vox
+  artifactKey: Guid(d95322ce2091e2c42a6f23e856575a1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/VoxModels/Bonus/soldier_02.vox using Guid(d95322ce2091e2c42a6f23e856575a1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c8aa5794cff3b471fb4157c9765f42b') in 0.003712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/The War Gods vol.1/Assets/Meshes/Hamvy/Materials/hamvy_0_Mat.mat
+  artifactKey: Guid(0e785a318b9c22146bd7c4b2ef57881a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/The War Gods vol.1/Assets/Meshes/Hamvy/Materials/hamvy_0_Mat.mat using Guid(0e785a318b9c22146bd7c4b2ef57881a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '60bc04967f0d1cd59ee028b01e1f42ec') in 0.025716 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
