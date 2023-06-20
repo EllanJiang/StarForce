@@ -57,7 +57,7 @@ namespace Entt
     }
 
     /// <summary>
-    /// DataContracts：数据契约,一旦声明一个类型为数据契约，那么该类型就可以被序列化，以在服务端和客户端之间传送
+    /// DataContracts：数据契约,一旦声明一个类型为数据契约，那么该类型就可以被序列化，可在服务端和客户端之间传送
     /// 把每一个需要传送的成员声明为DataMember，才能进行传送
     /// </summary>
     /// <typeparam name="T"></typeparam>
@@ -113,10 +113,6 @@ namespace Entt
             return "None";
         }
 
-        public static implicit operator Optional<T>(T data)
-        {
-            return Optional.ValueOf(data);
-        }
         
         public bool Equals(Optional<T> other)
         {
@@ -189,8 +185,13 @@ namespace Entt
             return !left.Equals(right);
         }
 
+        //Data隐式转换成Optional<T>
+        public static implicit operator Optional<T>(T data)
+        {
+            return Optional.ValueOf(data);
+        }
 
-        //把OptionalEmptyPlaceHolder隐式转换成Optional<T>
+        //OptionalEmptyPlaceHolder隐式转换成Optional<T>
         public static implicit operator Optional<T>(OptionalEmptyPlaceHolder p)
         {
             return default;

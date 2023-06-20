@@ -1,0 +1,266 @@
+﻿<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+<#+
+    public const int MaxParameterCount = 7;
+
+    // Produces a string "T0, T1, .. Tn"
+    public static string BuildLightTemplate(int paramCount)
+    {
+        var templateParams = new StringBuilder();
+        for (int x = 0; x < paramCount; x += 1)
+        {
+            if (templateParams.Length > 0)
+            {
+                templateParams.Append(", ");
+            }
+            templateParams.Append("T");
+            templateParams.Append(x + 1);
+        }
+        return templateParams.ToString();
+    }
+
+    public static string BuildDeclaration(int inParamCount, int outParamCount)
+    {
+        var templateParams = new StringBuilder();
+        for (int x = 0; x < inParamCount; x += 1)
+        {
+            if (templateParams.Length > 0)
+            {
+                templateParams.Append(", ");
+            }
+            templateParams.Append("TIn");
+            templateParams.Append(x + 1);
+        }
+
+        for (int x = 0; x < outParamCount; x += 1)
+        {
+            if (templateParams.Length > 0)
+            {
+                templateParams.Append(", ");
+            }
+            templateParams.Append("TOut");
+            templateParams.Append(x + 1);
+        }
+
+        return templateParams.ToString();
+    }
+
+    //连接泛型参数
+    public static string JoinGenericParams(int count, string template, string separator)
+    {
+        var sb = new StringBuilder();
+        for (int x = 0; x < count; x += 1)
+        {
+            if (x > 0)
+            {
+                sb.Append(separator);
+            }
+            sb.Append(string.Format(template, x + 1));
+        }
+        return sb.ToString();
+    }
+
+    public List<GenericsParameterVariant> ProduceParameterVariants()
+    {
+        var retval = new List<GenericsParameterVariant>();
+        for (int paramCount = 1; paramCount <= MaxParameterCount; paramCount += 1)
+        {
+            retval.Add(new GenericsParameterVariant(paramCount));
+        }
+        return retval;
+    }
+
+    //
+    // Represents a parameter set that has a given cardinality, but has not been split into in and out params. 
+    public readonly struct GenericsParameterVariant
+    {
+        public readonly int Count;
+
+        public GenericsParameterVariant(int count)
+        {
+            Count = count;
+        }
+
+        public string ToDeclaration()
+        {
+            var list = new List<string>();
+            for (var i = 1; i <= Count; i += 1)
+            {
+                list.Add($"T{i}");
+            }
+
+            return string.Join(", ", list);
+        }
+
+        public string ToCode(string template, string separator = ";")
+        {
+            var retval = new List<string>();
+            for (int i = 1; i <= Count; i += 1)
+            {
+                retval.Add(string.Format(CultureInfo.InvariantCulture, template, i, $"T{i}"));
+            }
+
+            return string.Join(separator, retval);
+        }
+
+        public List<GenericsParameterSet> ProduceParameterConfig()
+        {
+            var retval = new List<GenericsParameterSet>();
+            for (int inParam = 0; inParam <= Count; inParam += 1)
+            {
+                retval.Add(new GenericsParameterSet(inParam, Count - inParam));
+            }
+            return retval;
+        }
+
+        public GenericsParameterSet ToInputSet() => new GenericsParameterSet(Count, 0);
+        public GenericsParameterSet ToOutputSet() => new GenericsParameterSet(0, Count);
+    }
+
+    public class GenericsParameterSet
+    {
+        readonly int inParamCount;
+        readonly int outParamCount;
+        readonly List<GenericsParameter> parameterData;
+        public int Count => inParamCount + outParamCount;
+
+        public GenericsParameterSet(int inParamCount, int outParamCount)
+        {
+            this.inParamCount = inParamCount;
+            this.outParamCount = outParamCount;
+            parameterData = ExpandParameters();
+        }
+
+        List<GenericsParameter> ExpandParameters()
+        {
+            var l = new List<GenericsParameter>();
+            for (int x = 0; x < inParamCount; x += 1)
+            {
+                l.Add(new GenericsParameter(false, l.Count + 1));
+            }
+
+            for (int x = 0; x < outParamCount; x += 1)
+            {
+                l.Add(new GenericsParameter(true, l.Count + 1));
+            }
+            return l;
+        }
+
+        public string ToQualifier()
+        {
+            if (outParamCount == 0)
+            {
+                return "";
+            }
+
+            return $"In{inParamCount}Out{outParamCount}";
+        }
+
+        public string ToDeclaration()
+        {
+            return string.Join(", ", Select(0, p => p.ToDeclaration()));
+        }
+
+        public string ToFunctionParameter()
+        {
+            return string.Join(", ", Select(0, p => p.ToFunctionParameter()));
+        }
+
+        public string ToCode2(string templateIn, string templateRef, string separator = ";\n")
+        {
+            return string.Join(separator, Select(0, p => p.Format(templateIn, templateRef)));
+        }
+
+        public string ToCode(string template, string separator = ";\n")
+        {
+            return string.Join(separator, Select(0, p => p.Format(template, template)));
+        }
+
+        // Rider IntelliSense does not like Linq assemblies.  
+        public List<string> Select(int start, Func<GenericsParameter, string> p)
+        {
+            var retval = new List<string>();
+            for (var index = start; index < parameterData.Count; index++)
+            {
+                var e = parameterData[index];
+                retval.Add(p(e));
+            }
+            return retval;
+        }
+
+        public List<GenericsParameterSet> ProduceRemainingInputs(int max = MaxParameterCount)
+        {
+            var retval = new List<GenericsParameterSet>();
+            var maxInputs = max - outParamCount;
+            for (int i = inParamCount + 1; i <= maxInputs; i += 1)
+            {
+                retval.Add(new GenericsParameterSet(i, outParamCount));
+            }
+            return retval;
+        }
+
+        public List<GenericsParameterSet> ProduceRemainingOutputs(int max = MaxParameterCount)
+        {
+            var retval = new List<GenericsParameterSet>();
+            var maxInputs = max - inParamCount;
+            for (int i = outParamCount + 1; i <= maxInputs; i += 1)
+            {
+                retval.Add(new GenericsParameterSet(inParamCount, i));
+            }
+            return retval;
+        }
+
+        public string ToPartialDeclaration(GenericsParameterSet genericsParameterSet)
+        {
+            if (genericsParameterSet.Count >= Count)
+            {
+                throw new ArgumentException();
+            }
+
+            return string.Join(",", Select(genericsParameterSet.Count, p => p.ToDeclaration()));
+        }
+        
+        public string ToPartialParameter(GenericsParameterSet genericsParameterSet)
+        {
+            if (genericsParameterSet.Count >= Count)
+            {
+                throw new ArgumentException();
+            }
+
+            return string.Join(",", Select(genericsParameterSet.Count, p => p.ToFunctionParameter()));
+        }
+    }
+
+    public struct GenericsParameter
+    {
+        public bool IsRefParameter;
+        public int index;
+
+        public GenericsParameter(bool isRefParameter, int index)
+        {
+            IsRefParameter = isRefParameter;
+            this.index = index;
+        }
+
+        public string ToDeclaration()
+        {
+            return $"T{index}";
+        }
+
+        public string ToFunctionParameter()
+        {
+            return IsRefParameter ? $"ref T{index} r{index}" : $"in T{index} c{index}";
+        }
+
+        public string Format(string template) => Format(template, template);
+
+        public string Format(string templateIn, string templateRef)
+        {
+            return IsRefParameter
+                ? string.Format(CultureInfo.InvariantCulture, templateRef, index, ToDeclaration())
+                : string.Format(CultureInfo.InvariantCulture, templateIn, index, ToDeclaration());
+        }
+    }
+#>
