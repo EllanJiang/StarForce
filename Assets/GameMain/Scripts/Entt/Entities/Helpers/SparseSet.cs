@@ -1,6 +1,7 @@
 ﻿/*
 * 文件名：SparseSet
-* 文件描述：稀疏集 参考 https://www.geeksforgeeks.org/sparse-set/ 
+* 文件描述：稀疏集 参考 https://www.geeksforgeeks.org/sparse-set/
+          增加一个元素，删除一个元素，查找一个元素是否存在集合中的时间复杂度都是O(1)
 * 作者：aronliang
 * 创建时间：2023/06/20 16:27:04
 * 修改记录：
@@ -56,8 +57,8 @@ namespace Entt.Entities.Helpers
 {
     /// <summary>
     /// 用于存储EntityID的稀疏集
-    /// Sparse：稀疏集，用于存储元素在DenseArray中的下标
-    /// Dense：密集集，用于存储元素
+    /// Sparse：稀疏集，使用元素值作为索引，使用元素值在dense数组中的索引作为值，例如要保存数值7，从上面例子可以看出，数值7在dense中的索引是2，因此在sparse中，sparse[7]=2
+    /// Dense：密集集，用于存储元素值
     /// 具体例子参考上面的举例说明
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
@@ -107,48 +108,56 @@ namespace Entt.Entities.Helpers
             sparse = new RawList<SparseElement>();
         }
         
+        /// <summary>
+        /// 元素总数，当然取的是dense的数量
+        /// </summary>
         public int Count => dense.Count;
         
         /// <summary>
         /// 添加一个EntityKey
         /// </summary>
-        /// <param name="e"></param>
+        /// <param name="entityKey"></param>
         /// <exception cref="ArgumentException"></exception>
-        public void Add(TEntityKey e)
+        public void Add(TEntityKey entityKey)
         {
-            if (Contains(e))
+            if (Contains(entityKey))
             {
                 throw new ArgumentException("Entity already exists in this collection");
             }
             
-            var sparseArrayIndex = e.Key; 
+            //使用Key作为sparse的索引，也就是说sparse数组的大小会随着Entity的增加而增大
+            var sparseArrayIndex = entityKey.Key; 
+            
             //SparseElement的Key为什么是dense.Count，因为dense.Count就是e存储在dense中的位置,即dense[dense.Count]=e
-            //到时就可以根据SparseElement的DenseArrayIndex来获取Element在dense中的位置
-            sparse.StoreAt(sparseArrayIndex, new SparseElement(dense.Count, e.Age));
-            dense.Add(e);
+            //到时就可以根据SparseElement的DenseArrayIndex来获取SparseElement在dense中的位置
+            sparse.StoreAt(sparseArrayIndex, new SparseElement(dense.Count, entityKey.Age));
+            dense.Add(entityKey);
         }
         
-        public virtual bool Remove(TEntityKey e)
-        {
-            return RemoveEntry(e) != -1;
-        }
-
         /// <summary>
-        /// To delete an element e, we replace it with last EntityKey in dense and update index of last entity in sparse. Finally decrement Count by 1.
+        /// To delete an element entityKey, we replace it with last EntityKey in dense and update index of last EntityKey in sparse. Finally decrement Count by 1.
         /// </summary>
-        /// <param name="e"></param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentException"></exception>
-        protected int RemoveEntry(in TEntityKey e)
+        public virtual bool Remove(TEntityKey entityKey)
         {
-            var sparseArrayIndex = e.Key;
+            return RemoveElement(entityKey) != -1;
+        }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="entityKey">in 修饰的参数表示想通过引用来传递参数，跟ref 和 out类似。但是有一点不同，ref修饰的参数可以被修改，out修饰的参数必须由调用的方法进行修改，但是in修饰的参数不能被修改，跟C++中的const& 类似</param>
+        /// <returns>返回删除的EntityKey在dense数组中的索引</returns>
+        /// <exception cref="ArgumentException"></exception>
+        protected int RemoveElement(in TEntityKey entityKey)
+        {
+            var sparseArrayIndex = entityKey.Key;
             if (sparseArrayIndex >= sparse.Count)
             {
                 return -1;
             }
 
             var sparseElement = sparse[sparseArrayIndex];
-            if (!sparseElement.InUse || e.Age != sparseElement.Age)
+            if (!sparseElement.InUse || entityKey.Age != sparseElement.Age)
             {
                 return -1;
             }
@@ -177,12 +186,12 @@ namespace Entt.Entities.Helpers
         public TEntityKey Last => dense[dense.Count - 1];
         
         /// <summary>
-        ///  Increases the capacity of the sparse set. This never reduces the capacity.
+        /// 扩充Sparse容量
         /// </summary>
-        /// <param name="cap"></param>
-        public void Reserve(int cap)
+        /// <param name="capacity"></param>
+        public void Reserve(int capacity)
         {
-            Capacity = Math.Max(cap, Capacity);
+            Capacity = Math.Max(capacity, Capacity);
         }
         
         public virtual int Capacity
@@ -191,13 +200,18 @@ namespace Entt.Entities.Helpers
             set { sparse.Capacity = value; }
         }
         
+        /// <summary>
+        /// 稀疏集中是否包含指定EntityKey
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public bool Contains(TEntityKey entity)
         {
-            var pos = entity.Key;
-            if (pos < sparse.Count)
+            var sparseArrayIndex = entity.Key;
+            if (sparseArrayIndex < sparse.Count)
             {
-                var rk = sparse[pos];
-                if (!rk.InUse || entity.Age != rk.Age)
+                var sparseElement = sparse[sparseArrayIndex];
+                if (!sparseElement.InUse || entity.Age != sparseElement.Age)
                 {
                     return false;
                 }
@@ -209,19 +223,19 @@ namespace Entt.Entities.Helpers
         }
        
         /// <summary>
-        /// 获取entity在dense中的索引
+        /// 获取EntityKey在dense中的索引
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
         public int IndexOf(TEntityKey entity)
         {
-            var pos = entity.Key;
-            if (pos >= sparse.Count)
+            var sparseArrayIndex = entity.Key;
+            if (sparseArrayIndex >= sparse.Count)
             {
                 return -1;
             }
 
-            var sparseElement = sparse[pos];
+            var sparseElement = sparse[sparseArrayIndex];
             if (!sparseElement.InUse || entity.Age != sparseElement.Age)
             {
                 return -1;
@@ -230,9 +244,12 @@ namespace Entt.Entities.Helpers
             return sparseElement.DenseArrayIndex;
         }
         
+        /// <summary>
+        /// 跟Remove的功能一样，跟Remove的区别是只有稀疏集中包含有该EntityKey才会进行Remove
+        /// </summary>
+        /// <param name="entity"></param>
         public void Reset(TEntityKey entity)
         {
-            // same as remove, but do not fail if not there
             if (Contains(entity))
             {
                 Remove(entity);
@@ -255,45 +272,52 @@ namespace Entt.Entities.Helpers
         }
         
         /// <summary>
-        /// 将两个索引处的Entity进行交换
+        /// 将两个索引处的EntityKey进行交换
         /// </summary>
         /// <param name="idxSrc">dense中的源索引</param>
-        /// <param name="idxTarget">dense中的目标索引</param>
-        protected virtual void Swap(int idxSrc, int idxTarget)
+        /// <param name="idxDst">dense中的目标索引</param>
+        protected virtual void Swap(int idxSrc, int idxDst)
         {
             var sparseSrc = dense[idxSrc].Key;
-            var sparseTarget = dense[idxTarget].Key;
-            dense.Swap(idxSrc, idxTarget);
-            sparse.Swap(sparseSrc, sparseTarget);
+            var sparseDst = dense[idxDst].Key;
+            dense.Swap(idxSrc, idxDst);
+            sparse.Swap(sparseSrc, sparseDst);
         }
         
         /// <summary>
-        /// 将最后一个Entity和other进行交换
+        /// todo 这样做有啥用？
         /// </summary>
-        /// <param name="other"></param>
-        public void Respect(IEnumerable<TEntityKey> other)
+        /// <param name="otherSet"></param>
+        public void Respect(IEnumerable<TEntityKey> otherSet)
         {
-            // where do we drop items that have been moved out of the way ..
-            var targetPosition = dense.Count - 1;
-            foreach (var otherEntity in other)
+            var targetIndex = dense.Count - 1;
+            foreach (var otherEntityKey in otherSet)
             {
-                var posLocal = IndexOf(otherEntity);
-                if (posLocal != -1)
+                var otherIndex = IndexOf(otherEntityKey);
+                if (otherIndex != -1)
                 {
-                    if (EqualityHandler.Equals(otherEntity, dense[targetPosition]))
+                    if (EqualityHandler.Equals(otherEntityKey, dense[targetIndex]))
                     {
-                        Swap(targetPosition, posLocal);
+                        Swap(targetIndex, otherIndex);
                     }
 
-                    targetPosition -= 1;
+                    targetIndex -= 1;
                 }
             }
         }
 
         /// <summary>
-        /// 移除稀疏集中所有Entity
+        /// 清空稀疏集
         /// </summary>
         public virtual void RemoveAll()
+        {
+            Clear();
+        }
+        
+        /// <summary>
+        /// 清空稀疏集
+        /// </summary>
+        public void Clear()
         {
             sparse.Clear();
             dense.Clear();
@@ -318,7 +342,7 @@ namespace Entt.Entities.Helpers
         }
 
         /// <summary>
-        /// 把稀疏集中的Entity全部复制到entities中
+        /// 把所有元素全部复制到entities中
         /// </summary>
         /// <param name="entities"></param>
         public void CopyTo(RawList<TEntityKey> entities)

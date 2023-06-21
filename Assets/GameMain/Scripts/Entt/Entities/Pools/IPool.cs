@@ -23,10 +23,10 @@ namespace Entt.Entities.Pools
     public interface IPool<TEntityKey> :IReadOnlyPool<TEntityKey> where TEntityKey : IEntityKey
     {
         /// <summary>
-        /// 使用其他池子来初始化？
+        /// todo 使用其他池子来初始化？
         /// </summary>
-        /// <param name="other"></param>
-        void Respect(IEnumerable<TEntityKey> other);
+        /// <param name="otherSet"></param>
+        void Respect(IEnumerable<TEntityKey> otherSet);
 
         /// <summary>
         /// 从池子中移除指定的Entity
@@ -51,8 +51,8 @@ namespace Entt.Entities.Pools
         event EventHandler<(TEntityKey key, TComponent old)>? DestroyedNotify;
         event EventHandler<(TEntityKey key, TComponent old)>? Updated;
 
-        void Add(TEntityKey e, in TComponent component);
-        bool WriteBack(TEntityKey entity, in TComponent component);
+        void Add(TEntityKey entityKey, in TComponent component);
+        bool WriteBack(TEntityKey entityKey, in TComponent component);
         ref TComponent? TryGetModifiableRef(TEntityKey entity, ref TComponent? defaultValue, out bool success);
     }
 }

@@ -10,7 +10,8 @@ using System;
 
 namespace Entt.Entities.Attributes
 {
-    public class EntityDestructorAttribute:Attribute
+    [AttributeUsage(AttributeTargets.Method)]
+    public sealed class EntityDestructorAttribute:Attribute
     {
         
     }

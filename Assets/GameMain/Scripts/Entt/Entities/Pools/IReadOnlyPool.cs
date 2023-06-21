@@ -5,7 +5,7 @@
 * 创建时间：2023/06/20 15:13:28
 * 修改记录：
 */
-#nullable enable
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -32,9 +32,9 @@ namespace Entt.Entities.Pools
         /// <summary>
         /// 池中是否包含指定Entity
         /// </summary>
-        /// <param name="k"></param>
+        /// <param name="entityKey"></param>
         /// <returns></returns>
-        bool Contains(TEntityKey k);
+        bool Contains(TEntityKey entityKey);
         
         /// <summary>
         /// 池中Entity总数
@@ -64,10 +64,10 @@ namespace Entt.Entities.Pools
         /// <summary>
         /// 尝试根据EntityKey从对象池中取出该EntityKey对应的组件
         /// </summary>
-        /// <param name="entity"></param>
+        /// <param name="entityKey"></param>
         /// <param name="component"></param>
         /// <returns></returns>
-        bool TryGet(TEntityKey entity, [MaybeNullWhen(false)] out TComponent component);
+        bool TryGet(TEntityKey entityKey, [MaybeNullWhen(false)] out TComponent component);
         
         /// <summary>
         ///  尝试根据EntityKey从对象池中取出该EntityKey对应的组件的引用
