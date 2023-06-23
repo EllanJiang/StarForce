@@ -31,7 +31,7 @@ namespace Entt.Entities.Pools
         }
 
         /// <summary>
-        /// 创建Entity的标志对象池
+        /// 创建Entity或组件标志对象池
         /// </summary>
         /// <param name="sharedData"></param>
         /// <param name="reg"></param>

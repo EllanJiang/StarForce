@@ -19,7 +19,13 @@ namespace Entt.Entities
         {
             //Entity容器
             private readonly EntityRegistry<TEntityKey> registry;
+            /// <summary>
+            /// 创建组件的方法
+            /// </summary>
             private readonly Func<T> constructor;
+            /// <summary>
+            /// 销毁组件的方法
+            /// </summary>
             private readonly Action<TEntityKey, EntityRegistry<TEntityKey>, T>? destructor;
             
             public int Index { get; }
@@ -34,11 +40,20 @@ namespace Entt.Entities
                 Index = index;
             }
             
+            /// <summary>
+            /// 这里才是真正创建组件
+            /// </summary>
+            /// <returns></returns>
             public T Create()
             {
                 return constructor();
             }
 
+            /// <summary>
+            /// 这里才是真正销毁组件
+            /// </summary>
+            /// <param name="k"></param>
+            /// <param name="o"></param>
             public void Destruct(TEntityKey k, T o)
             {
                 destructor?.Invoke(k, registry, o);

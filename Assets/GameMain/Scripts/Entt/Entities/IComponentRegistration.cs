@@ -10,6 +10,10 @@ namespace Entt.Entities
 {
     public interface IComponentRegistration
     {
+        /// <summary>
+        /// 该组件在组件列表中的索引
+        /// Entity身上挂载了n个组件，该组件在这n个组件中的位置
+        /// </summary>
         int Index { get; }
     }
     

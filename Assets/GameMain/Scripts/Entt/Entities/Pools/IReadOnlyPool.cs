@@ -37,7 +37,7 @@ namespace Entt.Entities.Pools
         bool Contains(TEntityKey entityKey);
         
         /// <summary>
-        /// 池中Entity总数
+        /// 池中Entity或组件总数
         /// </summary>
         int Count { get; }
 

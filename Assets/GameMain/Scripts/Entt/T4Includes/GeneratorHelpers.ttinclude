@@ -47,7 +47,6 @@
         return templateParams.ToString();
     }
 
-    //连接泛型参数
     public static string JoinGenericParams(int count, string template, string separator)
     {
         var sb = new StringBuilder();

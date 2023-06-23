@@ -1,6 +1,6 @@
 ﻿/*
 * 文件名：IEntityKey
-* 文件描述：EntityID
+* 文件描述：EntityID 接口
 * 作者：aronliang
 * 创建时间：2023/06/20 15:59:54
 * 修改记录：
@@ -13,7 +13,7 @@ namespace Entt.Entities
     public interface IEntityKey:IEquatable<IEntityKey>
     {
         /// <summary>
-        /// 可以认为是Entity的生存时长
+        /// 可以认为是该Entity被复用了多少次，每次被复用Age就会+1
         /// 最小值是-128，最大值是2^7-1，也就是[-128,127]
         /// </summary>
         byte Age { get; }
@@ -34,6 +34,6 @@ namespace Entt.Entities
         /// 该Entity是否为空
         /// </summary>
         /// <returns></returns>
-        bool IsEmpty();
+        bool IsEmpty { get; }
     }
 }
