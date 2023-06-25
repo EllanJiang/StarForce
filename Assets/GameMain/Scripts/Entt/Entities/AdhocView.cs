@@ -14,13 +14,27 @@ using Entt.Entities.Pools;
 
 namespace Entt.Entities
 {
+    /// <summary>
+    /// 用于entity临时显示，跟PersistentView相对
+    /// </summary>
+    /// <typeparam name="TEntityKey"></typeparam>
+    /// <typeparam name="TComponent"></typeparam>
     public sealed class AdhocView<TEntityKey, TComponent> : IEntityView<TEntityKey, TComponent> 
         where TEntityKey : IEntityKey
     {
+        /// <summary>
+        /// Entity管理器
+        /// </summary>
         readonly IEntityPoolAccess<TEntityKey> registry;
+        /// <summary>
+        /// Entity视图数据
+        /// </summary>
         readonly IPool<TEntityKey, TComponent> viewData;
         readonly EventHandler<TEntityKey> onCreated;
         readonly EventHandler<TEntityKey> onDestroyed;
+        /// <summary>
+        /// 是否已经释放该临时数据
+        /// </summary>
         bool disposed;
         public bool AllowParallelExecution { get; set; }
         
@@ -297,9 +311,15 @@ namespace Entt.Entities
         public void Dispose()
         {
             Dispose(true);
+            //抑制析构函数（析构函数在CLR层面成为Finalize方法）
+            //该行代码的作用是：请求CLR不要调用该对象的析构函数。就是说我已经手动调用Dispose方法释放非托管资源了，
+            //CLR就不要再触发我的析构函数了，否则再次执行析构函数就相当于又做了一次清理非托管资源的操作，有可能造成未知风险。
+            //参考：https://www.cnblogs.com/huangxincheng/p/12811291.html
             GC.SuppressFinalize(this);
         }
 
+        //SuppressMessage的作用：忽略代码检查时违反检查规则发出的警告，为什么要忽略这个警告？因为并不是所有的警告都是有意义的，对于确定不需要理会的警告，可以直接忽略掉，这就是SuppressMessage的作用
+        //参考：https://blog.csdn.net/xingan_xie/article/details/52175416
         [SuppressMessage("ReSharper", "UnusedParameter.Local")]
         void Dispose(bool disposing)
         {

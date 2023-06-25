@@ -1,11 +1,12 @@
 ﻿<#@ import namespace="System.Text" #>
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Collections.Generic" #>
 
 <#+
     public const int MaxParameterCount = 7;
 
-    // Produces a string "T0, T1, .. Tn"
+    // 生成 "T0, T1, .. Tn" 形式的参数， n=paramCount，以逗号分隔
     public static string BuildLightTemplate(int paramCount)
     {
         var templateParams = new StringBuilder();
@@ -21,6 +22,7 @@
         return templateParams.ToString();
     }
 
+    //生成 "TIn0, TIn1, .. TInX,TOut0,TOut1 .. TOutY" 形式的参数， X=inParamCount，y = outParamCount，以逗号分隔
     public static string BuildDeclaration(int inParamCount, int outParamCount)
     {
         var templateParams = new StringBuilder();
@@ -47,6 +49,7 @@
         return templateParams.ToString();
     }
 
+    //生成 format(template,i) 形式的参数，以separator分隔
     public static string JoinGenericParams(int count, string template, string separator)
     {
         var sb = new StringBuilder();
@@ -61,6 +64,7 @@
         return sb.ToString();
     }
 
+    //生成泛型参数列表，总共7个泛型参数
     public List<GenericsParameterVariant> ProduceParameterVariants()
     {
         var retval = new List<GenericsParameterVariant>();
@@ -75,6 +79,7 @@
     // Represents a parameter set that has a given cardinality, but has not been split into in and out params. 
     public readonly struct GenericsParameterVariant
     {
+        //参数个数，范围是[1,7]
         public readonly int Count;
 
         public GenericsParameterVariant(int count)
@@ -82,6 +87,7 @@
             Count = count;
         }
 
+        //生成 T1,T2...Tn 形式的参数，n=Count
         public string ToDeclaration()
         {
             var list = new List<string>();
@@ -93,6 +99,8 @@
             return string.Join(", ", list);
         }
 
+        //生成 format(template,i,Ti) 形式的参数，以separator分隔
+        //i等于1到n，n=Count
         public string ToCode(string template, string separator = ";")
         {
             var retval = new List<string>();
@@ -104,6 +112,7 @@
             return string.Join(separator, retval);
         }
 
+        // 生成 InXOutY 形式的参数列表，其中X+Y=Count，X>=0,Y>=0
         public List<GenericsParameterSet> ProduceParameterConfig()
         {
             var retval = new List<GenericsParameterSet>();
@@ -114,15 +123,22 @@
             return retval;
         }
 
+        //只有InX的参数列表
         public GenericsParameterSet ToInputSet() => new GenericsParameterSet(Count, 0);
+        //只有OutY的参数列表
         public GenericsParameterSet ToOutputSet() => new GenericsParameterSet(0, Count);
     }
 
+    //泛型参数集合
     public class GenericsParameterSet
     {
+        //in 参数数量
         readonly int inParamCount;
+        //out 参数数量
         readonly int outParamCount;
+        //泛型参数列表
         readonly List<GenericsParameter> parameterData;
+        //总参数数量
         public int Count => inParamCount + outParamCount;
 
         public GenericsParameterSet(int inParamCount, int outParamCount)
@@ -132,6 +148,7 @@
             parameterData = ExpandParameters();
         }
 
+        //生成泛型参数列表:In参数使用in修饰，Out参数使用ref修饰
         List<GenericsParameter> ExpandParameters()
         {
             var l = new List<GenericsParameter>();
@@ -147,6 +164,7 @@
             return l;
         }
 
+        //生成 InXOutY 形式的定义，其中X+Y=Count,X>=0,Y>=0
         public string ToQualifier()
         {
             if (outParamCount == 0)
@@ -157,28 +175,32 @@
             return $"In{inParamCount}Out{outParamCount}";
         }
 
+        //生成T1,T2...Tn形式的参数列表，n=Count,以逗号分隔，
         public string ToDeclaration()
         {
             return string.Join(", ", Select(0, p => p.ToDeclaration()));
         }
 
+        //如果是Ref引用参数，则生成 ref Ti ri 形式的参数列表,否则生成 in Ti ci 形式的参数列表.，其中i=index，以逗号分隔
         public string ToFunctionParameter()
         {
             return string.Join(", ", Select(0, p => p.ToFunctionParameter()));
         }
 
+        //如果是Ref引用参数，则生成 format(templateIn,i,Ti) 形式的参数列表,否则生成 format(templateIn,i,Ti) 形式的参数列表，其中i=index，以separator分隔
         public string ToCode2(string templateIn, string templateRef, string separator = ";\n")
         {
             return string.Join(separator, Select(0, p => p.Format(templateIn, templateRef)));
         }
 
+        //不管是不是Ref引用参数，直接生成 format(templateIn,i,Ti) 形式的参数列表，其中i=index，以separator分隔
         public string ToCode(string template, string separator = ";\n")
         {
             return string.Join(separator, Select(0, p => p.Format(template, template)));
         }
 
         // Rider IntelliSense does not like Linq assemblies.  
-        public List<string> Select(int start, Func<GenericsParameter, string> p)
+        public List<string> Select(int start,Func<GenericsParameter, string> p)
         {
             var retval = new List<string>();
             for (var index = start; index < parameterData.Count; index++)
@@ -189,6 +211,7 @@
             return retval;
         }
 
+        // 生成 InXOutY 形式的参数列表，其中X>=0 && X<=max-outParamCount,Y=outParamCount
         public List<GenericsParameterSet> ProduceRemainingInputs(int max = MaxParameterCount)
         {
             var retval = new List<GenericsParameterSet>();
@@ -200,6 +223,7 @@
             return retval;
         }
 
+        // 生成 InXOutY 形式的参数列表，其中Y>=0 && Y<=max-inParamCount,X=inParamCount
         public List<GenericsParameterSet> ProduceRemainingOutputs(int max = MaxParameterCount)
         {
             var retval = new List<GenericsParameterSet>();
@@ -211,6 +235,7 @@
             return retval;
         }
 
+        //生成Ti,Ti+1...Tn形式的参数列表，i=genericsParameterSet.Count，n=Count，以逗号分隔，
         public string ToPartialDeclaration(GenericsParameterSet genericsParameterSet)
         {
             if (genericsParameterSet.Count >= Count)
@@ -221,6 +246,7 @@
             return string.Join(",", Select(genericsParameterSet.Count, p => p.ToDeclaration()));
         }
         
+        //如果是Ref引用参数，则生成 ref Ti ri 形式的参数列表,否则生成 in Ti ci 形式的参数列表.，其中i=index && i>=genericsParameterSet.Count 以逗号分隔
         public string ToPartialParameter(GenericsParameterSet genericsParameterSet)
         {
             if (genericsParameterSet.Count >= Count)
@@ -232,9 +258,12 @@
         }
     }
 
+    //泛型参数结构体
     public struct GenericsParameter
     {
+        //是否是Ref引用参数
         public bool IsRefParameter;
+        //下标
         public int index;
 
         public GenericsParameter(bool isRefParameter, int index)
@@ -243,11 +272,13 @@
             this.index = index;
         }
 
+        //生成 Ti 形式的参数,i=index
         public string ToDeclaration()
         {
             return $"T{index}";
         }
 
+        //如果是Ref引用参数，则生成 ref Ti ri 形式的参数,否则生成 in Ti ci 形式的参数. 其中i=index
         public string ToFunctionParameter()
         {
             return IsRefParameter ? $"ref T{index} r{index}" : $"in T{index} c{index}";
@@ -255,6 +286,7 @@
 
         public string Format(string template) => Format(template, template);
 
+        //生成指定模版的参数
         public string Format(string templateIn, string templateRef)
         {
             return IsRefParameter
