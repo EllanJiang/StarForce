@@ -47,6 +47,7 @@ namespace Entt.Entities
         {
             var qualifier = x.ToQualifier();
 #>
+        //开始查询
         public void Apply(ViewDelegates.Apply<#=qualifier #><TEntityKey, <#= templateParamsLight #> > bulk)
         {
             if (AllowParallelExecution)

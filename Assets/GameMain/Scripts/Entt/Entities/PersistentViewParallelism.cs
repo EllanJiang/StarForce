@@ -40,6 +40,14 @@ namespace Entt.Entities
             });
         }
 
+        /// <summary>
+        /// 划分列表，然后并行处理
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="context"></param>
+        /// <param name="action"></param>
+        /// <typeparam name="TEntityKey"></typeparam>
+        /// <typeparam name="TContext"></typeparam>
         public static void PartitionAndRunMany<TEntityKey, TContext>(RawList<TEntityKey> p,
             TContext context,
             Action<RawList<TEntityKey>, TContext, int, int> action)
@@ -49,9 +57,11 @@ namespace Entt.Entities
                 return;
             }
 
+            // Environment.ProcessorCount 当前进程可用的逻辑处理器数量（例如四核CPU，每个核有两个逻辑处理器，那么可用的逻辑处理器数量就等于8）
             var rangeSize = (int) Math.Max(1, Math.Ceiling(p.Count / (float) Environment.ProcessorCount));
             var partitioner = Partitioner.Create(0, p.Count, rangeSize);
             ParallelOptions opts = new ParallelOptions();
+            //设置最大并行处理数量
             opts.MaxDegreeOfParallelism = Environment.ProcessorCount;
             
             Parallel.ForEach(partitioner, opts, range =>
