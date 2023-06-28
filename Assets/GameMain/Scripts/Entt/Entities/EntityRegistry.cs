@@ -683,7 +683,7 @@ namespace Entt.Entities
         }
         
         /// <summary>
-        /// 添加指定组件到entity身上
+        /// 添加默认组件到entity身上
         /// </summary>
         /// <param name="entity"></param>
         /// <typeparam name="TComponent"></typeparam>

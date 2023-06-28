@@ -9,7 +9,7 @@ showStatusBar = false
 scopes = {
 	"last_search.982FBD6D" = "t:assemblydefinitionasset "
 	"OpenInspectorPreview.982FBD6D" = "0"
-	"currentGroup.982FBD6D" = "asset"
+	"currentGroup.982FBD6D" = "all"
 }
 providers = {
 	adb = {

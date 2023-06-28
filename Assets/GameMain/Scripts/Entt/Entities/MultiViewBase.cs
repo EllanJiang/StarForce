@@ -15,7 +15,7 @@ using Entt.Entities.Pools;
 namespace Entt.Entities
 {
     /// <summary>
-    /// 用于获取并显示多个entity
+    /// 用于获取并显示拥有多个组件的entity列表
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
     /// <typeparam name="TEnumerator"></typeparam>
@@ -30,7 +30,10 @@ namespace Entt.Entities
         public event EventHandler<TEntityKey>? Destroyed;
         
         /// <summary>
-        /// 当前集合
+        /// 不同组件的EntityPool 列表
+        /// 举个例子：要查找同时拥有AComponent和BComponent的Entity列表，假设当前World总共有10个Entity，其中拥有AComponent的Entity数量是6个，拥有BComponent的Entity数量是4个
+        /// 那么Sets中会存在两个Pool，第一个Pool的Count是6，代表拥有AComponent的Entity列表，第二个Pool的Count是4，代表拥有BComponent的Entity列表。
+        /// 当遍历Sets中的pool时，会判断Entity1是否在第一个pool和第二和pool中，如果都在，那么就把Entity1放到result列表中，遍历完后，把result列表返回即可
         /// </summary>
         protected readonly List<IReadOnlyPool<TEntityKey>> Sets;
         /// <summary>

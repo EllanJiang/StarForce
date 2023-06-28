@@ -1,0 +1,16 @@
+{
+    "name": "Entt.Test",
+    "rootNamespace": "",
+    "references": [
+        "GUID:03ad02a109a47cc44b32d8d5af8df7f8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
