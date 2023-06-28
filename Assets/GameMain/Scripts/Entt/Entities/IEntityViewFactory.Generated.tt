@@ -16,6 +16,9 @@ namespace Entt.Entities
     public interface IEntityViewFactory<TEntityKey> : IEntityViewControl<TEntityKey>
         where TEntityKey: IEntityKey
     {
+        // <summary>
+        /// 从永久显示的View列表中移除该View
+        /// </summary>
         void DiscardView<TView>() where TView : IEntityView<TEntityKey>;
 
 <#
@@ -23,7 +26,13 @@ namespace Entt.Entities
     {
         var templateParamsLight = BuildLightTemplate(p);
 #>
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, <#= templateParamsLight #>> View<<#= templateParamsLight #>>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, <#= templateParamsLight #>> PersistentView<<#= templateParamsLight #>>();
 
 <#

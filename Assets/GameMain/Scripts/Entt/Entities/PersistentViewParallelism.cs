@@ -15,12 +15,18 @@ using Serilog;
 namespace Entt.Entities
 {
     /// <summary>
-    /// 并行处理persistent view
+    /// 并行处理Persistent View 或 Adhoc View
     /// </summary>
     public static class PersistentViewParallelism
     {
         static readonly ILogger logger = LogHelper.ForContext(typeof(PersistentViewParallelism));
         
+        /// <summary>
+        /// 划分列表，然后并行处理
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="action"></param>
+        /// <typeparam name="TEntityKey"></typeparam>
         public static void PartitionAndRun<TEntityKey>(List<TEntityKey> p, Action<TEntityKey> action)
         {
             if (p.Count == 0)
@@ -63,7 +69,7 @@ namespace Entt.Entities
             ParallelOptions opts = new ParallelOptions();
             //设置最大并行处理数量
             opts.MaxDegreeOfParallelism = Environment.ProcessorCount;
-            
+            //ForEach每个逻辑处理器，
             Parallel.ForEach(partitioner, opts, range =>
             {
                 var (min, max) = range;

@@ -78,7 +78,9 @@ namespace Entt.Entities.Helpers
 
             //原始数据
             readonly uint rawData;
-            //密集集数组下标
+            /// <summary>
+            /// 该元素在dense数组中的索引
+            /// </summary>
             public int DenseArrayIndex => (int)(rawData & KeyMask);
             public int Age => (int)(rawData & AgeMask) >> 24;
             public bool InUse => (rawData & ValidMask) != 0;

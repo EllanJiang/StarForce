@@ -25,7 +25,18 @@ namespace Entt.Entities
     {
         readonly EventHandler<TEntityKey> onCreated;
         readonly EventHandler<TEntityKey> onDestroyed;
+        
+        public event EventHandler<TEntityKey>? Created;
+        public event EventHandler<TEntityKey>? Destroyed;
+        
+        /// <summary>
+        /// 当前集合
+        /// </summary>
         protected readonly List<IReadOnlyPool<TEntityKey>> Sets;
+        /// <summary>
+        /// Entity管理器
+        /// </summary>
+        protected IEntityPoolAccess<TEntityKey> Registry { get; }
 
         /// <summary>
         ///   Use this as a general fallback during the construction of
@@ -62,9 +73,7 @@ namespace Entt.Entities
             Disposing(false);
         }
 
-        public event EventHandler<TEntityKey>? Destroyed;
-        public event EventHandler<TEntityKey>? Created;
-
+       
         protected virtual void OnCreated(object sender, TEntityKey e)
         {
             if (Contains(e))
@@ -84,12 +93,17 @@ namespace Entt.Entities
                 }
             }
 
+            //只有当前集合中每个池子都包含e，才能证明e是属于当前集合的，才触发销毁事件
             if (countContained == Sets.Count - 1)
             {
                 Destroyed?.Invoke(sender, e);
             }
         }
 
+        /// <summary>
+        /// 重置集合中每个池子的容量
+        /// </summary>
+        /// <param name="capacity"></param>
         public void Reserve(int capacity)
         {
             foreach (var pool in Sets)
@@ -98,18 +112,30 @@ namespace Entt.Entities
             }
         }
 
-        protected IEntityPoolAccess<TEntityKey> Registry { get; }
-
+       
+        /// <summary>
+        /// 移除该Entity身上绑定的组件
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <typeparam name="TComponent"></typeparam>
         public void RemoveComponent<TComponent>(TEntityKey entity)
         {
             Registry.RemoveComponent<TComponent>(entity);
         }
 
+        /// <summary>
+        /// 替换该Entity身上的组件为传入的组件c
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <param name="c"></param>
+        /// <typeparam name="TComponent"></typeparam>
+        /// <returns></returns>
         public bool ReplaceComponent<TComponent>(TEntityKey entity, in TComponent c)
         {
             return Registry.ReplaceComponent(entity, in c);
         }
 
+        
         public virtual void Respect<TComponent>()
         {
             // adhoc views ignore the respect command. 
@@ -127,13 +153,21 @@ namespace Entt.Entities
 
         public abstract TEnumerator GetEnumerator();
 
+        /// <summary>
+        /// 预估大小
+        /// </summary>
         public abstract int EstimatedSize { get; }
 
+        /// <summary>
+        /// 判断该Entity是否是当前集合中的一员
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns></returns>
         protected bool IsMember(TEntityKey e)
         {
-            foreach (var set in Sets)
+            foreach (var pool in Sets)
             {
-                if (!set.Contains(e))
+                if (!pool.Contains(e))
                 {
                     return false;
                 }
@@ -298,6 +332,12 @@ namespace Entt.Entities
             }
         }
         
+        /// <summary>
+        /// 查找当前集合中数量最小的Pool
+        /// </summary>
+        /// <param name="sets"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         protected static IReadOnlyPool<TEntityKey> FindMinimumEntrySet(IReadOnlyList<IReadOnlyPool<TEntityKey>> sets)
         {
             IReadOnlyPool<TEntityKey>? s = null;

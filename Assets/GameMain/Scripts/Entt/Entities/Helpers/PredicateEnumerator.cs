@@ -1,6 +1,6 @@
 ﻿/*
 * 文件名：PredicateEnumerator
-* 文件描述：预测迭代器?
+* 文件描述：
 * 作者：aronliang
 * 创建时间：2023/06/21 16:52:22
 * 修改记录：
@@ -12,12 +12,22 @@ using System.Collections.Generic;
 
 namespace Entt.Entities.Helpers
 {
+    /// <summary>
+    /// 自定义迭代器，与常规迭代器的主要区别是在MoveNext()中能否继续向下一个元素迭代是通过传入的predicate()方法来判断的
+    /// </summary>
+    /// <typeparam name="TValue"></typeparam>
     public struct PredicateEnumerator<TValue>:IEnumerator<TValue>
     {
         private readonly IEnumerable<TValue> contents;
         private Func<TValue, bool> predicate;
         private IEnumerator<TValue> enumerator;
 
+        /// <summary>
+        /// 通过调用predicate()来判断能否MoveNext
+        /// </summary>
+        /// <param name="contents"></param>
+        /// <param name="predicate"></param>
+        /// <exception cref="ArgumentNullException"></exception>
         internal PredicateEnumerator(IEnumerable<TValue> contents,
             Func<TValue, bool> predicate) : this()
         {
@@ -61,7 +71,7 @@ namespace Entt.Entities.Helpers
     }
 
     /// <summary>
-    /// 映射迭代器
+    /// 与常规迭代器的主要区别是Current的返回值是通过传入的Mapper方法来返回的
     /// </summary>
     /// <typeparam name="TValue"></typeparam>
     /// <typeparam name="TSource"></typeparam>

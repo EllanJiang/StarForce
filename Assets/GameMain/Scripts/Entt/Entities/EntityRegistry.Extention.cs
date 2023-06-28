@@ -19,7 +19,7 @@ namespace Entt.Entities
                                                         where TEntityKey : IEntityKey
     {
         /// <summary>
-        /// 对象池item
+        /// 对象池item：包括一个可读可写Pool和一个只读Pool
         /// </summary>
         readonly struct PoolEntry
         {
@@ -30,6 +30,12 @@ namespace Entt.Entities
             {
                 this.ReadonlyPool = readonlyPool ?? throw new ArgumentNullException(nameof(readonlyPool));
                 this.pool = null;
+            }
+            
+            public PoolEntry(IPool<TEntityKey> pool)
+            {
+                this.pool = pool ?? throw new ArgumentNullException(nameof(pool));
+                this.ReadonlyPool = pool;
             }
             
             public bool TryGetPool([MaybeNullWhen(false)] out IPool<TEntityKey> poolResult)

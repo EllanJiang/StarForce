@@ -19,7 +19,9 @@ namespace Entt.Entities
     {
         var templateParamsLight = p.ToDeclaration();
 #>
-
+    /// <summary>
+    /// 临时显示Entities
+    /// </summary>
     public interface IEntityView<TEntityKey, <#= templateParamsLight #>>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -37,7 +39,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// 持续持有对Entity列表的引用
+    /// 永久显示Entities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, <#= templateParamsLight #>>  : IEntityView<TEntityKey, <#= templateParamsLight #>>
         where TEntityKey: IEntityKey

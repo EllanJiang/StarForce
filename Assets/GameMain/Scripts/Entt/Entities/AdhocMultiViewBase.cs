@@ -11,6 +11,10 @@ using Entt.Entities.Pools;
 
 namespace Entt.Entities
 {
+    /// <summary>
+    /// 用来临时显示多个Entity
+    /// </summary>
+    /// <typeparam name="TEntityKey"></typeparam>
     public abstract class AdhocMultiViewBase<TEntityKey> : MultiViewBase<TEntityKey, PredicateEnumerator<TEntityKey>> 
         where TEntityKey : IEntityKey
     {
@@ -19,6 +23,9 @@ namespace Entt.Entities
         {
         }
 
+        /// <summary>
+        /// 预估大小，返回当前集合中Count最小的Pool的Count
+        /// </summary>
         public override int EstimatedSize
         {
             get
@@ -42,6 +49,10 @@ namespace Entt.Entities
             }
         }
 
+        /// <summary>
+        /// 把当前集合中数量最小的pool复制到k中
+        /// </summary>
+        /// <param name="k"></param>
         public override void CopyTo(RawList<TEntityKey> k)
         {
             k.Clear();
@@ -51,6 +62,11 @@ namespace Entt.Entities
             s.CopyTo(k);
         }
 
+        /// <summary>
+        /// 使用当前集合中Count最小的Pool来迭代
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         public override PredicateEnumerator<TEntityKey> GetEnumerator()
         {
             IReadOnlyPool<TEntityKey>? s = null;

@@ -1,4 +1,4 @@
-
+ï»¿
 
 
 //------------------------------------------------------------------------------
@@ -13,7 +13,9 @@
 namespace Entt.Entities
 {
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -25,7 +27,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1>  : IEntityView<TEntityKey, T1>
         where TEntityKey: IEntityKey
@@ -33,7 +35,9 @@ namespace Entt.Entities
         int Count { get; }
     }
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1, T2>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -47,7 +51,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1, T2>  : IEntityView<TEntityKey, T1, T2>
         where TEntityKey: IEntityKey
@@ -55,7 +59,9 @@ namespace Entt.Entities
         int Count { get; }
     }
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1, T2, T3>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -71,7 +77,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1, T2, T3>  : IEntityView<TEntityKey, T1, T2, T3>
         where TEntityKey: IEntityKey
@@ -79,7 +85,9 @@ namespace Entt.Entities
         int Count { get; }
     }
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1, T2, T3, T4>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -97,7 +105,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1, T2, T3, T4>  : IEntityView<TEntityKey, T1, T2, T3, T4>
         where TEntityKey: IEntityKey
@@ -105,7 +113,9 @@ namespace Entt.Entities
         int Count { get; }
     }
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1, T2, T3, T4, T5>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -125,7 +135,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1, T2, T3, T4, T5>  : IEntityView<TEntityKey, T1, T2, T3, T4, T5>
         where TEntityKey: IEntityKey
@@ -133,7 +143,9 @@ namespace Entt.Entities
         int Count { get; }
     }
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1, T2, T3, T4, T5, T6>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -155,7 +167,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1, T2, T3, T4, T5, T6>  : IEntityView<TEntityKey, T1, T2, T3, T4, T5, T6>
         where TEntityKey: IEntityKey
@@ -163,7 +175,9 @@ namespace Entt.Entities
         int Count { get; }
     }
 
-
+    /// <summary>
+    /// ä¸´æ—¶æ˜¾ç¤ºEntities
+    /// </summary>
     public interface IEntityView<TEntityKey, T1, T2, T3, T4, T5, T6, T7>  : IEntityView<TEntityKey>
         where TEntityKey: IEntityKey
     {
@@ -187,7 +201,7 @@ namespace Entt.Entities
     }
     
     /// <summary>
-    /// ³ÖĞø³ÖÓĞ¶ÔEntityÁĞ±íµÄÒıÓÃ
+    /// æ°¸ä¹…æ˜¾ç¤ºEntities
     /// </summary>
     public interface IPersistentEntityView<TEntityKey, T1, T2, T3, T4, T5, T6, T7>  : IEntityView<TEntityKey, T1, T2, T3, T4, T5, T6, T7>
         where TEntityKey: IEntityKey

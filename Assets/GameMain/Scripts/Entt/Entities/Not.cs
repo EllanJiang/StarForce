@@ -10,7 +10,7 @@ namespace Entt.Entities
 {
     /// <summary>
     /// A placeholder struct that indicates the absense of a component.
-    /// 用于显示组件缺失
+    /// 一个占位符，用于显示没有该组件，与拥有该组件相反
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public readonly struct Not<T>

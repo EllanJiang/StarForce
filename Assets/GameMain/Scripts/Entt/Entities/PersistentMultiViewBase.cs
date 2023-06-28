@@ -11,6 +11,10 @@ using Entt.Entities.Pools;
 
 namespace Entt.Entities
 {
+    /// <summary>
+    /// 用于Entity的永久显示，跟AdhocView正好相反
+    /// </summary>
+    /// <typeparam name="TEntityKey"></typeparam>
    public abstract class PersistentMultiViewBase<TEntityKey> : MultiViewBase<TEntityKey, PredicateEnumerator<TEntityKey>> 
         where TEntityKey : IEntityKey
     {
@@ -24,6 +28,36 @@ namespace Entt.Entities
             FastIsMemberPredicate = view.Contains;
         }
 
+        /// <summary>
+        /// 从当前集合中创建用于永久显示的View
+        /// </summary>
+        /// <param name="sets"></param>
+        /// <returns></returns>
+        SparseSet<TEntityKey> CreateInitialEntrySet(IReadOnlyPool<TEntityKey>[] sets)
+        {
+            var s = FindMinimumEntrySet(sets);
+            var result = new SparseSet<TEntityKey>();
+            
+            var p = EntityKeyListPool.Reserve(s);
+            try
+            {
+                foreach (var e in p)
+                {
+                    if (IsMember(e))
+                    {
+                        result.Add(e);
+                    }
+                }
+            }
+            finally
+            {
+                EntityKeyListPool.Release(p);
+            }
+
+            return result;
+        }
+
+        
         public override int EstimatedSize => view.Count;
 
         protected override void OnDestroyed(object sender, TEntityKey e)
@@ -54,6 +88,10 @@ namespace Entt.Entities
             return new PredicateEnumerator<TEntityKey>(view, FastIsMemberPredicate);
         }
 
+        /// <summary>
+        /// TODO 这个方法到底是用来干啥的？ 
+        /// </summary>
+        /// <typeparam name="TComponent"></typeparam>
         public override void Respect<TComponent>()
         {
             view.Respect(Registry.GetPool<TComponent>());
@@ -64,29 +102,7 @@ namespace Entt.Entities
             view.CopyTo(k);
         }
 
-        SparseSet<TEntityKey> CreateInitialEntrySet(IReadOnlyPool<TEntityKey>[] sets)
-        {
-            var s = FindMinimumEntrySet(sets);
-            var result = new SparseSet<TEntityKey>();
-            
-            var p = EntityKeyListPool.Reserve(s);
-            try
-            {
-                foreach (var e in p)
-                {
-                    if (IsMember(e))
-                    {
-                        result.Add(e);
-                    }
-                }
-            }
-            finally
-            {
-                EntityKeyListPool.Release(p);
-            }
-
-            return result;
-        }
-
+        
+        
     }
 }

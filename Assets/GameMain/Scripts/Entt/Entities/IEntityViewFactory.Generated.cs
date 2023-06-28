@@ -15,27 +15,72 @@ namespace Entt.Entities
     public interface IEntityViewFactory<TEntityKey> : IEntityViewControl<TEntityKey>
         where TEntityKey: IEntityKey
     {
+        // <summary>
+        /// 从永久显示的View列表中移除该View
+        /// </summary>
         void DiscardView<TView>() where TView : IEntityView<TEntityKey>;
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1> View<T1>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1> PersistentView<T1>();
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1, T2> View<T1, T2>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1, T2> PersistentView<T1, T2>();
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1, T2, T3> View<T1, T2, T3>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1, T2, T3> PersistentView<T1, T2, T3>();
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1, T2, T3, T4> View<T1, T2, T3, T4>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1, T2, T3, T4> PersistentView<T1, T2, T3, T4>();
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1, T2, T3, T4, T5> View<T1, T2, T3, T4, T5>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1, T2, T3, T4, T5> PersistentView<T1, T2, T3, T4, T5>();
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1, T2, T3, T4, T5, T6> View<T1, T2, T3, T4, T5, T6>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1, T2, T3, T4, T5, T6> PersistentView<T1, T2, T3, T4, T5, T6>();
 
+        /// <summary>
+        /// 临时显示Entities
+        /// </summary>
         IEntityView<TEntityKey, T1, T2, T3, T4, T5, T6, T7> View<T1, T2, T3, T4, T5, T6, T7>();
+        /// <summary>
+        /// 永久显示Entities
+        /// </summary>
         IPersistentEntityView<TEntityKey, T1, T2, T3, T4, T5, T6, T7> PersistentView<T1, T2, T3, T4, T5, T6, T7>();
 
   }

@@ -117,7 +117,7 @@ namespace Entt.Entities
         }
 
         /// <summary>
-        /// 获取该组件在组件列表中的索引
+        /// 根据组件类型，获取该组件在组件列表中的索引
         /// </summary>
         /// <typeparam name="TComponent"></typeparam>
         /// <returns></returns>

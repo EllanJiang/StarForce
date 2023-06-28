@@ -49,7 +49,7 @@
         return templateParams.ToString();
     }
 
-    //生成 format(template,i) 形式的参数，以separator分隔
+    //生成 format(template,i) 形式的参数列表，以separator分隔，列表长度是Count
     public static string JoinGenericParams(int count, string template, string separator)
     {
         var sb = new StringBuilder();
