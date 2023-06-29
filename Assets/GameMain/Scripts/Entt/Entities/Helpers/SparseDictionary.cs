@@ -144,7 +144,7 @@ namespace Entt.Entities.Helpers
         }
         
         /// <summary>
-        /// 更新EntityKey的Value值
+        /// 更新EntityKey的Component
         /// </summary>
         /// <param name="entityKey"></param>
         /// <param name="component"></param>

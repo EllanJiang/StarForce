@@ -18,7 +18,7 @@ using Serilog;
 namespace Entt.Entities
 {
     /// <summary>
-    /// Entity管理器，管理所有Entity
+    /// Entity管理器，存储并管理所有Entity和Component
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
     public partial class EntityRegistry<TEntityKey> : IEntityViewFactory<TEntityKey>,
@@ -463,7 +463,7 @@ namespace Entt.Entities
         }
         
         /// <summary>
-        /// 销毁一个Entity
+        /// 销毁一个Entity和它身上挂载的所有Component
         /// </summary>
         /// <param name="entity"></param>
         public void Destroy(TEntityKey entity)
@@ -963,7 +963,7 @@ namespace Entt.Entities
         }
         
         /// <summary>
-        /// 该world中是否只有一个该类型的entity（标签和entityId都不一样）
+        /// 当一个Entity仍在使用中，但是已经没有挂载任何Component时，我们称这个Entity为Orphan Entity
         /// </summary>
         /// <param name="e"></param>
         /// <returns></returns>

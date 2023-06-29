@@ -20,7 +20,13 @@ namespace Entt.Entities.Helpers
     /// <typeparam name="T"></typeparam>
     public class RawList<T>:IReadOnlyList<T>
     {
+        /// <summary>
+        /// 使用数组来实现List
+        /// </summary>
         private T[] data;
+        /// <summary>
+        /// 当前列表所处的版本，用来判断当前列表是否有被修改，如果被修改（存储，扩充容量,在列表末端添加/删除一个元素等），version++
+        /// </summary>
         private int version;
 
         public RawList(int initSize = 10)
@@ -42,7 +48,7 @@ namespace Entt.Entities.Helpers
                 if (data.Length != value)
                 {
                     Array.Resize(ref data,value);
-                    version++;
+                    AddVersion();
                 }
             }
         }
@@ -57,15 +63,24 @@ namespace Entt.Entities.Helpers
             EnsureCapacity(index + 1);
             data[index] = input;
             Count = Math.Max(index + 1, Count);
-            version++;
+            AddVersion();
         }
         
         /// <summary>
-        /// 获取列表当前版本 
+        /// 获取列表所处版本 
         /// </summary>
         public int Version
         {
             get { return version; }
+        }
+        
+        /// <summary>
+        /// 版本号+1
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private void AddVersion()
+        {
+            version++;
         }
 
         /// <summary>
@@ -74,7 +89,7 @@ namespace Entt.Entities.Helpers
         public T[] UnsafeData => data;
 
         /// <summary>
-        /// 直接指定原始数据中元素数量
+        /// 直接指定原始数组中元素数量
         /// </summary>
         /// <param name="c"></param>
         public void UnsafeSetCount(int c) => Count = c;
@@ -85,7 +100,7 @@ namespace Entt.Entities.Helpers
         /// 尝试获取指定索引对应的值的引用
         /// </summary>
         /// <param name="index"></param>
-        /// <param name="defaultValue"></param>
+        /// <param name="defaultValue">如果没有找到，那么返回该默认值</param>
         /// <param name="success"></param>
         /// <returns></returns>
         public ref T? TryGetRef(int index, ref T? defaultValue, out bool success)
@@ -126,7 +141,7 @@ namespace Entt.Entities.Helpers
         public void Swap(int src, int dst)
         {
             (data[src], data[dst]) = (data[dst], data[src]);
-            version++;
+            AddVersion();
         }
 
         public void Clear()
@@ -137,7 +152,7 @@ namespace Entt.Entities.Helpers
                 Count = 0;
             }
 
-            version++;
+            AddVersion();
         }
 
         /// <summary>
@@ -196,7 +211,7 @@ namespace Entt.Entities.Helpers
             EnsureCapacity(Count + 1);
             data[Count] = element;
             Count++;
-            version++;
+            AddVersion();
         }
 
         /// <summary>
@@ -206,9 +221,25 @@ namespace Entt.Entities.Helpers
         {
             data[Count - 1] = default!;
             Count--;
-            version++;
+            AddVersion();
         }
         
+        public Enumerator GetEnumerator()
+        {
+            return new Enumerator(this);
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+        
+         
         /// <summary>
         /// 列表内部的迭代器
         /// </summary>
@@ -232,7 +263,7 @@ namespace Entt.Entities.Helpers
             {
                 if (versionAtStart != contents.version)
                 {
-                    throw new InvalidOperationException("Concurrent Modification of RawList while iterating.");
+                    throw new InvalidOperationException("不能在遍历RawList的同时修改RawList！");
                 }
 
                 if (index + 1 < contents.Count)
@@ -274,19 +305,5 @@ namespace Entt.Entities.Helpers
             }
         }
 
-        public Enumerator GetEnumerator()
-        {
-            return new Enumerator(this);
-        }
-
-        IEnumerator<T> IEnumerable<T>.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
     }
 }

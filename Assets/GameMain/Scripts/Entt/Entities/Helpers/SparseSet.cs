@@ -130,7 +130,7 @@ namespace Entt.Entities.Helpers
             //使用Key作为sparse的索引，也就是说sparse数组的大小会随着Entity的增加而增大
             var sparseArrayIndex = entityKey.Key; 
             
-            //SparseElement的Key为什么是dense.Count，因为dense.Count就是e存储在dense中的位置,即dense[dense.Count]=e
+            //SparseElement的Key为什么是dense.Count，因为dense.Count就是entityKey存储在dense中的位置,即dense[dense.Count]=entityKey
             //到时就可以根据SparseElement的DenseArrayIndex来获取SparseElement在dense中的位置
             sparse.StoreAt(sparseArrayIndex, new SparseElement(dense.Count, entityKey.Age));
             dense.Add(entityKey);

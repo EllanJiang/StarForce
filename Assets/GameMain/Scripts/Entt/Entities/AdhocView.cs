@@ -15,7 +15,7 @@ using Entt.Entities.Pools;
 namespace Entt.Entities
 {
     /// <summary>
-    /// 用于entity临时显示，跟PersistentView正好相反
+    /// 用于临时显示只有单个Component的entity列表，跟PersistentView正好相反
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
     /// <typeparam name="TComponent"></typeparam>

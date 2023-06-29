@@ -12,7 +12,7 @@ using Entt.Entities.Pools;
 namespace Entt.Entities
 {
     /// <summary>
-    /// 用来临时显示多个Entity
+    /// 用来临时显示拥有多个指定Component的Entity列表
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
     public abstract class AdhocMultiViewBase<TEntityKey> : MultiViewBase<TEntityKey, PredicateEnumerator<TEntityKey>> 
