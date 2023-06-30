@@ -50,6 +50,7 @@ namespace Entt.Entities
         readonly List<Attachment> tags;
         /// <summary>
         /// 保存所有entity view
+        /// Key是组件类型,value是拥有该组件的所有Entity列表
         /// </summary>
         readonly Dictionary<Type, IEntityView<TEntityKey>> views;
         /// <summary>
@@ -61,7 +62,7 @@ namespace Entt.Entities
         /// </summary>
         int next;
         /// <summary>
-        /// entities列表中可用entity数量
+        ///  在entities列表中，在[0,available-1]区间内的索引是无效索引，在[available,entities.Count-1]区间内的索引是有效索引
         /// </summary>
         int available;
         
@@ -91,7 +92,7 @@ namespace Entt.Entities
         }
         
         /// <summary>
-        /// 复用Entity，当前可用Entity数量
+        /// entities列表中有效entity的数量
         /// </summary>
         public int Count
         {
@@ -377,6 +378,13 @@ namespace Entt.Entities
             RegisterNonConstructable(destructorFn);
         }
 
+        /// <summary>
+        /// 注册Entity组件，不需要提供组件的构造函数
+        /// </summary>
+        /// <param name="destructor"></param>
+        /// <typeparam name="TComponent"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
         public IPool<TEntityKey, TComponent> RegisterNonConstructable<TComponent>(
             Action<TEntityKey, EntityRegistry<TEntityKey>, TComponent>? destructor = null)
         {
@@ -499,6 +507,11 @@ namespace Entt.Entities
             }
         }
         
+        /// <summary>
+        /// 循环增加Entity的Age
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         byte RollingAgeIncrement(byte value)
         {
             value += 1;
