@@ -5,6 +5,8 @@
 /[Bb]uilds/
 /Assets/AssetStoreTools*
 /.vs/
+/[Ll]ogs/
+/[Uu]serSettings/
 
 *.csproj
 *.unityproj
