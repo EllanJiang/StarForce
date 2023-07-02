@@ -9,7 +9,8 @@
 namespace Entt.Entities.Systems
 {
     /// <summary>
-    /// 不使用上下文创建EntitySystem
+    /// 不使用内容构建EntitySystem
+    /// 这里的Context应该理解成EntityKey对应的内容
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
     public readonly partial struct EntitySystemBuilderWithoutContext<TEntityKey> where TEntityKey : IEntityKey

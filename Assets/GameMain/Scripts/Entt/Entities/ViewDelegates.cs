@@ -16,12 +16,15 @@ namespace Entt.Entities
     {
         /// <summary>
         /// 定义委托：参数是EntityKey和实现Entity相关控制接口的类
+        /// 只返回EntityKey
         /// </summary>
         /// <typeparam name="TEntityKey"></typeparam>
         public delegate void Apply<TEntityKey>(IEntityViewControl<TEntityKey> v, TEntityKey k) 
             where TEntityKey : IEntityKey;
         /// <summary>
-        /// 定义委托：参数是EntityKey,实现Entity相关控制接口的类,以及上下文
+        /// 定义委托：参数是EntityKey,实现Entity相关控制接口的类
+        /// ApplyWithContext与Apply的主要区别是：ApplyWithContext不仅把EntityKey返回，还会把EntityKey对应的内容一起返回
+        /// 这里的Context不应该理解为上下文，而是应该理解成内容
         /// </summary>
         /// <typeparam name="TEntityKey"></typeparam>
         /// <typeparam name="TContext"></typeparam>

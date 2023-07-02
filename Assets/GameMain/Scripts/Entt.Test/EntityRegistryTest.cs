@@ -9,16 +9,17 @@
 using System;
 using System.Collections.Generic;
 using Entt.Entities;
+using FluentAssertions;
 using UnityEngine;
 
 namespace Entt.Test
 {
     public class EntityRegistryTest:MonoBehaviour
     {
-        private EntityRegistry<EntityKey> Registry;
+        private EntityRegistry<EntityKey>Registry;
         private IReadOnlyList<EntityKey> Keys;
         private IPersistentEntityView<EntityKey, int> PersistentEntityView;  //持续持有Entity列表，跟Adhoc相对
-        private IPersistentEntityView<EntityKey, string> PersistentEntityView2;  //持续持有Entity列表，跟Adhoc相对
+        //private IPersistentEntityView<EntityKey, string> PersistentEntityView2;  //持续持有Entity列表，跟Adhoc相对
         private void Start()
         {
             Registry = new EntityRegistry<EntityKey>(EntityKey.MaxAge, (age, key) => new EntityKey(age, key));
@@ -30,18 +31,22 @@ namespace Entt.Test
             var k3 = Registry.CreateAsActor().AssignComponent(3).Entity;  //该Entity身上挂载有3组件
             var k4 = Registry.CreateAsActor().Entity;//该Entity没有挂载组件
 
-            var k5 = Registry.CreateAsActor().AssignComponent("Test").Entity;
+            //var k5 = Registry.CreateAsActor().AssignComponent("Test").Entity;
 
             Keys = new[] { k1, k2, k3, k4 };
             PersistentEntityView = Registry.PersistentView<int>();
-            PersistentEntityView2 = Registry.PersistentView<string>();
+            //PersistentEntityView2 = Registry.PersistentView<string>();
         }
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
-                TestClear();
+                //TestClear();
+                //TestRemoveComponentFirst();
+                //TestRemoveEntityFirst();
+                //TestRemoveComponentLast();
+                TestRemoveEntityLast();
             }
         }
 
@@ -64,8 +69,109 @@ namespace Entt.Test
             LogUtil.Log(pool.Contains(Keys[2])); 
             LogUtil.Log(pool.Contains(Keys[3])); 
         }
+
+        /// <summary>
+        /// 移除第一个组件
+        /// </summary>
+        public void TestRemoveComponentFirst()
+        {
+            LogUtil.Log("TestRemoveComponentFirst 开始");
+            //移除第一个Entity身上挂载的int组件，此时PersistentEntityView的数量应该是2
+            Registry.RemoveComponent<int>(Keys[0]);
+            PersistentEntityView.Count.Should().Be(2);
+            //且剩下的EntityKey应该等于Keys[1]和Keys[2]
+            PersistentEntityView.Should().BeEquivalentTo(new List<EntityKey>(){Keys[1], Keys[2]});
+            //但是Registry拥有的entities不会变化
+            Registry.Should().BeEquivalentTo(Keys);
+            //EntityKey和value的键值对应该是(Keys[1], 2)和(Keys[2], 3)
+            PersistentEntityView.CollectContents().Should().BeEquivalentTo(new List<(EntityKey, int)>()
+            {
+                (Keys[1], 2),
+                (Keys[2], 4) //这里会报错：AssertionException: Expected field PersistentEntityView.CollectContents()[1].Item2 to be 4, but found 3.
+            });
+            
+            LogUtil.Log("TestRemoveComponentFirst 成功");
+        }
+
+        public void TestRemoveEntityFirst()
+        {
+            LogUtil.Log("TestRemoveEntityFirst 开始");
+            
+            //销毁entities列表中第一个entity及其身上挂载的所有component
+            Registry.Destroy(Keys[0]);
+            
+            PersistentEntityView.Count.Should().Be(2);
+            //且剩下的EntityKey应该等于Keys[1]和Keys[2]
+            PersistentEntityView.Should().BeEquivalentTo(new List<EntityKey>()
+            {
+                Keys[1], Keys[2]
+            });
+            //Registry拥有的entities少了第一个
+            Registry.Should().BeEquivalentTo(new List<EntityKey>()
+            {
+                Keys[1], Keys[2],Keys[3]
+            });
+            //EntityKey和value的键值对应该是(Keys[1], 2)和(Keys[2], 3)
+            PersistentEntityView.CollectContents().Should().BeEquivalentTo(new List<(EntityKey, int)>()
+            {
+                (Keys[1], 2),
+                (Keys[2], 3) 
+            });
+
+            var pool = Registry.GetPool<int>();
+            pool.Contains(Keys[0]).Should().BeTrue(); //这里会报错：AssertionException: Expected pool.Contains(Keys[0]) to be true, but found False.
+            
+            LogUtil.Log("TestRemoveEntityFirst 成功");
+        }
         
-        
+        //移除最后一个Entity身上挂载的Component组件
+        public void TestRemoveComponentLast()
+        {
+            LogUtil.Log("TestRemoveComponentLast开始");
+            Registry.RemoveComponent<int>(Keys[2]);
+            PersistentEntityView.Count.Should().Be(2);
+
+            //且剩下的EntityKey应该等于Keys[0]和Keys[1]
+            PersistentEntityView.Should().BeEquivalentTo(new List<EntityKey>(){Keys[0], Keys[1]});
+            //但是Registry拥有的entities不会变化
+            Registry.Should().BeEquivalentTo(Keys);
+            //EntityKey和value的键值对应该是(Keys[0], 1)和(Keys[1], 2)
+            PersistentEntityView.CollectContents().Should().BeEquivalentTo(new List<(EntityKey, int)>()
+            {
+                (Keys[0], 1),
+                (Keys[1], 2) 
+            });
+            LogUtil.Log("TestRemoveComponentLast成功");
+        }
+
+        //移除entities列表中最后一个entity及其身上挂载的component
+        public void TestRemoveEntityLast()
+        {
+            LogUtil.Log("TestRemoveEntityLast开始");
+            Registry.Destroy(Keys[2]);
+            
+            PersistentEntityView.Count.Should().Be(2);
+            //且剩下的EntityKey应该等于Keys[0]和Keys[1]
+            PersistentEntityView.Should().BeEquivalentTo(new List<EntityKey>()
+            {
+                Keys[0], Keys[1]
+            });
+            //Registry拥有的entities少了最后一个
+            Registry.Should().BeEquivalentTo(new List<EntityKey>()
+            {
+                Keys[0], Keys[1],Keys[3]  //Keys[3]对应的Entity没有Component
+            });
+            //EntityKey和value的键值对应该是(Keys[0], 1)和(Keys[1], 2)
+            PersistentEntityView.CollectContents().Should().BeEquivalentTo(new List<(EntityKey, int)>()
+            {
+                (Keys[0], 1),
+                (Keys[1], 2) 
+            });
+
+            var pool = Registry.GetPool<int>();
+            pool.Contains(Keys[2]).Should().BeFalse(); 
+            LogUtil.Log("TestRemoveEntityLast成功");
+        }
     }
     
     
@@ -75,6 +181,7 @@ namespace Entt.Test
     {
         public static List<(EntityKey, T)> CollectContents<T>(this IEntityView<EntityKey, T> view)
         {
+            //TContext = List<(EntityKey, T)>
             void CollectData(IEntityViewControl<EntityKey> v, List<(EntityKey, T)> context, EntityKey k, in T data)
             {
                 context.Add((k, data));

@@ -43,7 +43,7 @@ namespace Entt.Entities.Systems
         }
         
         /// <summary>
-        /// 创建Entity系统（传入上下文）
+        /// 创建Entity系统（传入EntityKey对应的内容）
         /// </summary>
         /// <param name="action"></param>
         /// <param name="source"></param>
