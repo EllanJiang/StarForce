@@ -14,7 +14,7 @@ using Entt.Entities.Helpers;
 namespace Entt.Entities.Pools
 {
     /// <summary>
-    /// 标志对象池？
+    /// 组件标志对象池，与Pool的主要区别是，FlagPool的内容就是sharedData，backend里面存放的只是EntityKey，不管是哪个Key，从FlagPool中取出的值一定是sharedData
     /// </summary>
     /// <typeparam name="TEntityKey"></typeparam>
     /// <typeparam name="TData"></typeparam>
@@ -156,11 +156,11 @@ namespace Entt.Entities.Pools
             return ref defaultValue;
         }
         
-        public void CopyTo(RawList<TEntityKey> entites)
+        public void CopyTo(RawList<TEntityKey> entities)
         {
-            entites.Capacity = Math.Max(entites.Capacity, Count);
-            entites.Clear();
-            backend.CopyTo(entites);
+            entities.Capacity = Math.Max(entities.Capacity, Count);
+            entities.Clear();
+            backend.CopyTo(entities);
         }
     }
 }
