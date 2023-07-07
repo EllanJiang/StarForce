@@ -28,4 +28,11 @@ namespace Entt.Test.Fixtures
             this.y = y;
         }
     }
+
+    [EntityComponent]
+    public readonly struct Velocity
+    {
+        public readonly int X;
+        public readonly int Y;
+    }
 }

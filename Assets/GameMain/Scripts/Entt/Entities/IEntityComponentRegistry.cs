@@ -10,7 +10,7 @@ using System;
 namespace Entt.Entities
 {
     /// <summary>
-    /// Entity组件注册接口
+    /// Entity组件管理器接口
     /// </summary>
     public interface IEntityComponentRegistry<TEntityKey> where TEntityKey : IEntityKey
     {

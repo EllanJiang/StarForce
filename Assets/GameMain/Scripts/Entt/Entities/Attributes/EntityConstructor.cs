@@ -8,10 +8,22 @@
 
 namespace Entt.Entities.Attributes
 {
+    /// <summary>
+    /// Entity或Component构造函数类型
+    /// </summary>
     public enum EntityConstructor
     {
+        /// <summary>
+        /// 默认构造函数
+        /// </summary>
         Auto = 0,
+        /// <summary>
+        /// 没有构造函数
+        /// </summary>
         NonConstructable = 1,
+        /// <summary>
+        /// 标志组件
+        /// </summary>
         Flag = 2
     }
 }

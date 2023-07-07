@@ -10,6 +10,9 @@ using System;
 
 namespace Entt.Entities.Attributes
 {
+    /// <summary>
+    /// Entity析构函数属性
+    /// </summary>
     [AttributeUsage(AttributeTargets.Method)]
     public sealed class EntityDestructorAttribute:Attribute
     {

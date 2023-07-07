@@ -10,6 +10,9 @@ using System;
 
 namespace Entt.Entities.Attributes
 {
+    /// <summary>
+    /// EntityKey属性
+    /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Interface)]
     public class EntityKeyAttribute:Attribute
     {
