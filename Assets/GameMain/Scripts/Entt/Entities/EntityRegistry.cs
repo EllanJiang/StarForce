@@ -670,17 +670,17 @@ namespace Entt.Entities
         /// <param name="destroyed"></param>
         public void AssureEntityState(TEntityKey entity, bool destroyed)
         {
-            var entt = entity.Key;
-            while (entities.Count <= entt)
+            var entityKey = entity.Key;
+            while (entities.Count <= entityKey)
             {
                 entities.Add(entityKeyFactory(0, entities.Count));
             }
 
-            entities[entt] = entity;
+            entities[entityKey] = entity;
             if (destroyed)
             {
                 Destroy(entity);
-                entities[entt] = entityKeyFactory(entity.Age, entities[entt].Key);
+                entities[entityKey] = entityKeyFactory(entity.Age, entities[entityKey].Key);
             }
         }
 
