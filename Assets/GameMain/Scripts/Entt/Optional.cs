@@ -18,6 +18,9 @@ namespace Entt
     /// </summary>
     public readonly struct OptionalEmptyPlaceHolder{}
     
+    /// <summary>
+    /// 可选的一个数据
+    /// </summary>
     public static class Optional
     {
         public static Optional<T> Empty<T>()
