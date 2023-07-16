@@ -17,24 +17,24 @@ namespace Entt.Serialization
         where TEntityKey : IEntityKey
     {
         /// <summary>
-        /// 加载entity
+        /// 添加entity到EntityRegistry中
         /// </summary>
         /// <param name="entity"></param>
         void OnEntity(TEntityKey entity);
         /// <summary>
-        /// 加载已经销毁entity
+        ///  添加已经销毁的entity到EntityRegistry中
         /// </summary>
         /// <param name="entity"></param>
         void OnDestroyedEntity(TEntityKey entity);
         /// <summary>
-        /// 加载component
+        ///  添加component到EntityRegistry中
         /// </summary>
         /// <param name="entity"></param>
         /// <param name="component"></param>
         /// <typeparam name="TComponent"></typeparam>
         void OnComponent<TComponent>(TEntityKey entity, in TComponent component);
         /// <summary>
-        /// 加载tag
+        /// 添加tag到EntityRegistry中
         /// </summary>
         /// <param name="entity"></param>
         /// <param name="component"></param>

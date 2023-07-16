@@ -44,7 +44,12 @@ namespace Entt.Annotations.Impl
         {
             ProcessTyped<TComponent>(registration);
         }
-
+        
+        /// <summary>
+        /// 自定义处理类型的方法，需要进行重写
+        /// </summary>
+        /// <param name="registration"></param>
+        /// <typeparam name="TComponent"></typeparam>
         protected abstract void ProcessTyped<TComponent>(EntityComponentRegistration registration);
     }
 }

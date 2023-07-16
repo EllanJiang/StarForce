@@ -13,10 +13,13 @@ using System.Reflection;
 namespace Entt.Annotations
 {
     /// <summary>
-    /// 监听组件相关事件（添加组件到Entity，从Entity身上移除组件）
+    /// 监听组件相关事件（添加组件到Entity，从Entity身上移除组件），存储组件相关数据
     /// </summary>
     public class EntityComponentRegistration
     {
+        /// <summary>
+        /// key:组件类型，value:任意组件数据
+        /// </summary>
         private readonly Dictionary<Type, object> data;
         
         public TypeInfo TypeInfo { get; private set; }

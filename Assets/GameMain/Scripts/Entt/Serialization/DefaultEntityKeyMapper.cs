@@ -35,17 +35,17 @@ namespace Entt.Serialization
         }
 
         /// <summary>
-        /// 获取映射器，并将data作为参数传入，然后调用映射器，返回映射器的值
+        /// 获取映射器，并将entityKeyData作为参数传入，然后调用映射器，返回映射器的值
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="entityKeyData"></param>
         /// <typeparam name="TEntityKey"></typeparam>
         /// <returns></returns>
-        public TEntityKey EntityKeyMapper<TEntityKey>(EntityKeyData data)
+        public TEntityKey EntityKeyMapper<TEntityKey>(EntityKeyData entityKeyData)
         {
             if (this.data.TryGetValue(typeof(TEntityKey), out var converter) &&
                 converter is Func<EntityKeyData,TEntityKey> func)
             {
-                return func(data);
+                return func(entityKeyData);
             }
 
             throw new SnapshotIOException();

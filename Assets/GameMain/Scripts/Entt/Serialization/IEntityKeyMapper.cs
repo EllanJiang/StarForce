@@ -12,6 +12,6 @@ namespace Entt.Serialization
     /// </summary>
     public interface IEntityKeyMapper
     {
-        public TEntityKey EntityKeyMapper<TEntityKey>(EntityKeyData data);
+        public TEntityKey EntityKeyMapper<TEntityKey>(EntityKeyData entityKeyData);
     }
 }
