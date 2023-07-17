@@ -34,22 +34,22 @@ namespace Entt.Test.Serialisation
             wreg = new XmlWriteHandlerRegistry();
             wreg.Register(XmlWriteHandlerRegistration.Create<TestStructFixture>(new DefaultDataContractWriteHandler<TestStructFixture>().Write, false));
             wreg.Register(XmlWriteHandlerRegistration.Create<StringBuilder>(new DefaultWriteHandler<StringBuilder>().Write, false));
-            wreg.Register(XmlWriteHandlerRegistration.Create<int>(new DefaultWriteHandler<int>().Write, false));
-            wreg.Register(XmlWriteHandlerRegistration.Create<float>(new DefaultWriteHandler<float>().Write, false));
+            wreg.Register(XmlWriteHandlerRegistration.Create<int>(new DefaultWriteHandler<int>().Write, true));
+            wreg.Register(XmlWriteHandlerRegistration.Create<float>(new DefaultWriteHandler<float>().Write, true));
 
             rreg = new XmlReadHandlerRegistry();
             rreg.Register(XmlReadHandlerRegistration.Create(new DefaultDataContractReadHandler<TestStructFixture>().Read, false));
             rreg.Register(XmlReadHandlerRegistration.Create(new DefaultReadHandler<StringBuilder>().Read, false));
-            rreg.Register(XmlReadHandlerRegistration.Create(new DefaultReadHandler<int>().Read, false));
-            rreg.Register(XmlReadHandlerRegistration.Create(new DefaultReadHandler<float>().Read, false));
+            rreg.Register(XmlReadHandlerRegistration.Create(new DefaultReadHandler<int>().Read, true));
+            rreg.Register(XmlReadHandlerRegistration.Create(new DefaultReadHandler<float>().Read, true));
 
             ereg = new EntityRegistry<EntityKey>(EntityKey.MaxAge, EntityKey.Create);
             ereg.Register<TestStructFixture>();
             ereg.Register<StringBuilder>();
             ereg.Register<int>();
-            ereg.Register<float>();
+            ereg.Register<float>();  //注册组件
             
-            ereg.CreateAsActor().AssignComponent<TestStructFixture>(new TestStructFixture());
+            ereg.CreateAsActor().AssignComponent<TestStructFixture>(new TestStructFixture());  //添加组件到Entity身上
             ereg.CreateAsActor().AssignComponent<StringBuilder>().AttachTag<int>(100);
 
             TestPersistentView();

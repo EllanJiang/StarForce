@@ -1,5 +1,7 @@
 0、引入Entt ECS框架
 	Registry管理所有Entity和Component
+    xml和binary序列化
+    
 1、弄清楚游戏流程，并提供日志写入功能
 	
 2、弄清楚资源的压缩解压方式
