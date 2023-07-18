@@ -3,7 +3,57 @@
     xml和binary序列化
     
 1、弄清楚游戏流程，并提供日志写入功能
+	日志功能：LogicShared.Logger.Debug
 	
+	游戏流程：
+	->GameEntry初始化所有Component:InitBuiltinComponents(),InitCustomComponents()
+		->BaseComponent组件，设置timeScale，runInBackground，sleepTimeout等基础设置，设置压缩、Log、text、version Helper。所有Update的入口,处理内存不足情况。
+		->ProcedureComponent 流程组件，在这里找到启动流程(ProcedureLaunch)，然后从启动流程开始启动游戏
+		->ProcedureLaunch 从OnEnter方法进入启动流程，初始化BuildInfo（GameVersion,InternalGameVersion，各种类型url），设置当前使用的语言，设置变体，设置声音，设置默认字典(保存了不同语言的更新文本)
+		->ProcedureSplash 在启动流程运行一帧后切换到闪屏流程，闪屏完成后，如果是编辑器模式，那么切换到预加载流程，如果是单机模式，那么切换到初始化资源流程，如果是可更新模式，那么切换到检查版本流程
+			1、编辑器模式：
+				->ProcedurePreload 预加载流程：主要是预加载配置表，加载完成后，切换到改变场景流程
+				->ProcedureChangeScene 改变场景流程：停止所有声音，隐藏所有实体，卸载所有场景，还原游戏速度，然后加载新场景（GameEntry.Scene.LoadScene）。
+									场景加载完成后，如果加载的是Menu场景，那么切换到ProcedureMenu流程，如果加载的是Main场景，那么切换到ProcedureMenu流程
+				->ProcedureMenu 菜单流程：打开菜单界面，主要有开始游戏按钮。点击开始游戏按钮，切换到Main场景中，正式开始游戏。
+				->ProcedureMain 游戏流程：在这里正式开始游戏进程，设置游戏模式，初始化游戏数据，更新游戏进程，如果主角死亡则立即结束游戏，之后返回Menu界面。
+			2、单机模式：
+				->ProcedureInitResources 初始化资源流程：调用GameEntry.Resource.InitResources接口进行资源初始化。
+										->GameEntry.Resource.InitResources()
+										->m_ResourceManager.InitResources()
+										->m_ResourceIniter.InitResources()
+										->m_ResourceManager.m_ResourceHelper.LoadBytes()
+										->DefaultResourceHelper.LoadBytes() //开启新的协程来加载资源
+										->DefaultResourceHelper.LoadBytesCo() //使用UnityWebRequest.SendWebRequest()来加载保存在StreamingAssets中的数据
+										->ResourceManager.OnLoadPackageVersionListSuccess() //加载资源成功回调 设置Asset，Resource，FileSystem，ResourceGroup
+										->ResourceManager.ResourceInitComplete()
+										->ResourceManager.OnIniterResourceInitComplete()
+										->ProcedureInitResources.OnInitResourcesComplete()//资源加载完成，切换到ProcedurePreload，流程跟编辑器模式一样，这里不再重复。
+			3、可更新模式：
+				->ProcedureCheckVersion 检测版本流程：向服务器请求版本信息(url使用ProcedureLaunch流程初始化BuildInfo中的CheckVersionUrl)，请求成功后解读版本信息
+												如果是需要强制更新应用，那么直接打开强制更新面板，玩家点击确定后跳转到应用商店进行下载（商店的url信息在BuildInfo中设置）
+												如果不是强制更新应用，那么设置资源更新下载地址，然后判断是否需要更新资源
+												如果需要更新资源，那么切换到ProcedureUpdateVersion流程，否则切换到ProcedureVerifyResources流程、
+				3.1、需要更新资源：
+					->ProcedureUpdateVersion 更新版本流程：调用GameEntry.Resource.UpdateVersionList接口设置需要更新版本信息。
+														->VersionListProcessor.UpdateVersionList()	//更新版本资源列表
+														->m_DownloadManager.AddDownload()			//添加需要下载的资源url
+														->DownloadManager.DownloadAgent			//使用下载代理下载版本信息
+					->ProcedureVerifyResources 资源校验流程：资源更新完成后，就切换到ProcedureVerifyResources流程进行资源校验：
+														->GameEntry.Resource.VerifyResources()		//校验资源
+														->ResourceVerifier.VerifyResources()		//校验资源
+					->ProcedureCheckResources  资源检查流程：资源校验完成后，就切换到ProcedureCheckResources流程进行资源校验：
+														->GameEntry.Resource.CheckResources()		//检查资源
+														->ResourceChecker.CheckResources()			//检查资源
+														检查资源完成后，如果需要更新资源，那么切换到ProcedureUpdateResources流程，否则不需要更新资源，直接切换预加载流程ProcedurePreload
+									->ProcedureUpdateResources 更新资源流程：下载资源，并显示资源下载进度
+														->GameEntry.Resource.UpdateResources()
+														->ResourceUpdater.UpdateResources()			//使用资源更新器更新指定资源组的资源
+														->ResourceUpdater.Update()					//如果m_UpdateWaitingInfo.Count > 0，那么开始下载
+														->DownloadManager.AddDownload()			//添加到待下载列表
+					->ProcedurePreload		预加载流程：	资源下载完成后，切换到预加载流程，后面就跟编辑器模式一样了。
+				3.2、不需要更新资源：
+					->ProcedureVerifyResources 资源校验流程：直接切换到ProcedureVerifyResources，后面就跟需要更新资源一样了。
 2、弄清楚资源的压缩解压方式
 	
 3、网络增加KCP/UDP连接方式，引入LiteNetLib库，搭建客户端和服务器通信框架。

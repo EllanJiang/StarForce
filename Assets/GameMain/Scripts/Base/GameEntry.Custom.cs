@@ -29,11 +29,14 @@ namespace StarForce
 
         public static FileComponent File;
 
+        public static LoggerComponent Logger;
+
         private static void InitCustomComponents()
         {
             BuiltinData = UnityGameFramework.Runtime.GameEntry.GetComponent<BuiltinDataComponent>();
             HPBar = UnityGameFramework.Runtime.GameEntry.GetComponent<HPBarComponent>();
             File =  UnityGameFramework.Runtime.GameEntry.GetComponent<FileComponent>();
+            Logger = UnityGameFramework.Runtime.GameEntry.GetComponent<LoggerComponent>();
         }
     }
 }

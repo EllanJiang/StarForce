@@ -88,6 +88,7 @@ namespace StarForce
 
         private void PreloadResources()
         {
+            ///todo 全部改成由Excel表配置
             // Preload configs
             LoadConfig("DefaultConfig");
 
