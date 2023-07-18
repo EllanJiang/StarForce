@@ -1,7 +1,9 @@
 {
     "name": "Entt",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:242f8e9bb85660448b6f7212c7098c4b"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,

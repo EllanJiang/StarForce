@@ -42,11 +42,11 @@ namespace Entt.Test
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
-                //TestClear();
+                TestClear();
                 //TestRemoveComponentFirst();
                 //TestRemoveEntityFirst();
                 //TestRemoveComponentLast();
-                TestRemoveEntityLast();
+                //TestRemoveEntityLast();
             }
         }
 
@@ -55,19 +55,19 @@ namespace Entt.Test
         /// </summary>
         public void TestClear()
         {
-            LogUtil.Log($"清理之前，PersistentEntityView的数量应该是3，实际上是：" + PersistentEntityView.Count);
-            LogUtil.Log($"清理之前，Registry的数量应该是4，实际上是：" + Registry.Count);
+            LogicShared.Logger.Debug($"清理之前，PersistentEntityView的数量应该是3，实际上是：" + PersistentEntityView.Count);
+            LogicShared.Logger.Debug($"清理之前，Registry的数量应该是4，实际上是：" + Registry.Count);
             
             Registry.Clear();
             
-            LogUtil.Log($"清理之后，PersistentEntityView的数量应该是0，实际上是：" + PersistentEntityView.Count);
-            LogUtil.Log($"清理之后，Registry的数量应该是0，实际上是：" + Registry.Count);
+            LogicShared.Logger.Debug($"清理之后，PersistentEntityView的数量应该是0，实际上是：" + PersistentEntityView.Count);
+            LogicShared.Logger.Debug($"清理之后，Registry的数量应该是0，实际上是：" + Registry.Count);
 
             var pool = Registry.GetPool<int>();
-            LogUtil.Log(pool.Contains(Keys[0])); 
-            LogUtil.Log(pool.Contains(Keys[1])); 
-            LogUtil.Log(pool.Contains(Keys[2])); 
-            LogUtil.Log(pool.Contains(Keys[3])); 
+            LogicShared.Logger.Debug(pool.Contains(Keys[0]).ToString()); 
+            LogicShared.Logger.Debug(pool.Contains(Keys[1]).ToString()); 
+            LogicShared.Logger.Debug(pool.Contains(Keys[2]).ToString()); 
+            LogicShared.Logger.Debug(pool.Contains(Keys[3]).ToString()); 
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace Entt.Test
         /// </summary>
         public void TestRemoveComponentFirst()
         {
-            LogUtil.Log("TestRemoveComponentFirst 开始");
+            LogicShared.Logger.Debug("TestRemoveComponentFirst 开始");
             //移除第一个Entity身上挂载的int组件，此时PersistentEntityView的数量应该是2
             Registry.RemoveComponent<int>(Keys[0]);
             PersistentEntityView.Count.Should().Be(2);
@@ -90,12 +90,12 @@ namespace Entt.Test
                 (Keys[2], 4) //这里会报错：AssertionException: Expected field PersistentEntityView.CollectContents()[1].Item2 to be 4, but found 3.
             });
             
-            LogUtil.Log("TestRemoveComponentFirst 成功");
+            LogicShared.Logger.Debug("TestRemoveComponentFirst 成功");
         }
 
         public void TestRemoveEntityFirst()
         {
-            LogUtil.Log("TestRemoveEntityFirst 开始");
+            LogicShared.Logger.Debug("TestRemoveEntityFirst 开始");
             
             //销毁entities列表中第一个entity及其身上挂载的所有component
             Registry.Destroy(Keys[0]);
@@ -121,13 +121,13 @@ namespace Entt.Test
             var pool = Registry.GetPool<int>();
             pool.Contains(Keys[0]).Should().BeTrue(); //这里会报错：AssertionException: Expected pool.Contains(Keys[0]) to be true, but found False.
             
-            LogUtil.Log("TestRemoveEntityFirst 成功");
+            LogicShared.Logger.Debug("TestRemoveEntityFirst 成功");
         }
         
         //移除最后一个Entity身上挂载的Component组件
         public void TestRemoveComponentLast()
         {
-            LogUtil.Log("TestRemoveComponentLast开始");
+            LogicShared.Logger.Debug("TestRemoveComponentLast开始");
             Registry.RemoveComponent<int>(Keys[2]);
             PersistentEntityView.Count.Should().Be(2);
 
@@ -141,13 +141,13 @@ namespace Entt.Test
                 (Keys[0], 1),
                 (Keys[1], 2) 
             });
-            LogUtil.Log("TestRemoveComponentLast成功");
+            LogicShared.Logger.Debug("TestRemoveComponentLast成功");
         }
 
         //移除entities列表中最后一个entity及其身上挂载的component
         public void TestRemoveEntityLast()
         {
-            LogUtil.Log("TestRemoveEntityLast开始");
+            LogicShared.Logger.Debug("TestRemoveEntityLast开始");
             Registry.Destroy(Keys[2]);
             
             PersistentEntityView.Count.Should().Be(2);
@@ -170,7 +170,7 @@ namespace Entt.Test
 
             var pool = Registry.GetPool<int>();
             pool.Contains(Keys[2]).Should().BeFalse(); 
-            LogUtil.Log("TestRemoveEntityLast成功");
+            LogicShared.Logger.Debug("TestRemoveEntityLast成功");
         }
     }
     

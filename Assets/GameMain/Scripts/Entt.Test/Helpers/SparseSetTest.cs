@@ -23,7 +23,7 @@ namespace Entt.Test.Helpers
 
         public void Adding()
         {
-            LogUtil.Log("开始测试 SparseSetTest Adding");
+            LogicShared.Logger.Debug("开始测试 SparseSetTest Adding");
             var s = new SparseSet<EntityKey>();
             var key1 = new EntityKey(1, 100);
             var key2 = new EntityKey(1, 105);
@@ -45,7 +45,7 @@ namespace Entt.Test.Helpers
             s.IndexOf(new EntityKey(0, 0)).Should().Be(-1);
             s.IndexOf(new EntityKey(1, 110)).Should().Be(-1);
             
-            LogUtil.Log("成功测试 SparseSetTest Adding");
+            LogicShared.Logger.Debug("成功测试 SparseSetTest Adding");
         }
         
         public void Capacity()

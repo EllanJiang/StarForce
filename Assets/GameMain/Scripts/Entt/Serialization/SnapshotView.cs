@@ -114,6 +114,7 @@ namespace Entt.Serialization
             catch (Exception e)
             {
                 // todo  输出错误日志
+                LogicShared.Logger.Error($"在写入该类型{typeof(TComponent)}的组件时发生错误，请检查！");
                 throw;
             }
             return this;

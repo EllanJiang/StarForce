@@ -49,7 +49,7 @@ namespace Entt.Test
 
         public void TestClear()
         {
-            LogUtil.Log("TestClear 开始");
+            LogicShared.Logger.Debug("TestClear 开始");
             view.Count.Should().Be(3);
             registry.Count.Should().Be(5);
             var pool = registry.GetPool<SomeMarker>();
@@ -71,7 +71,7 @@ namespace Entt.Test
             pool.Contains(keys[3]).Should().BeFalse();
             pool.Contains(keys[4]).Should().BeFalse();
             
-            LogUtil.Log("TestClear 结束");
+            LogicShared.Logger.Debug("TestClear 结束");
         }
         
         public void TestRemoveComponentFirst()

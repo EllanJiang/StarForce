@@ -2,7 +2,8 @@
     "name": "Entt.Test",
     "rootNamespace": "",
     "references": [
-        "GUID:03ad02a109a47cc44b32d8d5af8df7f8"
+        "GUID:03ad02a109a47cc44b32d8d5af8df7f8",
+        "GUID:242f8e9bb85660448b6f7212c7098c4b"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
