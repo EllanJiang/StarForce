@@ -176,7 +176,106 @@
 	LiteNetLib库Unity示例：https://github.com/RevenantX/NetGameExample
 	
 	3.1、先从一个简单的Unity示例开始：
-		
+		GameClient：
+			
+			Start:
+				创建NetManager，用来连接服务器，监听服务器消息等
+			 	_netClient = new NetManager(this);
+        				_netClient.UnconnectedMessagesEnabled = true;	//启动该选项后，就可以不用连接服务器而直接发送消息(使用SendUnconnectedMessage方法)
+        				_netClient.UpdateTime = 15;
+        			_	netClient.Start();
+			Update:
+				 _netClient.PollEvents();			//监听服务器消息
+			
+			OnNetworkReceiveUnconnected():        //不需要连接成功即可接收服务器消息
+			 public void OnNetworkReceiveUnconnected(IPEndPoint remoteEndPoint, NetPacketReader reader, UnconnectedMessageType messageType)
+			{
+				 if (messageType == UnconnectedMessageType.BasicMessage && _netClient.ConnectedPeersCount == 0 && reader.GetInt() == 1)
+        				{
+            					Debug.Log("[CLIENT] Received discovery response. Connecting to: " + remoteEndPoint);
+            					_netClient.Connect(remoteEndPoint, "sample_app");		//客户端正式发起连接
+        				}
+			}
+
+			OnPeerConnected:					//连接服务器成功
+			public void OnPeerConnected(NetPeer peer)
+    			{
+       				 Debug.Log("[CLIENT] We connected to " + peer.EndPoint); //客户端正式连接上了远端的服务器
+    			}
+			
+			OnNetworkReceive:					//连接服务器成功后接收服务器消息
+
+			Destroy:
+				if (_netClient != null)
+					_netClient .Stop();			//停止连接
+			
+			
+		GameServer：
+			Start:
+		  		创建NetManager，用来设置监听器等
+			 	_netServer = new NetManager(this);
+        			 	_netServer.Start(5000);
+        			 	_netServer.BroadcastReceiveEnabled = true;
+        			 	_netServer.UpdateTime = 15;
+
+				创建NetDataWriter，用来保存需要发给客户端的数据
+			 	_dataWriter = new NetDataWriter();
+
+			Update:
+				_netClient.PollEvents();			//监听客户端消息
+
+			在OnPeerConnected(NetPeer peer)接口中获取连接到服务器的客户端（peer）
+			 public void OnPeerConnected(NetPeer peer)
+    			{
+       				 Debug.Log("[SERVER] We have new peer " + peer.EndPoint);  //又有一个新的客户端连接上来啦！！！
+       				 _ourPeer = peer;
+    			}
+
+			给特定的客户端发送消息：
+			_dataWriter.Reset();
+            			_dataWriter.Put(_serverBall.transform.position.x);	//把服务器ball位置发送给指定客户端(_ourPeer)
+            			_ourPeer.Send(_dataWriter, DeliveryMethod.Sequenced);
+
+			OnNetworkReceiveUnconnected：				   //客户端未连接成功时，接收客户端消息接口
+			public void OnNetworkReceiveUnconnected(IPEndPoint remoteEndPoint, NetPacketReader reader,
+        				UnconnectedMessageType messageType)
+   			 {
+       				 if (messageType == UnconnectedMessageType.Broadcast)  //收到客户端发送的广播消息
+        				{
+            					Debug.Log("[SERVER] Received discovery request. Send discovery response");
+            					NetDataWriter resp = new NetDataWriter();
+            					resp.Put(1);			//给发送消息的客户端返回数字1
+            					_netServer.SendUnconnectedMessage(resp, remoteEndPoint);
+        				}
+    			}
+			
+			OnNetworkReceive：				//客户端连接成功后，接收客户端消息接口
+			public void OnNetworkReceive(NetPeer peer, NetPacketReader reader, byte channelNumber, DeliveryMethod deliveryMethod)
+    			{
+
+    			}
+
+			
+			OnConnectionRequest：					//处理客户端真正的连接
+			 public void OnConnectionRequest(ConnectionRequest request)
+    			{
+       				 request.AcceptIfKey("sample_app");			//接收客户端连接if key == "sample_app"
+    			}
+
+
+			在OnPeerDisconnected接口中处理客户端断开连接请求
+			public void OnPeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
+    			{
+        				Debug.Log("[SERVER] peer disconnected " + peer.EndPoint + ", info: " + disconnectInfo.Reason);  //这个客户端断开连接了
+        				if (peer == _ourPeer)
+           				 _ourPeer = null;
+    			}
+
+			Destroy：
+				if (_netServer != null)
+					_netServer.Stop();
+
+
 	
 	
 	
