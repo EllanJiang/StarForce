@@ -55,8 +55,168 @@
 				3.2、不需要更新资源：
 					->ProcedureVerifyResources 资源校验流程：直接切换到ProcedureVerifyResources，后面就跟需要更新资源一样了。
 2、弄清楚资源的压缩解压方式
+	2.1、先从ResourceManager入手：
+		压缩文件后缀：".dat"
+		远端版本列表文件名："GameFrameworkVersion.dat";
+		本地版本列表文件名："GameFrameworkList.dat";
+		
+		//
+		PackageVersionListSerializer m_PackageVersionListSerializer;			//单机模式版本资源列表序列化器
+		UpdatableVersionListSerializer m_UpdatableVersionListSerializer;		//可更新模式版本资源列表序列化器
+		ReadOnlyVersionListSerializer m_ReadOnlyVersionListSerializer;		//本地只读区版本资源列表序列化器
+		ReadWriteVersionListSerializer m_ReadWriteVersionListSerializer;		//本地读写区版本资源列表序列化器
+		ResourcePackVersionListSerializer m_ResourcePackVersionListSerializer;	//资源包版本资源列表序列化器
+		这几个序列化器除了头标识不一样之外，其他都一样，都是继承GameFrameworkSerializer基类。
+		
+		//
+		private ResourceIniter m_ResourceIniter;					//资源初始化器
+		private VersionListProcessor m_VersionListProcessor;			//版本资源列表处理器
+		private ResourceVerifier m_ResourceVerifier;					//资源校验器
+		private ResourceChecker m_ResourceChecker;					//资源检查信息
+		private ResourceUpdater m_ResourceUpdater;					//资源更新器
+		private ResourceLoader m_ResourceLoader;					//资源加载器
+		这几个器是用来处理资源加载，更新等问题的。
+		
+		//
+		private string m_ReadOnlyPath;				//资源只读路径
+		private string m_ReadWritePath;			//资源读写路径
+		private string m_CurrentVariant;			//当前资源变体（不同国家用的资源不一样，主要是一些美术字有区别）
+		private string m_UpdatePrefixUri;			//资源更新网址
+		private string m_ApplicableGameVersion;		//游戏版本
+		private int m_InternalResourceVersion;		//内部资源版本，这个非常重要，主要是通过这个版本号来判断是否需要更新资源
+		
+		//
+		private DecryptResourceCallback m_DecryptResourceCallback;									//解密资源回调函数
+		private InitResourcesCompleteCallback m_InitResourcesCompleteCallback;							//使用单机模式并初始化资源完成时的回调函数
+		private UpdateVersionListCallbacks m_UpdateVersionListCallbacks;								//版本资源列表更新回调函数集（成功和失败回调）
+		private VerifyResourcesCompleteCallback m_VerifyResourcesCompleteCallback;						//使用可更新模式并校验资源完成时的回调函数
+		private CheckResourcesCompleteCallback m_CheckResourcesCompleteCallback;						//使用可更新模式并检查资源完成时的回调函数  校验和检查有什么区别？TODO
+		private ApplyResourcesCompleteCallback m_ApplyResourcesCompleteCallback;						//使用可更新模式并应用资源包资源完成时的回调函数
+		private UpdateResourcesCompleteCallback m_UpdateResourcesCompleteCallback;						//使用可更新模式并更新指定资源组完成时的回调函数
+		
+		//
+		private EventHandler<ResourceVerifyStartEventArgs> m_ResourceVerifyStartEventHandler;			//资源校验开始事件
+		private EventHandler<ResourceVerifySuccessEventArgs> m_ResourceVerifySuccessEventHandler;		//资源校验成功事件
+		private EventHandler<ResourceVerifyFailureEventArgs> m_ResourceVerifyFailureEventHandler;		//资源校验失败事件
+		private EventHandler<ResourceApplyStartEventArgs> m_ResourceApplyStartEventHandler;				//资源应用开始事件
+		private EventHandler<ResourceApplySuccessEventArgs> m_ResourceApplySuccessEventHandler;			//资源应用成功事件
+		private EventHandler<ResourceApplyFailureEventArgs> m_ResourceApplyFailureEventHandler;			//资源应用失败事件
+		private EventHandler<ResourceUpdateStartEventArgs> m_ResourceUpdateStartEventHandler;			//资源更新开始事件
+		private EventHandler<ResourceUpdateChangedEventArgs> m_ResourceUpdateChangedEventHandler;		//资源更新改变事件 用来显示更新进度条等
+		private EventHandler<ResourceUpdateSuccessEventArgs> m_ResourceUpdateSuccessEventHandler;		//资源更新成功事件
+		private EventHandler<ResourceUpdateFailureEventArgs> m_ResourceUpdateFailureEventHandler;		//资源更新失败事件
+		private EventHandler<ResourceUpdateAllCompleteEventArgs> m_ResourceUpdateAllCompleteEventHandler;	//资源更新全部完成事件 
+	2.2、资源加密：
+		2.2.1、序列化文件：
+			GameFrameworkSerializer.Serialize()
+			{
+				byte[] header = GetHeader();		//每种模式的头标识都不一样
+				stream.WriteByte(header[0]);
+				stream.WriteByte(header[1]);
+				stream.WriteByte(header[2]);
+				stream.WriteByte(version);			//写入头标识后，接着就写入版本号(目前有0,1,2这三个版本)
+				if (m_SerializeCallbacks.TryGetValue(version, out callback))
+					callback(stream, data)		//最后调用注册的序列化回调函数进行序列化
+			}
+			
+			有哪几种模式的序列化器呢？
+				->PackageVersionListSerializer		//单机模式版本资源列表序列化器
+				->UpdatableVersionListSerializer	//可更新模式版本资源列表序列化器
+				->ReadOnlyVersionListSerializer	//本地只读区版本资源列表序列化器
+				->ReadWriteVersionListSerializer	//本地读写区版本资源列表序列化器
+				->ResourcePackVersionListSerializer	//资源包版本资源列表序列化器
+			
+			序列化回调函数在哪里注册呢？
+			根据游戏模式不同（单机模式，可更新模式），会有不用的回调函数：
+				->BuiltinVersionListSerializer										//内置版本资源列表序列化器
+				->BuiltinVersionListSerializer.LocalVersionListSerializeCallback		//序列化本地版本资源列表回调函数。
+				->BuiltinVersionListSerializer.PackageVersionListSerializeCallback		//序列化单机模式版本资源列表回调函数。
+				->BuiltinVersionListSerializer.ResourcePackVersionListSerializeCallback//序列化资源包版本资源列表回调函数。
+				->BuiltinVersionListSerializer.UpdatableVersionListSerializeCallback	//序列化可更新模式版本资源列表回调函数。
+		
+			在哪里调用序列化接口呢？
+				->BuildTool.StartBuildAB()
+				->ResourceBuilderController.BuildResources()
+				->ResourceBuilderController.BuildResources(Platform platform)  //平台不同，选择不同的构建方式
+				->ResourceBuilderController.ProcessPackageVersionList()|ProcessUpdatableVersionList()|ProcessReadOnlyVersionList()  
+				->serializer.Serialize(fileStream, versionList) //serializer是PackageVersionListSerializer|UpdatableVersionListSerializer|ReadOnlyVersionListSerializer
+				
+	2.3、资源解密：
+		2.3.1、反序列化文件：
+			GameFrameworkSerializer.Deserialize()
+			{
+				byte[] header = GetHeader();				
+				byte header0 = (byte)stream.ReadByte();
+				byte header1 = (byte)stream.ReadByte();
+				byte header2 = (byte)stream.ReadByte();
+				if (header0 != header[0] || header1 != header[1] || header2 != header[2])	//反序列化后，第一步是先判断头标识是否一致
+				{
+					throw new GameFrameworkException(Utility.Text.Format("Header is invalid, need '{0}{1}{2}', current '{3}{4}{5}'.", (char)header[0], (char)header[1], (char)header[2], (char)header0, (char)header1, (char)header2));
+				}
+				byte version = (byte)stream.ReadByte();									//如果头标识一致，再取出版本号，根据版本号获取对应的反序列化回调函数
+				DeserializeCallback callback = null;
+				if (!m_DeserializeCallbacks.TryGetValue(version, out callback))
+				{
+					throw new GameFrameworkException(Utility.Text.Format("Deserialize callback '{0}' is not exist.", version));
+				}
+
+				return callback(stream);												//最后调用反序列化回调函数进行反序列化
+			}
+			
+			反序列化回调函数在哪里注册呢？
+			根据游戏模式不同（单机模式，可更新模式），会有不用的回调函数：
+				->BuiltinVersionListSerializer											//内置版本资源列表反序列化器
+				->BuiltinVersionListSerializer.LocalVersionListDeserializeCallback			//反序列化本地版本资源列表回调函数。
+				->BuiltinVersionListSerializer.PackageVersionListDeserializeCallback		//反序列化单机模式版本资源列表回调函数。
+				->BuiltinVersionListSerializer.ResourcePackVersionListDeserializeCallback	//反序列化资源包版本资源列表回调函数。
+				->BuiltinVersionListSerializer.UpdatableVersionListDeserializeCallback		//反序列化可更新模式版本资源列表回调函数。
 	
 3、网络增加KCP/UDP连接方式，引入LiteNetLib库，搭建客户端和服务器通信框架。
+	LiteNetLib库地址：https://github.com/RevenantX/LiteNetLib
+	LiteNetLib库Unity示例：https://github.com/RevenantX/NetGameExample
+	
+	3.1、先从一个简单的Unity示例开始：
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 4、Hybrid热更	
 	
