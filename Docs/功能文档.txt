@@ -176,8 +176,7 @@
 	LiteNetLib库Unity示例：https://github.com/RevenantX/NetGameExample
 	
 	3.1、先从一个简单的Unity示例开始：
-		GameClient：
-			
+		GameClient：	
 			Start:
 				创建NetManager，用来连接服务器，监听服务器消息等
 			 	_netClient = new NetManager(this);
@@ -274,8 +273,69 @@
 			Destroy：
 				if (_netServer != null)
 					_netServer.Stop();
+	
+	3.2、复杂示例：
+		
+		Shared：
+			BasePlayer 					//玩家基础属性
+			BasePlayerManager				//玩家基础管理器
+	
+		Client：
+		
+		Server：
+			ServerPlayer : BasePlayer		//服务器玩家属性
+			
 
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
