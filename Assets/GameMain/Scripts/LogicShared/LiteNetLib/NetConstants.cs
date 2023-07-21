@@ -42,10 +42,10 @@ namespace LogicShared.LiteNetLib
             1500 - MaxUdpHeaderSize  //Ethernet II (RFC 1191)
         };
 
-        internal static readonly int MaxPacketSize = PossibleMtu[PossibleMtu.Length - 1];   //一个Packet最大尺寸（字节）
+        internal static readonly int MaxPacketSize = PossibleMtu[PossibleMtu.Length - 1];   //一个网络包最大尺寸（字节）
 
         //peer specific
-        public const byte MaxConnectionNumber = 4;              //一个NetPeer最大连接数量
+        public const byte MaxConnectionNumber = 4;              //一个NetPeer最大重连次数，最多连4次，连不上就算了
 
         public const int PacketPoolSize = 1000;                 //Packet对象池大小
     }

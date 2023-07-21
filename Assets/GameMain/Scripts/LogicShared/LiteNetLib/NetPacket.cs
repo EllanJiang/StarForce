@@ -7,6 +7,8 @@
 */
 
 using System;
+using System.Net;
+using LogicShared.LiteNetLib.Utils;
 
 namespace LogicShared.LiteNetLib
 {
@@ -88,37 +90,40 @@ namespace LogicShared.LiteNetLib
         }
         
         /// <summary>
-        /// 属性
+        /// 属性类型
         /// </summary>
         public PacketProperty Property
         {
-            get { return (PacketProperty)(RawData[0] & 0x1F); }
+            //0x1F = 0001 1111 =>[0,4]位用来保存属性类型
+            //RawData[0]是一个字节大小，8位。从右到左：位数是[0,7]，十进制是[0,255]，二进制是[0000 0000,1111 1111]
+            //第一个字节的前5位用来存储属性类型
+            get { return (PacketProperty)(RawData[0] & 0x1F); }   
+        
+            //0xE0 = 1110,0000  =>[5,7]位用来保存其他数据
+            //保存属性类型，因为只有[0,4]位用来保存属性类型，[5,7]位的数据不能修改，所以要先用RawData[0]与0xE0进行与操作，保证[5,7]位的数据没有变化之后
+            //才能设置[0,4]位的值
             set { RawData[0] = (byte)((RawData[0] & 0xE0) | (byte)value); }
         }
 
         /// <summary>
-        /// 连接数量
+        /// 当前连接次数
         /// </summary>
         public byte ConnectionNumber
         {
+            //0x60 = 0110,0000 => [5,6]位用来保存连接次数，因此连接次数最大只能是4（NetConstants.MaxConnectionNumber）
+            //为什么要右移5呢？
+            //因为0110,0000右移5位之后的数值才是连接次数：0110,0000>>5=0000,0011 
             get { return (byte)((RawData[0] & 0x60) >> 5); }
+            //0x9F = 10011111 => 只能修改[5,6]位的数据
             set { RawData[0] = (byte) ((RawData[0] & 0x9F) | (value << 5)); }
         }
-
-        /// <summary>
-        /// 序列号
-        /// </summary>
-        public ushort Sequence
-        {
-            get { return BitConverter.ToUInt16(RawData, 1); }
-            set { FastBitConverter.GetBytes(RawData, 1, value); }
-        }
-
+        
         /// <summary>
         /// 是否是消息片段
         /// </summary>
         public bool IsFragmented
         {
+            //0x80 = 1000,0000 = 128 =>[7,7]位用来保存是否是消息片段
             get { return (RawData[0] & 0x80) != 0; }
         }
 
@@ -131,6 +136,15 @@ namespace LogicShared.LiteNetLib
         }
 
         /// <summary>
+        /// 序列号，两个字节，
+        /// </summary>
+        public ushort Sequence
+        {
+            get { return BitConverter.ToUInt16(RawData, 1); }
+            set { FastBitConverter.GetBytes(RawData, 1, value); }
+        }
+        
+        /// <summary>
         /// 频道ID
         /// </summary>
         public byte ChannelId
@@ -138,7 +152,7 @@ namespace LogicShared.LiteNetLib
             get { return RawData[3]; }
             set { RawData[3] = value; }
         }
-
+        
         /// <summary>
         /// 片段ID
         /// </summary>
@@ -233,6 +247,138 @@ namespace LogicShared.LiteNetLib
             Buffer.BlockCopy(data, start, RawData, 0, packetSize);
             Size = (ushort)packetSize;
             return true;
+        }
+    }
+
+    /// <summary>
+    /// 网络请求连接包
+    /// </summary>
+    internal sealed class NetConnectRequestPacket
+    {
+        public const int HeaderSize = 14;           //包头长度
+        public readonly long ConnectionId;          //连接Id
+        public readonly byte ConnectionNumber;      //当前连接次数
+        public readonly byte[] TargetAddress;       //连接目标地址
+        public readonly NetDataReader Data;         //请求包的数据
+        
+        private NetConnectRequestPacket(long connectionId, byte connectionNumber, byte[] targetAddress, NetDataReader data)
+        {
+            ConnectionId = connectionId;
+            ConnectionNumber = connectionNumber;
+            TargetAddress = targetAddress;
+            Data = data;
+        }
+        
+        public static int GetProtocolId(NetPacket packet)
+        {
+            return BitConverter.ToInt32(packet.RawData, 1);
+        }
+
+        /// <summary>
+        /// 读取NetPacket中的数据来创建NetConnectRequestPacket
+        /// </summary>
+        /// <param name="packet"></param>
+        /// <returns></returns>
+        public static NetConnectRequestPacket FromData(NetPacket packet)
+        {
+            if (packet.ConnectionNumber >= NetConstants.MaxConnectionNumber)
+                return null;
+
+            //Getting new id for peer
+            long connectionId = BitConverter.ToInt64(packet.RawData, 5);
+            
+            //Get target address
+            int addrSize = packet.RawData[13];
+            if (addrSize != 16 && addrSize != 28)  //16是IpV4,28是IpV6
+                return null;
+            byte[] addressBytes = new byte[addrSize];
+            Buffer.BlockCopy(packet.RawData, 14, addressBytes, 0, addrSize);  //读取IP地址
+
+            // Read data and create request
+            var reader = new NetDataReader(null, 0, 0);
+            if (packet.Size > HeaderSize+addrSize)
+                reader.SetSource(packet.RawData, HeaderSize + addrSize, packet.Size);
+
+            return new NetConnectRequestPacket(connectionId, packet.ConnectionNumber, addressBytes, reader);
+        }
+
+        /// <summary>
+        /// 在NetConnectRequestPacket中创建网络包
+        /// </summary>
+        /// <param name="connectData">请求连接的数据</param>
+        /// <param name="addressBytes">请求连接的地址</param>
+        /// <param name="connectId">请求连接的ID</param>
+        /// <returns></returns>
+        public static NetPacket Make(NetDataWriter connectData, SocketAddress addressBytes, long connectId)
+        {
+            //Make initial packet
+            var packet = new NetPacket(PacketProperty.ConnectRequest, connectData.Length+addressBytes.Size);
+
+            //Add data
+            FastBitConverter.GetBytes(packet.RawData, 1, NetConstants.ProtocolId);
+            FastBitConverter.GetBytes(packet.RawData, 5, connectId);
+            packet.RawData[13] = (byte)addressBytes.Size;
+            for (int i = 0; i < addressBytes.Size; i++)
+                packet.RawData[14+i] = addressBytes[i];
+            Buffer.BlockCopy(connectData.Data, 0, packet.RawData, 14+addressBytes.Size, connectData.Length);
+            return packet;
+        }
+    }
+
+    /// <summary>
+    /// 接受网络连接包
+    /// </summary>
+    internal sealed class NetConnectAcceptPacket
+    {
+        public const int Size = 11;             //包的大小
+        public readonly long ConnectionId;      //请求连接的ID
+        public readonly byte ConnectionNumber;  //请求连接次数
+        public readonly bool IsReusedPeer;      //是否是复用的Peer
+        
+        private NetConnectAcceptPacket(long connectionId, byte connectionNumber, bool isReusedPeer)
+        {
+            ConnectionId = connectionId;
+            ConnectionNumber = connectionNumber;
+            IsReusedPeer = isReusedPeer;
+        }
+
+        /// <summary>
+        /// 读取NetPacket中的数据来创建NetConnectAcceptPacket
+        /// </summary>
+        /// <param name="packet"></param>
+        /// <returns></returns>
+        public static NetConnectAcceptPacket FromData(NetPacket packet)
+        {
+            if (packet.Size > Size)
+                return null;
+
+            long connectionId = BitConverter.ToInt64(packet.RawData, 1);
+            //check connect num
+            byte connectionNumber = packet.RawData[9];
+            if (connectionNumber >= NetConstants.MaxConnectionNumber)
+                return null;
+            //check reused flag
+            byte isReused = packet.RawData[10];
+            if (isReused > 1)
+                return null;
+
+            return new NetConnectAcceptPacket(connectionId, connectionNumber, isReused == 1);
+        }
+
+        /// <summary>
+        /// 在NetConnectAcceptPacket中创建网络包
+        /// </summary>
+        /// <param name="connectId"></param>
+        /// <param name="connectNum"></param>
+        /// <param name="reusedPeer"></param>
+        /// <returns></returns>
+        public static NetPacket Make(long connectId, byte connectNum, bool reusedPeer)
+        {
+            var packet = new NetPacket(PacketProperty.ConnectAccept, 0);
+            FastBitConverter.GetBytes(packet.RawData, 1, connectId);
+            packet.RawData[9] = connectNum;
+            packet.RawData[10] = (byte)(reusedPeer ? 1 : 0);
+            return packet;
         }
     }
 }
