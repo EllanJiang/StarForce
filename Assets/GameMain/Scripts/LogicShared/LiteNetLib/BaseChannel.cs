@@ -17,7 +17,7 @@ namespace LogicShared.LiteNetLib
     {
         public BaseChannel Next;                            //下一个频道
         protected readonly NetPeer Peer;                    //网络Peel
-        protected readonly Queue<NetPacket> OutgoingQueue;  //待派发队列
+        protected readonly Queue<NetPacket> OutgoingQueue;  //即将派发网络包队列
         
         protected BaseChannel(NetPeer peer)
         {

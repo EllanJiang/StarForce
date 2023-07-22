@@ -14,7 +14,7 @@ namespace LogicShared.LiteNetLib
     public static class NetConstants
     {
         //can be tuned
-        public const int DefaultWindowSize = 64;                //默认窗口大小
+        public const int DefaultWindowSize = 64;                //默认滑动窗口大小
         public const int SocketBufferSize = 1024 * 1024;        //1mb
         public const int SocketTTL = 255;                       //TimeToLive 存活时间。指一个封包在经过一个路由器时，可传递的最长距离（跃点数）。
                                                                 //每当封包经过一个路由器时，其存活次数就会被减一。当其存活次数为0时，路由器便会取消该封包转发。
@@ -25,7 +25,7 @@ namespace LogicShared.LiteNetLib
         public const int ChanneledHeaderSize = 4;               //频道包头长度（字节）
         public const int FragmentHeaderSize = 6;                //消息片段包头长度（字节）
         public const int FragmentedHeaderTotalSize = ChanneledHeaderSize + FragmentHeaderSize; //包头总长度
-        public const ushort MaxSequence = 32768;                //最大序列
+        public const ushort MaxSequence = 32768;                //最大序列号 2^15
         public const ushort HalfMaxSequence = MaxSequence / 2;  
 
         //protocol
@@ -47,7 +47,7 @@ namespace LogicShared.LiteNetLib
         //peer specific
         public const byte MaxConnectionNumber = 4;              //一个NetPeer最大重连次数，最多连4次，连不上就算了
 
-        public const int PacketPoolSize = 1000;                 //Packet对象池大小
+        public const int PacketPoolSize = 1000;                 //Packet对象池能保存的最大packet数量
     }
 
     /// <summary>

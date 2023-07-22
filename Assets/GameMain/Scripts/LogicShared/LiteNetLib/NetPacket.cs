@@ -26,14 +26,14 @@ namespace LogicShared.LiteNetLib
         ConnectAccept,
         Disconnect,
         UnconnectedMessage,
-        MtuCheck,
-        MtuOk,
+        MtuCheck,           //mtu检查
+        MtuOk,              //通过mtu检查
         Broadcast,
-        Merged,
+        Merged,             //合并数据后再发包
         ShutdownOk,
         PeerNotFound,
         InvalidProtocol,
-        NatMessage,
+        NatMessage,         //NAT消息
         Empty
     }
 
@@ -119,11 +119,11 @@ namespace LogicShared.LiteNetLib
         }
         
         /// <summary>
-        /// 是否是消息片段
+        /// 是否分段发送
         /// </summary>
         public bool IsFragmented
         {
-            //0x80 = 1000,0000 = 128 =>[7,7]位用来保存是否是消息片段
+            //0x80 = 1000,0000 = 128 =>[7,7]位用来保存是否分段发送
             get { return (RawData[0] & 0x80) != 0; }
         }
 
@@ -163,7 +163,7 @@ namespace LogicShared.LiteNetLib
         }
 
         /// <summary>
-        /// 片段部分
+        /// 当前片段所属哪部分
         /// </summary>
         public ushort FragmentPart
         {
@@ -172,7 +172,7 @@ namespace LogicShared.LiteNetLib
         }
 
         /// <summary>
-        /// 所有片段
+        /// 片段总数
         /// </summary>
         public ushort FragmentsTotal
         {
@@ -256,14 +256,14 @@ namespace LogicShared.LiteNetLib
     internal sealed class NetConnectRequestPacket
     {
         public const int HeaderSize = 14;           //包头长度
-        public readonly long ConnectionId;          //连接Id
+        public readonly long ConnectionTime;        //连接Id(使用发送连接请求包时的时间戳当做连接id)
         public readonly byte ConnectionNumber;      //当前连接次数
         public readonly byte[] TargetAddress;       //连接目标地址
         public readonly NetDataReader Data;         //请求包的数据
         
-        private NetConnectRequestPacket(long connectionId, byte connectionNumber, byte[] targetAddress, NetDataReader data)
+        private NetConnectRequestPacket(long connectionTime, byte connectionNumber, byte[] targetAddress, NetDataReader data)
         {
-            ConnectionId = connectionId;
+            ConnectionTime = connectionTime;
             ConnectionNumber = connectionNumber;
             TargetAddress = targetAddress;
             Data = data;

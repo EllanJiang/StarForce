@@ -38,7 +38,10 @@ namespace LogicShared.LiteNetLib
         internal byte ConnectionNumber;
         public readonly IPEndPoint RemoteEndPoint;
         
-        //尝试激活连接
+        /// <summary>
+        /// 尝试激活连接
+        /// </summary>
+        /// <returns></returns>
         private bool TryActivate()
         {
             //Compares two values for equality and, if they are equal, replaces the first value.
@@ -50,9 +53,9 @@ namespace LogicShared.LiteNetLib
         //更新请求连接数据（连接id和连接次数）
         internal void UpdateRequest(NetConnectRequestPacket connRequest)
         {
-            if (connRequest.ConnectionId >= ConnectionTime)
+            if (connRequest.ConnectionTime >= ConnectionTime)
             {
-                ConnectionTime = connRequest.ConnectionId;
+                ConnectionTime = connRequest.ConnectionTime;
                 ConnectionNumber = connRequest.ConnectionNumber;
             }
         }
@@ -109,6 +112,13 @@ namespace LogicShared.LiteNetLib
             return _listener.OnConnectionSolved(this, null, 0, 0);
         }
         
+        /// <summary>
+        /// 拒绝连接请求
+        /// </summary>
+        /// <param name="rejectData"></param>
+        /// <param name="start"></param>
+        /// <param name="length"></param>
+        /// <param name="force"></param>
         public void Reject(byte[] rejectData, int start, int length, bool force)
         {
             if (!TryActivate())
