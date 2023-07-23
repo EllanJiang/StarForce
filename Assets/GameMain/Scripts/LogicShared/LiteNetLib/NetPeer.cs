@@ -14,7 +14,7 @@ using LogicShared.LiteNetLib.Utils;
 
 namespace LogicShared.LiteNetLib
 {
-    #region 内部枚举
+    #region enums
     
     /// <summary>
     /// Peer connection state
@@ -61,6 +61,7 @@ namespace LogicShared.LiteNetLib
     }
     
     #endregion
+    
     /// <summary>
     /// Network peer. Main purpose is sending messages to specific peer.
     /// </summary>
@@ -220,7 +221,7 @@ namespace LogicShared.LiteNetLib
         
         #endregion
 
-        #region Peer构造函数
+        #region 构造函数
         
         /// <summary>
         /// incoming connection constructor
@@ -248,69 +249,6 @@ namespace LogicShared.LiteNetLib
             _deliveredFragments = new Dictionary<ushort, ushort>();
 
             _channels = new BaseChannel[netManager.ChannelsCount * 4];
-        }
-        
-        /// <summary>
-        /// 设置最小传输单元
-        /// </summary>
-        /// <param name="mtuIdx">NetConstants.PossibleMtu的索引</param>
-        private void SetMtu(int mtuIdx)
-        {
-            _mtu = NetConstants.PossibleMtu[mtuIdx] - NetManager.ExtraPacketSizeForLayer;
-        }
-        
-        /// <summary>
-        /// Returns packets count in queue for reliable channel
-        /// </summary>
-        /// <param name="channelNumber">number of channel [0-63]</param>
-        /// <param name="ordered">type of channel ReliableOrdered or ReliableUnordered</param>
-        /// <returns>packets count in channel queue</returns>
-        public int GetPacketsCountInReliableQueue(byte channelNumber, bool ordered)
-        {
-            int idx = channelNumber * 4 +
-                      (byte) (ordered ? DeliveryMethod.ReliableOrdered : DeliveryMethod.ReliableUnordered);
-            var channel = _channels[idx];
-            return channel != null ? ((ReliableChannel)channel).PacketsInQueue : 0;
-        }
-        
-        /// <summary>
-        /// 创建传输频道
-        /// </summary>
-        /// <param name="idx">index of _channels array which range of 4*[0-63] + (int)DeliveryMethod</param>
-        /// <returns></returns>
-        private BaseChannel CreateChannel(byte idx)
-        {
-            BaseChannel newChannel = _channels[idx];
-            if (newChannel != null)
-                return newChannel;
-            switch ((DeliveryMethod)(idx % 4))
-            {
-                case DeliveryMethod.ReliableUnordered:
-                    newChannel = new ReliableChannel(this, false, idx);
-                    break;
-                case DeliveryMethod.Sequenced:
-                    newChannel = new SequencedChannel(this, false, idx);
-                    break;
-                case DeliveryMethod.ReliableOrdered:
-                    newChannel = new ReliableChannel(this, true, idx);
-                    break;
-                case DeliveryMethod.ReliableSequenced:
-                    newChannel = new SequencedChannel(this, true, idx);
-                    break;
-            }
-            BaseChannel prevChannel = Interlocked.CompareExchange(ref _channels[idx], newChannel, null);
-            if (prevChannel != null)
-                return prevChannel;
-
-            BaseChannel headChannel;
-            do
-            {
-                headChannel = _headChannel;
-                newChannel.Next = headChannel;
-            }
-            while (Interlocked.CompareExchange(ref _headChannel, newChannel, headChannel) != headChannel);
-
-            return newChannel;
         }
         
         /// <summary>
@@ -361,60 +299,10 @@ namespace LogicShared.LiteNetLib
 
             Logger.Debug($"[CC] ConnectId: {_connectTime}");
         }
-
-        /// <summary>
-        /// 拒绝连接
-        /// </summary>
-        /// <param name="connectionId"></param>
-        /// <param name="connectionNumber"></param>
-        /// <param name="data"></param>
-        /// <param name="start"></param>
-        /// <param name="length"></param>
-        internal void Reject(long connectionId, byte connectionNumber, byte[] data, int start, int length)
-        {
-            _connectTime = connectionId;
-            _connectNum = connectionNumber;
-            Shutdown(data, start, length, false);
-        }
-        
-        /// <summary>
-        /// 同意连接
-        /// </summary>
-        /// <param name="packet"></param>
-        /// <returns></returns>
-        internal bool ProcessConnectAccept(NetConnectAcceptPacket packet)
-        {
-            if (_connectionState != ConnectionState.Outgoing)
-                return false;
-
-            //check connection id
-            if (packet.ConnectionId != _connectTime)
-            {
-                Logger.Error($"[NC] Invalid connectId: {_connectTime}");
-                return false;
-            }
-            //check connect num
-            ConnectionNum = packet.ConnectionNumber;
-
-            Logger.Debug($"[NC] Received connection accept");
-            Interlocked.Exchange(ref _timeSinceLastPacket, 0);
-            _connectionState = ConnectionState.Connected;
-            return true;
-        }
-        
-        /// <summary>
-        /// Gets maximum size of packet that will be not fragmented.
-        /// </summary>
-        /// <param name="deliveryMethod">Type of packet that you want send</param>
-        /// <returns>size in bytes</returns>
-        public int GetMaxSinglePacketSize(DeliveryMethod deliveryMethod)
-        {
-            return _mtu - NetPacket.GetHeaderSize(deliveryMethod == DeliveryMethod.Unreliable ? PacketProperty.Unreliable : PacketProperty.Channeled);
-        }
         
         #endregion
 
-        #region Send方法
+        #region Send Method
         
         /// <summary>
         /// Send data to peer with delivery event called
@@ -664,7 +552,7 @@ namespace LogicShared.LiteNetLib
         
         #endregion
 
-        #region 断开连接
+        #region Disconnect Method
 
         public void Disconnect(byte[] data)
         {
@@ -758,20 +646,19 @@ namespace LogicShared.LiteNetLib
         }
 
         #endregion
-        
-        /// <summary>
-        /// 更新往返时延
-        /// </summary>
-        /// <param name="roundTripTime"></param>
-        private void UpdateRoundTripTime(int roundTripTime)
-        {
-            _rtt += roundTripTime;
-            _rttCount++;
-            _avgRtt = _rtt/_rttCount;
-            _resendDelay = 25.0f + _avgRtt * 2.1; // 25 ms + double rtt
-        }
+
+        #region Set Or Get Method
 
         /// <summary>
+        /// 设置最小传输单元
+        /// </summary>
+        /// <param name="mtuIdx">NetConstants.PossibleMtu的索引</param>
+        private void SetMtu(int mtuIdx)
+        {
+            _mtu = NetConstants.PossibleMtu[mtuIdx] - NetManager.ExtraPacketSizeForLayer;
+        }
+
+         /// <summary>
         /// 添加可靠包
         /// </summary>
         /// <param name="method"></param>
@@ -854,6 +741,90 @@ namespace LogicShared.LiteNetLib
         }
         
         /// <summary>
+        /// Gets maximum size of packet that will be not fragmented.
+        /// </summary>
+        /// <param name="deliveryMethod">Type of packet that you want send</param>
+        /// <returns>size in bytes</returns>
+        public int GetMaxSinglePacketSize(DeliveryMethod deliveryMethod)
+        {
+            return _mtu - NetPacket.GetHeaderSize(deliveryMethod == DeliveryMethod.Unreliable ? PacketProperty.Unreliable : PacketProperty.Channeled);
+        }
+        
+        /// <summary>
+        /// Returns packets count in queue for reliable channel
+        /// </summary>
+        /// <param name="channelNumber">number of channel [0-63]</param>
+        /// <param name="ordered">type of channel ReliableOrdered or ReliableUnordered</param>
+        /// <returns>packets count in channel queue</returns>
+        public int GetPacketsCountInReliableQueue(byte channelNumber, bool ordered)
+        {
+            int idx = channelNumber * 4 +
+                      (byte) (ordered ? DeliveryMethod.ReliableOrdered : DeliveryMethod.ReliableUnordered);
+            var channel = _channels[idx];
+            return channel != null ? ((ReliableChannel)channel).PacketsInQueue : 0;
+        }
+        
+        /// <summary>
+        /// 拒绝连接
+        /// </summary>
+        /// <param name="connectionId"></param>
+        /// <param name="connectionNumber"></param>
+        /// <param name="data"></param>
+        /// <param name="start"></param>
+        /// <param name="length"></param>
+        internal void Reject(long connectionId, byte connectionNumber, byte[] data, int start, int length)
+        {
+            _connectTime = connectionId;
+            _connectNum = connectionNumber;
+            Shutdown(data, start, length, false);
+        }
+
+        
+        /// <summary>
+        /// 创建传输频道
+        /// </summary>
+        /// <param name="idx">index of _channels array which range of 4*[0-63] + (int)DeliveryMethod</param>
+        /// <returns></returns>
+        private BaseChannel CreateChannel(byte idx)
+        {
+            BaseChannel newChannel = _channels[idx];
+            if (newChannel != null)
+                return newChannel;
+            switch ((DeliveryMethod)(idx % 4))
+            {
+                case DeliveryMethod.ReliableUnordered:
+                    newChannel = new ReliableChannel(this, false, idx);
+                    break;
+                case DeliveryMethod.Sequenced:
+                    newChannel = new SequencedChannel(this, false, idx);
+                    break;
+                case DeliveryMethod.ReliableOrdered:
+                    newChannel = new ReliableChannel(this, true, idx);
+                    break;
+                case DeliveryMethod.ReliableSequenced:
+                    newChannel = new SequencedChannel(this, true, idx);
+                    break;
+            }
+            BaseChannel prevChannel = Interlocked.CompareExchange(ref _channels[idx], newChannel, null);
+            if (prevChannel != null)
+                return prevChannel;
+
+            BaseChannel headChannel;
+            do
+            {
+                headChannel = _headChannel;
+                newChannel.Next = headChannel;
+            }
+            while (Interlocked.CompareExchange(ref _headChannel, newChannel, headChannel) != headChannel);
+
+            return newChannel;
+        }
+
+        #endregion
+        
+        #region Process Method
+        
+        /// <summary>
         /// 处理mtu包
         /// </summary>
         /// <param name="packet"></param>
@@ -899,46 +870,7 @@ namespace LogicShared.LiteNetLib
             }
         }
         
-        /// <summary>
-        /// 更新mtu的逻辑（发送mtu检查包）
-        /// </summary>
-        /// <param name="deltaTime"></param>
-        private void UpdateMtuLogic(int deltaTime)
-        {
-            if (_finishMtu)
-                return;
-
-            _mtuCheckTimer += deltaTime;
-            if (_mtuCheckTimer < MtuCheckDelay)
-                return;
-
-            _mtuCheckTimer = 0;
-            _mtuCheckAttempts++;
-            if (_mtuCheckAttempts >= MaxMtuCheckAttempts)
-            {
-                _finishMtu = true;
-                return;
-            }
-
-            lock (_mtuMutex)
-            {
-                if (_mtuIdx >= NetConstants.PossibleMtu.Length - 1)
-                    return;
-
-                //Send increased packet
-                int newMtu = NetConstants.PossibleMtu[_mtuIdx + 1];
-                var newPacket = _packetPool.GetPacket(newMtu);
-                newPacket.Property = PacketProperty.MtuCheck;
-                //包的开头和结尾都保存mtu，用来进行校验
-                FastBitConverter.GetBytes(newPacket.RawData, 1, newMtu);                    //place into start
-                FastBitConverter.GetBytes(newPacket.RawData, newPacket.Size - 4, newMtu);   //and end of packet
-
-                //Must check result for MTU fix
-                if (NetManager.SendRawAndRecycle(newPacket, EndPoint) <= 0)
-                    _finishMtu = true;
-            }
-        }
-        
+      
         /// <summary>
         /// 处理连接请求
         /// </summary>
@@ -1099,6 +1031,35 @@ namespace LogicShared.LiteNetLib
             }
         }
         
+         /// <summary>
+        /// 同意连接
+        /// </summary>
+        /// <param name="packet"></param>
+        /// <returns></returns>
+        internal bool ProcessConnectAccept(NetConnectAcceptPacket packet)
+        {
+            if (_connectionState != ConnectionState.Outgoing)
+                return false;
+
+            //check connection id
+            if (packet.ConnectionId != _connectTime)
+            {
+                Logger.Error($"[NC] Invalid connectId: {_connectTime}");
+                return false;
+            }
+            //check connect num
+            ConnectionNum = packet.ConnectionNumber;
+
+            Logger.Debug($"[NC] Received connection accept");
+            Interlocked.Exchange(ref _timeSinceLastPacket, 0);
+            _connectionState = ConnectionState.Connected;
+            return true;
+        }
+         
+        #endregion
+
+        #region Send Method
+        
         /// <summary>
         /// 发送合并后的包
         /// </summary>
@@ -1160,9 +1121,46 @@ namespace LogicShared.LiteNetLib
         }
         
         /// <summary>
+        /// For reliable channel
+        /// 派发packet并回收
+        /// </summary>
+        /// <param name="packet"></param>
+        internal void RecycleAndDeliver(NetPacket packet)
+        {
+            if (packet.UserData != null)
+            {
+                if (packet.IsFragmented)
+                {
+                    ushort fragCount;
+                    _deliveredFragments.TryGetValue(packet.FragmentId, out fragCount);
+                    fragCount++;
+                    if (fragCount == packet.FragmentsTotal)
+                    {
+                        NetManager.MessageDelivered(this, packet.UserData);
+                        _deliveredFragments.Remove(packet.FragmentId);
+                    }
+                    else
+                    {
+                        _deliveredFragments[packet.FragmentId] = fragCount;
+                    }
+                }
+                else
+                {
+                    NetManager.MessageDelivered(this, packet.UserData);
+                }
+                packet.UserData = null;
+            }
+            _packetPool.Recycle(packet);
+        }
+        
+        #endregion
+
+        #region Update Method
+        
+        /// <summary>
         /// 轮询
         /// </summary>
-        /// <param name="deltaTime"></param>
+        /// <param name="deltaTime">ms</param>
         internal void Update(int deltaTime)
         {
             Interlocked.Add(ref _timeSinceLastPacket, deltaTime);
@@ -1265,36 +1263,57 @@ namespace LogicShared.LiteNetLib
         }
 
         /// <summary>
-        /// For reliable channel
-        /// 派发packet并回收
+        /// 更新mtu的逻辑（发送mtu检查包）
         /// </summary>
-        /// <param name="packet"></param>
-        internal void RecycleAndDeliver(NetPacket packet)
+        /// <param name="deltaTime"></param>
+        private void UpdateMtuLogic(int deltaTime)
         {
-            if (packet.UserData != null)
+            if (_finishMtu)
+                return;
+
+            _mtuCheckTimer += deltaTime;
+            if (_mtuCheckTimer < MtuCheckDelay)
+                return;
+
+            _mtuCheckTimer = 0;
+            _mtuCheckAttempts++;
+            if (_mtuCheckAttempts >= MaxMtuCheckAttempts)
             {
-                if (packet.IsFragmented)
-                {
-                    ushort fragCount;
-                    _deliveredFragments.TryGetValue(packet.FragmentId, out fragCount);
-                    fragCount++;
-                    if (fragCount == packet.FragmentsTotal)
-                    {
-                        NetManager.MessageDelivered(this, packet.UserData);
-                        _deliveredFragments.Remove(packet.FragmentId);
-                    }
-                    else
-                    {
-                        _deliveredFragments[packet.FragmentId] = fragCount;
-                    }
-                }
-                else
-                {
-                    NetManager.MessageDelivered(this, packet.UserData);
-                }
-                packet.UserData = null;
+                _finishMtu = true;
+                return;
             }
-            _packetPool.Recycle(packet);
+
+            lock (_mtuMutex)
+            {
+                if (_mtuIdx >= NetConstants.PossibleMtu.Length - 1)
+                    return;
+
+                //Send increased packet
+                int newMtu = NetConstants.PossibleMtu[_mtuIdx + 1];
+                var newPacket = _packetPool.GetPacket(newMtu);
+                newPacket.Property = PacketProperty.MtuCheck;
+                //包的开头和结尾都保存mtu，用来进行校验
+                FastBitConverter.GetBytes(newPacket.RawData, 1, newMtu);                    //place into start
+                FastBitConverter.GetBytes(newPacket.RawData, newPacket.Size - 4, newMtu);   //and end of packet
+
+                //Must check result for MTU fix
+                if (NetManager.SendRawAndRecycle(newPacket, EndPoint) <= 0)
+                    _finishMtu = true;
+            }
         }
+        
+        /// <summary>
+        /// 更新往返时延
+        /// </summary>
+        /// <param name="roundTripTime"></param>
+        private void UpdateRoundTripTime(int roundTripTime)
+        {
+            _rtt += roundTripTime;
+            _rttCount++;
+            _avgRtt = _rtt/_rttCount;
+            _resendDelay = 25.0f + _avgRtt * 2.1; // 25 ms + double rtt
+        }
+
+        #endregion
     }
 }

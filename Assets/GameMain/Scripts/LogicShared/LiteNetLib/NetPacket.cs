@@ -31,8 +31,8 @@ namespace LogicShared.LiteNetLib
         Broadcast,
         Merged,             //合并数据后再发包
         ShutdownOk,
-        PeerNotFound,
-        InvalidProtocol,
+        PeerNotFound,       //没有找到Peer
+        InvalidProtocol,    //协议无效
         NatMessage,         //NAT消息
         Empty
     }

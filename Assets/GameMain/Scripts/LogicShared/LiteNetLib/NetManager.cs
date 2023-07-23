@@ -60,6 +60,10 @@ namespace LogicShared.LiteNetLib
             _manager.RecycleEvent(_evt);
         }
 
+        /// <summary>
+        /// 回收_packet和_evt
+        /// </summary>
+        /// <exception cref="Exception"></exception>
         public void Recycle()
         {
             if(_manager.AutoRecycle)
@@ -77,14 +81,14 @@ namespace LogicShared.LiteNetLib
 
         public enum EType
         {
-            Connect,
-            Disconnect,
-            Receive,
-            ReceiveUnconnected,
-            Error,
-            ConnectionLatencyUpdated,
-            Broadcast,
-            ConnectionRequest,
+            Connect,                    //有新的peer连接成功
+            Disconnect,                 //peer断开连接
+            Receive,                    //peer收到消息（必须连接成功）
+            ReceiveUnconnected,         //peer收到消息（无需连接成功）
+            Error,                      //连接错误
+            ConnectionLatencyUpdated,   //连接延迟
+            Broadcast,                  //广播消息
+            ConnectionRequest,          //peer发送连接请求
             MessageDelivered            //派发消息，通知其他系统
         }
         public EType Type;
@@ -109,8 +113,17 @@ namespace LogicShared.LiteNetLib
     /// </summary>
     public class NetManager : INetSocketListener, IEnumerable<NetPeer>
     {
+        /// <summary>
+        /// 重写EndPoint比较方法（等于或不等于）
+        /// </summary>
         private class IPEndPointComparer : IEqualityComparer<IPEndPoint>
         {
+            /// <summary>
+            /// ip和port都相等才认为相等
+            /// </summary>
+            /// <param name="x"></param>
+            /// <param name="y"></param>
+            /// <returns></returns>
             public bool Equals(IPEndPoint x, IPEndPoint y)
             {
                 return x.Address.Equals(y.Address) && x.Port == y.Port;
@@ -122,15 +135,18 @@ namespace LogicShared.LiteNetLib
             }
         }
 
+        /// <summary>
+        /// Peer迭代器，通过Peer.NextPeer进行迭代
+        /// </summary>
         public struct NetPeerEnumerator : IEnumerator<NetPeer>
         {
             private readonly NetPeer _initialPeer;
-            private NetPeer _p;
+            private NetPeer _peer;
 
-            public NetPeerEnumerator(NetPeer p)
+            public NetPeerEnumerator(NetPeer peer)
             {
-                _initialPeer = p;
-                _p = null;
+                _initialPeer = peer;
+                _peer = null;
             }
 
             public void Dispose()
@@ -140,8 +156,8 @@ namespace LogicShared.LiteNetLib
 
             public bool MoveNext()
             {
-                _p = _p == null ? _initialPeer : _p.NextPeer;
-                return _p != null;
+                _peer = _peer == null ? _initialPeer : _peer.NextPeer;
+                return _peer != null;
             }
 
             public void Reset()
@@ -151,12 +167,12 @@ namespace LogicShared.LiteNetLib
 
             public NetPeer Current
             {
-                get { return _p; }
+                get { return _peer; }
             }
 
             object IEnumerator.Current
             {
-                get { return _p; }
+                get { return _peer; }
             }
         }
         
@@ -169,40 +185,42 @@ namespace LogicShared.LiteNetLib
         }
         private readonly List<IncomingData> _pingSimulationList = new List<IncomingData>(); 
         private readonly Random _randomGenerator = new Random();
-        private const int MinLatencyThreshold = 5;
+        private const int MinLatencyThreshold = 5;      //最小ping
 #endif
 
-        private readonly NetSocket _socket;
-        private Thread _logicThread;
+        private readonly NetSocket _socket;                 //收发socket
+        private Thread _logicThread;                        //逻辑线程
         private readonly AutoResetEvent _updateTriggerEvent = new AutoResetEvent(true);
 
-        private readonly Queue<NetEvent> _netEventsQueue;
-        private NetEvent _netEventPoolHead;
-        private readonly INetEventListener _netEventListener;
-        private readonly IDeliveryEventListener _deliveryEventListener;
+        private readonly Queue<NetEvent> _netEventsQueue;   //网络事件队列
+        private NetEvent _netEventPoolHead;                 //网络事件对象池中第一个可用的对象
+        private readonly INetEventListener _netEventListener;                       //网络事件监听器
+        private readonly IDeliveryEventListener _deliveryEventListener;             //派发事件监听器
+    
+        private readonly Dictionary<IPEndPoint, NetPeer> _peersDict;                //所有Peer字典
+        private readonly Dictionary<IPEndPoint, ConnectionRequest> _requestsDict;   //请求连接网络包字典
+        private readonly ReaderWriterLockSlim _peersLock;   //peers读写锁
+        private volatile NetPeer _headPeer;                 //已连接的peer中最后一个添加进来的peer
+        private volatile int _connectedPeersCount;          //已连接成功的peer数量
+        private readonly List<NetPeer> _connectedPeerListCache; //缓存已连接成功的peer列表
+        private NetPeer[] _peersArray;                      //已连接的peer数组，数组索引是peer.Id
+        private readonly PacketLayerBase _extraPacketLayer; //额外的packet层
+        private int _lastPeerId;                            //上一个被使用的PeerId
+        private readonly Queue<int> _peerIds;               //PeerId对象池
+        private byte _channelsCount = 1;                    //频道数量
 
-        private readonly Dictionary<IPEndPoint, NetPeer> _peersDict;
-        private readonly Dictionary<IPEndPoint, ConnectionRequest> _requestsDict;
-        private readonly ReaderWriterLockSlim _peersLock;
-        private volatile NetPeer _headPeer;
-        private volatile int _connectedPeersCount;
-        private readonly List<NetPeer> _connectedPeerListCache;
-        private NetPeer[] _peersArray;
-        private readonly PacketLayerBase _extraPacketLayer;
-        private int _lastPeerId;
-        private readonly Queue<int> _peerIds;
-        private byte _channelsCount = 1;
-
-        internal readonly NetPacketPool NetPacketPool;
-
-        //config section
+        internal readonly NetPacketPool NetPacketPool;      //网络包对象池
+        
+        #region config section
+        
         /// <summary>
         /// Enable messages receiving without connection. (with SendUnconnectedMessage method)
         /// </summary>
-        public bool UnconnectedMessagesEnabled = false;
+        public bool UnconnectedMessagesEnabled = false; 
 
         /// <summary>
         /// Enable nat punch messages
+        /// 启用NAT打洞
         /// </summary>
         public bool NatPunchEnabled = false;
 
@@ -212,7 +230,7 @@ namespace LogicShared.LiteNetLib
         public int UpdateTime = 15;
 
         /// <summary>
-        /// Interval for latency detection and checking connection
+        /// Interval for latency detection and checking connection in milliseconds
         /// </summary>
         public int PingInterval = 1000;
 
@@ -224,26 +242,31 @@ namespace LogicShared.LiteNetLib
 
         /// <summary>
         /// Simulate packet loss by dropping random amount of packets. (Works only in DEBUG mode)
+        /// 模拟丢包
         /// </summary>
         public bool SimulatePacketLoss = false;
 
         /// <summary>
         /// Simulate latency by holding packets for random time. (Works only in DEBUG mode)
+        /// 模拟延迟
         /// </summary>
         public bool SimulateLatency = false;
 
         /// <summary>
         /// Chance of packet loss when simulation enabled. value in percents (1 - 100).
+        /// 模拟丢包概率（1-100）
         /// </summary>
         public int SimulationPacketLossChance = 10;
 
         /// <summary>
         /// Minimum simulated latency
+        /// 最小模拟延迟
         /// </summary>
         public int SimulationMinLatency = 30;
 
         /// <summary>
         /// Maximum simulated latency
+        /// 最大模拟延迟
         /// </summary>
         public int SimulationMaxLatency = 100;
 
@@ -365,66 +388,17 @@ namespace LogicShared.LiteNetLib
         /// Returns connected peers count
         /// </summary>
         public int ConnectedPeersCount { get { return _connectedPeersCount; } }
-
+        
+        /// <summary>
+        /// 其他layer的额外packet数量
+        /// </summary>
         public int ExtraPacketSizeForLayer
         {
             get { return _extraPacketLayer != null ? _extraPacketLayer.ExtraPacketSizeForLayer : 0; }
         }
 
-        private bool TryGetPeer(IPEndPoint endPoint, out NetPeer peer)
-        {
-            _peersLock.EnterReadLock();
-            bool result = _peersDict.TryGetValue(endPoint, out peer);
-            _peersLock.ExitReadLock();
-            return result;
-        }
-
-        private void AddPeer(NetPeer peer)
-        {
-            _peersLock.EnterWriteLock();
-            if (_headPeer != null)
-            {
-                peer.NextPeer = _headPeer;
-                _headPeer.PrevPeer = peer;
-            }
-            _headPeer = peer;
-            _peersDict.Add(peer.EndPoint, peer);
-            if (peer.Id >= _peersArray.Length)
-            {
-                int newSize = _peersArray.Length * 2;
-                while (peer.Id >= newSize)
-                    newSize *= 2;
-                Array.Resize(ref _peersArray, newSize);
-            }
-            _peersArray[peer.Id] = peer;
-            _peersLock.ExitWriteLock();
-        }
-
-        private void RemovePeer(NetPeer peer)
-        {
-            _peersLock.EnterWriteLock();
-            RemovePeerInternal(peer);
-            _peersLock.ExitWriteLock();
-        }
-
-        private void RemovePeerInternal(NetPeer peer)
-        {
-            if (!_peersDict.Remove(peer.EndPoint))
-                return;
-            if (peer == _headPeer)
-                _headPeer = peer.NextPeer;
-
-            if (peer.PrevPeer != null)
-                peer.PrevPeer.NextPeer = peer.NextPeer;
-            if (peer.NextPeer != null)
-                peer.NextPeer.PrevPeer = peer.PrevPeer;
-            peer.PrevPeer = null;
-
-            _peersArray[peer.Id] = null;
-            lock (_peerIds)
-                _peerIds.Enqueue(peer.Id);
-        }
-
+        #endregion
+        
         /// <summary>
         /// NetManager constructor
         /// </summary>
@@ -447,7 +421,159 @@ namespace LogicShared.LiteNetLib
             _peersArray = new NetPeer[32];
             _extraPacketLayer = extraPacketLayer;
         }
+        
+        #region Start and Stop Logic
+        
+        /// <summary>
+        /// Start logic thread and listening on available port
+        /// </summary>
+        public bool Start()
+        {
+            return Start(0);
+        }
 
+        /// <summary>
+        /// Start logic thread and listening on selected port
+        /// </summary>
+        /// <param name="addressIPv4">bind to specific ipv4 address</param>
+        /// <param name="addressIPv6">bind to specific ipv6 address</param>
+        /// <param name="port">port to listen</param>
+        public bool Start(IPAddress addressIPv4, IPAddress addressIPv6, int port)
+        {
+            if (!_socket.Bind(addressIPv4, addressIPv6, port, ReuseAddress, IPv6Enabled))
+                return false;
+            _logicThread = new Thread(UpdateLogic) { Name = "LogicThread", IsBackground = true };
+            _logicThread.Start();
+            return true;
+        }
+
+        /// <summary>
+        /// Start logic thread and listening on selected port
+        /// </summary>
+        /// <param name="addressIPv4">bind to specific ipv4 address</param>
+        /// <param name="addressIPv6">bind to specific ipv6 address</param>
+        /// <param name="port">port to listen</param>
+        public bool Start(string addressIPv4, string addressIPv6, int port)
+        {
+            IPAddress ipv4 = NetUtils.ResolveAddress(addressIPv4);
+            IPAddress ipv6 = NetUtils.ResolveAddress(addressIPv6);
+            return Start(ipv4, ipv6, port);
+        }
+
+        /// <summary>
+        /// Start logic thread and listening on selected port
+        /// </summary>
+        /// <param name="port">port to listen</param>
+        public bool Start(int port)
+        {
+            return Start(IPAddress.Any, IPAddress.IPv6Any, port);
+        }
+
+        /// <summary>
+        /// Force closes connection and stop all threads.
+        /// </summary>
+        public void Stop()
+        {
+            Stop(true);
+        }
+
+        /// <summary>
+        /// Force closes connection and stop all threads.
+        /// </summary>
+        /// <param name="sendDisconnectMessages">Send disconnect messages</param>
+        public void Stop(bool sendDisconnectMessages)
+        {
+            if (!_socket.IsRunning)
+                return;
+            Logger.Debug("[NM] Stop");
+
+            //Send last disconnect
+            for(var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
+                netPeer.Shutdown(null, 0, 0, !sendDisconnectMessages);
+
+            //Stop
+            _socket.Close(false);
+            _updateTriggerEvent.Set();
+            _logicThread.Join();
+            _logicThread = null;
+
+            //clear peers
+            _peersLock.EnterWriteLock();
+            _headPeer = null;
+            _peersDict.Clear();
+            _peersArray = new NetPeer[32];
+            _peersLock.ExitWriteLock();
+            lock(_peerIds)
+                _peerIds.Clear();
+#if DEBUG
+            lock (_pingSimulationList)
+                _pingSimulationList.Clear();
+#endif
+            _connectedPeersCount = 0;
+            lock(_netEventsQueue)
+                _netEventsQueue.Clear();
+        }
+        
+        #endregion
+        
+        #region Add or Remove Peer Method
+        
+        /// <summary>
+        /// 添加一个新的Peer
+        /// </summary>
+        /// <param name="peer"></param>
+        private void AddPeer(NetPeer peer)
+        {
+            _peersLock.EnterWriteLock();
+            if (_headPeer != null)
+            {
+                peer.NextPeer = _headPeer;
+                _headPeer.PrevPeer = peer;
+            }
+            //headPeer = 最后添加的peer
+            _headPeer = peer;
+            _peersDict.Add(peer.EndPoint, peer);
+            if (peer.Id >= _peersArray.Length)
+            {
+                int newSize = _peersArray.Length * 2;
+                while (peer.Id >= newSize)
+                    newSize *= 2;
+                Array.Resize(ref _peersArray, newSize);
+            }
+            _peersArray[peer.Id] = peer;
+            _peersLock.ExitWriteLock();
+        }
+
+        private void RemovePeer(NetPeer peer)
+        {
+            _peersLock.EnterWriteLock();
+            RemovePeerInternal(peer);
+            _peersLock.ExitWriteLock();
+        }
+        
+        private void RemovePeerInternal(NetPeer peer)
+        {
+            if (!_peersDict.Remove(peer.EndPoint))
+                return;
+            if (peer == _headPeer)
+                _headPeer = peer.NextPeer;
+
+            //从双链表中移除一个元素
+            if (peer.PrevPeer != null)
+                peer.PrevPeer.NextPeer = peer.NextPeer;
+            if (peer.NextPeer != null)
+                peer.NextPeer.PrevPeer = peer.PrevPeer;
+            peer.PrevPeer = null;
+
+            _peersArray[peer.Id] = null;
+            lock (_peerIds)
+                _peerIds.Enqueue(peer.Id);
+        }
+
+        #endregion
+        
+        #region Net Event Method
+        
         internal void ConnectionLatencyUpdated(NetPeer fromPeer, int latency)
         {
             CreateEvent(NetEvent.EType.ConnectionLatencyUpdated, fromPeer, latency: latency);
@@ -458,101 +584,20 @@ namespace LogicShared.LiteNetLib
             if(_deliveryEventListener != null)
                 CreateEvent(NetEvent.EType.MessageDelivered, fromPeer, userData: userData);
         }
-
-        internal int SendRawAndRecycle(NetPacket packet, IPEndPoint remoteEndPoint)
-        {
-            var result = SendRaw(packet.RawData, 0, packet.Size, remoteEndPoint);
-            NetPacketPool.Recycle(packet);
-            return result;
-        }
-
-        internal int SendRaw(NetPacket packet, IPEndPoint remoteEndPoint)
-        {
-            return SendRaw(packet.RawData, 0, packet.Size, remoteEndPoint);
-        }
-
-        internal int SendRaw(byte[] message, int start, int length, IPEndPoint remoteEndPoint)
-        {
-            if (!_socket.IsRunning)
-                return 0;
-
-            SocketError errorCode = 0;
-            int result;
-            if (_extraPacketLayer != null)
-            {
-                var expandedPacket = NetPacketPool.GetPacket(length + _extraPacketLayer.ExtraPacketSizeForLayer);
-                Buffer.BlockCopy(message, start, expandedPacket.RawData, 0, length);
-                int newStart = 0;
-                _extraPacketLayer.ProcessOutBoundPacket(remoteEndPoint, ref expandedPacket.RawData, ref newStart, ref length);
-                result = _socket.SendTo(expandedPacket.RawData, newStart, length, remoteEndPoint, ref errorCode);
-                NetPacketPool.Recycle(expandedPacket);
-            }
-            else
-            {
-                result = _socket.SendTo(message, start, length, remoteEndPoint, ref errorCode);
-            }
-
-            NetPeer fromPeer;
-            switch (errorCode)
-            {
-                case SocketError.MessageSize:
-                    Logger.Debug(string.Format("[SRD] 10040, datalen: {0}", length));
-                    return -1;
-                case SocketError.HostUnreachable:
-                    if (TryGetPeer(remoteEndPoint, out fromPeer))
-                        DisconnectPeerForce(fromPeer, DisconnectReason.HostUnreachable, errorCode, null);
-                    CreateEvent(NetEvent.EType.Error, remoteEndPoint: remoteEndPoint, errorCode: errorCode);
-                    return -1;
-                case SocketError.NetworkUnreachable:
-                    if (TryGetPeer(remoteEndPoint, out fromPeer))
-                        DisconnectPeerForce(fromPeer, DisconnectReason.NetworkUnreachable, errorCode, null);
-                    CreateEvent(NetEvent.EType.Error, remoteEndPoint: remoteEndPoint, errorCode: errorCode);
-                    return -1;
-            }
-            if (result <= 0)
-                return 0;
-
-            if (EnableStatistics)
-            {
-                Statistics.IncrementPacketsSent();
-                Statistics.AddBytesSent(length);
-            }
-
-            return result;
-        }
-
-        internal void DisconnectPeerForce(NetPeer peer,
-            DisconnectReason reason,
-            SocketError socketErrorCode,
-            NetPacket eventData)
-        {
-            DisconnectPeer(peer, reason, socketErrorCode, true, null, 0, 0, eventData);
-        }
-
-        private void DisconnectPeer(
-            NetPeer peer, 
-            DisconnectReason reason,
-            SocketError socketErrorCode, 
-            bool force,
-            byte[] data,
-            int start,
-            int count,
-            NetPacket eventData)
-        {
-            var shutdownResult = peer.Shutdown(data, start, count, force);
-            if (shutdownResult == ShutdownResult.None)
-                return;
-            if(shutdownResult == ShutdownResult.WasConnected)
-                Interlocked.Decrement(ref _connectedPeersCount);
-            Thread.MemoryBarrier();
-            CreateEvent(
-                NetEvent.EType.Disconnect,
-                peer,
-                errorCode: socketErrorCode,
-                disconnectReason: reason,
-                readerSource: eventData);
-        }
-
+        
+         /// <summary>
+        /// 创建网络事件
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="peer"></param>
+        /// <param name="remoteEndPoint"></param>
+        /// <param name="errorCode"></param>
+        /// <param name="latency"></param>
+        /// <param name="disconnectReason"></param>
+        /// <param name="connectionRequest"></param>
+        /// <param name="deliveryMethod"></param>
+        /// <param name="readerSource"></param>
+        /// <param name="userData"></param>
         private void CreateEvent(
             NetEvent.EType type,
             NetPeer peer = null,
@@ -594,6 +639,7 @@ namespace LogicShared.LiteNetLib
             evt.DeliveryMethod = deliveryMethod;
             evt.UserData = userData;
 
+            //不需要PoolEvent
             if (unsyncEvent)
             {
                 ProcessEvent(evt);
@@ -605,6 +651,10 @@ namespace LogicShared.LiteNetLib
             }
         }
 
+        /// <summary>
+        /// 处理网络事件
+        /// </summary>
+        /// <param name="evt"></param>
         private void ProcessEvent(NetEvent evt)
         {
             Logger.Debug("[NM] Processing event: " + evt.Type);
@@ -652,6 +702,10 @@ namespace LogicShared.LiteNetLib
                 evt.DataReader.RecycleInternal();
         }
 
+        /// <summary>
+        /// 回收网络事件
+        /// </summary>
+        /// <param name="evt"></param>
         internal void RecycleEvent(NetEvent evt)
         {
             evt.Peer = null;
@@ -663,11 +717,350 @@ namespace LogicShared.LiteNetLib
                 evt.Next = _netEventPoolHead;
             } while (evt.Next != Interlocked.CompareExchange(ref _netEventPoolHead, evt, evt.Next));
         }
+        #endregion
+        
+        #region Send Methods
+        
+        /// <summary>
+        /// Send data to all connected peers (channel = 0)
+        /// </summary>
+        /// <param name="writer">DataWriter with data</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        public void SendToAll(NetDataWriter writer, DeliveryMethod options)
+        {
+            SendToAll(writer.Data, 0, writer.Length, options);
+        }
 
-        //Update function
+        /// <summary>
+        /// Send data to all connected peers (channel = 0)
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        public void SendToAll(byte[] data, DeliveryMethod options)
+        {
+            SendToAll(data, 0, data.Length, options);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers (channel = 0)
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="start">Start of data</param>
+        /// <param name="length">Length of data</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        public void SendToAll(byte[] data, int start, int length, DeliveryMethod options)
+        {
+            SendToAll(data, start, length, 0, options);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers
+        /// </summary>
+        /// <param name="writer">DataWriter with data</param>
+        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        public void SendToAll(NetDataWriter writer, byte channelNumber, DeliveryMethod options)
+        {
+            SendToAll(writer.Data, 0, writer.Length, channelNumber, options);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        public void SendToAll(byte[] data, byte channelNumber, DeliveryMethod options)
+        {
+            SendToAll(data, 0, data.Length, channelNumber, options);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="start">Start of data</param>
+        /// <param name="length">Length of data</param>
+        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        public void SendToAll(byte[] data, int start, int length, byte channelNumber, DeliveryMethod options)
+        {
+            try
+            {
+                _peersLock.EnterReadLock();
+                for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
+                    netPeer.Send(data, start, length, channelNumber, options);
+            }
+            finally
+            {
+                _peersLock.ExitReadLock();
+            }
+        }
+
+        /// <summary>
+        /// Send data to all connected peers (channel = 0)
+        /// </summary>
+        /// <param name="writer">DataWriter with data</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        /// <param name="excludePeer">Excluded peer</param>
+        public void SendToAll(NetDataWriter writer, DeliveryMethod options, NetPeer excludePeer)
+        {
+            SendToAll(writer.Data, 0, writer.Length, 0, options, excludePeer);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers (channel = 0)
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        /// <param name="excludePeer">Excluded peer</param>
+        public void SendToAll(byte[] data, DeliveryMethod options, NetPeer excludePeer)
+        {
+            SendToAll(data, 0, data.Length, 0, options, excludePeer);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers (channel = 0)
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="start">Start of data</param>
+        /// <param name="length">Length of data</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        /// <param name="excludePeer">Excluded peer</param>
+        public void SendToAll(byte[] data, int start, int length, DeliveryMethod options, NetPeer excludePeer)
+        {
+            SendToAll(data, start, length, 0, options, excludePeer);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers
+        /// </summary>
+        /// <param name="writer">DataWriter with data</param>
+        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        /// <param name="excludePeer">Excluded peer</param>
+        public void SendToAll(NetDataWriter writer, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)
+        {
+            SendToAll(writer.Data, 0, writer.Length, channelNumber, options, excludePeer);
+        }
+
+        /// <summary>
+        /// Send data to all connected peers
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        /// <param name="excludePeer">Excluded peer</param>
+        public void SendToAll(byte[] data, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)
+        {
+            SendToAll(data, 0, data.Length, channelNumber, options, excludePeer);
+        }
+
+
+        /// <summary>
+        /// Send data to all connected peers
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="start">Start of data</param>
+        /// <param name="length">Length of data</param>
+        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
+        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
+        /// <param name="excludePeer">Excluded peer</param>
+        public void SendToAll(byte[] data, int start, int length, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)
+        {
+            try
+            {
+                _peersLock.EnterReadLock();
+                for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
+                {
+                    if (netPeer != excludePeer)
+                        netPeer.Send(data, start, length, channelNumber, options);
+                }
+            }
+            finally
+            {
+                _peersLock.ExitReadLock();
+            }
+        }
+        
+        /// <summary>
+        /// Send message without connection
+        /// </summary>
+        /// <param name="message">Raw data</param>
+        /// <param name="remoteEndPoint">Packet destination</param>
+        /// <returns>Operation result</returns>
+        public bool SendUnconnectedMessage(byte[] message, IPEndPoint remoteEndPoint)
+        {
+            return SendUnconnectedMessage(message, 0, message.Length, remoteEndPoint);
+        }
+
+        /// <summary>
+        /// Send message without connection
+        /// </summary>
+        /// <param name="writer">Data serializer</param>
+        /// <param name="remoteEndPoint">Packet destination</param>
+        /// <returns>Operation result</returns>
+        public bool SendUnconnectedMessage(NetDataWriter writer, IPEndPoint remoteEndPoint)
+        {
+            return SendUnconnectedMessage(writer.Data, 0, writer.Length, remoteEndPoint);
+        }
+
+        /// <summary>
+        /// Send message without connection
+        /// </summary>
+        /// <param name="message">Raw data</param>
+        /// <param name="start">data start</param>
+        /// <param name="length">data length</param>
+        /// <param name="remoteEndPoint">Packet destination</param>
+        /// <returns>Operation result</returns>
+        public bool SendUnconnectedMessage(byte[] message, int start, int length, IPEndPoint remoteEndPoint)
+        {
+            //No need for CRC here, SendRaw does that
+            NetPacket packet = NetPacketPool.GetWithData(PacketProperty.UnconnectedMessage, message, start, length);
+            return SendRawAndRecycle(packet, remoteEndPoint) > 0;
+        }
+
+        internal int SendRawAndRecycle(NetPacket packet, IPEndPoint remoteEndPoint)
+        {
+            var result = SendRaw(packet.RawData, 0, packet.Size, remoteEndPoint);
+            NetPacketPool.Recycle(packet);
+            return result;
+        }
+
+        internal int SendRaw(NetPacket packet, IPEndPoint remoteEndPoint)
+        {
+            return SendRaw(packet.RawData, 0, packet.Size, remoteEndPoint);
+        }
+
+        /// <summary>
+        /// 发送byte数组形式的消息
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="start"></param>
+        /// <param name="length"></param>
+        /// <param name="remoteEndPoint"></param>
+        /// <returns></returns>
+        internal int SendRaw(byte[] message, int start, int length, IPEndPoint remoteEndPoint)
+        {
+            if (!_socket.IsRunning)
+                return 0;
+
+            SocketError errorCode = 0;
+            int result;
+            if (_extraPacketLayer != null)  //添加CRC校验等数据之后再发送
+            {
+                var expandedPacket = NetPacketPool.GetPacket(length + _extraPacketLayer.ExtraPacketSizeForLayer);
+                Buffer.BlockCopy(message, start, expandedPacket.RawData, 0, length);
+                int newStart = 0;
+                _extraPacketLayer.ProcessOutBoundPacket(remoteEndPoint, ref expandedPacket.RawData, ref newStart, ref length);
+                result = _socket.SendTo(expandedPacket.RawData, newStart, length, remoteEndPoint, ref errorCode);
+                NetPacketPool.Recycle(expandedPacket);
+            }
+            else
+            {
+                //否则直接发送
+                result = _socket.SendTo(message, start, length, remoteEndPoint, ref errorCode);
+            }
+
+            //因为是同步发送，因此到这里就已经知道发送的结果了
+            NetPeer fromPeer;
+            switch (errorCode)
+            {
+                case SocketError.MessageSize:                       //返回消息长度
+                    Logger.Debug($"[SRD] 10040, data length: {length}");
+                    return -1;
+                case SocketError.HostUnreachable:
+                    if (TryGetPeer(remoteEndPoint, out fromPeer))   //不能达到远端主服务器
+                        DisconnectPeerForce(fromPeer, DisconnectReason.HostUnreachable, errorCode, null);
+                    CreateEvent(NetEvent.EType.Error, remoteEndPoint: remoteEndPoint, errorCode: errorCode);
+                    return -1;
+                case SocketError.NetworkUnreachable:                //网络不通
+                    if (TryGetPeer(remoteEndPoint, out fromPeer))
+                        DisconnectPeerForce(fromPeer, DisconnectReason.NetworkUnreachable, errorCode, null);
+                    CreateEvent(NetEvent.EType.Error, remoteEndPoint: remoteEndPoint, errorCode: errorCode);
+                    return -1;
+            }
+            if (result <= 0)
+                return 0;
+
+            if (EnableStatistics)
+            {
+                Statistics.IncrementPacketsSent();
+                Statistics.AddBytesSent(length);
+            }
+
+            return result;
+        }
+        
+        public bool SendBroadcast(NetDataWriter writer, int port)
+        {
+            return SendBroadcast(writer.Data, 0, writer.Length, port);
+        }
+
+        public bool SendBroadcast(byte[] data, int port)
+        {
+            return SendBroadcast(data, 0, data.Length, port);
+        }
+
+        public bool SendBroadcast(byte[] data, int start, int length, int port)
+        {
+            NetPacket packet;
+            if (_extraPacketLayer != null)
+            {
+                var headerSize = NetPacket.GetHeaderSize(PacketProperty.Broadcast);
+                packet = NetPacketPool.GetPacket(headerSize + length + _extraPacketLayer.ExtraPacketSizeForLayer);
+                packet.Property = PacketProperty.Broadcast;
+                Buffer.BlockCopy(data, start, packet.RawData, headerSize, length);
+                var checksumComputeStart = 0;
+                int preCrcLength = length + headerSize;
+                _extraPacketLayer.ProcessOutBoundPacket(null, ref packet.RawData, ref checksumComputeStart, ref preCrcLength);
+            }
+            else
+            {
+                packet = NetPacketPool.GetWithData(PacketProperty.Broadcast, data, start, length);
+            }
+
+            bool result = _socket.SendBroadcast(packet.RawData, 0, packet.Size, port);
+            NetPacketPool.Recycle(packet);
+            return result;
+        }
+        
+        #endregion
+        
+        #region Update Method
+        /// <summary>
+        /// Triggers update and send logic immediately (works asynchronously)
+        /// </summary>
+        public void TriggerUpdate()
+        {
+            _updateTriggerEvent.Set();
+        }
+
+        /// <summary>
+        /// Receive all pending events. Call this in game update code
+        /// </summary>
+        public void PollEvents()
+        {
+            if (UnsyncedEvents)
+                return;
+            int eventsCount;
+            lock (_netEventsQueue)
+                eventsCount = _netEventsQueue.Count;
+            for(int i = 0; i < eventsCount; i++)
+            {
+                NetEvent evt;
+                lock (_netEventsQueue)
+                    evt = _netEventsQueue.Dequeue();
+                ProcessEvent(evt);
+            }
+        }
+        
+  /// <summary>
+        /// 在_logicThread线程中更新网络逻辑
+        /// </summary>
         private void UpdateLogic()
         {
-            var peersToRemove = new List<NetPeer>();
+            var peersToRemove = new List<NetPeer>();    //待移除的peer列表
             var stopwatch = new Stopwatch();
             stopwatch.Start();
 
@@ -698,11 +1091,12 @@ namespace LogicShared.LiteNetLib
                 stopwatch.Reset();
                 stopwatch.Start();
 
+                //遍历所有连接的peer
                 for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
                 {
                     if (netPeer.ConnectionState == ConnectionState.Disconnected && netPeer.TimeSinceLastPacket > DisconnectTimeout)
                     {
-                        peersToRemove.Add(netPeer);
+                        peersToRemove.Add(netPeer); 
                     }
                     else
                     {
@@ -720,17 +1114,30 @@ namespace LogicShared.LiteNetLib
 
                 int sleepTime = UpdateTime - (int)stopwatch.ElapsedMilliseconds;
                 if (sleepTime > 0)
-                    _updateTriggerEvent.WaitOne(sleepTime);
+                    _updateTriggerEvent.WaitOne(sleepTime); //线程等待sleepTime
             }
             stopwatch.Stop();
         }
+      
+
+        #endregion
         
+        #region Handle Message Method
+
+          
+        /// <summary>
+        /// 收到网络包消息
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="length"></param>
+        /// <param name="errorCode"></param>
+        /// <param name="remoteEndPoint"></param>
         void INetSocketListener.OnMessageReceived(byte[] data, int length, SocketError errorCode, IPEndPoint remoteEndPoint)
         {
             if (errorCode != 0)
             {
                 CreateEvent(NetEvent.EType.Error, errorCode: errorCode);
-                Logger.Debug(string.Format("[NM] Receive error: {0}", errorCode));
+                Logger.Error($"[NM] Receive error: {errorCode}");
                 return;
             }
 #if DEBUG
@@ -773,6 +1180,14 @@ namespace LogicShared.LiteNetLib
             }
         }
 
+        /// <summary>
+        /// 处理连接
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="rejectData"></param>
+        /// <param name="start"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
         internal NetPeer OnConnectionSolved(ConnectionRequest request, byte[] rejectData, int start, int length)
         {
             NetPeer netPeer = null;
@@ -831,6 +1246,12 @@ namespace LogicShared.LiteNetLib
                 return _peerIds.Count == 0 ? _lastPeerId++ : _peerIds.Dequeue();
         }
 
+        /// <summary>
+        /// 处理网络连接请求包
+        /// </summary>
+        /// <param name="remoteEndPoint"></param>
+        /// <param name="netPeer"></param>
+        /// <param name="connRequest"></param>
         private void ProcessConnectRequest(
             IPEndPoint remoteEndPoint, 
             NetPeer netPeer, 
@@ -900,6 +1321,12 @@ namespace LogicShared.LiteNetLib
             CreateEvent(NetEvent.EType.ConnectionRequest, connectionRequest: req);
         }
 
+        /// <summary>
+        /// 处理收到的网络二进制数据
+        /// </summary>
+        /// <param name="reusableBuffer"></param>
+        /// <param name="count"></param>
+        /// <param name="remoteEndPoint"></param>
         private void DataReceived(byte[] reusableBuffer, int count, IPEndPoint remoteEndPoint)
         {
             if (EnableStatistics)
@@ -909,7 +1336,7 @@ namespace LogicShared.LiteNetLib
             }
 
             int start = 0;
-            if (_extraPacketLayer != null)
+            if (_extraPacketLayer != null)  //先处理CRC检验等layer
             {
                 _extraPacketLayer.ProcessInboundPacket(remoteEndPoint, ref reusableBuffer, ref start, ref count);
                 if (count == 0)
@@ -929,6 +1356,7 @@ namespace LogicShared.LiteNetLib
                 return;
             }
 
+            //1.check special packets
             switch (packet.Property)
             {
                 //special case connect request
@@ -956,7 +1384,7 @@ namespace LogicShared.LiteNetLib
                     return;
             }
 
-            //Check normal packets
+            //2.Check normal packets
             NetPeer netPeer;
             _peersLock.EnterReadLock();
             bool peerFound = _peersDict.TryGetValue(remoteEndPoint, out netPeer);
@@ -1024,7 +1452,7 @@ namespace LogicShared.LiteNetLib
                     //Send shutdown
                     SendRawAndRecycle(NetPacketPool.GetWithProperty(PacketProperty.ShutdownOk), remoteEndPoint);
                     break;
-                case PacketProperty.ConnectAccept:
+                case PacketProperty.ConnectAccept:  //同意连接请求
                     if (!peerFound)
                         return;
                     var connAccept = NetConnectAcceptPacket.FromData(packet);
@@ -1040,6 +1468,13 @@ namespace LogicShared.LiteNetLib
             }
         }
 
+        /// <summary>
+        /// 创建收到网络包事件
+        /// </summary>
+        /// <param name="packet">收到的网络包</param>
+        /// <param name="method"></param>
+        /// <param name="headerSize"></param>
+        /// <param name="fromPeer">网络包从这个peer收到的</param>
         internal void CreateReceiveEvent(NetPacket packet, DeliveryMethod method, int headerSize, NetPeer fromPeer)
         {
             NetEvent evt;
@@ -1067,310 +1502,57 @@ namespace LogicShared.LiteNetLib
             }
         }
 
-        /// <summary>
-        /// Send data to all connected peers (channel - 0)
-        /// </summary>
-        /// <param name="writer">DataWriter with data</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        public void SendToAll(NetDataWriter writer, DeliveryMethod options)
+        #endregion
+
+        #region Get Peer Method
+        
+        private bool TryGetPeer(IPEndPoint endPoint, out NetPeer peer)
         {
-            SendToAll(writer.Data, 0, writer.Length, options);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers (channel - 0)
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        public void SendToAll(byte[] data, DeliveryMethod options)
-        {
-            SendToAll(data, 0, data.Length, options);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers (channel - 0)
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="start">Start of data</param>
-        /// <param name="length">Length of data</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        public void SendToAll(byte[] data, int start, int length, DeliveryMethod options)
-        {
-            SendToAll(data, start, length, 0, options);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers
-        /// </summary>
-        /// <param name="writer">DataWriter with data</param>
-        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        public void SendToAll(NetDataWriter writer, byte channelNumber, DeliveryMethod options)
-        {
-            SendToAll(writer.Data, 0, writer.Length, channelNumber, options);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        public void SendToAll(byte[] data, byte channelNumber, DeliveryMethod options)
-        {
-            SendToAll(data, 0, data.Length, channelNumber, options);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="start">Start of data</param>
-        /// <param name="length">Length of data</param>
-        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        public void SendToAll(byte[] data, int start, int length, byte channelNumber, DeliveryMethod options)
-        {
-            try
-            {
-                _peersLock.EnterReadLock();
-                for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
-                    netPeer.Send(data, start, length, channelNumber, options);
-            }
-            finally
-            {
-                _peersLock.ExitReadLock();
-            }
-        }
-
-        /// <summary>
-        /// Send data to all connected peers (channel - 0)
-        /// </summary>
-        /// <param name="writer">DataWriter with data</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        /// <param name="excludePeer">Excluded peer</param>
-        public void SendToAll(NetDataWriter writer, DeliveryMethod options, NetPeer excludePeer)
-        {
-            SendToAll(writer.Data, 0, writer.Length, 0, options, excludePeer);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers (channel - 0)
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        /// <param name="excludePeer">Excluded peer</param>
-        public void SendToAll(byte[] data, DeliveryMethod options, NetPeer excludePeer)
-        {
-            SendToAll(data, 0, data.Length, 0, options, excludePeer);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers (channel - 0)
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="start">Start of data</param>
-        /// <param name="length">Length of data</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        /// <param name="excludePeer">Excluded peer</param>
-        public void SendToAll(byte[] data, int start, int length, DeliveryMethod options, NetPeer excludePeer)
-        {
-            SendToAll(data, start, length, 0, options, excludePeer);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers
-        /// </summary>
-        /// <param name="writer">DataWriter with data</param>
-        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        /// <param name="excludePeer">Excluded peer</param>
-        public void SendToAll(NetDataWriter writer, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)
-        {
-            SendToAll(writer.Data, 0, writer.Length, channelNumber, options, excludePeer);
-        }
-
-        /// <summary>
-        /// Send data to all connected peers
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        /// <param name="excludePeer">Excluded peer</param>
-        public void SendToAll(byte[] data, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)
-        {
-            SendToAll(data, 0, data.Length, channelNumber, options, excludePeer);
-        }
-
-
-        /// <summary>
-        /// Send data to all connected peers
-        /// </summary>
-        /// <param name="data">Data</param>
-        /// <param name="start">Start of data</param>
-        /// <param name="length">Length of data</param>
-        /// <param name="channelNumber">Number of channel (from 0 to channelsCount - 1)</param>
-        /// <param name="options">Send options (reliable, unreliable, etc.)</param>
-        /// <param name="excludePeer">Excluded peer</param>
-        public void SendToAll(byte[] data, int start, int length, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)
-        {
-            try
-            {
-                _peersLock.EnterReadLock();
-                for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
-                {
-                    if (netPeer != excludePeer)
-                        netPeer.Send(data, start, length, channelNumber, options);
-                }
-            }
-            finally
-            {
-                _peersLock.ExitReadLock();
-            }
-        }
-
-        /// <summary>
-        /// Start logic thread and listening on available port
-        /// </summary>
-        public bool Start()
-        {
-            return Start(0);
-        }
-
-        /// <summary>
-        /// Start logic thread and listening on selected port
-        /// </summary>
-        /// <param name="addressIPv4">bind to specific ipv4 address</param>
-        /// <param name="addressIPv6">bind to specific ipv6 address</param>
-        /// <param name="port">port to listen</param>
-        public bool Start(IPAddress addressIPv4, IPAddress addressIPv6, int port)
-        {
-            if (!_socket.Bind(addressIPv4, addressIPv6, port, ReuseAddress, IPv6Enabled))
-                return false;
-            _logicThread = new Thread(UpdateLogic) { Name = "LogicThread", IsBackground = true };
-            _logicThread.Start();
-            return true;
-        }
-
-        /// <summary>
-        /// Start logic thread and listening on selected port
-        /// </summary>
-        /// <param name="addressIPv4">bind to specific ipv4 address</param>
-        /// <param name="addressIPv6">bind to specific ipv6 address</param>
-        /// <param name="port">port to listen</param>
-        public bool Start(string addressIPv4, string addressIPv6, int port)
-        {
-            IPAddress ipv4 = NetUtils.ResolveAddress(addressIPv4);
-            IPAddress ipv6 = NetUtils.ResolveAddress(addressIPv6);
-            return Start(ipv4, ipv6, port);
-        }
-
-        /// <summary>
-        /// Start logic thread and listening on selected port
-        /// </summary>
-        /// <param name="port">port to listen</param>
-        public bool Start(int port)
-        {
-            return Start(IPAddress.Any, IPAddress.IPv6Any, port);
-        }
-
-        /// <summary>
-        /// Send message without connection
-        /// </summary>
-        /// <param name="message">Raw data</param>
-        /// <param name="remoteEndPoint">Packet destination</param>
-        /// <returns>Operation result</returns>
-        public bool SendUnconnectedMessage(byte[] message, IPEndPoint remoteEndPoint)
-        {
-            return SendUnconnectedMessage(message, 0, message.Length, remoteEndPoint);
-        }
-
-        /// <summary>
-        /// Send message without connection
-        /// </summary>
-        /// <param name="writer">Data serializer</param>
-        /// <param name="remoteEndPoint">Packet destination</param>
-        /// <returns>Operation result</returns>
-        public bool SendUnconnectedMessage(NetDataWriter writer, IPEndPoint remoteEndPoint)
-        {
-            return SendUnconnectedMessage(writer.Data, 0, writer.Length, remoteEndPoint);
-        }
-
-        /// <summary>
-        /// Send message without connection
-        /// </summary>
-        /// <param name="message">Raw data</param>
-        /// <param name="start">data start</param>
-        /// <param name="length">data length</param>
-        /// <param name="remoteEndPoint">Packet destination</param>
-        /// <returns>Operation result</returns>
-        public bool SendUnconnectedMessage(byte[] message, int start, int length, IPEndPoint remoteEndPoint)
-        {
-            //No need for CRC here, SendRaw does that
-            NetPacket packet = NetPacketPool.GetWithData(PacketProperty.UnconnectedMessage, message, start, length);
-            return SendRawAndRecycle(packet, remoteEndPoint) > 0;
-        }
-
-        public bool SendBroadcast(NetDataWriter writer, int port)
-        {
-            return SendBroadcast(writer.Data, 0, writer.Length, port);
-        }
-
-        public bool SendBroadcast(byte[] data, int port)
-        {
-            return SendBroadcast(data, 0, data.Length, port);
-        }
-
-        public bool SendBroadcast(byte[] data, int start, int length, int port)
-        {
-            NetPacket packet;
-            if (_extraPacketLayer != null)
-            {
-                var headerSize = NetPacket.GetHeaderSize(PacketProperty.Broadcast);
-                packet = NetPacketPool.GetPacket(headerSize + length + _extraPacketLayer.ExtraPacketSizeForLayer);
-                packet.Property = PacketProperty.Broadcast;
-                Buffer.BlockCopy(data, start, packet.RawData, headerSize, length);
-                var checksumComputeStart = 0;
-                int preCrcLength = length + headerSize;
-                _extraPacketLayer.ProcessOutBoundPacket(null, ref packet.RawData, ref checksumComputeStart, ref preCrcLength);
-            }
-            else
-            {
-                packet = NetPacketPool.GetWithData(PacketProperty.Broadcast, data, start, length);
-            }
-
-            bool result = _socket.SendBroadcast(packet.RawData, 0, packet.Size, port);
-            NetPacketPool.Recycle(packet);
+            _peersLock.EnterReadLock();
+            bool result = _peersDict.TryGetValue(endPoint, out peer);
+            _peersLock.ExitReadLock();
             return result;
         }
 
         /// <summary>
-        /// Triggers update and send logic immediately (works asynchronously)
+        /// Return peers count with connection state
         /// </summary>
-        public void TriggerUpdate()
+        /// <param name="peerState">peer connection state (you can use as bit flags)</param>
+        /// <returns>peers count</returns>
+        public int GetPeersCount(ConnectionState peerState)
         {
-            _updateTriggerEvent.Set();
+            int count = 0;
+            _peersLock.EnterReadLock();
+            for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
+            {
+                if ((netPeer.ConnectionState & peerState) != 0)
+                    count++;
+            }
+            _peersLock.ExitReadLock();
+            return count;
         }
 
         /// <summary>
-        /// Receive all pending events. Call this in game update code
+        /// Get copy of peers (without allocations)
         /// </summary>
-        public void PollEvents()
+        /// <param name="peers">List that will contain result</param>
+        /// <param name="peerState">State of peers</param>
+        public void GetPeersNonAlloc(List<NetPeer> peers, ConnectionState peerState)
         {
-            if (UnsyncedEvents)
-                return;
-            int eventsCount;
-            lock (_netEventsQueue)
-                eventsCount = _netEventsQueue.Count;
-            for(int i = 0; i < eventsCount; i++)
+            peers.Clear();
+            _peersLock.EnterReadLock();
+            for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
             {
-                NetEvent evt;
-                lock (_netEventsQueue)
-                    evt = _netEventsQueue.Dequeue();
-                ProcessEvent(evt);
+                if ((netPeer.ConnectionState & peerState) != 0)
+                    peers.Add(netPeer);
             }
+            _peersLock.ExitReadLock();
         }
+        
+        #endregion
 
+        #region Connet Method
+        
         /// <summary>
         /// Connect to remote host
         /// </summary>
@@ -1464,87 +1646,12 @@ namespace LogicShared.LiteNetLib
 
             return peer;
         }
+        
+        #endregion
+        
+        #region Disconnect Method
 
-        /// <summary>
-        /// Force closes connection and stop all threads.
-        /// </summary>
-        public void Stop()
-        {
-            Stop(true);
-        }
-
-        /// <summary>
-        /// Force closes connection and stop all threads.
-        /// </summary>
-        /// <param name="sendDisconnectMessages">Send disconnect messages</param>
-        public void Stop(bool sendDisconnectMessages)
-        {
-            if (!_socket.IsRunning)
-                return;
-            Logger.Debug("[NM] Stop");
-
-            //Send last disconnect
-            for(var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
-                netPeer.Shutdown(null, 0, 0, !sendDisconnectMessages);
-
-            //Stop
-            _socket.Close(false);
-            _updateTriggerEvent.Set();
-            _logicThread.Join();
-            _logicThread = null;
-
-            //clear peers
-            _peersLock.EnterWriteLock();
-            _headPeer = null;
-            _peersDict.Clear();
-            _peersArray = new NetPeer[32];
-            _peersLock.ExitWriteLock();
-            lock(_peerIds)
-                _peerIds.Clear();
-#if DEBUG
-            lock (_pingSimulationList)
-                _pingSimulationList.Clear();
-#endif
-            _connectedPeersCount = 0;
-            lock(_netEventsQueue)
-                _netEventsQueue.Clear();
-        }
-
-        /// <summary>
-        /// Return peers count with connection state
-        /// </summary>
-        /// <param name="peerState">peer connection state (you can use as bit flags)</param>
-        /// <returns>peers count</returns>
-        public int GetPeersCount(ConnectionState peerState)
-        {
-            int count = 0;
-            _peersLock.EnterReadLock();
-            for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
-            {
-                if ((netPeer.ConnectionState & peerState) != 0)
-                    count++;
-            }
-            _peersLock.ExitReadLock();
-            return count;
-        }
-
-        /// <summary>
-        /// Get copy of peers (without allocations)
-        /// </summary>
-        /// <param name="peers">List that will contain result</param>
-        /// <param name="peerState">State of peers</param>
-        public void GetPeersNonAlloc(List<NetPeer> peers, ConnectionState peerState)
-        {
-            peers.Clear();
-            _peersLock.EnterReadLock();
-            for (var netPeer = _headPeer; netPeer != null; netPeer = netPeer.NextPeer)
-            {
-                if ((netPeer.ConnectionState & peerState) != 0)
-                    peers.Add(netPeer);
-            }
-            _peersLock.ExitReadLock();
-        }
-
+        
         /// <summary>
         /// Disconnect all peers without any additional data
         /// </summary>
@@ -1636,6 +1743,71 @@ namespace LogicShared.LiteNetLib
                 null);
         }
 
+         /// <summary>
+        /// 强制断开连接
+        /// </summary>
+        /// <param name="peer"></param>
+        /// <param name="reason"></param>
+        /// <param name="socketErrorCode"></param>
+        /// <param name="eventData"></param>
+        internal void DisconnectPeerForce(NetPeer peer,
+            DisconnectReason reason,
+            SocketError socketErrorCode,
+            NetPacket eventData)
+        {
+            DisconnectPeer(peer, reason, socketErrorCode, true, null, 0, 0, eventData);
+        }
+
+        /// <summary>
+        /// 强制断开连接
+        /// </summary>
+        /// <param name="peer"></param>
+        /// <param name="reason"></param>
+        /// <param name="socketErrorCode"></param>
+        /// <param name="force"></param>
+        /// <param name="data"></param>
+        /// <param name="start"></param>
+        /// <param name="count"></param>
+        /// <param name="eventData"></param>
+        private void DisconnectPeer(
+            NetPeer peer, 
+            DisconnectReason reason,
+            SocketError socketErrorCode, 
+            bool force,
+            byte[] data,
+            int start,
+            int count,
+            NetPacket eventData)
+        {
+            var shutdownResult = peer.Shutdown(data, start, count, force);
+            if (shutdownResult == ShutdownResult.None)
+                return;
+            if(shutdownResult == ShutdownResult.WasConnected)
+                Interlocked.Decrement(ref _connectedPeersCount);
+            
+            
+            //内存屏障
+            //为什么要在这里设置内存屏障？
+            //因为现代CPU为了提高性能而采取乱序执行，而内存屏障可以阻止指令重排，也就是说内存屏障之前的指令和之后的指令不会由于指令优化等原因而导致乱序。
+            //这样就可以保证内存屏障之前的写入操作都已写入内存，内存屏障之后的读取操作读取到的都是之前写入的结果。因此，对于敏感的程序块，写操作之后，读操作之前
+            //可以插入内存屏障，保证读取的数据就是写入的数据
+            //参考：https://www.cnblogs.com/cdaniu/p/15733422.html
+            //因为CreateEvent()需要读取_connectedPeersCount的值，所以需要在写入之后，读取之前插入内存屏障
+            Thread.MemoryBarrier();
+            
+            
+            CreateEvent(
+                NetEvent.EType.Disconnect,
+                peer,
+                errorCode: socketErrorCode,
+                disconnectReason: reason,
+                readerSource: eventData);
+        }
+
+        #endregion
+
+        #region 迭代器
+        
         public NetPeerEnumerator GetEnumerator()
         {
             return new NetPeerEnumerator(_headPeer);
@@ -1650,5 +1822,7 @@ namespace LogicShared.LiteNetLib
         {
             return new NetPeerEnumerator(_headPeer);
         }
+        
+         #endregion
     }
 }
