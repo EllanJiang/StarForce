@@ -107,7 +107,7 @@ namespace LogicShared.LiteNetLib
         private BaseChannel _headChannel;                       //当前使用的频道
 
         //MTU
-        private int _mtu;                                //最小传输单元大小（字节）
+        private int _mtu;                                //最大传输单元大小（字节）
         private int _mtuIdx;                             //mtu索引（NetConstants.PossibleMtu的索引）
         private bool _finishMtu;                         //是否完成mtu
         private int _mtuCheckTimer;                      //mtu检查计时器
@@ -650,7 +650,7 @@ namespace LogicShared.LiteNetLib
         #region Set Or Get Method
 
         /// <summary>
-        /// 设置最小传输单元
+        /// 设置最大传输单元
         /// </summary>
         /// <param name="mtuIdx">NetConstants.PossibleMtu的索引</param>
         private void SetMtu(int mtuIdx)

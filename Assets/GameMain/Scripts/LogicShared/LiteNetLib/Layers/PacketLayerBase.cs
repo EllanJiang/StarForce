@@ -18,7 +18,21 @@ namespace LogicShared.LiteNetLib.Layers
             ExtraPacketSizeForLayer = extraPacketSizeForLayer;
         }
 
+        /// <summary>
+        /// 处理收到的网络包
+        /// </summary>
+        /// <param name="endPoint"></param>
+        /// <param name="data"></param>
+        /// <param name="offset"></param>
+        /// <param name="length"></param>
         public abstract void ProcessInboundPacket(IPEndPoint endPoint, ref byte[] data, ref int offset, ref int length);
+        /// <summary>
+        /// 处理即将发送的网络包
+        /// </summary>
+        /// <param name="endPoint"></param>
+        /// <param name="data"></param>
+        /// <param name="offset"></param>
+        /// <param name="length"></param>
         public abstract void ProcessOutBoundPacket(IPEndPoint endPoint, ref byte[] data, ref int offset, ref int length);
     }
 }

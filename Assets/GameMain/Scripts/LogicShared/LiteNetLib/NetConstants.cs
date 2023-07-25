@@ -32,7 +32,7 @@ namespace LogicShared.LiteNetLib
         internal const int ProtocolId = 11;                     //协议ID
         internal const int MaxUdpHeaderSize = 68;               //UDP最大包头长度
 
-        internal static readonly int[] PossibleMtu =            //潜在的最小传输单元大小（字节）
+        internal static readonly int[] PossibleMtu =            //潜在的最大传输单元大小（字节）
         {
             576  - MaxUdpHeaderSize, //minimal
             1232 - MaxUdpHeaderSize,
