@@ -11,6 +11,7 @@ using System.Net.Sockets;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Utils;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Server
@@ -42,7 +43,7 @@ namespace LiteNetLib.Test.Server
             _playerManager = new ServerPlayerManager(this);
             
             //register auto serializable vector2
-            _packetProcessor.RegisterNestedType<Vector2>((w, v) => w.Put(v), r => r.GetVector2());
+            _packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), r => r.GetVector2());
            
             //register auto serializable PlayerState
             _packetProcessor.RegisterNestedType<PlayerState>();
@@ -133,7 +134,7 @@ namespace LiteNetLib.Test.Server
             var player = new ServerPlayer(_playerManager, joinPacket.UserName, peer);
             _playerManager.AddPlayer(player);
 
-            player.Spawn(new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f)));
+            player.Spawn(new FixVector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f)));
 
             //Send join accept  向连入的客户端发送同意连接Packet
             var ja = new JoinAcceptPacket { Id = player.Id, ServerTick = _serverTick };

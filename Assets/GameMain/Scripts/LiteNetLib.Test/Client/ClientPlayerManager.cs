@@ -8,6 +8,7 @@
 
 using System.Collections.Generic;
 using LiteNetLib.Test.Shared;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -72,7 +73,7 @@ namespace LiteNetLib.Test.Client
         }
 
         //自己射击
-        public override void OnShoot(BasePlayer from, Vector2 to, BasePlayer hit)
+        public override void OnShoot(BasePlayer from, FixVector2 to, BasePlayer hit)
         {
             if(from == _clientPlayer)
                 _clientLogic.SpawnShoot(from.Position, to);

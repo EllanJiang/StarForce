@@ -368,9 +368,9 @@ namespace LogicShared.LiteNetLib
         /// <summary>
         /// 在NetConnectAcceptPacket中创建网络包
         /// </summary>
-        /// <param name="connectId"></param>
-        /// <param name="connectNum"></param>
-        /// <param name="reusedPeer"></param>
+        /// <param name="connectId">连接时间</param>
+        /// <param name="connectNum">连接次数</param>
+        /// <param name="reusedPeer">是否复用Peer</param>
         /// <returns></returns>
         public static NetPacket Make(long connectId, byte connectNum, bool reusedPeer)
         {

@@ -9,6 +9,7 @@
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Helpers;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -27,7 +28,7 @@ namespace LiteNetLib.Test.Client
         private bool _firstStateReceived;                       //是否成功接收过服务器命令
         private int _updateCount;                               //更新次数
 
-        public Vector2 LastPosition { get; private set; }       //玩家上一帧位置
+        public FixVector2 LastPosition { get; private set; }       //玩家上一帧位置
         public float LastRotation { get; private set; }         //玩家上一帧旋转角度
 
         public int StoredCommands => _predictionPlayerStates.Count; //预测命令个数

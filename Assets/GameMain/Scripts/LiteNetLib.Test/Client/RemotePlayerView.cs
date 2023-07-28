@@ -6,6 +6,7 @@
 * 修改记录：
 */
 
+using GameMain;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -20,7 +21,7 @@ namespace LiteNetLib.Test.Client
         public static RemotePlayerView Create(RemotePlayerView prefab, RemotePlayer player)
         {
             Quaternion rot = Quaternion.Euler(0f, player.Rotation, 0f);
-            var obj = Instantiate(prefab, player.Position, rot);
+            var obj = Instantiate(prefab,player.Position.ToVector() , rot);
             obj._player = player;
             return obj;
         }
@@ -29,7 +30,7 @@ namespace LiteNetLib.Test.Client
         private void Update()
         {
             _player.UpdatePosition(Time.deltaTime);
-            transform.position = _player.Position;
+            //transform.position = _player.Position;
             transform.rotation =  Quaternion.Euler(0f, 0f, _player.Rotation * Mathf.Rad2Deg );
         }
 

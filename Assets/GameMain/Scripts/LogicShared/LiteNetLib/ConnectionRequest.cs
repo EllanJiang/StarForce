@@ -39,7 +39,7 @@ namespace LogicShared.LiteNetLib
         public readonly IPEndPoint RemoteEndPoint;
         
         /// <summary>
-        /// 尝试激活连接
+        /// 尝试重新激活连接
         /// </summary>
         /// <returns></returns>
         private bool TryActivate()

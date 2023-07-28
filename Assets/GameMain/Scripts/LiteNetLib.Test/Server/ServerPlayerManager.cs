@@ -8,6 +8,7 @@
 
 using System.Collections.Generic;
 using LiteNetLib.Test.Shared;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Server
@@ -56,7 +57,7 @@ namespace LiteNetLib.Test.Server
         }
 
         //from射击hit玩家
-        public override void OnShoot(BasePlayer from, Vector2 to, BasePlayer hit)
+        public override void OnShoot(BasePlayer from, FixVector2 to, BasePlayer hit)
         {
             var serverPlayer = (ServerPlayer) from;
             //向其他客户端通知该玩家（from）开火了

@@ -7,29 +7,29 @@
 */
 
 using LogicShared.LiteNetLib.Utils;
-using UnityEngine;
+using LogicShared.TrueSync.Math;
 
 namespace LiteNetLib.Test.Shared
 {
     public static class Extensions
     {      
-        public static void Put(this NetDataWriter writer, Vector2 vector)
+        public static void Put(this NetDataWriter writer, FixVector2 vector)
         {
-            writer.Put(vector.x);
-            writer.Put(vector.y);
+            writer.Put(vector.x.AsInt());
+            writer.Put(vector.y.AsInt());
         }
 
-        public static Vector2 GetVector2(this NetDataReader reader)
+        public static FixVector2 GetVector2(this NetDataReader reader)
         {
-            Vector2 v;
-            v.x = reader.GetFloat();
-            v.y = reader.GetFloat();
+            FixVector2 v;
+            v.x = reader.GetInt();
+            v.y = reader.GetInt();
             return v;
         }
 
         public static T GetRandomElement<T>(this T[] array)
         {
-            return array[Random.Range(0, array.Length)];
+            return array[FixRandom.Range(0, array.Length)];
         }
     }
 }

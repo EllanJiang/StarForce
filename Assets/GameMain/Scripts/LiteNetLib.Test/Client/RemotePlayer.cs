@@ -8,6 +8,7 @@
 
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib.Helpers;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -31,7 +32,7 @@ namespace LiteNetLib.Test.Client
         }
 
         //生成远端玩家
-        public override void Spawn(Vector2 position)
+        public override void Spawn(FixVector2 position)
         {
             _buffer.FastClear();
             base.Spawn(position);
@@ -49,7 +50,7 @@ namespace LiteNetLib.Test.Client
             float lerpTime = NetworkGeneral.SeqDiff(dataB.Tick, dataA.Tick)*LogicTimer.FixedDelta;
             float t = _timer / lerpTime;
             //位置和旋转插值
-            _position = Vector2.Lerp(dataA.Position, dataB.Position, t);
+            _position = FixVector2.Lerp(dataA.Position, dataB.Position, t);
             _rotation = Mathf.Lerp(dataA.Rotation, dataB.Rotation, t);
             _timer += delta;
             if (_timer > lerpTime)

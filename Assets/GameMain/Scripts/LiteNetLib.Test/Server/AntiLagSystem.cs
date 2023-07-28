@@ -7,13 +7,14 @@
 */
 
 using System.Collections.Generic;
-using UnityEngine;
+using LogicShared.TrueSync.Math;
+
 
 namespace LiteNetLib.Test.Server
 {
     public struct StateInfo
     {
-        public Vector2 Position;
+        public FixVector2 Position;
     }
 
     /// <summary>

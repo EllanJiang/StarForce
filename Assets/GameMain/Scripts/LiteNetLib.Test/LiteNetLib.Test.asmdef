@@ -2,7 +2,8 @@
     "name": "LiteNetLib.Test",
     "rootNamespace": "",
     "references": [
-        "LogicShared"
+        "LogicShared",
+        "GameMain"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

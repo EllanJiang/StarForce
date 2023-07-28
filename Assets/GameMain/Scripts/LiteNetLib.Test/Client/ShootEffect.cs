@@ -7,7 +7,9 @@
 */
 
 using System;
+using GameMain;
 using LiteNetLib.Test.Shared;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -33,14 +35,14 @@ namespace LiteNetLib.Test.Client
             gameObject.SetActive(false);
         }
     
-        public void Spawn(Vector2 from, Vector2 to)
+        public void Spawn(FixVector2 from, FixVector2 to)
         {
-            _source.transform.position = from;
-            _target.transform.position = to;
-
-            _trailRenderer.transform.position = from;
-            _positions[0] = from;
-            _positions[1] = to;
+            _source.transform.position = from.ToVector();
+            _target.transform.position = to.ToVector();
+            
+            _trailRenderer.transform.position = from.ToVector();
+            _positions[0] = from.ToVector();
+            _positions[1] = to.ToVector();
             _trailRenderer.SetPositions(_positions);
             gameObject.SetActive(true);
         
@@ -66,4 +68,7 @@ namespace LiteNetLib.Test.Client
         }
     }
 
+    internal class FixVector3
+    {
+    }
 }

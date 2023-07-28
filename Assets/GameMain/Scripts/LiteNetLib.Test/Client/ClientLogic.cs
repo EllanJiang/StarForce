@@ -12,6 +12,7 @@ using System.Net.Sockets;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Utils;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -65,7 +66,7 @@ namespace LiteNetLib.Test.Client
             _playerManager = new ClientPlayerManager(this);
             _shootsPool = new GamePool<ShootEffect>(ShootEffectContructor, 100);
             _packetProcessor = new NetPacketProcessor();
-            _packetProcessor.RegisterNestedType<Vector2>((w, v) => w.Put(v), reader => reader.GetVector2());
+            _packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), reader => reader.GetVector2());
             _packetProcessor.RegisterNestedType<PlayerState>();
             _packetProcessor.SubscribeReusable<PlayerJoinedPacket>(OnPlayerJoined);
             _packetProcessor.SubscribeReusable<JoinAcceptPacket>(OnJoinAccept);
@@ -131,7 +132,7 @@ namespace LiteNetLib.Test.Client
         }
 
         //生成开火特效
-        public void SpawnShoot(Vector2 from, Vector2 to)
+        public void SpawnShoot(FixVector2 from, FixVector2 to)
         {
             var eff = _shootsPool.Get();
             eff.Spawn(from, to);

@@ -8,6 +8,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using LogicShared.TrueSync.Math;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Shared
@@ -26,10 +27,10 @@ namespace LiteNetLib.Test.Shared
         }
         
         //发起射线，用于判断是否射到敌人
-        public BasePlayer CastToPlayer(Vector2 from, Vector2 dir, float length, BasePlayer exclude)
+        public BasePlayer CastToPlayer(FixVector2 from, FixVector2 dir, float length, BasePlayer exclude)
         {
             BasePlayer result = null;
-            Vector2 target = from + dir * length;
+            FixVector2 target = from + dir * length;
             foreach(var p in this)  //遍历所有玩家
             {
                 if(p == exclude)
@@ -48,6 +49,6 @@ namespace LiteNetLib.Test.Shared
 
         public abstract void LogicUpdate();
         //射击玩家
-        public abstract void OnShoot(BasePlayer from, Vector2 to, BasePlayer hit);
+        public abstract void OnShoot(BasePlayer from, FixVector2 to, BasePlayer hit);
     }
 }

@@ -1181,7 +1181,7 @@ namespace LogicShared.LiteNetLib
         }
 
         /// <summary>
-        /// 处理连接
+        /// 处理客户端连接请求
         /// </summary>
         /// <param name="request"></param>
         /// <param name="rejectData"></param>

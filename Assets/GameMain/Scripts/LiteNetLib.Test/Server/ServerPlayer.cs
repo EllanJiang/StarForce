@@ -53,12 +53,12 @@ namespace LiteNetLib.Test.Server
            //Draw cross as server player
            const float sz = 0.1f;
            Debug.DrawLine(
-               new Vector2(Position.x - sz, Position.y ),
-               new Vector2(Position.x + sz, Position.y ), 
+               new Vector2(Position.x.AsFloat() - sz, Position.y.AsFloat()  ),
+               new Vector2(Position.x.AsFloat() + sz, Position.y.AsFloat() ), 
                Color.white);
            Debug.DrawLine(
-               new Vector2(Position.x, Position.y - sz ),
-               new Vector2(Position.x, Position.y + sz ), 
+               new Vector2(Position.x.AsFloat(), Position.y.AsFloat() - sz ),
+               new Vector2(Position.x.AsFloat(), Position.y.AsFloat() + sz ), 
                Color.white);
        
        }

@@ -8,7 +8,7 @@
 
 using System;
 using LogicShared.LiteNetLib.Utils;
-using UnityEngine;
+using LogicShared.TrueSync.Math;
 
 namespace LiteNetLib.Test.Shared
 {
@@ -66,7 +66,7 @@ namespace LiteNetLib.Test.Shared
     public struct SpawnPacket : INetSerializable
     {
         public long PlayerId;
-        public Vector2 Position;
+        public FixVector2 Position;
         
         public void Serialize(NetDataWriter writer)
         {
@@ -96,7 +96,7 @@ namespace LiteNetLib.Test.Shared
     {
         public byte FromPlayer;
         public ushort CommandId;
-        public Vector2 Hit;
+        public FixVector2 Hit;
         public ushort ServerTick;
         
         public void Serialize(NetDataWriter writer)
@@ -146,7 +146,7 @@ namespace LiteNetLib.Test.Shared
     public struct PlayerState : INetSerializable
     {
         public byte Id;
-        public Vector2 Position;
+        public FixVector2 Position;
         public float Rotation;
         public ushort Tick;
 

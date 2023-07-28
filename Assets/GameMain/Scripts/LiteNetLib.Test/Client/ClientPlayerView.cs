@@ -6,6 +6,7 @@
 * 修改记录：
 */
 
+using GameMain;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -22,7 +23,7 @@ namespace LiteNetLib.Test.Client
         public static ClientPlayerView Create(ClientPlayerView prefab, ClientPlayer player)
         {
             Quaternion rot = Quaternion.Euler(0f, player.Rotation, 0f);
-            var obj = Instantiate(prefab, player.Position, rot);
+            ClientPlayerView obj = Instantiate(prefab, player.Position.ToVector(), rot);
             obj._player = player;
             obj._name.text = player.Name;
             obj._mainCamera = Camera.main;
@@ -38,13 +39,13 @@ namespace LiteNetLib.Test.Client
             Vector2 velocty = new Vector2(horz, vert);
 
             Vector2 mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 dir = mousePos - _player.Position;
+            Vector2 dir = mousePos - _player.Position.ToVector2();
             float rotation = Mathf.Atan2(dir.y, dir.x);
             _player.SetInput(velocty, rotation, fire > 0f);
 
             //插值玩家位置
             float lerpT = ClientLogic.LogicTimer.LerpAlpha;
-            transform.position = Vector2.Lerp(_player.LastPosition, _player.Position, lerpT); //从上一帧位置插值到当帧位置
+            transform.position = Vector2.Lerp(_player.LastPosition.ToVector2(), _player.Position.ToVector2(), lerpT); //从上一帧位置插值到当帧位置
             float angle = Mathf.Lerp(_player.LastRotation, _player.Rotation, lerpT);                 //从上一帧的旋转角度插值到当帧的角度
             transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg );
         }

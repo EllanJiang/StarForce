@@ -504,7 +504,7 @@ namespace LogicShared.TrueSync.Math {
             return Fix64.Acos(a.normalized * b.normalized) * Fix64.Rad2Deg;
         }
 
-        public FixVector ToFPVector() {
+        public FixVector ToFixVector() {
             return new FixVector(this.x, this.y, 0);
         }
 
