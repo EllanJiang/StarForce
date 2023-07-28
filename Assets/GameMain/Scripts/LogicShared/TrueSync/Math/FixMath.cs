@@ -23,48 +23,48 @@ namespace LogicShared.TrueSync.Math {
     /// <summary>
     /// Contains common math operations.
     /// </summary>
-    public sealed class TSMath {
+    public sealed class FixMath {
 
         /// <summary>
         /// PI constant.
         /// </summary>
-        public static FP Pi = FP.Pi;
+        public static Fix64 Pi = Fix64.Pi;
 
         /**
         *  @brief PI over 2 constant.
         **/
-        public static FP PiOver2 = FP.PiOver2;
+        public static Fix64 PiOver2 = Fix64.PiOver2;
 
         /// <summary>
         /// A small value often used to decide if numeric 
         /// results are zero.
         /// </summary>
-		public static FP Epsilon = FP.Epsilon;
+		public static Fix64 Epsilon = Fix64.Epsilon;
 
         /**
         *  @brief Degree to radians constant.
         **/
-        public static FP Deg2Rad = FP.Deg2Rad;
+        public static Fix64 Deg2Rad = Fix64.Deg2Rad;
 
         /**
         *  @brief Radians to degree constant.
         **/
-        public static FP Rad2Deg = FP.Rad2Deg;
+        public static Fix64 Rad2Deg = Fix64.Rad2Deg;
 
 
         /**
-         * @brief FP infinity.
+         * @brief Fix64 infinity.
          * */
-        public static FP Infinity = FP.MaxValue;
+        public static Fix64 Infinity = Fix64.MaxValue;
 
         /// <summary>
         /// Gets the square root.
         /// </summary>
         /// <param name="number">The number to get the square root from.</param>
         /// <returns></returns>
-        #region public static FP Sqrt(FP number)
-        public static FP Sqrt(FP number) {
-            return FP.Sqrt(number);
+        #region public static Fix64 Sqrt(Fix64 number)
+        public static Fix64 Sqrt(Fix64 number) {
+            return Fix64.Sqrt(number);
         }
         #endregion
 
@@ -74,8 +74,8 @@ namespace LogicShared.TrueSync.Math {
         /// <param name="val1">The first value.</param>
         /// <param name="val2">The second value.</param>
         /// <returns>Returns the largest value.</returns>
-        #region public static FP Max(FP val1, FP val2)
-        public static FP Max(FP val1, FP val2) {
+        #region public static Fix64 Max(Fix64 val1, Fix64 val2)
+        public static Fix64 Max(Fix64 val1, Fix64 val2) {
             return (val1 > val2) ? val1 : val2;
         }
         #endregion
@@ -86,8 +86,8 @@ namespace LogicShared.TrueSync.Math {
         /// <param name="val1">The first value.</param>
         /// <param name="val2">The second value.</param>
         /// <returns>Returns the smallest value.</returns>
-        #region public static FP Min(FP val1, FP val2)
-        public static FP Min(FP val1, FP val2) {
+        #region public static Fix64 Min(Fix64 val1, Fix64 val2)
+        public static Fix64 Min(Fix64 val1, Fix64 val2) {
             return (val1 < val2) ? val1 : val2;
         }
         #endregion
@@ -99,9 +99,9 @@ namespace LogicShared.TrueSync.Math {
         /// <param name="val2">The second value.</param>
         /// <param name="val3">The third value.</param>
         /// <returns>Returns the largest value.</returns>
-        #region public static FP Max(FP val1, FP val2,FP val3)
-        public static FP Max(FP val1, FP val2, FP val3) {
-            FP max12 = (val1 > val2) ? val1 : val2;
+        #region public static Fix64 Max(Fix64 val1, Fix64 val2,Fix64 val3)
+        public static Fix64 Max(Fix64 val1, Fix64 val2, Fix64 val3) {
+            Fix64 max12 = (val1 > val2) ? val1 : val2;
             return (max12 > val3) ? max12 : val3;
         }
         #endregion
@@ -113,8 +113,8 @@ namespace LogicShared.TrueSync.Math {
         /// <param name="min">The minimum value.</param>
         /// <param name="max">The maximum value.</param>
         /// <returns>The clamped value.</returns>
-        #region public static FP Clamp(FP value, FP min, FP max)
-        public static FP Clamp(FP value, FP min, FP max) {
+        #region public static Fix64 Clamp(Fix64 value, Fix64 min, Fix64 max)
+        public static Fix64 Clamp(Fix64 value, Fix64 min, Fix64 max) {
             if (value < min)
             {
                 value = min;
@@ -129,17 +129,17 @@ namespace LogicShared.TrueSync.Math {
         #endregion
 
         /// <summary>
-        /// Returns a number which is within [FP.Zero, FP.One]
+        /// Returns a number which is within [Fix64.Zero, Fix64.One]
         /// </summary>
         /// <param name="value">The value to clamp.</param>
         /// <returns>The clamped value.</returns>
-        public static FP Clamp01(FP value)
+        public static Fix64 Clamp01(Fix64 value)
         {
-            if (value < FP.Zero)
-                return FP.Zero;
+            if (value < Fix64.Zero)
+                return Fix64.Zero;
 
-            if (value > FP.One)
-                return FP.One;
+            if (value > Fix64.One)
+                return Fix64.One;
 
             return value;
         }
@@ -150,79 +150,79 @@ namespace LogicShared.TrueSync.Math {
         /// <param name="matrix">The matrix.</param>
         /// <param name="result">The absolute matrix.</param>
         #region public static void Absolute(ref JMatrix matrix,out JMatrix result)
-        public static void Absolute(ref TSMatrix matrix, out TSMatrix result) {
-            result.M11 = FP.Abs(matrix.M11);
-            result.M12 = FP.Abs(matrix.M12);
-            result.M13 = FP.Abs(matrix.M13);
-            result.M21 = FP.Abs(matrix.M21);
-            result.M22 = FP.Abs(matrix.M22);
-            result.M23 = FP.Abs(matrix.M23);
-            result.M31 = FP.Abs(matrix.M31);
-            result.M32 = FP.Abs(matrix.M32);
-            result.M33 = FP.Abs(matrix.M33);
+        public static void Absolute(ref FixMatrix matrix, out FixMatrix result) {
+            result.M11 = Fix64.Abs(matrix.M11);
+            result.M12 = Fix64.Abs(matrix.M12);
+            result.M13 = Fix64.Abs(matrix.M13);
+            result.M21 = Fix64.Abs(matrix.M21);
+            result.M22 = Fix64.Abs(matrix.M22);
+            result.M23 = Fix64.Abs(matrix.M23);
+            result.M31 = Fix64.Abs(matrix.M31);
+            result.M32 = Fix64.Abs(matrix.M32);
+            result.M33 = Fix64.Abs(matrix.M33);
         }
         #endregion
 
         /// <summary>
         /// Returns the sine of value.
         /// </summary>
-        public static FP Sin(FP value) {
-            return FP.Sin(value);
+        public static Fix64 Sin(Fix64 value) {
+            return Fix64.Sin(value);
         }
 
         /// <summary>
         /// Returns the cosine of value.
         /// </summary>
-        public static FP Cos(FP value) {
-            return FP.Cos(value);
+        public static Fix64 Cos(Fix64 value) {
+            return Fix64.Cos(value);
         }
 
         /// <summary>
         /// Returns the tan of value.
         /// </summary>
-        public static FP Tan(FP value) {
-            return FP.Tan(value);
+        public static Fix64 Tan(Fix64 value) {
+            return Fix64.Tan(value);
         }
 
         /// <summary>
         /// Returns the arc sine of value.
         /// </summary>
-        public static FP Asin(FP value) {
-            return FP.Asin(value);
+        public static Fix64 Asin(Fix64 value) {
+            return Fix64.Asin(value);
         }
 
         /// <summary>
         /// Returns the arc cosine of value.
         /// </summary>
-        public static FP Acos(FP value) {
-            return FP.Acos(value);
+        public static Fix64 Acos(Fix64 value) {
+            return Fix64.Acos(value);
         }
 
         /// <summary>
         /// Returns the arc tan of value.
         /// </summary>
-        public static FP Atan(FP value) {
-            return FP.Atan(value);
+        public static Fix64 Atan(Fix64 value) {
+            return Fix64.Atan(value);
         }
 
         /// <summary>
         /// Returns the arc tan of coordinates x-y.
         /// </summary>
-        public static FP Atan2(FP y, FP x) {
-            return FP.Atan2(y, x);
+        public static Fix64 Atan2(Fix64 y, Fix64 x) {
+            return Fix64.Atan2(y, x);
         }
 
         /// <summary>
         /// Returns the largest integer less than or equal to the specified number.
         /// </summary>
-        public static FP Floor(FP value) {
-            return FP.Floor(value);
+        public static Fix64 Floor(Fix64 value) {
+            return Fix64.Floor(value);
         }
 
         /// <summary>
         /// Returns the smallest integral value that is greater than or equal to the specified number.
         /// </summary>
-        public static FP Ceiling(FP value) {
+        public static Fix64 Ceiling(Fix64 value) {
             return value;
         }
 
@@ -230,51 +230,51 @@ namespace LogicShared.TrueSync.Math {
         /// Rounds a value to the nearest integral value.
         /// If the value is halfway between an even and an uneven value, returns the even value.
         /// </summary>
-        public static FP Round(FP value) {
-            return FP.Round(value);
+        public static Fix64 Round(Fix64 value) {
+            return Fix64.Round(value);
         }
 
         /// <summary>
         /// Returns a number indicating the sign of a Fix64 number.
         /// Returns 1 if the value is positive, 0 if is 0, and -1 if it is negative.
         /// </summary>
-        public static int Sign(FP value) {
-            return FP.Sign(value);
+        public static int Sign(Fix64 value) {
+            return Fix64.Sign(value);
         }
 
         /// <summary>
         /// Returns the absolute value of a Fix64 number.
         /// Note: Abs(Fix64.MinValue) == Fix64.MaxValue.
         /// </summary>
-        public static FP Abs(FP value) {
-            return FP.Abs(value);                
+        public static Fix64 Abs(Fix64 value) {
+            return Fix64.Abs(value);                
         }
 
-        public static FP Barycentric(FP value1, FP value2, FP value3, FP amount1, FP amount2) {
+        public static Fix64 Barycentric(Fix64 value1, Fix64 value2, Fix64 value3, Fix64 amount1, Fix64 amount2) {
             return value1 + (value2 - value1) * amount1 + (value3 - value1) * amount2;
         }
 
-        public static FP CatmullRom(FP value1, FP value2, FP value3, FP value4, FP amount) {
+        public static Fix64 CatmullRom(Fix64 value1, Fix64 value2, Fix64 value3, Fix64 value4, Fix64 amount) {
             // Using formula from http://www.mvps.org/directx/articles/catmull/
             // Internally using FPs not to lose precission
-            FP amountSquared = amount * amount;
-            FP amountCubed = amountSquared * amount;
-            return (FP)(0.5 * (2.0 * value2 +
+            Fix64 amountSquared = amount * amount;
+            Fix64 amountCubed = amountSquared * amount;
+            return (Fix64)(0.5 * (2.0 * value2 +
                                  (value3 - value1) * amount +
                                  (2.0 * value1 - 5.0 * value2 + 4.0 * value3 - value4) * amountSquared +
                                  (3.0 * value2 - value1 - 3.0 * value3 + value4) * amountCubed));
         }
 
-        public static FP Distance(FP value1, FP value2) {
-            return FP.Abs(value1 - value2);
+        public static Fix64 Distance(Fix64 value1, Fix64 value2) {
+            return Fix64.Abs(value1 - value2);
         }
 
-        public static FP Hermite(FP value1, FP tangent1, FP value2, FP tangent2, FP amount) {
-            // All transformed to FP not to lose precission
+        public static Fix64 Hermite(Fix64 value1, Fix64 tangent1, Fix64 value2, Fix64 tangent2, Fix64 amount) {
+            // All transformed to Fix64 not to lose precission
             // Otherwise, for high numbers of param:amount the result is NaN instead of Infinity
-            FP v1 = value1, v2 = value2, t1 = tangent1, t2 = tangent2, s = amount, result;
-            FP sCubed = s * s * s;
-            FP sSquared = s * s;
+            Fix64 v1 = value1, v2 = value2, t1 = tangent1, t2 = tangent2, s = amount, result;
+            Fix64 sCubed = s * s * s;
+            Fix64 sSquared = s * s;
 
             if (amount == 0f)
                 result = value1;
@@ -285,24 +285,24 @@ namespace LogicShared.TrueSync.Math {
                          (3 * v2 - 3 * v1 - 2 * t1 - t2) * sSquared +
                          t1 * s +
                          v1;
-            return (FP)result;
+            return (Fix64)result;
         }
 
-        public static FP Lerp(FP value1, FP value2, FP amount) {
+        public static Fix64 Lerp(Fix64 value1, Fix64 value2, Fix64 amount) {
             return value1 + (value2 - value1) * Clamp01(amount);
         }
 
-        public static FP InverseLerp(FP value1, FP value2, FP amount) {
+        public static Fix64 InverseLerp(Fix64 value1, Fix64 value2, Fix64 amount) {
             if (value1 != value2)
                 return Clamp01((amount - value1) / (value2 - value1));
-            return FP.Zero;
+            return Fix64.Zero;
         }
 
-        public static FP SmoothStep(FP value1, FP value2, FP amount) {
+        public static Fix64 SmoothStep(Fix64 value1, Fix64 value2, Fix64 amount) {
             // It is expected that 0 < amount < 1
             // If amount < 0, return value1
             // If amount > 1, return value2
-            FP result = Clamp(amount, 0f, 1f);
+            Fix64 result = Clamp(amount, 0f, 1f);
             result = Hermite(value1, 0f, value2, 0f, result);
             return result;
         }
@@ -312,11 +312,11 @@ namespace LogicShared.TrueSync.Math {
         /// Returns 2 raised to the specified power.
         /// Provides at least 6 decimals of accuracy.
         /// </summary>
-        internal static FP Pow2(FP x)
+        internal static Fix64 Pow2(Fix64 x)
         {
             if (x.RawValue == 0)
             {
-                return FP.One;
+                return Fix64.One;
             }
 
             // Avoid negative arguments by exploiting that exp(-x) = 1/exp(x).
@@ -326,17 +326,17 @@ namespace LogicShared.TrueSync.Math {
                 x = -x;
             }
 
-            if (x == FP.One)
+            if (x == Fix64.One)
             {
-                return neg ? FP.One / (FP)2 : (FP)2;
+                return neg ? Fix64.One / (Fix64)2 : (Fix64)2;
             }
-            if (x >= FP.Log2Max)
+            if (x >= Fix64.Log2Max)
             {
-                return neg ? FP.One / FP.MaxValue : FP.MaxValue;
+                return neg ? Fix64.One / Fix64.MaxValue : Fix64.MaxValue;
             }
-            if (x <= FP.Log2Min)
+            if (x <= Fix64.Log2Min)
             {
-                return neg ? FP.MaxValue : FP.Zero;
+                return neg ? Fix64.MaxValue : Fix64.Zero;
             }
 
             /* The algorithm is based on the power series for exp(x):
@@ -348,22 +348,22 @@ namespace LogicShared.TrueSync.Math {
 
             int integerPart = (int)Floor(x);
             // Take fractional part of exponent
-            x = FP.FromRaw(x.RawValue & 0x00000000FFFFFFFF);
+            x = Fix64.FromRaw(x.RawValue & 0x00000000FFFFFFFF);
 
-            var result = FP.One;
-            var term = FP.One;
+            var result = Fix64.One;
+            var term = Fix64.One;
             int i = 1;
             while (term.RawValue != 0)
             {
-                term = FP.FastMul(FP.FastMul(x, term), FP.Ln2) / (FP)i;
+                term = Fix64.FastMul(Fix64.FastMul(x, term), Fix64.Ln2) / (Fix64)i;
                 result += term;
                 i++;
             }
 
-            result = FP.FromRaw(result.RawValue << integerPart);
+            result = Fix64.FromRaw(result.RawValue << integerPart);
             if (neg)
             {
-                result = FP.One / result;
+                result = Fix64.One / result;
             }
 
             return result;
@@ -376,7 +376,7 @@ namespace LogicShared.TrueSync.Math {
         /// <exception cref="ArgumentOutOfRangeException">
         /// The argument was non-positive
         /// </exception>
-        internal static FP Log2(FP x)
+        internal static Fix64 Log2(Fix64 x)
         {
             if (x.RawValue <= 0)
             {
@@ -387,36 +387,36 @@ namespace LogicShared.TrueSync.Math {
             // algorithm (C. S. Turner,  "A Fast Binary Logarithm Algorithm", IEEE Signal
             //     Processing Mag., pp. 124,140, Sep. 2010.)
 
-            long b = 1U << (FP.FRACTIONAL_PLACES - 1);
+            long b = 1U << (Fix64.FRACTIONAL_PLACES - 1);
             long y = 0;
 
             long rawX = x.RawValue;
-            while (rawX < FP.ONE)
+            while (rawX < Fix64.ONE)
             {
                 rawX <<= 1;
-                y -= FP.ONE;
+                y -= Fix64.ONE;
             }
 
-            while (rawX >= (FP.ONE << 1))
+            while (rawX >= (Fix64.ONE << 1))
             {
                 rawX >>= 1;
-                y += FP.ONE;
+                y += Fix64.ONE;
             }
 
-            var z = FP.FromRaw(rawX);
+            var z = Fix64.FromRaw(rawX);
 
-            for (int i = 0; i < FP.FRACTIONAL_PLACES; i++)
+            for (int i = 0; i < Fix64.FRACTIONAL_PLACES; i++)
             {
-                z = FP.FastMul(z, z);
-                if (z.RawValue >= (FP.ONE << 1))
+                z = Fix64.FastMul(z, z);
+                if (z.RawValue >= (Fix64.ONE << 1))
                 {
-                    z = FP.FromRaw(z.RawValue >> 1);
+                    z = Fix64.FromRaw(z.RawValue >> 1);
                     y += b;
                 }
                 b >>= 1;
             }
 
-            return FP.FromRaw(y);
+            return Fix64.FromRaw(y);
         }
 
         /// <summary>
@@ -426,9 +426,9 @@ namespace LogicShared.TrueSync.Math {
         /// <exception cref="ArgumentOutOfRangeException">
         /// The argument was non-positive
         /// </exception>
-        public static FP Ln(FP x)
+        public static Fix64 Ln(Fix64 x)
         {
-            return FP.FastMul(Log2(x), FP.Ln2);
+            return Fix64.FastMul(Log2(x), Fix64.Ln2);
         }
 
         /// <summary>
@@ -441,16 +441,16 @@ namespace LogicShared.TrueSync.Math {
         /// <exception cref="ArgumentOutOfRangeException">
         /// The base was negative, with a non-zero exponent
         /// </exception>
-        public static FP Pow(FP b, FP exp)
+        public static Fix64 Pow(Fix64 b, Fix64 exp)
         {
-            if (b == FP.One)
+            if (b == Fix64.One)
             {
-                return FP.One;
+                return Fix64.One;
             }
 
             if (exp.RawValue == 0)
             {
-                return FP.One;
+                return Fix64.One;
             }
 
             if (b.RawValue == 0)
@@ -458,71 +458,71 @@ namespace LogicShared.TrueSync.Math {
                 if (exp.RawValue < 0)
                 {
                     //throw new DivideByZeroException();
-                    return FP.MaxValue;
+                    return Fix64.MaxValue;
                 }
-                return FP.Zero;
+                return Fix64.Zero;
             }
 
-            FP log2 = Log2(b);
+            Fix64 log2 = Log2(b);
             return Pow2(exp * log2);
         }
 
-        public static FP MoveTowards(FP current, FP target, FP maxDelta)
+        public static Fix64 MoveTowards(Fix64 current, Fix64 target, Fix64 maxDelta)
         {
             if (Abs(target - current) <= maxDelta)
                 return target;
             return (current + (Sign(target - current)) * maxDelta);
         }
 
-        public static FP Repeat(FP t, FP length)
+        public static Fix64 Repeat(Fix64 t, Fix64 length)
         {
             return (t - (Floor(t / length) * length));
         }
 
-        public static FP DeltaAngle(FP current, FP target)
+        public static Fix64 DeltaAngle(Fix64 current, Fix64 target)
         {
-            FP num = Repeat(target - current, (FP)360f);
-            if (num > (FP)180f)
+            Fix64 num = Repeat(target - current, (Fix64)360f);
+            if (num > (Fix64)180f)
             {
-                num -= (FP)360f;
+                num -= (Fix64)360f;
             }
             return num;
         }
 
-        public static FP MoveTowardsAngle(FP current, FP target, float maxDelta)
+        public static Fix64 MoveTowardsAngle(Fix64 current, Fix64 target, float maxDelta)
         {
             target = current + DeltaAngle(current, target);
             return MoveTowards(current, target, maxDelta);
         }
 
-        public static FP SmoothDamp(FP current, FP target, ref FP currentVelocity, FP smoothTime, FP maxSpeed)
+        public static Fix64 SmoothDamp(Fix64 current, Fix64 target, ref Fix64 currentVelocity, Fix64 smoothTime, Fix64 maxSpeed)
         {
-            FP deltaTime = FP.EN2;
+            Fix64 deltaTime = Fix64.EN2;
             return SmoothDamp(current, target, ref currentVelocity, smoothTime, maxSpeed, deltaTime);
         }
 
-        public static FP SmoothDamp(FP current, FP target, ref FP currentVelocity, FP smoothTime)
+        public static Fix64 SmoothDamp(Fix64 current, Fix64 target, ref Fix64 currentVelocity, Fix64 smoothTime)
         {
-            FP deltaTime = FP.EN2;
-            FP positiveInfinity = -FP.MaxValue;
+            Fix64 deltaTime = Fix64.EN2;
+            Fix64 positiveInfinity = -Fix64.MaxValue;
             return SmoothDamp(current, target, ref currentVelocity, smoothTime, positiveInfinity, deltaTime);
         }
 
-        public static FP SmoothDamp(FP current, FP target, ref FP currentVelocity, FP smoothTime, FP maxSpeed, FP deltaTime)
+        public static Fix64 SmoothDamp(Fix64 current, Fix64 target, ref Fix64 currentVelocity, Fix64 smoothTime, Fix64 maxSpeed, Fix64 deltaTime)
         {
-            smoothTime = Max(FP.EN4, smoothTime);
-            FP num = (FP)2f / smoothTime;
-            FP num2 = num * deltaTime;
-            FP num3 = FP.One / (((FP.One + num2) + (((FP)0.48f * num2) * num2)) + ((((FP)0.235f * num2) * num2) * num2));
-            FP num4 = current - target;
-            FP num5 = target;
-            FP max = maxSpeed * smoothTime;
+            smoothTime = Max(Fix64.EN4, smoothTime);
+            Fix64 num = (Fix64)2f / smoothTime;
+            Fix64 num2 = num * deltaTime;
+            Fix64 num3 = Fix64.One / (((Fix64.One + num2) + (((Fix64)0.48f * num2) * num2)) + ((((Fix64)0.235f * num2) * num2) * num2));
+            Fix64 num4 = current - target;
+            Fix64 num5 = target;
+            Fix64 max = maxSpeed * smoothTime;
             num4 = Clamp(num4, -max, max);
             target = current - num4;
-            FP num7 = (currentVelocity + (num * num4)) * deltaTime;
+            Fix64 num7 = (currentVelocity + (num * num4)) * deltaTime;
             currentVelocity = (currentVelocity - (num * num7)) * num3;
-            FP num8 = target + ((num4 + num7) * num3);
-            if (((num5 - current) > FP.Zero) == (num8 > num5))
+            Fix64 num8 = target + ((num4 + num7) * num3);
+            if (((num5 - current) > Fix64.Zero) == (num8 > num5))
             {
                 num8 = num5;
                 currentVelocity = (num8 - num5) / deltaTime;

@@ -25,94 +25,67 @@ namespace LogicShared.TrueSync.Math
     /// A vector structure.
     /// </summary>
     [Serializable]
-    public struct TSVector
+    public struct FixVector4
     {
 
-        private static FP ZeroEpsilonSq = TSMath.Epsilon;
-        internal static TSVector InternalZero;
-        internal static TSVector Arbitrary;
+        private static Fix64 ZeroEpsilonSq = FixMath.Epsilon;
+        internal static FixVector4 InternalZero;
 
         /// <summary>The X component of the vector.</summary>
-        public FP x;
+        public Fix64 x;
         /// <summary>The Y component of the vector.</summary>
-        public FP y;
+        public Fix64 y;
         /// <summary>The Z component of the vector.</summary>
-        public FP z;
+        public Fix64 z;
+        /// <summary>The W component of the vector.</summary>
+        public Fix64 w;
 
         #region Static readonly variables
         /// <summary>
-        /// A vector with components (0,0,0);
+        /// A vector with components (0,0,0,0);
         /// </summary>
-        public static readonly TSVector zero;
+        public static readonly FixVector4 zero;
         /// <summary>
-        /// A vector with components (-1,0,0);
+        /// A vector with components (1,1,1,1);
         /// </summary>
-        public static readonly TSVector left;
-        /// <summary>
-        /// A vector with components (1,0,0);
-        /// </summary>
-        public static readonly TSVector right;
-        /// <summary>
-        /// A vector with components (0,1,0);
-        /// </summary>
-        public static readonly TSVector up;
-        /// <summary>
-        /// A vector with components (0,-1,0);
-        /// </summary>
-        public static readonly TSVector down;
-        /// <summary>
-        /// A vector with components (0,0,-1);
-        /// </summary>
-        public static readonly TSVector back;
-        /// <summary>
-        /// A vector with components (0,0,1);
-        /// </summary>
-        public static readonly TSVector forward;
-        /// <summary>
-        /// A vector with components (1,1,1);
-        /// </summary>
-        public static readonly TSVector one;
+        public static readonly FixVector4 one;
         /// <summary>
         /// A vector with components 
-        /// (FP.MinValue,FP.MinValue,FP.MinValue);
+        /// (Fix64.MinValue,Fix64.MinValue,Fix64.MinValue);
         /// </summary>
-        public static readonly TSVector MinValue;
+        public static readonly FixVector4 MinValue;
         /// <summary>
         /// A vector with components 
-        /// (FP.MaxValue,FP.MaxValue,FP.MaxValue);
+        /// (Fix64.MaxValue,Fix64.MaxValue,Fix64.MaxValue);
         /// </summary>
-        public static readonly TSVector MaxValue;
+        public static readonly FixVector4 MaxValue;
         #endregion
 
         #region Private static constructor
-        static TSVector()
+        static FixVector4()
         {
-            one = new TSVector(1, 1, 1);
-            zero = new TSVector(0, 0, 0);
-            left = new TSVector(-1, 0, 0);
-            right = new TSVector(1, 0, 0);
-            up = new TSVector(0, 1, 0);
-            down = new TSVector(0, -1, 0);
-            back = new TSVector(0, 0, -1);
-            forward = new TSVector(0, 0, 1);
-            MinValue = new TSVector(FP.MinValue);
-            MaxValue = new TSVector(FP.MaxValue);
-            Arbitrary = new TSVector(1, 1, 1);
+            one = new FixVector4(1, 1, 1, 1);
+            zero = new FixVector4(0, 0, 0, 0);
+            MinValue = new FixVector4(Fix64.MinValue);
+            MaxValue = new FixVector4(Fix64.MaxValue);
             InternalZero = zero;
         }
         #endregion
 
-        public static TSVector Abs(TSVector other) {
-            return new TSVector(FP.Abs(other.x), FP.Abs(other.y), FP.Abs(other.z));
+        public static FixVector4 Abs(FixVector4 other)
+        {
+            return new FixVector4(Fix64.Abs(other.x), Fix64.Abs(other.y), Fix64.Abs(other.z), Fix64.Abs(other.z));
         }
 
         /// <summary>
         /// Gets the squared length of the vector.
         /// </summary>
         /// <returns>Returns the squared length of the vector.</returns>
-        public FP sqrMagnitude {
-            get { 
-                return (((this.x * this.x) + (this.y * this.y)) + (this.z * this.z));
+        public Fix64 sqrMagnitude
+        {
+            get
+            {
+                return (((this.x * this.x) + (this.y * this.y)) + (this.z * this.z) + (this.w * this.w));
             }
         }
 
@@ -120,14 +93,17 @@ namespace LogicShared.TrueSync.Math
         /// Gets the length of the vector.
         /// </summary>
         /// <returns>Returns the length of the vector.</returns>
-        public FP magnitude {
-            get {
-                FP num = ((this.x * this.x) + (this.y * this.y)) + (this.z * this.z);
-                return FP.Sqrt(num);
+        public Fix64 magnitude
+        {
+            get
+            {
+                Fix64 num = sqrMagnitude;
+                return Fix64.Sqrt(num);
             }
         }
 
-        public static TSVector ClampMagnitude(TSVector vector, FP maxLength) {
+        public static FixVector4 ClampMagnitude(FixVector4 vector, Fix64 maxLength)
+        {
             return Normalize(vector) * maxLength;
         }
 
@@ -135,9 +111,11 @@ namespace LogicShared.TrueSync.Math
         /// Gets a normalized version of the vector.
         /// </summary>
         /// <returns>Returns a normalized version of the vector.</returns>
-        public TSVector normalized {
-            get {
-                TSVector result = new TSVector(this.x, this.y, this.z);
+        public FixVector4 normalized
+        {
+            get
+            {
+                FixVector4 result = new FixVector4(this.x, this.y, this.z, this.w);
                 result.Normalize();
 
                 return result;
@@ -150,28 +128,32 @@ namespace LogicShared.TrueSync.Math
         /// <param name="x">The X component of the vector.</param>
         /// <param name="y">The Y component of the vector.</param>
         /// <param name="z">The Z component of the vector.</param>
+        /// <param name="w">The W component of the vector.</param>
+        public FixVector4(int x, int y, int z, int w)
+        {
+            this.x = (Fix64)x;
+            this.y = (Fix64)y;
+            this.z = (Fix64)z;
+            this.w = (Fix64)w;
+        }
 
-        public TSVector(int x,int y,int z)
-		{
-			this.x = (FP)x;
-			this.y = (FP)y;
-			this.z = (FP)z;
-		}
-
-		public TSVector(FP x, FP y, FP z)
+        public FixVector4(Fix64 x, Fix64 y, Fix64 z, Fix64 w)
         {
             this.x = x;
             this.y = y;
             this.z = z;
+            this.w = w;
         }
 
         /// <summary>
         /// Multiplies each component of the vector by the same components of the provided vector.
         /// </summary>
-        public void Scale(TSVector other) {
+        public void Scale(FixVector4 other)
+        {
             this.x = x * other.x;
             this.y = y * other.y;
             this.z = z * other.z;
+            this.w = w * other.w;
         }
 
         /// <summary>
@@ -180,35 +162,40 @@ namespace LogicShared.TrueSync.Math
         /// <param name="x">The X component of the vector.</param>
         /// <param name="y">The Y component of the vector.</param>
         /// <param name="z">The Z component of the vector.</param>
-        public void Set(FP x, FP y, FP z)
+        /// <param name="w">The W component of the vector.</param>
+        public void Set(Fix64 x, Fix64 y, Fix64 z, Fix64 w)
         {
             this.x = x;
             this.y = y;
             this.z = z;
+            this.w = w;
         }
 
         /// <summary>
         /// Constructor initializing a new instance of the structure
         /// </summary>
         /// <param name="xyz">All components of the vector are set to xyz</param>
-        public TSVector(FP xyz)
+        public FixVector4(Fix64 xyzw)
         {
-            this.x = xyz;
-            this.y = xyz;
-            this.z = xyz;
+            this.x = xyzw;
+            this.y = xyzw;
+            this.z = xyzw;
+            this.w = xyzw;
         }
 
-		public static TSVector Lerp(TSVector from, TSVector to, FP percent) {
-			return from + (to - from) * percent;
-		}
+        public static FixVector4 Lerp(FixVector4 from, FixVector4 to, Fix64 percent)
+        {
+            return from + (to - from) * percent;
+        }
 
         /// <summary>
         /// Builds a string from the JVector.
         /// </summary>
         /// <returns>A string containing all three components.</returns>
         #region public override string ToString()
-        public override string ToString() {
-            return string.Format("({0:f1}, {1:f1}, {2:f1})", x.AsFloat(), y.AsFloat(), z.AsFloat());
+        public override string ToString()
+        {
+            return string.Format("({0:f1}, {1:f1}, {2:f1}, {3:f1})", x.AsFloat(), y.AsFloat(), z.AsFloat(), w.AsFloat());
         }
         #endregion
 
@@ -220,21 +207,23 @@ namespace LogicShared.TrueSync.Math
         #region public override bool Equals(object obj)
         public override bool Equals(object obj)
         {
-            if (!(obj is TSVector)) return false;
-            TSVector other = (TSVector)obj;
+            if (!(obj is FixVector4)) return false;
+            FixVector4 other = (FixVector4)obj;
 
-            return (((x == other.x) && (y == other.y)) && (z == other.z));
+            return (((x == other.x) && (y == other.y)) && (z == other.z) && (w == other.w));
         }
         #endregion
 
         /// <summary>
         /// Multiplies each component of the vector by the same components of the provided vector.
         /// </summary>
-        public static TSVector Scale(TSVector vecA, TSVector vecB) {
-            TSVector result;
+        public static FixVector4 Scale(FixVector4 vecA, FixVector4 vecB)
+        {
+            FixVector4 result;
             result.x = vecA.x * vecB.x;
             result.y = vecA.y * vecB.y;
             result.z = vecA.z * vecB.z;
+            result.w = vecA.w * vecB.w;
 
             return result;
         }
@@ -246,9 +235,9 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second value.</param>
         /// <returns>Returns true if both values are equal, otherwise false.</returns>
         #region public static bool operator ==(JVector value1, JVector value2)
-        public static bool operator ==(TSVector value1, TSVector value2)
+        public static bool operator ==(FixVector4 value1, FixVector4 value2)
         {
-            return (((value1.x == value2.x) && (value1.y == value2.y)) && (value1.z == value2.z));
+            return (((value1.x == value2.x) && (value1.y == value2.y)) && (value1.z == value2.z) && (value1.w == value2.w));
         }
         #endregion
 
@@ -259,11 +248,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second value.</param>
         /// <returns>Returns false if both values are equal, otherwise true.</returns>
         #region public static bool operator !=(JVector value1, JVector value2)
-        public static bool operator !=(TSVector value1, TSVector value2)
+        public static bool operator !=(FixVector4 value1, FixVector4 value2)
         {
-            if ((value1.x == value2.x) && (value1.y == value2.y))
+            if ((value1.x == value2.x) && (value1.y == value2.y) && (value1.z == value2.z))
             {
-                return (value1.z != value2.z);
+                return (value1.w != value2.w);
             }
             return true;
         }
@@ -277,10 +266,10 @@ namespace LogicShared.TrueSync.Math
         /// <returns>A vector with the minimum x,y and z values of both vectors.</returns>
         #region public static JVector Min(JVector value1, JVector value2)
 
-        public static TSVector Min(TSVector value1, TSVector value2)
+        public static FixVector4 Min(FixVector4 value1, FixVector4 value2)
         {
-            TSVector result;
-            TSVector.Min(ref value1, ref value2, out result);
+            FixVector4 result;
+            FixVector4.Min(ref value1, ref value2, out result);
             return result;
         }
 
@@ -290,11 +279,12 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first value.</param>
         /// <param name="value2">The second value.</param>
         /// <param name="result">A vector with the minimum x,y and z values of both vectors.</param>
-        public static void Min(ref TSVector value1, ref TSVector value2, out TSVector result)
+        public static void Min(ref FixVector4 value1, ref FixVector4 value2, out FixVector4 result)
         {
             result.x = (value1.x < value2.x) ? value1.x : value2.x;
             result.y = (value1.y < value2.y) ? value1.y : value2.y;
             result.z = (value1.z < value2.z) ? value1.z : value2.z;
+            result.w = (value1.w < value2.w) ? value1.w : value2.w;
         }
         #endregion
 
@@ -305,16 +295,17 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second value.</param>
         /// <returns>A vector with the maximum x,y and z values of both vectors.</returns>
         #region public static JVector Max(JVector value1, JVector value2)
-        public static TSVector Max(TSVector value1, TSVector value2)
+        public static FixVector4 Max(FixVector4 value1, FixVector4 value2)
         {
-            TSVector result;
-            TSVector.Max(ref value1, ref value2, out result);
+            FixVector4 result;
+            FixVector4.Max(ref value1, ref value2, out result);
             return result;
         }
-		
-		public static FP Distance(TSVector v1, TSVector v2) {
-			return FP.Sqrt ((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y) + (v1.z - v2.z) * (v1.z - v2.z));
-		}
+
+        public static Fix64 Distance(FixVector4 v1, FixVector4 v2)
+        {
+            return Fix64.Sqrt((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y) + (v1.z - v2.z) * (v1.z - v2.z) + (v1.w - v2.w) * (v1.w - v2.w));
+        }
 
         /// <summary>
         /// Gets a vector with the maximum x,y and z values of both vectors.
@@ -322,11 +313,12 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first value.</param>
         /// <param name="value2">The second value.</param>
         /// <param name="result">A vector with the maximum x,y and z values of both vectors.</param>
-        public static void Max(ref TSVector value1, ref TSVector value2, out TSVector result)
+        public static void Max(ref FixVector4 value1, ref FixVector4 value2, out FixVector4 result)
         {
             result.x = (value1.x > value2.x) ? value1.x : value2.x;
             result.y = (value1.y > value2.y) ? value1.y : value2.y;
             result.z = (value1.z > value2.z) ? value1.z : value2.z;
+            result.w = (value1.w > value2.w) ? value1.w : value2.w;
         }
         #endregion
 
@@ -336,9 +328,10 @@ namespace LogicShared.TrueSync.Math
         #region public void MakeZero()
         public void MakeZero()
         {
-            x = FP.Zero;
-            y = FP.Zero;
-            z = FP.Zero;
+            x = Fix64.Zero;
+            y = Fix64.Zero;
+            z = Fix64.Zero;
+            w = Fix64.Zero;
         }
         #endregion
 
@@ -349,7 +342,7 @@ namespace LogicShared.TrueSync.Math
         #region public bool IsZero()
         public bool IsZero()
         {
-            return (this.sqrMagnitude == FP.Zero);
+            return (this.sqrMagnitude == Fix64.Zero);
         }
 
         /// <summary>
@@ -369,45 +362,40 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix">The transform matrix.</param>
         /// <returns>The transformed vector.</returns>
         #region public static JVector Transform(JVector position, JMatrix matrix)
-        public static TSVector Transform(TSVector position, TSMatrix matrix)
+        public static FixVector4 Transform(FixVector4 position, FixMatrix4x4 matrix)
         {
-            TSVector result;
-            TSVector.Transform(ref position, ref matrix, out result);
+            FixVector4 result;
+            FixVector4.Transform(ref position, ref matrix, out result);
+            return result;
+        }
+
+        public static FixVector4 Transform(FixVector position, FixMatrix4x4 matrix)
+        {
+            FixVector4 result;
+            FixVector4.Transform(ref position, ref matrix, out result);
             return result;
         }
 
         /// <summary>
         /// Transforms a vector by the given matrix.
         /// </summary>
-        /// <param name="position">The vector to transform.</param>
+        /// <param name="vector">The vector to transform.</param>
         /// <param name="matrix">The transform matrix.</param>
         /// <param name="result">The transformed vector.</param>
-        public static void Transform(ref TSVector position, ref TSMatrix matrix, out TSVector result)
+        public static void Transform(ref FixVector vector, ref FixMatrix4x4 matrix, out FixVector4 result)
         {
-            FP num0 = ((position.x * matrix.M11) + (position.y * matrix.M21)) + (position.z * matrix.M31);
-            FP num1 = ((position.x * matrix.M12) + (position.y * matrix.M22)) + (position.z * matrix.M32);
-            FP num2 = ((position.x * matrix.M13) + (position.y * matrix.M23)) + (position.z * matrix.M33);
-
-            result.x = num0;
-            result.y = num1;
-            result.z = num2;
+            result.x = vector.x * matrix.M11 + vector.y * matrix.M12 + vector.z * matrix.M13 + matrix.M14;
+            result.y = vector.x * matrix.M21 + vector.y * matrix.M22 + vector.z * matrix.M23 + matrix.M24;
+            result.z = vector.x * matrix.M31 + vector.y * matrix.M32 + vector.z * matrix.M33 + matrix.M34;
+            result.w = vector.x * matrix.M41 + vector.y * matrix.M42 + vector.z * matrix.M43 + matrix.M44;
         }
 
-        /// <summary>
-        /// Transforms a vector by the transposed of the given Matrix.
-        /// </summary>
-        /// <param name="position">The vector to transform.</param>
-        /// <param name="matrix">The transform matrix.</param>
-        /// <param name="result">The transformed vector.</param>
-        public static void TransposedTransform(ref TSVector position, ref TSMatrix matrix, out TSVector result)
+        public static void Transform(ref FixVector4 vector, ref FixMatrix4x4 matrix, out FixVector4 result)
         {
-            FP num0 = ((position.x * matrix.M11) + (position.y * matrix.M12)) + (position.z * matrix.M13);
-            FP num1 = ((position.x * matrix.M21) + (position.y * matrix.M22)) + (position.z * matrix.M23);
-            FP num2 = ((position.x * matrix.M31) + (position.y * matrix.M32)) + (position.z * matrix.M33);
-
-            result.x = num0;
-            result.y = num1;
-            result.z = num2;
+            result.x = vector.x * matrix.M11 + vector.y * matrix.M12 + vector.z * matrix.M13 + vector.w * matrix.M14;
+            result.y = vector.x * matrix.M21 + vector.y * matrix.M22 + vector.z * matrix.M23 + vector.w * matrix.M24;
+            result.z = vector.x * matrix.M31 + vector.y * matrix.M32 + vector.z * matrix.M33 + vector.w * matrix.M34;
+            result.w = vector.x * matrix.M41 + vector.y * matrix.M42 + vector.z * matrix.M43 + vector.w * matrix.M44;
         }
         #endregion
 
@@ -417,10 +405,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="vector1">The first vector.</param>
         /// <param name="vector2">The second vector.</param>
         /// <returns>Returns the dot product of both vectors.</returns>
-        #region public static FP Dot(JVector vector1, JVector vector2)
-        public static FP Dot(TSVector vector1, TSVector vector2)
+        #region public static Fix64 Dot(JVector vector1, JVector vector2)
+        public static Fix64 Dot(FixVector4 vector1, FixVector4 vector2)
         {
-            return TSVector.Dot(ref vector1, ref vector2);
+            return FixVector4.Dot(ref vector1, ref vector2);
         }
 
 
@@ -430,45 +418,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="vector1">The first vector.</param>
         /// <param name="vector2">The second vector.</param>
         /// <returns>Returns the dot product of both vectors.</returns>
-        public static FP Dot(ref TSVector vector1, ref TSVector vector2)
+        public static Fix64 Dot(ref FixVector4 vector1, ref FixVector4 vector2)
         {
-            return ((vector1.x * vector2.x) + (vector1.y * vector2.y)) + (vector1.z * vector2.z);
+            return ((vector1.x * vector2.x) + (vector1.y * vector2.y)) + (vector1.z * vector2.z) + (vector1.w * vector2.w);
         }
         #endregion
-
-        // Projects a vector onto another vector.
-        public static TSVector Project(TSVector vector, TSVector onNormal)
-        {
-            FP sqrtMag = Dot(onNormal, onNormal);
-            if (sqrtMag < TSMath.Epsilon)
-                return zero;
-            else
-                return onNormal * Dot(vector, onNormal) / sqrtMag;
-        }
-
-        // Projects a vector onto a plane defined by a normal orthogonal to the plane.
-        public static TSVector ProjectOnPlane(TSVector vector, TSVector planeNormal)
-        {
-            return vector - Project(vector, planeNormal);
-        }
-
-
-        // Returns the angle in degrees between /from/ and /to/. This is always the smallest
-        public static FP Angle(TSVector from, TSVector to)
-        {
-            return TSMath.Acos(TSMath.Clamp(Dot(from.normalized, to.normalized), -FP.ONE, FP.ONE)) * TSMath.Rad2Deg;
-        }
-
-        // The smaller of the two possible angles between the two vectors is returned, therefore the result will never be greater than 180 degrees or smaller than -180 degrees.
-        // If you imagine the from and to vectors as lines on a piece of paper, both originating from the same point, then the /axis/ vector would point up out of the paper.
-        // The measured angle between the two vectors would be positive in a clockwise direction and negative in an anti-clockwise direction.
-        public static FP SignedAngle(TSVector from, TSVector to, TSVector axis)
-        {
-            TSVector fromNorm = from.normalized, toNorm = to.normalized;
-            FP unsignedAngle = TSMath.Acos(TSMath.Clamp(Dot(fromNorm, toNorm), -FP.ONE, FP.ONE)) * TSMath.Rad2Deg;
-            FP sign = TSMath.Sign(Dot(axis, Cross(fromNorm, toNorm)));
-            return unsignedAngle * sign;
-        }
 
         /// <summary>
         /// Adds two vectors.
@@ -477,10 +431,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second vector.</param>
         /// <returns>The sum of both vectors.</returns>
         #region public static void Add(JVector value1, JVector value2)
-        public static TSVector Add(TSVector value1, TSVector value2)
+        public static FixVector4 Add(FixVector4 value1, FixVector4 value2)
         {
-            TSVector result;
-            TSVector.Add(ref value1, ref value2, out result);
+            FixVector4 result;
+            FixVector4.Add(ref value1, ref value2, out result);
             return result;
         }
 
@@ -490,15 +444,12 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first vector.</param>
         /// <param name="value2">The second vector.</param>
         /// <param name="result">The sum of both vectors.</param>
-        public static void Add(ref TSVector value1, ref TSVector value2, out TSVector result)
+        public static void Add(ref FixVector4 value1, ref FixVector4 value2, out FixVector4 result)
         {
-            FP num0 = value1.x + value2.x;
-            FP num1 = value1.y + value2.y;
-            FP num2 = value1.z + value2.z;
-
-            result.x = num0;
-            result.y = num1;
-            result.z = num2;
+            result.x = value1.x + value2.x;
+            result.y = value1.y + value2.y;
+            result.z = value1.z + value2.z;
+            result.w = value1.w + value2.w;
         }
         #endregion
 
@@ -508,9 +459,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The vector to divide.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <returns>Returns the scaled vector.</returns>
-        public static TSVector Divide(TSVector value1, FP scaleFactor) {
-            TSVector result;
-            TSVector.Divide(ref value1, scaleFactor, out result);
+        public static FixVector4 Divide(FixVector4 value1, Fix64 scaleFactor)
+        {
+            FixVector4 result;
+            FixVector4.Divide(ref value1, scaleFactor, out result);
             return result;
         }
 
@@ -520,10 +472,12 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The vector to divide.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <param name="result">Returns the scaled vector.</param>
-        public static void Divide(ref TSVector value1, FP scaleFactor, out TSVector result) {
+        public static void Divide(ref FixVector4 value1, Fix64 scaleFactor, out FixVector4 result)
+        {
             result.x = value1.x / scaleFactor;
             result.y = value1.y / scaleFactor;
             result.z = value1.z / scaleFactor;
+            result.w = value1.w / scaleFactor;
         }
 
         /// <summary>
@@ -533,10 +487,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second vector.</param>
         /// <returns>The difference of both vectors.</returns>
         #region public static JVector Subtract(JVector value1, JVector value2)
-        public static TSVector Subtract(TSVector value1, TSVector value2)
+        public static FixVector4 Subtract(FixVector4 value1, FixVector4 value2)
         {
-            TSVector result;
-            TSVector.Subtract(ref value1, ref value2, out result);
+            FixVector4 result;
+            FixVector4.Subtract(ref value1, ref value2, out result);
             return result;
         }
 
@@ -546,46 +500,12 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first vector.</param>
         /// <param name="value2">The second vector.</param>
         /// <param name="result">The difference of both vectors.</param>
-        public static void Subtract(ref TSVector value1, ref TSVector value2, out TSVector result)
+        public static void Subtract(ref FixVector4 value1, ref FixVector4 value2, out FixVector4 result)
         {
-            FP num0 = value1.x - value2.x;
-            FP num1 = value1.y - value2.y;
-            FP num2 = value1.z - value2.z;
-
-            result.x = num0;
-            result.y = num1;
-            result.z = num2;
-        }
-        #endregion
-
-        /// <summary>
-        /// The cross product of two vectors.
-        /// </summary>
-        /// <param name="vector1">The first vector.</param>
-        /// <param name="vector2">The second vector.</param>
-        /// <returns>The cross product of both vectors.</returns>
-        #region public static JVector Cross(JVector vector1, JVector vector2)
-        public static TSVector Cross(TSVector vector1, TSVector vector2)
-        {
-            TSVector result;
-            TSVector.Cross(ref vector1, ref vector2, out result);
-            return result;
-        }
-
-        /// <summary>
-        /// The cross product of two vectors.
-        /// </summary>
-        /// <param name="vector1">The first vector.</param>
-        /// <param name="vector2">The second vector.</param>
-        /// <param name="result">The cross product of both vectors.</param>
-        public static void Cross(ref TSVector vector1, ref TSVector vector2, out TSVector result)
-        {
-            FP num3 = (vector1.y * vector2.z) - (vector1.z * vector2.y);
-            FP num2 = (vector1.z * vector2.x) - (vector1.x * vector2.z);
-            FP num = (vector1.x * vector2.y) - (vector1.y * vector2.x);
-            result.x = num3;
-            result.y = num2;
-            result.z = num;
+            result.x = value1.x - value2.x;
+            result.y = value1.y - value2.y;
+            result.z = value1.z - value2.z;
+            result.w = value1.w - value2.w;
         }
         #endregion
 
@@ -596,7 +516,7 @@ namespace LogicShared.TrueSync.Math
         #region public override int GetHashCode()
         public override int GetHashCode()
         {
-            return x.GetHashCode() ^ y.GetHashCode() ^ z.GetHashCode();
+            return x.GetHashCode() ^ y.GetHashCode() ^ z.GetHashCode() ^ w.GetHashCode();
         }
         #endregion
 
@@ -609,6 +529,7 @@ namespace LogicShared.TrueSync.Math
             this.x = -this.x;
             this.y = -this.y;
             this.z = -this.z;
+            this.w = -this.w;
         }
 
         /// <summary>
@@ -616,10 +537,10 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="value">The vector to inverse.</param>
         /// <returns>The negated vector.</returns>
-        public static TSVector Negate(TSVector value)
+        public static FixVector4 Negate(FixVector4 value)
         {
-            TSVector result;
-            TSVector.Negate(ref value,out result);
+            FixVector4 result;
+            FixVector4.Negate(ref value, out result);
             return result;
         }
 
@@ -628,15 +549,12 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="value">The vector to inverse.</param>
         /// <param name="result">The negated vector.</param>
-        public static void Negate(ref TSVector value, out TSVector result)
+        public static void Negate(ref FixVector4 value, out FixVector4 result)
         {
-            FP num0 = -value.x;
-            FP num1 = -value.y;
-            FP num2 = -value.z;
-
-            result.x = num0;
-            result.y = num1;
-            result.z = num2;
+            result.x = -value.x;
+            result.y = -value.y;
+            result.z = -value.z;
+            result.w = -value.w;
         }
         #endregion
 
@@ -646,10 +564,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value">The vector which should be normalized.</param>
         /// <returns>A normalized vector.</returns>
         #region public static JVector Normalize(JVector value)
-        public static TSVector Normalize(TSVector value)
+        public static FixVector4 Normalize(FixVector4 value)
         {
-            TSVector result;
-            TSVector.Normalize(ref value, out result);
+            FixVector4 result;
+            FixVector4.Normalize(ref value, out result);
             return result;
         }
 
@@ -658,11 +576,12 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         public void Normalize()
         {
-            FP num2 = ((this.x * this.x) + (this.y * this.y)) + (this.z * this.z);
-            FP num = FP.One / FP.Sqrt(num2);
+            Fix64 num2 = ((this.x * this.x) + (this.y * this.y)) + (this.z * this.z) + (this.w * this.w);
+            Fix64 num = Fix64.One / Fix64.Sqrt(num2);
             this.x *= num;
             this.y *= num;
             this.z *= num;
+            this.w *= num;
         }
 
         /// <summary>
@@ -670,13 +589,14 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="value">The vector which should be normalized.</param>
         /// <param name="result">A normalized vector.</param>
-        public static void Normalize(ref TSVector value, out TSVector result)
+        public static void Normalize(ref FixVector4 value, out FixVector4 result)
         {
-            FP num2 = ((value.x * value.x) + (value.y * value.y)) + (value.z * value.z);
-            FP num = FP.One / FP.Sqrt(num2);
+            Fix64 num2 = ((value.x * value.x) + (value.y * value.y)) + (value.z * value.z) + (value.w * value.w);
+            Fix64 num = Fix64.One / Fix64.Sqrt(num2);
             result.x = value.x * num;
             result.y = value.y * num;
             result.z = value.z * num;
+            result.w = value.w * num;
         }
         #endregion
 
@@ -687,9 +607,9 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="vector1">The first vector to swap with the second.</param>
         /// <param name="vector2">The second vector to swap with the first.</param>
-        public static void Swap(ref TSVector vector1, ref TSVector vector2)
+        public static void Swap(ref FixVector4 vector1, ref FixVector4 vector2)
         {
-            FP temp;
+            Fix64 temp;
 
             temp = vector1.x;
             vector1.x = vector2.x;
@@ -702,6 +622,10 @@ namespace LogicShared.TrueSync.Math
             temp = vector1.z;
             vector1.z = vector2.z;
             vector2.z = temp;
+
+            temp = vector1.w;
+            vector1.w = vector2.w;
+            vector2.w = temp;
         }
         #endregion
 
@@ -711,11 +635,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The vector to multiply.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <returns>Returns the multiplied vector.</returns>
-        #region public static JVector Multiply(JVector value1, FP scaleFactor)
-        public static TSVector Multiply(TSVector value1, FP scaleFactor)
+        #region public static JVector Multiply(JVector value1, Fix64 scaleFactor)
+        public static FixVector4 Multiply(FixVector4 value1, Fix64 scaleFactor)
         {
-            TSVector result;
-            TSVector.Multiply(ref value1, scaleFactor, out result);
+            FixVector4 result;
+            FixVector4.Multiply(ref value1, scaleFactor, out result);
             return result;
         }
 
@@ -725,25 +649,12 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The vector to multiply.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <param name="result">Returns the multiplied vector.</param>
-        public static void Multiply(ref TSVector value1, FP scaleFactor, out TSVector result)
+        public static void Multiply(ref FixVector4 value1, Fix64 scaleFactor, out FixVector4 result)
         {
             result.x = value1.x * scaleFactor;
             result.y = value1.y * scaleFactor;
             result.z = value1.z * scaleFactor;
-        }
-        #endregion
-
-        /// <summary>
-        /// Calculates the cross product of two vectors.
-        /// </summary>
-        /// <param name="value1">The first vector.</param>
-        /// <param name="value2">The second vector.</param>
-        /// <returns>Returns the cross product of both.</returns>
-        #region public static JVector operator %(JVector value1, JVector value2)
-        public static TSVector operator %(TSVector value1, TSVector value2)
-        {
-            TSVector result; TSVector.Cross(ref value1, ref value2, out result);
-            return result;
+            result.w = value1.w * scaleFactor;
         }
         #endregion
 
@@ -753,10 +664,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first vector.</param>
         /// <param name="value2">The second vector.</param>
         /// <returns>Returns the dot product of both.</returns>
-        #region public static FP operator *(JVector value1, JVector value2)
-        public static FP operator *(TSVector value1, TSVector value2)
+        #region public static Fix64 operator *(JVector value1, JVector value2)
+        public static Fix64 operator *(FixVector4 value1, FixVector4 value2)
         {
-            return TSVector.Dot(ref value1, ref value2);
+            return FixVector4.Dot(ref value1, ref value2);
         }
         #endregion
 
@@ -766,11 +677,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The vector to scale.</param>
         /// <param name="value2">The scale factor.</param>
         /// <returns>Returns the scaled vector.</returns>
-        #region public static JVector operator *(JVector value1, FP value2)
-        public static TSVector operator *(TSVector value1, FP value2)
+        #region public static JVector operator *(JVector value1, Fix64 value2)
+        public static FixVector4 operator *(FixVector4 value1, Fix64 value2)
         {
-            TSVector result;
-            TSVector.Multiply(ref value1, value2,out result);
+            FixVector4 result;
+            FixVector4.Multiply(ref value1, value2, out result);
             return result;
         }
         #endregion
@@ -781,11 +692,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The vector to scale.</param>
         /// <param name="value1">The scale factor.</param>
         /// <returns>Returns the scaled vector.</returns>
-        #region public static JVector operator *(FP value1, JVector value2)
-        public static TSVector operator *(FP value1, TSVector value2)
+        #region public static JVector operator *(Fix64 value1, JVector value2)
+        public static FixVector4 operator *(Fix64 value1, FixVector4 value2)
         {
-            TSVector result;
-            TSVector.Multiply(ref value2, value1, out result);
+            FixVector4 result;
+            FixVector4.Multiply(ref value2, value1, out result);
             return result;
         }
         #endregion
@@ -797,9 +708,9 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second vector.</param>
         /// <returns>The difference of both vectors.</returns>
         #region public static JVector operator -(JVector value1, JVector value2)
-        public static TSVector operator -(TSVector value1, TSVector value2)
+        public static FixVector4 operator -(FixVector4 value1, FixVector4 value2)
         {
-            TSVector result; TSVector.Subtract(ref value1, ref value2, out result);
+            FixVector4 result; FixVector4.Subtract(ref value1, ref value2, out result);
             return result;
         }
         #endregion
@@ -811,9 +722,9 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value2">The second vector.</param>
         /// <returns>The sum of both vectors.</returns>
         #region public static JVector operator +(JVector value1, JVector value2)
-        public static TSVector operator +(TSVector value1, TSVector value2)
+        public static FixVector4 operator +(FixVector4 value1, FixVector4 value2)
         {
-            TSVector result; TSVector.Add(ref value1, ref value2, out result);
+            FixVector4 result; FixVector4.Add(ref value1, ref value2, out result);
             return result;
         }
         #endregion
@@ -824,21 +735,22 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The vector to divide.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <returns>Returns the scaled vector.</returns>
-        public static TSVector operator /(TSVector value1, FP value2) {
-            TSVector result;
-            TSVector.Divide(ref value1, value2, out result);
+        public static FixVector4 operator /(FixVector4 value1, Fix64 value2)
+        {
+            FixVector4 result;
+            FixVector4.Divide(ref value1, value2, out result);
             return result;
         }
 
-        public TSVector2 ToTSVector2() {
-            return new TSVector2(this.x, this.y);
-        }
-
-        public TSVector4 ToTSVector4()
+        public FixVector2 ToTSVector2()
         {
-            return new TSVector4(this.x, this.y, this.z, FP.One);
+            return new FixVector2(this.x, this.y);
         }
 
+        public FixVector ToTSVector()
+        {
+            return new FixVector(this.x, this.y, this.z);
+        }
     }
 
 }

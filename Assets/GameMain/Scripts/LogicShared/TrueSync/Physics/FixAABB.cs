@@ -19,26 +19,26 @@ namespace LogicShared.TrueSync.Physics
     {
         public static readonly FixAABB zero;
         
-        public TSVector Min;
-        public TSVector Max;
+        public FixVector Min;
+        public FixVector Max;
 
         //相对父节点的偏移量
-        private TSVector _offsetFromParent;
-        private TSVector _parentPosition;
+        private FixVector _offsetFromParent;
+        private FixVector _parentPosition;
 
         #region 属性
 
-        public TSVector Size
+        public FixVector Size
         {
             get { return this.Max - this.Min; }
         }
 
-        public TSVector HalfSize
+        public FixVector HalfSize
         {
             get { return Size / 2; }
         }
 
-        public TSVector Center
+        public FixVector Center
         {
             get { return (Max + Min) / 2; }
         }
@@ -47,26 +47,26 @@ namespace LogicShared.TrueSync.Physics
         {
             get
             {
-                return new FixBox(Center, TSVector.zero, Size, TSVector.zero);
+                return new FixBox(Center, FixVector.zero, Size, FixVector.zero);
             }
         }
 
-        public FP Depth
+        public Fix64 Depth
         {
             get { return Max.z - Min.z; }
         }
         
-        public FP height
+        public Fix64 height
         {
             get { return Max.y - Min.y; }
         }
         
-        public FP Width
+        public Fix64 Width
         {
             get { return Max.x - Min.x; }
         }
         
-        public TSVector ParentPosition
+        public FixVector ParentPosition
         {
             get
             {
@@ -79,7 +79,7 @@ namespace LogicShared.TrueSync.Physics
             }
         }
         
-        public TSVector OffsetFromParent
+        public FixVector OffsetFromParent
         {
             get
             {
@@ -94,15 +94,15 @@ namespace LogicShared.TrueSync.Physics
         
         #endregion
 
-        public FixAABB(TSVector min, TSVector max)
+        public FixAABB(FixVector min, FixVector max)
         {
             Min = min;
             Max = max;
             _offsetFromParent = (min + max) /2;
-            _parentPosition = TSVector.zero;
+            _parentPosition = FixVector.zero;
         }
 
-        public FixAABB(TSVector parentPosition, TSVector offsetFromParent, TSVector halfSize)
+        public FixAABB(FixVector parentPosition, FixVector offsetFromParent, FixVector halfSize)
         {
             _parentPosition = parentPosition;
             _offsetFromParent = offsetFromParent;
@@ -111,7 +111,7 @@ namespace LogicShared.TrueSync.Physics
             Max = center + halfSize;
         }
         
-        public FixAABB(TSVector parentPosition, TSVector offsetFromParent, TSVector min,TSVector max)
+        public FixAABB(FixVector parentPosition, FixVector offsetFromParent, FixVector min,FixVector max)
         {
             _parentPosition = parentPosition;
             _offsetFromParent = offsetFromParent;
@@ -121,7 +121,7 @@ namespace LogicShared.TrueSync.Physics
 
         static FixAABB()
         {
-            zero = new FixAABB(new TSVector(0, 0, 0), new TSVector(0, 0, 0));
+            zero = new FixAABB(new FixVector(0, 0, 0), new FixVector(0, 0, 0));
         }
         
         public void Refresh()
@@ -133,13 +133,13 @@ namespace LogicShared.TrueSync.Physics
             Max = max;
         }
 
-        public void Set(TSVector min, TSVector max)
+        public void Set(FixVector min, FixVector max)
         {
             Min = min;
             Max = max;
         }
 
-        public bool Contains(TSVector position)
+        public bool Contains(FixVector position)
         {
             var ret = position.x >= Min.x && position.x <= Max.x &&
                       position.y >= Min.y && position.y <= Max.y &&
@@ -148,12 +148,12 @@ namespace LogicShared.TrueSync.Physics
         }
 
         //AABB上到目标点的最近点
-        public TSVector ClosedPoint(TSVector point)
+        public FixVector ClosedPoint(FixVector point)
         {
             return Contains(point) ? InsideClosedPoint(point) : OutsideClosedPoint(point);
         }
 
-        public TSVector OutsideClosedPoint(TSVector point)
+        public FixVector OutsideClosedPoint(FixVector point)
         {
             if (Contains(point))
             {
@@ -161,34 +161,34 @@ namespace LogicShared.TrueSync.Physics
             }
 
             var ret = point;
-            ret.x = TSMath.Clamp(ret.x, Min.x, Max.x);
-            ret.y = TSMath.Clamp(ret.y, Min.y, Max.y);
-            ret.z = TSMath.Clamp(ret.z, Min.z, Max.z);
+            ret.x = FixMath.Clamp(ret.x, Min.x, Max.x);
+            ret.y = FixMath.Clamp(ret.y, Min.y, Max.y);
+            ret.z = FixMath.Clamp(ret.z, Min.z, Max.z);
             return ret;
         }
         
-        public TSVector InsideClosedPoint(TSVector point)
+        public FixVector InsideClosedPoint(FixVector point)
         {
             if (!Contains(point))
             {
                 return point;
             }
 
-            var minOffsetX = TSMath.Abs(Min.x - point.x);
-            var maxOffsetX = TSMath.Abs(Max.x - point.x);
-            var minOffsetY = TSMath.Abs(Min.y - point.y);
-            var maxOffsetY = TSMath.Abs(Max.y - point.y);
-            var minOffsetZ = TSMath.Abs(Min.z - point.z);
-            var maxOffsetZ = TSMath.Abs(Max.z - point.z);
+            var minOffsetX = FixMath.Abs(Min.x - point.x);
+            var maxOffsetX = FixMath.Abs(Max.x - point.x);
+            var minOffsetY = FixMath.Abs(Min.y - point.y);
+            var maxOffsetY = FixMath.Abs(Max.y - point.y);
+            var minOffsetZ = FixMath.Abs(Min.z - point.z);
+            var maxOffsetZ = FixMath.Abs(Max.z - point.z);
             
             var x = minOffsetX < maxOffsetX ? Min.x : Max.x;
             var y = minOffsetY < maxOffsetY ? Min.y : Max.y;
             var z = minOffsetZ < maxOffsetZ ? Min.z : Max.z;
-            var minX = TSMath.Min(minOffsetX, maxOffsetX);
-            var minY = TSMath.Min(minOffsetY, maxOffsetY);
-            var minZ = TSMath.Min(minOffsetZ, maxOffsetZ);
+            var minX = FixMath.Min(minOffsetX, maxOffsetX);
+            var minY = FixMath.Min(minOffsetY, maxOffsetY);
+            var minZ = FixMath.Min(minOffsetZ, maxOffsetZ);
             
-            return new TSVector(
+            return new FixVector(
                 minX < minY && minX < minZ ? x : point.x
                 , minY < minX && minY < minZ ? y : point.y
                 , minZ < minY && minZ < minX ? z : point.z);
@@ -215,18 +215,18 @@ namespace LogicShared.TrueSync.Physics
         {
             if(Intersect(aabb))
             {
-                var result = new FixAABB(TSVector.zero, TSVector.zero);
-                result.Min = new TSVector()
+                var result = new FixAABB(FixVector.zero, FixVector.zero);
+                result.Min = new FixVector()
                 {
-                    x = TSMath.Max(Min.x, aabb.Min.x),
-                    y = TSMath.Max(Min.y, aabb.Min.y),
-                    z = TSMath.Max(Min.z, aabb.Min.z)
+                    x = FixMath.Max(Min.x, aabb.Min.x),
+                    y = FixMath.Max(Min.y, aabb.Min.y),
+                    z = FixMath.Max(Min.z, aabb.Min.z)
                 };
-                result.Max = new TSVector()
+                result.Max = new FixVector()
                 {
-                    x = TSMath.Min(Max.x, aabb.Max.x),
-                    y = TSMath.Min(Max.y, aabb.Max.y),
-                    z = TSMath.Min(Max.z, aabb.Max.z)
+                    x = FixMath.Min(Max.x, aabb.Max.x),
+                    y = FixMath.Min(Max.y, aabb.Max.y),
+                    z = FixMath.Min(Max.z, aabb.Max.z)
                 };
 
                 return result;
@@ -236,13 +236,13 @@ namespace LogicShared.TrueSync.Physics
         }
 
         //获取偏移后的AABB
-        public FixAABB OffsetAABB(TSVector offset)
+        public FixAABB OffsetAABB(FixVector offset)
         {
             return new FixAABB(Min + offset, Max + offset);
         }
 
         //变换到世界坐标系
-        public FixAABB ToWorldSpace(TSVector offset, bool mirror)
+        public FixAABB ToWorldSpace(FixVector offset, bool mirror)
         {
             FixAABB ret = new FixAABB(Min + offset, Max + offset);
             if (mirror)
@@ -253,16 +253,16 @@ namespace LogicShared.TrueSync.Physics
             return ret;
         }
 
-        public void Offset(TSVector offset)
+        public void Offset(FixVector offset)
         {
             Min += offset;
             Max += offset;
         }
 
         //X轴反向
-        public void Mirror(FP x)
+        public void Mirror(Fix64 x)
         {
-            FP temp = Min.x;
+            Fix64 temp = Min.x;
             Min.x = x + x - Max.x;
             Max.x = x + x - temp;
         }
@@ -270,13 +270,13 @@ namespace LogicShared.TrueSync.Physics
         //拓展AABB（并集）
         public void Expand(FixAABB aabb)
         {
-            Min.x = TSMath.Min(Min.x, aabb.Min.x);
-            Min.y = TSMath.Min(Min.y, aabb.Min.y);
-            Min.z = TSMath.Min(Min.z, aabb.Min.z);
+            Min.x = FixMath.Min(Min.x, aabb.Min.x);
+            Min.y = FixMath.Min(Min.y, aabb.Min.y);
+            Min.z = FixMath.Min(Min.z, aabb.Min.z);
 
-            Max.x = TSMath.Max(Max.x, aabb.Max.x);
-            Max.y = TSMath.Max(Max.y, aabb.Max.y);
-            Max.z = TSMath.Max(Max.z, aabb.Max.z);
+            Max.x = FixMath.Max(Max.x, aabb.Max.x);
+            Max.y = FixMath.Max(Max.y, aabb.Max.y);
+            Max.z = FixMath.Max(Max.z, aabb.Max.z);
         }
 
         public static bool operator ==(FixAABB value1, FixAABB value2)

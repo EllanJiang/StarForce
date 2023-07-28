@@ -2,12 +2,12 @@
 
 namespace LogicShared.TrueSync.Math {
 
-    /**
+     /**
      *  @brief Generates random numbers based on a deterministic approach.
      **/
-    public class TSRandom {
+    public class FixRandom {
         // From http://www.codeproject.com/Articles/164087/Random-Number-Generation
-        // Class TSRandom generates random numbers
+        // Class FPRandom generates random numbers
         // from a uniform distribution using the Mersenne
         // Twister algorithm.
         private const int N = 624;
@@ -21,9 +21,9 @@ namespace LogicShared.TrueSync.Math {
         private int mti = N + 1;
 
         /**
-         *  @brief Static instance of {@link TSRandom} with seed 1.
+         *  @brief Static instance of {@link FPRandom} with seed 1.
          **/
-        public static TSRandom instance;
+        public static FixRandom instance;
 
         internal static void Init() {
             instance = New(1);
@@ -32,20 +32,21 @@ namespace LogicShared.TrueSync.Math {
         /**
          *  @brief Generates a new instance based on a given seed.
          **/
-        public static TSRandom New(int seed) {
-            TSRandom r = new TSRandom(seed);
+        public static FixRandom New(int seed) {
+            FixRandom r = new FixRandom(seed);
+
             return r;
         }
 
-        private TSRandom() {
+        private FixRandom() {
             init_genrand((uint)DateTime.Now.Millisecond);
         }
 
-        private TSRandom(int seed) {
+        private FixRandom(int seed) {
             init_genrand((uint)seed);
         }
 
-        private TSRandom(int[] init) {
+        private FixRandom(int[] init) {
             uint[] initArray = new uint[init.Length];
             for (int i = 0; i < init.Length; ++i)
                 initArray[i] = (uint)init[i];
@@ -86,7 +87,7 @@ namespace LogicShared.TrueSync.Math {
         /**
          *  @brief Returns a {@link FP} between a min value [inclusive] and a max value [inclusive].
          **/
-        public FP Next(float minValue, float maxValue) {
+        public Fix64 Next(Fix64 minValue, Fix64 maxValue) {
             int minValueInt = (int)(minValue * 1000), maxValueInt = (int)(maxValue * 1000);
 
             if (minValueInt > maxValueInt) {
@@ -95,7 +96,7 @@ namespace LogicShared.TrueSync.Math {
                 minValueInt = tmp;
             }
 
-            return (FP.Floor((maxValueInt - minValueInt + 1) * NextFP() +
+            return (Fix64.Floor((maxValueInt - minValueInt + 1) * NextFP() +
                 minValueInt)) / 1000;
         }
 
@@ -109,32 +110,32 @@ namespace LogicShared.TrueSync.Math {
         /**
          *  @brief Returns a {@link FP} between a min value [inclusive] and a max value [inclusive].
          **/
-        public static FP Range(float minValue, float maxValue) {
+        public static Fix64 Range(Fix64 minValue, Fix64 maxValue) {
             return instance.Next(minValue, maxValue);
         }
 
         /**
          *  @brief Returns a {@link FP} between 0.0 [inclusive] and 1.0 [inclusive].
          **/
-        public FP NextFP() {
-            return ((FP) Next()) / (MaxRandomInt);
+        public Fix64 NextFP() {
+            return ((Fix64) Next()) / (MaxRandomInt);
         }
 
         /**
          *  @brief Returns a {@link FP} between 0.0 [inclusive] and 1.0 [inclusive].
          **/
-        public static FP value {
+        public static Fix64 value {
             get {
                 return instance.NextFP();
             }
         }
 
         /**
-         *  @brief Returns a random {@link TSVector} representing a point inside a sphere with radius 1.
+         *  @brief Returns a random {@link FPVector} representing a point inside a sphere with radius 1.
          **/
-        public static TSVector insideUnitSphere {
+        public static FixVector insideUnitSphere {
             get {
-                return new TSVector(value, value, value);
+                return new FixVector(value, value, value);
             }
         }
 
@@ -256,8 +257,8 @@ namespace LogicShared.TrueSync.Math {
             return (int)(genrand_int32() >> 1);
         }
 
-        FP genrand_FP() {
-            return (FP)genrand_int32() * (FP.One / (FP)4294967295);
+        Fix64 genrand_FP() {
+            return (Fix64)genrand_int32() * (Fix64.One / (Fix64)4294967295);
         }
 
         double genrand_real1() {

@@ -1,4 +1,42 @@
-﻿using System;
+﻿/*
+ Copyright 2012 Andre Slupik
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+This project uses code from the libfixmath library, which is under the following license:
+
+Copyright (C) 2012 Petteri Aimonen
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+This project uses code from the log2fix library, which is under the following license:
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Dan Moulding
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+
+using System;
 using System.IO;
 
 namespace LogicShared.TrueSync.Math {
@@ -7,9 +45,8 @@ namespace LogicShared.TrueSync.Math {
     /// Represents a Q31.32 fixed-point number.
     /// </summary>
     [Serializable]
-    public partial struct FP : IEquatable<FP>, IComparable<FP> {
+    public partial struct Fix64 : IEquatable<Fix64>, IComparable<Fix64> {
 
-      
         public long _serializedValue;
 
 		public const long MAX_VALUE = long.MaxValue;
@@ -22,58 +59,51 @@ namespace LogicShared.TrueSync.Math {
 		public const long PI_TIMES_2 = 0x6487ED511;
 		public const long PI = 0x3243F6A88;
 		public const long PI_OVER_2 = 0x1921FB544;
-        public const long LN2 = 0xB17217F7;
-        public const long LOG2MAX = 0x1F00000000;
-        public const long LOG2MIN = -0x2000000000;
-        public const int LUT_SIZE = (int)(PI_OVER_2 >> 15);
+		public const int LUT_SIZE = (int)(PI_OVER_2 >> 15);
 
         // Precision of this type is 2^-32, that is 2,3283064365386962890625E-10
-        public static readonly decimal Precision = (decimal)(new FP(1L));//0.00000000023283064365386962890625m;
-        public static readonly FP MaxValue = new FP(MAX_VALUE-1);
-        public static readonly FP MinValue = new FP(MIN_VALUE+2);
-        public static readonly FP One = new FP(ONE);
-		public static readonly FP Ten = new FP(TEN);
-        public static readonly FP Half = new FP(HALF);
+        public static readonly decimal Precision = (decimal)(new Fix64(1L));//0.00000000023283064365386962890625m;
+        public static readonly Fix64 MaxValue = new Fix64(MAX_VALUE-1);
+        public static readonly Fix64 MinValue = new Fix64(MIN_VALUE+2);
+        public static readonly Fix64 One = new Fix64(ONE);
+		public static readonly Fix64 Ten = new Fix64(TEN);
+        public static readonly Fix64 Half = new Fix64(HALF);
 
-        public static readonly FP Zero = new FP();
-        public static readonly FP PositiveInfinity = new FP(MAX_VALUE);
-        public static readonly FP NegativeInfinity = new FP(MIN_VALUE+1);
-        public static readonly FP NaN = new FP(MIN_VALUE);
+        public static readonly Fix64 Zero = new Fix64();
+        public static readonly Fix64 PositiveInfinity = new Fix64(MAX_VALUE);
+        public static readonly Fix64 NegativeInfinity = new Fix64(MIN_VALUE+1);
+        public static readonly Fix64 NaN = new Fix64(MIN_VALUE);
 
-        public static readonly FP EN1 = FP.One / 10;
-        public static readonly FP EN2 = FP.One / 100;
-        public static readonly FP EN3 = FP.One / 1000;
-        public static readonly FP EN4 = FP.One / 10000;
-        public static readonly FP EN5 = FP.One / 100000;
-        public static readonly FP EN6 = FP.One / 1000000;
-        public static readonly FP EN7 = FP.One / 10000000;
-        public static readonly FP EN8 = FP.One / 100000000;
-        public static readonly FP Epsilon = FP.EN3;
+        public static readonly Fix64 EN1 = Fix64.One / 10;
+        public static readonly Fix64 EN2 = Fix64.One / 100;
+        public static readonly Fix64 EN3 = Fix64.One / 1000;
+        public static readonly Fix64 EN4 = Fix64.One / 10000;
+        public static readonly Fix64 EN5 = Fix64.One / 100000;
+        public static readonly Fix64 EN6 = Fix64.One / 1000000;
+        public static readonly Fix64 EN7 = Fix64.One / 10000000;
+        public static readonly Fix64 EN8 = Fix64.One / 100000000;
+        public static readonly Fix64 Epsilon = Fix64.EN8;
 
         /// <summary>
         /// The value of Pi
         /// </summary>
-        public static readonly FP Pi = new FP(PI);
-        public static readonly FP PiOver2 = new FP(PI_OVER_2);
-        public static readonly FP PiTimes2 = new FP(PI_TIMES_2);
-        public static readonly FP PiInv = (FP)0.3183098861837906715377675267M;
-        public static readonly FP PiOver2Inv = (FP)0.6366197723675813430755350535M;
+        public static readonly Fix64 Pi = new Fix64(PI);
+        public static readonly Fix64 PiOver2 = new Fix64(PI_OVER_2);
+        public static readonly Fix64 PiTimes2 = new Fix64(PI_TIMES_2);
+        public static readonly Fix64 PiInv = (Fix64)0.3183098861837906715377675267M;
+        public static readonly Fix64 PiOver2Inv = (Fix64)0.6366197723675813430755350535M;
 
-        public static readonly FP Deg2Rad = Pi / new FP(180);
+        public static readonly Fix64 Deg2Rad = Pi / new Fix64(180);
 
-        public static readonly FP Rad2Deg = new FP(180) / Pi;
+        public static readonly Fix64 Rad2Deg = new Fix64(180) / Pi;
 
-		public static readonly FP LutInterval = (FP)(LUT_SIZE - 1) / PiOver2;
-
-        public static readonly FP Log2Max = new FP(LOG2MAX);
-        public static readonly FP Log2Min = new FP(LOG2MIN);
-        public static readonly FP Ln2 = new FP(LN2);
+		public static readonly Fix64 LutInterval = (Fix64)(LUT_SIZE - 1) / PiOver2;
 
         /// <summary>
         /// Returns a number indicating the sign of a Fix64 number.
         /// Returns 1 if the value is positive, 0 if is 0, and -1 if it is negative.
         /// </summary>
-        public static int Sign(FP value) {
+        public static int Sign(Fix64 value) {
             return
                 value._serializedValue < 0 ? -1 :
                 value._serializedValue > 0 ? 1 :
@@ -85,48 +115,39 @@ namespace LogicShared.TrueSync.Math {
         /// Returns the absolute value of a Fix64 number.
         /// Note: Abs(Fix64.MinValue) == Fix64.MaxValue.
         /// </summary>
-        public static FP Abs(FP value) {
+        public static Fix64 Abs(Fix64 value) {
             if (value._serializedValue == MIN_VALUE) {
                 return MaxValue;
             }
 
             // branchless implementation, see http://www.strchr.com/optimized_abs_function
             var mask = value._serializedValue >> 63;
-            FP result;
-            result._serializedValue = (value._serializedValue + mask) ^ mask;
-            return result;
-            //return new FP((value._serializedValue + mask) ^ mask);
+            return new Fix64((value._serializedValue + mask) ^ mask);
         }
 
         /// <summary>
         /// Returns the absolute value of a Fix64 number.
         /// FastAbs(Fix64.MinValue) is undefined.
         /// </summary>
-        public static FP FastAbs(FP value) {
+        public static Fix64 FastAbs(Fix64 value) {
             // branchless implementation, see http://www.strchr.com/optimized_abs_function
             var mask = value._serializedValue >> 63;
-            FP result;
-            result._serializedValue = (value._serializedValue + mask) ^ mask;
-            return result;
-            //return new FP((value._serializedValue + mask) ^ mask);
+            return new Fix64((value._serializedValue + mask) ^ mask);
         }
 
 
         /// <summary>
         /// Returns the largest integer less than or equal to the specified number.
         /// </summary>
-        public static FP Floor(FP value) {
+        public static Fix64 Floor(Fix64 value) {
             // Just zero out the fractional part
-            FP result;
-            result._serializedValue = (long)((ulong)value._serializedValue & 0xFFFFFFFF00000000);
-            return result;
-            //return new FP((long)((ulong)value._serializedValue & 0xFFFFFFFF00000000));
+            return new Fix64((long)((ulong)value._serializedValue & 0xFFFFFFFF00000000));
         }
 
         /// <summary>
         /// Returns the smallest integral value that is greater than or equal to the specified number.
         /// </summary>
-        public static FP Ceiling(FP value) {
+        public static Fix64 Ceiling(Fix64 value) {
             var hasFractionalPart = (value._serializedValue & 0x00000000FFFFFFFF) != 0;
             return hasFractionalPart ? Floor(value) + One : value;
         }
@@ -135,7 +156,7 @@ namespace LogicShared.TrueSync.Math {
         /// Rounds a value to the nearest integral value.
         /// If the value is halfway between an even and an uneven value, returns the even value.
         /// </summary>
-        public static FP Round(FP value) {
+        public static Fix64 Round(Fix64 value) {
             var fractionalPart = value._serializedValue & 0x00000000FFFFFFFF;
             var integralPart = Floor(value);
             if (fractionalPart < 0x80000000) {
@@ -155,17 +176,14 @@ namespace LogicShared.TrueSync.Math {
         /// Adds x and y. Performs saturating addition, i.e. in case of overflow, 
         /// rounds to MinValue or MaxValue depending on sign of operands.
         /// </summary>
-        public static FP operator +(FP x, FP y) {
-            FP result;
-            result._serializedValue = x._serializedValue + y._serializedValue;
-            return result;
-            //return new FP(x._serializedValue + y._serializedValue);
+        public static Fix64 operator +(Fix64 x, Fix64 y) {
+            return new Fix64(x._serializedValue + y._serializedValue);
         }
 
         /// <summary>
         /// Adds x and y performing overflow checking. Should be inlined by the CLR.
         /// </summary>
-        public static FP OverflowAdd(FP x, FP y) {
+        public static Fix64 OverflowAdd(Fix64 x, Fix64 y) {
             var xl = x._serializedValue;
             var yl = y._serializedValue;
             var sum = xl + yl;
@@ -173,37 +191,28 @@ namespace LogicShared.TrueSync.Math {
             if (((~(xl ^ yl) & (xl ^ sum)) & MIN_VALUE) != 0) {
                 sum = xl > 0 ? MAX_VALUE : MIN_VALUE;
             }
-            FP result;
-            result._serializedValue = sum;
-            return result;
-            //return new FP(sum);
+            return new Fix64(sum);
         }
 
         /// <summary>
         /// Adds x and y witout performing overflow checking. Should be inlined by the CLR.
         /// </summary>
-        public static FP FastAdd(FP x, FP y) {
-            FP result;
-            result._serializedValue = x._serializedValue + y._serializedValue;
-            return result;
-            //return new FP(x._serializedValue + y._serializedValue);
+        public static Fix64 FastAdd(Fix64 x, Fix64 y) {
+            return new Fix64(x._serializedValue + y._serializedValue);
         }
 
         /// <summary>
         /// Subtracts y from x. Performs saturating substraction, i.e. in case of overflow, 
         /// rounds to MinValue or MaxValue depending on sign of operands.
         /// </summary>
-        public static FP operator -(FP x, FP y) {
-            FP result;
-            result._serializedValue = x._serializedValue - y._serializedValue;
-            return result;
-            //return new FP(x._serializedValue - y._serializedValue);
+        public static Fix64 operator -(Fix64 x, Fix64 y) {
+            return new Fix64(x._serializedValue - y._serializedValue);
         }
 
         /// <summary>
         /// Subtracts y from x witout performing overflow checking. Should be inlined by the CLR.
         /// </summary>
-        public static FP OverflowSub(FP x, FP y) {
+        public static Fix64 OverflowSub(Fix64 x, Fix64 y) {
             var xl = x._serializedValue;
             var yl = y._serializedValue;
             var diff = xl - yl;
@@ -211,17 +220,14 @@ namespace LogicShared.TrueSync.Math {
             if ((((xl ^ yl) & (xl ^ diff)) & MIN_VALUE) != 0) {
                 diff = xl < 0 ? MIN_VALUE : MAX_VALUE;
             }
-            FP result;
-            result._serializedValue = diff;
-            return result;
-            //return new FP(diff);
+            return new Fix64(diff);
         }
 
         /// <summary>
         /// Subtracts y from x witout performing overflow checking. Should be inlined by the CLR.
         /// </summary>
-        public static FP FastSub(FP x, FP y) {
-            return new FP(x._serializedValue - y._serializedValue);
+        public static Fix64 FastSub(Fix64 x, Fix64 y) {
+            return new Fix64(x._serializedValue - y._serializedValue);
         }
 
         static long AddOverflowHelper(long x, long y, ref bool overflow) {
@@ -231,7 +237,7 @@ namespace LogicShared.TrueSync.Math {
             return sum;
         }
 
-        public static FP operator *(FP x, FP y) {
+        public static Fix64 operator *(Fix64 x, Fix64 y) {
             var xl = x._serializedValue;
             var yl = y._serializedValue;
 
@@ -251,7 +257,7 @@ namespace LogicShared.TrueSync.Math {
             var hiResult = hihi << FRACTIONAL_PLACES;
 
             var sum = (long)loResult + midResult1 + midResult2 + hiResult;
-            FP result;// = default(FP);
+            Fix64 result;// = default(FP);
             result._serializedValue = sum;
             return result;
         }
@@ -260,7 +266,7 @@ namespace LogicShared.TrueSync.Math {
         /// Performs multiplication without checking for overflow.
         /// Useful for performance-critical code where the values are guaranteed not to cause overflow
         /// </summary>
-        public static FP OverflowMul(FP x, FP y) {
+        public static Fix64 OverflowMul(Fix64 x, Fix64 y) {
             var xl = x._serializedValue;
             var yl = y._serializedValue;
 
@@ -321,17 +327,15 @@ namespace LogicShared.TrueSync.Math {
                     return MinValue;
                 }
             }
-            FP result;
-            result._serializedValue = sum;
-            return result;
-            //return new FP(sum);
+
+            return new Fix64(sum);
         }
 
         /// <summary>
         /// Performs multiplication without checking for overflow.
         /// Useful for performance-critical code where the values are guaranteed not to cause overflow
         /// </summary>
-        public static FP FastMul(FP x, FP y) {
+        public static Fix64 FastMul(Fix64 x, Fix64 y) {
             var xl = x._serializedValue;
             var yl = y._serializedValue;
 
@@ -351,7 +355,7 @@ namespace LogicShared.TrueSync.Math {
             var hiResult = hihi << FRACTIONAL_PLACES;
 
             var sum = (long)loResult + midResult1 + midResult2 + hiResult;
-			FP result;// = default(FP);
+			Fix64 result;// = default(FP);
 			result._serializedValue = sum;
 			return result;
             //return new FP(sum);
@@ -365,7 +369,7 @@ namespace LogicShared.TrueSync.Math {
             return result;
         }
 
-        public static FP operator /(FP x, FP y) {
+        public static Fix64 operator /(Fix64 x, Fix64 y) {
             var xl = x._serializedValue;
             var yl = y._serializedValue;
 
@@ -414,63 +418,51 @@ namespace LogicShared.TrueSync.Math {
                 result = -result;
             }
 
-            FP r;
-            r._serializedValue = result;
-            return r;
-            //return new FP(result);
+            return new Fix64(result);
         }
 
-        public static FP operator %(FP x, FP y) {
-            FP result;
-            result._serializedValue = x._serializedValue == MIN_VALUE & y._serializedValue == -1 ?
+        public static Fix64 operator %(Fix64 x, Fix64 y) {
+            return new Fix64(
+                x._serializedValue == MIN_VALUE & y._serializedValue == -1 ?
                 0 :
-                x._serializedValue % y._serializedValue;
-            return result;
-            //return new FP(
-            //    x._serializedValue == MIN_VALUE & y._serializedValue == -1 ?
-            //    0 :
-            //    x._serializedValue % y._serializedValue);
+                x._serializedValue % y._serializedValue);
         }
 
         /// <summary>
         /// Performs modulo as fast as possible; throws if x == MinValue and y == -1.
         /// Use the operator (%) for a more reliable but slower modulo.
         /// </summary>
-        public static FP FastMod(FP x, FP y) {
-            FP result;
-            result._serializedValue = x._serializedValue % y._serializedValue;
-            return result;
-            //return new FP(x._serializedValue % y._serializedValue);
+        public static Fix64 FastMod(Fix64 x, Fix64 y) {
+            return new Fix64(x._serializedValue % y._serializedValue);
         }
 
-        public static FP operator -(FP x) {
-            return x._serializedValue == MIN_VALUE ? MaxValue : new FP(-x._serializedValue);
+        public static Fix64 operator -(Fix64 x) {
+            return x._serializedValue == MIN_VALUE ? MaxValue : new Fix64(-x._serializedValue);
         }
 
-        public static bool operator ==(FP x, FP y) {
+        public static bool operator ==(Fix64 x, Fix64 y) {
             return x._serializedValue == y._serializedValue;
         }
 
-        public static bool operator !=(FP x, FP y) {
+        public static bool operator !=(Fix64 x, Fix64 y) {
             return x._serializedValue != y._serializedValue;
         }
 
-        public static bool operator >(FP x, FP y) {
+        public static bool operator >(Fix64 x, Fix64 y) {
             return x._serializedValue > y._serializedValue;
         }
 
-        public static bool operator <(FP x, FP y) {
+        public static bool operator <(Fix64 x, Fix64 y) {
             return x._serializedValue < y._serializedValue;
         }
 
-        public static bool operator >=(FP x, FP y) {
+        public static bool operator >=(Fix64 x, Fix64 y) {
             return x._serializedValue >= y._serializedValue;
         }
 
-        public static bool operator <=(FP x, FP y) {
+        public static bool operator <=(Fix64 x, Fix64 y) {
             return x._serializedValue <= y._serializedValue;
         }
-
 
         /// <summary>
         /// Returns the square root of a specified number.
@@ -478,7 +470,7 @@ namespace LogicShared.TrueSync.Math {
         /// <exception cref="ArgumentOutOfRangeException">
         /// The argument was negative.
         /// </exception>
-        public static FP Sqrt(FP x) {
+        public static Fix64 Sqrt(Fix64 x) {
             var xl = x._serializedValue;
             if (xl < 0) {
                 // We cannot represent infinities like Single and Double, and Sqrt is
@@ -534,11 +526,7 @@ namespace LogicShared.TrueSync.Math {
             if (num > result) {
                 ++result;
             }
-
-            FP r;
-            r._serializedValue = (long)result;
-            return r;
-            //return new FP((long)result);
+            return new Fix64((long)result);
         }
 
         /// <summary>
@@ -547,10 +535,10 @@ namespace LogicShared.TrueSync.Math {
         /// It may lose accuracy as the value of x grows.
         /// Performance: about 25% slower than Math.Sin() in x64, and 200% slower in x86.
         /// </summary>
-        public static FP Sin(FP x) {
+        public static Fix64 Sin(Fix64 x) {
             bool flipHorizontal, flipVertical;
             var clampedL = ClampSinValue(x._serializedValue, out flipHorizontal, out flipVertical);
-            var clamped = new FP(clampedL);
+            var clamped = new Fix64(clampedL);
 
             // Find the two closest values in the LUT and perform linear interpolation
             // This is what kills the performance of this function on x86 - x64 is fine though
@@ -558,20 +546,17 @@ namespace LogicShared.TrueSync.Math {
             var roundedIndex = Round(rawIndex);
             var indexError = 0;//FastSub(rawIndex, roundedIndex);
 
-            var nearestValue = new FP(SinLut[flipHorizontal ?
+            var nearestValue = new Fix64(SinLut[flipHorizontal ?
                 SinLut.Length - 1 - (int)roundedIndex :
                 (int)roundedIndex]);
-            var secondNearestValue = new FP(SinLut[flipHorizontal ?
+            var secondNearestValue = new Fix64(SinLut[flipHorizontal ?
                 SinLut.Length - 1 - (int)roundedIndex - Sign(indexError) :
                 (int)roundedIndex + Sign(indexError)]);
 
             var delta = FastMul(indexError, FastAbs(FastSub(nearestValue, secondNearestValue)))._serializedValue;
             var interpolatedValue = nearestValue._serializedValue + (flipHorizontal ? -delta : delta);
             var finalValue = flipVertical ? -interpolatedValue : interpolatedValue;
-
-            //FP a2 = new FP(finalValue);
-            FP a2;
-            a2._serializedValue = finalValue;
+            Fix64 a2 = new Fix64(finalValue);
             return a2;
         }
 
@@ -580,7 +565,7 @@ namespace LogicShared.TrueSync.Math {
         /// This is at least 3 times faster than Sin() on x86 and slightly faster than Math.Sin(),
         /// however its accuracy is limited to 4-5 decimals, for small enough values of x.
         /// </summary>
-        public static FP FastSin(FP x) {
+        public static Fix64 FastSin(Fix64 x) {
             bool flipHorizontal, flipVertical;
             var clampedL = ClampSinValue(x._serializedValue, out flipHorizontal, out flipVertical);
 
@@ -593,11 +578,7 @@ namespace LogicShared.TrueSync.Math {
             var nearestValue = SinLut[flipHorizontal ?
                 SinLut.Length - 1 - (int)rawIndex :
                 (int)rawIndex];
-
-            FP result;
-            result._serializedValue = flipVertical ? -nearestValue : nearestValue;
-            return result;
-            //return new FP(flipVertical ? -nearestValue : nearestValue);
+            return new Fix64(flipVertical ? -nearestValue : nearestValue);
         }
 
 
@@ -631,10 +612,10 @@ namespace LogicShared.TrueSync.Math {
         /// Returns the cosine of x.
         /// See Sin() for more details.
         /// </summary>
-        public static FP Cos(FP x) {
+        public static Fix64 Cos(Fix64 x) {
             var xl = x._serializedValue;
             var rawAngle = xl + (xl > 0 ? -PI - PI_OVER_2 : PI_OVER_2);
-            FP a2 = Sin(new FP(rawAngle));
+            Fix64 a2 = Sin(new Fix64(rawAngle));
             return a2;
         }
 
@@ -642,10 +623,10 @@ namespace LogicShared.TrueSync.Math {
         /// Returns a rough approximation of the cosine of x.
         /// See FastSin for more details.
         /// </summary>
-        public static FP FastCos(FP x) {
+        public static Fix64 FastCos(Fix64 x) {
             var xl = x._serializedValue;
             var rawAngle = xl + (xl > 0 ? -PI - PI_OVER_2 : PI_OVER_2);
-            return FastSin(new FP(rawAngle));
+            return FastSin(new Fix64(rawAngle));
         }
 
         /// <summary>
@@ -654,7 +635,7 @@ namespace LogicShared.TrueSync.Math {
         /// <remarks>
         /// This function is not well-tested. It may be wildly inaccurate.
         /// </remarks>
-        public static FP Tan(FP x) {
+        public static Fix64 Tan(Fix64 x) {
             var clampedPi = x._serializedValue % PI;
             var flip = false;
             if (clampedPi < 0) {
@@ -666,82 +647,28 @@ namespace LogicShared.TrueSync.Math {
                 clampedPi = PI_OVER_2 - (clampedPi - PI_OVER_2);
             }
 
-            var clamped = new FP(clampedPi);
+            var clamped = new Fix64(clampedPi);
 
             // Find the two closest values in the LUT and perform linear interpolation
             var rawIndex = FastMul(clamped, LutInterval);
             var roundedIndex = Round(rawIndex);
             var indexError = FastSub(rawIndex, roundedIndex);
 
-            var nearestValue = new FP(TanLut[(int)roundedIndex]);
-            var secondNearestValue = new FP(TanLut[(int)roundedIndex + Sign(indexError)]);
+            var nearestValue = new Fix64(TanLut[(int)roundedIndex]);
+            var secondNearestValue = new Fix64(TanLut[(int)roundedIndex + Sign(indexError)]);
 
             var delta = FastMul(indexError, FastAbs(FastSub(nearestValue, secondNearestValue)))._serializedValue;
             var interpolatedValue = nearestValue._serializedValue + delta;
             var finalValue = flip ? -interpolatedValue : interpolatedValue;
-            FP a2 = new FP(finalValue);
+            Fix64 a2 = new Fix64(finalValue);
             return a2;
         }
 
-        /// <summary>
-        /// Returns the arctan of of the specified number, calculated using Euler series
-        /// This function has at least 7 decimals of accuracy.
-        /// </summary>
-        public static FP Atan(FP z)
-        {
-            if (z.RawValue == 0) return Zero;
-
-            // Force positive values for argument
-            // Atan(-z) = -Atan(z).
-            var neg = z.RawValue < 0;
-            if (neg)
-            {
-                z = -z;
-            }
-
-            FP result;
-            var two = (FP)2;
-            var three = (FP)3;
-
-            bool invert = z > One;
-            if (invert) z = One / z;
-
-            result = One;
-            var term = One;
-
-            var zSq = z * z;
-            var zSq2 = zSq * two;
-            var zSqPlusOne = zSq + One;
-            var zSq12 = zSqPlusOne * two;
-            var dividend = zSq2;
-            var divisor = zSqPlusOne * three;
-
-            for (var i = 2; i < 30; ++i)
-            {
-                term *= dividend / divisor;
-                result += term;
-
-                dividend += zSq2;
-                divisor += zSq12;
-
-                if (term.RawValue == 0) break;
-            }
-
-            result = result * z / zSqPlusOne;
-
-            if (invert)
-            {
-                result = PiOver2 - result;
-            }
-
-            if (neg)
-            {
-                result = -result;
-            }
-            return result;
+        public static Fix64 Atan(Fix64 y) {
+            return Atan2(y, 1);
         }
 
-        public static FP Atan2(FP y, FP x) {
+        public static Fix64 Atan2(Fix64 y, Fix64 x) {
             var yl = y._serializedValue;
             var xl = x._serializedValue;
             if (xl == 0) {
@@ -753,10 +680,10 @@ namespace LogicShared.TrueSync.Math {
                 }
                 return -PiOver2;
             }
-            FP atan;
+            Fix64 atan;
             var z = y / x;
 
-            FP sm = FP.EN2 * 28;
+            Fix64 sm = Fix64.EN2 * 28;
             // Deal with overflow
             if (One + sm * z * z == MaxValue) {
                 return y < Zero ? -PiOver2 : PiOver2;
@@ -779,75 +706,78 @@ namespace LogicShared.TrueSync.Math {
             return atan;
         }
 
-        public static FP Asin(FP value) {
+        public static Fix64 Asin(Fix64 value) {
             return FastSub(PiOver2, Acos(value));
         }
 
-        /// <summary>
-        /// Returns the arccos of of the specified number, calculated using Atan and Sqrt
-        /// This function has at least 7 decimals of accuracy.
-        /// </summary>
-        public static FP Acos(FP x)
-        {
-            if (x < -One || x > One)
-            {
-                throw new ArgumentOutOfRangeException("Must between -FP.One and FP.One", "x");
+        public static Fix64 Acos(Fix64 value) {
+            if (value == 0) {
+                return Fix64.PiOver2;
             }
 
-            if (x.RawValue == 0) return PiOver2;
+            bool flip = false;
+            if (value < 0) {
+                value = -value;
+                flip = true;
+            }
 
-            var result = Atan(Sqrt(One - x * x) / x);
-            return x.RawValue < 0 ? result + Pi : result;
+            // Find the two closest values in the LUT and perform linear interpolation
+            var rawIndex = FastMul(value, LUT_SIZE);
+            var roundedIndex = Round(rawIndex);
+            if (roundedIndex >= LUT_SIZE) {
+                roundedIndex = LUT_SIZE - 1;
+            }
+
+            var indexError = FastSub(rawIndex, roundedIndex);
+            var nearestValue = new Fix64(AcosLut[(int)roundedIndex]);
+
+            var nextIndex = (int)roundedIndex + Sign(indexError);
+            if (nextIndex >= LUT_SIZE) {
+                nextIndex = LUT_SIZE - 1;
+            }
+
+            var secondNearestValue = new Fix64(AcosLut[nextIndex]);
+
+            var delta = FastMul(indexError, FastAbs(FastSub(nearestValue, secondNearestValue)))._serializedValue;
+            Fix64 interpolatedValue = new Fix64(nearestValue._serializedValue + delta);
+            Fix64 finalValue = flip ? (Fix64.Pi - interpolatedValue) : interpolatedValue;
+
+            return finalValue;
         }
 
-        public static implicit operator FP(long value) {
-            FP result;
-            result._serializedValue = value * ONE;
-            return result;
-            //return new FP(value * ONE);
+        public static implicit operator Fix64(long value) {
+            return new Fix64(value * ONE);
         }
 
-        public static explicit operator long(FP value) {
+        public static explicit operator long(Fix64 value) {
             return value._serializedValue >> FRACTIONAL_PLACES;
         }
 
-        public static implicit operator FP(float value) {
-            FP result;
-            result._serializedValue = (long)(value * ONE);
-            return result;
-            //return new FP((long)(value * ONE));
+        public static implicit operator Fix64(float value) {
+            return new Fix64((long)(value * ONE));
         }
 
-        public static explicit operator float(FP value) {
+        public static explicit operator float(Fix64 value) {
             return (float)value._serializedValue / ONE;
         }
 
-        public static implicit operator FP(double value) {
-            FP result;
-            result._serializedValue = (long)(value * ONE);
-            return result;
-            //return new FP((long)(value * ONE));
+        public static implicit operator Fix64(double value) {
+            return new Fix64((long)(value * ONE));
         }
 
-        public static explicit operator double(FP value) {
+        public static explicit operator double(Fix64 value) {
             return (double)value._serializedValue / ONE;
         }
 
-        public static explicit operator FP(decimal value) {
-            FP result;
-            result._serializedValue = (long)(value * ONE);
-            return result;
-            //return new FP((long)(value * ONE));
+        public static explicit operator Fix64(decimal value) {
+            return new Fix64((long)(value * ONE));
         }
 
-        public static implicit operator FP(int value) {
-            FP result;
-            result._serializedValue = value * ONE;
-            return result;
-            //return new FP(value * ONE);
+        public static implicit operator Fix64(int value) {
+            return new Fix64(value * ONE);
         }
 
-        public static explicit operator decimal(FP value) {
+        public static explicit operator decimal(Fix64 value) {
             return (decimal)value._serializedValue / ONE;
         }
 
@@ -871,39 +801,39 @@ namespace LogicShared.TrueSync.Math {
             return (decimal)this;
         }
 
-        public static float ToFloat(FP value) {
+        public static float ToFloat(Fix64 value) {
             return (float)value;
         }
 
-        public static int ToInt(FP value) {
+        public static int ToInt(Fix64 value) {
             return (int)value;
         }
 
-        public static FP FromFloat(float value) {
-            return (FP)value;
+        public static Fix64 FromFloat(float value) {
+            return (Fix64)value;
         }
 
-        public static bool IsInfinity(FP value) {
+        public static bool IsInfinity(Fix64 value) {
             return value == NegativeInfinity || value == PositiveInfinity;
         }
 
-        public static bool IsNaN(FP value) {
+        public static bool IsNaN(Fix64 value) {
             return value == NaN;
         }
 
         public override bool Equals(object obj) {
-            return obj is FP && ((FP)obj)._serializedValue == _serializedValue;
+            return obj is Fix64 && ((Fix64)obj)._serializedValue == _serializedValue;
         }
 
         public override int GetHashCode() {
             return _serializedValue.GetHashCode();
         }
 
-        public bool Equals(FP other) {
+        public bool Equals(Fix64 other) {
             return _serializedValue == other._serializedValue;
         }
 
-        public int CompareTo(FP other) {
+        public int CompareTo(Fix64 other) {
             return _serializedValue.CompareTo(other._serializedValue);
         }
 
@@ -911,22 +841,15 @@ namespace LogicShared.TrueSync.Math {
             return ((float)this).ToString();
         }
 
-        public string ToString(IFormatProvider provider) {
-            return ((float)this).ToString(provider);
-        }
-        public string ToString(string format) {
-            return ((float)this).ToString(format);
-        }
-
-        public static FP FromRaw(long rawValue) {
-            return new FP(rawValue);
+        public static Fix64 FromRaw(long rawValue) {
+            return new Fix64(rawValue);
         }
 
         internal static void GenerateAcosLut() {
             using (var writer = new StreamWriter("Fix64AcosLut.cs")) {
                 writer.Write(
 @"namespace TrueSync {
-    partial struct FP {
+    partial struct Fix64 {
         public static readonly long[] AcosLut = new[] {");
                 int lineCounter = 0;
                 for (int i = 0; i < LUT_SIZE; ++i) {
@@ -936,7 +859,7 @@ namespace LogicShared.TrueSync.Math {
                         writer.Write("            ");
                     }
                     var acos = System.Math.Acos(angle);
-                    var rawValue = ((FP)acos)._serializedValue;
+                    var rawValue = ((Fix64)acos)._serializedValue;
                     writer.Write(string.Format("0x{0:X}L, ", rawValue));
                 }
                 writer.Write(
@@ -961,7 +884,7 @@ namespace LogicShared.TrueSync.Math {
                         writer.Write("            ");
                     }
                     var sin = System.Math.Sin(angle);
-                    var rawValue = ((FP)sin)._serializedValue;
+                    var rawValue = ((Fix64)sin)._serializedValue;
                     writer.Write(string.Format("0x{0:X}L, ", rawValue));
                 }
                 writer.Write(
@@ -989,7 +912,7 @@ namespace LogicShared.TrueSync.Math {
                     if (tan > (double)MaxValue || tan < 0.0) {
                         tan = (double)MaxValue;
                     }
-                    var rawValue = (((decimal)tan > (decimal)MaxValue || tan < 0.0) ? MaxValue : (FP)tan)._serializedValue;
+                    var rawValue = (((decimal)tan > (decimal)MaxValue || tan < 0.0) ? MaxValue : (Fix64)tan)._serializedValue;
                     writer.Write(string.Format("0x{0:X}L, ", rawValue));
                 }
                 writer.Write(
@@ -1009,12 +932,202 @@ namespace LogicShared.TrueSync.Math {
         /// This is the constructor from raw value; it can only be used interally.
         /// </summary>
         /// <param name="rawValue"></param>
-        FP(long rawValue) {
+        Fix64(long rawValue) {
             _serializedValue = rawValue;
         }
 
-        public FP(int value) {
+        public Fix64(int value) {
             _serializedValue = value * ONE;
+        }
+
+
+
+        const long LN2 = 0xB17217F7;
+        const long LOG2MAX = 0x1F00000000;
+        const long LOG2MIN = -0x2000000000;
+
+        public static readonly Fix64 Ln2 = new Fix64(LN2);
+        public static readonly Fix64 Two = (Fix64)2;
+        public static readonly Fix64 Log2Max = new Fix64(LOG2MAX);
+        public static readonly Fix64 Log2Min = new Fix64(LOG2MIN);
+
+        public static Fix64 FractionalPart(Fix64 value)
+        {
+            return Fix64.FromRaw(value.RawValue & 0x00000000FFFFFFFF);
+        }
+
+        public static Fix64 Log2(Fix64 x)
+        {
+            if (x.RawValue <= 0)
+                throw new ArgumentOutOfRangeException("Non-positive value passed to Ln", "x");
+
+            // This implementation is based on Clay. S. Turner's fast binary logarithm
+            // algorithm[1].
+
+            long b = 1U << (FRACTIONAL_PLACES - 1);
+            long y = 0;
+
+            long rawX = x.RawValue;
+            while (rawX < ONE)
+            {
+                rawX <<= 1;
+                y -= ONE;
+            }
+
+            while (rawX >= (ONE << 1))
+            {
+                rawX >>= 1;
+                y += ONE;
+            }
+
+            Fix64 z = Fix64.FromRaw(rawX);
+
+            for (int i = 0; i < FRACTIONAL_PLACES; i++)
+            {
+                z = z * z;
+                if (z.RawValue >= (ONE << 1))
+                {
+                    z = Fix64.FromRaw(z.RawValue >> 1);
+                    y += b;
+                }
+                b >>= 1;
+            }
+
+            return Fix64.FromRaw(y);
+        }
+
+        public static Fix64 Ln(Fix64 x)
+        {
+            return Log2(x) * Ln2;
+        }
+
+        public static Fix64 Pow2(Fix64 x)
+        {
+            if (x.RawValue == 0) return One;
+
+            // Avoid negative arguments by exploiting that exp(-x) = 1/exp(x).
+            bool neg = (x.RawValue < 0);
+            if (neg) x = -x;
+
+            if (x == One)
+                return neg ? One / Two : Two;
+            if (x >= Log2Max) return neg ? One / MaxValue : MaxValue;
+            if (x <= Log2Min) return neg ? MaxValue : Zero;
+
+            /* The algorithm is based on the power series for exp(x):
+             * http://en.wikipedia.org/wiki/Exponential_function#Formal_definition
+             * 
+             * From term n, we get term n+1 by multiplying with x/n.
+             * When the sum term drops to zero, we can stop summing.
+             */
+
+            int integerPart = (int)Floor(x);
+            x = FractionalPart(x);
+
+            Fix64 result = One;
+            Fix64 term = One;
+            int i = 1;
+            while (term.RawValue != 0)
+            {
+                term = x * term * Ln2 / (Fix64)i;
+                result += term;
+                i++;
+            }
+
+            result = FromRaw(result.RawValue << integerPart);
+            if (neg) result = One / result;
+
+            return result;
+        }
+
+        public static Fix64 Pow(Fix64 b, Fix64 exp)
+        {
+            if (b == One)
+                return One;
+            if (exp.RawValue == 0)
+                return One;
+            if (b.RawValue == 0)
+                return Zero;
+
+            Fix64 log2 = Log2(b);
+            return Pow2(SafeMul(exp, log2));
+        }
+
+        public static Fix64 SafeMul(Fix64 x, Fix64 y)
+        {
+            var xl = x.RawValue;
+            var yl = y.RawValue;
+
+            var xlo = (ulong)(xl & 0x00000000FFFFFFFF);
+            var xhi = xl >> FRACTIONAL_PLACES;
+            var ylo = (ulong)(yl & 0x00000000FFFFFFFF);
+            var yhi = yl >> FRACTIONAL_PLACES;
+
+            var lolo = xlo * ylo;
+            var lohi = (long)xlo * yhi;
+            var hilo = xhi * (long)ylo;
+            var hihi = xhi * yhi;
+
+            var loResult = lolo >> FRACTIONAL_PLACES;
+            var midResult1 = lohi;
+            var midResult2 = hilo;
+            var hiResult = hihi << FRACTIONAL_PLACES;
+
+            bool overflow = false;
+            var sum = AddOverflowHelper((long)loResult, midResult1, ref overflow);
+            sum = AddOverflowHelper(sum, midResult2, ref overflow);
+            sum = AddOverflowHelper(sum, hiResult, ref overflow);
+
+            bool opSignsEqual = ((xl ^ yl) & MIN_VALUE) == 0;
+
+            // if signs of operands are equal and sign of result is negative,
+            // then multiplication overflowed positively
+            // the reverse is also true
+            if (opSignsEqual)
+            {
+                if (sum < 0 || (overflow && xl > 0))
+                {
+                    return MaxValue;
+                }
+            }
+            else
+            {
+                if (sum > 0)
+                {
+                    return MinValue;
+                }
+            }
+
+            // if the top 32 bits of hihi (unused in the result) are neither all 0s or 1s,
+            // then this means the result overflowed.
+            var topCarry = hihi >> FRACTIONAL_PLACES;
+            if (topCarry != 0 && topCarry != -1 /*&& xl != -17 && yl != -17*/)
+            {
+                return opSignsEqual ? MaxValue : MinValue;
+            }
+
+            // If signs differ, both operands' magnitudes are greater than 1,
+            // and the result is greater than the negative operand, then there was negative overflow.
+            if (!opSignsEqual)
+            {
+                long posOp, negOp;
+                if (xl > yl)
+                {
+                    posOp = xl;
+                    negOp = yl;
+                }
+                else
+                {
+                    posOp = yl;
+                    negOp = xl;
+                }
+                if (sum > negOp && negOp < -ONE && posOp > ONE)
+                {
+                    return MinValue;
+                }
+            }
+
+            return new Fix64(sum);
         }
     }
 }

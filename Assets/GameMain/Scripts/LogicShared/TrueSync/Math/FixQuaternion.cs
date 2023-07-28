@@ -26,22 +26,22 @@ namespace LogicShared.TrueSync.Math
     /// A Quaternion representing an orientation.
     /// </summary>
     [Serializable]
-    public struct TSQuaternion
+    public struct FixQuaternion
     {
 
         /// <summary>The X component of the quaternion.</summary>
-        public FP x;
+        public Fix64 x;
         /// <summary>The Y component of the quaternion.</summary>
-        public FP y;
+        public Fix64 y;
         /// <summary>The Z component of the quaternion.</summary>
-        public FP z;
+        public Fix64 z;
         /// <summary>The W component of the quaternion.</summary>
-        public FP w;
+        public Fix64 w;
 
-        public static readonly TSQuaternion identity;
+        public static readonly FixQuaternion identity;
 
-        static TSQuaternion() {
-            identity = new TSQuaternion(0, 0, 0, 1);
+        static FixQuaternion() {
+            identity = new FixQuaternion(0, 0, 0, 1);
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="y">The Y component of the quaternion.</param>
         /// <param name="z">The Z component of the quaternion.</param>
         /// <param name="w">The W component of the quaternion.</param>
-        public TSQuaternion(FP x, FP y, FP z, FP w)
+        public FixQuaternion(Fix64 x, Fix64 y, Fix64 z, Fix64 w)
         {
             this.x = x;
             this.y = y;
@@ -59,45 +59,45 @@ namespace LogicShared.TrueSync.Math
             this.w = w;
         }
 
-        public void Set(FP new_x, FP new_y, FP new_z, FP new_w) {
+        public void Set(Fix64 new_x, Fix64 new_y, Fix64 new_z, Fix64 new_w) {
             this.x = new_x;
             this.y = new_y;
             this.z = new_z;
             this.w = new_w;
         }
 
-        public void SetFromToRotation(TSVector fromDirection, TSVector toDirection) {
-            TSQuaternion targetRotation = TSQuaternion.FromToRotation(fromDirection, toDirection);
+        public void SetFromToRotation(FixVector fromDirection, FixVector toDirection) {
+            FixQuaternion targetRotation = FixQuaternion.FromToRotation(fromDirection, toDirection);
             this.Set(targetRotation.x, targetRotation.y, targetRotation.z, targetRotation.w);
         }
 
-        public TSVector eulerAngles {
+        public FixVector eulerAngles {
             get {
-                TSVector result = new TSVector();
+                FixVector result = new FixVector();
 
-                FP ysqr = y * y;
-                FP t0 = -2.0f * (ysqr + z * z) + 1.0f;
-                FP t1 = +2.0f * (x * y - w * z);
-                FP t2 = -2.0f * (x * z + w * y);
-                FP t3 = +2.0f * (y * z - w * x);
-                FP t4 = -2.0f * (x * x + ysqr) + 1.0f;
+                Fix64 ysqr = y * y;
+                Fix64 t0 = -2.0f * (ysqr + z * z) + 1.0f;
+                Fix64 t1 = +2.0f * (x * y - w * z);
+                Fix64 t2 = -2.0f * (x * z + w * y);
+                Fix64 t3 = +2.0f * (y * z - w * x);
+                Fix64 t4 = -2.0f * (x * x + ysqr) + 1.0f;
 
                 t2 = t2 > 1.0f ? 1.0f : t2;
                 t2 = t2 < -1.0f ? -1.0f : t2;
 
-                result.x = FP.Atan2(t3, t4) * FP.Rad2Deg;
-                result.y = FP.Asin(t2) * FP.Rad2Deg;
-                result.z = FP.Atan2(t1, t0) * FP.Rad2Deg;
+                result.x = Fix64.Atan2(t3, t4) * Fix64.Rad2Deg;
+                result.y = Fix64.Asin(t2) * Fix64.Rad2Deg;
+                result.z = Fix64.Atan2(t1, t0) * Fix64.Rad2Deg;
 
                 return result * -1;
             }
         }
 
-        public static FP Angle(TSQuaternion a, TSQuaternion b) {
-            TSQuaternion aInv = TSQuaternion.Inverse(a);
-            TSQuaternion f = b * aInv;
+        public static Fix64 Angle(FixQuaternion a, FixQuaternion b) {
+            FixQuaternion aInv = FixQuaternion.Inverse(a);
+            FixQuaternion f = b * aInv;
 
-            FP angle = FP.Acos(f.w) * 2 * FP.Rad2Deg;
+            Fix64 angle = Fix64.Acos(f.w) * 2 * Fix64.Rad2Deg;
 
             if (angle > 180) {
                 angle = 360 - angle;
@@ -113,48 +113,48 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion2">The second quaternion.</param>
         /// <returns>The sum of both quaternions.</returns>
         #region public static JQuaternion Add(JQuaternion quaternion1, JQuaternion quaternion2)
-        public static TSQuaternion Add(TSQuaternion quaternion1, TSQuaternion quaternion2)
+        public static FixQuaternion Add(FixQuaternion quaternion1, FixQuaternion quaternion2)
         {
-            TSQuaternion result;
-            TSQuaternion.Add(ref quaternion1, ref quaternion2, out result);
+            FixQuaternion result;
+            FixQuaternion.Add(ref quaternion1, ref quaternion2, out result);
             return result;
         }
 
-        public static TSQuaternion LookRotation(TSVector forward) {
-            return CreateFromMatrix(TSMatrix.LookAt(forward, TSVector.up));
+        public static FixQuaternion LookRotation(FixVector forward) {
+            return CreateFromMatrix(FixMatrix.LookAt(forward, FixVector.up));
         }
 
-        public static TSQuaternion LookRotation(TSVector forward, TSVector upwards) {
-            return CreateFromMatrix(TSMatrix.LookAt(forward, upwards));
+        public static FixQuaternion LookRotation(FixVector forward, FixVector upwards) {
+            return CreateFromMatrix(FixMatrix.LookAt(forward, upwards));
         }
 
-        public static TSQuaternion Slerp(TSQuaternion from, TSQuaternion to, FP t) {
-            t = TSMath.Clamp(t, 0, 1);
+        public static FixQuaternion Slerp(FixQuaternion from, FixQuaternion to, Fix64 t) {
+            t = FixMath.Clamp(t, 0, 1);
 
-            FP dot = Dot(from, to);
+            Fix64 dot = Dot(from, to);
 
             if (dot < 0.0f) {
                 to = Multiply(to, -1);
                 dot = -dot;
             }
 
-            FP halfTheta = FP.Acos(dot);
+            Fix64 halfTheta = Fix64.Acos(dot);
 
-            return Multiply(Multiply(from, FP.Sin((1 - t) * halfTheta)) + Multiply(to, FP.Sin(t * halfTheta)), 1 / FP.Sin(halfTheta));
+            return Multiply(Multiply(from, Fix64.Sin((1 - t) * halfTheta)) + Multiply(to, Fix64.Sin(t * halfTheta)), 1 / Fix64.Sin(halfTheta));
         }
 
-        public static TSQuaternion RotateTowards(TSQuaternion from, TSQuaternion to, FP maxDegreesDelta) {
-            FP dot = Dot(from, to);
+        public static FixQuaternion RotateTowards(FixQuaternion from, FixQuaternion to, Fix64 maxDegreesDelta) {
+            Fix64 dot = Dot(from, to);
 
             if (dot < 0.0f) {
                 to = Multiply(to, -1);
                 dot = -dot;
             }
 
-            FP halfTheta = FP.Acos(dot);
-            FP theta = halfTheta * 2;
+            Fix64 halfTheta = Fix64.Acos(dot);
+            Fix64 theta = halfTheta * 2;
 
-            maxDegreesDelta *= FP.Deg2Rad;
+            maxDegreesDelta *= Fix64.Deg2Rad;
 
             if (maxDegreesDelta >= theta) {
                 return to;
@@ -162,52 +162,52 @@ namespace LogicShared.TrueSync.Math
 
             maxDegreesDelta /= theta;
 
-            return Multiply(Multiply(from, FP.Sin((1 - maxDegreesDelta) * halfTheta)) + Multiply(to, FP.Sin(maxDegreesDelta * halfTheta)), 1 / FP.Sin(halfTheta));
+            return Multiply(Multiply(from, Fix64.Sin((1 - maxDegreesDelta) * halfTheta)) + Multiply(to, Fix64.Sin(maxDegreesDelta * halfTheta)), 1 / Fix64.Sin(halfTheta));
         }
 
-        public static TSQuaternion Euler(FP x, FP y, FP z) {
-            x *= FP.Deg2Rad;
-            y *= FP.Deg2Rad;
-            z *= FP.Deg2Rad;
+        public static FixQuaternion Euler(Fix64 x, Fix64 y, Fix64 z) {
+            x *= Fix64.Deg2Rad;
+            y *= Fix64.Deg2Rad;
+            z *= Fix64.Deg2Rad;
 
-            TSQuaternion rotation;
-            TSQuaternion.CreateFromYawPitchRoll(y, x, z, out rotation);
+            FixQuaternion rotation;
+            FixQuaternion.CreateFromYawPitchRoll(y, x, z, out rotation);
 
             return rotation;
         }
 
-        public static TSQuaternion Euler(TSVector eulerAngles) {
+        public static FixQuaternion Euler(FixVector eulerAngles) {
             return Euler(eulerAngles.x, eulerAngles.y, eulerAngles.z);
         }
 
-        public static TSQuaternion AngleAxis(FP angle, TSVector axis) {
-            axis = axis * FP.Deg2Rad;
+        public static FixQuaternion AngleAxis(Fix64 angle, FixVector axis) {
+            axis = axis * Fix64.Deg2Rad;
             axis.Normalize();
 
-            FP halfAngle = angle * FP.Deg2Rad * FP.Half;
+            Fix64 halfAngle = angle * Fix64.Deg2Rad * Fix64.Half;
 
-            TSQuaternion rotation;
-            FP sin = FP.Sin(halfAngle);
+            FixQuaternion rotation;
+            Fix64 sin = Fix64.Sin(halfAngle);
 
             rotation.x = axis.x * sin;
             rotation.y = axis.y * sin;
             rotation.z = axis.z * sin;
-            rotation.w = FP.Cos(halfAngle);
+            rotation.w = Fix64.Cos(halfAngle);
 
             return rotation;
         }
 
-        public static void CreateFromYawPitchRoll(FP yaw, FP pitch, FP roll, out TSQuaternion result)
+        public static void CreateFromYawPitchRoll(Fix64 yaw, Fix64 pitch, Fix64 roll, out FixQuaternion result)
         {
-            FP num9 = roll * FP.Half;
-            FP num6 = FP.Sin(num9);
-            FP num5 = FP.Cos(num9);
-            FP num8 = pitch * FP.Half;
-            FP num4 = FP.Sin(num8);
-            FP num3 = FP.Cos(num8);
-            FP num7 = yaw * FP.Half;
-            FP num2 = FP.Sin(num7);
-            FP num = FP.Cos(num7);
+            Fix64 num9 = roll * Fix64.Half;
+            Fix64 num6 = Fix64.Sin(num9);
+            Fix64 num5 = Fix64.Cos(num9);
+            Fix64 num8 = pitch * Fix64.Half;
+            Fix64 num4 = Fix64.Sin(num8);
+            Fix64 num3 = Fix64.Cos(num8);
+            Fix64 num7 = yaw * Fix64.Half;
+            Fix64 num2 = Fix64.Sin(num7);
+            Fix64 num = Fix64.Cos(num7);
             result.x = ((num * num4) * num5) + ((num2 * num3) * num6);
             result.y = ((num2 * num3) * num5) - ((num * num4) * num6);
             result.z = ((num * num3) * num6) - ((num2 * num4) * num5);
@@ -220,7 +220,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion1">The first quaternion.</param>
         /// <param name="quaternion2">The second quaternion.</param>
         /// <param name="result">The sum of both quaternions.</param>
-        public static void Add(ref TSQuaternion quaternion1, ref TSQuaternion quaternion2, out TSQuaternion result)
+        public static void Add(ref FixQuaternion quaternion1, ref FixQuaternion quaternion2, out FixQuaternion result)
         {
             result.x = quaternion1.x + quaternion2.x;
             result.y = quaternion1.y + quaternion2.y;
@@ -229,9 +229,9 @@ namespace LogicShared.TrueSync.Math
         }
         #endregion
 
-        public static TSQuaternion Conjugate(TSQuaternion value)
+        public static FixQuaternion Conjugate(FixQuaternion value)
         {
-            TSQuaternion quaternion;
+            FixQuaternion quaternion;
             quaternion.x = -value.x;
             quaternion.y = -value.y;
             quaternion.z = -value.z;
@@ -239,32 +239,32 @@ namespace LogicShared.TrueSync.Math
             return quaternion;
         }
 
-        public static FP Dot(TSQuaternion a, TSQuaternion b) {
+        public static Fix64 Dot(FixQuaternion a, FixQuaternion b) {
             return a.w * b.w + a.x * b.x + a.y * b.y + a.z * b.z;
         }
 
-        public static TSQuaternion Inverse(TSQuaternion rotation) {
-            FP invNorm = FP.One / ((rotation.x * rotation.x) + (rotation.y * rotation.y) + (rotation.z * rotation.z) + (rotation.w * rotation.w));
-            return TSQuaternion.Multiply(TSQuaternion.Conjugate(rotation), invNorm);
+        public static FixQuaternion Inverse(FixQuaternion rotation) {
+            Fix64 invNorm = Fix64.One / ((rotation.x * rotation.x) + (rotation.y * rotation.y) + (rotation.z * rotation.z) + (rotation.w * rotation.w));
+            return FixQuaternion.Multiply(FixQuaternion.Conjugate(rotation), invNorm);
         }
 
-        public static TSQuaternion FromToRotation(TSVector fromVector, TSVector toVector) {
-            TSVector w = TSVector.Cross(fromVector, toVector);
-            TSQuaternion q = new TSQuaternion(w.x, w.y, w.z, TSVector.Dot(fromVector, toVector));
-            q.w += FP.Sqrt(fromVector.sqrMagnitude * toVector.sqrMagnitude);
+        public static FixQuaternion FromToRotation(FixVector fromVector, FixVector toVector) {
+            FixVector w = FixVector.Cross(fromVector, toVector);
+            FixQuaternion q = new FixQuaternion(w.x, w.y, w.z, FixVector.Dot(fromVector, toVector));
+            q.w += Fix64.Sqrt(fromVector.sqrMagnitude * toVector.sqrMagnitude);
             q.Normalize();
 
             return q;
         }
 
-        public static TSQuaternion Lerp(TSQuaternion a, TSQuaternion b, FP t) {
-            t = TSMath.Clamp(t, FP.Zero, FP.One);
+        public static FixQuaternion Lerp(FixQuaternion a, FixQuaternion b, Fix64 t) {
+            t = FixMath.Clamp(t, Fix64.Zero, Fix64.One);
 
             return LerpUnclamped(a, b, t);
         }
 
-        public static TSQuaternion LerpUnclamped(TSQuaternion a, TSQuaternion b, FP t) {
-            TSQuaternion result = TSQuaternion.Multiply(a, (1 - t)) + TSQuaternion.Multiply(b, t);
+        public static FixQuaternion LerpUnclamped(FixQuaternion a, FixQuaternion b, Fix64 t) {
+            FixQuaternion result = FixQuaternion.Multiply(a, (1 - t)) + FixQuaternion.Multiply(b, t);
             result.Normalize();
 
             return result;
@@ -277,10 +277,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion2">The second quaternion.</param>
         /// <returns>The difference of both quaternions.</returns>
         #region public static JQuaternion Subtract(JQuaternion quaternion1, JQuaternion quaternion2)
-        public static TSQuaternion Subtract(TSQuaternion quaternion1, TSQuaternion quaternion2)
+        public static FixQuaternion Subtract(FixQuaternion quaternion1, FixQuaternion quaternion2)
         {
-            TSQuaternion result;
-            TSQuaternion.Subtract(ref quaternion1, ref quaternion2, out result);
+            FixQuaternion result;
+            FixQuaternion.Subtract(ref quaternion1, ref quaternion2, out result);
             return result;
         }
 
@@ -290,7 +290,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion1">The first quaternion.</param>
         /// <param name="quaternion2">The second quaternion.</param>
         /// <param name="result">The difference of both quaternions.</param>
-        public static void Subtract(ref TSQuaternion quaternion1, ref TSQuaternion quaternion2, out TSQuaternion result)
+        public static void Subtract(ref FixQuaternion quaternion1, ref FixQuaternion quaternion2, out FixQuaternion result)
         {
             result.x = quaternion1.x - quaternion2.x;
             result.y = quaternion1.y - quaternion2.y;
@@ -306,10 +306,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion2">The second quaternion.</param>
         /// <returns>The product of both quaternions.</returns>
         #region public static JQuaternion Multiply(JQuaternion quaternion1, JQuaternion quaternion2)
-        public static TSQuaternion Multiply(TSQuaternion quaternion1, TSQuaternion quaternion2)
+        public static FixQuaternion Multiply(FixQuaternion quaternion1, FixQuaternion quaternion2)
         {
-            TSQuaternion result;
-            TSQuaternion.Multiply(ref quaternion1, ref quaternion2, out result);
+            FixQuaternion result;
+            FixQuaternion.Multiply(ref quaternion1, ref quaternion2, out result);
             return result;
         }
 
@@ -319,20 +319,20 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion1">The first quaternion.</param>
         /// <param name="quaternion2">The second quaternion.</param>
         /// <param name="result">The product of both quaternions.</param>
-        public static void Multiply(ref TSQuaternion quaternion1, ref TSQuaternion quaternion2, out TSQuaternion result)
+        public static void Multiply(ref FixQuaternion quaternion1, ref FixQuaternion quaternion2, out FixQuaternion result)
         {
-            FP x = quaternion1.x;
-            FP y = quaternion1.y;
-            FP z = quaternion1.z;
-            FP w = quaternion1.w;
-            FP num4 = quaternion2.x;
-            FP num3 = quaternion2.y;
-            FP num2 = quaternion2.z;
-            FP num = quaternion2.w;
-            FP num12 = (y * num2) - (z * num3);
-            FP num11 = (z * num4) - (x * num2);
-            FP num10 = (x * num3) - (y * num4);
-            FP num9 = ((x * num4) + (y * num3)) + (z * num2);
+            Fix64 x = quaternion1.x;
+            Fix64 y = quaternion1.y;
+            Fix64 z = quaternion1.z;
+            Fix64 w = quaternion1.w;
+            Fix64 num4 = quaternion2.x;
+            Fix64 num3 = quaternion2.y;
+            Fix64 num2 = quaternion2.z;
+            Fix64 num = quaternion2.w;
+            Fix64 num12 = (y * num2) - (z * num3);
+            Fix64 num11 = (z * num4) - (x * num2);
+            Fix64 num10 = (x * num3) - (y * num4);
+            Fix64 num9 = ((x * num4) + (y * num3)) + (z * num2);
             result.x = ((x * num) + (num4 * w)) + num12;
             result.y = ((y * num) + (num3 * w)) + num11;
             result.z = ((z * num) + (num2 * w)) + num10;
@@ -346,11 +346,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion1">The quaternion to scale.</param>
         /// <param name="scaleFactor">Scale factor.</param>
         /// <returns>The scaled quaternion.</returns>
-        #region public static JQuaternion Multiply(JQuaternion quaternion1, FP scaleFactor)
-        public static TSQuaternion Multiply(TSQuaternion quaternion1, FP scaleFactor)
+        #region public static JQuaternion Multiply(JQuaternion quaternion1, Fix64 scaleFactor)
+        public static FixQuaternion Multiply(FixQuaternion quaternion1, Fix64 scaleFactor)
         {
-            TSQuaternion result;
-            TSQuaternion.Multiply(ref quaternion1, scaleFactor, out result);
+            FixQuaternion result;
+            FixQuaternion.Multiply(ref quaternion1, scaleFactor, out result);
             return result;
         }
 
@@ -360,7 +360,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="quaternion1">The quaternion to scale.</param>
         /// <param name="scaleFactor">Scale factor.</param>
         /// <param name="result">The scaled quaternion.</param>
-        public static void Multiply(ref TSQuaternion quaternion1, FP scaleFactor, out TSQuaternion result)
+        public static void Multiply(ref FixQuaternion quaternion1, Fix64 scaleFactor, out FixQuaternion result)
         {
             result.x = quaternion1.x * scaleFactor;
             result.y = quaternion1.y * scaleFactor;
@@ -375,8 +375,8 @@ namespace LogicShared.TrueSync.Math
         #region public void Normalize()
         public void Normalize()
         {
-            FP num2 = (((this.x * this.x) + (this.y * this.y)) + (this.z * this.z)) + (this.w * this.w);
-            FP num = 1 / (FP.Sqrt(num2));
+            Fix64 num2 = (((this.x * this.x) + (this.y * this.y)) + (this.z * this.z)) + (this.w * this.w);
+            Fix64 num = 1 / (Fix64.Sqrt(num2));
             this.x *= num;
             this.y *= num;
             this.z *= num;
@@ -390,10 +390,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix">A matrix representing an orientation.</param>
         /// <returns>JQuaternion representing an orientation.</returns>
         #region public static JQuaternion CreateFromMatrix(JMatrix matrix)
-        public static TSQuaternion CreateFromMatrix(TSMatrix matrix)
+        public static FixQuaternion CreateFromMatrix(FixMatrix matrix)
         {
-            TSQuaternion result;
-            TSQuaternion.CreateFromMatrix(ref matrix, out result);
+            FixQuaternion result;
+            FixQuaternion.CreateFromMatrix(ref matrix, out result);
             return result;
         }
 
@@ -402,43 +402,43 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="matrix">A matrix representing an orientation.</param>
         /// <param name="result">JQuaternion representing an orientation.</param>
-        public static void CreateFromMatrix(ref TSMatrix matrix, out TSQuaternion result)
+        public static void CreateFromMatrix(ref FixMatrix matrix, out FixQuaternion result)
         {
-            FP num8 = (matrix.M11 + matrix.M22) + matrix.M33;
-            if (num8 > FP.Zero)
+            Fix64 num8 = (matrix.M11 + matrix.M22) + matrix.M33;
+            if (num8 > Fix64.Zero)
             {
-                FP num = FP.Sqrt((num8 + FP.One));
-                result.w = num * FP.Half;
-                num = FP.Half / num;
+                Fix64 num = Fix64.Sqrt((num8 + Fix64.One));
+                result.w = num * Fix64.Half;
+                num = Fix64.Half / num;
                 result.x = (matrix.M23 - matrix.M32) * num;
                 result.y = (matrix.M31 - matrix.M13) * num;
                 result.z = (matrix.M12 - matrix.M21) * num;
             }
             else if ((matrix.M11 >= matrix.M22) && (matrix.M11 >= matrix.M33))
             {
-                FP num7 = FP.Sqrt((((FP.One + matrix.M11) - matrix.M22) - matrix.M33));
-                FP num4 = FP.Half / num7;
-                result.x = FP.Half * num7;
+                Fix64 num7 = Fix64.Sqrt((((Fix64.One + matrix.M11) - matrix.M22) - matrix.M33));
+                Fix64 num4 = Fix64.Half / num7;
+                result.x = Fix64.Half * num7;
                 result.y = (matrix.M12 + matrix.M21) * num4;
                 result.z = (matrix.M13 + matrix.M31) * num4;
                 result.w = (matrix.M23 - matrix.M32) * num4;
             }
             else if (matrix.M22 > matrix.M33)
             {
-                FP num6 = FP.Sqrt((((FP.One + matrix.M22) - matrix.M11) - matrix.M33));
-                FP num3 = FP.Half / num6;
+                Fix64 num6 = Fix64.Sqrt((((Fix64.One + matrix.M22) - matrix.M11) - matrix.M33));
+                Fix64 num3 = Fix64.Half / num6;
                 result.x = (matrix.M21 + matrix.M12) * num3;
-                result.y = FP.Half * num6;
+                result.y = Fix64.Half * num6;
                 result.z = (matrix.M32 + matrix.M23) * num3;
                 result.w = (matrix.M31 - matrix.M13) * num3;
             }
             else
             {
-                FP num5 = FP.Sqrt((((FP.One + matrix.M33) - matrix.M11) - matrix.M22));
-                FP num2 = FP.Half / num5;
+                Fix64 num5 = Fix64.Sqrt((((Fix64.One + matrix.M33) - matrix.M11) - matrix.M22));
+                Fix64 num2 = Fix64.Half / num5;
                 result.x = (matrix.M31 + matrix.M13) * num2;
                 result.y = (matrix.M32 + matrix.M23) * num2;
-                result.z = FP.Half * num5;
+                result.z = Fix64.Half * num5;
                 result.w = (matrix.M12 - matrix.M21) * num2;
             }
         }
@@ -450,11 +450,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first quaternion.</param>
         /// <param name="value2">The second quaternion.</param>
         /// <returns>The product of both quaternions.</returns>
-        #region public static FP operator *(JQuaternion value1, JQuaternion value2)
-        public static TSQuaternion operator *(TSQuaternion value1, TSQuaternion value2)
+        #region public static Fix64 operator *(JQuaternion value1, JQuaternion value2)
+        public static FixQuaternion operator *(FixQuaternion value1, FixQuaternion value2)
         {
-            TSQuaternion result;
-            TSQuaternion.Multiply(ref value1, ref value2,out result);
+            FixQuaternion result;
+            FixQuaternion.Multiply(ref value1, ref value2,out result);
             return result;
         }
         #endregion
@@ -465,11 +465,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first quaternion.</param>
         /// <param name="value2">The second quaternion.</param>
         /// <returns>The sum of both quaternions.</returns>
-        #region public static FP operator +(JQuaternion value1, JQuaternion value2)
-        public static TSQuaternion operator +(TSQuaternion value1, TSQuaternion value2)
+        #region public static Fix64 operator +(JQuaternion value1, JQuaternion value2)
+        public static FixQuaternion operator +(FixQuaternion value1, FixQuaternion value2)
         {
-            TSQuaternion result;
-            TSQuaternion.Add(ref value1, ref value2, out result);
+            FixQuaternion result;
+            FixQuaternion.Add(ref value1, ref value2, out result);
             return result;
         }
         #endregion
@@ -480,11 +480,11 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first quaternion.</param>
         /// <param name="value2">The second quaternion.</param>
         /// <returns>The difference of both quaternions.</returns>
-        #region public static FP operator -(JQuaternion value1, JQuaternion value2)
-        public static TSQuaternion operator -(TSQuaternion value1, TSQuaternion value2)
+        #region public static Fix64 operator -(JQuaternion value1, JQuaternion value2)
+        public static FixQuaternion operator -(FixQuaternion value1, FixQuaternion value2)
         {
-            TSQuaternion result;
-            TSQuaternion.Subtract(ref value1, ref value2, out result);
+            FixQuaternion result;
+            FixQuaternion.Subtract(ref value1, ref value2, out result);
             return result;
         }
         #endregion
@@ -492,21 +492,21 @@ namespace LogicShared.TrueSync.Math
         /**
          *  @brief Rotates a {@link TSVector} by the {@link TSQuanternion}.
          **/
-        public static TSVector operator *(TSQuaternion quat, TSVector vec) {
-            FP num = quat.x * 2f;
-            FP num2 = quat.y * 2f;
-            FP num3 = quat.z * 2f;
-            FP num4 = quat.x * num;
-            FP num5 = quat.y * num2;
-            FP num6 = quat.z * num3;
-            FP num7 = quat.x * num2;
-            FP num8 = quat.x * num3;
-            FP num9 = quat.y * num3;
-            FP num10 = quat.w * num;
-            FP num11 = quat.w * num2;
-            FP num12 = quat.w * num3;
+        public static FixVector operator *(FixQuaternion quat, FixVector vec) {
+            Fix64 num = quat.x * 2f;
+            Fix64 num2 = quat.y * 2f;
+            Fix64 num3 = quat.z * 2f;
+            Fix64 num4 = quat.x * num;
+            Fix64 num5 = quat.y * num2;
+            Fix64 num6 = quat.z * num3;
+            Fix64 num7 = quat.x * num2;
+            Fix64 num8 = quat.x * num3;
+            Fix64 num9 = quat.y * num3;
+            Fix64 num10 = quat.w * num;
+            Fix64 num11 = quat.w * num2;
+            Fix64 num12 = quat.w * num3;
 
-            TSVector result;
+            FixVector result;
             result.x = (1f - (num5 + num6)) * vec.x + (num7 - num12) * vec.y + (num8 + num11) * vec.z;
             result.y = (num7 + num12) * vec.x + (1f - (num4 + num6)) * vec.y + (num9 - num10) * vec.z;
             result.z = (num8 - num11) * vec.x + (num9 + num10) * vec.y + (1f - (num4 + num5)) * vec.z;

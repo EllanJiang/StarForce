@@ -21,92 +21,92 @@ namespace LogicShared.TrueSync.Math
 {
 
     /// <summary>
-    /// 3x3 Matrix.
+    /// 4x4 Matrix.
     /// </summary>
-    public struct TSMatrix4x4
+    public struct FixMatrix4x4
     {
         /// <summary>
         /// M11
         /// </summary>
-        public FP M11; // 1st row vector
+        public Fix64 M11; // 1st row vector
         /// <summary>
         /// M12
         /// </summary>
-        public FP M12;
+        public Fix64 M12;
         /// <summary>
         /// M13
         /// </summary>
-        public FP M13;
+        public Fix64 M13;
         /// <summary>
         /// M14
         /// </summary>
-        public FP M14;
+        public Fix64 M14;
         /// <summary>
         /// M21
         /// </summary>
-        public FP M21; // 2nd row vector
+        public Fix64 M21; // 2nd row vector
         /// <summary>
         /// M22
         /// </summary>
-        public FP M22;
+        public Fix64 M22;
         /// <summary>
         /// M23
         /// </summary>
-        public FP M23;
+        public Fix64 M23;
         /// <summary>
         /// M24
         /// </summary>
-        public FP M24;
+        public Fix64 M24;
         /// <summary>
         /// M31
         /// </summary>
-        public FP M31; // 3rd row vector
+        public Fix64 M31; // 3rd row vector
         /// <summary>
         /// M32
         /// </summary>
-        public FP M32;
+        public Fix64 M32;
         /// <summary>
         /// M33
         /// </summary>
-        public FP M33;
+        public Fix64 M33;
         /// <summary>
         /// M34
         /// </summary>
-        public FP M34;
+        public Fix64 M34;
         /// <summary>
         /// M41
         /// </summary>
-        public FP M41; // 4rd row vector
+        public Fix64 M41; // 4rd row vector
         /// <summary>
         /// M42
         /// </summary>
-        public FP M42;
+        public Fix64 M42;
         /// <summary>
         /// M43
         /// </summary>
-        public FP M43;
+        public Fix64 M43;
         /// <summary>
         /// M44
         /// </summary>
-        public FP M44;
+        public Fix64 M44;
 
-        internal static TSMatrix4x4 InternalIdentity;
+        internal static FixMatrix4x4 InternalIdentity;
 
         /// <summary>
         /// Identity matrix.
         /// </summary>
-        public static readonly TSMatrix4x4 Identity;
-        public static readonly TSMatrix4x4 Zero;
+        public static readonly FixMatrix4x4 Identity;
+        public static readonly FixMatrix4x4 Zero;
 
-        static TSMatrix4x4()
+        static FixMatrix4x4()
         {
-            Zero = new TSMatrix4x4();
+            Zero = new FixMatrix4x4();
 
-            Identity = new TSMatrix4x4();
-            Identity.M11 = FP.One;
-            Identity.M22 = FP.One;
-            Identity.M33 = FP.One;
-            Identity.M44 = FP.One;
+            Identity = new FixMatrix4x4();
+            Identity.M11 = Fix64.One;
+            Identity.M22 = Fix64.One;
+            Identity.M33 = Fix64.One;
+            Identity.M44 = Fix64.One;
 
             InternalIdentity = Identity;
         }
@@ -129,10 +129,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="m42">m42</param>
         /// <param name="m43">m43</param>
         /// <param name="m44">m44</param>
-        public TSMatrix4x4(FP m11, FP m12, FP m13, FP m14,
-            FP m21, FP m22, FP m23, FP m24,
-            FP m31, FP m32, FP m33, FP m34,
-            FP m41, FP m42, FP m43, FP m44)
+        public FixMatrix4x4(Fix64 m11, Fix64 m12, Fix64 m13, Fix64 m14,
+            Fix64 m21, Fix64 m22, Fix64 m23, Fix64 m24,
+            Fix64 m31, Fix64 m32, Fix64 m33, Fix64 m34,
+            Fix64 m41, Fix64 m42, Fix64 m43, Fix64 m44)
         {
             this.M11 = m11;
             this.M12 = m12;
@@ -158,10 +158,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix1">The first matrix.</param>
         /// <param name="matrix2">The second matrix.</param>
         /// <returns>The product of both matrices.</returns>
-        public static TSMatrix4x4 Multiply(TSMatrix4x4 matrix1, TSMatrix4x4 matrix2)
+        public static FixMatrix4x4 Multiply(FixMatrix4x4 matrix1, FixMatrix4x4 matrix2)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Multiply(ref matrix1, ref matrix2, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Multiply(ref matrix1, ref matrix2, out result);
             return result;
         }
 
@@ -171,7 +171,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix1">The first matrix.</param>
         /// <param name="matrix2">The second matrix.</param>
         /// <param name="result">The product of both matrices.</param>
-        public static void Multiply(ref TSMatrix4x4 matrix1, ref TSMatrix4x4 matrix2, out TSMatrix4x4 result)
+        public static void Multiply(ref FixMatrix4x4 matrix1, ref FixMatrix4x4 matrix2, out FixMatrix4x4 result)
         {
             // First row
             result.M11 = matrix1.M11 * matrix2.M11 + matrix1.M12 * matrix2.M21 + matrix1.M13 * matrix2.M31 + matrix1.M14 * matrix2.M41;
@@ -204,10 +204,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix1">The first matrix.</param>
         /// <param name="matrix2">The second matrix.</param>
         /// <returns>The sum of both matrices.</returns>
-        public static TSMatrix4x4 Add(TSMatrix4x4 matrix1, TSMatrix4x4 matrix2)
+        public static FixMatrix4x4 Add(FixMatrix4x4 matrix1, FixMatrix4x4 matrix2)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Add(ref matrix1, ref matrix2, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Add(ref matrix1, ref matrix2, out result);
             return result;
         }
 
@@ -217,7 +217,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix1">The first matrix.</param>
         /// <param name="matrix2">The second matrix.</param>
         /// <param name="result">The sum of both matrices.</param>
-        public static void Add(ref TSMatrix4x4 matrix1, ref TSMatrix4x4 matrix2, out TSMatrix4x4 result)
+        public static void Add(ref FixMatrix4x4 matrix1, ref FixMatrix4x4 matrix2, out FixMatrix4x4 result)
         {
             result.M11 = matrix1.M11 + matrix2.M11;
             result.M12 = matrix1.M12 + matrix2.M12;
@@ -245,14 +245,14 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="matrix">The matrix to invert.</param>
         /// <returns>The inverted JMatrix.</returns>
-        public static TSMatrix4x4 Inverse(TSMatrix4x4 matrix)
+        public static FixMatrix4x4 Inverse(FixMatrix4x4 matrix)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Inverse(ref matrix, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Inverse(ref matrix, out result);
             return result;
         }
 
-        public FP determinant
+        public Fix64 determinant
         {
             get
             {
@@ -283,17 +283,17 @@ namespace LogicShared.TrueSync.Math
                 // add: 6 + 8 + 3 = 17
                 // mul: 12 + 16 = 28
 
-                FP a = M11, b = M12, c = M13, d = M14;
-                FP e = M21, f = M22, g = M23, h = M24;
-                FP i = M31, j = M32, k = M33, l = M34;
-                FP m = M41, n = M42, o = M43, p = M44;
+                Fix64 a = M11, b = M12, c = M13, d = M14;
+                Fix64 e = M21, f = M22, g = M23, h = M24;
+                Fix64 i = M31, j = M32, k = M33, l = M34;
+                Fix64 m = M41, n = M42, o = M43, p = M44;
 
-                FP kp_lo = k * p - l * o;
-                FP jp_ln = j * p - l * n;
-                FP jo_kn = j * o - k * n;
-                FP ip_lm = i * p - l * m;
-                FP io_km = i * o - k * m;
-                FP in_jm = i * n - j * m;
+                Fix64 kp_lo = k * p - l * o;
+                Fix64 jp_ln = j * p - l * n;
+                Fix64 jo_kn = j * o - k * n;
+                Fix64 ip_lm = i * p - l * m;
+                Fix64 io_km = i * o - k * m;
+                Fix64 in_jm = i * n - j * m;
 
                 return a * (f * kp_lo - g * jp_ln + h * jo_kn) -
                        b * (e * kp_lo - g * ip_lm + h * io_km) +
@@ -307,7 +307,7 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="matrix">The matrix to invert.</param>
         /// <param name="result">The inverted JMatrix.</param>
-        public static void Inverse(ref TSMatrix4x4 matrix, out TSMatrix4x4 result)
+        public static void Inverse(ref FixMatrix4x4 matrix, out FixMatrix4x4 result)
         {
             //                                       -1
             // If you have matrix M, inverse Matrix M   can compute
@@ -401,48 +401,48 @@ namespace LogicShared.TrueSync.Math
             //
             // Cost of operation
             // 53 adds, 104 muls, and 1 div.
-            FP a = matrix.M11, b = matrix.M12, c = matrix.M13, d = matrix.M14;
-            FP e = matrix.M21, f = matrix.M22, g = matrix.M23, h = matrix.M24;
-            FP i = matrix.M31, j = matrix.M32, k = matrix.M33, l = matrix.M34;
-            FP m = matrix.M41, n = matrix.M42, o = matrix.M43, p = matrix.M44;
+            Fix64 a = matrix.M11, b = matrix.M12, c = matrix.M13, d = matrix.M14;
+            Fix64 e = matrix.M21, f = matrix.M22, g = matrix.M23, h = matrix.M24;
+            Fix64 i = matrix.M31, j = matrix.M32, k = matrix.M33, l = matrix.M34;
+            Fix64 m = matrix.M41, n = matrix.M42, o = matrix.M43, p = matrix.M44;
 
-            FP kp_lo = k * p - l * o;
-            FP jp_ln = j * p - l * n;
-            FP jo_kn = j * o - k * n;
-            FP ip_lm = i * p - l * m;
-            FP io_km = i * o - k * m;
-            FP in_jm = i * n - j * m;
+            Fix64 kp_lo = k * p - l * o;
+            Fix64 jp_ln = j * p - l * n;
+            Fix64 jo_kn = j * o - k * n;
+            Fix64 ip_lm = i * p - l * m;
+            Fix64 io_km = i * o - k * m;
+            Fix64 in_jm = i * n - j * m;
 
-            FP a11 = (f * kp_lo - g * jp_ln + h * jo_kn);
-            FP a12 = -(e * kp_lo - g * ip_lm + h * io_km);
-            FP a13 = (e * jp_ln - f * ip_lm + h * in_jm);
-            FP a14 = -(e * jo_kn - f * io_km + g * in_jm);
+            Fix64 a11 = (f * kp_lo - g * jp_ln + h * jo_kn);
+            Fix64 a12 = -(e * kp_lo - g * ip_lm + h * io_km);
+            Fix64 a13 = (e * jp_ln - f * ip_lm + h * in_jm);
+            Fix64 a14 = -(e * jo_kn - f * io_km + g * in_jm);
 
-            FP det = a * a11 + b * a12 + c * a13 + d * a14;
+            Fix64 det = a * a11 + b * a12 + c * a13 + d * a14;
 
-            if (det == FP.Zero)
+            if (det == Fix64.Zero)
             {
-                result.M11 = FP.PositiveInfinity;
-                result.M12 = FP.PositiveInfinity;
-                result.M13 = FP.PositiveInfinity;
-                result.M14 = FP.PositiveInfinity;
-                result.M21 = FP.PositiveInfinity;
-                result.M22 = FP.PositiveInfinity;
-                result.M23 = FP.PositiveInfinity;
-                result.M24 = FP.PositiveInfinity;
-                result.M31 = FP.PositiveInfinity;
-                result.M32 = FP.PositiveInfinity;
-                result.M33 = FP.PositiveInfinity;
-                result.M34 = FP.PositiveInfinity;
-                result.M41 = FP.PositiveInfinity;
-                result.M42 = FP.PositiveInfinity;
-                result.M43 = FP.PositiveInfinity;
-                result.M44 = FP.PositiveInfinity;
+                result.M11 = Fix64.PositiveInfinity;
+                result.M12 = Fix64.PositiveInfinity;
+                result.M13 = Fix64.PositiveInfinity;
+                result.M14 = Fix64.PositiveInfinity;
+                result.M21 = Fix64.PositiveInfinity;
+                result.M22 = Fix64.PositiveInfinity;
+                result.M23 = Fix64.PositiveInfinity;
+                result.M24 = Fix64.PositiveInfinity;
+                result.M31 = Fix64.PositiveInfinity;
+                result.M32 = Fix64.PositiveInfinity;
+                result.M33 = Fix64.PositiveInfinity;
+                result.M34 = Fix64.PositiveInfinity;
+                result.M41 = Fix64.PositiveInfinity;
+                result.M42 = Fix64.PositiveInfinity;
+                result.M43 = Fix64.PositiveInfinity;
+                result.M44 = Fix64.PositiveInfinity;
 
             }
             else
             {
-                FP invDet = FP.One / det;
+                Fix64 invDet = Fix64.One / det;
 
                 result.M11 = a11 * invDet;
                 result.M21 = a12 * invDet;
@@ -454,24 +454,24 @@ namespace LogicShared.TrueSync.Math
                 result.M32 = -(a * jp_ln - b * ip_lm + d * in_jm) * invDet;
                 result.M42 = (a * jo_kn - b * io_km + c * in_jm) * invDet;
 
-                FP gp_ho = g * p - h * o;
-                FP fp_hn = f * p - h * n;
-                FP fo_gn = f * o - g * n;
-                FP ep_hm = e * p - h * m;
-                FP eo_gm = e * o - g * m;
-                FP en_fm = e * n - f * m;
+                Fix64 gp_ho = g * p - h * o;
+                Fix64 fix64Hn = f * p - h * n;
+                Fix64 fo_gn = f * o - g * n;
+                Fix64 ep_hm = e * p - h * m;
+                Fix64 eo_gm = e * o - g * m;
+                Fix64 en_fm = e * n - f * m;
 
-                result.M13 = (b * gp_ho - c * fp_hn + d * fo_gn) * invDet;
+                result.M13 = (b * gp_ho - c * fix64Hn + d * fo_gn) * invDet;
                 result.M23 = -(a * gp_ho - c * ep_hm + d * eo_gm) * invDet;
-                result.M33 = (a * fp_hn - b * ep_hm + d * en_fm) * invDet;
+                result.M33 = (a * fix64Hn - b * ep_hm + d * en_fm) * invDet;
                 result.M43 = -(a * fo_gn - b * eo_gm + c * en_fm) * invDet;
 
-                FP gl_hk = g * l - h * k;
-                FP fl_hj = f * l - h * j;
-                FP fk_gj = f * k - g * j;
-                FP el_hi = e * l - h * i;
-                FP ek_gi = e * k - g * i;
-                FP ej_fi = e * j - f * i;
+                Fix64 gl_hk = g * l - h * k;
+                Fix64 fl_hj = f * l - h * j;
+                Fix64 fk_gj = f * k - g * j;
+                Fix64 el_hi = e * l - h * i;
+                Fix64 ek_gi = e * k - g * i;
+                Fix64 ej_fi = e * j - f * i;
 
                 result.M14 = -(b * gl_hk - c * fl_hj + d * fk_gj) * invDet;
                 result.M24 = (a * gl_hk - c * el_hi + d * ek_gi) * invDet;
@@ -486,10 +486,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix1">The matrix.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <returns>A JMatrix multiplied by the scale factor.</returns>
-        public static TSMatrix4x4 Multiply(TSMatrix4x4 matrix1, FP scaleFactor)
+        public static FixMatrix4x4 Multiply(FixMatrix4x4 matrix1, Fix64 scaleFactor)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Multiply(ref matrix1, scaleFactor, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Multiply(ref matrix1, scaleFactor, out result);
             return result;
         }
 
@@ -499,9 +499,9 @@ namespace LogicShared.TrueSync.Math
         /// <param name="matrix1">The matrix.</param>
         /// <param name="scaleFactor">The scale factor.</param>
         /// <param name="result">A JMatrix multiplied by the scale factor.</param>
-        public static void Multiply(ref TSMatrix4x4 matrix1, FP scaleFactor, out TSMatrix4x4 result)
+        public static void Multiply(ref FixMatrix4x4 matrix1, Fix64 scaleFactor, out FixMatrix4x4 result)
         {
-            FP num = scaleFactor;
+            Fix64 num = scaleFactor;
             result.M11 = matrix1.M11 * num;
             result.M12 = matrix1.M12 * num;
             result.M13 = matrix1.M13 * num;
@@ -524,10 +524,10 @@ namespace LogicShared.TrueSync.Math
         }
 
 
-        public static TSMatrix4x4 Rotate(TSQuaternion quaternion)
+        public static FixMatrix4x4 Rotate(FixQuaternion quaternion)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Rotate(ref quaternion, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Rotate(ref quaternion, out result);
             return result;
         }
 
@@ -536,39 +536,39 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="quaternion">The quaternion the matrix should be created from.</param>
         /// <param name="result">JMatrix representing an orientation.</param>
-        public static void Rotate(ref TSQuaternion quaternion, out TSMatrix4x4 result)
+        public static void Rotate(ref FixQuaternion quaternion, out FixMatrix4x4 result)
         {
             // Precalculate coordinate products
-            FP x = quaternion.x * 2;
-            FP y = quaternion.y * 2;
-            FP z = quaternion.z * 2;
-            FP xx = quaternion.x * x;
-            FP yy = quaternion.y * y;
-            FP zz = quaternion.z * z;
-            FP xy = quaternion.x * y;
-            FP xz = quaternion.x * z;
-            FP yz = quaternion.y * z;
-            FP wx = quaternion.w * x;
-            FP wy = quaternion.w * y;
-            FP wz = quaternion.w * z;
+            Fix64 x = quaternion.x * 2;
+            Fix64 y = quaternion.y * 2;
+            Fix64 z = quaternion.z * 2;
+            Fix64 xx = quaternion.x * x;
+            Fix64 yy = quaternion.y * y;
+            Fix64 zz = quaternion.z * z;
+            Fix64 xy = quaternion.x * y;
+            Fix64 xz = quaternion.x * z;
+            Fix64 yz = quaternion.y * z;
+            Fix64 wx = quaternion.w * x;
+            Fix64 wy = quaternion.w * y;
+            Fix64 wz = quaternion.w * z;
 
             // Calculate 3x3 matrix from orthonormal basis
-            result.M11 = FP.One - (yy + zz);
+            result.M11 = Fix64.One - (yy + zz);
             result.M21 = xy + wz;
             result.M31 = xz - wy;
-            result.M41 = FP.Zero;
+            result.M41 = Fix64.Zero;
             result.M12 = xy - wz;
-            result.M22 = FP.One - (xx + zz);
+            result.M22 = Fix64.One - (xx + zz);
             result.M32 = yz + wx;
-            result.M42 = FP.Zero;
+            result.M42 = Fix64.Zero;
             result.M13 = xz + wy;
             result.M23 = yz - wx;
-            result.M33 = FP.One - (xx + yy);
-            result.M43 = FP.Zero;
-            result.M14 = FP.Zero;
-            result.M24 = FP.Zero;
-            result.M34 = FP.Zero;
-            result.M44 = FP.One;
+            result.M33 = Fix64.One - (xx + yy);
+            result.M43 = Fix64.Zero;
+            result.M14 = Fix64.Zero;
+            result.M24 = Fix64.Zero;
+            result.M34 = Fix64.Zero;
+            result.M44 = Fix64.One;
         }
 
         /// <summary>
@@ -576,10 +576,10 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="matrix">The matrix which should be transposed.</param>
         /// <returns>The transposed JMatrix.</returns>
-        public static TSMatrix4x4 Transpose(TSMatrix4x4 matrix)
+        public static FixMatrix4x4 Transpose(FixMatrix4x4 matrix)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Transpose(ref matrix, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Transpose(ref matrix, out result);
             return result;
         }
 
@@ -588,7 +588,7 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="matrix">The matrix which should be transposed.</param>
         /// <param name="result">The transposed JMatrix.</param>
-        public static void Transpose(ref TSMatrix4x4 matrix, out TSMatrix4x4 result)
+        public static void Transpose(ref FixMatrix4x4 matrix, out FixMatrix4x4 result)
         {
             result.M11 = matrix.M11;
             result.M12 = matrix.M21;
@@ -615,15 +615,15 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first matrix.</param>
         /// <param name="value2">The second matrix.</param>
         /// <returns>The product of both values.</returns>
-        public static TSMatrix4x4 operator *(TSMatrix4x4 value1, TSMatrix4x4 value2)
+        public static FixMatrix4x4 operator *(FixMatrix4x4 value1, FixMatrix4x4 value2)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Multiply(ref value1, ref value2, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Multiply(ref value1, ref value2, out result);
             return result;
         }
 
 
-        public FP Trace()
+        public Fix64 Trace()
         {
             return this.M11 + this.M22 + this.M33 + this.M44;
         }
@@ -634,10 +634,10 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first matrix.</param>
         /// <param name="value2">The second matrix.</param>
         /// <returns>The sum of both values.</returns>
-        public static TSMatrix4x4 operator +(TSMatrix4x4 value1, TSMatrix4x4 value2)
+        public static FixMatrix4x4 operator +(FixMatrix4x4 value1, FixMatrix4x4 value2)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Add(ref value1, ref value2, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Add(ref value1, ref value2, out result);
             return result;
         }
 
@@ -646,9 +646,9 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="value">The source matrix.</param>
         /// <returns>The negated matrix.</returns>
-        public static TSMatrix4x4 operator -(TSMatrix4x4 value)
+        public static FixMatrix4x4 operator -(FixMatrix4x4 value)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
             result.M11 = -value.M11;
             result.M12 = -value.M12;
@@ -676,15 +676,15 @@ namespace LogicShared.TrueSync.Math
         /// <param name="value1">The first matrix.</param>
         /// <param name="value2">The second matrix.</param>
         /// <returns>The difference of both values.</returns>
-        public static TSMatrix4x4 operator -(TSMatrix4x4 value1, TSMatrix4x4 value2)
+        public static FixMatrix4x4 operator -(FixMatrix4x4 value1, FixMatrix4x4 value2)
         {
-            TSMatrix4x4 result;
-            TSMatrix4x4.Multiply(ref value2, -FP.One, out value2);
-            TSMatrix4x4.Add(ref value1, ref value2, out result);
+            FixMatrix4x4 result;
+            FixMatrix4x4.Multiply(ref value2, -Fix64.One, out value2);
+            FixMatrix4x4.Add(ref value1, ref value2, out result);
             return result;
         }
 
-        public static bool operator ==(TSMatrix4x4 value1, TSMatrix4x4 value2)
+        public static bool operator ==(FixMatrix4x4 value1, FixMatrix4x4 value2)
         {
             return value1.M11 == value2.M11 &&
                 value1.M12 == value2.M12 &&
@@ -704,7 +704,7 @@ namespace LogicShared.TrueSync.Math
                 value1.M44 == value2.M44;
         }
 
-        public static bool operator !=(TSMatrix4x4 value1, TSMatrix4x4 value2)
+        public static bool operator !=(FixMatrix4x4 value1, FixMatrix4x4 value2)
         {
             return value1.M11 != value2.M11 ||
                 value1.M12 != value2.M12 ||
@@ -726,8 +726,8 @@ namespace LogicShared.TrueSync.Math
 
         public override bool Equals(object obj)
         {
-            if (!(obj is TSMatrix4x4)) return false;
-            TSMatrix4x4 other = (TSMatrix4x4)obj;
+            if (!(obj is FixMatrix4x4)) return false;
+            FixMatrix4x4 other = (FixMatrix4x4)obj;
 
             return this.M11 == other.M11 &&
                 this.M12 == other.M12 &&
@@ -774,19 +774,19 @@ namespace LogicShared.TrueSync.Math
         /// <param name="yPosition">The amount to translate on the Y-axis.</param>
         /// <param name="zPosition">The amount to translate on the Z-axis.</param>
         /// <returns>The translation matrix.</returns>
-        public static TSMatrix4x4 Translate(FP xPosition, FP yPosition, FP zPosition)
+        public static FixMatrix4x4 Translate(Fix64 xPosition, Fix64 yPosition, Fix64 zPosition)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            result.M11 = FP.One;  result.M12 = FP.Zero; result.M13 = FP.Zero; result.M14 = xPosition;
-            result.M21 = FP.Zero; result.M22 = FP.One;  result.M23 = FP.Zero; result.M24 = yPosition;
-            result.M31 = FP.Zero; result.M32 = FP.Zero; result.M33 = FP.One;  result.M34 = zPosition;
-            result.M41 = FP.Zero; result.M42 = FP.Zero; result.M43 = FP.Zero; result.M44 = FP.One;
+            result.M11 = Fix64.One;  result.M12 = Fix64.Zero; result.M13 = Fix64.Zero; result.M14 = xPosition;
+            result.M21 = Fix64.Zero; result.M22 = Fix64.One;  result.M23 = Fix64.Zero; result.M24 = yPosition;
+            result.M31 = Fix64.Zero; result.M32 = Fix64.Zero; result.M33 = Fix64.One;  result.M34 = zPosition;
+            result.M41 = Fix64.Zero; result.M42 = Fix64.Zero; result.M43 = Fix64.Zero; result.M44 = Fix64.One;
 
             return result;
         }
 
-        public static TSMatrix4x4 Translate(TSVector translation)
+        public static FixMatrix4x4 Translate(FixVector translation)
         {
             return Translate(translation.x, translation.y, translation.z);
         }
@@ -798,14 +798,14 @@ namespace LogicShared.TrueSync.Math
         /// <param name="yScale">Value to scale by on the Y-axis.</param>
         /// <param name="zScale">Value to scale by on the Z-axis.</param>
         /// <returns>The scaling matrix.</returns>
-        public static TSMatrix4x4 Scale(FP xScale, FP yScale, FP zScale)
+        public static FixMatrix4x4 Scale(Fix64 xScale, Fix64 yScale, Fix64 zScale)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            result.M11 = xScale;  result.M12 = FP.Zero; result.M13 = FP.Zero; result.M14 = FP.Zero;
-            result.M21 = FP.Zero; result.M22 = yScale;  result.M23 = FP.Zero; result.M24 = FP.Zero;
-            result.M31 = FP.Zero; result.M32 = FP.Zero; result.M33 = zScale;  result.M34 = FP.Zero;
-            result.M41 = FP.Zero; result.M42 = FP.Zero; result.M43 = FP.Zero; result.M44 = FP.One;
+            result.M11 = xScale;  result.M12 = Fix64.Zero; result.M13 = Fix64.Zero; result.M14 = Fix64.Zero;
+            result.M21 = Fix64.Zero; result.M22 = yScale;  result.M23 = Fix64.Zero; result.M24 = Fix64.Zero;
+            result.M31 = Fix64.Zero; result.M32 = Fix64.Zero; result.M33 = zScale;  result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero; result.M42 = Fix64.Zero; result.M43 = Fix64.Zero; result.M44 = Fix64.One;
 
             return result;
         }
@@ -818,18 +818,18 @@ namespace LogicShared.TrueSync.Math
         /// <param name="zScale">Value to scale by on the Z-axis.</param>
         /// <param name="centerPoint">The center point.</param>
         /// <returns>The scaling matrix.</returns>
-        public static TSMatrix4x4 Scale(FP xScale, FP yScale, FP zScale, TSVector centerPoint)
+        public static FixMatrix4x4 Scale(Fix64 xScale, Fix64 yScale, Fix64 zScale, FixVector centerPoint)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP tx = centerPoint.x * (FP.One - xScale);
-            FP ty = centerPoint.y * (FP.One - yScale);
-            FP tz = centerPoint.z * (FP.One - zScale);
+            Fix64 tx = centerPoint.x * (Fix64.One - xScale);
+            Fix64 ty = centerPoint.y * (Fix64.One - yScale);
+            Fix64 tz = centerPoint.z * (Fix64.One - zScale);
 
-            result.M11 = xScale;  result.M12 = FP.Zero; result.M13 = FP.Zero; result.M14 = FP.Zero;
-            result.M21 = FP.Zero; result.M22 = yScale;  result.M23 = FP.Zero; result.M24 = FP.Zero;
-            result.M31 = FP.Zero; result.M32 = FP.Zero; result.M33 = zScale;  result.M34 = FP.Zero;
-            result.M41 = tx;      result.M42 = ty;      result.M43 = tz;      result.M44 = FP.One;
+            result.M11 = xScale;  result.M12 = Fix64.Zero; result.M13 = Fix64.Zero; result.M14 = Fix64.Zero;
+            result.M21 = Fix64.Zero; result.M22 = yScale;  result.M23 = Fix64.Zero; result.M24 = Fix64.Zero;
+            result.M31 = Fix64.Zero; result.M32 = Fix64.Zero; result.M33 = zScale;  result.M34 = Fix64.Zero;
+            result.M41 = tx;      result.M42 = ty;      result.M43 = tz;      result.M44 = Fix64.One;
 
             return result;
         }
@@ -839,7 +839,7 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="scales">The vector containing the amount to scale by on each axis.</param>
         /// <returns>The scaling matrix.</returns>
-        public static TSMatrix4x4 Scale(TSVector scales)
+        public static FixMatrix4x4 Scale(FixVector scales)
         {
             return Scale(scales.x, scales.y, scales.z);
         }
@@ -850,7 +850,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="scales">The vector containing the amount to scale by on each axis.</param>
         /// <param name="centerPoint">The center point.</param>
         /// <returns>The scaling matrix.</returns>
-        public static TSMatrix4x4 Scale(TSVector scales, TSVector centerPoint)
+        public static FixMatrix4x4 Scale(FixVector scales, FixVector centerPoint)
         {
             return Scale(scales.x, scales.y, scales.z, centerPoint);
         }
@@ -860,7 +860,7 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="scale">The uniform scaling factor.</param>
         /// <returns>The scaling matrix.</returns>
-        public static TSMatrix4x4 Scale(FP scale)
+        public static FixMatrix4x4 Scale(Fix64 scale)
         {
             return Scale(scale, scale, scale);
         }
@@ -871,7 +871,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="scale">The uniform scaling factor.</param>
         /// <param name="centerPoint">The center point.</param>
         /// <returns>The scaling matrix.</returns>
-        public static TSMatrix4x4 Scale(FP scale, TSVector centerPoint)
+        public static FixMatrix4x4 Scale(Fix64 scale, FixVector centerPoint)
         {
             return Scale(scale, scale, scale, centerPoint);
         }
@@ -881,33 +881,33 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="radians">The amount, in radians, by which to rotate around the X-axis.</param>
         /// <returns>The rotation matrix.</returns>
-        public static TSMatrix4x4 RotateX(FP radians)
+        public static FixMatrix4x4 RotateX(Fix64 radians)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP c = TSMath.Cos(radians);
-            FP s = TSMath.Sin(radians);
+            Fix64 c = FixMath.Cos(radians);
+            Fix64 s = FixMath.Sin(radians);
 
             // [  1  0  0  0 ]
             // [  0  c  s  0 ]
             // [  0 -s  c  0 ]
             // [  0  0  0  1 ]
-            result.M11 = FP.One;
-            result.M12 = FP.Zero;
-            result.M13 = FP.Zero;
-            result.M14 = FP.Zero;
-            result.M21 = FP.Zero;
+            result.M11 = Fix64.One;
+            result.M12 = Fix64.Zero;
+            result.M13 = Fix64.Zero;
+            result.M14 = Fix64.Zero;
+            result.M21 = Fix64.Zero;
             result.M22 = c;
             result.M23 = s;
-            result.M24 = FP.Zero;
-            result.M31 = FP.Zero;
+            result.M24 = Fix64.Zero;
+            result.M31 = Fix64.Zero;
             result.M32 = -s;
             result.M33 = c;
-            result.M34 = FP.Zero;
-            result.M41 = FP.Zero;
-            result.M42 = FP.Zero;
-            result.M43 = FP.Zero;
-            result.M44 = FP.One;
+            result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero;
+            result.M42 = Fix64.Zero;
+            result.M43 = Fix64.Zero;
+            result.M44 = Fix64.One;
 
             return result;
         }
@@ -918,36 +918,36 @@ namespace LogicShared.TrueSync.Math
         /// <param name="radians">The amount, in radians, by which to rotate around the X-axis.</param>
         /// <param name="centerPoint">The center point.</param>
         /// <returns>The rotation matrix.</returns>
-        public static TSMatrix4x4 RotateX(FP radians, TSVector centerPoint)
+        public static FixMatrix4x4 RotateX(Fix64 radians, FixVector centerPoint)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP c = TSMath.Cos(radians);
-            FP s = TSMath.Sin(radians);
+            Fix64 c = FixMath.Cos(radians);
+            Fix64 s = FixMath.Sin(radians);
 
-            FP y = centerPoint.y * (FP.One - c) + centerPoint.z * s;
-            FP z = centerPoint.z * (FP.One - c) - centerPoint.y * s;
+            Fix64 y = centerPoint.y * (Fix64.One - c) + centerPoint.z * s;
+            Fix64 z = centerPoint.z * (Fix64.One - c) - centerPoint.y * s;
 
             // [  1  0  0  0 ]
             // [  0  c  s  0 ]
             // [  0 -s  c  0 ]
             // [  0  y  z  1 ]
-            result.M11 = FP.One;
-            result.M12 = FP.Zero;
-            result.M13 = FP.Zero;
-            result.M14 = FP.Zero;
-            result.M21 = FP.Zero;
+            result.M11 = Fix64.One;
+            result.M12 = Fix64.Zero;
+            result.M13 = Fix64.Zero;
+            result.M14 = Fix64.Zero;
+            result.M21 = Fix64.Zero;
             result.M22 = c;
             result.M23 = s;
-            result.M24 = FP.Zero;
-            result.M31 = FP.Zero;
+            result.M24 = Fix64.Zero;
+            result.M31 = Fix64.Zero;
             result.M32 = -s;
             result.M33 = c;
-            result.M34 = FP.Zero;
-            result.M41 = FP.Zero;
+            result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero;
             result.M42 = y;
             result.M43 = z;
-            result.M44 = FP.One;
+            result.M44 = Fix64.One;
 
             return result;
         }
@@ -957,33 +957,33 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="radians">The amount, in radians, by which to rotate around the Y-axis.</param>
         /// <returns>The rotation matrix.</returns>
-        public static TSMatrix4x4 RotateY(FP radians)
+        public static FixMatrix4x4 RotateY(Fix64 radians)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP c = TSMath.Cos(radians);
-            FP s = TSMath.Sin(radians);
+            Fix64 c = FixMath.Cos(radians);
+            Fix64 s = FixMath.Sin(radians);
 
             // [  c  0 -s  0 ]
             // [  0  1  0  0 ]
             // [  s  0  c  0 ]
             // [  0  0  0  1 ]
             result.M11 = c;
-            result.M12 = FP.Zero;
+            result.M12 = Fix64.Zero;
             result.M13 = -s;
-            result.M14 = FP.Zero;
-            result.M21 = FP.Zero;
-            result.M22 = FP.One;
-            result.M23 = FP.Zero;
-            result.M24 = FP.Zero;
+            result.M14 = Fix64.Zero;
+            result.M21 = Fix64.Zero;
+            result.M22 = Fix64.One;
+            result.M23 = Fix64.Zero;
+            result.M24 = Fix64.Zero;
             result.M31 = s;
-            result.M32 = FP.Zero;
+            result.M32 = Fix64.Zero;
             result.M33 = c;
-            result.M34 = FP.Zero;
-            result.M41 = FP.Zero;
-            result.M42 = FP.Zero;
-            result.M43 = FP.Zero;
-            result.M44 = FP.One;
+            result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero;
+            result.M42 = Fix64.Zero;
+            result.M43 = Fix64.Zero;
+            result.M44 = Fix64.One;
 
             return result;
         }
@@ -994,36 +994,36 @@ namespace LogicShared.TrueSync.Math
         /// <param name="radians">The amount, in radians, by which to rotate around the Y-axis.</param>
         /// <param name="centerPoint">The center point.</param>
         /// <returns>The rotation matrix.</returns>
-        public static TSMatrix4x4 RotateY(FP radians, TSVector centerPoint)
+        public static FixMatrix4x4 RotateY(Fix64 radians, FixVector centerPoint)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP c = TSMath.Cos(radians);
-            FP s = TSMath.Sin(radians);
+            Fix64 c = FixMath.Cos(radians);
+            Fix64 s = FixMath.Sin(radians);
 
-            FP x = centerPoint.x * (FP.One - c) - centerPoint.z * s;
-            FP z = centerPoint.x * (FP.One - c) + centerPoint.x * s;
+            Fix64 x = centerPoint.x * (Fix64.One - c) - centerPoint.z * s;
+            Fix64 z = centerPoint.x * (Fix64.One - c) + centerPoint.x * s;
 
             // [  c  0 -s  0 ]
             // [  0  1  0  0 ]
             // [  s  0  c  0 ]
             // [  x  0  z  1 ]
             result.M11 = c;
-            result.M12 = FP.Zero;
+            result.M12 = Fix64.Zero;
             result.M13 = -s;
-            result.M14 = FP.Zero;
-            result.M21 = FP.Zero;
-            result.M22 = FP.One;
-            result.M23 = FP.Zero;
-            result.M24 = FP.Zero;
+            result.M14 = Fix64.Zero;
+            result.M21 = Fix64.Zero;
+            result.M22 = Fix64.One;
+            result.M23 = Fix64.Zero;
+            result.M24 = Fix64.Zero;
             result.M31 = s;
-            result.M32 = FP.Zero;
+            result.M32 = Fix64.Zero;
             result.M33 = c;
-            result.M34 = FP.Zero;
+            result.M34 = Fix64.Zero;
             result.M41 = x;
-            result.M42 = FP.Zero;
+            result.M42 = Fix64.Zero;
             result.M43 = z;
-            result.M44 = FP.One;
+            result.M44 = Fix64.One;
 
             return result;
         }
@@ -1033,12 +1033,12 @@ namespace LogicShared.TrueSync.Math
         /// </summary>
         /// <param name="radians">The amount, in radians, by which to rotate around the Z-axis.</param>
         /// <returns>The rotation matrix.</returns>
-        public static TSMatrix4x4 RotateZ(FP radians)
+        public static FixMatrix4x4 RotateZ(Fix64 radians)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP c = TSMath.Cos(radians);
-            FP s = TSMath.Sin(radians);
+            Fix64 c = FixMath.Cos(radians);
+            Fix64 s = FixMath.Sin(radians);
 
             // [  c  s  0  0 ]
             // [ -s  c  0  0 ]
@@ -1046,20 +1046,20 @@ namespace LogicShared.TrueSync.Math
             // [  0  0  0  1 ]
             result.M11 = c;
             result.M12 = s;
-            result.M13 = FP.Zero;
-            result.M14 = FP.Zero;
+            result.M13 = Fix64.Zero;
+            result.M14 = Fix64.Zero;
             result.M21 = -s;
             result.M22 = c;
-            result.M23 = FP.Zero;
-            result.M24 = FP.Zero;
-            result.M31 = FP.Zero;
-            result.M32 = FP.Zero;
-            result.M33 = FP.One;
-            result.M34 = FP.Zero;
-            result.M41 = FP.Zero;
-            result.M42 = FP.Zero;
-            result.M43 = FP.Zero;
-            result.M44 = FP.One;
+            result.M23 = Fix64.Zero;
+            result.M24 = Fix64.Zero;
+            result.M31 = Fix64.Zero;
+            result.M32 = Fix64.Zero;
+            result.M33 = Fix64.One;
+            result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero;
+            result.M42 = Fix64.Zero;
+            result.M43 = Fix64.Zero;
+            result.M44 = Fix64.One;
 
             return result;
         }
@@ -1070,15 +1070,15 @@ namespace LogicShared.TrueSync.Math
         /// <param name="radians">The amount, in radians, by which to rotate around the Z-axis.</param>
         /// <param name="centerPoint">The center point.</param>
         /// <returns>The rotation matrix.</returns>
-        public static TSMatrix4x4 RotateZ(FP radians, TSVector centerPoint)
+        public static FixMatrix4x4 RotateZ(Fix64 radians, FixVector centerPoint)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
 
-            FP c = TSMath.Cos(radians);
-            FP s = TSMath.Sin(radians);
+            Fix64 c = FixMath.Cos(radians);
+            Fix64 s = FixMath.Sin(radians);
 
-            FP x = centerPoint.x * (1 - c) + centerPoint.y * s;
-            FP y = centerPoint.y * (1 - c) - centerPoint.x * s;
+            Fix64 x = centerPoint.x * (1 - c) + centerPoint.y * s;
+            Fix64 y = centerPoint.y * (1 - c) - centerPoint.x * s;
 
             // [  c  s  0  0 ]
             // [ -s  c  0  0 ]
@@ -1086,20 +1086,20 @@ namespace LogicShared.TrueSync.Math
             // [  x  y  0  1 ]
             result.M11 = c;
             result.M12 = s;
-            result.M13 = FP.Zero;
-            result.M14 = FP.Zero;
+            result.M13 = Fix64.Zero;
+            result.M14 = Fix64.Zero;
             result.M21 = -s;
             result.M22 = c;
-            result.M23 = FP.Zero;
-            result.M24 = FP.Zero;
-            result.M31 = FP.Zero;
-            result.M32 = FP.Zero;
-            result.M33 = FP.One;
-            result.M34 = FP.Zero;
-            result.M41 = FP.Zero;
-            result.M42 = FP.Zero;
-            result.M43 = FP.Zero;
-            result.M44 = FP.One;
+            result.M23 = Fix64.Zero;
+            result.M24 = Fix64.Zero;
+            result.M31 = Fix64.Zero;
+            result.M32 = Fix64.Zero;
+            result.M33 = Fix64.One;
+            result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero;
+            result.M42 = Fix64.Zero;
+            result.M43 = Fix64.Zero;
+            result.M44 = Fix64.One;
 
             return result;
         }
@@ -1110,7 +1110,7 @@ namespace LogicShared.TrueSync.Math
         /// <param name="axis">The axis.</param>
         /// <param name="angle">The angle.</param>
         /// <param name="result">The resulting rotation matrix</param>
-        public static void AxisAngle(ref TSVector axis, FP angle, out TSMatrix4x4 result)
+        public static void AxisAngle(ref FixVector axis, Fix64 angle, out FixMatrix4x4 result)
         {
             // a: angle
             // x, y, z: unit vector for axis.
@@ -1137,27 +1137,27 @@ namespace LogicShared.TrueSync.Math
             // M = [ xy-cosa*yx+sina*z    yy+cosa(1-yy)  yz-cosa*yz-sina*x ]
             //     [ zx-cosa*zx-sina*y zy-cosa*zy+sina*x   zz+cosa*(1-zz)  ]
             //
-            FP x = axis.x, y = axis.y, z = axis.z;
-            FP sa = TSMath.Sin(angle), ca = TSMath.Cos(angle);
-            FP xx = x * x, yy = y * y, zz = z * z;
-            FP xy = x * y, xz = x * z, yz = y * z;
+            Fix64 x = axis.x, y = axis.y, z = axis.z;
+            Fix64 sa = FixMath.Sin(angle), ca = FixMath.Cos(angle);
+            Fix64 xx = x * x, yy = y * y, zz = z * z;
+            Fix64 xy = x * y, xz = x * z, yz = y * z;
 
-            result.M11 = xx + ca * (FP.One - xx);
+            result.M11 = xx + ca * (Fix64.One - xx);
             result.M12 = xy - ca * xy + sa * z;
             result.M13 = xz - ca * xz - sa * y;
-            result.M14 = FP.Zero;
+            result.M14 = Fix64.Zero;
             result.M21 = xy - ca * xy - sa * z;
-            result.M22 = yy + ca * (FP.One - yy);
+            result.M22 = yy + ca * (Fix64.One - yy);
             result.M23 = yz - ca * yz + sa * x;
-            result.M24 = FP.Zero;
+            result.M24 = Fix64.Zero;
             result.M31 = xz - ca * xz + sa * y;
             result.M32 = yz - ca * yz - sa * x;
-            result.M33 = zz + ca * (FP.One - zz);
-            result.M34 = FP.Zero;
-            result.M41 = FP.Zero;
-            result.M42 = FP.Zero;
-            result.M43 = FP.Zero;
-            result.M44 = FP.One;
+            result.M33 = zz + ca * (Fix64.One - zz);
+            result.M34 = Fix64.Zero;
+            result.M41 = Fix64.Zero;
+            result.M42 = Fix64.Zero;
+            result.M43 = Fix64.Zero;
+            result.M44 = Fix64.One;
         }
 
         /// <summary>
@@ -1166,9 +1166,9 @@ namespace LogicShared.TrueSync.Math
         /// <param name="axis">The axis.</param>
         /// <param name="angle">The angle.</param>
         /// <returns>The resulting rotation matrix</returns>
-        public static TSMatrix4x4 AngleAxis(FP angle, TSVector axis)
+        public static FixMatrix4x4 AngleAxis(Fix64 angle, FixVector axis)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
             AxisAngle(ref axis, angle, out result);
             return result;
         }
@@ -1182,14 +1182,14 @@ namespace LogicShared.TrueSync.Math
                 M41.RawValue, M42.RawValue, M43.RawValue, M44.RawValue);
         }
 
-        public static void TRS(TSVector translation, TSQuaternion rotation, TSVector scale, out TSMatrix4x4 matrix)
+        public static void TRS(FixVector translation, FixQuaternion rotation, FixVector scale, out FixMatrix4x4 matrix)
         {
-            matrix = TSMatrix4x4.Translate(translation) * TSMatrix4x4.Rotate(rotation) * TSMatrix4x4.Scale(scale);
+            matrix = FixMatrix4x4.Translate(translation) * FixMatrix4x4.Rotate(rotation) * FixMatrix4x4.Scale(scale);
         }
 
-        public static TSMatrix4x4 TRS(TSVector translation, TSQuaternion rotation, TSVector scale)
+        public static FixMatrix4x4 TRS(FixVector translation, FixQuaternion rotation, FixVector scale)
         {
-            TSMatrix4x4 result;
+            FixMatrix4x4 result;
             TRS(translation, rotation, scale, out result);
             return result;
         }
