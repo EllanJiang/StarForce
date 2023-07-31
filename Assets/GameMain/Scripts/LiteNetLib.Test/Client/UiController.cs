@@ -34,7 +34,7 @@ namespace LiteNetLib.Test.Client
         {
             _serverLogic.StartServer();
             _uiObject.SetActive(false);
-            _clientLogic.Connect("localhost", OnDisconnected);
+            //_clientLogic.Connect("localhost", OnDisconnected);
         }
 
         //某个客户端断开连接了

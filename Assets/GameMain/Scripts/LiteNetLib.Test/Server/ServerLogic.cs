@@ -8,6 +8,7 @@
 
 using System.Net;
 using System.Net.Sockets;
+using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Utils;
@@ -43,13 +44,14 @@ namespace LiteNetLib.Test.Server
             _playerManager = new ServerPlayerManager(this);
             
             //register auto serializable vector2
-            _packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), r => r.GetVector2());
+            //_packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), r => r.GetVector2());
            
             //register auto serializable PlayerState
-            _packetProcessor.RegisterNestedType<PlayerState>();
+            //_packetProcessor.RegisterNestedType<PlayerState>();
             
             //注册并监听收到JoinPacket消息
-            _packetProcessor.SubscribeReusable<JoinPacket, NetPeer>(OnJoinReceived);
+            _packetProcessor.SubscribeNetSerializable<JoinPacket, NetPeer>(OnJoinReceived);
+            _packetProcessor.SubscribeNetSerializable<PlayerInputPacket, NetPeer>(OnInputReceived);
             _netManager = new NetManager(this)
             {
                 AutoRecycle = true
@@ -97,7 +99,7 @@ namespace LiteNetLib.Test.Server
                         
                         //给每个Peer都发送当前房间内所有玩家的信息
                         //注意
-                        p.AssociatedPeer.Send(WriteSerializable(PacketType.ServerState, _serverState), DeliveryMethod.Unreliable);
+                        p.AssociatedPeer.Send(WritePacket(_serverState), DeliveryMethod.Unreliable);
                     }
                 }
             }
@@ -110,22 +112,22 @@ namespace LiteNetLib.Test.Server
         }
         
         //填充数据到DataWriter中，为发送做准备
-        private NetDataWriter WriteSerializable<T>(PacketType type, T packet) where T : struct, INetSerializable
+        private NetDataWriter WritePacket<T>(T packet) where T : struct, INetSerializable
         {
             _cachedWriter.Reset();
-            _cachedWriter.Put((byte) type);
+            _cachedWriter.Put((byte) PacketType.Serialized);
             packet.Serialize(_cachedWriter);
             return _cachedWriter;
         }
 
-        //填充数据到DataWriter中，为发送做准备
-        private NetDataWriter WritePacket<T>(T packet) where T : class, new()
-        {
-            _cachedWriter.Reset();
-            _cachedWriter.Put((byte) PacketType.Serialized);
-            _packetProcessor.Write(_cachedWriter, packet);
-            return _cachedWriter;
-        }
+        // //填充数据到DataWriter中，为发送做准备
+        // private NetDataWriter WritePacket<T>(T packet) where T : class, new()
+        // {
+        //     _cachedWriter.Reset();
+        //     _cachedWriter.Put((byte) PacketType.Serialized);
+        //     _packetProcessor.Write(_cachedWriter, packet);
+        //     return _cachedWriter;
+        // }
 
         //收到新的客户端(peer)加入房间请求的消息
         private void OnJoinReceived(JoinPacket joinPacket, NetPeer peer)
@@ -164,15 +166,15 @@ namespace LiteNetLib.Test.Server
         }
 
         //收到玩家输入消息（移动，开火）
-        private void OnInputReceived(NetPacketReader reader, NetPeer peer)
+        private void OnInputReceived(PlayerInputPacket inputPacket, NetPeer peer)
         {
             if (peer.Tag == null)
                 return;
-            _cachedCommand.Deserialize(reader);
+            //_cachedCommand.Deserialize(reader);
             var player = (ServerPlayer) peer.Tag;
             
             bool antilagApplied = _playerManager.EnableAntilag(player);
-            player.ApplyInput(_cachedCommand, LogicTimer.FixedDelta);
+            player.ApplyInput(inputPacket, LogicTimer.FixedDelta);
             if(antilagApplied)
                 _playerManager.DisableAntilag();
         }
@@ -180,7 +182,7 @@ namespace LiteNetLib.Test.Server
         //通知其他客户端有玩家开火了
         public void SendShoot(ref ShootPacket sp)
         {
-            _netManager.SendToAll(WriteSerializable(PacketType.Shoot, sp), DeliveryMethod.ReliableUnordered);
+            _netManager.SendToAll(WritePacket(sp), DeliveryMethod.ReliableUnordered);
         }
 
         void INetEventListener.OnPeerConnected(NetPeer peer)
@@ -220,9 +222,9 @@ namespace LiteNetLib.Test.Server
             switch (pt)
             {
                 //不同协议类型，有不同的处理方法
-                case PacketType.Movement:
-                    OnInputReceived(reader, peer);
-                    break;
+                // case PacketType.Movement:
+                //     OnInputReceived(reader, peer);
+                //     break;
                 case PacketType.Serialized:
                     _packetProcessor.ReadAllPackets(reader, peer);
                     break;

@@ -188,7 +188,7 @@ namespace GameMain
             }
             return pline;
         }
-
+#if UNITY_EDITOR
         public static AnimationCurve ToCurve(this FixPolyline fpPolyline,FixPolyline line)
         {
             if (line == null)
@@ -211,6 +211,7 @@ namespace GameMain
             }
             return null;
         }
-
+#endif
     }
+
 }

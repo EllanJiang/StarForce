@@ -7,6 +7,7 @@
 */
 
 using System.Collections.Generic;
+using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.TrueSync.Math;
 using UnityEngine;

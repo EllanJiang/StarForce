@@ -9,6 +9,7 @@
 using System;
 using GameMain;
 using LiteNetLib.Test.Shared;
+using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
 using UnityEngine;
 

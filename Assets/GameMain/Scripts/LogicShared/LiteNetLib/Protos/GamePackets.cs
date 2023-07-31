@@ -10,56 +10,104 @@ using System;
 using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
 
-namespace LiteNetLib.Test.Shared
+namespace LiteNetLib.LiteNetLib.Protos
 {
     /// <summary>
-    /// 协议Id TODO 在proto里面确定
+    /// Packet类型
     /// </summary>
     public enum PacketType : byte
     {
-        Movement,           //移动
-        Spawn,              //生成
-        ServerState,        //服务器状态
+        // Movement,           //移动
+        // Spawn,              //生成
+        // ServerState,        //服务器状态
         Serialized,         //自动序列化的包
-        Shoot               //射击
+        //Shoot               //射击
     }
     
     //Auto serializable packets
     /// <summary>
     /// 玩家请求加入房间
     /// </summary>
-    public class JoinPacket
+    public struct JoinPacket:INetSerializable
     {
         public string UserName { get; set; }
+        public void Serialize(NetDataWriter writer)
+        {
+            writer.Put(UserName);
+        }
+
+        public void Deserialize(NetDataReader reader)
+        {
+            UserName = reader.GetString();
+        }
     }
 
     /// <summary>
     /// 同意玩家加入房间
     /// </summary>
-    public class JoinAcceptPacket
+    public struct JoinAcceptPacket: INetSerializable
     {
         public byte Id { get; set; }
         public ushort ServerTick { get; set; }
+        public void Serialize(NetDataWriter writer)
+        {
+            writer.Put(Id);
+            writer.Put(ServerTick);
+        }
+
+        public void Deserialize(NetDataReader reader)
+        {
+            Id = reader.GetByte();
+            ServerTick = reader.GetByte();
+        }
     }
 
     /// <summary>
     /// 通知玩家加入房间
     /// </summary>
-    public class PlayerJoinedPacket
+    public struct PlayerJoinedPacket: INetSerializable
     {
         public string UserName { get; set; }
         public bool NewPlayer { get; set; }
         public byte Health { get; set; }
         public ushort ServerTick { get; set; }
         public PlayerState InitialPlayerState { get; set; }
+        public void Serialize(NetDataWriter writer)
+        {
+            writer.Put(UserName);
+            writer.Put(NewPlayer);
+            writer.Put(Health);
+            writer.Put(ServerTick);
+            InitialPlayerState.Serialize(writer);
+        }
+
+        public void Deserialize(NetDataReader reader)
+        {
+            UserName = reader.GetString();
+            NewPlayer = reader.GetBool();
+            Health = reader.GetByte();
+            ServerTick = reader.GetUShort();
+            InitialPlayerState = new PlayerState();
+            InitialPlayerState.Deserialize(reader);
+        }
     }
 
     /// <summary>
     /// 通知玩家离开房间
     /// </summary>
-    public class PlayerLeavedPacket
+    public struct PlayerLeavedPacket: INetSerializable
     {
         public byte Id { get; set; }
+
+        public void Serialize(NetDataWriter writer)
+        {
+            writer.Put(Id);
+        }
+
+        public void Deserialize(NetDataReader reader)
+        {
+            Id = reader.GetByte();
+        }
     }
 
     //Manual serializable packets

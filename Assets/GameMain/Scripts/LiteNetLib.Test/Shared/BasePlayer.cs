@@ -6,6 +6,7 @@
 * 修改记录：
 */
 
+using LiteNetLib.LiteNetLib.Protos;
 using LogicShared.TrueSync.Math;
 using UnityEngine;
 

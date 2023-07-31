@@ -269,6 +269,11 @@ namespace LogicShared.LiteNetLib
             Data = data;
         }
         
+        /// <summary>
+        /// 从请求连接Packet中读取请求包的协议ID
+        /// </summary>
+        /// <param name="packet"></param>
+        /// <returns></returns>
         public static int GetProtocolId(NetPacket packet)
         {
             return BitConverter.ToInt32(packet.RawData, 1);

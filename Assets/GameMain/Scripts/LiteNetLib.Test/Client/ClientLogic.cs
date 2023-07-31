@@ -9,6 +9,7 @@
 using System;
 using System.Net;
 using System.Net.Sockets;
+using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Utils;
@@ -38,8 +39,8 @@ namespace LiteNetLib.Test.Client
 
 
         private string _userName;
-        private ServerState _cachedServerState;     //缓存服务器信息
-        private ShootPacket _cachedShootData;       //缓存开火Packet
+        // private ServerState _cachedServerState;     //缓存服务器信息
+        // private ShootPacket _cachedShootData;       //缓存开火Packet
         private ushort _lastServerTick;             //服务器最后一次下发的帧ID
         private NetPeer _server;                    //服务器peer
         private ClientPlayerManager _playerManager;
@@ -58,19 +59,21 @@ namespace LiteNetLib.Test.Client
         {
             DontDestroyOnLoad(gameObject);
             Random r = new Random();
-            _cachedServerState = new ServerState();
-            _cachedShootData = new ShootPacket();
+            // _cachedServerState = new ServerState();
+            // _cachedShootData = new ShootPacket();
             _userName = Environment.MachineName + " " + r.Next(100000); //随机用户名
             LogicTimer = new LogicTimer(OnLogicUpdate);
             _writer = new NetDataWriter();
             _playerManager = new ClientPlayerManager(this);
             _shootsPool = new GamePool<ShootEffect>(ShootEffectContructor, 100);
             _packetProcessor = new NetPacketProcessor();
-            _packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), reader => reader.GetVector2());
-            _packetProcessor.RegisterNestedType<PlayerState>();
-            _packetProcessor.SubscribeReusable<PlayerJoinedPacket>(OnPlayerJoined);
-            _packetProcessor.SubscribeReusable<JoinAcceptPacket>(OnJoinAccept);
-            _packetProcessor.SubscribeReusable<PlayerLeavedPacket>(OnPlayerLeaved);
+            //_packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), reader => reader.GetVector2());
+            //_packetProcessor.RegisterNestedType<PlayerState>();
+            _packetProcessor.SubscribeNetSerializable<PlayerJoinedPacket>(OnPlayerJoined);
+            _packetProcessor.SubscribeNetSerializable<JoinAcceptPacket>(OnJoinAccept);
+            _packetProcessor.SubscribeNetSerializable<PlayerLeavedPacket>(OnPlayerLeaved);
+            _packetProcessor.SubscribeNetSerializable<ServerState>(OnServerState);
+            _packetProcessor.SubscribeNetSerializable<ShootPacket>(OnShoot);
             _netManager = new NetManager(this)
             {
                 AutoRecycle = true,
@@ -113,22 +116,22 @@ namespace LiteNetLib.Test.Client
         }
 
         //更新服务器信息
-        private void OnServerState()
+        private void OnServerState(ServerState serverState)
         {
             //skip duplicate or old because we received that packet unreliably
-            if (NetworkGeneral.SeqDiff(_cachedServerState.Tick, _lastServerTick) <= 0)
+            if (NetworkGeneral.SeqDiff(serverState.Tick, _lastServerTick) <= 0)
                 return;
-            _lastServerTick = _cachedServerState.Tick;
-            _playerManager.ApplyServerState(ref _cachedServerState);
+            _lastServerTick = serverState.Tick;
+            _playerManager.ApplyServerState(ref serverState);
         }
 
         //
-        private void OnShoot()
+        private void OnShoot(ShootPacket shootPacket)
         {
-            var p = _playerManager.GetById(_cachedShootData.FromPlayer);    //谁开火
+            var p = _playerManager.GetById(shootPacket.FromPlayer);    //谁开火
             if (p == null || p == _playerManager.OurPlayer)                          //如果是自己开火，那么不处理（因为本地预测过了）
                 return;
-            SpawnShoot(p.Position, _cachedShootData.Hit);
+            SpawnShoot(p.Position, shootPacket.Hit);
         }
 
         //生成开火特效
@@ -157,26 +160,26 @@ namespace LiteNetLib.Test.Client
         }
 
         //发送手动序列化的包
-        public void SendPacketSerializable<T>(PacketType type, T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
+        public void WritePacket<T>(T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
         {
             if (_server == null)
                 return;
             _writer.Reset();
-            _writer.Put((byte)type);
+            _writer.Put((byte)PacketType.Serialized);
             packet.Serialize(_writer);
             _server.Send(_writer, deliveryMethod);
         }
 
-        //发送自动序列化的包
-        public void SendPacket<T>(T packet, DeliveryMethod deliveryMethod) where T : class, new()
-        {
-            if (_server == null)
-                return;
-            _writer.Reset();
-            _writer.Put((byte) PacketType.Serialized);
-            _packetProcessor.Write(_writer, packet);
-            _server.Send(_writer, deliveryMethod);
-        }
+        // //发送自动序列化的包
+        // public void SendPacket<T>(T packet, DeliveryMethod deliveryMethod) where T : class, new()
+        // {
+        //     if (_server == null)
+        //         return;
+        //     _writer.Reset();
+        //     _writer.Put((byte) PacketType.Serialized);
+        //     _packetProcessor.Write(_writer, packet);
+        //     _server.Send(_writer, deliveryMethod);
+        // }
 
         //连接到服务器了，这里peer就是服务器的peer
         void INetEventListener.OnPeerConnected(NetPeer peer)
@@ -184,7 +187,7 @@ namespace LiteNetLib.Test.Client
             Debug.Log("[C] 连接到服务器了，服务器IP和Port是: " + peer.EndPoint);
             _server = peer;
             
-            SendPacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);
+            WritePacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);
             LogicTimer.Start();
         }
 
@@ -215,18 +218,18 @@ namespace LiteNetLib.Test.Client
             PacketType pt = (PacketType) packetType;
             switch (pt)
             {
-                case PacketType.Spawn:
-                    break;
-                case PacketType.ServerState:
-                    _cachedServerState.Deserialize(reader);     //收到新的服务器信息
-                    OnServerState();
-                    break;
+                // case PacketType.Spawn:
+                //     break;
+                // case PacketType.ServerState:
+                //     _cachedServerState.Deserialize(reader);     //收到新的服务器信息
+                //     OnServerState();
+                //     break;
                 case PacketType.Serialized:
-                    _packetProcessor.ReadAllPackets(reader);    //收到序列化消息 todo 这个类型干啥用？
+                    _packetProcessor.ReadAllPackets(reader);    //收到序列化消息
                     break;
-                case PacketType.Shoot:
-                    _cachedShootData.Deserialize(reader);       //收到玩家射击消息
-                    OnShoot();
+                // case PacketType.Shoot:
+                //     _cachedShootData.Deserialize(reader);       //收到玩家射击消息
+                //     OnShoot();
                     break;
                 default:
                     Debug.Log("Unhandled packet: " + pt);

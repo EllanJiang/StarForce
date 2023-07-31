@@ -24,7 +24,7 @@ namespace LogicShared.LiteNetLib
     }
     
     /// <summary>
-    /// 连接请求包
+    /// 处理网络连接请求
     /// </summary>
     public class ConnectionRequest
     {

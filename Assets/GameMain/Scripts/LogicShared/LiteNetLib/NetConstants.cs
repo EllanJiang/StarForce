@@ -29,7 +29,7 @@ namespace LogicShared.LiteNetLib
         public const ushort HalfMaxSequence = MaxSequence / 2;  
 
         //protocol
-        internal const int ProtocolId = 11;                     //协议ID
+        internal const int ProtocolId = 11;                     //请求连接的协议ID
         internal const int MaxUdpHeaderSize = 68;               //UDP最大包头长度
 
         internal static readonly int[] PossibleMtu =            //潜在的最大传输单元大小（字节）

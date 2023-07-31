@@ -9,7 +9,7 @@
 using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
 
-namespace LiteNetLib.Test.Shared
+namespace LogicShared.LiteNetLib.Utils
 {
     public static class Extensions
     {      

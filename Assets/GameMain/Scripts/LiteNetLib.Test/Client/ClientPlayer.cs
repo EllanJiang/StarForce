@@ -6,6 +6,7 @@
 * 修改记录：
 */
 
+using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Helpers;
@@ -128,7 +129,7 @@ namespace LiteNetLib.Test.Client
             {
                 _updateCount = 0;
                 foreach (var t in _predictionPlayerStates)
-                    _clientLogic.SendPacketSerializable(PacketType.Movement, t, DeliveryMethod.Unreliable);
+                    _clientLogic.WritePacket(t, DeliveryMethod.Unreliable);
             }
 
             base.Update(delta);

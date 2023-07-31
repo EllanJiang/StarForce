@@ -274,7 +274,7 @@ namespace LogicShared.LiteNetLib
             //Send request
             NetManager.SendRaw(_connectRequestPacket, EndPoint);
 
-           Logger.Debug($"[CC] ConnectId: {_connectTime}, ConnectNum: {connectNum}" );
+            Logger.Debug($"[CC] ConnectId: {_connectTime}, ConnectNum: {connectNum}" );
         }
 
         /// <summary>

@@ -7,6 +7,7 @@
 */
 
 using System;
+using LiteNetLib.LiteNetLib.Protos;
 
 namespace LiteNetLib.Test.Shared
 {

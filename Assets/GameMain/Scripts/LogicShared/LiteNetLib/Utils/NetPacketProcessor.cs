@@ -8,6 +8,7 @@
 
 using System;
 using System.Collections.Generic;
+using LiteNetLib.LiteNetLib.Protos;
 
 namespace LogicShared.LiteNetLib.Utils
 {
@@ -55,13 +56,15 @@ namespace LogicShared.LiteNetLib.Utils
             if(HashCache<T>.Initialized)
                 return HashCache<T>.Id;
 
-            ulong hash = 14695981039346656037UL; //offset
-            string typeName = typeof(T).FullName;
-            for (var i = 0; i < typeName.Length; i++)
-            {
-                hash = hash ^ typeName[i];
-                hash *= 1099511628211UL; //prime
-            }
+            // ulong hash = 14695981039346656037UL; //offset
+            // string typeName = typeof(T).FullName;
+            // for (var i = 0; i < typeName.Length; i++)
+            // {
+            //     hash = hash ^ typeName[i];
+            //     hash *= 1099511628211UL; //prime
+            // }
+            // 协议ID
+            ulong hash = PacketIDs.TryGetId<T>();
             HashCache<T>.Initialized = true;
             HashCache<T>.Id = hash;
             return hash;
@@ -345,7 +348,7 @@ namespace LogicShared.LiteNetLib.Utils
                 onReceive(reference, (TUserData)userData);
             };
         }
-
+        
         /// <summary>
         /// Register and subscribe to packet receive event (with userData)
         /// 与Subscribe的区别是：Subscribe自动进行序列化和反序列化，而SubscribeNetSerializable需要自己提供序列化和反序列化方法
@@ -420,6 +423,7 @@ namespace LogicShared.LiteNetLib.Utils
             };
         }
 
+        
         /// <summary>
         /// Remove any subscriptions by type
         /// </summary>
