@@ -28,7 +28,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     /// <summary>
     /// 玩家请求加入房间
     /// </summary>
-    public struct JoinPacket:INetSerializable
+    public class JoinPacket:INetSerializable
     {
         public string UserName { get; set; }
         public void Serialize(NetDataWriter writer)
@@ -45,7 +45,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     /// <summary>
     /// 同意玩家加入房间
     /// </summary>
-    public struct JoinAcceptPacket: INetSerializable
+    public class JoinAcceptPacket: INetSerializable
     {
         public byte Id { get; set; }
         public ushort ServerTick { get; set; }
@@ -58,14 +58,14 @@ namespace LiteNetLib.LiteNetLib.Protos
         public void Deserialize(NetDataReader reader)
         {
             Id = reader.GetByte();
-            ServerTick = reader.GetByte();
+            ServerTick = reader.GetUShort();
         }
     }
 
     /// <summary>
     /// 通知玩家加入房间
     /// </summary>
-    public struct PlayerJoinedPacket: INetSerializable
+    public class PlayerJoinedPacket: INetSerializable
     {
         public string UserName { get; set; }
         public bool NewPlayer { get; set; }
@@ -95,7 +95,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     /// <summary>
     /// 通知玩家离开房间
     /// </summary>
-    public struct PlayerLeavedPacket: INetSerializable
+    public class PlayerLeavedPacket: INetSerializable
     {
         public byte Id { get; set; }
 
@@ -111,7 +111,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     }
 
     //Manual serializable packets
-    public struct SpawnPacket : INetSerializable
+    public class SpawnPacket : INetSerializable
     {
         public long PlayerId;
         public FixVector2 Position;
@@ -140,7 +140,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     }
 
     //开火Packet
-    public struct ShootPacket : INetSerializable
+    public class ShootPacket : INetSerializable
     {
         public byte FromPlayer;
         public ushort CommandId;
@@ -164,7 +164,7 @@ namespace LiteNetLib.LiteNetLib.Protos
         }
     }
     
-    public struct PlayerInputPacket : INetSerializable
+    public class PlayerInputPacket : INetSerializable
     {
         public ushort Id;
         public MovementKeys Keys;
@@ -191,7 +191,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     /// <summary>
     /// 玩家信息：Id，位置，Y轴旋转角度，当前帧Id
     /// </summary>
-    public struct PlayerState : INetSerializable
+    public class PlayerState : INetSerializable
     {
         public byte Id;
         public FixVector2 Position;
@@ -219,7 +219,7 @@ namespace LiteNetLib.LiteNetLib.Protos
     }
 
     //服务器信息
-    public struct ServerState : INetSerializable
+    public class ServerState : INetSerializable
     {
         public ushort Tick;
         public ushort LastProcessedCommand;
@@ -235,9 +235,10 @@ namespace LiteNetLib.LiteNetLib.Protos
         {
             writer.Put(Tick);
             writer.Put(LastProcessedCommand);
-            
             for (int i = 0; i < PlayerStatesCount; i++)
+            {
                 PlayerStates[StartState + i].Serialize(writer);
+            }
         }
 
         public void Deserialize(NetDataReader reader)
@@ -247,9 +248,18 @@ namespace LiteNetLib.LiteNetLib.Protos
             
             PlayerStatesCount = reader.AvailableBytes / PlayerState.Size;
             if (PlayerStates == null || PlayerStates.Length < PlayerStatesCount)
+            {
                 PlayerStates = new PlayerState[PlayerStatesCount];
+            }
+
+            for (int i = 0; i < PlayerStates.Length; i++)
+            {
+                PlayerStates[i] = new PlayerState();
+            }
             for (int i = 0; i < PlayerStatesCount; i++)
+            {
                 PlayerStates[i].Deserialize(reader);
+            }
         }
     }
 }

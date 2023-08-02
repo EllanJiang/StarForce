@@ -20,11 +20,11 @@ namespace LiteNetLib.Test.Client
     /// </summary>
     public class ClientPlayer : BasePlayer
     {
-        private PlayerInputPacket _nextCommand;                 //玩家当前输入命令
+        private PlayerInputPacket _nextCommand = new PlayerInputPacket();                 //玩家当前输入命令
         private readonly ClientLogic _clientLogic;              //玩家逻辑
         private readonly ClientPlayerManager _playerManager;    //玩家管理器
         private readonly LiteRingBuffer<PlayerInputPacket> _predictionPlayerStates; //预测玩家输入命令
-        private ServerState _lastServerState;                   //最后一次服务器下发数据
+        private ServerState _lastServerState = new ServerState();                   //最后一次服务器下发数据
         private const int MaxStoredCommands = 60;               //最多预测命令个数
         private bool _firstStateReceived;                       //是否成功接收过服务器命令
         private int _updateCount;                               //更新次数

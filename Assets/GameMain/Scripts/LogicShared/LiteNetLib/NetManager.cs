@@ -1066,7 +1066,7 @@ namespace LogicShared.LiteNetLib
 
             while (_socket.IsRunning)
             {
-#if DEBUG
+#if DEBUG   //模拟丢包和延迟
                 if (SimulateLatency)
                 {
                     var time = DateTime.UtcNow;
@@ -1126,7 +1126,7 @@ namespace LogicShared.LiteNetLib
 
           
         /// <summary>
-        /// 收到网络包消息
+        /// 收到socket接收到的原始数据
         /// </summary>
         /// <param name="data"></param>
         /// <param name="length"></param>
@@ -1134,13 +1134,14 @@ namespace LogicShared.LiteNetLib
         /// <param name="remoteEndPoint"></param>
         void INetSocketListener.OnMessageReceived(byte[] data, int length, SocketError errorCode, IPEndPoint remoteEndPoint)
         {
+            //出错了，创建报错事件
             if (errorCode != 0)
             {
                 CreateEvent(NetEvent.EType.Error, errorCode: errorCode);
                 Logger.Error($"[NM] Receive error: {errorCode}");
                 return;
             }
-#if DEBUG
+#if DEBUG   //模拟丢包和延迟
             if (SimulatePacketLoss && _randomGenerator.NextDouble() * 100 < SimulationPacketLossChance)
             {
                 //drop packet
@@ -1243,7 +1244,11 @@ namespace LogicShared.LiteNetLib
         private int GetNextPeerId()
         {
             lock (_peerIds)
-                return _peerIds.Count == 0 ? _lastPeerId++ : _peerIds.Dequeue();
+            {
+                var peerId = _peerIds.Count == 0 ? _lastPeerId++ : _peerIds.Dequeue();
+                Logger.Warning("new PeerId:" + peerId);
+                return peerId;
+            }
         }
 
         /// <summary>

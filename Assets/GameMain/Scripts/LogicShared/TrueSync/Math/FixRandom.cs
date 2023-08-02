@@ -96,7 +96,7 @@ namespace LogicShared.TrueSync.Math {
                 minValueInt = tmp;
             }
 
-            return (Fix64.Floor((maxValueInt - minValueInt + 1) * NextFP() +
+            return (Fix64.Floor((maxValueInt - minValueInt + 1) * NextFix() +
                 minValueInt)) / 1000;
         }
 
@@ -117,7 +117,7 @@ namespace LogicShared.TrueSync.Math {
         /**
          *  @brief Returns a {@link FP} between 0.0 [inclusive] and 1.0 [inclusive].
          **/
-        public Fix64 NextFP() {
+        public Fix64 NextFix() {
             return ((Fix64) Next()) / (MaxRandomInt);
         }
 
@@ -126,7 +126,7 @@ namespace LogicShared.TrueSync.Math {
          **/
         public static Fix64 value {
             get {
-                return instance.NextFP();
+                return instance.NextFix();
             }
         }
 

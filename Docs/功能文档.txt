@@ -274,16 +274,48 @@
 				if (_netServer != null)
 					_netServer.Stop();
 	
-	3.2、复杂示例：
+	3.2、连接请求流程：
+		->NetManager.Connect(ip, 10515, "ExampleGame");  		//发送连接请求
+		->NetPeer(NetManager netManager, IPEndPoint remoteEndPoint, int id, byte connectNum, NetDataWriter connectData) 
+		->_connectRequestPacket = NetConnectRequestPacket.Make(connectData, remoteEndPoint.Serialize(), _connectTime);				//在NetPeer构造函数中创建连接请求包
+		  NetManager.SendRaw(_connectRequestPacket, EndPoint);	//在NetPeer构造函数中发送连接请求包
+		->NetSocket.SendTo()									//使用socket的sendTo方法发送连接数据
 		
-		Shared：
-			BasePlayer 					//玩家基础属性
-			BasePlayerManager				//玩家基础管理器
+		->NetSocket.ReceiveLogic()								//在NetSocket的ReceiveLogic方法中接收客户端的连接请求数据
+		->NetManager.OnMessageReceived()						//处理连接请求数据
+		->NetManager.DataReceived()							//处理连接请求数据
+		->NetManager.ProcessConnectRequest()					//处理连接请求包
+		->CreateEvent(NetEvent.EType.ConnectionRequest, connectionRequest: req);	//创建连接请求事件
+		->NetManager.ProcessEvent()							
+			_netEventListener.OnConnectionRequest(evt.ConnectionRequest);//处理连接请求事件
+		->ServerLogic.OnConnectionRequest()						//request.AcceptIfKey("ExampleGame");接受客户端请求
+		->NetManager.OnConnectionSolved()						//处理连接请求结果
+		->NetPeer(NetManager netManager, IPEndPoint remoteEndPoint, int id, long connectId, byte connectNum) 	//在NetPeer构造函数中创建同意连接包
+		->_connectAcceptPacket = NetConnectAcceptPacket.Make(_connectTime, connectNum, false);				//给客户端发送同意连接包
+           NetManager.SendRaw(_connectAcceptPacket, EndPoint);
+		-> CreateEvent(NetEvent.EType.Connect, netPeer);			//创建连接成功事件
+		->NetManager.ProcessEvent()							
+			 _netEventListener.OnPeerConnected(evt.Peer);		//处理连接成功事件
+		->ClientLogic.OnPeerConnected(NetPeer peer)
+		WritePacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);	//客户端连接成功后，向服务器发送加入房间请求
+		
+		至此，连接成功。
+		
+		->ServerLogic.OnJoinReceived(JoinPacket joinPacket, NetPeer peer)	 			//收到新的客户端(peer)加入房间请求的消息
+            _netManager.SendToAll(WritePacket(pj), DeliveryMethod.ReliableOrdered, peer);//向其他已经连入的客户端发送有新的客户端连入的消息
+            pj.NewPlayer = false;
+            foreach(ServerPlayer otherPlayer in _playerManager)
+            {
+                if(otherPlayer == player)
+                    continue;
+                pj.UserName = otherPlayer.Name;
+                pj.InitialPlayerState = otherPlayer.NetworkState;
+                peer.Send(WritePacket(pj), DeliveryMethod.ReliableOrdered);				//Send to new player info about old players
+            }
+		
+		至此，连接并加入房间成功。
+		
 	
-		Client：
-		
-		Server：
-			ServerPlayer : BasePlayer		//服务器玩家属性
 			
 
 	

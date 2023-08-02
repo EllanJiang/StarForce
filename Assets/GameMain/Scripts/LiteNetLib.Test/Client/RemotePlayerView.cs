@@ -30,7 +30,7 @@ namespace LiteNetLib.Test.Client
         private void Update()
         {
             _player.UpdatePosition(Time.deltaTime);
-            //transform.position = _player.Position;
+            transform.position = _player.Position.ToVector();
             transform.rotation =  Quaternion.Euler(0f, 0f, _player.Rotation * Mathf.Rad2Deg );
         }
 

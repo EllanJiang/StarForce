@@ -32,7 +32,7 @@ namespace LiteNetLib.Test.Server
         private ServerPlayerManager _playerManager; //服务器玩家管理器
 
         private PlayerInputPacket _cachedCommand = new PlayerInputPacket();
-        private ServerState _serverState;   //当前服务器信息，主要保存当前连入的玩家数量和玩家信息
+        private ServerState _serverState = new ServerState();   //当前服务器信息，主要保存当前连入的玩家数量和玩家信息
         public ushort Tick => _serverTick;  //服务器帧id
 
        
@@ -112,10 +112,12 @@ namespace LiteNetLib.Test.Server
         }
         
         //填充数据到DataWriter中，为发送做准备
-        private NetDataWriter WritePacket<T>(T packet) where T : struct, INetSerializable
+        private NetDataWriter WritePacket<T>(T packet) where T : class, INetSerializable
         {
             _cachedWriter.Reset();
             _cachedWriter.Put((byte) PacketType.Serialized);
+            ulong protoId = PacketIDs.TryGetId<T>();
+            _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
             return _cachedWriter;
         }
@@ -132,18 +134,18 @@ namespace LiteNetLib.Test.Server
         //收到新的客户端(peer)加入房间请求的消息
         private void OnJoinReceived(JoinPacket joinPacket, NetPeer peer)
         {
-            Debug.Log("[S] Join packet received: " + joinPacket.UserName);
+           
             var player = new ServerPlayer(_playerManager, joinPacket.UserName, peer);
             _playerManager.AddPlayer(player);
-
+            Debug.Log("[S] Join packet received: " + joinPacket.UserName + " playerId:" + player.Id);
             player.Spawn(new FixVector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f)));
 
             //Send join accept  向连入的客户端发送同意连接Packet
-            var ja = new JoinAcceptPacket { Id = player.Id, ServerTick = _serverTick };
-            peer.Send(WritePacket(ja), DeliveryMethod.ReliableOrdered);
+            var joinAcceptPacket = new JoinAcceptPacket { Id = player.Id, ServerTick = _serverTick };
+            peer.Send(WritePacket(joinAcceptPacket), DeliveryMethod.ReliableOrdered);
 
             //Send to old players info about new player 
-            var pj = new PlayerJoinedPacket
+            var playerJoinedPacket = new PlayerJoinedPacket
             {
                 UserName = joinPacket.UserName,
                 NewPlayer = true,
@@ -151,17 +153,17 @@ namespace LiteNetLib.Test.Server
                 ServerTick = _serverTick
             };
             //向其他已经连入的客户端发送有新的客户端连入的消息
-            _netManager.SendToAll(WritePacket(pj), DeliveryMethod.ReliableOrdered, peer);
+            _netManager.SendToAll(WritePacket(playerJoinedPacket), DeliveryMethod.ReliableOrdered, peer);
 
             //Send to new player info about old players
-            pj.NewPlayer = false;
+            playerJoinedPacket.NewPlayer = false;
             foreach(ServerPlayer otherPlayer in _playerManager)
             {
                 if(otherPlayer == player)
                     continue;
-                pj.UserName = otherPlayer.Name;
-                pj.InitialPlayerState = otherPlayer.NetworkState;
-                peer.Send(WritePacket(pj), DeliveryMethod.ReliableOrdered);
+                playerJoinedPacket.UserName = otherPlayer.Name;
+                playerJoinedPacket.InitialPlayerState = otherPlayer.NetworkState;
+                peer.Send(WritePacket(playerJoinedPacket), DeliveryMethod.ReliableOrdered);
             }
         }
 

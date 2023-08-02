@@ -109,8 +109,8 @@ namespace LiteNetLib.Test.Client
         //通知有新的玩家加入房间
         private void OnPlayerJoined(PlayerJoinedPacket packet)
         {
-            Debug.Log($"[C] 新玩家加入房间: {packet.UserName}");
             var remotePlayer = new RemotePlayer(_playerManager, packet.UserName, packet);
+            Debug.Log($"[C] 新玩家加入房间: {packet.UserName} 玩家id: {remotePlayer.Id}");
             var view = RemotePlayerView.Create(_remotePlayerViewPrefab, remotePlayer);      //创建远端玩家实体
             _playerManager.AddPlayer(remotePlayer, view);
         }
@@ -119,6 +119,7 @@ namespace LiteNetLib.Test.Client
         private void OnServerState(ServerState serverState)
         {
             //skip duplicate or old because we received that packet unreliably
+            Debug.Log($"[C] 更新服务器信息: {serverState.Tick}");
             if (NetworkGeneral.SeqDiff(serverState.Tick, _lastServerTick) <= 0)
                 return;
             _lastServerTick = serverState.Tick;
@@ -162,25 +163,17 @@ namespace LiteNetLib.Test.Client
         //发送手动序列化的包
         public void WritePacket<T>(T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
         {
+            Debug.Log("[C] 发送手动序列化的包： " + typeof(T));
             if (_server == null)
                 return;
             _writer.Reset();
             _writer.Put((byte)PacketType.Serialized);
+            ulong protoId = PacketIDs.TryGetId<T>();
+            _writer.Put(protoId);
             packet.Serialize(_writer);
             _server.Send(_writer, deliveryMethod);
         }
-
-        // //发送自动序列化的包
-        // public void SendPacket<T>(T packet, DeliveryMethod deliveryMethod) where T : class, new()
-        // {
-        //     if (_server == null)
-        //         return;
-        //     _writer.Reset();
-        //     _writer.Put((byte) PacketType.Serialized);
-        //     _packetProcessor.Write(_writer, packet);
-        //     _server.Send(_writer, deliveryMethod);
-        // }
-
+        
         //连接到服务器了，这里peer就是服务器的peer
         void INetEventListener.OnPeerConnected(NetPeer peer)
         {
