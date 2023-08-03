@@ -41,12 +41,6 @@ namespace LogicShared.LiteNetLib.Utils
             Random.Initialize(GetRandomSeed());
             return array[Random.Next(0, array.Length)];
         }
-
-        public static int RandomRange(int min, int max)
-        {
-            Random.Initialize(GetRandomSeed());
-            return Random.Next(min, max + 1);
-        }
         
         public static Fix64 RandomRange(Fix64 min, Fix64 max)
         {

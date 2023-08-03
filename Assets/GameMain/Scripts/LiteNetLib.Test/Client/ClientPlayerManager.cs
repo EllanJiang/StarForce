@@ -48,8 +48,8 @@ namespace LiteNetLib.Test.Client
         
         public override IEnumerator<BasePlayer> GetEnumerator()
         {
-            foreach (var ph in _players)
-                yield return ph.Value.Player;
+            foreach (var kv in _players)
+                yield return kv.Value.Player;
         }
 
         //设置服务器信息

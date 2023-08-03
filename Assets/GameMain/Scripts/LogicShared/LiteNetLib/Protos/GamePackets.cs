@@ -225,19 +225,21 @@ namespace LiteNetLib.LiteNetLib.Protos
         public ushort LastProcessedCommand;
         
         public int PlayerStatesCount;       //玩家数量
-        public int StartState;              //server only
         public PlayerState[] PlayerStates;  //所有连入的玩家信息
         
-        //tick 头文件大小=4
-        public const int HeaderSize = sizeof(ushort)*2;
+        //tick 大小=2
+        //LastProcessedCommand 大小=2
+        //PlayerStatesCount 大小=4
+        public const int HeaderSize = sizeof(ushort)*2 + sizeof(int);
         
         public void Serialize(NetDataWriter writer)
         {
             writer.Put(Tick);
             writer.Put(LastProcessedCommand);
+            writer.Put(PlayerStatesCount);
             for (int i = 0; i < PlayerStatesCount; i++)
             {
-                PlayerStates[StartState + i].Serialize(writer);
+                PlayerStates[i].Serialize(writer);
             }
         }
 
@@ -245,17 +247,15 @@ namespace LiteNetLib.LiteNetLib.Protos
         {
             Tick = reader.GetUShort();
             LastProcessedCommand = reader.GetUShort();
+            PlayerStatesCount = reader.GetInt();
             
-            PlayerStatesCount = reader.AvailableBytes / PlayerState.Size;
-            if (PlayerStates == null || PlayerStates.Length < PlayerStatesCount)
-            {
-                PlayerStates = new PlayerState[PlayerStatesCount];
-            }
-
+            // todo 每次反序列化数据都new 会不会有GC
+            PlayerStates = new PlayerState[PlayerStatesCount];
             for (int i = 0; i < PlayerStates.Length; i++)
             {
                 PlayerStates[i] = new PlayerState();
             }
+            
             for (int i = 0; i < PlayerStatesCount; i++)
             {
                 PlayerStates[i].Deserialize(reader);

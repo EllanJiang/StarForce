@@ -6,6 +6,7 @@
 * 修改记录：
 */
 
+using System;
 using LiteNetLib.LiteNetLib.Protos;
 using LogicShared.TrueSync.Math;
 using UnityEngine;
@@ -53,7 +54,7 @@ namespace LiteNetLib.Test.Shared
         private void Shoot()
         {
             const float MaxLength = 20f;
-            var dir = new FixVector2(Mathf.Cos(_rotation), Mathf.Sin(_rotation));
+            var dir = new FixVector2(Math.Cos(_rotation), Math.Sin(_rotation));
             var player = _playerManager.CastToPlayer(_position, dir, MaxLength, this);
             var target = _position + dir * (player != null ? FixVector2.Distance(_position, player._position) : MaxLength);
             _playerManager.OnShoot(this, target, player);

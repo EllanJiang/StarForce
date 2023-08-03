@@ -31,7 +31,7 @@ namespace LiteNetLib.Test.Server
         private ushort _serverTick;         //服务器运行了多少帧（逻辑帧）
         private ServerPlayerManager _playerManager; //服务器玩家管理器
 
-        private PlayerInputPacket _cachedCommand = new PlayerInputPacket();
+        //private PlayerInputPacket _cachedCommand = new PlayerInputPacket();
         private ServerState _serverState = new ServerState();   //当前服务器信息，主要保存当前连入的玩家数量和玩家信息
         public ushort Tick => _serverTick;  //服务器帧id
 
@@ -80,14 +80,17 @@ namespace LiteNetLib.Test.Server
                 //每两帧通知客户端 当前房间内所有玩家的信息
                 _serverState.Tick = _serverTick;    
                 _serverState.PlayerStates = _playerManager.PlayerStates;
-                int pCount = _playerManager.Count;  
-                
+                int pCount = _playerManager.Count;
+                if (pCount == 1)
+                {
+                    return;
+                }
                 //遍历所有连入的客户端
                 foreach(ServerPlayer p in _playerManager)
                 { 
                     //单个网络包能装入的最大字节数
                     int statesMax = p.AssociatedPeer.GetMaxSinglePacketSize(DeliveryMethod.Unreliable) - ServerState.HeaderSize;
-                    Debug.Log("_serverState.StartState:" + _serverState.StartState +" pCount:" + pCount +" statesMax:" + statesMax);
+                    //Debug.Log("_serverState.StartState:" + _serverState.StartState +" pCount:" + pCount +" statesMax:" + statesMax);
                     statesMax /= PlayerState.Size;  //每个客户端能分配到的包体大小
                     for (int s = 0; s < (pCount-1)/statesMax + 1; s++)
                     {
@@ -95,7 +98,6 @@ namespace LiteNetLib.Test.Server
                         //如果PlayerState.Size很大，超过了statesMax，要怎么解决呢？
                         _serverState.LastProcessedCommand = p.LastProcessedCommandId;
                         _serverState.PlayerStatesCount = pCount;
-                        _serverState.StartState = s * statesMax;
                         
                         //给每个Peer都发送当前房间内所有玩家的信息
                         //注意
