@@ -954,7 +954,7 @@ namespace LogicShared.LiteNetLib
             }
             Interlocked.Exchange(ref _timeSinceLastPacket, 0);
 
-            Logger.Error($"[RR]PacketProperty: {packet.Property}");
+            //Logger.Error($"[RR]PacketProperty: {packet.Property}");
             switch (packet.Property)
             {
                 case PacketProperty.Merged:

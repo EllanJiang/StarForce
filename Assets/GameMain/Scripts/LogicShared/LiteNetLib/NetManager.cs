@@ -657,7 +657,7 @@ namespace LogicShared.LiteNetLib
         /// <param name="evt"></param>
         private void ProcessEvent(NetEvent evt)
         {
-            Logger.Debug("[NM] Processing event: " + evt.Type);
+            //Logger.Debug("[NM] Processing event: " + evt.Type);
             bool emptyData = evt.DataReader.IsNull;
             switch (evt.Type)
             {

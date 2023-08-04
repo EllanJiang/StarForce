@@ -225,7 +225,7 @@ namespace LogicShared.LiteNetLib
                 }
 
                 //All ok!
-                LogicShared.Logger.Error($"[R]Received data from {bufferEndPoint.ToString()}, Received data bytes count: {result}" );
+                //LogicShared.Logger.Error($"[R]Received data from {bufferEndPoint.ToString()}, Received data bytes count: {result}" );
                 _listener.OnMessageReceived(receiveBuffer, result, 0, (IPEndPoint)bufferEndPoint);
             }
         }
