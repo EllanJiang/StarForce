@@ -7,10 +7,9 @@
 */
 
 using System.Collections.Generic;
-using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.TrueSync.Math;
-using UnityEngine;
+using Protos;
 
 namespace LiteNetLib.Test.Server
 {
@@ -115,5 +114,20 @@ namespace LiteNetLib.Test.Server
             }
         }
 
+
+        private List<PlayerState> playerList = new List<PlayerState>();
+        public PlayerState[] GetAllPlayer()
+        {
+            playerList.Clear();
+            foreach (var playerState in PlayerStates)
+            {
+                if (playerState != null)
+                {
+                    playerList.Add(playerState);
+                }
+            }
+
+            return playerList.ToArray();
+        }
     }
 }

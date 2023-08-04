@@ -7,7 +7,7 @@
 */
 
 using System;
-using LiteNetLib.LiteNetLib.Protos;
+using LogicShared.LiteNetLib.Utils;
 
 namespace LiteNetLib.Test.Shared
 {

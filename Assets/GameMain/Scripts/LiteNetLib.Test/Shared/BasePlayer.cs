@@ -7,9 +7,9 @@
 */
 
 using System;
-using LiteNetLib.LiteNetLib.Protos;
+using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
-using UnityEngine;
+using Protos;
 
 namespace LiteNetLib.Test.Shared
 {
@@ -65,20 +65,20 @@ namespace LiteNetLib.Test.Shared
         {
             FixVector2 velocity = FixVector2.zero;
             
-            if ((command.Keys & MovementKeys.Up) != 0)
+            if ((command.Keys & (int)MovementKeys.Up) != 0)
                 velocity.y = -1f;
-            if ((command.Keys & MovementKeys.Down) != 0)
+            if ((command.Keys & (int)MovementKeys.Down) != 0)
                 velocity.y = 1f;
             
-            if ((command.Keys & MovementKeys.Left) != 0)
+            if ((command.Keys & (int)MovementKeys.Left) != 0)
                 velocity.x = -1f;
-            if ((command.Keys & MovementKeys.Right) != 0)
+            if ((command.Keys & (int)MovementKeys.Right) != 0)
                 velocity.x = 1f;     
             
             _position += velocity.normalized * _speed * delta;
             _rotation = command.Rotation;
 
-            if ((command.Keys & MovementKeys.Fire) != 0)
+            if ((command.Keys & (int)MovementKeys.Fire) != 0)
             {
                 //CD到了
                 if (_shootTimer.IsTimeElapsed)

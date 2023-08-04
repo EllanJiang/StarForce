@@ -6,11 +6,12 @@
 * 修改记录：
 */
 
-using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Helpers;
+using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
+using Protos;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
@@ -94,16 +95,16 @@ namespace LiteNetLib.Test.Client
         {
             _nextCommand.Keys = 0;
             if(fire)
-                _nextCommand.Keys |= MovementKeys.Fire;
+                _nextCommand.Keys |= (int)MovementKeys.Fire;
             
             if (velocity.x < -0.5f)
-                _nextCommand.Keys |= MovementKeys.Left;
+                _nextCommand.Keys |= (int)MovementKeys.Left;
             if (velocity.x > 0.5f)
-                _nextCommand.Keys |= MovementKeys.Right;
+                _nextCommand.Keys |= (int)MovementKeys.Right;
             if (velocity.y < -0.5f)
-                _nextCommand.Keys |= MovementKeys.Up;
+                _nextCommand.Keys |= (int)MovementKeys.Up;
             if (velocity.y > 0.5f)
-                _nextCommand.Keys |= MovementKeys.Down;
+                _nextCommand.Keys |= (int)MovementKeys.Down;
 
             _nextCommand.Rotation = rotation;
         }

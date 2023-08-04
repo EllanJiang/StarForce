@@ -3,7 +3,8 @@
     "rootNamespace": "",
     "references": [
         "LogicShared",
-        "GameMain"
+        "GameMain",
+        "Protos"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

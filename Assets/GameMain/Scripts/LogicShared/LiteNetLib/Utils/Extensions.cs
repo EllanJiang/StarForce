@@ -26,6 +26,22 @@ namespace LogicShared.LiteNetLib.Utils
             v.y = reader.GetInt();
             return v;
         }
+        
+        public static void Put(this NetDataWriter writer, FixVector vector)
+        {
+            writer.Put(vector.x.AsInt());
+            writer.Put(vector.y.AsInt());
+            writer.Put(vector.z.AsInt());
+        }
+
+        public static FixVector GetVector(this NetDataReader reader)
+        {
+            FixVector v;
+            v.x = reader.GetInt();
+            v.y = reader.GetInt();
+            v.z = reader.GetInt();
+            return v;
+        }
 
         #region Random
 

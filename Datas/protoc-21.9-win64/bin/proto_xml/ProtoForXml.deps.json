@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ProtoForXml/1.0.0": {
+        "dependencies": {
+          "LogicShared": "1.0.0"
+        },
         "runtime": {
           "ProtoForXml.dll": {}
+        }
+      },
+      "LogicShared/1.0.0": {
+        "runtime": {
+          "LogicShared.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ProtoForXml/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogicShared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6,9 +6,9 @@
 * 修改记录：
 */
 
-using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
+using Protos;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Server

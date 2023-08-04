@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <!-- 协议ID -->
+    <enum name="ProtoID">
+        <field name="JoinPacket">1000</field>
+        <field name="JoinAcceptPacket">1001</field>
+        <field name="PlayerJoinedPacket">1002</field>
+        <field name="PlayerLeavedPacket">1003</field>
+        <field name="SpawnPacket">1004</field>
+        <field name="ShootPacket">1005</field>
+        <field name="PlayerInputPacket">1006</field>
+        <field name="PlayerState">1007</field>
+        <field name="ServerState">1008</field>
+    </enum>
+</messages>

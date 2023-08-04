@@ -8,12 +8,13 @@
 
 using System.Net;
 using System.Net.Sockets;
-using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib;
 using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
+using Protos;
 using UnityEngine;
+using ProtoID = LogicShared.LiteNetLib.Utils.ProtoID;
 
 namespace LiteNetLib.Test.Server
 {
@@ -79,7 +80,7 @@ namespace LiteNetLib.Test.Server
             {
                 //每两帧通知客户端 当前房间内所有玩家的信息
                 _serverState.Tick = _serverTick;    
-                _serverState.PlayerStates = _playerManager.PlayerStates;
+                _serverState.PlayerStates = _playerManager.GetAllPlayer();
                 int pCount = _playerManager.Count;
                 if (pCount == 1)
                 {
@@ -89,9 +90,9 @@ namespace LiteNetLib.Test.Server
                 foreach(ServerPlayer p in _playerManager)
                 { 
                     //单个网络包能装入的最大字节数
-                    int statesMax = p.AssociatedPeer.GetMaxSinglePacketSize(DeliveryMethod.Unreliable) - ServerState.HeaderSize;
+                    int statesMax = p.AssociatedPeer.GetMaxSinglePacketSize(DeliveryMethod.Unreliable) - 8;//ServerState.HeaderSize;
                     //Debug.Log("_serverState.StartState:" + _serverState.StartState +" pCount:" + pCount +" statesMax:" + statesMax);
-                    statesMax /= PlayerState.Size;  //每个客户端能分配到的包体大小
+                    statesMax /= 15;//PlayerState.Size;  //每个客户端能分配到的包体大小
                     for (int s = 0; s < (pCount-1)/statesMax + 1; s++)
                     {
                         //TODO: divide
@@ -118,7 +119,7 @@ namespace LiteNetLib.Test.Server
         {
             _cachedWriter.Reset();
             _cachedWriter.Put((byte) PacketType.Serialized);
-            ulong protoId = PacketIDs.TryGetId<T>();
+            ulong protoId = ProtoID.TryGetId<T>();
             _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
             return _cachedWriter;

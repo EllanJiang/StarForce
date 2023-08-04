@@ -1,0 +1,16 @@
+{
+    "name": "Protos",
+    "rootNamespace": "",
+    "references": [
+        "GUID:242f8e9bb85660448b6f7212c7098c4b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

@@ -8,7 +8,6 @@
 
 using System;
 using System.Collections.Generic;
-using LiteNetLib.LiteNetLib.Protos;
 
 namespace LogicShared.LiteNetLib.Utils
 {
@@ -64,7 +63,7 @@ namespace LogicShared.LiteNetLib.Utils
             //     hash *= 1099511628211UL; //prime
             // }
             // 协议ID
-            ulong hash = PacketIDs.TryGetId<T>();
+            ulong hash = ProtoID.TryGetId<T>();
             HashCache<T>.Initialized = true;
             HashCache<T>.Id = hash;
             return hash;

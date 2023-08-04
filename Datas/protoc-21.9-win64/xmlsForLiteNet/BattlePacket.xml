@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+  
+    <!-- 测试枚举 -->
+    <enum name="EPlayType">
+        <field name="Player">1</field>
+        <field name="Monster"/>
+        <field name="Max">3</field>
+    </enum>
+
+    <!-- 战斗信息-->
+    <message name="JoinPacket">
+        <field type="string" name="UserName"/>
+    </message>
+
+    <message name="JoinAcceptPacket">
+        <field type="byte" name="Id"/>               
+        <field type="ushort" name="ServerTick"/>     
+    </message>
+
+    <message name="PlayerJoinedPacket">
+        <field type="string" name="UserName"/> 
+        <field type="bool" name="NewPlayer"/> 
+        <field type="byte" name="Health"/> 
+        <field type="ushort" name="ServerTick"/> 
+        <field type="PlayerState" name="InitialPlayerState"/> 
+    </message>
+
+    <message name="PlayerLeavedPacket">
+        <field type="byte" name="Id"/>        
+    </message>
+
+    <message name="SpawnPacket">
+        <field type="long" name="PlayerId"/>
+        <field type="FixVector2" name="Position"/>
+    </message>
+
+    <message name="ShootPacket">
+        <field type="byte" name="FromPlayer"/>
+        <field type="ushort" name="CommandId"/> 
+        <field type="FixVector2" name="Hit"/>
+        <field type="ushort" name="ServerTick"/> 
+    </message>
+
+    <message name="PlayerInputPacket">
+        <field type="ushort" name="Id"/>
+        <field type="int" name="Keys"/> 
+        <field type="float" name="Rotation"/>
+        <field type="ushort" name="ServerTick"/> 
+    </message>
+
+    <message name="PlayerState">
+        <field type="byte" name="Id"/>
+        <field type="FixVector2" name="Position"/>
+        <field type="float"  name="Rotation"/> 
+        <field type="ushort" name="Tick"/> 
+    </message>
+
+    <message name="ServerState">
+        <field type="ushort" name="Tick"/> 
+        <field type="ushort" name="LastProcessedCommand"/> 
+        <field type="int" name="PlayerStatesCount"/> 
+        <field type="array" T="PlayerState" name="PlayerStates"/> 
+    </message>
+</messages>

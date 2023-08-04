@@ -6,10 +6,10 @@
 * 修改记录：
 */
 
-using LiteNetLib.LiteNetLib.Protos;
 using LiteNetLib.Test.Shared;
 using LogicShared.LiteNetLib.Helpers;
 using LogicShared.TrueSync.Math;
+using Protos;
 using UnityEngine;
 
 namespace LiteNetLib.Test.Client
