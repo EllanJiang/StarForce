@@ -63,7 +63,7 @@ namespace LogicShared.LiteNetLib.Utils
             //     hash *= 1099511628211UL; //prime
             // }
             // 协议ID
-            ulong hash = ProtoID.TryGetId<T>();
+            ulong hash = ProtoIDGetter.TryGetId<T>();
             HashCache<T>.Initialized = true;
             HashCache<T>.Id = hash;
             return hash;

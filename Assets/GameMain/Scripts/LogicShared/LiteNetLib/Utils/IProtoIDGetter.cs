@@ -8,7 +8,7 @@
 
 namespace LogicShared.LiteNetLib.Utils
 {
-    public interface IProtoID
+    public interface IProtoIDGetter
     {
         public ulong TryGetId<T>();
     }

@@ -14,7 +14,6 @@ using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
 using Protos;
 using UnityEngine;
-using ProtoID = LogicShared.LiteNetLib.Utils.ProtoID;
 
 namespace LiteNetLib.Test.Server
 {
@@ -119,7 +118,7 @@ namespace LiteNetLib.Test.Server
         {
             _cachedWriter.Reset();
             _cachedWriter.Put((byte) PacketType.Serialized);
-            ulong protoId = ProtoID.TryGetId<T>();
+            ulong protoId = ProtoIDGetter.TryGetId<T>();
             _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
             return _cachedWriter;

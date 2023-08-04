@@ -8,13 +8,13 @@
 
 namespace LogicShared.LiteNetLib.Utils
 {
-    public class ProtoID
+    public class ProtoIDGetter
     {
-        public static IProtoID ProtoId;
+        public static IProtoIDGetter protoIdGetter;
 
         public static ulong TryGetId<T>()
         {
-            return (ulong)ProtoId?.TryGetId<T>();
+            return (ulong)protoIdGetter?.TryGetId<T>();
         }
     }
 }

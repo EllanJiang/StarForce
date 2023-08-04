@@ -16,7 +16,6 @@ using LogicShared.TrueSync.Math;
 using Protos;
 using UnityEngine;
 using UnityEngine.UI;
-using ProtoID = LogicShared.LiteNetLib.Utils.ProtoID;
 using Random = System.Random;
 
 namespace LiteNetLib.Test.Client
@@ -58,7 +57,7 @@ namespace LiteNetLib.Test.Client
         
         private void Awake()
         {
-            LogicShared.LiteNetLib.Utils.ProtoID.ProtoId = new Protos.ProtoID();
+            LogicShared.LiteNetLib.Utils.ProtoIDGetter.protoIdGetter = new Protos.ProtoID();
             DontDestroyOnLoad(gameObject);
             Random r = new Random();
             // _cachedServerState = new ServerState();
@@ -170,7 +169,7 @@ namespace LiteNetLib.Test.Client
                 return;
             _writer.Reset();
             _writer.Put((byte)PacketType.Serialized);
-            ulong protoId = ProtoID.TryGetId<T>();
+            ulong protoId = ProtoIDGetter.TryGetId<T>();
             _writer.Put(protoId);
             packet.Serialize(_writer);
             _server.Send(_writer, deliveryMethod);

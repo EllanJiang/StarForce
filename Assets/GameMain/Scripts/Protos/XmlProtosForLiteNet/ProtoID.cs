@@ -5,7 +5,7 @@ using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
 namespace Protos
 {
-	public class ProtoID : IProtoID
+	public class ProtoID : IProtoIDGetter
 	{
 		private static readonly Dictionary<Type,ulong> _protoIds = new Dictionary<Type,ulong>();
 		public ProtoID()

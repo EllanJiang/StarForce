@@ -18,7 +18,7 @@ namespace GameMain
             base.Awake();
             //设置协议id
             var protoId = new Protos.ProtoID();
-            LogicShared.LiteNetLib.Utils.ProtoID.ProtoId = protoId;
+            LogicShared.LiteNetLib.Utils.ProtoIDGetter.protoIdGetter = protoId;
         }
     }
 }
