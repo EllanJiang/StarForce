@@ -11,5 +11,8 @@
         <field name="PlayerInputPacket">1006</field>
         <field name="PlayerState">1007</field>
         <field name="ServerState">1008</field>
+        <field name="LoginReq">1009</field>
+        <field name="LoginRes">1010</field>
+        <field name="PlayerInfoNotify">1011</field>
     </enum>
 </messages>

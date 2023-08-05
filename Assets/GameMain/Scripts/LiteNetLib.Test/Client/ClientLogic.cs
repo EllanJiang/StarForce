@@ -219,7 +219,7 @@ namespace LiteNetLib.Test.Client
                 //     OnServerState();
                 //     break;
                 case PacketType.Serialized:
-                    _packetProcessor.ReadAllPackets(reader);    //收到序列化消息
+                    _packetProcessor.ReadAllPackets(reader);        //收到序列化消息
                     break;
                 // case PacketType.Shoot:
                 //     _cachedShootData.Deserialize(reader);       //收到玩家射击消息

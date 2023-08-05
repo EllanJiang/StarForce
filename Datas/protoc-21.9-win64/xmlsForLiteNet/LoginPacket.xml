@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+  
+   
+    <!-- 登录请求-->
+    <message name="LoginReq">
+        <field type="string" name="UserName"/>
+    </message>
+    <!-- 登录请求回包-->
+    <message name="LoginRes">
+        <field type="bool" name="Result"/>
+    </message>
+    
+    <!-- 玩家信息-->
+    <message name="PlayerInfoNotify">
+        <field type="int" name="PlayerId"/>
+        <field type="string" name="PlayerName"/>
+        <field type="int" name="Gold"/>
+    </message>
+    
+</messages>

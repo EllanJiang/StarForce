@@ -19,6 +19,9 @@ namespace Protos
 			TryAddId<PlayerInputPacket>(1006);
 			TryAddId<PlayerState>(1007);
 			TryAddId<ServerState>(1008);
+			TryAddId<LoginReq>(1009);
+			TryAddId<LoginRes>(1010);
+			TryAddId<PlayerInfoNotify>(1011);
 		}
 
 		public ulong TryGetId<T>()
