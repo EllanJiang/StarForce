@@ -372,6 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConnectBtn: {fileID: 879166337123860304}
   LoginBtn: {fileID: 1486237835}
+  _roomUI: {fileID: 0}
 --- !u!1 &879166338329584039
 GameObject:
   m_ObjectHideFlags: 0

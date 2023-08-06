@@ -13,6 +13,35 @@ namespace Protos
 	}
 
 
+	public class StartBattleReq:INetSerializable
+	{
+		public int OwnerPlayerId;
+		public int RoomId;
+		public void Serialize(NetDataWriter writer)
+		{
+			writer.Put(OwnerPlayerId);
+			writer.Put(RoomId);
+		}
+		public void Deserialize(NetDataReader reader)
+		{
+			OwnerPlayerId = reader.GetInt();
+			RoomId = reader.GetInt();
+		}
+	}
+
+	public class StartBattleRes:INetSerializable
+	{
+		public bool Result;
+		public void Serialize(NetDataWriter writer)
+		{
+			writer.Put(Result);
+		}
+		public void Deserialize(NetDataReader reader)
+		{
+			Result = reader.GetBool();
+		}
+	}
+
 	public class JoinPacket:INetSerializable
 	{
 		public string UserName;

@@ -54,7 +54,13 @@ namespace GameMain
             
             _netManager.Start();
         }
-        
+
+        private void Start()
+        {
+            PlayerInfoManager.Instance.Init();
+            RoomManager.Instance.Init();
+        }
+
         //向服务器发起连接请求
         public static void Connect(IPEndPoint endPoint,string key,Action onConnected, Action<DisconnectInfo> onDisconnected)
         {
@@ -92,12 +98,6 @@ namespace GameMain
         //发送消息
         public static void SendPacket<T>(T packet) where T : INetSerializable
         {
-            SendPacket<T>(packet, DeliveryMethod.ReliableOrdered);
-        }
-        
-        //发送消息
-        private static void SendPacket<T>(T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
-        {
             Debug.Log("[Client] 发送消息类型： " + typeof(T));
             if (_server == null)
             {
@@ -108,10 +108,9 @@ namespace GameMain
             ulong protoId = ProtoIDGetter.TryGetId<T>();
             _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
-            _server.Send(_cachedWriter, deliveryMethod);
+            _server.Send(_cachedWriter);
         }
         
-       
         //成功连接到局外服务器，这里peer就是服务器的peer
         void INetEventListener.OnPeerConnected(NetPeer peer)
         {
@@ -129,6 +128,12 @@ namespace GameMain
         //局外服务器断开连接了
         void INetEventListener.OnPeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
         {
+            if (disconnectInfo.Reason == DisconnectReason.Timeout)
+            {
+                Connect(_server.EndPoint,"ExampleGame",_onConnected,_onDisconnected);
+                Debug.Log("局外服务器断线重连");
+                return;
+            }
             _server = null;
             Debug.Log("[C] 局外服务器断开连接了，断开原因是: " + disconnectInfo.Reason);
             if (_onDisconnected != null)

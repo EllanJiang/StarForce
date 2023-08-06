@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+  
+    <!-- 开房间请求-->
+    <message name="OpenRoomReq">
+        <field type="int" name="PlayerId"/>
+    </message>
+    <!-- 开房间请求回包-->
+    <message name="OpenRoomRes">
+        <field type="bool" name="Result"/>
+        <field type="int" name="RoomId"/>
+    </message>
+    <!-- 加入房间请求-->
+    <message name="JoinRoomReq">
+        <field type="int" name="PlayerId"/>
+        <field type="int" name="RoomId"/>
+    </message>
+    <!-- 加入房间请求回包-->
+    <message name="JoinRoomRes">
+        <field type="bool" name="Result"/>
+        <field type="int" name="RoomId"/>
+    </message>
+    
+    <!-- 所有房间信息-->
+    <message name="RoomInfoNotify">
+        <field type="list" T="RoomInfo" name="RoomInfoList"/>
+    </message>
+    <message name="RoomInfo">   
+        <field type="int" name="OwnerPlayerId"/>    <!-- 房主ID-->
+        <field type="int" name="RoomId"/>           <!-- 房间ID-->
+        <field type="list" T="int" name="RoomPlayerIdList"/>
+    </message>
+    
+</messages>

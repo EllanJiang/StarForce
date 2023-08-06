@@ -9,21 +9,30 @@ public class LoginUI : MonoBehaviour
 {
     public Button ConnectBtn;
     public Button LoginBtn;
+
+    public RoomUI _RoomUI;
+    public BattleUI _BattleUI;
+
     void Start()
     {
         LoginBtn.onClick .AddListener(OnLoginClick);
-        ConnectBtn.onClick.AddListener(OnConnect);
+        ConnectBtn.onClick.AddListener(OnClickConnect);
         
         //监听登录回调
         OutsideNetManager.Register<LoginRes>(OnLoginRes);
-        OutsideNetManager.Register<PlayerInfoNotify>(OnPlayerInfoNotify);
+       
+        //todo 临时处理，等UI框架做好后再调整
+        RoomManager.Instance.SetRoomUI(_RoomUI);
+        
+        LoginBtn.gameObject.SetActive(false);
+        _RoomUI.gameObject.SetActive(false);
     }
 
     //连接服务器
-    private void OnConnect()
+    private void OnClickConnect()
     {
         var localIp = NetUtils.GetLocalIp(LocalAddrType.IPv4);
-        OutsideNetManager.Connect(localIp, 10515, "ExampleGame",null,null);
+        OutsideNetManager.Connect(localIp, 10515, "ExampleGame",OnConnected,null);
     }
     
     //登录请求
@@ -41,15 +50,21 @@ public class LoginUI : MonoBehaviour
         OutsideNetManager.SendPacket(loginReq);
     }
 
+    private void OnConnected()
+    {
+        ConnectBtn.gameObject.SetActive(false);
+        LoginBtn.gameObject.SetActive(true);
+    }
+    
     //登录请求回包
     private void OnLoginRes(LoginRes loginRes)
     {
         var ret = loginRes.Result;
         Debug.Log("登录结果：" + ret);
-    }
-
-    private void OnPlayerInfoNotify(PlayerInfoNotify playerInfoNotify)
-    {
-        Debug.Log($"玩家信息：Id:{playerInfoNotify.PlayerId} Name:{playerInfoNotify.PlayerName}  Gold:{playerInfoNotify.Gold}");
+        if (ret)
+        {
+            gameObject.SetActive(false);
+            _RoomUI.gameObject.SetActive(true);
+        }
     }
 }

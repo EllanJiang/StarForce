@@ -10,18 +10,25 @@ namespace Protos
 		private static readonly Dictionary<Type,ulong> _protoIds = new Dictionary<Type,ulong>();
 		public ProtoID()
 		{
-			TryAddId<JoinPacket>(1000);
-			TryAddId<JoinAcceptPacket>(1001);
-			TryAddId<PlayerJoinedPacket>(1002);
-			TryAddId<PlayerLeavedPacket>(1003);
-			TryAddId<SpawnPacket>(1004);
-			TryAddId<ShootPacket>(1005);
-			TryAddId<PlayerInputPacket>(1006);
-			TryAddId<PlayerState>(1007);
-			TryAddId<ServerState>(1008);
-			TryAddId<LoginReq>(1009);
-			TryAddId<LoginRes>(1010);
-			TryAddId<PlayerInfoNotify>(1011);
+			TryAddId<JoinPacket>(10000);
+			TryAddId<JoinAcceptPacket>(10001);
+			TryAddId<PlayerJoinedPacket>(10002);
+			TryAddId<PlayerLeavedPacket>(10003);
+			TryAddId<SpawnPacket>(10004);
+			TryAddId<ShootPacket>(10005);
+			TryAddId<PlayerInputPacket>(10006);
+			TryAddId<PlayerState>(10007);
+			TryAddId<ServerState>(10008);
+			TryAddId<LoginReq>(10009);
+			TryAddId<LoginRes>(10010);
+			TryAddId<PlayerInfoNotify>(10011);
+			TryAddId<OpenRoomReq>(20001);
+			TryAddId<OpenRoomRes>(20002);
+			TryAddId<RoomInfoNotify>(20003);
+			TryAddId<JoinRoomReq>(20004);
+			TryAddId<JoinRoomRes>(20005);
+			TryAddId<StartBattleReq>(30001);
+			TryAddId<StartBattleRes>(30002);
 		}
 
 		public ulong TryGetId<T>()

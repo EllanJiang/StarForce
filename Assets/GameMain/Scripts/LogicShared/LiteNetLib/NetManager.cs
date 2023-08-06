@@ -232,7 +232,7 @@ namespace LogicShared.LiteNetLib
         /// <summary>
         /// Interval for latency detection and checking connection in milliseconds
         /// </summary>
-        public int PingInterval = 1000;
+        public int PingInterval = 10000;
 
         /// <summary>
         /// If NetManager doesn't receive any packet from remote peer during this time then connection will be closed

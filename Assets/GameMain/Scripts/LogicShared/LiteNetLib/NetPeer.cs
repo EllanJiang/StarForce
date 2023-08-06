@@ -356,6 +356,22 @@ namespace LogicShared.LiteNetLib
                 throw new ArgumentException("Delivery event will work only for ReliableOrdered/ReliableUnordered packets");
             SendInternal(dataWriter.Data, 0, dataWriter.Length, channelNumber, deliveryMethod, userData);
         }
+        
+        /// <summary>
+        /// Send data to peer (channel = 0)
+        /// 发送可靠包（模拟TCP）
+        /// </summary>
+        /// <param name="data">Data</param>
+        /// <param name="deliveryMethod">Send options (reliable, unreliable, etc.)</param>
+        /// <exception cref="TooBigPacketException">
+        ///     If size exceeds maximum limit:<para/>
+        ///     MTU - headerSize bytes for Unreliable<para/>
+        ///     Fragment count exceeded ushort.MaxValue<para/>
+        /// </exception>
+        public void Send(byte[] data)
+        {
+            SendInternal(data, 0, data.Length, 0, DeliveryMethod.ReliableOrdered, null);
+        }
 
         /// <summary>
         /// Send data to peer (channel = 0)
@@ -371,6 +387,23 @@ namespace LogicShared.LiteNetLib
         {
             SendInternal(data, 0, data.Length, 0, deliveryMethod, null);
         }
+        
+        /// <summary>
+        /// Send data to peer (channel = 0)
+        /// 发送可靠包（模拟TCP）
+        /// </summary>
+        /// <param name="dataWriter">DataWriter with data</param>
+        /// <param name="deliveryMethod">Send options (reliable, unreliable, etc.)</param>
+        /// <exception cref="TooBigPacketException">
+        ///     If size exceeds maximum limit:<para/>
+        ///     MTU - headerSize bytes for Unreliable<para/>
+        ///     Fragment count exceeded ushort.MaxValue<para/>
+        /// </exception>
+        public void Send(NetDataWriter dataWriter )
+        {
+            SendInternal(dataWriter.Data, 0, dataWriter.Length, 0, DeliveryMethod.ReliableOrdered, null);
+        }
+
 
         /// <summary>
         /// Send data to peer (channel = 0)
