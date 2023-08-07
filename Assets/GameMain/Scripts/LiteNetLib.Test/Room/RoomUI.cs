@@ -43,6 +43,7 @@ public class RoomUI:MonoBehaviour
         OpenRoomReq openRoomReq = ObjectPool.GetFromPool<OpenRoomReq>();
         openRoomReq.PlayerId = PlayerInfoManager.Instance.PlayerInfo.PlayerId;
         OutsideNetManager.SendPacket(openRoomReq);
+        ObjectPool.PutBackPool(openRoomReq);
     }
 
     private void OnJoinRoom()
@@ -52,6 +53,7 @@ public class RoomUI:MonoBehaviour
         joinRoomReq.PlayerId = PlayerInfoManager.Instance.PlayerInfo.PlayerId;
         joinRoomReq.RoomId = Convert.ToInt32(JoinRoomIdText.text);
         OutsideNetManager.SendPacket(joinRoomReq);
+        ObjectPool.PutBackPool(joinRoomReq);
     }
 
     private void OnStartBattle()
@@ -74,6 +76,7 @@ public class RoomUI:MonoBehaviour
         startBattleReq.RoomId = m_CurJoinRoomId;
         startBattleReq.OwnerPlayerId = roomInfo.OwnerPlayerId;
         OutsideNetManager.SendPacket(startBattleReq);
+        ObjectPool.PutBackPool(startBattleReq);
     }
     
     private void OnShowAllRoom()

@@ -48,6 +48,7 @@ public class LoginUI : MonoBehaviour
         var loginReq = ObjectPool.GetFromPool<LoginReq>();
         loginReq.UserName = "测试名称";
         OutsideNetManager.SendPacket(loginReq);
+        ObjectPool.PutBackPool(loginReq);
     }
 
     private void OnConnected()

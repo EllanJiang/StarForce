@@ -35,20 +35,24 @@ namespace Protos
 		}
 	}
 
-	public class StartBattleRes:INetSerializable,IObjectPool
+	public class StartBattleNotify:INetSerializable,IObjectPool
 	{
 		public bool Result;
+		public int BattleId;
 		public void Serialize(NetDataWriter writer)
 		{
 			writer.Put(Result);
+			writer.Put(BattleId);
 		}
 		public void Deserialize(NetDataReader reader)
 		{
 			Result = reader.GetBool();
+			BattleId = reader.GetInt();
 		}
 		public void PutBackPool()
 		{
 			Result = default;
+			BattleId = default;
 		}
 	}
 
