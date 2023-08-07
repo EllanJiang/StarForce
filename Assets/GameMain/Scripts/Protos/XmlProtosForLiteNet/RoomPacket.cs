@@ -3,10 +3,11 @@ using System.Text;
 using System;
 using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
+using LogicShared;
 namespace Protos
 {
 
-	public class OpenRoomReq:INetSerializable
+	public class OpenRoomReq:INetSerializable,IObjectPool
 	{
 		public int PlayerId;
 		public void Serialize(NetDataWriter writer)
@@ -17,9 +18,13 @@ namespace Protos
 		{
 			PlayerId = reader.GetInt();
 		}
+		public void PutBackPool()
+		{
+			PlayerId = default;
+		}
 	}
 
-	public class OpenRoomRes:INetSerializable
+	public class OpenRoomRes:INetSerializable,IObjectPool
 	{
 		public bool Result;
 		public int RoomId;
@@ -33,9 +38,14 @@ namespace Protos
 			Result = reader.GetBool();
 			RoomId = reader.GetInt();
 		}
+		public void PutBackPool()
+		{
+			Result = default;
+			RoomId = default;
+		}
 	}
 
-	public class JoinRoomReq:INetSerializable
+	public class JoinRoomReq:INetSerializable,IObjectPool
 	{
 		public int PlayerId;
 		public int RoomId;
@@ -49,9 +59,14 @@ namespace Protos
 			PlayerId = reader.GetInt();
 			RoomId = reader.GetInt();
 		}
+		public void PutBackPool()
+		{
+			PlayerId = default;
+			RoomId = default;
+		}
 	}
 
-	public class JoinRoomRes:INetSerializable
+	public class JoinRoomRes:INetSerializable,IObjectPool
 	{
 		public bool Result;
 		public int RoomId;
@@ -65,9 +80,14 @@ namespace Protos
 			Result = reader.GetBool();
 			RoomId = reader.GetInt();
 		}
+		public void PutBackPool()
+		{
+			Result = default;
+			RoomId = default;
+		}
 	}
 
-	public class RoomInfoNotify:INetSerializable
+	public class RoomInfoNotify:INetSerializable,IObjectPool
 	{
 		public List<RoomInfo> RoomInfoList;
 		public void Serialize(NetDataWriter writer)
@@ -87,9 +107,13 @@ namespace Protos
 				RoomInfoList.Add(reader.Get<RoomInfo>());
 			}
 		}
+		public void PutBackPool()
+		{
+			RoomInfoList.Clear();
+		}
 	}
 
-	public class RoomInfo:INetSerializable
+	public class RoomInfo:INetSerializable,IObjectPool
 	{
 		public int OwnerPlayerId;
 		public int RoomId;
@@ -114,6 +138,12 @@ namespace Protos
 			{
 				RoomPlayerIdList.Add(reader.GetInt());
 			}
+		}
+		public void PutBackPool()
+		{
+			OwnerPlayerId = default;
+			RoomId = default;
+			RoomPlayerIdList.Clear();
 		}
 	}
 

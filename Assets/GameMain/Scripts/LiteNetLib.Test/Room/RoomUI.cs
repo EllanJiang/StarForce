@@ -7,6 +7,7 @@
 
 using System;
 using GameMain;
+using LogicShared;
 using Protos;
 using UnityEngine;
 using UnityEngine.UI;
@@ -39,7 +40,7 @@ public class RoomUI:MonoBehaviour
     private void OnOpenRoom()
     {
         //发送开房间请求
-        OpenRoomReq openRoomReq = new OpenRoomReq();
+        OpenRoomReq openRoomReq = ObjectPool.GetFromPool<OpenRoomReq>();
         openRoomReq.PlayerId = PlayerInfoManager.Instance.PlayerInfo.PlayerId;
         OutsideNetManager.SendPacket(openRoomReq);
     }
@@ -47,7 +48,7 @@ public class RoomUI:MonoBehaviour
     private void OnJoinRoom()
     {
         //加入房间请求
-        JoinRoomReq joinRoomReq = new JoinRoomReq();
+        JoinRoomReq joinRoomReq = ObjectPool.GetFromPool<JoinRoomReq>();
         joinRoomReq.PlayerId = PlayerInfoManager.Instance.PlayerInfo.PlayerId;
         joinRoomReq.RoomId = Convert.ToInt32(JoinRoomIdText.text);
         OutsideNetManager.SendPacket(joinRoomReq);
@@ -55,7 +56,24 @@ public class RoomUI:MonoBehaviour
 
     private void OnStartBattle()
     {
+        //开始战斗（只有房主才能开始战斗）
+        var roomInfo = RoomManager.Instance.GetRoomInfo(m_CurJoinRoomId);
+        if (roomInfo == null)
+        {
+            Debug.LogError($"当前房间不存在:{m_CurJoinRoomId}");
+            return;
+        }
+
+        if (roomInfo.OwnerPlayerId != PlayerInfoManager.Instance.PlayerInfo.PlayerId)
+        {
+            //不是房主，不能开启战斗
+            Debug.LogError("不是房主，不能开启战斗");
+        }
         
+        StartBattleReq startBattleReq = ObjectPool.GetFromPool<StartBattleReq>();
+        startBattleReq.RoomId = m_CurJoinRoomId;
+        startBattleReq.OwnerPlayerId = roomInfo.OwnerPlayerId;
+        OutsideNetManager.SendPacket(startBattleReq);
     }
     
     private void OnShowAllRoom()

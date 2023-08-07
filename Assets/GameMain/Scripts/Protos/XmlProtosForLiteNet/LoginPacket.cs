@@ -3,10 +3,11 @@ using System.Text;
 using System;
 using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
+using LogicShared;
 namespace Protos
 {
 
-	public class LoginReq:INetSerializable
+	public class LoginReq:INetSerializable,IObjectPool
 	{
 		public string UserName;
 		public void Serialize(NetDataWriter writer)
@@ -17,9 +18,13 @@ namespace Protos
 		{
 			UserName = reader.GetString();
 		}
+		public void PutBackPool()
+		{
+			UserName = default;
+		}
 	}
 
-	public class LoginRes:INetSerializable
+	public class LoginRes:INetSerializable,IObjectPool
 	{
 		public bool Result;
 		public void Serialize(NetDataWriter writer)
@@ -30,9 +35,13 @@ namespace Protos
 		{
 			Result = reader.GetBool();
 		}
+		public void PutBackPool()
+		{
+			Result = default;
+		}
 	}
 
-	public class PlayerInfoNotify:INetSerializable
+	public class PlayerInfoNotify:INetSerializable,IObjectPool
 	{
 		public int PlayerId;
 		public string PlayerName;
@@ -48,6 +57,12 @@ namespace Protos
 			PlayerId = reader.GetInt();
 			PlayerName = reader.GetString();
 			Gold = reader.GetInt();
+		}
+		public void PutBackPool()
+		{
+			PlayerId = default;
+			PlayerName = default;
+			Gold = default;
 		}
 	}
 

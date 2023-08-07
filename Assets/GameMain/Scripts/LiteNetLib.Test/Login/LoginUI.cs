@@ -1,5 +1,6 @@
 
 using GameMain;
+using LogicShared;
 using LogicShared.LiteNetLib;
 using Protos;
 using UnityEngine;
@@ -43,9 +44,8 @@ public class LoginUI : MonoBehaviour
             Debug.LogError("尚未连接服务器，请检查网络！");
             return;
         }
-
-        // TODO 使用对象池创建
-        LoginReq loginReq = new LoginReq();
+        
+        var loginReq = ObjectPool.GetFromPool<LoginReq>();
         loginReq.UserName = "测试名称";
         OutsideNetManager.SendPacket(loginReq);
     }

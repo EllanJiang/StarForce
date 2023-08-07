@@ -3,6 +3,7 @@ using System.Text;
 using System;
 using LogicShared.LiteNetLib.Utils;
 using LogicShared.TrueSync.Math;
+using LogicShared;
 namespace Protos
 {
 	public enum EPlayType
@@ -13,7 +14,7 @@ namespace Protos
 	}
 
 
-	public class StartBattleReq:INetSerializable
+	public class StartBattleReq:INetSerializable,IObjectPool
 	{
 		public int OwnerPlayerId;
 		public int RoomId;
@@ -27,9 +28,14 @@ namespace Protos
 			OwnerPlayerId = reader.GetInt();
 			RoomId = reader.GetInt();
 		}
+		public void PutBackPool()
+		{
+			OwnerPlayerId = default;
+			RoomId = default;
+		}
 	}
 
-	public class StartBattleRes:INetSerializable
+	public class StartBattleRes:INetSerializable,IObjectPool
 	{
 		public bool Result;
 		public void Serialize(NetDataWriter writer)
@@ -40,9 +46,13 @@ namespace Protos
 		{
 			Result = reader.GetBool();
 		}
+		public void PutBackPool()
+		{
+			Result = default;
+		}
 	}
 
-	public class JoinPacket:INetSerializable
+	public class JoinPacket:INetSerializable,IObjectPool
 	{
 		public string UserName;
 		public void Serialize(NetDataWriter writer)
@@ -53,9 +63,13 @@ namespace Protos
 		{
 			UserName = reader.GetString();
 		}
+		public void PutBackPool()
+		{
+			UserName = default;
+		}
 	}
 
-	public class JoinAcceptPacket:INetSerializable
+	public class JoinAcceptPacket:INetSerializable,IObjectPool
 	{
 		public byte Id;
 		public ushort ServerTick;
@@ -69,9 +83,14 @@ namespace Protos
 			Id = reader.GetByte();
 			ServerTick = reader.GetUShort();
 		}
+		public void PutBackPool()
+		{
+			Id = default;
+			ServerTick = default;
+		}
 	}
 
-	public class PlayerJoinedPacket:INetSerializable
+	public class PlayerJoinedPacket:INetSerializable,IObjectPool
 	{
 		public string UserName;
 		public bool NewPlayer;
@@ -94,9 +113,17 @@ namespace Protos
 			ServerTick = reader.GetUShort();
 			InitialPlayerState = reader.Get<PlayerState>();
 		}
+		public void PutBackPool()
+		{
+			UserName = default;
+			NewPlayer = default;
+			Health = default;
+			ServerTick = default;
+			InitialPlayerState = default;
+		}
 	}
 
-	public class PlayerLeavedPacket:INetSerializable
+	public class PlayerLeavedPacket:INetSerializable,IObjectPool
 	{
 		public byte Id;
 		public void Serialize(NetDataWriter writer)
@@ -107,9 +134,13 @@ namespace Protos
 		{
 			Id = reader.GetByte();
 		}
+		public void PutBackPool()
+		{
+			Id = default;
+		}
 	}
 
-	public class SpawnPacket:INetSerializable
+	public class SpawnPacket:INetSerializable,IObjectPool
 	{
 		public long PlayerId;
 		public FixVector2 Position;
@@ -123,9 +154,14 @@ namespace Protos
 			PlayerId = reader.GetLong();
 			Position = reader.GetVector2();
 		}
+		public void PutBackPool()
+		{
+			PlayerId = default;
+			Position = default;
+		}
 	}
 
-	public class ShootPacket:INetSerializable
+	public class ShootPacket:INetSerializable,IObjectPool
 	{
 		public byte FromPlayer;
 		public ushort CommandId;
@@ -145,9 +181,16 @@ namespace Protos
 			Hit = reader.GetVector2();
 			ServerTick = reader.GetUShort();
 		}
+		public void PutBackPool()
+		{
+			FromPlayer = default;
+			CommandId = default;
+			Hit = default;
+			ServerTick = default;
+		}
 	}
 
-	public class PlayerInputPacket:INetSerializable
+	public class PlayerInputPacket:INetSerializable,IObjectPool
 	{
 		public ushort Id;
 		public int Keys;
@@ -167,9 +210,16 @@ namespace Protos
 			Rotation = reader.GetFloat();
 			ServerTick = reader.GetUShort();
 		}
+		public void PutBackPool()
+		{
+			Id = default;
+			Keys = default;
+			Rotation = default;
+			ServerTick = default;
+		}
 	}
 
-	public class PlayerState:INetSerializable
+	public class PlayerState:INetSerializable,IObjectPool
 	{
 		public byte Id;
 		public FixVector2 Position;
@@ -189,9 +239,16 @@ namespace Protos
 			Rotation = reader.GetFloat();
 			Tick = reader.GetUShort();
 		}
+		public void PutBackPool()
+		{
+			Id = default;
+			Position = default;
+			Rotation = default;
+			Tick = default;
+		}
 	}
 
-	public class ServerState:INetSerializable
+	public class ServerState:INetSerializable,IObjectPool
 	{
 		public ushort Tick;
 		public ushort LastProcessedCommand;
@@ -219,6 +276,13 @@ namespace Protos
 			{
 				PlayerStates[i] = reader.Get<PlayerState>();
 			}
+		}
+		public void PutBackPool()
+		{
+			Tick = default;
+			LastProcessedCommand = default;
+			PlayerStatesCount = default;
+			Array.Clear(PlayerStates,0,PlayerStates.Length);
 		}
 	}
 
