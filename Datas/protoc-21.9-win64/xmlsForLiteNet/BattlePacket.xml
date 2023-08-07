@@ -17,7 +17,7 @@
     <!-- 通知房间内的所有玩家，开始战斗-->
     <message name="StartBattleNotify">
 		 <field type="bool" name="Result"/> 		<!-- 结果-->
-		 <field type="int" name="BattleId"/>         <!-- 战斗ID-->
+		 <field type="int" name="RoomId"/>         <!-- 房间ID-->
     </message>
     
     <!-- 战斗信息-->

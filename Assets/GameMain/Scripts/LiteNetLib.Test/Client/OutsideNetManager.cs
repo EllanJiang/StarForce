@@ -57,8 +57,10 @@ namespace GameMain
 
         private void Start()
         {
+            // todo 不应该放在这里的，需要放到框架的初始化函数
             PlayerInfoManager.Instance.Init();
             RoomManager.Instance.Init();
+            BattleManager.Instance.Init();
         }
 
         //向服务器发起连接请求

@@ -251,8 +251,18 @@ namespace LiteNetLib.Test.Client
         //向服务器发起连接请求
         public void Connect(string ip, Action<DisconnectInfo> onDisconnected)
         {
+            Connect(ip, 10515, onDisconnected);
+        }
+
+        public void Connect(string ip, int port, Action<DisconnectInfo> onDisconnected)
+        {
+            Connect(ip, port, "ExampleGame", onDisconnected);
+        }
+
+        public void Connect(string ip, int port, string key, Action<DisconnectInfo> onDisconnected)
+        {
             _onDisconnected = onDisconnected;
-            _netManager.Connect(ip, 10515, "ExampleGame");
+            _netManager.Connect(ip, port, key);
         }
     }
 }

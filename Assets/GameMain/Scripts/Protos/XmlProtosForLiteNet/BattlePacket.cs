@@ -38,21 +38,21 @@ namespace Protos
 	public class StartBattleNotify:INetSerializable,IObjectPool
 	{
 		public bool Result;
-		public int BattleId;
+		public int RoomId;
 		public void Serialize(NetDataWriter writer)
 		{
 			writer.Put(Result);
-			writer.Put(BattleId);
+			writer.Put(RoomId);
 		}
 		public void Deserialize(NetDataReader reader)
 		{
 			Result = reader.GetBool();
-			BattleId = reader.GetInt();
+			RoomId = reader.GetInt();
 		}
 		public void PutBackPool()
 		{
 			Result = default;
-			BattleId = default;
+			RoomId = default;
 		}
 	}
 

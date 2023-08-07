@@ -1,5 +1,6 @@
 
 using GameMain;
+using LiteNetLib.Test.Client;
 using LogicShared;
 using LogicShared.LiteNetLib;
 using Protos;
@@ -13,7 +14,7 @@ public class LoginUI : MonoBehaviour
 
     public RoomUI _RoomUI;
     public BattleUI _BattleUI;
-
+   
     void Start()
     {
         LoginBtn.onClick .AddListener(OnLoginClick);
@@ -24,9 +25,12 @@ public class LoginUI : MonoBehaviour
        
         //todo 临时处理，等UI框架做好后再调整
         RoomManager.Instance.SetRoomUI(_RoomUI);
+        BattleManager.Instance.SetRoomUI(_RoomUI);
+        BattleManager.Instance.SetBattleUI(_BattleUI);
         
         LoginBtn.gameObject.SetActive(false);
         _RoomUI.gameObject.SetActive(false);
+        _BattleUI.gameObject.SetActive(false);
     }
 
     //连接服务器

@@ -23,6 +23,6 @@
         <field name="JoinRoomRes">20005</field>
         
         <field name="StartBattleReq">30001</field>
-        <field name="StartBattleRes">30002</field>
+        <field name="StartBattleNotify">30002</field>
     </enum>
 </messages>

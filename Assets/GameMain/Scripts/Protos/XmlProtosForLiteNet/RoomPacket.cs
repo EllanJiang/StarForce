@@ -118,6 +118,8 @@ namespace Protos
 		public int OwnerPlayerId;
 		public int RoomId;
 		public List<int> RoomPlayerIdList;
+		public string Ip;
+		public int Port;
 		public void Serialize(NetDataWriter writer)
 		{
 			writer.Put(OwnerPlayerId);
@@ -127,6 +129,8 @@ namespace Protos
 			{
 				writer.Put(RoomPlayerIdList[i]);
 			}
+			writer.Put(Ip);
+			writer.Put(Port);
 		}
 		public void Deserialize(NetDataReader reader)
 		{
@@ -138,12 +142,16 @@ namespace Protos
 			{
 				RoomPlayerIdList.Add(reader.GetInt());
 			}
+			Ip = reader.GetString();
+			Port = reader.GetInt();
 		}
 		public void PutBackPool()
 		{
 			OwnerPlayerId = default;
 			RoomId = default;
 			RoomPlayerIdList.Clear();
+			Ip = default;
+			Port = default;
 		}
 	}
 

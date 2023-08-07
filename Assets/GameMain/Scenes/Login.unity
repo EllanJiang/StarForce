@@ -459,6 +459,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoginUI
       objectReference: {fileID: 0}
+    - target: {fileID: 879166337554012832, guid: f2452f7bd014e374a975d2f98433aaa0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 879166337554012834, guid: f2452f7bd014e374a975d2f98433aaa0,
         type: 3}
       propertyPath: _RoomUI

@@ -29,6 +29,8 @@
         <field type="int" name="OwnerPlayerId"/>    <!-- 房主ID-->
         <field type="int" name="RoomId"/>           <!-- 房间ID-->
         <field type="list" T="int" name="RoomPlayerIdList"/>
+        <field type="string" name="Ip"/>            <!-- 房间IP-->
+        <field type="int" name="Port"/>             <!-- 房间Port-->
     </message>
     
 </messages>

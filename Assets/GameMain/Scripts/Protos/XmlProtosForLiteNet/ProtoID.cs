@@ -28,7 +28,7 @@ namespace Protos
 			TryAddId<JoinRoomReq>(20004);
 			TryAddId<JoinRoomRes>(20005);
 			TryAddId<StartBattleReq>(30001);
-			TryAddId<StartBattleRes>(30002);
+			TryAddId<StartBattleNotify>(30002);
 		}
 
 		public ulong TryGetId<T>()
