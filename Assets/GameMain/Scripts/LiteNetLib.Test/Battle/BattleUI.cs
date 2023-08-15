@@ -17,6 +17,8 @@ public class BattleUI:MonoBehaviour
     private void Start()
     {
         QuitRoom.onClick.AddListener(OnQuitRoom);
+        
+        //ClientLogic.Connect("localhost",10600,null);
     }
 
     

@@ -238,7 +238,7 @@ namespace LogicShared.LiteNetLib
         /// If NetManager doesn't receive any packet from remote peer during this time then connection will be closed
         /// (including library internal keepalive packets)
         /// </summary>
-        public int DisconnectTimeout = 5000;
+        public int DisconnectTimeout = 50000;
 
         /// <summary>
         /// Simulate packet loss by dropping random amount of packets. (Works only in DEBUG mode)

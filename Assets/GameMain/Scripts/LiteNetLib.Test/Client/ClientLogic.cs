@@ -111,7 +111,7 @@ namespace LiteNetLib.Test.Client
         private void OnPlayerJoined(PlayerJoinedPacket packet)
         {
             var remotePlayer = new RemotePlayer(_playerManager, packet.UserName, packet);
-            Debug.Log($"[C] 新玩家加入房间: {packet.UserName} 玩家id: {remotePlayer.Id}");
+            Debug.Log($"[局内] 新玩家加入房间: {packet.UserName} 玩家id: {remotePlayer.Id}");
             var view = RemotePlayerView.Create(_remotePlayerViewPrefab, remotePlayer);      //创建远端玩家实体
             _playerManager.AddPlayer(remotePlayer, view);
         }
@@ -120,7 +120,7 @@ namespace LiteNetLib.Test.Client
         private void OnServerState(ServerState serverState)
         {
             //skip duplicate or old because we received that packet unreliably
-            Debug.Log($"[C] 更新服务器信息: {serverState.Tick}");
+            Debug.Log($"[局内] 更新服务器信息: {serverState.Tick}");
             if (NetworkGeneral.SeqDiff(serverState.Tick, _lastServerTick) <= 0)
                 return;
             _lastServerTick = serverState.Tick;
@@ -148,13 +148,13 @@ namespace LiteNetLib.Test.Client
         {
             var player = _playerManager.RemovePlayer(packet.Id);
             if(player != null)
-                Debug.Log($"[C] 该玩家离开房间了: {player.Name}");
+                Debug.Log($"[局内] 该玩家离开房间了: {player.Name}");
         }
 
         //通知同意自己加入房间
         private void OnJoinAccept(JoinAcceptPacket packet)
         {
-            Debug.Log("[C] 服务器同意自己加入房间了： " + packet.Id);
+            Debug.Log("[局内] 服务器同意自己加入房间了： " + packet.Id);
             _lastServerTick = packet.ServerTick;
             var clientPlayer = new ClientPlayer(this, _playerManager, _userName, packet.Id);
             var view = ClientPlayerView.Create(_clientPlayerViewPrefab, clientPlayer);
@@ -164,7 +164,7 @@ namespace LiteNetLib.Test.Client
         //发送手动序列化的包
         public void WritePacket<T>(T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
         {
-            Debug.Log("[C] 发送手动序列化的包： " + typeof(T));
+            //Debug.Log("[局内] 发送手动序列化的包： " + typeof(T));
             if (_server == null)
                 return;
             _writer.Reset();
@@ -178,7 +178,7 @@ namespace LiteNetLib.Test.Client
         //连接到服务器了，这里peer就是服务器的peer
         void INetEventListener.OnPeerConnected(NetPeer peer)
         {
-            Debug.Log("[C] 连接到服务器了，服务器IP和Port是: " + peer.EndPoint);
+            Debug.Log("[局内] 连接到服务器了，服务器IP和Port是: " + peer.EndPoint);
             _server = peer;
             
             WritePacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);
@@ -190,7 +190,7 @@ namespace LiteNetLib.Test.Client
             _playerManager.Clear();
             _server = null;
             LogicTimer.Stop();
-            Debug.Log("[C] 服务器断开连接了，断开原因是: " + disconnectInfo.Reason);
+            Debug.Log("[局内] 服务器断开连接了，断开原因是: " + disconnectInfo.Reason);
             if (_onDisconnected != null)
             {
                 _onDisconnected(disconnectInfo);
@@ -256,7 +256,7 @@ namespace LiteNetLib.Test.Client
 
         public void Connect(string ip, int port, Action<DisconnectInfo> onDisconnected)
         {
-            Connect(ip, port, "ExampleGame", onDisconnected);
+            Connect(ip, port, "BattleRoom", onDisconnected);
         }
 
         public void Connect(string ip, int port, string key, Action<DisconnectInfo> onDisconnected)
