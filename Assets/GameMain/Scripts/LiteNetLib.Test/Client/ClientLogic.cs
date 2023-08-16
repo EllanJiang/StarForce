@@ -164,7 +164,7 @@ namespace LiteNetLib.Test.Client
             if (_server == null)
                 return;
             _writer.Reset();
-            _writer.Put((byte)PacketType.Serialized);
+            //_writer.Put((byte)PacketType.Serialized);
             var protoId = ProtoIDGetter.TryGetId<T>();
             _writer.Put(protoId);
             packet.Serialize(_writer);
@@ -202,6 +202,8 @@ namespace LiteNetLib.Test.Client
         //客户端收到服务器发来的消息
         void INetEventListener.OnNetworkReceive(NetPeer peer, NetPacketReader reader, DeliveryMethod deliveryMethod)
         {
+            _packetProcessor.ReadAllPackets(reader);        //收到序列化消息
+            return;
             byte packetType = reader.GetByte();
             if (packetType >= NetworkGeneral.PacketTypesCount)
                 return;

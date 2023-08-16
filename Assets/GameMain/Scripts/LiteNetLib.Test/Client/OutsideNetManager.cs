@@ -106,7 +106,7 @@ namespace GameMain
                 return;
             }
             _cachedWriter.Reset();
-            _cachedWriter.Put((byte)PacketType.Serialized);
+            //_cachedWriter.Put((byte)PacketType.Serialized);
             int protoId = ProtoIDGetter.TryGetId<T>();
             _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
@@ -150,6 +150,8 @@ namespace GameMain
         //处理消息
         void INetEventListener.OnNetworkReceive(NetPeer peer, NetPacketReader reader, DeliveryMethod deliveryMethod)
         {
+            _packetProcessor.ReadAllPackets(reader);        //收到序列化消息
+            return;
             byte packetType = reader.GetByte();
             if (packetType >= NetworkGeneral.PacketTypesCount)
                 return;
