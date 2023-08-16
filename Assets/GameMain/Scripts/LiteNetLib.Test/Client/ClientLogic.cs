@@ -60,16 +60,12 @@ namespace LiteNetLib.Test.Client
             LogicShared.LiteNetLib.Utils.ProtoIDGetter.protoIdGetter = new Protos.ProtoID();
             DontDestroyOnLoad(gameObject);
             Random r = new Random();
-            // _cachedServerState = new ServerState();
-            // _cachedShootData = new ShootPacket();
             _userName = Environment.MachineName + " " + r.Next(100000); //随机用户名
             LogicTimer = new LogicTimer(OnLogicUpdate);
             _writer = new NetDataWriter();
             _playerManager = new ClientPlayerManager(this);
             _shootsPool = new GamePool<ShootEffect>(ShootEffectContructor, 100);
             _packetProcessor = new NetPacketProcessor();
-            //_packetProcessor.RegisterNestedType<FixVector2>((w, v) => w.Put(v), reader => reader.GetVector2());
-            //_packetProcessor.RegisterNestedType<PlayerState>();
             _packetProcessor.SubscribeNetSerializable<PlayerJoinedPacket>(OnPlayerJoined);
             _packetProcessor.SubscribeNetSerializable<JoinAcceptPacket>(OnJoinAccept);
             _packetProcessor.SubscribeNetSerializable<PlayerLeavedPacket>(OnPlayerLeaved);
@@ -162,14 +158,14 @@ namespace LiteNetLib.Test.Client
         }
 
         //发送手动序列化的包
-        public void WritePacket<T>(T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
+        public void SendPacket<T>(T packet, DeliveryMethod deliveryMethod) where T : INetSerializable
         {
             //Debug.Log("[局内] 发送手动序列化的包： " + typeof(T));
             if (_server == null)
                 return;
             _writer.Reset();
             _writer.Put((byte)PacketType.Serialized);
-            ulong protoId = ProtoIDGetter.TryGetId<T>();
+            var protoId = ProtoIDGetter.TryGetId<T>();
             _writer.Put(protoId);
             packet.Serialize(_writer);
             _server.Send(_writer, deliveryMethod);
@@ -181,7 +177,7 @@ namespace LiteNetLib.Test.Client
             Debug.Log("[局内] 连接到服务器了，服务器IP和Port是: " + peer.EndPoint);
             _server = peer;
             
-            WritePacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);
+            SendPacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);
             LogicTimer.Start();
         }
 

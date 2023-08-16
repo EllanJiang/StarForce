@@ -118,7 +118,7 @@ namespace LiteNetLib.Test.Server
         {
             _cachedWriter.Reset();
             _cachedWriter.Put((byte) PacketType.Serialized);
-            ulong protoId = ProtoIDGetter.TryGetId<T>();
+            var protoId = ProtoIDGetter.TryGetId<T>();
             _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
             return _cachedWriter;

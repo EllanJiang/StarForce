@@ -7,7 +7,7 @@ namespace Protos
 {
 	public class ProtoID : IProtoIDGetter
 	{
-		private static readonly Dictionary<Type,ulong> _protoIds = new Dictionary<Type,ulong>();
+		private static readonly Dictionary<Type,int> _protoIds = new Dictionary<Type,int>();
 		public ProtoID()
 		{
 			TryAddId<JoinPacket>(10000);
@@ -31,14 +31,14 @@ namespace Protos
 			TryAddId<StartBattleNotify>(30002);
 		}
 
-		public ulong TryGetId<T>()
+		public int TryGetId<T>()
 		{
 			var type = typeof(T);
-			_protoIds.TryGetValue(type,out ulong id);
+			_protoIds.TryGetValue(type,out int id);
 			return id;
 		}
 
-		public void TryAddId<T>(ulong id)
+		public void TryAddId<T>(int id)
 		{
 			var type = typeof(T);
 			if(!_protoIds.ContainsKey(type))

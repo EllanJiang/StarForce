@@ -56,6 +56,44 @@ namespace Protos
 		}
 	}
 
+	public class QuitBattleReq:INetSerializable,IObjectPool
+	{
+		public int PlayerId;
+		public int RoomId;
+		public void Serialize(NetDataWriter writer)
+		{
+			writer.Put(PlayerId);
+			writer.Put(RoomId);
+		}
+		public void Deserialize(NetDataReader reader)
+		{
+			PlayerId = reader.GetInt();
+			RoomId = reader.GetInt();
+		}
+		public void PutBackPool()
+		{
+			PlayerId = default;
+			RoomId = default;
+		}
+	}
+
+	public class FinishBattleReq:INetSerializable,IObjectPool
+	{
+		public int RoomId;
+		public void Serialize(NetDataWriter writer)
+		{
+			writer.Put(RoomId);
+		}
+		public void Deserialize(NetDataReader reader)
+		{
+			RoomId = reader.GetInt();
+		}
+		public void PutBackPool()
+		{
+			RoomId = default;
+		}
+	}
+
 	public class JoinPacket:INetSerializable,IObjectPool
 	{
 		public string UserName;

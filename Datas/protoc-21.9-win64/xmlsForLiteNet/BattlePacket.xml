@@ -20,6 +20,17 @@
 		 <field type="int" name="RoomId"/>         <!-- 房间ID-->
     </message>
     
+	 <!-- 退出战斗请求-->
+    <message name="QuitBattleReq">
+        <field type="int" name="PlayerId"/>    	  <!-- 玩家ID-->
+        <field type="int" name="RoomId"/>           <!-- 房间ID-->
+    </message>
+	
+	 <!-- 结束战斗请求-->
+    <message name="FinishBattleReq">
+        <field type="int" name="RoomId"/>           <!-- 房间ID-->
+    </message>
+	
     <!-- 战斗信息-->
     <message name="JoinPacket">
         <field type="string" name="UserName"/>

@@ -19,7 +19,7 @@ namespace LogicShared.LiteNetLib.Utils
         private static class HashCache<T>
         {
             public static bool Initialized;
-            public static ulong Id;
+            public static int Id;
         }
         
         /// <summary>
@@ -31,7 +31,7 @@ namespace LogicShared.LiteNetLib.Utils
         /// 网络包消息回调
         /// key:网络包的哈希值
         /// </summary>
-        private readonly Dictionary<ulong, SubscribeDelegate> _callbacks = new Dictionary<ulong, SubscribeDelegate>();
+        private readonly Dictionary<int, SubscribeDelegate> _callbacks = new Dictionary<int, SubscribeDelegate>();
         private readonly NetDataWriter _netDataWriter = new NetDataWriter();
         
         public NetPacketProcessor()
@@ -50,7 +50,7 @@ namespace LogicShared.LiteNetLib.Utils
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         //FNV-1 64 bit hash
-        protected virtual ulong GetHash<T>()
+        protected virtual int GetHash<T>()
         {
             if(HashCache<T>.Initialized)
                 return HashCache<T>.Id;
@@ -63,7 +63,7 @@ namespace LogicShared.LiteNetLib.Utils
             //     hash *= 1099511628211UL; //prime
             // }
             // 协议ID
-            ulong hash = ProtoIDGetter.TryGetId<T>();
+            int hash = ProtoIDGetter.TryGetId<T>();
             HashCache<T>.Initialized = true;
             HashCache<T>.Id = hash;
             return hash;
@@ -78,7 +78,7 @@ namespace LogicShared.LiteNetLib.Utils
         protected virtual SubscribeDelegate GetCallbackFromData(NetDataReader reader)
         {
             //网络包的哈希值
-            var hash = reader.GetULong();
+            var hash = reader.GetInt();
             SubscribeDelegate action;
             if (!_callbacks.TryGetValue(hash, out action))
             {

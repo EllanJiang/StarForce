@@ -12,9 +12,9 @@ namespace LogicShared.LiteNetLib.Utils
     {
         public static IProtoIDGetter protoIdGetter;
 
-        public static ulong TryGetId<T>()
+        public static int TryGetId<T>()
         {
-            return (ulong)protoIdGetter?.TryGetId<T>();
+            return (int)protoIdGetter?.TryGetId<T>();
         }
     }
 }

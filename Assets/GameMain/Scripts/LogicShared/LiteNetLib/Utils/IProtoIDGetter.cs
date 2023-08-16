@@ -10,6 +10,6 @@ namespace LogicShared.LiteNetLib.Utils
 {
     public interface IProtoIDGetter
     {
-        public ulong TryGetId<T>();
+        public int TryGetId<T>();
     }
 }

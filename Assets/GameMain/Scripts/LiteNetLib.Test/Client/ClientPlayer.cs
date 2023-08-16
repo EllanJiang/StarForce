@@ -130,7 +130,7 @@ namespace LiteNetLib.Test.Client
             {
                 _updateCount = 0;
                 foreach (var t in _predictionPlayerStates)
-                    _clientLogic.WritePacket(t, DeliveryMethod.Unreliable);
+                    _clientLogic.SendPacket(t, DeliveryMethod.Unreliable);
             }
 
             base.Update(delta);

@@ -107,7 +107,7 @@ namespace GameMain
             }
             _cachedWriter.Reset();
             _cachedWriter.Put((byte)PacketType.Serialized);
-            ulong protoId = ProtoIDGetter.TryGetId<T>();
+            int protoId = ProtoIDGetter.TryGetId<T>();
             _cachedWriter.Put(protoId);
             packet.Serialize(_cachedWriter);
             _server.Send(_cachedWriter);
