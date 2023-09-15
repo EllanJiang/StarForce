@@ -6,12 +6,15 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Networking;
 
 public class LoadDll : MonoBehaviour
 {
-
+    [LabelText("测试Odin")]
+    public int TestOdin;
+    
     void Start()
     {
         StartCoroutine(DownLoadAssets(this.StartGame));

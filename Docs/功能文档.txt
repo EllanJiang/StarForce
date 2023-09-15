@@ -14,7 +14,7 @@
 			1、编辑器模式：
 				->ProcedurePreload 预加载流程：主要是预加载配置表，加载完成后，切换到改变场景流程
 				->ProcedureChangeScene 改变场景流程：停止所有声音，隐藏所有实体，卸载所有场景，还原游戏速度，然后加载新场景（GameEntry.Scene.LoadScene）。
-									场景加载完成后，如果加载的是Menu场景，那么切换到ProcedureMenu流程，如果加载的是Main场景，那么切换到ProcedureMenu流程
+									场景加载完成后，如果加载的是Menu场景，那么切换到ProcedureMenu流程，如果加载的是Main场景，那么切换到ProcedureMain流程
 				->ProcedureMenu 菜单流程：打开菜单界面，主要有开始游戏按钮。点击开始游戏按钮，切换到Main场景中，正式开始游戏。
 				->ProcedureMain 游戏流程：在这里正式开始游戏进程，设置游戏模式，初始化游戏数据，更新游戏进程，如果主角死亡则立即结束游戏，之后返回Menu界面。
 			2、单机模式：
@@ -35,14 +35,14 @@
 												如果不是强制更新应用，那么设置资源更新下载地址，然后判断是否需要更新资源
 												如果需要更新资源，那么切换到ProcedureUpdateVersion流程，否则切换到ProcedureVerifyResources流程、
 				3.1、需要更新资源：
-					->ProcedureUpdateVersion 更新版本流程：调用GameEntry.Resource.UpdateVersionList接口设置需要更新版本信息。
+					->ProcedureUpdateVersion 更新版本流程：调用GameEntry.Resource.UpdateVersionList接口设置需要更新版本信息，更新服务器版本信息
 														->VersionListProcessor.UpdateVersionList()	//更新版本资源列表
 														->m_DownloadManager.AddDownload()			//添加需要下载的资源url
 														->DownloadManager.DownloadAgent			//使用下载代理下载版本信息
-					->ProcedureVerifyResources 资源校验流程：资源更新完成后，就切换到ProcedureVerifyResources流程进行资源校验：
+					->ProcedureVerifyResources 资源校验流程：资源更新完成后，就切换到ProcedureVerifyResources流程进行资源校验：校验远端版本信息和本地版本信息是否一致
 														->GameEntry.Resource.VerifyResources()		//校验资源
 														->ResourceVerifier.VerifyResources()		//校验资源
-					->ProcedureCheckResources  资源检查流程：资源校验完成后，就切换到ProcedureCheckResources流程进行资源校验：
+					->ProcedureCheckResources  资源检查流程：资源校验完成后，就切换到ProcedureCheckResources流程进行资源检查：
 														->GameEntry.Resource.CheckResources()		//检查资源
 														->ResourceChecker.CheckResources()			//检查资源
 														检查资源完成后，如果需要更新资源，那么切换到ProcedureUpdateResources流程，否则不需要更新资源，直接切换预加载流程ProcedurePreload
@@ -328,92 +328,7 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 4、Hybrid热更	
 	
