@@ -13,7 +13,7 @@ using UnityEngine.Networking;
 public class LoadDll : MonoBehaviour
 {
     [LabelText("测试Odin")]
-    public int TestOdin;
+    public TestEnum TestEnum;
     
     void Start()
     {
@@ -143,4 +143,11 @@ public class LoadDll : MonoBehaviour
         GameObject cube = ab.LoadAsset<GameObject>("Cube");
         GameObject.Instantiate(cube);
     }
+}
+
+public enum TestEnum
+{
+    [LabelText("中文枚举")]
+    A = 1,
+    
 }
