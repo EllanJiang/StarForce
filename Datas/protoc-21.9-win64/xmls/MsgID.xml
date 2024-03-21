@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <!-- 
+        目前支持的配置类型
+       "bool";
+       "byte";
+       "short";
+       "int";
+       "enum";
+       "float";
+       "long";
+       "string";
+       
+       "array";
+       "list";
+       "dict";
+    -->
+    <!--协议ID-->
+    <enum name="MsgID" namespace="Protos">
+        <field name="QuitMsgReq">1000</field>
+        <field name="PlayerMsgReq">1001</field>
+        <field name="HeartBeatMsgReq">1002</field>
+        <field name="PlayerInfoMsg">1003</field>
+        
+        <!--局内战斗从2000开始-->
+        <field name="UploadFrameMsg">2000</field> <!--客户端上传帧数据-->
+        <field name="SyncFrameMsg">2001</field>   <!--服务器同步帧数据-->
+        <field name="StartBattleMsg">2002</field>   <!--战斗开始-->
+    </enum>
+</messages>

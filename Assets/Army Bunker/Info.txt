@@ -1,0 +1,20 @@
+Army Bunker: 186 Tris
+
+All Textures are 1K.TIF. 
+
+1 X Normal map
+
+1 X Texture map
+
+1 X Specular map (Can be added to alpha channel)
+
+1 X Texture map + Apha channel Specular map.
+
+Any questions feel free to drop me an email
+
+Enjoy!
+
+duane_mayberry@yahoo.co.uk
+
+
+www.duanesmind.co.uk

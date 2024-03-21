@@ -5,9 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/StarForce Launcher.unity
-  - enabled: 1
-    path: Assets/GameMain/Scenes/Main.unity
-  - enabled: 1
-    path: Assets/GameMain/Scenes/Menu.unity
+    path: Assets/GameMain/Scenes/HybridHotUpdateTest.unity
+    guid: 131cc49081cc41443a07dc7467018ced
+  m_configObjects: {}

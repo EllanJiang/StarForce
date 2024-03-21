@@ -1,0 +1,18 @@
+{
+    "name": "LiteNetLib.Test",
+    "rootNamespace": "",
+    "references": [
+        "LogicShared",
+        "GameMain",
+        "Protos"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

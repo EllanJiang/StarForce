@@ -1,0 +1,364 @@
+0、引入Entt ECS框架
+	Registry管理所有Entity和Component
+    xml和binary序列化
+    
+1、弄清楚游戏流程，并提供日志写入功能
+	日志功能：LogicShared.Logger.Debug
+	
+	游戏流程：
+	->GameEntry初始化所有Component:InitBuiltinComponents(),InitCustomComponents()
+		->BaseComponent组件，设置timeScale，runInBackground，sleepTimeout等基础设置，设置压缩、Log、text、version Helper。所有Update的入口,处理内存不足情况。
+		->ProcedureComponent 流程组件，在这里找到启动流程(ProcedureLaunch)，然后从启动流程开始启动游戏
+		->ProcedureLaunch 从OnEnter方法进入启动流程，初始化BuildInfo（GameVersion,InternalGameVersion，各种类型url），设置当前使用的语言，设置变体，设置声音，设置默认字典(保存了不同语言的更新文本)
+		->ProcedureSplash 在启动流程运行一帧后切换到闪屏流程，闪屏完成后，如果是编辑器模式，那么切换到预加载流程，如果是单机模式，那么切换到初始化资源流程，如果是可更新模式，那么切换到检查版本流程
+			1、编辑器模式：
+				->ProcedurePreload 预加载流程：主要是预加载配置表，加载完成后，切换到改变场景流程
+				->ProcedureChangeScene 改变场景流程：停止所有声音，隐藏所有实体，卸载所有场景，还原游戏速度，然后加载新场景（GameEntry.Scene.LoadScene）。
+									场景加载完成后，如果加载的是Menu场景，那么切换到ProcedureMenu流程，如果加载的是Main场景，那么切换到ProcedureMain流程
+				->ProcedureMenu 菜单流程：打开菜单界面，主要有开始游戏按钮。点击开始游戏按钮，切换到Main场景中，正式开始游戏。
+				->ProcedureMain 游戏流程：在这里正式开始游戏进程，设置游戏模式，初始化游戏数据，更新游戏进程，如果主角死亡则立即结束游戏，之后返回Menu界面。
+			2、单机模式：
+				->ProcedureInitResources 初始化资源流程：调用GameEntry.Resource.InitResources接口进行资源初始化。
+										->GameEntry.Resource.InitResources()
+										->m_ResourceManager.InitResources()
+										->m_ResourceIniter.InitResources()
+										->m_ResourceManager.m_ResourceHelper.LoadBytes()
+										->DefaultResourceHelper.LoadBytes() //开启新的协程来加载资源
+										->DefaultResourceHelper.LoadBytesCo() //使用UnityWebRequest.SendWebRequest()来加载保存在StreamingAssets中的数据
+										->ResourceManager.OnLoadPackageVersionListSuccess() //加载资源成功回调 设置Asset，Resource，FileSystem，ResourceGroup
+										->ResourceManager.ResourceInitComplete()
+										->ResourceManager.OnIniterResourceInitComplete()
+										->ProcedureInitResources.OnInitResourcesComplete()//资源加载完成，切换到ProcedurePreload，流程跟编辑器模式一样，这里不再重复。
+			3、可更新模式：
+				->ProcedureCheckVersion 检测版本流程：向服务器请求版本信息(url使用ProcedureLaunch流程初始化BuildInfo中的CheckVersionUrl)，请求成功后解读版本信息
+												如果是需要强制更新应用，那么直接打开强制更新面板，玩家点击确定后跳转到应用商店进行下载（商店的url信息在BuildInfo中设置）
+												如果不是强制更新应用，那么设置资源更新下载地址，然后判断是否需要更新资源
+												如果需要更新资源，那么切换到ProcedureUpdateVersion流程，否则切换到ProcedureVerifyResources流程、
+				3.1、需要更新资源：
+					->ProcedureUpdateVersion 更新版本流程：调用GameEntry.Resource.UpdateVersionList接口设置需要更新版本信息，更新服务器版本信息
+														->VersionListProcessor.UpdateVersionList()	//更新版本资源列表
+														->m_DownloadManager.AddDownload()			//添加需要下载的资源url
+														->DownloadManager.DownloadAgent			//使用下载代理下载版本信息
+					->ProcedureVerifyResources 资源校验流程：资源更新完成后，就切换到ProcedureVerifyResources流程进行资源校验：校验远端版本信息和本地版本信息是否一致
+														->GameEntry.Resource.VerifyResources()		//校验资源
+														->ResourceVerifier.VerifyResources()		//校验资源
+					->ProcedureCheckResources  资源检查流程：资源校验完成后，就切换到ProcedureCheckResources流程进行资源检查：
+														->GameEntry.Resource.CheckResources()		//检查资源
+														->ResourceChecker.CheckResources()			//检查资源
+														检查资源完成后，如果需要更新资源，那么切换到ProcedureUpdateResources流程，否则不需要更新资源，直接切换预加载流程ProcedurePreload
+									->ProcedureUpdateResources 更新资源流程：下载资源，并显示资源下载进度
+														->GameEntry.Resource.UpdateResources()
+														->ResourceUpdater.UpdateResources()			//使用资源更新器更新指定资源组的资源
+														->ResourceUpdater.Update()					//如果m_UpdateWaitingInfo.Count > 0，那么开始下载
+														->DownloadManager.AddDownload()			//添加到待下载列表
+					->ProcedurePreload		预加载流程：	资源下载完成后，切换到预加载流程，后面就跟编辑器模式一样了。
+				3.2、不需要更新资源：
+					->ProcedureVerifyResources 资源校验流程：直接切换到ProcedureVerifyResources，后面就跟需要更新资源一样了。
+2、弄清楚资源的压缩解压方式
+	2.1、先从ResourceManager入手：
+		压缩文件后缀：".dat"
+		远端版本列表文件名："GameFrameworkVersion.dat";
+		本地版本列表文件名："GameFrameworkList.dat";
+		
+		//
+		PackageVersionListSerializer m_PackageVersionListSerializer;			//单机模式版本资源列表序列化器
+		UpdatableVersionListSerializer m_UpdatableVersionListSerializer;		//可更新模式版本资源列表序列化器
+		ReadOnlyVersionListSerializer m_ReadOnlyVersionListSerializer;		//本地只读区版本资源列表序列化器
+		ReadWriteVersionListSerializer m_ReadWriteVersionListSerializer;		//本地读写区版本资源列表序列化器
+		ResourcePackVersionListSerializer m_ResourcePackVersionListSerializer;	//资源包版本资源列表序列化器
+		这几个序列化器除了头标识不一样之外，其他都一样，都是继承GameFrameworkSerializer基类。
+		
+		//
+		private ResourceIniter m_ResourceIniter;					//资源初始化器
+		private VersionListProcessor m_VersionListProcessor;			//版本资源列表处理器
+		private ResourceVerifier m_ResourceVerifier;					//资源校验器
+		private ResourceChecker m_ResourceChecker;					//资源检查信息
+		private ResourceUpdater m_ResourceUpdater;					//资源更新器
+		private ResourceLoader m_ResourceLoader;					//资源加载器
+		这几个器是用来处理资源加载，更新等问题的。
+		
+		//
+		private string m_ReadOnlyPath;				//资源只读路径
+		private string m_ReadWritePath;			//资源读写路径
+		private string m_CurrentVariant;			//当前资源变体（不同国家用的资源不一样，主要是一些美术字有区别）
+		private string m_UpdatePrefixUri;			//资源更新网址
+		private string m_ApplicableGameVersion;		//游戏版本
+		private int m_InternalResourceVersion;		//内部资源版本，这个非常重要，主要是通过这个版本号来判断是否需要更新资源
+		
+		//
+		private DecryptResourceCallback m_DecryptResourceCallback;									//解密资源回调函数
+		private InitResourcesCompleteCallback m_InitResourcesCompleteCallback;							//使用单机模式并初始化资源完成时的回调函数
+		private UpdateVersionListCallbacks m_UpdateVersionListCallbacks;								//版本资源列表更新回调函数集（成功和失败回调）
+		private VerifyResourcesCompleteCallback m_VerifyResourcesCompleteCallback;						//使用可更新模式并校验资源完成时的回调函数
+		private CheckResourcesCompleteCallback m_CheckResourcesCompleteCallback;						//使用可更新模式并检查资源完成时的回调函数  校验和检查有什么区别？TODO
+		private ApplyResourcesCompleteCallback m_ApplyResourcesCompleteCallback;						//使用可更新模式并应用资源包资源完成时的回调函数
+		private UpdateResourcesCompleteCallback m_UpdateResourcesCompleteCallback;						//使用可更新模式并更新指定资源组完成时的回调函数
+		
+		//
+		private EventHandler<ResourceVerifyStartEventArgs> m_ResourceVerifyStartEventHandler;			//资源校验开始事件
+		private EventHandler<ResourceVerifySuccessEventArgs> m_ResourceVerifySuccessEventHandler;		//资源校验成功事件
+		private EventHandler<ResourceVerifyFailureEventArgs> m_ResourceVerifyFailureEventHandler;		//资源校验失败事件
+		private EventHandler<ResourceApplyStartEventArgs> m_ResourceApplyStartEventHandler;				//资源应用开始事件
+		private EventHandler<ResourceApplySuccessEventArgs> m_ResourceApplySuccessEventHandler;			//资源应用成功事件
+		private EventHandler<ResourceApplyFailureEventArgs> m_ResourceApplyFailureEventHandler;			//资源应用失败事件
+		private EventHandler<ResourceUpdateStartEventArgs> m_ResourceUpdateStartEventHandler;			//资源更新开始事件
+		private EventHandler<ResourceUpdateChangedEventArgs> m_ResourceUpdateChangedEventHandler;		//资源更新改变事件 用来显示更新进度条等
+		private EventHandler<ResourceUpdateSuccessEventArgs> m_ResourceUpdateSuccessEventHandler;		//资源更新成功事件
+		private EventHandler<ResourceUpdateFailureEventArgs> m_ResourceUpdateFailureEventHandler;		//资源更新失败事件
+		private EventHandler<ResourceUpdateAllCompleteEventArgs> m_ResourceUpdateAllCompleteEventHandler;	//资源更新全部完成事件 
+	2.2、资源加密：
+		2.2.1、序列化文件：
+			GameFrameworkSerializer.Serialize()
+			{
+				byte[] header = GetHeader();		//每种模式的头标识都不一样
+				stream.WriteByte(header[0]);
+				stream.WriteByte(header[1]);
+				stream.WriteByte(header[2]);
+				stream.WriteByte(version);			//写入头标识后，接着就写入版本号(目前有0,1,2这三个版本)
+				if (m_SerializeCallbacks.TryGetValue(version, out callback))
+					callback(stream, data)		//最后调用注册的序列化回调函数进行序列化
+			}
+			
+			有哪几种模式的序列化器呢？
+				->PackageVersionListSerializer		//单机模式版本资源列表序列化器
+				->UpdatableVersionListSerializer	//可更新模式版本资源列表序列化器
+				->ReadOnlyVersionListSerializer	//本地只读区版本资源列表序列化器
+				->ReadWriteVersionListSerializer	//本地读写区版本资源列表序列化器
+				->ResourcePackVersionListSerializer	//资源包版本资源列表序列化器
+			
+			序列化回调函数在哪里注册呢？
+			根据游戏模式不同（单机模式，可更新模式），会有不用的回调函数：
+				->BuiltinVersionListSerializer										//内置版本资源列表序列化器
+				->BuiltinVersionListSerializer.LocalVersionListSerializeCallback		//序列化本地版本资源列表回调函数。
+				->BuiltinVersionListSerializer.PackageVersionListSerializeCallback		//序列化单机模式版本资源列表回调函数。
+				->BuiltinVersionListSerializer.ResourcePackVersionListSerializeCallback//序列化资源包版本资源列表回调函数。
+				->BuiltinVersionListSerializer.UpdatableVersionListSerializeCallback	//序列化可更新模式版本资源列表回调函数。
+		
+			在哪里调用序列化接口呢？
+				->BuildTool.StartBuildAB()
+				->ResourceBuilderController.BuildResources()
+				->ResourceBuilderController.BuildResources(Platform platform)  //平台不同，选择不同的构建方式
+				->ResourceBuilderController.ProcessPackageVersionList()|ProcessUpdatableVersionList()|ProcessReadOnlyVersionList()  
+				->serializer.Serialize(fileStream, versionList) //serializer是PackageVersionListSerializer|UpdatableVersionListSerializer|ReadOnlyVersionListSerializer
+				
+	2.3、资源解密：
+		2.3.1、反序列化文件：
+			GameFrameworkSerializer.Deserialize()
+			{
+				byte[] header = GetHeader();				
+				byte header0 = (byte)stream.ReadByte();
+				byte header1 = (byte)stream.ReadByte();
+				byte header2 = (byte)stream.ReadByte();
+				if (header0 != header[0] || header1 != header[1] || header2 != header[2])	//反序列化后，第一步是先判断头标识是否一致
+				{
+					throw new GameFrameworkException(Utility.Text.Format("Header is invalid, need '{0}{1}{2}', current '{3}{4}{5}'.", (char)header[0], (char)header[1], (char)header[2], (char)header0, (char)header1, (char)header2));
+				}
+				byte version = (byte)stream.ReadByte();									//如果头标识一致，再取出版本号，根据版本号获取对应的反序列化回调函数
+				DeserializeCallback callback = null;
+				if (!m_DeserializeCallbacks.TryGetValue(version, out callback))
+				{
+					throw new GameFrameworkException(Utility.Text.Format("Deserialize callback '{0}' is not exist.", version));
+				}
+
+				return callback(stream);												//最后调用反序列化回调函数进行反序列化
+			}
+			
+			反序列化回调函数在哪里注册呢？
+			根据游戏模式不同（单机模式，可更新模式），会有不用的回调函数：
+				->BuiltinVersionListSerializer											//内置版本资源列表反序列化器
+				->BuiltinVersionListSerializer.LocalVersionListDeserializeCallback			//反序列化本地版本资源列表回调函数。
+				->BuiltinVersionListSerializer.PackageVersionListDeserializeCallback		//反序列化单机模式版本资源列表回调函数。
+				->BuiltinVersionListSerializer.ResourcePackVersionListDeserializeCallback	//反序列化资源包版本资源列表回调函数。
+				->BuiltinVersionListSerializer.UpdatableVersionListDeserializeCallback		//反序列化可更新模式版本资源列表回调函数。
+	
+3、网络增加KCP/UDP连接方式，引入LiteNetLib库，搭建客户端和服务器通信框架。
+	LiteNetLib库地址：https://github.com/RevenantX/LiteNetLib
+	LiteNetLib库Unity示例：https://github.com/RevenantX/NetGameExample
+	
+	3.1、先从一个简单的Unity示例开始：
+		GameClient：	
+			Start:
+				创建NetManager，用来连接服务器，监听服务器消息等
+			 	_netClient = new NetManager(this);
+        				_netClient.UnconnectedMessagesEnabled = true;	//启动该选项后，就可以不用连接服务器而直接发送消息(使用SendUnconnectedMessage方法)
+        				_netClient.UpdateTime = 15;
+        			_	netClient.Start();
+			Update:
+				 _netClient.PollEvents();			//监听服务器消息
+			
+			OnNetworkReceiveUnconnected():        //不需要连接成功即可接收服务器消息
+			 public void OnNetworkReceiveUnconnected(IPEndPoint remoteEndPoint, NetPacketReader reader, UnconnectedMessageType messageType)
+			{
+				 if (messageType == UnconnectedMessageType.BasicMessage && _netClient.ConnectedPeersCount == 0 && reader.GetInt() == 1)
+        				{
+            					Debug.Log("[CLIENT] Received discovery response. Connecting to: " + remoteEndPoint);
+            					_netClient.Connect(remoteEndPoint, "sample_app");		//客户端正式发起连接
+        				}
+			}
+
+			OnPeerConnected:					//连接服务器成功
+			public void OnPeerConnected(NetPeer peer)
+    			{
+       				 Debug.Log("[CLIENT] We connected to " + peer.EndPoint); //客户端正式连接上了远端的服务器
+    			}
+			
+			OnNetworkReceive:					//连接服务器成功后接收服务器消息
+
+			Destroy:
+				if (_netClient != null)
+					_netClient .Stop();			//停止连接
+			
+			
+		GameServer：
+			Start:
+		  		创建NetManager，用来设置监听器等
+			 	_netServer = new NetManager(this);
+        			 	_netServer.Start(5000);
+        			 	_netServer.BroadcastReceiveEnabled = true;
+        			 	_netServer.UpdateTime = 15;
+
+				创建NetDataWriter，用来保存需要发给客户端的数据
+			 	_dataWriter = new NetDataWriter();
+
+			Update:
+				_netClient.PollEvents();			//监听客户端消息
+
+			在OnPeerConnected(NetPeer peer)接口中获取连接到服务器的客户端（peer）
+			 public void OnPeerConnected(NetPeer peer)
+    			{
+       				 Debug.Log("[SERVER] We have new peer " + peer.EndPoint);  //又有一个新的客户端连接上来啦！！！
+       				 _ourPeer = peer;
+    			}
+
+			给特定的客户端发送消息：
+			_dataWriter.Reset();
+            			_dataWriter.Put(_serverBall.transform.position.x);	//把服务器ball位置发送给指定客户端(_ourPeer)
+            			_ourPeer.Send(_dataWriter, DeliveryMethod.Sequenced);
+
+			OnNetworkReceiveUnconnected：				   //客户端未连接成功时，接收客户端消息接口
+			public void OnNetworkReceiveUnconnected(IPEndPoint remoteEndPoint, NetPacketReader reader,
+        				UnconnectedMessageType messageType)
+   			 {
+       				 if (messageType == UnconnectedMessageType.Broadcast)  //收到客户端发送的广播消息
+        				{
+            					Debug.Log("[SERVER] Received discovery request. Send discovery response");
+            					NetDataWriter resp = new NetDataWriter();
+            					resp.Put(1);			//给发送消息的客户端返回数字1
+            					_netServer.SendUnconnectedMessage(resp, remoteEndPoint);
+        				}
+    			}
+			
+			OnNetworkReceive：				//客户端连接成功后，接收客户端消息接口
+			public void OnNetworkReceive(NetPeer peer, NetPacketReader reader, byte channelNumber, DeliveryMethod deliveryMethod)
+    			{
+
+    			}
+
+			
+			OnConnectionRequest：					//处理客户端真正的连接
+			 public void OnConnectionRequest(ConnectionRequest request)
+    			{
+       				 request.AcceptIfKey("sample_app");			//接收客户端连接if key == "sample_app"
+    			}
+
+
+			在OnPeerDisconnected接口中处理客户端断开连接请求
+			public void OnPeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
+    			{
+        				Debug.Log("[SERVER] peer disconnected " + peer.EndPoint + ", info: " + disconnectInfo.Reason);  //这个客户端断开连接了
+        				if (peer == _ourPeer)
+           				 _ourPeer = null;
+    			}
+
+			Destroy：
+				if (_netServer != null)
+					_netServer.Stop();
+	
+	3.2、连接请求流程：
+		->NetManager.Connect(ip, 10515, "ExampleGame");  		//发送连接请求
+		->NetPeer(NetManager netManager, IPEndPoint remoteEndPoint, int id, byte connectNum, NetDataWriter connectData) 
+		->_connectRequestPacket = NetConnectRequestPacket.Make(connectData, remoteEndPoint.Serialize(), _connectTime);				//在NetPeer构造函数中创建连接请求包
+		  NetManager.SendRaw(_connectRequestPacket, EndPoint);	//在NetPeer构造函数中发送连接请求包
+		->NetSocket.SendTo()									//使用socket的sendTo方法发送连接数据
+		
+		->NetSocket.ReceiveLogic()								//在NetSocket的ReceiveLogic方法中接收客户端的连接请求数据
+		->NetManager.OnMessageReceived()						//处理连接请求数据
+		->NetManager.DataReceived()							//处理连接请求数据
+		->NetManager.ProcessConnectRequest()					//处理连接请求包
+		->CreateEvent(NetEvent.EType.ConnectionRequest, connectionRequest: req);	//创建连接请求事件
+		->NetManager.ProcessEvent()							
+			_netEventListener.OnConnectionRequest(evt.ConnectionRequest);//处理连接请求事件
+
+		->ServerLogic.OnConnectionRequest()						//request.AcceptIfKey("ExampleGame");接受客户端请求
+		->NetManager.OnConnectionSolved()						//处理连接请求结果
+		->NetPeer(NetManager netManager, IPEndPoint remoteEndPoint, int id, long connectId, byte connectNum) 	//在NetPeer构造函数中创建同意连接包
+		->_connectAcceptPacket = NetConnectAcceptPacket.Make(_connectTime, connectNum, false);				//给客户端发送同意连接包
+           NetManager.SendRaw(_connectAcceptPacket, EndPoint);
+		-> CreateEvent(NetEvent.EType.Connect, netPeer);			//创建连接成功事件
+		->NetManager.ProcessEvent()							
+			 _netEventListener.OnPeerConnected(evt.Peer);		//处理连接成功事件
+		->ClientLogic.OnPeerConnected(NetPeer peer)
+		WritePacket(new JoinPacket {UserName = _userName}, DeliveryMethod.ReliableOrdered);	//客户端连接成功后，向服务器发送加入房间请求
+		
+		至此，连接成功。
+		
+		->ServerLogic.OnJoinReceived(JoinPacket joinPacket, NetPeer peer)	 			//收到新的客户端(peer)加入房间请求的消息
+            _netManager.SendToAll(WritePacket(pj), DeliveryMethod.ReliableOrdered, peer);//向其他已经连入的客户端发送有新的客户端连入的消息
+            pj.NewPlayer = false;
+            foreach(ServerPlayer otherPlayer in _playerManager)
+            {
+                if(otherPlayer == player)
+                    continue;
+                pj.UserName = otherPlayer.Name;
+                pj.InitialPlayerState = otherPlayer.NetworkState;
+                peer.Send(WritePacket(pj), DeliveryMethod.ReliableOrdered);				//Send to new player info about old players
+            }
+		
+		至此，连接并加入房间成功。
+		
+	
+
+
+
+	3.3、添加登录界面，开房间界面，结算界面
+	3.3、添加网络模块，专门负责服务器和客户的通信
+	3.4、协议id类型改成int		
+
+	
+	
+	
+	
+
+	
+4、Hybrid热更	
+	
+5、图集打包策略，图片加载策略
+   可以参考这篇文章
+   https://mp.weixin.qq.com/s/97V9dmS3XF_MwJjbPt9XNA
+	
+6、引入UI框架
+
+7、引入行为树技能编辑器
+
+8、整合游戏开发框架：局外业务和局内战斗，一键出包。
+
+9、单机游戏开发：
+	9.1、局外：将领系统，装备系统，争霸战系统，背包系统。商店系统
+	9.2、局内：国战系统，一对一对战系统。2.5D。
+	9.3、基地：机关枪，防空对地导弹，石油金属矿井，石油金属仓库，集团军营。
+	9.4、坦克：天启坦克，坦克杀手...
+	9.5、士兵：机枪兵，步枪兵，工程师，医生，恐怖分子...
+	9.6、资源：石油，金属，勋章
+
+9.1、局内帧同步对战
+	
+10、联网游戏开发：
+	9.7、排行榜
+	9.8、充值
+	
+11、子弹游戏
+	
+	
+
+
+	
